@@ -1,0 +1,42 @@
+#  file12.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Olympic track times, in tenths of a second, were recorded over
+#  the years.
+#
+#  "Year" is the year;
+#
+#  "100M", "200M", "400M", "800", "1500M","5000M" and "10000M" are
+#  the times for the races of 100 meters and so on, in tenths of
+#  a second.
+#
+#  Times of "0" indicate that the event was not run that year.
+#
+"Olympic Track 1896-1964, Hartigan page 131"
+8 columns
+16 rows
+"Year"    "100M"  "200M"  "400M"  "800M"  "1500M"  "5000M"  "10000M"
+1896      120       0     542     1310    2732        0         0
+1900      108     222     494     1214    2460        0         0
+1904      110     216     492     1160    2454        0         0
+1906      112       0     532     1212    2520        0         0
+1908      108     224     500     1128    2434        0         0
+1912      108     217     482     1119    2368     8766     18808
+1920      108     220     496     1134    2418     8956     19058
+1924      106     216     476     1124    2336     8712     18232
+1928      108     218     478     1118    2332     8780     18188
+1932      103     212     462     1098    2312     8700     18114
+1936      103     207     465     1129    2278     8622     18154
+1948      103     211     462     1092    2298     8576     17996
+1952      104     207     459     1092    2252     8460     17570
+1956      105     206     467     1077    2212     8196     17256
+1960      102     205     449     1063    2156     8234     17122
+1964      100     203     451     1051    2181     8288     17044

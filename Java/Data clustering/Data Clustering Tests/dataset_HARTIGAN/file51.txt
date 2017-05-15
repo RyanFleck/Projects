@@ -1,0 +1,36 @@
+#  file51.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The mortality rates from Leukemia were recorded, per
+#  million children, between the ages of 0 to 14.
+#
+"Leukemia Mortality Rates by Year and Country, Hartigan page 334"
+13 columns
+18 rows
+Country 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967
+"Australia"        34 33 43 44 38 38 39 34 36 35 37 34
+"Austria"          27 35 40 45 39 34 37 39 35 39 37 29
+"Belgium"          41 29 31 40 39 39 47 40 34 29 34 30
+"Canada"           36 35 32 42 35 35 35 38 36 37 33 33
+"Denmark"          33 44 46 45 35 48 43 49 56 39 39 38
+"Finland"          43 41 34 32 37 28 28 42 43 38 32 41
+"France"           44 41 41 42 40 36 40 36 36 34 34 31
+"West Germany"     35 33 35 36 35 35 34 38 36 38 34 39
+"Hungary"          28 26 31 31 29 27 27 34 36 35 29 35
+"Israel"           38 44 45 28 61 33 32 28 29 36 30 30
+"Japan"            26 25 29 28 30 29 32 32 31 33 33 31
+"Netherlands"      32 37 39 39 39 31 41 37 40 42 36 33
+"Northern Ireland" 17 25 27 39 29 27 22 31 33 26 30 32
+"Norway"           45 44 36 31 44 44 56 31 36 37 50 40
+"Portugal"         20 28 21 34 30 30 30 29 35 37 40 36
+"Scotland"         27 31 32 30 35 30 31 26 29 28 29 25
+"Sweden"           33 45 46 45 44 37 44 31 39 35 37 38
+"Switzerland"      42 46 44 47 38 35 45 42 33 31 36 31

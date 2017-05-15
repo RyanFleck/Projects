@@ -1,0 +1,59 @@
+#  file10.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  From astonomical knowledge of 1970, a table of planetary moons
+#  was compiled.
+#
+#  "Planet #" is the planet and the number of the moon.
+#
+#  "Distance" is the distance in thousands of miles between the moon
+#  and the planet;
+#
+#  "Diameter" is the diameter in miles of the moon;
+#
+#  "Period" is the period, in days, of the orbit of the moon
+#  about the planet.
+#
+"Planets and Moons, Hartigan page 122"
+4 columns
+31 rows
+"Planet #"    "Distance"  "Diameter"  "Period"
+"Earth 1"       239       2160          655
+"Mars 1"          5.8       10.0          7.7
+"Mars 2"         14.6       10.0         30.0
+"Jupiter  1"    112        100           12.0
+"Jupiter  2"    262       2020           42
+"Jupiter  3"    417       1790           85
+"Jupiter  4"    665       3120          172
+"Jupiter  5"   1171       2770          401
+"Jupiter  6"   7133         50         6014
+"Jupiter  7"   7295         20         6232
+"Jupiter  8"   7369         10         6325
+"Jupiter  9"  13200         10        15146
+"Jupiter 10"  14000         10        16620
+"Jupiter 11"  14600         10        17734
+"Jupiter 12"  14700         10        18792
+"Saturn 1"      116        300           23
+"Saturn 2"      148        400           33
+"Saturn 3"      183        600           45
+"Saturn 4"      235        600           66
+"Saturn 5"      327        810          108
+"Saturn 6"      759       2980          383
+"Saturn 7"      920        100          511
+"Saturn 8"     2213        500         1904
+"Saturn 9"     8053        100        13211
+"Uranus 1"       77        200           34
+"Uranus 2"      119        500           60
+"Uranus 3"      166        300          100
+"Uranus 4"      272        600          209
+"Uranus 5"      365        500          323
+"Neptune 1"     220       2300          141
+"Neptune 2"    3461        200         8626

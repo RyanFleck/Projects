@@ -1,0 +1,72 @@
+#  file05.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  A jigsaw puzzle comprises 20 pieces, arranged in a regular array
+#  and numbered as follows:
+#
+#     1   2   3   4
+#     5   6   7   8
+#     9  10  11  12
+#    13  14  15  16
+#    17  18  19  20
+#
+#  Each piece is roughly rectangular.  The corners of the piece are called
+#  its vertices, and the sides are called its edges.  The four edges of 
+#  each piece are numbered consecutively, starting from the top and 
+#  moving clockwise.
+#
+#  For each piece, three measurements were made on each of the four edges,
+#  estimating the length of the side, and the amount by which the edge
+#  cuts into or juts out of the line joining the two vertices on that side.
+#  The measurements are in hundredths of an inch.
+#
+#  # is the number of the piece.
+#
+#  L1 is length of the line between the corners.
+#  I1 is the maximum deviation of the line into the piece
+#  O1 is the maximum deviation of the line out of the piece.
+#
+#  L2 is length of the line between the corners.
+#  I2 is the maximum deviation of the line into the piece
+#  O2 is the maximum deviation of the line out of the piece.
+#
+#  L3 is length of the line between the corners.
+#  I3 is the maximum deviation of the line into the piece
+#  O3 is the maximum deviation of the line out of the piece.
+#
+#  L4 is length of the line between the corners.
+#  I4 is the maximum deviation of the line into the piece
+#  O4 is the maximum deviation of the line out of the piece.
+#
+"Jigsaw Puzzle Measurements, Hartigan page 76"
+13 columns
+20 rows
+" #"  "L1" "I1" "O1" "L2" "I2" "O2" "L3" "I3" "O3" "L4" "I4" "O4"
+" 1"  142   0    0   191  21   48   125  40   12   167   0    0
+" 2"  120   0    0   183  59   16   160  16   50   192  48   21
+" 3"  186   0    0   208  17   51   152  49   13   183  17   59
+" 4"  138   0    0   180   0    0   157  13   42   209  51   18
+" 5"  126  13   39   138   0    2   125  20   43   171   0    0
+" 6"  159  50   15   163   4    0   152  47   17   139   2    0
+" 7"  149  13   50   142   0    6   157  19   49   163   0    3
+" 8"  157  42   13   203   0    0   152  50   25   143   3    0
+" 9"  125  44   20   190   2    0   138  42   18   159   0    0
+"10"  152  17   46   144   2    0   147  19   56   190   0    2
+"11"  157  48   20   161   0    0   152  49   22   143   0    2
+"12"  152  25   49   139   0    0   153  27   52   160   0    0
+"13"  138  19   42   112   0    1   143  10   41   143   0    0
+"14"  147  55   20   150   6    1   154  36   21   113   1    0
+"15"  151  22   48   126   0    8   137  14   51   160   0    6
+"16"  152  52   27   141   0    0   153  42   21   128   8    0
+"17"  143  42    9   149   7   54   117   0    0   136   0    0
+"18"  154  22   36   130  77    6   192   0    0   150  54    8
+"19"  134  52   13   140  16   51   123   0    0   130   6   78
+"20"  151  21   43   118   0    0   150   0    0   140  52   13

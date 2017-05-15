@@ -1,0 +1,50 @@
+#  file16.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Name" is the name of the butterfly.
+#
+#  "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+#  "Oct", "Nov", and "Dec" are the months.
+#
+#  "O" is the ova, "L" the larva, "P" the pupa, "I" the imago.  None,
+#  one, or several of these may appear in a single month.
+#
+"Times of Appearance of British Butterflies, Hartigan page 150"
+13 columns
+27 rows
+"Name" "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"
+"Adonis Blue"                 L L L L  PI  LI  P   PI  LI  L   L L
+"Bath White"                  P P P P  LI  L   P   PI  LP  P   P P
+"Black Hairstreak"            O O O O  L   LPI I   O   O   O   O O
+"Black-veined White"          L L L L  LP  PI  LI  L   L   L   L L
+"Brinstone"                   I I I I  LI  LI  PI  PI  I   I   I I
+"Brown Argus"                 L L L L  L   P   PI  I   L   L   L L
+"Brown Hairstreak"            O O O O  L   LP  PI  I   I   O   O O
+"Camberwell Beauty"           I I I I  I   L   LP  I   I   I   I I
+"Chalk Hill Blue"             L L L L  LPI LP  PI  I   L   L   L L
+"Chequered Skipper"           L L L P  P   I   O   O   L   L   L L
+"Clouded Yellow"              - - - -  I   LI  LP  I   LI  LPI I -
+"Comina"                      I I I I  LI  LP  PI  LI  PI  I   I I 
+"Common Blue"                 L L L LP I   IL  LI  I   I   L   L L
+"Dark Green Fritillary"       L L L L  L   LP  PI  LI  L   L   L L
+"Dingy Skipper"               L L L LP I   LI  LP  I   L   L   L L
+"Duke of Burgundy Fritillary" P P P P  PI  IOL L   L   LP  P   P P
+"Essex Skipper"               O O O OL L   P   I   I   O   O   O O
+"Gatekeeper"                  L L L L  L   LP  I   I   L   L   L L
+"Glanville Fritillary"        L L L LP LPI LPI L   L   L   L   L L
+"Grayling"                    L L L L  L   LPI PI  LI  LI  L   L L
+"Green Hairstreak"            P P P P  PI  LI  LP  P   P   P   P P
+"Green-veined White"          P P P PI LI  LPI LPI LPI LP  P   P P
+"Grizzled Skipper"            L L L LP I   LI  LP  I   L   L   L L
+"Heath Fritillary"            L L L L  L   LPI LI  L   L   L   L L
+"High Brown Fritillary"       L L L L  L   LP  PI  LI  L   L   L L
+"Holly Blue"                  P P P PI I   LP  PI  LI  LPI LP  P P
+"Large Blue"                  L L L L  L   LI  I   L   L   L   L L

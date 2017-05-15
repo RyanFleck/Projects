@@ -1,0 +1,59 @@
+#  file45.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The percentage of all households with various foods was 
+#  recorded.
+#
+#  "Code" is the code for the food item.
+#  "Name" is the name of the food item.
+#
+#  The other columns contain the country codes.
+#  WG: West Germany
+#  IT: Italy
+#  FR: France
+#  NS: Netherlands
+#  BM: Belgium
+#  LG: Luxemburg
+#  GB: Great Britain
+#  PL: Portugal
+#  AA: Austria
+#  SD: Switzerland
+#  SW: Sweden
+#  DK: Denmark
+#  NY: Norway
+#  FD: Finland
+#  SP: Spain
+#  ID: Ireland
+#
+"European Food, Hartigan page 289"
+18 columns
+20 rows
+Code  Name             WG IT FR NS BM LG GB PL AA SD SW DK NY FD SP ID
+GC "ground coffee"     90 82 88 96 94 97 27 72 55 73 97 96 92 98 70 13
+IC "instant coffee"    49 10 42 62 38 61 86 26 31 72 13 17 17 12 40 52
+TB "tea bags"          88 60 63 98 48 86 99 77 61 85 93 92 83 84 40 99
+SS "sugarless sweets"  19 02 04 32 11 28 22 02 15 25 31 35 13 20 00 11
+BP "packaged biscuits" 57 55 76 62 74 79 91 22 29 31 00 66 62 64 62 80
+SP "packaged soup"     51 41 53 67 37 73 55 34 33 69 43 32 51 27 43 75
+ST "tinned soup"       19 03 11 43 25 12 76 01 01 10 43 17 04 10 02 18
+IP "instant potatoes"  21 02 23 07 09 07 17 05 05 17 39 11 17 08 14 02
+FF "frozen fish"       27 04 11 14 13 26 20 20 15 19 54 51 30 18 23 05
+VF "frozen vegetables" 21 02 05 14 12 23 24 03 11 15 45 42 15 12 07 03
+AF "fresh apples"      81 67 87 83 76 85 76 22 49 79 56 81 61 50 59 57
+OF "fresh oranges"     75 71 84 89 76 94 68 51 42 70 78 72 72 57 77 52
+FT "tinned fruit"      44 09 40 61 42 83 89 08 14 46 53 50 34 22 30 46
+JS "shop jam"          71 46 45 81 57 20 91 16 41 61 75 64 51 37 38 89
+CG "garlic clove"      22 80 88 15 29 91 11 89 51 64 09 11 11 15 86 05
+BR "butter"            91 66 94 31 84 94 95 65 51 82 68 92 63 96 44 97
+ME "margarine"         85 24 47 97 80 94 94 78 72 48 32 91 94 94 51 25
+OO "olive oil"         74 94 36 13 83 84 57 92 28 61 48 30 28 17 91 31
+YT "yogurt"            30 05 57 53 20 31 11 06 13 48 02 11 02 00 16 03
+CD "crispbread"        26 18 03 15 05 24 28 09 11 30 93 34 62 64 13 09

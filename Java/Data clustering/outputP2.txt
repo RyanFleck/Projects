@@ -1,0 +1,771 @@
+	OUTCOME:
+
+
+++++++++++++++
+UNION COMPLETE
+
+Cluster 1 (size=5): U,L,C,I,A,
+Cluster 2 (size=1): B,
+Cluster 3 (size=6): H,G,F,E,J,D,
+Cluster 4 (size=10): V,T,S,R,Q,P,O,N,K,M,
+Cluster 5 (size=4): Z,Y,X,W,
+
+Now test 'find' operations:
+find(A)=find(B)? no
+find(U)=find(A)? yes
+find(J)=find(P)? no
+find(T)=find(M)? yes
+
+
+
+
+
+
+
+
+
+	RAW TERMINAL OUTPUT:
+
+
+[rfleck@rcf-lab RCF_CSI2110_A4_TESTING]$ java PartitionTest2
+Start testing make clusters...
+Cluster 1 (size=1): A,
+Cluster 2 (size=1): B,
+Cluster 3 (size=1): C,
+Cluster 4 (size=1): D,
+Cluster 5 (size=1): E,
+Cluster 6 (size=1): F,
+Cluster 7 (size=1): G,
+Cluster 8 (size=1): H,
+Cluster 9 (size=1): I,
+Cluster 10 (size=1): J,
+Cluster 11 (size=1): K,
+Cluster 12 (size=1): L,
+Cluster 13 (size=1): M,
+Cluster 14 (size=1): N,
+Cluster 15 (size=1): O,
+Cluster 16 (size=1): P,
+Cluster 17 (size=1): Q,
+Cluster 18 (size=1): R,
+Cluster 19 (size=1): S,
+Cluster 20 (size=1): T,
+Cluster 21 (size=1): U,
+Cluster 22 (size=1): V,
+Cluster 23 (size=1): W,
+Cluster 24 (size=1): X,
+Cluster 25 (size=1): Y,
+Cluster 26 (size=1): Z,
+
+Start testing 'union' (will have 6 clusters of sizes 5,1,6,9,1,4)
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is U
+Size of cluster q:1 element is L
+ Assigning long and short clusters... Placing U into L... Done.
+Finding end of short cluster... U.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: A
+DNODE2: B
+DNODE3: C
+DNODE4: D
+DNODE5: E
+DNODE6: F
+DNODE7: G
+DNODE8: H
+DNODE9: I
+DNODE10: J
+DNODE11: K
+DNODE12: UL <INSERTION
+DNODE13: M
+DNODE14: N
+DNODE15: O
+DNODE16: P
+DNODE17: Q
+DNODE18: R
+DNODE19: S
+DNODE20: T <START DELETION
+DNODE21: V <END DELETION
+DNODE22: W
+DNODE23: X
+DNODE24: Y
+DNODE25: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is I
+Size of cluster q:1 element is A
+ Assigning long and short clusters... Placing I into A... Done.
+Finding end of short cluster... I.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: IA <INSERTION
+DNODE2: B
+DNODE3: C
+DNODE4: D
+DNODE5: E
+DNODE6: F
+DNODE7: G
+DNODE8: H <START DELETION
+DNODE9: J <END DELETION
+DNODE10: K
+DNODE11: UL
+DNODE12: M
+DNODE13: N
+DNODE14: O
+DNODE15: P
+DNODE16: Q
+DNODE17: R
+DNODE18: S
+DNODE19: T
+DNODE20: V
+DNODE21: W
+DNODE22: X
+DNODE23: Y
+DNODE24: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is A
+Size of cluster q:1 element is C
+ Assigning long and short clusters... Placing C into A... Done.
+Finding end of short cluster... C.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: CIA <INSERTION
+DNODE2: B <START DELETION
+DNODE3: D <END DELETION
+DNODE4: E
+DNODE5: F
+DNODE6: G
+DNODE7: H
+DNODE8: J
+DNODE9: K
+DNODE10: UL
+DNODE11: M
+DNODE12: N
+DNODE13: O
+DNODE14: P
+DNODE15: Q
+DNODE16: R
+DNODE17: S
+DNODE18: T
+DNODE19: V
+DNODE20: W
+DNODE21: X
+DNODE22: Y
+DNODE23: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is L
+Size of cluster q:3 element is I
+ Assigning long and short clusters... Placing L into I... Done.
+Finding end of short cluster... L.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA <INSERTION
+DNODE2: B
+DNODE3: D
+DNODE4: E
+DNODE5: F
+DNODE6: G
+DNODE7: H
+DNODE8: J
+DNODE9: K <START DELETION
+DNODE10: M <END DELETION
+DNODE11: N
+DNODE12: O
+DNODE13: P
+DNODE14: Q
+DNODE15: R
+DNODE16: S
+DNODE17: T
+DNODE18: V
+DNODE19: W
+DNODE20: X
+DNODE21: Y
+DNODE22: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is J
+Size of cluster q:1 element is D
+ Assigning long and short clusters... Placing J into D... Done.
+Finding end of short cluster... J.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: JD <INSERTION
+DNODE4: E
+DNODE5: F
+DNODE6: G
+DNODE7: H <START DELETION
+DNODE8: K <END DELETION
+DNODE9: M
+DNODE10: N
+DNODE11: O
+DNODE12: P
+DNODE13: Q
+DNODE14: R
+DNODE15: S
+DNODE16: T
+DNODE17: V
+DNODE18: W
+DNODE19: X
+DNODE20: Y
+DNODE21: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is J
+Size of cluster q:1 element is E
+ Assigning long and short clusters... Placing E into J... Done.
+Finding end of short cluster... E.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: EJD <INSERTION <START DELETION
+DNODE4: F <END DELETION
+DNODE5: G
+DNODE6: H
+DNODE7: K
+DNODE8: M
+DNODE9: N
+DNODE10: O
+DNODE11: P
+DNODE12: Q
+DNODE13: R
+DNODE14: S
+DNODE15: T
+DNODE16: V
+DNODE17: W
+DNODE18: X
+DNODE19: Y
+DNODE20: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:3 element is J
+Size of cluster q:1 element is F
+ Assigning long and short clusters... Placing F into J... Done.
+Finding end of short cluster... F.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: FEJD <INSERTION <START DELETION
+DNODE4: G <END DELETION
+DNODE5: H
+DNODE6: K
+DNODE7: M
+DNODE8: N
+DNODE9: O
+DNODE10: P
+DNODE11: Q
+DNODE12: R
+DNODE13: S
+DNODE14: T
+DNODE15: V
+DNODE16: W
+DNODE17: X
+DNODE18: Y
+DNODE19: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:4 element is J
+Size of cluster q:1 element is G
+ Assigning long and short clusters... Placing G into J... Done.
+Finding end of short cluster... G.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: GFEJD <INSERTION <START DELETION
+DNODE4: H <END DELETION
+DNODE5: K
+DNODE6: M
+DNODE7: N
+DNODE8: O
+DNODE9: P
+DNODE10: Q
+DNODE11: R
+DNODE12: S
+DNODE13: T
+DNODE14: V
+DNODE15: W
+DNODE16: X
+DNODE17: Y
+DNODE18: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:5 element is J
+Size of cluster q:1 element is H
+ Assigning long and short clusters... Placing H into J... Done.
+Finding end of short cluster... H.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD <INSERTION <START DELETION
+DNODE4: K <END DELETION
+DNODE5: M
+DNODE6: N
+DNODE7: O
+DNODE8: P
+DNODE9: Q
+DNODE10: R
+DNODE11: S
+DNODE12: T
+DNODE13: V
+DNODE14: W
+DNODE15: X
+DNODE16: Y
+DNODE17: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is K
+Size of cluster q:1 element is M
+ Assigning long and short clusters... Placing K into M... Done.
+Finding end of short cluster... K.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD <START DELETION
+DNODE4: KM <INSERTION <END DELETION
+DNODE5: N
+DNODE6: O
+DNODE7: P
+DNODE8: Q
+DNODE9: R
+DNODE10: S
+DNODE11: T
+DNODE12: V
+DNODE13: W
+DNODE14: X
+DNODE15: Y
+DNODE16: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is K
+Size of cluster q:1 element is N
+ Assigning long and short clusters... Placing N into K... Done.
+Finding end of short cluster... N.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: NKM <INSERTION <START DELETION
+DNODE5: O <END DELETION
+DNODE6: P
+DNODE7: Q
+DNODE8: R
+DNODE9: S
+DNODE10: T
+DNODE11: V
+DNODE12: W
+DNODE13: X
+DNODE14: Y
+DNODE15: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:3 element is K
+Size of cluster q:1 element is O
+ Assigning long and short clusters... Placing O into K... Done.
+Finding end of short cluster... O.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: ONKM <INSERTION <START DELETION
+DNODE5: P <END DELETION
+DNODE6: Q
+DNODE7: R
+DNODE8: S
+DNODE9: T
+DNODE10: V
+DNODE11: W
+DNODE12: X
+DNODE13: Y
+DNODE14: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:4 element is K
+Size of cluster q:1 element is P
+ Assigning long and short clusters... Placing P into K... Done.
+Finding end of short cluster... P.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: PONKM <INSERTION <START DELETION
+DNODE5: Q <END DELETION
+DNODE6: R
+DNODE7: S
+DNODE8: T
+DNODE9: V
+DNODE10: W
+DNODE11: X
+DNODE12: Y
+DNODE13: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:5 element is K
+Size of cluster q:1 element is Q
+ Assigning long and short clusters... Placing Q into K... Done.
+Finding end of short cluster... Q.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: QPONKM <INSERTION <START DELETION
+DNODE5: R <END DELETION
+DNODE6: S
+DNODE7: T
+DNODE8: V
+DNODE9: W
+DNODE10: X
+DNODE11: Y
+DNODE12: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:6 element is K
+Size of cluster q:1 element is R
+ Assigning long and short clusters... Placing R into K... Done.
+Finding end of short cluster... R.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: RQPONKM <INSERTION <START DELETION
+DNODE5: S <END DELETION
+DNODE6: T
+DNODE7: V
+DNODE8: W
+DNODE9: X
+DNODE10: Y
+DNODE11: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:7 element is K
+Size of cluster q:1 element is S
+ Assigning long and short clusters... Placing S into K... Done.
+Finding end of short cluster... S.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: SRQPONKM <INSERTION <START DELETION
+DNODE5: T <END DELETION
+DNODE6: V
+DNODE7: W
+DNODE8: X
+DNODE9: Y
+DNODE10: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:8 element is K
+Size of cluster q:1 element is T
+ Assigning long and short clusters... Placing T into K... Done.
+Finding end of short cluster... T.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: TSRQPONKM <INSERTION <START DELETION
+DNODE5: V <END DELETION
+DNODE6: W
+DNODE7: X
+DNODE8: Y
+DNODE9: Z
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is Z
+Size of cluster q:1 element is Y
+ Assigning long and short clusters... Placing Z into Y... Done.
+Finding end of short cluster... Z.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: TSRQPONKM
+DNODE5: V
+DNODE6: W
+DNODE7: X
+DNODE8: ZY <INSERTION <START DELETION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is X
+Size of cluster q:1 element is W
+ Assigning long and short clusters... Placing X into W... Done.
+Finding end of short cluster... X.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: TSRQPONKM
+DNODE5: V
+DNODE6: XW <INSERTION <START DELETION
+DNODE7: ZY <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is Z
+Size of cluster q:2 element is W
+ Assigning long and short clusters... Placing Z into W... Done.
+Finding end of short cluster... Y.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: TSRQPONKM
+DNODE5: V
+DNODE6: ZYXW <INSERTION <START DELETION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+Cluster 1 (size=5): U,L,C,I,A,
+Cluster 2 (size=1): B,
+Cluster 3 (size=6): H,G,F,E,J,D,
+Cluster 4 (size=9): T,S,R,Q,P,O,N,K,M,
+Cluster 5 (size=1): V,
+Cluster 6 (size=4): Z,Y,X,W,
+
+Now join cluster of V with cluster of Q:
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is V
+Size of cluster q:9 element is Q
+ Assigning long and short clusters... Placing V into Q... Done.
+Finding end of short cluster... V.
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: ULCIA
+DNODE2: B
+DNODE3: HGFEJD
+DNODE4: VTSRQPONKM <INSERTION <START DELETION
+DNODE5: ZYXW <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+Cluster 1 (size=5): U,L,C,I,A,
+Cluster 2 (size=1): B,
+Cluster 3 (size=6): H,G,F,E,J,D,
+Cluster 4 (size=10): V,T,S,R,Q,P,O,N,K,M,
+Cluster 5 (size=4): Z,Y,X,W,
+
+Now test 'find' operations:
+find(A)=find(B)? no
+find(U)=find(A)? yes
+find(J)=find(P)? no
+find(T)=find(M)? yes

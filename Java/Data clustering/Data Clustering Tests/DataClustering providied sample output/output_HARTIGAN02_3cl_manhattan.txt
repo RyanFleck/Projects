@@ -1,0 +1,15 @@
+Clustering data from datasetdataset_HARTIGAN/file02.txt
+Using 3 clusters.
+File description:"Animal Milk Constituent Percentages, Hartigan page 6"
+
+Creating graph
+Initializing Kruskal Algorithms
+Next it will group vertices in 3 clusters.
+before Kruskal Algorithm
+after Kruskal Algorithm
+
+Data was clustered as follows
+Cluster 1 (size=11): v7:Buffalo,v6:Sheep,v9:Fox,v8:Guinea Pig,v10:Pig,v2:Mule,v1:Donkey,v0:Horse,v3:Camel,v4:Llama,v5:Zebra,
+Cluster 2 (size=2): v11:Rabbit,v12:Rat,
+Cluster 3 (size=3): v15:Whale,v13:Deer,v14:Reindeer,
+

@@ -1,0 +1,44 @@
+#  file02.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  A list of animals, and the constituents of their milk.
+#
+#  Name is the animal.
+#
+#  Water is the percentage of water.
+#
+#  Protein is the percentage of protein.
+#
+#  Fat is the percentage of fat.
+#
+#  Lactose is the percentage of lactose.
+#
+"Animal Milk Constituent Percentages, Hartigan page 6"
+5 columns
+16 rows
+"Name"        "Water %"  "Protein %"  "Fat %"  "Lactose %"
+"Horse"       90.1        2.6          1.0     6.9
+"Donkey"      90.3        1.7          1.4     6.2
+"Mule"        90.0        2.0          1.8     5.5
+"Camel"       87.7        3.5          3.4     4.8
+"Llama"       86.5        3.9          3.2     5.6
+"Zebra"       86.2        3.0          4.8     5.3
+"Sheep"       82.0        5.6          6.4     4.7
+"Buffalo"     82.1        5.9          7.9     4.7
+"Guinea Pig"  81.9        7.4          7.2     2.7
+"Fox"         81.6        6.6          5.9     4.9
+"Pig"         82.8        7.1          5.1     3.7
+"Rabbit"      71.3       12.3         13.1     1.9
+"Rat"         72.5        9.2         12.6     3.3
+"Deer"        65.9       10.4         19.7     2.6
+"Reindeer"    64.8       10.7         20.3     2.5
+"Whale"       64.8       11.1         21.2     1.6
+

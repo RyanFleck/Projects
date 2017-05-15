@@ -1,0 +1,87 @@
+#  file19.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Name" is the name of the animal.
+#
+#  "I", "i", "C", "c", "P", "p", "M", "m", is the tooth pattern, the 
+#  number of top incisors, bottom incisors, top canines, bottom canines, 
+#  top premolars, bottom premolars, top molars, and bottom molars.
+#
+"Dentition of Mammals, Hartigan page 170"
+9 columns
+66 rows
+"Name"           "I" "i" "C" "c" "P" "p" "M" "m"
+"Opossum"         5 4 1 1 3 3 4 4
+"Hairy tail mole" 3 3 1 1 4 4 3 3
+"Common mole"     3 2 1 0 3 3 3 3
+"Star nose mole"  3 3 1 1 4 4 3 3
+"Brown bat"       2 3 1 1 3 3 3 3
+"Silver hair bat" 2 3 1 1 2 3 3 3
+"Pigmy bat"       2 3 1 1 2 2 3 3
+"House bat"       2 3 1 1 1 2 3 3
+"Red bat"         1 3 1 1 2 2 3 3
+"Hoary bat"       1 3 1 1 2 2 3 3
+"Lump nose bat"   2 3 1 1 2 3 3 3
+"Armadillo"       0 0 0 0 0 0 8 8
+"Pika"            2 1 0 0 2 2 3 3
+"Snowshoe rabbit" 2 1 0 0 3 2 3 3
+"Beaver"          1 1 0 0 2 1 3 3
+"Marmot"          1 1 0 0 2 1 3 3
+"Groundhog"       1 1 0 0 2 1 3 3
+"Prairie Dog"     1 1 0 0 2 1 3 3
+"Ground Squirrel" 1 1 0 0 2 1 3 3
+"Chipmunk"        1 1 0 0 2 1 3 3
+"Gray squirrel"   1 1 0 0 1 1 3 3
+"Fox squirrel"    1 1 0 0 1 1 3 3
+"Pocket gopher"   1 1 0 0 1 1 3 3
+"Kangaroo rat"    1 1 0 0 1 1 3 3
+"Pack rat"        1 1 0 0 0 0 3 3
+"Field mouse"     1 1 0 0 0 0 3 3
+"Muskrat"         1 1 0 0 0 0 3 3
+"Black rat"       1 1 0 0 0 0 3 3
+"House mouse"     1 1 0 0 0 0 3 3
+"Porcupine"       1 1 0 0 1 1 3 3
+"Guinea pig"      1 1 0 0 1 1 3 3
+"Coyote"          1 3 1 1 4 4 3 3
+"Wolf"            3 3 1 1 4 4 2 3
+"Fox"             3 3 1 1 4 4 2 3
+"Bear"            3 3 1 1 4 4 2 3
+"Civet cat"       3 3 1 1 4 4 2 2
+"Raccoon"         3 3 1 1 4 4 3 2
+"Marten"          3 3 1 1 4 4 1 2
+"Fisher"          3 3 1 1 4 4 1 2
+"Weasel"          3 3 1 1 3 3 1 2
+"Mink"            3 3 1 1 3 3 1 2
+"Ferrer"          3 3 1 1 3 3 1 2
+"Wolverine"       3 3 1 1 4 4 1 2
+"Badger"          3 3 1 1 3 3 1 2
+"Skunk"           3 3 1 1 3 3 1 2
+"River otter"     3 3 1 1 4 3 1 2
+"Sea otter"       3 2 1 1 3 3 1 2
+"Jaguar"          3 3 1 1 3 2 1 1
+"Ocelot"          3 3 1 1 3 2 1 1
+"Cougar"          3 3 1 1 3 2 1 1
+"Lynx"            3 3 1 1 3 2 1 1
+"Fur seal"        3 2 1 1 4 4 1 1
+"Sea lion"        3 2 1 1 4 4 1 1
+"Walrus"          1 0 1 1 3 3 0 0
+"Grey seal"       3 2 1 1 3 3 2 2
+"Elephant seal"   2 1 1 1 4 4 1 1
+"Peccary"         2 3 1 1 3 3 3 3
+"Elk"             0 4 1 0 3 3 3 3
+"Deer"            0 4 0 0 3 3 3 3
+"Moose"           0 4 0 0 3 3 3 3
+"Reindeer"        0 4 1 0 3 3 3 3
+"Antelope"        0 4 0 0 3 3 3 3
+"Bison"           0 4 0 0 3 3 3 3
+"Mountain goat"   0 4 0 0 3 3 3 3
+"Musk ox"         0 4 0 0 3 3 3 3
+"Mountain sheep"  0 4 0 0 3 3 3 3

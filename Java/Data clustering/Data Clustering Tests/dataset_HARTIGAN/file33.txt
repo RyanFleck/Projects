@@ -1,0 +1,65 @@
+#  file33.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Properties of some small hardware items are recorded.
+#
+#  "Name" is the name of the item.
+#
+#  "Th" is Y or N depending on whether the item is threaded.
+#
+#  "Head" describes the head:
+#  F = Flat
+#  U = Cup
+#  O = Cone
+#  R = Round
+#  Y = Cylinder
+#
+#  "HI" reports the head indentation:
+#  N = None
+#  T = Star
+#  L = Slit
+#
+#  "Bot" reports the bottom:
+#  F = flat
+#  S = sharp
+#
+#  "Len" reports the length in inches.
+#
+#  "Brass" is Y if the object is brass, and N otherwise.
+#
+"Nails and Screws, Hartigan page 228"
+7 columns
+24 rows
+"Name"     "Th" "H"  "HI"  "Bot"  "Len"  "Brass"
+"Tack"     N  F  N  S  1  N
+"Nail 1"   N  F  N  S  4  N
+"Nail 2"   N  F  N  S  2  N
+"Nail 3"   N  F  N  S  2  N
+"Nail 4"   N  F  N  S  2  N
+"Nail 5"   N  F  N  S  2  N
+"Nail 6"   N  U  N  S  5  N
+"Nail 7"   N  U  N  S  3  N
+"Nail 8"   N  U  N  S  3  N
+"Screw 1"  Y  O  T  S  5  N
+"Screw 2"  Y  R  L  S  4  N
+"Screw 3"  Y  Y  L  S  4  N
+"Screw 4"  Y  R  L  S  2  N
+"Screw 5"  Y  Y  L  S  2  N
+"Bolt 1"   Y  R  L  F  4  N
+"Bolt 2"   Y  O  L  F  1  N
+"Bolt 3"   Y  Y  L  F  1  N
+"Bolt 4"   Y  Y  L  F  1  N
+"Bolt 5"   Y  Y  L  F  1  N
+"Bolt 6"   Y  Y  L  F  1  N
+"Tack 1"   N  F  N  S  1  Y
+"Tack 2"   N  F  N  S  1  Y
+"Nail B"   N  F  N  S  1  Y
+"Screw B"  Y  O  L  S  1  Y

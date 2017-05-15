@@ -1,0 +1,52 @@
+#  file08.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The reading and arithmetic scores for fourth and sixth grades were
+#  tabulated.  The score represents the measured level, in years of
+#  school.  Thus a reading level of 4.6 records someone somewhere
+#  between the level of a 4th and 4th grader.
+#
+#  School is the name of the school.
+#
+#  "4R" and "4A" are the reading and arithmetic scores for the fourth grade.
+#
+#  "6R" and "6A" are the reading and arithmetic scores for the sixth grade.
+#
+"Achievement Test Scores, New Haven Schools, Hartigan page 118"
+5 columns
+25 rows
+"School"           "4R"  "4A"  "6R"  "6A"
+"Baldwin"          2.7   3.2   4.5   4.8
+"Barnard"          3.9   3.8   5.9   6.2
+"Beecher"          4.8   4.1   6.8   5.5
+"Brennan"          3.1   3.5   4.3   4.6
+"Clinton"          3.4   3.7   5.1   5.6
+"Conte"            3.1   3.4   4.1   4.7
+"Davis"            4.6   4.4   6.6   6.1
+"Day"              3.1   3.3   4.0   4.9
+"Dwight"           3.8   3.7   4.7   4.9
+"Edgewood"         5.2   4.9   8.2   6.9
+"Edwards"          3.9   3.8   5.2   5.4
+"Hale"             4.1   4.0   5.6   5.6
+"Hooker"           5.7   5.1   7.0   6.3
+"Ivy"              3.0   3.2   4.5   5.0
+"Kimberly"         2.9   3.3   4.5   5.1
+"Lincoln Bassett"  3.4   3.3   4.4   5.0
+"Lovell"           4.0   4.2   5.2   5.4
+"Prince"           3.0   3.0   4.6   5.0
+"Ross"             4.0   4.1   5.9   5.8
+"Scranton"         3.0   3.2   4.4   5.1
+"Sherman"          3.6   3.6   5.3   5.4
+"Truman"           3.1   3.2   4.6   5.0
+"West Hills"       3.2   3.3   5.4   5.3
+"Winchester"       3.0   3.4   4.2   4.7
+"Woodward"         3.8   4.0   6.9   6.7
+

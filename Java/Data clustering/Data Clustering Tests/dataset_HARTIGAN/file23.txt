@@ -1,0 +1,26 @@
+#  file23.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Frequencies with which a pair is judged more highly related
+#  than other pairs, over many triads and subjects.
+#
+#  (The precise meaning of this data eludes me.)
+#
+"Relatedness Values in The Boy Has Lost A Dollar, Hartigan page 184"
+7 columns
+6 rows
+"*"     "the" "boy" "has" "lost" "a" "dollar"
+"the"    0.00 0.99 0.43 0.29 0.19 0.16
+"boy"    0.99 0.00 0.63 0.61 0.16 0.31
+"has"    0.43 0.63 0.00 0.86 0.31 0.40
+"lost"   0.29 0.61 0.86 0.00 0.41 0.70
+"a"      0.19 0.16 0.31 0.41 0.00 0.94
+"dollar" 0.16 0.31 0.40 0.70 0.94 0.00

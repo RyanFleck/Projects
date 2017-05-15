@@ -1,0 +1,33 @@
+#  file17.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Name" is the two letter code and name of the animal;
+#
+#  "1", "2", "3", "4", "5", "6", "7", "8", "9" are 1 if
+#  the animal is included in cluster 1, and 0 otherwise.
+#
+"Clusters of Animals Forming a Tree, Hartigan page 155"
+10 columns
+13 rows
+"Name"        "1" "2" "3" "4" "5" "6" "7" "8" "9"
+"HN Human"     1   1   0   0   0   1   0   0   1
+"WE Whale"     1   1   0   0   0   1   1   0   0
+"CN Chicken"   1   1   1   1   1   0   0   0   0
+"BG Bullfrog"  1   0   0   0   0   0   0   0   0
+"MY Monkey"    1   1   0   0   0   1   0   0   1
+"DG Dog"       1   1   0   0   0   1   1   0   0
+"PN Penguin"   1   1   1   1   1   0   0   0   0
+"HE Horse"     1   1   0   0   0   1   1   1   0
+"RT Rabbit"    1   1   0   0   0   1   0   0   0
+"DK Duck"      1   1   1   1   0   0   0   0   0
+"PG Pig"       1   1   0   0   0   1   1   1   0
+"KO Kangaroo"  1   1   0   0   0   1   0   0   0
+"TE Turtle"    1   1   1   0   0   0   0   0   0

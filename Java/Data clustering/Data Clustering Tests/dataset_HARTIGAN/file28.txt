@@ -1,0 +1,74 @@
+#  file28.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Code" is the state code.
+#
+#  "Name" is the full name of the state.
+#
+#  "#" is the number of neighbors.
+#
+#  "N1", "N2" "N3", "N4", "N5", "N6", "N7", "N8" are the codes of 
+#  the neighbors of the state, or blanks if there are no more.
+#
+"Links Between States, Hartigan page 207"
+11 columns
+50 rows
+"Code"  "Name"          "#" "N1" "N2" "N3" "N4" "N5" "N6" "N7" "N8"
+"AL"    "Alabama"        4  FL GA MS TN
+"AK"    "Alaska"         0
+"AZ"    "Arizona"        4  CA NM NV UT
+"AR"    "Arkansas"       6  LA MS TX OK MO TN
+"CA"    "California"     3  OR AZ NV
+"CO"    "Colorado"       6  NM UT WY KS OK NB
+"CT"    "Connecticut"    3  NY MA RI
+"DE"    "Delaware"       3  NJ PA MD
+"FL"    "Florida"        2  GA AL
+"GA"    "Georgia"        5  FL AL TX NC SC
+"HI"    "Hawaii"         0
+"ID"    "Idaho"          6  UT NV OR WA MT WY
+"IL"    "Illinois"       5  IA WI IN KY MO
+"IN"    "Indiana"        4  IL MI OH KY
+"IA"    "Iowa"           6  NB MO IL WI MN SD
+"KS"    "Kansas"         4  MO OK CO NB
+"KY"    "Kentucky"       7  TN MO IL IN OH WV VA
+"LA"    "Louisiana"      3  AR MS TX
+"ME"    "Maine"          1  NH
+"MD"    "Maryland"       4  VA WV PA DE
+"MA"    "Massachusetts"  5  RI CT NY VT NH
+"MI"    "Michigan"       3  WI IN OH
+"MN"    "Minnesota"      4  ND SD IA WI
+"MS"    "Mississippi"    4  LA AR TN AL
+"MO"    "Missouri"       8  IL TN AR OK KS NB IA KY
+"MT"    "Montana"        4  ND SD ID WY
+"NE"    "Nebraska"       6  CO WY SD IA MO KS
+"NV"    "Nevada"         5  CA OR ID UT AZ
+"NH"    "New Hampshire"  3  VT ME MA
+"NJ"    "New Jersey"     3  DE PA NY
+"NM"    "New Mexico"     4  TX OK CO AZ
+"NY"    "New York"       5  PA VT MA CT NJ
+"NC"    "North Carolina" 4  SC GA TN VA
+"ND"    "North Dakota"   3  MT SD MN
+"OH"    "Ohio"           5  IN MI PA WV KY
+"OK"    "Oklahoma"       6  TX NM CO KS MO AR
+"OR"    "Oregon"         4  WA ID NV CA
+"PA"    "Pennsylvania"   6  NJ DE MD OH NY WV
+"RI"    "Rhode Island"   2  CT MA
+"SC"    "South Carolina" 2  GA NC
+"SD"    "South Dakota"   6  NB WY MT ND MN IA
+"TN"    "Tennessee"      8  MS AR KY VA NC GA AL MO
+"TX"    "Texas"          4  NM OK AR LA
+"UT"    "Utah"           5  AZ NV ID WY CO
+"VT"    "Vermont"        3  NY MA NH
+"VA"    "Virginia"       5  KY WV MD TN NC
+"WA"    "Washington"     2  OR ID
+"WV"    "West Virginia"  5  VA KY OH PA MD
+"WI"    "Wisconsin"      4  IA MN MI IL
+"WY"    "Wyoming"        6  CO UT ID MT SD NB

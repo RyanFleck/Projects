@@ -1,0 +1,45 @@
+#  file48.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Country" is the country.
+#
+#  The following columns are the votes on 10 items.
+#  Y means Yes;
+#  N means No;
+#  A means abstain.
+#
+"Selected Votes in the United Nations (1969-1970), Hartigan page 306"
+11 columns
+23 rows
+"Country"        1  2  3  4  5  6  7  8  9 10
+"Canada"         N  A  Y  A  N  A  A  Y  Y  Y
+"Cuba"           Y  A  N  Y  Y  N  Y  A  N  N
+"Mexico"         N  Y  Y  N  N  Y  Y  A  A  Y
+"United Kingdom" N  N  Y  Y  N  A  N  A  Y  Y
+"Netherlands"    N  N  Y  A  N  Y  A  A  Y  Y
+"France"         N  A  N  Y  A  N  A  A  Y  Y
+"Spain"          N  A  Y  N  Y  Y  A  A  A  Y
+"Portugal"       A  N  A  A  A  A  N  N  Y  Y
+"Poland"         Y  Y  N  Y  A  N  Y  Y  A  A
+"Austria"        N  A  A  A  A  A  A  Y  Y  Y
+"Hungary"        Y  Y  N  Y  Y  N  Y  Y  A  A
+"Czechoslovakia" Y  Y  N  Y  A  N  Y  Y  A  A
+"ItalY"          N  A  Y  N  N  Y  A  A  Y  Y
+"Bulgaria"       Y  Y  N  Y  Y  N  Y  Y  A  A
+"Romania"        Y  Y  N  Y  Y  N  Y  Y  A  A
+"USSR"           Y  Y  N  Y  A  N  Y  Y  A  A
+"Finland"        A  A  N  Y  A  N  A  Y  Y  Y
+"Gambia"         N  A  Y  N  A  N  A  A  A  A
+"Mali"           A  Y  N  Y  Y  N  A  Y  N  N
+"Senegal"        A  Y  Y  A  A  A  Y  Y  N  N
+"Dahomey"        A  Y  Y  N  Y  N  Y  Y  N  N
+"Nigeria"        N  Y  Y  N  Y  N  Y  Y  N  N
+"Ivory Coast"    N  Y  Y  N  Y  N  Y  Y  A  A

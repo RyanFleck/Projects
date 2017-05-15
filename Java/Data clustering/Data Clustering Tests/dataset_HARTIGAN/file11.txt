@@ -1,0 +1,35 @@
+#  file11.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Data about the planets was recorded.
+#
+#  "Name" is the name of the planet.
+#
+#  "Distance" is its distance from the sun in thousands of miles.
+#
+#  "Diameter" is its diameter in miles.
+#
+#  "Period" is the period of its orbit in HOURS.
+#
+#  "Mass" is the mass, relative to the earth.
+#
+"Achievement Test Scores, New Haven Schools, Hartigan page 122"
+5 columns
+9 rows
+"Name"    "Distance"  "Diameter"  "Period" "Mass"
+"Mercury"   35950      3100          2112    0.054
+"Venus"     67180      7700          5393    0.81
+"Earth"     92900      7927          8766    1.00
+"Mars"     141500      4190         16488    0.11
+"Jupiter"  483200     88640        103911  316.94
+"Saturn"   886000     74100        258420   95.20
+"Uranus"  1782000     32000       1445400   17.20
+"Pluto"   3670000         ?       2172480       ?

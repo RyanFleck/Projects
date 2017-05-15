@@ -1,0 +1,21 @@
+UNTITLED LOGGING RPG 0.0.2
+Filename: ryan.txt
+Level 0 character for Ryan has been generated.
+
+
+Your quest, Ryan of the Northern Isles, begins on a dark night on a dark, frothing sea.
+The wind whips your hair about your face and you desperately try to keep your tiny vessel afloat.
+A bolt of lightning and boom of thunder illuminate land ahead, but your hopes are quickly dashed as a huge wave rises ahead.
+You are pulled under, and the world goes dark...
+On your LEFT is a door marked The Miserable Hall of Horror.
+On your RIGHT is a door marked The Kinda Okay Cavern of Death.
+At your BACK is a crumbled archway and a locked door...
+There is no way to go but forward.
+You enter The Miserable Hall of Horror.
+You enter The Mildly Uncomfortable Hall of Fear.
+You enter The Weird Room of Lies.
+You enter The Kinda Okay Closet of Lawn Gnomes.
+You enter The Weird Room of Lies.
+You enter The Mildly Uncomfortable Hall of Fear.
+You enter The Miserable Ballroom of Horror.
+You enter The Mildly Uncomfortable Closet of Discarded Starbucks Cups.

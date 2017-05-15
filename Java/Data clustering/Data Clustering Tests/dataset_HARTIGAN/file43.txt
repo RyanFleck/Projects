@@ -1,0 +1,47 @@
+#  file43.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The oxidation-fermentation of various carbohydrates is used
+#  in differentiating various strains of yeast in the species Candida.
+#
+#  "Name" is the name of the strain.
+#
+#  Columns 2 through 13 list the carbohydrates:
+#
+#  01: Glucose
+#  02: Maltose
+#  03: Sucrose
+#  04: Lactose
+#  05: Galactose
+#  06: Melibiose
+#  07: Cellobiose
+#  08: Inositol
+#  09: Xylose
+#  10: Raffinose
+#  11: Trehalose
+#  12: Dulcitol
+#
+#  In columns 2 through 13, 
+#  "+" means oxidative production of acid
+#  "-" means no acid production.
+#
+"Oxidation-Fermentation Patterns in Species of Candida, Hartigan page 279"
+13 columns
+8 rows
+Name                  01 02 03 04 05 06 07 08 09 10 11 12
+"C. Albicans"          +  +  +  -  +  -  -  -  -  -  +  -
+"C. Tropicalis"        +  +  +  -  +  -  +  -  +  -  +  -
+"C. Krusei"            +  -  -  -  -  -  -  -  -  -  -  -
+"C. Parapsilosis"      +  +  +  -  +  -  -  -  +  -  +  -
+"C. Guillermondii"     +  +  +  -  +  +  +  -  +  +  +  +
+"C. Stellatoidea"      +  +  -  -  +  -  -  -  +  -  +  -
+"C. Pseudotropicalis"  +  -  +  +  +  -  +  -  +  +  -  -
+"C. Vini"              +  -  -  -  -  -  -  -  -  -  -  -

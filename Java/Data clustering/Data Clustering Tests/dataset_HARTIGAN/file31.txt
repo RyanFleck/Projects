@@ -1,0 +1,54 @@
+#  file31.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Ivy League Football Scores for the first half of the 1965 season
+#  were recorded.  Only 8 teams are thoroughly tracked.
+#
+#  Codes for the teams are:
+#
+#  BN  Brown
+#  BL  Bucknell
+#  CE  Colgate
+#  CT  Connecticut
+#  CA  Columbia
+#  CL  Cornell
+#  DH  Dartmouth
+#  HD  Harvard
+#  NH  New Hampshire
+#  HC  Holy Cross
+#  LE  Lafayette
+#  LH  Lehigh
+#  PA  Pennsylvania
+#  PN  Princeton
+#  RI  Rhode Island
+#  RS  Rutgers
+#  TS  Tufts
+#  YE  Yale
+#
+#  "T0" is the home team.
+#
+#  "H1", "O1" and "T1" are the home team score, the opponent team score,
+#  and the opponent team's code for game 1.
+#
+#  Similar statistics are given for games 2, 3, 4 and 5.
+#
+"Ivy League Football, Hartigan page 217"
+"T0" "H1" "O1" "T1" "H2" "O2" "T2" "H3" "O3" "T3" "H4" "O4" "T4" "H5" "O5" "T5"
+16 columns
+8 rows
+BN  06  14  RI   0  07  PA  00  03  YE  09  35  DH  06  00  CE
+CA  00  14  LE  00  31  PN  06  21  HD  21  07  YE  12  07  RS
+CL  00  00  CE  49  13  LH  27  36  PN  03  03  HD  14  24  YE
+DH  56  06  NH  27  06  HC  24  19  PA  35  09  BN  14  00  HD
+HD  17  07  HC  33  00  TS  21  06  CA  03  03  CL  00  14  DH
+PA  20  14  LH  07  00  BN  19  24  DH  16  13  BL  00  51  PN
+PN  32  06  RS  31  00  CA  36  27  CL  27  00  CE  51  00  PA
+YE  06  13  CT  00  07  CE  03  00  BN  07  21  CA  24  14  CL

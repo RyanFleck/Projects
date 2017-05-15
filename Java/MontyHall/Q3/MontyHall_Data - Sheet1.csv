@@ -1,0 +1,9 @@
+Number of games,10000,,
+Number of doors,3,,
+,Win,Loss,
+Staying strategy,3291,6709,
+Switching strategy,6709,3291,
+,Selected doors,Winning doors,Open doors
+Door 1,3289,3338,3409
+Door 2,3312,3347,3333
+Door 3,3399,3315,3258

@@ -1,0 +1,16 @@
+A note on why the rom isn't here:
+
+1- I couldn't find it. I wipe my OS often, and apparently it wasn't worth preserving.
+2- It would have been ~400mb anyways.
+3- I can outline what I changed in this file:
+
+Essentially, the ROM was a modified version of the AOSP ROM.
+
+I followed some guides to make it compatible with all of the components of a nexus 5.
+
+The only other modifications I made were:
+-Undervolting and underclocking to save power.
+-Used Tasker to run scripts every 30 seconds.
+-Themed the rom.
+
+

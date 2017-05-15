@@ -1,0 +1,56 @@
+#  file24.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Model" is the typewriter model.
+#
+#  "HT", "WH", "DH" and "WT" are the height, width and depth in inches, and the
+#  weight in pounds.
+#
+#  "PL" is the platen length in inches.
+#
+#  "KS" is the number of keys.
+#
+#  "PE", "TA", "TP", "PR" is 0 or 1 depending on the existence of Pica or Elite,
+#  a TAB key, touch pressure control, and platen release.
+#
+#  "HH", "VH", "PI", "PG" and "PB" are 0 or 1 depending on the existence of
+#  horizontal half spacing, vertical half spacing, page end indicator, paper
+#  guide, and paper bail.
+#
+#  "PS", "EP", "TC", "MR" and "CL" are 0 or 1 depending on the existence of
+#  paper support, erasure plate, two carriage releases, margin release,
+#  and carriage lock.
+#
+"Portable Typewriters, Hartigan page 186"
+21 columns
+20 rows
+"Model" "HT" "WH" "DH" "WT" "PL" "KS" "PE" "TA" "TP" "PR" "HH" "VH" "PI" "PG" "PB" "PS" "EP" "TC" "MR" "CL"
+"Olympia 10"       15.75  15.00  7.75  21.00  19.38  44  1 1 1 1 1 1 1 1 1 1 1 0 0 1
+"Olympia 13"       16.00  19.00  8.00  25.50  13.25  44  1 1 1 1 1 1 1 1 1 1 1 1 0 1
+"Smith Corona 12"  14.50  17.75  6.00  19.50  11.88  44  1 1 1 1 1 0 1 1 1 1 1 1 0 0
+"Sears 12"         14.50  17.75  6.00  19.50  11.88  44  1 1 1 1 1 1 1 1 1 1 1 1 0 0
+"Hermes 3000"      14.25  13.25  6.00  17.00   9.75  44  1 1 1 1 1 1 1 1 1 1 1 1 1 1
+"Wards 510"        14.75  16.25  6.50  19.50   9.88  44  1 1 1 1 1 1 0 1 0 0 1 1 1 1
+"Wards 513"        15.00  19.25  6.50  21.00  12.88  44  1 1 1 1 1 1 0 1 0 0 1 1 1 1
+"Smith Corona ST"  14.50  15.00  6.00  17.50   9.13  44  1 1 1 1 0 0 1 1 1 1 1 1 0 0
+"Royal Safari"     15.25  16.75  6.75  17.50  10.00  44  1 1 1 1 1 1 0 1 0 0 1 1 0 0
+"Facit"            14.75  17.00  5.50  18.00   9.88  44  1 1 1 1 1 1 0 1 1 1 1 1 0 1
+"Brother 900"      14.75  16.25  6.50  19.50  12.88  44  1 1 1 1 1 1 0 1 0 0 1 1 1 1
+"Brother 905"      15.00  19.25  6.50  21.00   9.38  44  1 1 1 1 1 1 0 1 0 0 1 1 1 1
+"Olympia"          12.75  12.50  3.50  12.00   9.13  44  1 0 1 0 1 1 0 0 1 1 1 0 1 1
+"Wards 440T"       14.00  17.25  5.50  15.00   9.75  44  1 1 1 1 1 1 0 1 1 1 1 0 1 1
+"Olivetti 44"      17.25  14.75  7.50  21.00   9.75  43  1 1 1 1 1 1 0 1 1 1 1 1 0 1
+"Olivetti 21"      17.50  14.75  6.50  21.50   9.38  43  1 1 1 1 1 1 0 1 1 1 1 1 0 1
+"Remington II"     15.50  15.00  7.75  20.50   9.63  44  1 1 0 1 1 1 1 1 1 1 1 1 0 1
+"Olivetti 32"      14.25  12.00  4.25  11.50   9.00  43  1 1 1 1 1 1 0 0 1 1 0 1 0 1
+"Remington 1040"   14.75  13.75  6.25  14.50   9.25  43  1 1 1 1 1 1 0 1 1 0 1 1 0 1
+"Brother 885"      13.00  12.75  4.00  11.00   9.13  44  1 0 1 0 1 1 0 0 1 1 1 0 1 1
+

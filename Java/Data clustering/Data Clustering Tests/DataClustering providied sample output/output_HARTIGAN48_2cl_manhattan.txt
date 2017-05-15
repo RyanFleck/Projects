@@ -1,0 +1,14 @@
+Clustering data from datasetdataset_HARTIGAN/file48.txt
+Using 2 clusters.
+File description:"Selected Votes in the United Nations (1969-1970), Hartigan page 306"
+
+Creating graph
+Initializing Kruskal Algorithms
+Next it will group vertices in 2 clusters.
+before Kruskal Algorithm
+after Kruskal Algorithm
+
+Data was clustered as follows
+Cluster 1 (size=11): v16:Finland,v5:France,v7:Portugal,v2:Mexico,v9:Austria,v0:Canada,v3:United Kingdom,v17:Gambia,v6:Spain,v4:Netherlands,v12:ItalY,
+Cluster 2 (size=12): v1:Cuba,v18:Mali,v19:Senegal,v21:Nigeria,v20:Dahomey,v22:Ivory Coast,v11:Czechoslovakia,v8:Poland,v15:USSR,v14:Romania,v10:Hungary,v13:Bulgaria,
+

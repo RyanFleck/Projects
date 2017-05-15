@@ -1,0 +1,47 @@
+#  file15.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Date" is the date of observation.
+#
+#  "01" through "17" are identifiers for the 17 vervets.
+#
+#  "A" through "F" are used to identify sleeping groups.  In other
+#  words, for a particular date, all the vervets with the letter "A"
+#  slept in one group, all those with the letter "B" slept in another
+#  group and so on.  The value "-" indicates that the vervet was
+#  not observed.  
+#
+"Vervet Sleeping Groups, Hartigan page 149"
+18 columns
+22 rows
+"Date" "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12" "13" "14" "15" "16" "17"
+"04/01/64" A D A B A E E E C C C A B A B - -
+"30/01/64" B B B B B A A A A A B B B B B B -
+"05/02/64" B A C A A D D D D D A A A A A A D
+"10/02/64" A B B D B D D D C C A D A A D D D
+"24/02/64" B B B B B B B B B B A A B B B A B
+"25/02/64" A B A B B B B B B B A B B B B B B
+"10/03/64" C C B C C C C C C A B B B C C B C
+"20/03/64" B B A B B B B B B B A A B B B A B
+"01/04/64" D C A D D D D D B A B C A D D C D
+"02/04/64" D A D C D D D D B D B A B C C A D
+"05/04/64" A A C E D B E E E C E E E E E E B
+"07/04/64" C C B A C B C B A B A B A A A B B
+"18/04/64" C D B A C C C C A A B B C A A B C
+"28/04/64" A - A D A D D D A A C B A D D B D
+"01/05/64" B - D A C C C C A A B B C A A B C
+"05/05/64" D - C B F A E E E E D C E B B C A
+"10/05/64" B - B E B D D D A F A C A B E C D
+"12/05/64" D - B D D E E E B B C A B D D A E
+"20/05/64" A - B D C C C C A C A C D C D C C
+"22/05/64" E - B F F A A A C G C D F F F D A
+"02/06/64" C - D C C E E E C C B A C E C A E
+"05/06/64" A - D C A D D A D A B A C A C A D

@@ -1,0 +1,59 @@
+#  file32.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The results of a 31 question survey are reported.
+#
+#  "Q#" is the question number.
+#
+#  "Qtext" is the text of the question.
+#
+#  "S1" through "S8" are the responses of 8 students, with 
+#  1 = strongly disagree
+#  2 = disagree
+#  3 = neutral
+#  4 = agree
+#  5 = strongly agree
+#
+"Questionnaire about Data Analysis Course, Hartigan page 224"
+10 columns
+31 rows
+"Q#"  "Qtext"  "S1" "S2" "S3" "S4" "S5" "S6" "S7" "S8"
+01  "I learned a lot"                                               4 5 4 5 4 5 4 5
+02  "Statisticians can get along without most of this stuff."       4 1 2 1 3 2 2 2
+03  "If I had know what it was like I wouldn't have taken it."      1 1 3 1 4 1 1 4
+04  "The course should be given before consulting work."            5 3 2 4 4 5 4 5
+05  "I think I will be able to use most of the material."           4 4 4 4 4 5 4 4
+06  "The course was interesting"                                    5 5 4 4 4 5 5 4
+07  "I was thrown into the computer without preparation."           4 1 2 3 3 3 1 2
+08  "A working knowledge of FORTRAN should be a prerequisite."      4 5 4 2 3 4 5 3
+09  "More emphasis should be placed on complete packages."          3 2 3 1 3 3 2 2
+10  "My mathematical background was sufficient."                    5 5 4 5 3 5 5 4
+11  "I didn't know enough statistical theory to understand."        2 1 2 1 4 2 1 2
+12  "Too much was assumed about elementary data analysis."          3 2 2 2 4 2 2 2
+13  "I was adequately prepared."                                    3 5 4 3 2 4 5 3
+14  "I had to do too much work myself."                             3 3 5 2 1 2 1 3
+15  "I spent to much time at the Computer Center fiddling."         4 5 5 4 1 4 1 3
+16  "The computing was more fun than the statistics."               3 4 3 3 5 5 1 3
+17  "There weren't enough interesting data sets."                   3 4 5 4 3 4 2 4
+18  "There should be more packaged programs."                       3 2 3 1 4 4 2 2
+19  "I want to write my own subroutines."                           4 4 1 2 2 2 3 4
+20  "We shouldn't waste a session on student projects."             1 1 4 2 2 2 1 3
+21  "I would prefer not to have my work criticized in public."      1 1 3 2 1 2 1 2
+22  "The level of student participation is about right."            4 4 1 4 3 4 3 3
+23  "We went through too much, too fast, to grasp anything."        4 5 4 4 5 4 1 2
+24  "I want more correlations and factor analysis."                 4 2 3 4 4 4 2 3
+25  "We spent too much time on clustering."                         3 2 4 2 4 4 2 2
+26  "We should consider only real variables, let 0-1 category go."  3 4 4 2 1 2 1 3
+27  "We need to discuss time series."                               4 3 3 4 1 4 4 4
+28  "Too much emphasis on trivial data analysis like plots."        2 2 4 4 1 2 2 2
+29  "More time on regression and analysis of variance."             4 4 2 3 1 5 3 4
+30  "A more mathematical treatment, please."                        3 4 4 3 4 4 3 4
+31  "The course content was about right."                           4 4 4 3 4 4 4 4

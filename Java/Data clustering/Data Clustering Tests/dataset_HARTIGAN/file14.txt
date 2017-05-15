@@ -1,0 +1,41 @@
+#  file14.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Wines were rated by type and year.
+#
+#  "Code" is a two letter code for the wine.
+#
+#  "Name" is the name of the wine.
+#
+#  "61", "62", "63", "64", "65", "66", "67", "68", "69", and "70"
+#  are the ratings for the wine in each year.  The rating values
+#  are "D" for disastrous, "P" for poor, "A" for average,
+#  "G" for good, "E" for excellent, and "-" for unavailable.
+#
+"Evaluation of Wines 1961-1970, Hartigan page 144"
+12 columns
+15 rows
+"Code" "Name" "61" "62" "63" "64" "65" "66" "67" "68" "69" "70"
+"MG"   "Medoc and Graves"           E G P G D G G P A G
+"EP"   "Saint Emilion and Pomerol"  E A P G P G G P A G
+"SS"   "Sauternes"                  G G D D D A G P G G
+"GS"   "Graves"                     G G D G D G G P G G
+"RB"   "Red Burgundy"               E G A G P G A D G G
+"CB"   "Cote de Beaune"             E G A G A G G A G G
+"CS"   "Chablis"                    E G A G P G G A G G
+"BS"   "Beaujolais"                 E G P G D G A P G G
+"RN"   "Red Rhone North"            E G P G A G G A G G
+"RS"   "Red Rhone South"            G A P G A A G A G G
+"WL"   "White Loire"                A P P G P A G G G G
+"AE"   "Alsace"                     G A P E P G G P G G
+"RE"   "Rhine"                      G A P G P G G P G G
+"ME"   "Moselle"                    G A P E P G G P G G
+"CA"   "California"                 - - - P G A G G A G

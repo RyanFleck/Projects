@@ -1,0 +1,65 @@
+#  file35.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "#" is the index of the insect group.
+#
+#  "Code" lists the status of cerci for the group.
+#  A: No cerci
+#  S: Segmented cerci
+#  U: Unsegmented cerci
+#
+#  "Name" is a descriptive name for the group.
+#
+#  "Parent" is the index of the larger group containing this group.  
+#   The "Root" group is listed with a parent of 0.
+# 
+"Presence of Cerci (Tail Appendages) in Insects, Hartigan page 234"
+4 columns
+18 rows
+"#" "Code" "Name" "Parent"
+01 "S"   "Thysanura (Bristle tail)"    36
+02 "S"   "Diplura"                     36
+03 "A"   "Protura"                     36
+04 "A"   "Collembola (Spring tail)"    36
+05 "S"   "Ephemeroptera (May flies)"   30
+06 "A"   "Odonodata (Dragon flies)"    30
+07 "S"   "Plecoptera (Stoneflies)"     31
+08 "S"   "Grylloblattodea"             31
+09 "U"   "Orthoptera (grasshoppers)"   31
+10 "U"   "Phasmida (stick insect)"     31
+11 "U"   "Dermaptera (earwig)"         31
+12 "S"   "Embioptera"                  31
+13 "S"   "Dictyoptera (cockroaches)"   31
+14 "U"   "Isoptera (termites)"         31
+15 "U"   "Zoraptera"                   31
+16 "A"   "Psocoptera (book lice)"      32
+17 "A"   "Mallophaga (bird lice)"      32
+18 "A"   "Siphunculata (sucking lice)" 32
+19 "A"   "Hemiptera (plant lice)"      32
+20 "A"   "Thysanoptera (thrips)"       32
+21 "A"   "Neuroptera (lacewings)"      33
+22 "A"   "Mecoptera (scorpion flies)"  33
+23 "A"   "Lepidoptera (butterflies)"   33
+24 "A"   "Trichoptera (Caddis flies)"  33
+25 "A"   "Diptera (true flies)"        33
+26 "A"   "Siphonaptera (fleas)"        33
+27 "A"   "Hymenoptera (ants)"          35
+28 "A"   "Coleoptera (beetles)"        35
+29 "A"   "Strepsiptera"                35
+30 "AS"  "Palaeopteran"                34
+31 "SU"  "Orthopteroid"                34
+32 "A"   "Hemipteroid"                 34
+33 "A"   "Panorpoid"                   35
+34 "ASU" "Exopterygota"                37
+35 "A"   "Endopterygota"               37
+36 "AS"  "Apterygota"                  38
+37 "ASU" "Pterygota"                   38
+38 "ASU" "Root"                         0

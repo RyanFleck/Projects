@@ -1,0 +1,64 @@
+#  file37.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Bill Sponsor Title
+#
+#   1   Aspinall  Authorize Biscayne National Monument in Florida
+#   2   Perkins   Promote health and safety in building trades
+#   3   Patman    Sr extend 2 years auth. reg. interest and dividend rates
+#   4   Dingell   Rel Dev fish protein concentrate
+#   5   Perkins   Establish commission on Negro history and culture
+#   6   Aspinall  Designate parts of Morris City, NJ, as wilderness
+#   7   Udall     Provide overtime and standby pay for transportation department
+#   8   Edwards   Amend bill for relief of sundry claimants
+#   9   Gross     Amend omnibus claims bill
+#  10   Gross     Strike title 8 of omnibus claims bill
+#  11   Hall      Strike title 9 of omnibus claims bill
+#  12   Gross     Strike title 10 of omnibus claims bill
+#  13   Hall      Strike title 11 of omnibus claims bill
+#  14   Talcott   Strike title 14 of omnibus claims bill
+#  15   Poage     Take FD and AG ACT AMD SPKRS TBLE AGREE S CONF
+# 
+#  For each of 15 bills, the behavior of certain congressmen is recorded.
+#
+#  The possible behaviors are:
+#  1: yes
+#  2: pair yes
+#  3: announced yes
+#  4: announced no
+#  5: pair no
+#  6: no
+#  7: general pair
+#  8: abstain
+#  9: absent
+#  0: sponsor absent
+#
+"Congressmen by Bills (90th Congress), Hartigan page 242"
+16 columns
+17 rows
+"Name"      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+"Abernethy" 1 1 6 1 1 6 1 1 1  6  1  6  1  1  1
+"Albert"    1 1 1 1 1 1 1 1 6  6  6  6  6  6  6
+"Widnall"   1 1 1 1 7 1 7 7 9  9  9  9  9  9  9
+"Andrews"   1 1 6 1 1 6 6 1 1  6  1  1  6  1  1
+"Arends"    1 6 6 1 6 1 1 1 1  1  1  6  1  6  1
+"Wilson"    1 5 7 1 7 1 7 1 9  9  9  9  9  9  9
+"Ashmore"   7 7 5 1 1 7 7 7 9  9  9  9  9  9  9
+"Aspinall"  1 1 1 1 1 1 1 6 6  6  6  6  6  6  6
+"Ayres"     1 1 1 1 1 1 1 6 6  6  6  6  6  1  1
+"Baring"    8 1 6 7 7 7 1 1 1  9  1  1  1  1  1
+"Anderson"  1 1 6 1 1 1 1 1 1  6  6  6  1  9  1
+"Ashbrook"  1 5 5 7 7 7 7 7 1  1  1  1  1  1  1
+"Battin"    5 6 6 1 6 1 1 1 9  6  1  1  1  1  1
+"Bell"      1 1 1 1 1 1 1 1 1  9  9  9  9  9  9
+"Clancy"    1 6 6 1 6 1 1 1 1  6  1  1  6  1  1
+"Davis"     1 1 1 1 1 6 6 1 1  6  6  6  6  6  6 
+"Dole"      1 6 6 1 1 1 1 1 1  6  1  1  6  6  1

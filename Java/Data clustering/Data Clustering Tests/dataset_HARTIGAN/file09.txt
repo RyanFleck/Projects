@@ -1,0 +1,72 @@
+#  file09.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  For various battles of the civil war, the size of the
+#  opposing forces, and the casualty figures were recorded.
+#
+#  "Battle" is the name of the battle.
+#
+#  "UF" and "UC" are the Union forces and number of Union
+#  soldiers shot.
+#
+#  "CF" and "CC" are the Confederate forces and the number
+#  of Confederate soldiers shot.
+#
+"Civil War Battles in Chronological Order, Hartigan page 121"
+5 columns
+46 rows
+"Battle"             "UF"   "UC"   "CF"   "CC"
+"Bull Run"            28452  1492  33232   1969
+"Wilson's Creek"      5400    944  11600   1157
+"Fort Donelson"      27000   2608  21000   2000
+"Pea Ridge"          11250   1183  14000    600
+"Shiloh"             62682  10162  40355   9735
+"Williamsburg"       40768   1866  31823   1570
+"Fair Oaks"          41797   4384  41816   5729
+"Mechanicsville"     15631    256  16356   1484
+"Gaines's Mill"      34214   4001  57018   8751
+"Malvern Hill"       83345   4969  86748   8602
+"Seven Days"         91169   9796  95481  19739
+"Cedar Mountain"      8030   1759  16868   1338
+"Manassas"           75696  10096  48527   9108
+"Richmond, Kentucky"  6500   1050   6850    450
+"South Mountain"     28480   1728  18714   1885
+"Antietam"           75316  11657  51844  11724
+"Corinth"            21147   2196  22000   2470
+"Perryville"         36940   3696  16000   3145
+"Fredericksburg"    100007  10884  72497   4656
+"Chickasaw Bayou"    30720   1213  13792    197
+"Stone's River"      41400   9220  34732   9239
+"Arkansas Post"      28944   1032   4654    109
+"Chancellorsville"   97382  11116  57352   10746
+"Champions Hill"     29373   2254  20000   2181
+"Port Hudson I"      13000   1838   4192    235
+"Port Hudson II"      6000   1604   3487     47
+"Gettysburg"         83289  17684  75054  22638
+"Fort Wagner"         5264   1126   1785    169
+"Chicamauga"         58222  11413  66326  16986
+"Chatanooga"         56359   5475  46165   2521
+"Mine Run"           69643   1272  44426    680
+"Olustee"             5115   1355   5200    934
+"Pleasant Hill"      12647    994  18025   2860
+"Drewry's Bluff"     15800   2700  18025   2860
+"Atlanta I"         110123  10528  66089   9187
+"Weldon Railroad"    20289   1303  14787   1200
+"Kenesaw Mountain"   16225   1999  17733    270
+"Tupelo"             14000    636  18832   1326
+"Peach Tree Creek"   20139   1600  18832   2500
+"Atlanta II"         30477   1989  36934   7000
+"Atlanta III"        13226    559  18450   4100
+"Jonesborough"       14170    179  23811   1725
+"Winchester"         37711   4680  17103   2103
+"Cedar Creek"        30829   4074  18410   1860
+"Franklin"           27939   1222  26897   5550
+"Bentonville"        16127    933  16895   1508

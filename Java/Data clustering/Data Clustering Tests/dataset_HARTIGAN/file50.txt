@@ -1,0 +1,37 @@
+#  file50.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The correlations, by 10000, are computed within 22 caste groups
+#  containing between 67 and 196 individuals.
+#
+#  ST: Stature
+#  SH: Sitting height
+#  ND: Nasal depth
+#  NH: Nasal height
+#  HL: Head length
+#  FB: frontal breadth
+#  BB: Bizygometic breadth
+#  HB: Head breadth
+#  NB: Nasal breadth
+#
+"Indian Caste Measurements, Hartigan page 324"
+8 columns
+7 rows
+"Part" "ST"  "SH" "ND"  "NH"  "HL"  "FB"  "BB"  "HD"  "NB"
+"ST" 10000  5849  1774  1974  2698  2173  2891  1412  2103
+"SH"  5849 10000  2094  2170  2651  3012  2995  2069  1182
+"ND"  1774  2094 10000  2910  1537  1243  1575  1308  1139
+"NH"  1974  2170  2990 10000  1758  1139  1852  1735   438
+"HL"  2698  2651  1537  1758 10000  2270  2792  1982  1930
+"FB"  2173  3012  1243  1139  2270 10000  4930  4461  1831
+"BB"  2891  2995  1575  1852  2792  4930 10000  5407  2729
+"HD"  1412  2069  1308  1735  1982  4461  5407 10000  1413
+"NB"  2103  1182  1139   438  1930  1831  2729  1413 10000

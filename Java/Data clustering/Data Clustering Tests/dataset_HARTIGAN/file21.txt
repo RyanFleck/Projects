@@ -1,0 +1,43 @@
+#  file21.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  Six pieces of hardware were considered.
+#  Every possible set of three distinct pieces of hardware was examined,
+#  and a judgment was made about which two pieces were most similar.
+#  The results were reported by listing the closest pair with parentheses
+#  surrounding them, followed by the "odd" item.
+#
+#  "N" is nail, "P" Phillips head screw, "B" bolt, "T" tack, "F" finishing
+#  nail, and "S" is screw.
+#
+"Triads based on Hardware, Hartigan page 178"
+1 columns
+20 rows
+(PB)N
+(NT)P
+(NF)P
+(PS)N
+(NT)B
+(NF)B
+(BS)N
+(NF)T
+(NT)S
+(NF)S
+(PB)T
+(PB)F
+(PS)B
+(TF)P
+(PS)T
+(PS)F
+(TF)B
+(BS)T
+(BS)F
+(TF)S

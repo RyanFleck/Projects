@@ -1,0 +1,81 @@
+#  file04.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  A list of southern states, and demographics.
+#
+#  * is an abbreviation for the state.
+#
+#  A is the mean altitude above sea level, in tens of feet.
+#
+#  B is the mean annual temperature, in degrees Fahrenheit.
+#
+#  C is the mean annual precipitation, in inches.
+#
+#  D is the number of persons per square mile.
+#
+#  E is the percentage of Negroes.
+#
+#  F is the median age in years.
+#
+#  G is the percentage urban population.
+#
+#  H is the number of births per 1000 population.
+#
+#  I is the percentage rural farm population.
+#
+#  J is the percentage of employment in manufacturing.
+#
+#  K is the number of automobiles per 100 population.
+#
+#  L is the number of telephones per 100 population.
+#
+#  M is the average income in hundreds of dollars.
+#
+#  N is the federal revenue per 100 dollars of state and local revenue.
+#
+#  O is the number of lawyers per 100,000 population.
+#
+#  P is the number of doctors per 100,000 population.
+#
+#  Q is the white infant mortality per 1000 births.
+#
+#  R is the school years completed, in tenths of a year.
+#
+#  S is the education expenditure per pupil in tens of dollars.
+#
+#  T is the percentage of houses with sound plumbing.
+#
+#  U is the percentage Republican vote in the 1960 presidential election.
+#
+#  V is the percentage Republican vote in the 1964 presidential election.
+#
+#  W is the percentage Republican vote in the 1962/1964 governor elections.
+#
+"Demographic Data for the South (1960-1965), Hartigan page 59"
+24 columns
+16 rows
+"*" "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W"
+AL  50  68  68   64 30  26  22  55  12  31  39  33  19  22   82  79 25   89 28  54  42  70   4
+AS  65  62  49   34 22  29  22  43  17  29  33  30  18  24   79  91 23   87 32  48  43  43  43
+DE   6  54  45  226 14  29  23  66   4  37  40  53  33  15  115 135 20  108 54  80  49  39  49
+FL  10  72  56   91 18  31  20  74   2  15  45  45  24  11  150 142 23  106 41  78  52  49  44
+GA  60  62  47   68 29  26  24  55   9  32  37  36  22  19  125 102 23   88 33  58  37  54   0
+KY  75  56  41   76  7  28  22  45  17  27  38  32  20  21  108  95 26   85 32  53  54  36  49
+LA  10  70  63   72 32  25  25  63   7  17  32  36  21  21  128 114 21   86 42  61  29  57  39
+MD  35  58  44  314 17  29  20  73  31  25  37  48  30  11  175 158 22   10 50  81  46  35  44
+MI  30  65  49   46 42  24  24  38  23  31  29  25  16  21  101  76 23   86 27  45  25  87  38
+MO  80  56  35   63  9  32  21  67  12  28  37  47  26  17   72 149 21   93 45  66  50  36  38
+NC  70  60  44   93 25  26  22  40  16  42  35  31  20  15   77 100 22   85 32  57  48  44  43
+SC  35  64  47   79 35  23  22  41  14  43  35  28  18  16   72  80 22   84 28  54  49  59   0
+TE  90  61  47   85 17  28  22  52  15  35  35  35  20  22  116 113 24   86 30  57  53  45  49
+TS 170  67  29   37 12  27  22  75   7  20  42  41  23  15  144 111 26  101 40  69  49  37  26
+VA  95  59  44  100 21  27  21  56   9  27  34  38  24  16  114 108 24   92 38  66  52  46  36
+WV 150  56  44   77  5  29  20  38   7  27  31  34  20  18   97 103 26   87 33  57  47  32  45

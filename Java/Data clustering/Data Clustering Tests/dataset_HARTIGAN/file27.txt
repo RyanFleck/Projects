@@ -1,0 +1,71 @@
+#  file27.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Code" is a two letter code for each state.
+#
+#  "Name" is the name of the state.
+#
+#  "Income" is the per capita income, in dollars.
+#
+"US Per Capita Income, 1964, Hartigan page 206"
+3 columns
+50 rows
+"Code"  "Name"           "Income"
+"AL"    "Alabama"        1737
+"AK"    "Alaska"         3128
+"AZ"    "Arizona"        2218
+"AR"    "Arkansas"       1633
+"CA"    "California"     3092
+"CO"    "Colorado"       2591
+"CT"    "Connecticut"    3250
+"DE"    "Delaware"       3426
+"FL"    "Florida"        2280
+"GA"    "Georgia"        1933
+"HI"    "Hawaii"         2579
+"ID"    "Idaho"          2012
+"IL"    "Illinois"       3003
+"IN"    "Indiana"        2529
+"IA"    "Iowa"           2370
+"KS"    "Kansas"         2311
+"KY"    "Kentucky"       1811
+"LA"    "Louisiana"      1864
+"ME"    "Maine"          2130
+"MD"    "Maryland"       2888
+"MA"    "Massachusetts"  2922
+"MI"    "Michigan"       2733
+"MN"    "Minnesota"      2373
+"MS"    "Mississippi"    1444
+"MO"    "Missouri"       2595
+"MT"    "Montana"        2183
+"NE"    "Nebraska"       2302
+"NV"    "Nevada"         3248
+"NH"    "New Hampshire"  2340
+"NJ"    "New Jersey"     2962
+"NM"    "New Mexico"     2010
+"NY"    "New York"       3139
+"NC"    "North Carolina" 1900
+"ND"    "North Dakota"   2012
+"OH"    "Ohio"           2623
+"OK"    "Oklahoma"       2095
+"OR"    "Oregon"         2602
+"PA"    "Pennsylvania"   2575
+"RI"    "Rhode Island"   2479
+"SC"    "South Carolina" 1647
+"SD"    "South Dakota"   1832
+"TN"    "Tennessee"      1852
+"TX"    "Texas"          2175
+"UT"    "Utah"           2174
+"VT"    "Vermont"        2144
+"VA"    "Virginia"       2224
+"WA"    "Washington"     2634
+"WV"    "West Virginia"  1962
+"WI"    "Wisconsin"      2492
+"WY"    "Wyoming"        2475

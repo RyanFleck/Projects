@@ -1,0 +1,54 @@
+#  file52.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  City crime statistics were recorded.
+#
+#  "City" is the city.
+#
+#  "Pop" is the population, in thousands.
+#
+#  "WC" is the percentage change in the inner city white population 
+#  from 1960 to 1970.
+#
+#  "BP" is the black population in thousands.
+#
+#  "Mur", "Rap", "Rob", "Ass", "Bur", "Car" are the rates, per
+#  100,000 population, for murder, rape, robbery, assault, burglary
+#  and car theft.
+#
+"City Crime, Hartigan page 342"
+10 columns
+24 rows
+"City"  "Pop"  "WC" "BP" "Mur" "Rap" "Rob" "Ass" "Bur" "Car"
+"Anaheim"       1420   50.8    39   2.7  21.9   94  103  1607   377
+"Baltimore"     2071  -21.4   501  13.2  34.9  564  396  1351   701
+"Boston"        2754  -16.5   151   4.4  14.8  136   95  1054   984
+"Buffalo"       1349  -20.7   118   5.7  13.7  145  111   862   448
+"Chicago"       6979  -18.6  1306  12.9  25.4  363  233   830   708
+"Cincinnatti"   1385  -17.2   156   6.4  16.8  120  107   912   348
+"Cleveland"     2064  -26.5   343  14.5  18.7  288  132   826  1208
+"Dallas"        1556   14.2   261  18.4  41.0  206  338  1581   577
+"Detroit"       4200  -29.1   780  14.7  31.1  649  223  1986   758
+"Houston"       1985   25.5   399  16.9  27.1  335  183  1532   741
+"Los Angeles"   7032    4.7  1026   9.4  50.0  307  371  1981   945
+"Miami"         1268   13.5   196  15.6  17.0  427  421  1858   781
+"Milwaukee"     1404  -10.4   116   3.8   8.3   53   63   499   405
+"Minneapolis"   1814   -7.9    50   2.6  16.8  179   89  1198   615
+"New York"     11529   -9.3  2080  10.5  19.9  665  286  1821   947
+"Newark"        1857  -36.7   363   9.5  20.5  333  182  1315   667
+"Paterson"      1359   -9.1    83   2.6   5.7   99   63   815   491
+"Philadelphia"  4818   12.9   873   9.3  15.2  173  123   754   534
+"Pittsburgh"    2401  -18.0   176   4.4  14.0  145  108   696   537
+"St Louis"      2363  -31.6   388  14.8  34.4  280  203  1458   840
+"San Francisco" 3110  -17.2   535   8.3  42.9  348  226  2164   957
+"San Diego"     1358   17.2   106   4.1  19.4   93  106  1011   428
+"Seattle"       1422   -8.5    85   4.4  23.8  164  114  1976   547
+"Washington"    2861  -39.4   737  11.4  23.0  504  232  1433   767

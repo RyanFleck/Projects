@@ -1,0 +1,15 @@
+** CLusters2DTest123: testing MyGraph, KruskalAlgorithms, Partition
+** the graph is complete with vertices representing points in the first figure in handout.
+** the 3 clusters (size 9,12,16) to be constructed must correspond to the clusters in the second figure in the handout.
+
+Creating graph
+Initializing Kruskal Algorithms
+Next it will group vertices in 3 clusters.
+before Kruskal Algorithm
+after Kruskal Algorithm
+
+Clusters created by the algorithm:
+Cluster 1 (size=9): v9:(45,40),v11:(38,39),v12:(42,39),v5:(38,42),v1:(39,44),v7:(41,41),v0:(41,45),v2:(42,43),v3:(44,43),
+Cluster 2 (size=12): v16:(25,38),v15:(19,38),v20:(12,34),v18:(13,35),v19:(9,34),v14:(12,38),v8:(13,40),v6:(8,41),v4:(10,42),v17:(6,37),v10:(7,39),v13:(9,38),
+Cluster 3 (size=16): v26:(22,22),v22:(26,25),v34:(37,10),v31:(38,13),v33:(34,11),v35:(40,9),v36:(42,9),v32:(29,11),v30:(26,16),v29:(31,18),v21:(32,27),v28:(35,20),v24:(34,23),v27:(38,21),v23:(39,24),v25:(37,23),
+

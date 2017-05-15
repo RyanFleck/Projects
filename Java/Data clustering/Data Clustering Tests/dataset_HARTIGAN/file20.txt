@@ -1,0 +1,60 @@
+#  file20.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Model" is the car model
+#
+#  "BR" "FU" "EL" "EX" "ST" "EM" "RS" "RA" "RU" "SA" "TC" "WA" "OT" are
+#  the types of repairs, "brake system", "fuel system", "electrical",
+#  "exhaust", "steering", "engine, mechanical", "rattles and squeaks",
+#  "rear axle", "rust", "shock absorbers", "transmission, clutch", 
+#  "wheel alignment", and "other".
+#
+#  A value of "+" means greater than average repairs reported, and
+#  "-" means less than average.
+#
+"Frequency of Car Repairs, Hartigan page 174"
+14 columns
+33 rows
+"Model"  "BR" "FU" "EL" "EX" "ST" "EM" "RS" "RA" "RU" "SA" "TC" "WA" "OT"
+"AMC Ambassador 8" + - - -  - - - +  - - - -  -
+"Buick Special 6"  - - - -  - - + -  + - - -  +
+"Buick Special 8"  - - - -  - - + -  - + - +  +
+"Buick 8 Full"     - - - +  - + + -  + + - +  -
+"Buick Riviera"    - - + +  - - - -  - + - -  -
+"Chevy II"         - + - -  + - + +  + - - +  -
+"Chevelle 6"       - - - -  - + + -  + - - -  -
+"Chevelle 8"       - + - +  + - + -  + + - +  -
+"Chevrolet Full"   - + + +  + - + +  + + + +  -
+"Corvair 6"        - + - -  + + - +  - + + +  +
+"Corvette"         - - - +  - - + +  - - + -  -
+"Chrysler Newport" + - - -  - - - -  - - - -  -
+"New Yorker"       + - - -  - - - +  - - - -  +
+"Dodge Full Size"  + - - -  - - + -  - + - -  -
+"Falcon 6"         - - - -  - - + -  - - + +  -
+"Fairlane 6"       - - - -  - - + -  - - - -  -
+"Fairlane 8"       - - - +  - - + +  - - - +  -
+"Ford Full Size"   - - - +  + - - -  - + - +  +
+"Thunderbird"      - - + -  + + - -  - - - +  +
+"Mercury Full"     - - - -  - - - -  - - - +  -
+"Olds Full"        + + - -  - - + -  - + - +  -
+"Plymouth Full"    + - - -  - - - -  - - - -  -
+"Pontiac Tempest"  - + - -  - - + -  + + - +  -
+"Pontiac Full"     + + + -  - - + -  + + - +  -
+"Rambler Rebel 6"  - - + -  - - - +  - - + -  +
+"Mercedes"         - - - -  - - - -  - + - -  -
+"MG 1100"          - - + +  - - - -  - - - -  -
+"Peugeot"          - - - -  - - - -  - - + -  -
+"Porsche"          - - - -  - - - -  - - - -  -
+"Renault"          - - - -  - - - -  - - + -  -
+"Volvo"            - - - +  - - - +  - - - -  -
+"VW bug"           + - + +  + + - -  - - + -  -
+"VW bus"           - - + -  - + - -  + - + -  -
+

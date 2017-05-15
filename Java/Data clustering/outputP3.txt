@@ -1,0 +1,2084 @@
+	FINAL OUTCOME:
+
+
+++++++++++++++++
+FOREST HAS GROWN
+
+after Kruskal Algorithm
+
+Clusters created by the algorithm:
+Cluster 1 (size=9): v9:(45,40),v11:(38,39),v12:(42,39),v5:(38,42),v1:(39,44),v7:(41,41),v0:(41,45),v2:(42,43),v3:(44,43),
+Cluster 2 (size=12): v15:(19,38),v16:(25,38),v19:(9,34),v18:(13,35),v20:(12,34),v8:(13,40),v14:(12,38),v4:(10,42),v6:(8,41),v17:(6,37),v10:(7,39),v13:(9,38),
+Cluster 3 (size=16): v22:(26,25),v26:(22,22),v32:(29,11),v35:(40,9),v36:(42,9),v33:(34,11),v31:(38,13),v34:(37,10),v30:(26,16),v29:(31,18),v21:(32,27),v28:(35,20),v24:(34,23),v27:(38,21),v23:(39,24),v25:(37,23),
+
+
+
+
+
+
+
+
+
+
+	RAW TERMINAL OUTPUT:
+
+[rfleck@rcf-lab RCF_CSI2110_A4_TESTING]$ Clusters2DTest123
+bash: Clusters2DTest123: command not found...
+[rfleck@rcf-lab RCF_CSI2110_A4_TESTING]$ java Clusters2DTest123
+** CLusters2DTest123: testing MyGraph, KruskalAlgorithms, Partition
+** the graph is complete with vertices representing points in the first figure in handout.
+** the 3 clusters (size 9,12,16) to be constructed must correspond to the clusters in the second figure in the handout.
+
+Creating graph
+!Vertex Creation Initialized. Vertices = 37.
+!Vertex Creation Completed.
+
+!Creation Initialized.
+Edge between 0 and 1 is e={v0:(41,45),v1:(39,44)} dist=2.23606797749979
+Edge between 0 and 2 is e={v0:(41,45),v2:(42,43)} dist=2.23606797749979
+Edge between 0 and 3 is e={v0:(41,45),v3:(44,43)} dist=3.605551275463989
+Edge between 0 and 4 is e={v0:(41,45),v4:(10,42)} dist=31.144823004794873
+Edge between 0 and 5 is e={v0:(41,45),v5:(38,42)} dist=4.242640687119285
+Edge between 0 and 6 is e={v0:(41,45),v6:(8,41)} dist=33.24154027718932
+Edge between 0 and 7 is e={v0:(41,45),v7:(41,41)} dist=4.0
+Edge between 0 and 8 is e={v0:(41,45),v8:(13,40)} dist=28.442925306655784
+Edge between 0 and 9 is e={v0:(41,45),v9:(45,40)} dist=6.4031242374328485
+Edge between 0 and 10 is e={v0:(41,45),v10:(7,39)} dist=34.52535300326414
+Edge between 0 and 11 is e={v0:(41,45),v11:(38,39)} dist=6.708203932499369
+Edge between 0 and 12 is e={v0:(41,45),v12:(42,39)} dist=6.082762530298219
+Edge between 0 and 13 is e={v0:(41,45),v13:(9,38)} dist=32.7566787083184
+Edge between 0 and 14 is e={v0:(41,45),v14:(12,38)} dist=29.832867780352597
+Edge between 0 and 15 is e={v0:(41,45),v15:(19,38)} dist=23.08679276123039
+Edge between 0 and 16 is e={v0:(41,45),v16:(25,38)} dist=17.46424919657298
+Edge between 0 and 17 is e={v0:(41,45),v17:(6,37)} dist=35.90264614203248
+Edge between 0 and 18 is e={v0:(41,45),v18:(13,35)} dist=29.732137494637012
+Edge between 0 and 19 is e={v0:(41,45),v19:(9,34)} dist=33.83784863137726
+Edge between 0 and 20 is e={v0:(41,45),v20:(12,34)} dist=31.016124838541646
+Edge between 0 and 21 is e={v0:(41,45),v21:(32,27)} dist=20.12461179749811
+Edge between 0 and 22 is e={v0:(41,45),v22:(26,25)} dist=25.0
+Edge between 0 and 23 is e={v0:(41,45),v23:(39,24)} dist=21.095023109728988
+Edge between 0 and 24 is e={v0:(41,45),v24:(34,23)} dist=23.08679276123039
+Edge between 0 and 25 is e={v0:(41,45),v25:(37,23)} dist=22.360679774997898
+Edge between 0 and 26 is e={v0:(41,45),v26:(22,22)} dist=29.832867780352597
+Edge between 0 and 27 is e={v0:(41,45),v27:(38,21)} dist=24.186773244895647
+Edge between 0 and 28 is e={v0:(41,45),v28:(35,20)} dist=25.709920264364882
+Edge between 0 and 29 is e={v0:(41,45),v29:(31,18)} dist=28.792360097775937
+Edge between 0 and 30 is e={v0:(41,45),v30:(26,16)} dist=32.64965543462902
+Edge between 0 and 31 is e={v0:(41,45),v31:(38,13)} dist=32.14031735997639
+Edge between 0 and 32 is e={v0:(41,45),v32:(29,11)} dist=36.05551275463989
+Edge between 0 and 33 is e={v0:(41,45),v33:(34,11)} dist=34.713109915419565
+Edge between 0 and 34 is e={v0:(41,45),v34:(37,10)} dist=35.22782990761707
+Edge between 0 and 35 is e={v0:(41,45),v35:(40,9)} dist=36.013886210738214
+Edge between 0 and 36 is e={v0:(41,45),v36:(42,9)} dist=36.013886210738214
+Edge between 1 and 2 is e={v1:(39,44),v2:(42,43)} dist=3.1622776601683795
+Edge between 1 and 3 is e={v1:(39,44),v3:(44,43)} dist=5.0990195135927845
+Edge between 1 and 4 is e={v1:(39,44),v4:(10,42)} dist=29.068883707497267
+Edge between 1 and 5 is e={v1:(39,44),v5:(38,42)} dist=2.23606797749979
+Edge between 1 and 6 is e={v1:(39,44),v6:(8,41)} dist=31.144823004794873
+Edge between 1 and 7 is e={v1:(39,44),v7:(41,41)} dist=3.605551275463989
+Edge between 1 and 8 is e={v1:(39,44),v8:(13,40)} dist=26.30589287593181
+Edge between 1 and 9 is e={v1:(39,44),v9:(45,40)} dist=7.211102550927978
+Edge between 1 and 10 is e={v1:(39,44),v10:(7,39)} dist=32.38826948140329
+Edge between 1 and 11 is e={v1:(39,44),v11:(38,39)} dist=5.0990195135927845
+Edge between 1 and 12 is e={v1:(39,44),v12:(42,39)} dist=5.830951894845301
+Edge between 1 and 13 is e={v1:(39,44),v13:(9,38)} dist=30.59411708155671
+Edge between 1 and 14 is e={v1:(39,44),v14:(12,38)} dist=27.65863337187866
+Edge between 1 and 15 is e={v1:(39,44),v15:(19,38)} dist=20.8806130178211
+Edge between 1 and 16 is e={v1:(39,44),v16:(25,38)} dist=15.231546211727817
+Edge between 1 and 17 is e={v1:(39,44),v17:(6,37)} dist=33.734255586866
+Edge between 1 and 18 is e={v1:(39,44),v18:(13,35)} dist=27.51363298439521
+Edge between 1 and 19 is e={v1:(39,44),v19:(9,34)} dist=31.622776601683793
+Edge between 1 and 20 is e={v1:(39,44),v20:(12,34)} dist=28.792360097775937
+Edge between 1 and 21 is e={v1:(39,44),v21:(32,27)} dist=18.384776310850235
+Edge between 1 and 22 is e={v1:(39,44),v22:(26,25)} dist=23.021728866442675
+Edge between 1 and 23 is e={v1:(39,44),v23:(39,24)} dist=20.0
+Edge between 1 and 24 is e={v1:(39,44),v24:(34,23)} dist=21.587033144922902
+Edge between 1 and 25 is e={v1:(39,44),v25:(37,23)} dist=21.095023109728988
+Edge between 1 and 26 is e={v1:(39,44),v26:(22,22)} dist=27.80287754891569
+Edge between 1 and 27 is e={v1:(39,44),v27:(38,21)} dist=23.021728866442675
+Edge between 1 and 28 is e={v1:(39,44),v28:(35,20)} dist=24.331050121192877
+Edge between 1 and 29 is e={v1:(39,44),v29:(31,18)} dist=27.202941017470888
+Edge between 1 and 30 is e={v1:(39,44),v30:(26,16)} dist=30.870698080866262
+Edge between 1 and 31 is e={v1:(39,44),v31:(38,13)} dist=31.016124838541646
+Edge between 1 and 32 is e={v1:(39,44),v32:(29,11)} dist=34.48187929913333
+Edge between 1 and 33 is e={v1:(39,44),v33:(34,11)} dist=33.37663853655727
+Edge between 1 and 34 is e={v1:(39,44),v34:(37,10)} dist=34.058772731852805
+Edge between 1 and 35 is e={v1:(39,44),v35:(40,9)} dist=35.014282800023196
+Edge between 1 and 36 is e={v1:(39,44),v36:(42,9)} dist=35.12833614050059
+Edge between 2 and 3 is e={v2:(42,43),v3:(44,43)} dist=2.0
+Edge between 2 and 4 is e={v2:(42,43),v4:(10,42)} dist=32.01562118716424
+Edge between 2 and 5 is e={v2:(42,43),v5:(38,42)} dist=4.123105625617661
+Edge between 2 and 6 is e={v2:(42,43),v6:(8,41)} dist=34.058772731852805
+Edge between 2 and 7 is e={v2:(42,43),v7:(41,41)} dist=2.23606797749979
+Edge between 2 and 8 is e={v2:(42,43),v8:(13,40)} dist=29.154759474226502
+Edge between 2 and 9 is e={v2:(42,43),v9:(45,40)} dist=4.242640687119285
+Edge between 2 and 10 is e={v2:(42,43),v10:(7,39)} dist=35.22782990761707
+Edge between 2 and 11 is e={v2:(42,43),v11:(38,39)} dist=5.656854249492381
+Edge between 2 and 12 is e={v2:(42,43),v12:(42,39)} dist=4.0
+Edge between 2 and 13 is e={v2:(42,43),v13:(9,38)} dist=33.37663853655727
+Edge between 2 and 14 is e={v2:(42,43),v14:(12,38)} dist=30.4138126514911
+Edge between 2 and 15 is e={v2:(42,43),v15:(19,38)} dist=23.53720459187964
+Edge between 2 and 16 is e={v2:(42,43),v16:(25,38)} dist=17.72004514666935
+Edge between 2 and 17 is e={v2:(42,43),v17:(6,37)} dist=36.49657518178932
+Edge between 2 and 18 is e={v2:(42,43),v18:(13,35)} dist=30.083217912982647
+Edge between 2 and 19 is e={v2:(42,43),v19:(9,34)} dist=34.20526275297414
+Edge between 2 and 20 is e={v2:(42,43),v20:(12,34)} dist=31.32091952673165
+Edge between 2 and 21 is e={v2:(42,43),v21:(32,27)} dist=18.867962264113206
+Edge between 2 and 22 is e={v2:(42,43),v22:(26,25)} dist=24.08318915758459
+Edge between 2 and 23 is e={v2:(42,43),v23:(39,24)} dist=19.235384061671343
+Edge between 2 and 24 is e={v2:(42,43),v24:(34,23)} dist=21.540659228538015
+Edge between 2 and 25 is e={v2:(42,43),v25:(37,23)} dist=20.615528128088304
+Edge between 2 and 26 is e={v2:(42,43),v26:(22,22)} dist=29.0
+Edge between 2 and 27 is e={v2:(42,43),v27:(38,21)} dist=22.360679774997898
+Edge between 2 and 28 is e={v2:(42,43),v28:(35,20)} dist=24.041630560342615
+Edge between 2 and 29 is e={v2:(42,43),v29:(31,18)} dist=27.313000567495326
+Edge between 2 and 30 is e={v2:(42,43),v30:(26,16)} dist=31.38470965295043
+Edge between 2 and 31 is e={v2:(42,43),v31:(38,13)} dist=30.265491900843113
+Edge between 2 and 32 is e={v2:(42,43),v32:(29,11)} dist=34.539832078341085
+Edge between 2 and 33 is e={v2:(42,43),v33:(34,11)} dist=32.984845004941285
+Edge between 2 and 34 is e={v2:(42,43),v34:(37,10)} dist=33.37663853655727
+Edge between 2 and 35 is e={v2:(42,43),v35:(40,9)} dist=34.058772731852805
+Edge between 2 and 36 is e={v2:(42,43),v36:(42,9)} dist=34.0
+Edge between 3 and 4 is e={v3:(44,43),v4:(10,42)} dist=34.0147027033899
+Edge between 3 and 5 is e={v3:(44,43),v5:(38,42)} dist=6.082762530298219
+Edge between 3 and 6 is e={v3:(44,43),v6:(8,41)} dist=36.05551275463989
+Edge between 3 and 7 is e={v3:(44,43),v7:(41,41)} dist=3.605551275463989
+Edge between 3 and 8 is e={v3:(44,43),v8:(13,40)} dist=31.144823004794873
+Edge between 3 and 9 is e={v3:(44,43),v9:(45,40)} dist=3.1622776601683795
+Edge between 3 and 10 is e={v3:(44,43),v10:(7,39)} dist=37.21558813185679
+Edge between 3 and 11 is e={v3:(44,43),v11:(38,39)} dist=7.211102550927978
+Edge between 3 and 12 is e={v3:(44,43),v12:(42,39)} dist=4.47213595499958
+Edge between 3 and 13 is e={v3:(44,43),v13:(9,38)} dist=35.35533905932738
+Edge between 3 and 14 is e={v3:(44,43),v14:(12,38)} dist=32.38826948140329
+Edge between 3 and 15 is e={v3:(44,43),v15:(19,38)} dist=25.495097567963924
+Edge between 3 and 16 is e={v3:(44,43),v16:(25,38)} dist=19.6468827043885
+Edge between 3 and 17 is e={v3:(44,43),v17:(6,37)} dist=38.47076812334269
+Edge between 3 and 18 is e={v3:(44,43),v18:(13,35)} dist=32.01562118716424
+Edge between 3 and 19 is e={v3:(44,43),v19:(9,34)} dist=36.138621999185304
+Edge between 3 and 20 is e={v3:(44,43),v20:(12,34)} dist=33.24154027718932
+Edge between 3 and 21 is e={v3:(44,43),v21:(32,27)} dist=20.0
+Edge between 3 and 22 is e={v3:(44,43),v22:(26,25)} dist=25.45584412271571
+Edge between 3 and 23 is e={v3:(44,43),v23:(39,24)} dist=19.6468827043885
+Edge between 3 and 24 is e={v3:(44,43),v24:(34,23)} dist=22.360679774997898
+Edge between 3 and 25 is e={v3:(44,43),v25:(37,23)} dist=21.18962010041709
+Edge between 3 and 26 is e={v3:(44,43),v26:(22,22)} dist=30.4138126514911
+Edge between 3 and 27 is e={v3:(44,43),v27:(38,21)} dist=22.80350850198276
+Edge between 3 and 28 is e={v3:(44,43),v28:(35,20)} dist=24.698178070456937
+Edge between 3 and 29 is e={v3:(44,43),v29:(31,18)} dist=28.178005607210743
+Edge between 3 and 30 is e={v3:(44,43),v30:(26,16)} dist=32.449961479175904
+Edge between 3 and 31 is e={v3:(44,43),v31:(38,13)} dist=30.59411708155671
+Edge between 3 and 32 is e={v3:(44,43),v32:(29,11)} dist=35.34119409414458
+Edge between 3 and 33 is e={v3:(44,43),v33:(34,11)} dist=33.52610922848042
+Edge between 3 and 34 is e={v3:(44,43),v34:(37,10)} dist=33.734255586866
+Edge between 3 and 35 is e={v3:(44,43),v35:(40,9)} dist=34.23448553724738
+Edge between 3 and 36 is e={v3:(44,43),v36:(42,9)} dist=34.058772731852805
+Edge between 4 and 5 is e={v4:(10,42),v5:(38,42)} dist=28.0
+Edge between 4 and 6 is e={v4:(10,42),v6:(8,41)} dist=2.23606797749979
+Edge between 4 and 7 is e={v4:(10,42),v7:(41,41)} dist=31.016124838541646
+Edge between 4 and 8 is e={v4:(10,42),v8:(13,40)} dist=3.605551275463989
+Edge between 4 and 9 is e={v4:(10,42),v9:(45,40)} dist=35.05709628591621
+Edge between 4 and 10 is e={v4:(10,42),v10:(7,39)} dist=4.242640687119285
+Edge between 4 and 11 is e={v4:(10,42),v11:(38,39)} dist=28.160255680657446
+Edge between 4 and 12 is e={v4:(10,42),v12:(42,39)} dist=32.14031735997639
+Edge between 4 and 13 is e={v4:(10,42),v13:(9,38)} dist=4.123105625617661
+Edge between 4 and 14 is e={v4:(10,42),v14:(12,38)} dist=4.47213595499958
+Edge between 4 and 15 is e={v4:(10,42),v15:(19,38)} dist=9.848857801796104
+Edge between 4 and 16 is e={v4:(10,42),v16:(25,38)} dist=15.524174696260024
+Edge between 4 and 17 is e={v4:(10,42),v17:(6,37)} dist=6.4031242374328485
+Edge between 4 and 18 is e={v4:(10,42),v18:(13,35)} dist=7.615773105863909
+Edge between 4 and 19 is e={v4:(10,42),v19:(9,34)} dist=8.06225774829855
+Edge between 4 and 20 is e={v4:(10,42),v20:(12,34)} dist=8.246211251235321
+Edge between 4 and 21 is e={v4:(10,42),v21:(32,27)} dist=26.627053911388696
+Edge between 4 and 22 is e={v4:(10,42),v22:(26,25)} dist=23.345235059857504
+Edge between 4 and 23 is e={v4:(10,42),v23:(39,24)} dist=34.132096331752024
+Edge between 4 and 24 is e={v4:(10,42),v24:(34,23)} dist=30.610455730027933
+Edge between 4 and 25 is e={v4:(10,42),v25:(37,23)} dist=33.015148038438355
+Edge between 4 and 26 is e={v4:(10,42),v26:(22,22)} dist=23.323807579381203
+Edge between 4 and 27 is e={v4:(10,42),v27:(38,21)} dist=35.0
+Edge between 4 and 28 is e={v4:(10,42),v28:(35,20)} dist=33.301651610693426
+Edge between 4 and 29 is e={v4:(10,42),v29:(31,18)} dist=31.89043743820395
+Edge between 4 and 30 is e={v4:(10,42),v30:(26,16)} dist=30.528675044947494
+Edge between 4 and 31 is e={v4:(10,42),v31:(38,13)} dist=40.311288741492746
+Edge between 4 and 32 is e={v4:(10,42),v32:(29,11)} dist=36.359317925395686
+Edge between 4 and 33 is e={v4:(10,42),v33:(34,11)} dist=39.20459156782532
+Edge between 4 and 34 is e={v4:(10,42),v34:(37,10)} dist=41.86884283091664
+Edge between 4 and 35 is e={v4:(10,42),v35:(40,9)} dist=44.598206241955516
+Edge between 4 and 36 is e={v4:(10,42),v36:(42,9)} dist=45.967379738244816
+Edge between 5 and 6 is e={v5:(38,42),v6:(8,41)} dist=30.01666203960727
+Edge between 5 and 7 is e={v5:(38,42),v7:(41,41)} dist=3.1622776601683795
+Edge between 5 and 8 is e={v5:(38,42),v8:(13,40)} dist=25.079872407968907
+Edge between 5 and 9 is e={v5:(38,42),v9:(45,40)} dist=7.280109889280518
+Edge between 5 and 10 is e={v5:(38,42),v10:(7,39)} dist=31.144823004794873
+Edge between 5 and 11 is e={v5:(38,42),v11:(38,39)} dist=3.0
+Edge between 5 and 12 is e={v5:(38,42),v12:(42,39)} dist=5.0
+Edge between 5 and 13 is e={v5:(38,42),v13:(9,38)} dist=29.274562336608895
+Edge between 5 and 14 is e={v5:(38,42),v14:(12,38)} dist=26.30589287593181
+Edge between 5 and 15 is e={v5:(38,42),v15:(19,38)} dist=19.4164878389476
+Edge between 5 and 16 is e={v5:(38,42),v16:(25,38)} dist=13.601470508735444
+Edge between 5 and 17 is e={v5:(38,42),v17:(6,37)} dist=32.38826948140329
+Edge between 5 and 18 is e={v5:(38,42),v18:(13,35)} dist=25.96150997149434
+Edge between 5 and 19 is e={v5:(38,42),v19:(9,34)} dist=30.083217912982647
+Edge between 5 and 20 is e={v5:(38,42),v20:(12,34)} dist=27.202941017470888
+Edge between 5 and 21 is e={v5:(38,42),v21:(32,27)} dist=16.15549442140351
+Edge between 5 and 22 is e={v5:(38,42),v22:(26,25)} dist=20.808652046684813
+Edge between 5 and 23 is e={v5:(38,42),v23:(39,24)} dist=18.027756377319946
+Edge between 5 and 24 is e={v5:(38,42),v24:(34,23)} dist=19.4164878389476
+Edge between 5 and 25 is e={v5:(38,42),v25:(37,23)} dist=19.026297590440446
+Edge between 5 and 26 is e={v5:(38,42),v26:(22,22)} dist=25.612496949731394
+Edge between 5 and 27 is e={v5:(38,42),v27:(38,21)} dist=21.0
+Edge between 5 and 28 is e={v5:(38,42),v28:(35,20)} dist=22.20360331117452
+Edge between 5 and 29 is e={v5:(38,42),v29:(31,18)} dist=25.0
+Edge between 5 and 30 is e={v5:(38,42),v30:(26,16)} dist=28.635642126552707
+Edge between 5 and 31 is e={v5:(38,42),v31:(38,13)} dist=29.0
+Edge between 5 and 32 is e={v5:(38,42),v32:(29,11)} dist=32.28002478313795
+Edge between 5 and 33 is e={v5:(38,42),v33:(34,11)} dist=31.25699921617557
+Edge between 5 and 34 is e={v5:(38,42),v34:(37,10)} dist=32.01562118716424
+Edge between 5 and 35 is e={v5:(38,42),v35:(40,9)} dist=33.06055050963308
+Edge between 5 and 36 is e={v5:(38,42),v36:(42,9)} dist=33.24154027718932
+Edge between 6 and 7 is e={v6:(8,41),v7:(41,41)} dist=33.0
+Edge between 6 and 8 is e={v6:(8,41),v8:(13,40)} dist=5.0990195135927845
+Edge between 6 and 9 is e={v6:(8,41),v9:(45,40)} dist=37.013511046643494
+Edge between 6 and 10 is e={v6:(8,41),v10:(7,39)} dist=2.23606797749979
+Edge between 6 and 11 is e={v6:(8,41),v11:(38,39)} dist=30.066592756745816
+Edge between 6 and 12 is e={v6:(8,41),v12:(42,39)} dist=34.058772731852805
+Edge between 6 and 13 is e={v6:(8,41),v13:(9,38)} dist=3.1622776601683795
+Edge between 6 and 14 is e={v6:(8,41),v14:(12,38)} dist=5.0
+Edge between 6 and 15 is e={v6:(8,41),v15:(19,38)} dist=11.40175425099138
+Edge between 6 and 16 is e={v6:(8,41),v16:(25,38)} dist=17.26267650163207
+Edge between 6 and 17 is e={v6:(8,41),v17:(6,37)} dist=4.47213595499958
+Edge between 6 and 18 is e={v6:(8,41),v18:(13,35)} dist=7.810249675906654
+Edge between 6 and 19 is e={v6:(8,41),v19:(9,34)} dist=7.0710678118654755
+Edge between 6 and 20 is e={v6:(8,41),v20:(12,34)} dist=8.06225774829855
+Edge between 6 and 21 is e={v6:(8,41),v21:(32,27)} dist=27.784887978899608
+Edge between 6 and 22 is e={v6:(8,41),v22:(26,25)} dist=24.08318915758459
+Edge between 6 and 23 is e={v6:(8,41),v23:(39,24)} dist=35.35533905932738
+Edge between 6 and 24 is e={v6:(8,41),v24:(34,23)} dist=31.622776601683793
+Edge between 6 and 25 is e={v6:(8,41),v25:(37,23)} dist=34.132096331752024
+Edge between 6 and 26 is e={v6:(8,41),v26:(22,22)} dist=23.600847442411894
+Edge between 6 and 27 is e={v6:(8,41),v27:(38,21)} dist=36.05551275463989
+Edge between 6 and 28 is e={v6:(8,41),v28:(35,20)} dist=34.20526275297414
+Edge between 6 and 29 is e={v6:(8,41),v29:(31,18)} dist=32.526911934581186
+Edge between 6 and 30 is e={v6:(8,41),v30:(26,16)} dist=30.805843601498726
+Edge between 6 and 31 is e={v6:(8,41),v31:(38,13)} dist=41.036569057366385
+Edge between 6 and 32 is e={v6:(8,41),v32:(29,11)} dist=36.61966684720111
+Edge between 6 and 33 is e={v6:(8,41),v33:(34,11)} dist=39.698866482558415
+Edge between 6 and 34 is e={v6:(8,41),v34:(37,10)} dist=42.44997055358225
+Edge between 6 and 35 is e={v6:(8,41),v35:(40,9)} dist=45.254833995939045
+Edge between 6 and 36 is e={v6:(8,41),v36:(42,9)} dist=46.69047011971501
+Edge between 7 and 8 is e={v7:(41,41),v8:(13,40)} dist=28.0178514522438
+Edge between 7 and 9 is e={v7:(41,41),v9:(45,40)} dist=4.123105625617661
+Edge between 7 and 10 is e={v7:(41,41),v10:(7,39)} dist=34.058772731852805
+Edge between 7 and 11 is e={v7:(41,41),v11:(38,39)} dist=3.605551275463989
+Edge between 7 and 12 is e={v7:(41,41),v12:(42,39)} dist=2.23606797749979
+Edge between 7 and 13 is e={v7:(41,41),v13:(9,38)} dist=32.14031735997639
+Edge between 7 and 14 is e={v7:(41,41),v14:(12,38)} dist=29.154759474226502
+Edge between 7 and 15 is e={v7:(41,41),v15:(19,38)} dist=22.20360331117452
+Edge between 7 and 16 is e={v7:(41,41),v16:(25,38)} dist=16.278820596099706
+Edge between 7 and 17 is e={v7:(41,41),v17:(6,37)} dist=35.22782990761707
+Edge between 7 and 18 is e={v7:(41,41),v18:(13,35)} dist=28.635642126552707
+Edge between 7 and 19 is e={v7:(41,41),v19:(9,34)} dist=32.7566787083184
+Edge between 7 and 20 is e={v7:(41,41),v20:(12,34)} dist=29.832867780352597
+Edge between 7 and 21 is e={v7:(41,41),v21:(32,27)} dist=16.64331697709324
+Edge between 7 and 22 is e={v7:(41,41),v22:(26,25)} dist=21.93171219946131
+Edge between 7 and 23 is e={v7:(41,41),v23:(39,24)} dist=17.11724276862369
+Edge between 7 and 24 is e={v7:(41,41),v24:(34,23)} dist=19.313207915827967
+Edge between 7 and 25 is e={v7:(41,41),v25:(37,23)} dist=18.439088914585774
+Edge between 7 and 26 is e={v7:(41,41),v26:(22,22)} dist=26.870057685088806
+Edge between 7 and 27 is e={v7:(41,41),v27:(38,21)} dist=20.223748416156685
+Edge between 7 and 28 is e={v7:(41,41),v28:(35,20)} dist=21.840329667841555
+Edge between 7 and 29 is e={v7:(41,41),v29:(31,18)} dist=25.079872407968907
+Edge between 7 and 30 is e={v7:(41,41),v30:(26,16)} dist=29.154759474226502
+Edge between 7 and 31 is e={v7:(41,41),v31:(38,13)} dist=28.160255680657446
+Edge between 7 and 32 is e={v7:(41,41),v32:(29,11)} dist=32.31098884280702
+Edge between 7 and 33 is e={v7:(41,41),v33:(34,11)} dist=30.805843601498726
+Edge between 7 and 34 is e={v7:(41,41),v34:(37,10)} dist=31.25699921617557
+Edge between 7 and 35 is e={v7:(41,41),v35:(40,9)} dist=32.01562118716424
+Edge between 7 and 36 is e={v7:(41,41),v36:(42,9)} dist=32.01562118716424
+Edge between 8 and 9 is e={v8:(13,40),v9:(45,40)} dist=32.0
+Edge between 8 and 10 is e={v8:(13,40),v10:(7,39)} dist=6.082762530298219
+Edge between 8 and 11 is e={v8:(13,40),v11:(38,39)} dist=25.019992006393608
+Edge between 8 and 12 is e={v8:(13,40),v12:(42,39)} dist=29.017236257093817
+Edge between 8 and 13 is e={v8:(13,40),v13:(9,38)} dist=4.47213595499958
+Edge between 8 and 14 is e={v8:(13,40),v14:(12,38)} dist=2.23606797749979
+Edge between 8 and 15 is e={v8:(13,40),v15:(19,38)} dist=6.324555320336759
+Edge between 8 and 16 is e={v8:(13,40),v16:(25,38)} dist=12.165525060596439
+Edge between 8 and 17 is e={v8:(13,40),v17:(6,37)} dist=7.615773105863909
+Edge between 8 and 18 is e={v8:(13,40),v18:(13,35)} dist=5.0
+Edge between 8 and 19 is e={v8:(13,40),v19:(9,34)} dist=7.211102550927978
+Edge between 8 and 20 is e={v8:(13,40),v20:(12,34)} dist=6.082762530298219
+Edge between 8 and 21 is e={v8:(13,40),v21:(32,27)} dist=23.021728866442675
+Edge between 8 and 22 is e={v8:(13,40),v22:(26,25)} dist=19.849433241279208
+Edge between 8 and 23 is e={v8:(13,40),v23:(39,24)} dist=30.528675044947494
+Edge between 8 and 24 is e={v8:(13,40),v24:(34,23)} dist=27.018512172212592
+Edge between 8 and 25 is e={v8:(13,40),v25:(37,23)} dist=29.410882339705484
+Edge between 8 and 26 is e={v8:(13,40),v26:(22,22)} dist=20.12461179749811
+Edge between 8 and 27 is e={v8:(13,40),v27:(38,21)} dist=31.400636936215164
+Edge between 8 and 28 is e={v8:(13,40),v28:(35,20)} dist=29.732137494637012
+Edge between 8 and 29 is e={v8:(13,40),v29:(31,18)} dist=28.42534080710379
+Edge between 8 and 30 is e={v8:(13,40),v30:(26,16)} dist=27.294688127912362
+Edge between 8 and 31 is e={v8:(13,40),v31:(38,13)} dist=36.796738985948195
+Edge between 8 and 32 is e={v8:(13,40),v32:(29,11)} dist=33.12099032335839
+Edge between 8 and 33 is e={v8:(13,40),v33:(34,11)} dist=35.805027579936315
+Edge between 8 and 34 is e={v8:(13,40),v34:(37,10)} dist=38.41874542459709
+Edge between 8 and 35 is e={v8:(13,40),v35:(40,9)} dist=41.10960958218893
+Edge between 8 and 36 is e={v8:(13,40),v36:(42,9)} dist=42.44997055358225
+Edge between 9 and 10 is e={v9:(45,40),v10:(7,39)} dist=38.01315561749642
+Edge between 9 and 11 is e={v9:(45,40),v11:(38,39)} dist=7.0710678118654755
+Edge between 9 and 12 is e={v9:(45,40),v12:(42,39)} dist=3.1622776601683795
+Edge between 9 and 13 is e={v9:(45,40),v13:(9,38)} dist=36.05551275463989
+Edge between 9 and 14 is e={v9:(45,40),v14:(12,38)} dist=33.06055050963308
+Edge between 9 and 15 is e={v9:(45,40),v15:(19,38)} dist=26.076809620810597
+Edge between 9 and 16 is e={v9:(45,40),v16:(25,38)} dist=20.09975124224178
+Edge between 9 and 17 is e={v9:(45,40),v17:(6,37)} dist=39.11521443121589
+Edge between 9 and 18 is e={v9:(45,40),v18:(13,35)} dist=32.38826948140329
+Edge between 9 and 19 is e={v9:(45,40),v19:(9,34)} dist=36.49657518178932
+Edge between 9 and 20 is e={v9:(45,40),v20:(12,34)} dist=33.54101966249684
+Edge between 9 and 21 is e={v9:(45,40),v21:(32,27)} dist=18.384776310850235
+Edge between 9 and 22 is e={v9:(45,40),v22:(26,25)} dist=24.20743687382041
+Edge between 9 and 23 is e={v9:(45,40),v23:(39,24)} dist=17.08800749063506
+Edge between 9 and 24 is e={v9:(45,40),v24:(34,23)} dist=20.248456731316587
+Edge between 9 and 25 is e={v9:(45,40),v25:(37,23)} dist=18.788294228055936
+Edge between 9 and 26 is e={v9:(45,40),v26:(22,22)} dist=29.206163733020468
+Edge between 9 and 27 is e={v9:(45,40),v27:(38,21)} dist=20.248456731316587
+Edge between 9 and 28 is e={v9:(45,40),v28:(35,20)} dist=22.360679774997898
+Edge between 9 and 29 is e={v9:(45,40),v29:(31,18)} dist=26.076809620810597
+Edge between 9 and 30 is e={v9:(45,40),v30:(26,16)} dist=30.610455730027933
+Edge between 9 and 31 is e={v9:(45,40),v31:(38,13)} dist=27.892651361962706
+Edge between 9 and 32 is e={v9:(45,40),v32:(29,11)} dist=33.12099032335839
+Edge between 9 and 33 is e={v9:(45,40),v33:(34,11)} dist=31.016124838541646
+Edge between 9 and 34 is e={v9:(45,40),v34:(37,10)} dist=31.04834939252005
+Edge between 9 and 35 is e={v9:(45,40),v35:(40,9)} dist=31.400636936215164
+Edge between 9 and 36 is e={v9:(45,40),v36:(42,9)} dist=31.144823004794873
+Edge between 10 and 11 is e={v10:(7,39),v11:(38,39)} dist=31.0
+Edge between 10 and 12 is e={v10:(7,39),v12:(42,39)} dist=35.0
+Edge between 10 and 13 is e={v10:(7,39),v13:(9,38)} dist=2.23606797749979
+Edge between 10 and 14 is e={v10:(7,39),v14:(12,38)} dist=5.0990195135927845
+Edge between 10 and 15 is e={v10:(7,39),v15:(19,38)} dist=12.041594578792296
+Edge between 10 and 16 is e={v10:(7,39),v16:(25,38)} dist=18.027756377319946
+Edge between 10 and 17 is e={v10:(7,39),v17:(6,37)} dist=2.23606797749979
+Edge between 10 and 18 is e={v10:(7,39),v18:(13,35)} dist=7.211102550927978
+Edge between 10 and 19 is e={v10:(7,39),v19:(9,34)} dist=5.385164807134504
+Edge between 10 and 20 is e={v10:(7,39),v20:(12,34)} dist=7.0710678118654755
+Edge between 10 and 21 is e={v10:(7,39),v21:(32,27)} dist=27.730849247724095
+Edge between 10 and 22 is e={v10:(7,39),v22:(26,25)} dist=23.600847442411894
+Edge between 10 and 23 is e={v10:(7,39),v23:(39,24)} dist=35.34119409414458
+Edge between 10 and 24 is e={v10:(7,39),v24:(34,23)} dist=31.38470965295043
+Edge between 10 and 25 is e={v10:(7,39),v25:(37,23)} dist=34.0
+Edge between 10 and 26 is e={v10:(7,39),v26:(22,22)} dist=22.67156809750927
+Edge between 10 and 27 is e={v10:(7,39),v27:(38,21)} dist=35.84689665786984
+Edge between 10 and 28 is e={v10:(7,39),v28:(35,20)} dist=33.83784863137726
+Edge between 10 and 29 is e={v10:(7,39),v29:(31,18)} dist=31.89043743820395
+Edge between 10 and 30 is e={v10:(7,39),v30:(26,16)} dist=29.832867780352597
+Edge between 10 and 31 is e={v10:(7,39),v31:(38,13)} dist=40.45985664828782
+Edge between 10 and 32 is e={v10:(7,39),v32:(29,11)} dist=35.608987629529715
+Edge between 10 and 33 is e={v10:(7,39),v33:(34,11)} dist=38.897300677553446
+Edge between 10 and 34 is e={v10:(7,39),v34:(37,10)} dist=41.72529209005013
+Edge between 10 and 35 is e={v10:(7,39),v35:(40,9)} dist=44.598206241955516
+Edge between 10 and 36 is e={v10:(7,39),v36:(42,9)} dist=46.09772228646444
+Edge between 11 and 12 is e={v11:(38,39),v12:(42,39)} dist=4.0
+Edge between 11 and 13 is e={v11:(38,39),v13:(9,38)} dist=29.017236257093817
+Edge between 11 and 14 is e={v11:(38,39),v14:(12,38)} dist=26.019223662515376
+Edge between 11 and 15 is e={v11:(38,39),v15:(19,38)} dist=19.026297590440446
+Edge between 11 and 16 is e={v11:(38,39),v16:(25,38)} dist=13.038404810405298
+Edge between 11 and 17 is e={v11:(38,39),v17:(6,37)} dist=32.0624390837628
+Edge between 11 and 18 is e={v11:(38,39),v18:(13,35)} dist=25.317977802344327
+Edge between 11 and 19 is e={v11:(38,39),v19:(9,34)} dist=29.427877939124322
+Edge between 11 and 20 is e={v11:(38,39),v20:(12,34)} dist=26.476404589747453
+Edge between 11 and 21 is e={v11:(38,39),v21:(32,27)} dist=13.416407864998739
+Edge between 11 and 22 is e={v11:(38,39),v22:(26,25)} dist=18.439088914585774
+Edge between 11 and 23 is e={v11:(38,39),v23:(39,24)} dist=15.033296378372908
+Edge between 11 and 24 is e={v11:(38,39),v24:(34,23)} dist=16.492422502470642
+Edge between 11 and 25 is e={v11:(38,39),v25:(37,23)} dist=16.0312195418814
+Edge between 11 and 26 is e={v11:(38,39),v26:(22,22)} dist=23.345235059857504
+Edge between 11 and 27 is e={v11:(38,39),v27:(38,21)} dist=18.0
+Edge between 11 and 28 is e={v11:(38,39),v28:(35,20)} dist=19.235384061671343
+Edge between 11 and 29 is e={v11:(38,39),v29:(31,18)} dist=22.135943621178654
+Edge between 11 and 30 is e={v11:(38,39),v30:(26,16)} dist=25.942243542145693
+Edge between 11 and 31 is e={v11:(38,39),v31:(38,13)} dist=26.0
+Edge between 11 and 32 is e={v11:(38,39),v32:(29,11)} dist=29.410882339705484
+Edge between 11 and 33 is e={v11:(38,39),v33:(34,11)} dist=28.284271247461902
+Edge between 11 and 34 is e={v11:(38,39),v34:(37,10)} dist=29.017236257093817
+Edge between 11 and 35 is e={v11:(38,39),v35:(40,9)} dist=30.066592756745816
+Edge between 11 and 36 is e={v11:(38,39),v36:(42,9)} dist=30.265491900843113
+Edge between 12 and 13 is e={v12:(42,39),v13:(9,38)} dist=33.015148038438355
+Edge between 12 and 14 is e={v12:(42,39),v14:(12,38)} dist=30.01666203960727
+Edge between 12 and 15 is e={v12:(42,39),v15:(19,38)} dist=23.021728866442675
+Edge between 12 and 16 is e={v12:(42,39),v16:(25,38)} dist=17.029386365926403
+Edge between 12 and 17 is e={v12:(42,39),v17:(6,37)} dist=36.05551275463989
+Edge between 12 and 18 is e={v12:(42,39),v18:(13,35)} dist=29.274562336608895
+Edge between 12 and 19 is e={v12:(42,39),v19:(9,34)} dist=33.37663853655727
+Edge between 12 and 20 is e={v12:(42,39),v20:(12,34)} dist=30.4138126514911
+Edge between 12 and 21 is e={v12:(42,39),v21:(32,27)} dist=15.620499351813308
+Edge between 12 and 22 is e={v12:(42,39),v22:(26,25)} dist=21.2602916254693
+Edge between 12 and 23 is e={v12:(42,39),v23:(39,24)} dist=15.297058540778355
+Edge between 12 and 24 is e={v12:(42,39),v24:(34,23)} dist=17.88854381999832
+Edge between 12 and 25 is e={v12:(42,39),v25:(37,23)} dist=16.76305461424021
+Edge between 12 and 26 is e={v12:(42,39),v26:(22,22)} dist=26.248809496813376
+Edge between 12 and 27 is e={v12:(42,39),v27:(38,21)} dist=18.439088914585774
+Edge between 12 and 28 is e={v12:(42,39),v28:(35,20)} dist=20.248456731316587
+Edge between 12 and 29 is e={v12:(42,39),v29:(31,18)} dist=23.706539182259394
+Edge between 12 and 30 is e={v12:(42,39),v30:(26,16)} dist=28.0178514522438
+Edge between 12 and 31 is e={v12:(42,39),v31:(38,13)} dist=26.30589287593181
+Edge between 12 and 32 is e={v12:(42,39),v32:(29,11)} dist=30.870698080866262
+Edge between 12 and 33 is e={v12:(42,39),v33:(34,11)} dist=29.120439557122072
+Edge between 12 and 34 is e={v12:(42,39),v34:(37,10)} dist=29.427877939124322
+Edge between 12 and 35 is e={v12:(42,39),v35:(40,9)} dist=30.066592756745816
+Edge between 12 and 36 is e={v12:(42,39),v36:(42,9)} dist=30.0
+Edge between 13 and 14 is e={v13:(9,38),v14:(12,38)} dist=3.0
+Edge between 13 and 15 is e={v13:(9,38),v15:(19,38)} dist=10.0
+Edge between 13 and 16 is e={v13:(9,38),v16:(25,38)} dist=16.0
+Edge between 13 and 17 is e={v13:(9,38),v17:(6,37)} dist=3.1622776601683795
+Edge between 13 and 18 is e={v13:(9,38),v18:(13,35)} dist=5.0
+Edge between 13 and 19 is e={v13:(9,38),v19:(9,34)} dist=4.0
+Edge between 13 and 20 is e={v13:(9,38),v20:(12,34)} dist=5.0
+Edge between 13 and 21 is e={v13:(9,38),v21:(32,27)} dist=25.495097567963924
+Edge between 13 and 22 is e={v13:(9,38),v22:(26,25)} dist=21.400934559032695
+Edge between 13 and 23 is e={v13:(9,38),v23:(39,24)} dist=33.1058907144937
+Edge between 13 and 24 is e={v13:(9,38),v24:(34,23)} dist=29.154759474226502
+Edge between 13 and 25 is e={v13:(9,38),v25:(37,23)} dist=31.76476034853718
+Edge between 13 and 26 is e={v13:(9,38),v26:(22,22)} dist=20.615528128088304
+Edge between 13 and 27 is e={v13:(9,38),v27:(38,21)} dist=33.61547262794322
+Edge between 13 and 28 is e={v13:(9,38),v28:(35,20)} dist=31.622776601683793
+Edge between 13 and 29 is e={v13:(9,38),v29:(31,18)} dist=29.732137494637012
+Edge between 13 and 30 is e={v13:(9,38),v30:(26,16)} dist=27.80287754891569
+Edge between 13 and 31 is e={v13:(9,38),v31:(38,13)} dist=38.28837943815329
+Edge between 13 and 32 is e={v13:(9,38),v32:(29,11)} dist=33.60059523282288
+Edge between 13 and 33 is e={v13:(9,38),v33:(34,11)} dist=36.796738985948195
+Edge between 13 and 34 is e={v13:(9,38),v34:(37,10)} dist=39.59797974644666
+Edge between 13 and 35 is e={v13:(9,38),v35:(40,9)} dist=42.44997055358225
+Edge between 13 and 36 is e={v13:(9,38),v36:(42,9)} dist=43.93176527297759
+Edge between 14 and 15 is e={v14:(12,38),v15:(19,38)} dist=7.0
+Edge between 14 and 16 is e={v14:(12,38),v16:(25,38)} dist=13.0
+Edge between 14 and 17 is e={v14:(12,38),v17:(6,37)} dist=6.082762530298219
+Edge between 14 and 18 is e={v14:(12,38),v18:(13,35)} dist=3.1622776601683795
+Edge between 14 and 19 is e={v14:(12,38),v19:(9,34)} dist=5.0
+Edge between 14 and 20 is e={v14:(12,38),v20:(12,34)} dist=4.0
+Edge between 14 and 21 is e={v14:(12,38),v21:(32,27)} dist=22.825424421026653
+Edge between 14 and 22 is e={v14:(12,38),v22:(26,25)} dist=19.1049731745428
+Edge between 14 and 23 is e={v14:(12,38),v23:(39,24)} dist=30.4138126514911
+Edge between 14 and 24 is e={v14:(12,38),v24:(34,23)} dist=26.627053911388696
+Edge between 14 and 25 is e={v14:(12,38),v25:(37,23)} dist=29.154759474226502
+Edge between 14 and 26 is e={v14:(12,38),v26:(22,22)} dist=18.867962264113206
+Edge between 14 and 27 is e={v14:(12,38),v27:(38,21)} dist=31.064449134018133
+Edge between 14 and 28 is e={v14:(12,38),v28:(35,20)} dist=29.206163733020468
+Edge between 14 and 29 is e={v14:(12,38),v29:(31,18)} dist=27.586228448267445
+Edge between 14 and 30 is e={v14:(12,38),v30:(26,16)} dist=26.076809620810597
+Edge between 14 and 31 is e={v14:(12,38),v31:(38,13)} dist=36.069377593742864
+Edge between 14 and 32 is e={v14:(12,38),v32:(29,11)} dist=31.906112267087632
+Edge between 14 and 33 is e={v14:(12,38),v33:(34,11)} dist=34.828149534535996
+Edge between 14 and 34 is e={v14:(12,38),v34:(37,10)} dist=37.53664875824692
+Edge between 14 and 35 is e={v14:(12,38),v35:(40,9)} dist=40.311288741492746
+Edge between 14 and 36 is e={v14:(12,38),v36:(42,9)} dist=41.72529209005013
+Edge between 15 and 16 is e={v15:(19,38),v16:(25,38)} dist=6.0
+Edge between 15 and 17 is e={v15:(19,38),v17:(6,37)} dist=13.038404810405298
+Edge between 15 and 18 is e={v15:(19,38),v18:(13,35)} dist=6.708203932499369
+Edge between 15 and 19 is e={v15:(19,38),v19:(9,34)} dist=10.770329614269007
+Edge between 15 and 20 is e={v15:(19,38),v20:(12,34)} dist=8.06225774829855
+Edge between 15 and 21 is e={v15:(19,38),v21:(32,27)} dist=17.029386365926403
+Edge between 15 and 22 is e={v15:(19,38),v22:(26,25)} dist=14.7648230602334
+Edge between 15 and 23 is e={v15:(19,38),v23:(39,24)} dist=24.413111231467404
+Edge between 15 and 24 is e={v15:(19,38),v24:(34,23)} dist=21.213203435596427
+Edge between 15 and 25 is e={v15:(19,38),v25:(37,23)} dist=23.430749027719962
+Edge between 15 and 26 is e={v15:(19,38),v26:(22,22)} dist=16.278820596099706
+Edge between 15 and 27 is e={v15:(19,38),v27:(38,21)} dist=25.495097567963924
+Edge between 15 and 28 is e={v15:(19,38),v28:(35,20)} dist=24.08318915758459
+Edge between 15 and 29 is e={v15:(19,38),v29:(31,18)} dist=23.323807579381203
+Edge between 15 and 30 is e={v15:(19,38),v30:(26,16)} dist=23.08679276123039
+Edge between 15 and 31 is e={v15:(19,38),v31:(38,13)} dist=31.400636936215164
+Edge between 15 and 32 is e={v15:(19,38),v32:(29,11)} dist=28.792360097775937
+Edge between 15 and 33 is e={v15:(19,38),v33:(34,11)} dist=30.886890422961002
+Edge between 15 and 34 is e={v15:(19,38),v34:(37,10)} dist=33.28663395418648
+Edge between 15 and 35 is e={v15:(19,38),v35:(40,9)} dist=35.805027579936315
+Edge between 15 and 36 is e={v15:(19,38),v36:(42,9)} dist=37.013511046643494
+Edge between 16 and 17 is e={v16:(25,38),v17:(6,37)} dist=19.026297590440446
+Edge between 16 and 18 is e={v16:(25,38),v18:(13,35)} dist=12.36931687685298
+Edge between 16 and 19 is e={v16:(25,38),v19:(9,34)} dist=16.492422502470642
+Edge between 16 and 20 is e={v16:(25,38),v20:(12,34)} dist=13.601470508735444
+Edge between 16 and 21 is e={v16:(25,38),v21:(32,27)} dist=13.038404810405298
+Edge between 16 and 22 is e={v16:(25,38),v22:(26,25)} dist=13.038404810405298
+Edge between 16 and 23 is e={v16:(25,38),v23:(39,24)} dist=19.79898987322333
+Edge between 16 and 24 is e={v16:(25,38),v24:(34,23)} dist=17.4928556845359
+Edge between 16 and 25 is e={v16:(25,38),v25:(37,23)} dist=19.209372712298546
+Edge between 16 and 26 is e={v16:(25,38),v26:(22,22)} dist=16.278820596099706
+Edge between 16 and 27 is e={v16:(25,38),v27:(38,21)} dist=21.400934559032695
+Edge between 16 and 28 is e={v16:(25,38),v28:(35,20)} dist=20.591260281974
+Edge between 16 and 29 is e={v16:(25,38),v29:(31,18)} dist=20.8806130178211
+Edge between 16 and 30 is e={v16:(25,38),v30:(26,16)} dist=22.02271554554524
+Edge between 16 and 31 is e={v16:(25,38),v31:(38,13)} dist=28.178005607210743
+Edge between 16 and 32 is e={v16:(25,38),v32:(29,11)} dist=27.294688127912362
+Edge between 16 and 33 is e={v16:(25,38),v33:(34,11)} dist=28.460498941515414
+Edge between 16 and 34 is e={v16:(25,38),v34:(37,10)} dist=30.463092423455635
+Edge between 16 and 35 is e={v16:(25,38),v35:(40,9)} dist=32.64965543462902
+Edge between 16 and 36 is e={v16:(25,38),v36:(42,9)} dist=33.61547262794322
+Edge between 17 and 18 is e={v17:(6,37),v18:(13,35)} dist=7.280109889280518
+Edge between 17 and 19 is e={v17:(6,37),v19:(9,34)} dist=4.242640687119285
+Edge between 17 and 20 is e={v17:(6,37),v20:(12,34)} dist=6.708203932499369
+Edge between 17 and 21 is e={v17:(6,37),v21:(32,27)} dist=27.85677655436824
+Edge between 17 and 22 is e={v17:(6,37),v22:(26,25)} dist=23.323807579381203
+Edge between 17 and 23 is e={v17:(6,37),v23:(39,24)} dist=35.4682957019364
+Edge between 17 and 24 is e={v17:(6,37),v24:(34,23)} dist=31.304951684997057
+Edge between 17 and 25 is e={v17:(6,37),v25:(37,23)} dist=34.0147027033899
+Edge between 17 and 26 is e={v17:(6,37),v26:(22,22)} dist=21.93171219946131
+Edge between 17 and 27 is e={v17:(6,37),v27:(38,21)} dist=35.77708763999664
+Edge between 17 and 28 is e={v17:(6,37),v28:(35,20)} dist=33.61547262794322
+Edge between 17 and 29 is e={v17:(6,37),v29:(31,18)} dist=31.400636936215164
+Edge between 17 and 30 is e={v17:(6,37),v30:(26,16)} dist=29.0
+Edge between 17 and 31 is e={v17:(6,37),v31:(38,13)} dist=40.0
+Edge between 17 and 32 is e={v17:(6,37),v32:(29,11)} dist=34.713109915419565
+Edge between 17 and 33 is e={v17:(6,37),v33:(34,11)} dist=38.2099463490856
+Edge between 17 and 34 is e={v17:(6,37),v34:(37,10)} dist=41.10960958218893
+Edge between 17 and 35 is e={v17:(6,37),v35:(40,9)} dist=44.04543109109048
+Edge between 17 and 36 is e={v17:(6,37),v36:(42,9)} dist=45.60701700396552
+Edge between 18 and 19 is e={v18:(13,35),v19:(9,34)} dist=4.123105625617661
+Edge between 18 and 20 is e={v18:(13,35),v20:(12,34)} dist=1.4142135623730951
+Edge between 18 and 21 is e={v18:(13,35),v21:(32,27)} dist=20.615528128088304
+Edge between 18 and 22 is e={v18:(13,35),v22:(26,25)} dist=16.401219466856727
+Edge between 18 and 23 is e={v18:(13,35),v23:(39,24)} dist=28.231188426986208
+Edge between 18 and 24 is e={v18:(13,35),v24:(34,23)} dist=24.186773244895647
+Edge between 18 and 25 is e={v18:(13,35),v25:(37,23)} dist=26.832815729997478
+Edge between 18 and 26 is e={v18:(13,35),v26:(22,22)} dist=15.811388300841896
+Edge between 18 and 27 is e={v18:(13,35),v27:(38,21)} dist=28.653097563788805
+Edge between 18 and 28 is e={v18:(13,35),v28:(35,20)} dist=26.627053911388696
+Edge between 18 and 29 is e={v18:(13,35),v29:(31,18)} dist=24.758836806279895
+Edge between 18 and 30 is e={v18:(13,35),v30:(26,16)} dist=23.021728866442675
+Edge between 18 and 31 is e={v18:(13,35),v31:(38,13)} dist=33.301651610693426
+Edge between 18 and 32 is e={v18:(13,35),v32:(29,11)} dist=28.844410203711913
+Edge between 18 and 33 is e={v18:(13,35),v33:(34,11)} dist=31.89043743820395
+Edge between 18 and 34 is e={v18:(13,35),v34:(37,10)} dist=34.655446902326915
+Edge between 18 and 35 is e={v18:(13,35),v35:(40,9)} dist=37.48332962798263
+Edge between 18 and 36 is e={v18:(13,35),v36:(42,9)} dist=38.948684188300895
+Edge between 19 and 20 is e={v19:(9,34),v20:(12,34)} dist=3.0
+Edge between 19 and 21 is e={v19:(9,34),v21:(32,27)} dist=24.041630560342615
+Edge between 19 and 22 is e={v19:(9,34),v22:(26,25)} dist=19.235384061671343
+Edge between 19 and 23 is e={v19:(9,34),v23:(39,24)} dist=31.622776601683793
+Edge between 19 and 24 is e={v19:(9,34),v24:(34,23)} dist=27.313000567495326
+Edge between 19 and 25 is e={v19:(9,34),v25:(37,23)} dist=30.083217912982647
+Edge between 19 and 26 is e={v19:(9,34),v26:(22,22)} dist=17.69180601295413
+Edge between 19 and 27 is e={v19:(9,34),v27:(38,21)} dist=31.78049716414141
+Edge between 19 and 28 is e={v19:(9,34),v28:(35,20)} dist=29.5296461204668
+Edge between 19 and 29 is e={v19:(9,34),v29:(31,18)} dist=27.202941017470888
+Edge between 19 and 30 is e={v19:(9,34),v30:(26,16)} dist=24.758836806279895
+Edge between 19 and 31 is e={v19:(9,34),v31:(38,13)} dist=35.805027579936315
+Edge between 19 and 32 is e={v19:(9,34),v32:(29,11)} dist=30.479501308256342
+Edge between 19 and 33 is e={v19:(9,34),v33:(34,11)} dist=33.97057550292606
+Edge between 19 and 34 is e={v19:(9,34),v34:(37,10)} dist=36.87817782917155
+Edge between 19 and 35 is e={v19:(9,34),v35:(40,9)} dist=39.824615503479755
+Edge between 19 and 36 is e={v19:(9,34),v36:(42,9)} dist=41.400483088968905
+Edge between 20 and 21 is e={v20:(12,34),v21:(32,27)} dist=21.18962010041709
+Edge between 20 and 22 is e={v20:(12,34),v22:(26,25)} dist=16.64331697709324
+Edge between 20 and 23 is e={v20:(12,34),v23:(39,24)} dist=28.792360097775937
+Edge between 20 and 24 is e={v20:(12,34),v24:(34,23)} dist=24.596747752497688
+Edge between 20 and 25 is e={v20:(12,34),v25:(37,23)} dist=27.313000567495326
+Edge between 20 and 26 is e={v20:(12,34),v26:(22,22)} dist=15.620499351813308
+Edge between 20 and 27 is e={v20:(12,34),v27:(38,21)} dist=29.068883707497267
+Edge between 20 and 28 is e={v20:(12,34),v28:(35,20)} dist=26.92582403567252
+Edge between 20 and 29 is e={v20:(12,34),v29:(31,18)} dist=24.839484696748443
+Edge between 20 and 30 is e={v20:(12,34),v30:(26,16)} dist=22.80350850198276
+Edge between 20 and 31 is e={v20:(12,34),v31:(38,13)} dist=33.421549934136806
+Edge between 20 and 32 is e={v20:(12,34),v32:(29,11)} dist=28.600699292150182
+Edge between 20 and 33 is e={v20:(12,34),v33:(34,11)} dist=31.827660925679098
+Edge between 20 and 34 is e={v20:(12,34),v34:(37,10)} dist=34.655446902326915
+Edge between 20 and 35 is e={v20:(12,34),v35:(40,9)} dist=37.53664875824692
+Edge between 20 and 36 is e={v20:(12,34),v36:(42,9)} dist=39.05124837953327
+Edge between 21 and 22 is e={v21:(32,27),v22:(26,25)} dist=6.324555320336759
+Edge between 21 and 23 is e={v21:(32,27),v23:(39,24)} dist=7.615773105863909
+Edge between 21 and 24 is e={v21:(32,27),v24:(34,23)} dist=4.47213595499958
+Edge between 21 and 25 is e={v21:(32,27),v25:(37,23)} dist=6.4031242374328485
+Edge between 21 and 26 is e={v21:(32,27),v26:(22,22)} dist=11.180339887498949
+Edge between 21 and 27 is e={v21:(32,27),v27:(38,21)} dist=8.48528137423857
+Edge between 21 and 28 is e={v21:(32,27),v28:(35,20)} dist=7.615773105863909
+Edge between 21 and 29 is e={v21:(32,27),v29:(31,18)} dist=9.055385138137417
+Edge between 21 and 30 is e={v21:(32,27),v30:(26,16)} dist=12.529964086141668
+Edge between 21 and 31 is e={v21:(32,27),v31:(38,13)} dist=15.231546211727817
+Edge between 21 and 32 is e={v21:(32,27),v32:(29,11)} dist=16.278820596099706
+Edge between 21 and 33 is e={v21:(32,27),v33:(34,11)} dist=16.1245154965971
+Edge between 21 and 34 is e={v21:(32,27),v34:(37,10)} dist=17.72004514666935
+Edge between 21 and 35 is e={v21:(32,27),v35:(40,9)} dist=19.697715603592208
+Edge between 21 and 36 is e={v21:(32,27),v36:(42,9)} dist=20.591260281974
+Edge between 22 and 23 is e={v22:(26,25),v23:(39,24)} dist=13.038404810405298
+Edge between 22 and 24 is e={v22:(26,25),v24:(34,23)} dist=8.246211251235321
+Edge between 22 and 25 is e={v22:(26,25),v25:(37,23)} dist=11.180339887498949
+Edge between 22 and 26 is e={v22:(26,25),v26:(22,22)} dist=5.0
+Edge between 22 and 27 is e={v22:(26,25),v27:(38,21)} dist=12.649110640673518
+Edge between 22 and 28 is e={v22:(26,25),v28:(35,20)} dist=10.295630140987
+Edge between 22 and 29 is e={v22:(26,25),v29:(31,18)} dist=8.602325267042627
+Edge between 22 and 30 is e={v22:(26,25),v30:(26,16)} dist=9.0
+Edge between 22 and 31 is e={v22:(26,25),v31:(38,13)} dist=16.97056274847714
+Edge between 22 and 32 is e={v22:(26,25),v32:(29,11)} dist=14.317821063276353
+Edge between 22 and 33 is e={v22:(26,25),v33:(34,11)} dist=16.1245154965971
+Edge between 22 and 34 is e={v22:(26,25),v34:(37,10)} dist=18.601075237738275
+Edge between 22 and 35 is e={v22:(26,25),v35:(40,9)} dist=21.2602916254693
+Edge between 22 and 36 is e={v22:(26,25),v36:(42,9)} dist=22.627416997969522
+Edge between 23 and 24 is e={v23:(39,24),v24:(34,23)} dist=5.0990195135927845
+Edge between 23 and 25 is e={v23:(39,24),v25:(37,23)} dist=2.23606797749979
+Edge between 23 and 26 is e={v23:(39,24),v26:(22,22)} dist=17.11724276862369
+Edge between 23 and 27 is e={v23:(39,24),v27:(38,21)} dist=3.1622776601683795
+Edge between 23 and 28 is e={v23:(39,24),v28:(35,20)} dist=5.656854249492381
+Edge between 23 and 29 is e={v23:(39,24),v29:(31,18)} dist=10.0
+Edge between 23 and 30 is e={v23:(39,24),v30:(26,16)} dist=15.264337522473747
+Edge between 23 and 31 is e={v23:(39,24),v31:(38,13)} dist=11.045361017187261
+Edge between 23 and 32 is e={v23:(39,24),v32:(29,11)} dist=16.401219466856727
+Edge between 23 and 33 is e={v23:(39,24),v33:(34,11)} dist=13.92838827718412
+Edge between 23 and 34 is e={v23:(39,24),v34:(37,10)} dist=14.142135623730951
+Edge between 23 and 35 is e={v23:(39,24),v35:(40,9)} dist=15.033296378372908
+Edge between 23 and 36 is e={v23:(39,24),v36:(42,9)} dist=15.297058540778355
+Edge between 24 and 25 is e={v24:(34,23),v25:(37,23)} dist=3.0
+Edge between 24 and 26 is e={v24:(34,23),v26:(22,22)} dist=12.041594578792296
+Edge between 24 and 27 is e={v24:(34,23),v27:(38,21)} dist=4.47213595499958
+Edge between 24 and 28 is e={v24:(34,23),v28:(35,20)} dist=3.1622776601683795
+Edge between 24 and 29 is e={v24:(34,23),v29:(31,18)} dist=5.830951894845301
+Edge between 24 and 30 is e={v24:(34,23),v30:(26,16)} dist=10.63014581273465
+Edge between 24 and 31 is e={v24:(34,23),v31:(38,13)} dist=10.770329614269007
+Edge between 24 and 32 is e={v24:(34,23),v32:(29,11)} dist=13.0
+Edge between 24 and 33 is e={v24:(34,23),v33:(34,11)} dist=12.0
+Edge between 24 and 34 is e={v24:(34,23),v34:(37,10)} dist=13.341664064126334
+Edge between 24 and 35 is e={v24:(34,23),v35:(40,9)} dist=15.231546211727817
+Edge between 24 and 36 is e={v24:(34,23),v36:(42,9)} dist=16.1245154965971
+Edge between 25 and 26 is e={v25:(37,23),v26:(22,22)} dist=15.033296378372908
+Edge between 25 and 27 is e={v25:(37,23),v27:(38,21)} dist=2.23606797749979
+Edge between 25 and 28 is e={v25:(37,23),v28:(35,20)} dist=3.605551275463989
+Edge between 25 and 29 is e={v25:(37,23),v29:(31,18)} dist=7.810249675906654
+Edge between 25 and 30 is e={v25:(37,23),v30:(26,16)} dist=13.038404810405298
+Edge between 25 and 31 is e={v25:(37,23),v31:(38,13)} dist=10.04987562112089
+Edge between 25 and 32 is e={v25:(37,23),v32:(29,11)} dist=14.422205101855956
+Edge between 25 and 33 is e={v25:(37,23),v33:(34,11)} dist=12.36931687685298
+Edge between 25 and 34 is e={v25:(37,23),v34:(37,10)} dist=13.0
+Edge between 25 and 35 is e={v25:(37,23),v35:(40,9)} dist=14.317821063276353
+Edge between 25 and 36 is e={v25:(37,23),v36:(42,9)} dist=14.866068747318506
+Edge between 26 and 27 is e={v26:(22,22),v27:(38,21)} dist=16.0312195418814
+Edge between 26 and 28 is e={v26:(22,22),v28:(35,20)} dist=13.152946437965905
+Edge between 26 and 29 is e={v26:(22,22),v29:(31,18)} dist=9.848857801796104
+Edge between 26 and 30 is e={v26:(22,22),v30:(26,16)} dist=7.211102550927978
+Edge between 26 and 31 is e={v26:(22,22),v31:(38,13)} dist=18.35755975068582
+Edge between 26 and 32 is e={v26:(22,22),v32:(29,11)} dist=13.038404810405298
+Edge between 26 and 33 is e={v26:(22,22),v33:(34,11)} dist=16.278820596099706
+Edge between 26 and 34 is e={v26:(22,22),v34:(37,10)} dist=19.209372712298546
+Edge between 26 and 35 is e={v26:(22,22),v35:(40,9)} dist=22.20360331117452
+Edge between 26 and 36 is e={v26:(22,22),v36:(42,9)} dist=23.853720883753127
+Edge between 27 and 28 is e={v27:(38,21),v28:(35,20)} dist=3.1622776601683795
+Edge between 27 and 29 is e={v27:(38,21),v29:(31,18)} dist=7.615773105863909
+Edge between 27 and 30 is e={v27:(38,21),v30:(26,16)} dist=13.0
+Edge between 27 and 31 is e={v27:(38,21),v31:(38,13)} dist=8.0
+Edge between 27 and 32 is e={v27:(38,21),v32:(29,11)} dist=13.45362404707371
+Edge between 27 and 33 is e={v27:(38,21),v33:(34,11)} dist=10.770329614269007
+Edge between 27 and 34 is e={v27:(38,21),v34:(37,10)} dist=11.045361017187261
+Edge between 27 and 35 is e={v27:(38,21),v35:(40,9)} dist=12.165525060596439
+Edge between 27 and 36 is e={v27:(38,21),v36:(42,9)} dist=12.649110640673518
+Edge between 28 and 29 is e={v28:(35,20),v29:(31,18)} dist=4.47213595499958
+Edge between 28 and 30 is e={v28:(35,20),v30:(26,16)} dist=9.848857801796104
+Edge between 28 and 31 is e={v28:(35,20),v31:(38,13)} dist=7.615773105863909
+Edge between 28 and 32 is e={v28:(35,20),v32:(29,11)} dist=10.816653826391969
+Edge between 28 and 33 is e={v28:(35,20),v33:(34,11)} dist=9.055385138137417
+Edge between 28 and 34 is e={v28:(35,20),v34:(37,10)} dist=10.198039027185569
+Edge between 28 and 35 is e={v28:(35,20),v35:(40,9)} dist=12.083045973594572
+Edge between 28 and 36 is e={v28:(35,20),v36:(42,9)} dist=13.038404810405298
+Edge between 29 and 30 is e={v29:(31,18),v30:(26,16)} dist=5.385164807134504
+Edge between 29 and 31 is e={v29:(31,18),v31:(38,13)} dist=8.602325267042627
+Edge between 29 and 32 is e={v29:(31,18),v32:(29,11)} dist=7.280109889280518
+Edge between 29 and 33 is e={v29:(31,18),v33:(34,11)} dist=7.615773105863909
+Edge between 29 and 34 is e={v29:(31,18),v34:(37,10)} dist=10.0
+Edge between 29 and 35 is e={v29:(31,18),v35:(40,9)} dist=12.727922061357855
+Edge between 29 and 36 is e={v29:(31,18),v36:(42,9)} dist=14.212670403551895
+Edge between 30 and 31 is e={v30:(26,16),v31:(38,13)} dist=12.36931687685298
+Edge between 30 and 32 is e={v30:(26,16),v32:(29,11)} dist=5.830951894845301
+Edge between 30 and 33 is e={v30:(26,16),v33:(34,11)} dist=9.433981132056603
+Edge between 30 and 34 is e={v30:(26,16),v34:(37,10)} dist=12.529964086141668
+Edge between 30 and 35 is e={v30:(26,16),v35:(40,9)} dist=15.652475842498529
+Edge between 30 and 36 is e={v30:(26,16),v36:(42,9)} dist=17.46424919657298
+Edge between 31 and 32 is e={v31:(38,13),v32:(29,11)} dist=9.219544457292887
+Edge between 31 and 33 is e={v31:(38,13),v33:(34,11)} dist=4.47213595499958
+Edge between 31 and 34 is e={v31:(38,13),v34:(37,10)} dist=3.1622776601683795
+Edge between 31 and 35 is e={v31:(38,13),v35:(40,9)} dist=4.47213595499958
+Edge between 31 and 36 is e={v31:(38,13),v36:(42,9)} dist=5.656854249492381
+Edge between 32 and 33 is e={v32:(29,11),v33:(34,11)} dist=5.0
+Edge between 32 and 34 is e={v32:(29,11),v34:(37,10)} dist=8.06225774829855
+Edge between 32 and 35 is e={v32:(29,11),v35:(40,9)} dist=11.180339887498949
+Edge between 32 and 36 is e={v32:(29,11),v36:(42,9)} dist=13.152946437965905
+Edge between 33 and 34 is e={v33:(34,11),v34:(37,10)} dist=3.1622776601683795
+Edge between 33 and 35 is e={v33:(34,11),v35:(40,9)} dist=6.324555320336759
+Edge between 33 and 36 is e={v33:(34,11),v36:(42,9)} dist=8.246211251235321
+Edge between 34 and 35 is e={v34:(37,10),v35:(40,9)} dist=3.1622776601683795
+Edge between 34 and 36 is e={v34:(37,10),v36:(42,9)} dist=5.0990195135927845
+Edge between 35 and 36 is e={v35:(40,9),v36:(42,9)} dist=2.0
+!Edge Creation Completed.
+
+Initializing Kruskal Algorithms
+Next it will group vertices in 3 clusters.
+before Kruskal Algorithm
+GROWING FOREST
+++++++++++++++
+
+EDGE: u:18 v:20
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v18:(13,35)
+Size of cluster q:1 element is v20:(12,34)
+ Assigning long and short clusters... Placing v18:(13,35) into v20:(12,34)... Done.
+Finding end of short cluster... v18:(13,35).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v0:(41,45)
+DNODE2: v1:(39,44)
+DNODE3: v2:(42,43)
+DNODE4: v3:(44,43)
+DNODE5: v4:(10,42)
+DNODE6: v5:(38,42)
+DNODE7: v6:(8,41)
+DNODE8: v7:(41,41)
+DNODE9: v8:(13,40)
+DNODE10: v9:(45,40)
+DNODE11: v10:(7,39)
+DNODE12: v11:(38,39)
+DNODE13: v12:(42,39)
+DNODE14: v13:(9,38)
+DNODE15: v14:(12,38)
+DNODE16: v15:(19,38)
+DNODE17: v16:(25,38)
+DNODE18: v17:(6,37) <START DELETION
+DNODE19: v19:(9,34) <END DELETION
+DNODE20: v18:(13,35)v20:(12,34) <INSERTION
+DNODE21: v21:(32,27)
+DNODE22: v22:(26,25)
+DNODE23: v23:(39,24)
+DNODE24: v24:(34,23)
+DNODE25: v25:(37,23)
+DNODE26: v26:(22,22)
+DNODE27: v27:(38,21)
+DNODE28: v28:(35,20)
+DNODE29: v29:(31,18)
+DNODE30: v30:(26,16)
+DNODE31: v31:(38,13)
+DNODE32: v32:(29,11)
+DNODE33: v33:(34,11)
+DNODE34: v34:(37,10)
+DNODE35: v35:(40,9)
+DNODE36: v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:35 v:36
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v35:(40,9)
+Size of cluster q:1 element is v36:(42,9)
+ Assigning long and short clusters... Placing v35:(40,9) into v36:(42,9)... Done.
+Finding end of short cluster... v35:(40,9).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v0:(41,45)
+DNODE2: v1:(39,44)
+DNODE3: v2:(42,43)
+DNODE4: v3:(44,43)
+DNODE5: v4:(10,42)
+DNODE6: v5:(38,42)
+DNODE7: v6:(8,41)
+DNODE8: v7:(41,41)
+DNODE9: v8:(13,40)
+DNODE10: v9:(45,40)
+DNODE11: v10:(7,39)
+DNODE12: v11:(38,39)
+DNODE13: v12:(42,39)
+DNODE14: v13:(9,38)
+DNODE15: v14:(12,38)
+DNODE16: v15:(19,38)
+DNODE17: v16:(25,38)
+DNODE18: v17:(6,37)
+DNODE19: v19:(9,34)
+DNODE20: v18:(13,35)v20:(12,34)
+DNODE21: v21:(32,27)
+DNODE22: v22:(26,25)
+DNODE23: v23:(39,24)
+DNODE24: v24:(34,23)
+DNODE25: v25:(37,23)
+DNODE26: v26:(22,22)
+DNODE27: v27:(38,21)
+DNODE28: v28:(35,20)
+DNODE29: v29:(31,18)
+DNODE30: v30:(26,16)
+DNODE31: v31:(38,13)
+DNODE32: v32:(29,11)
+DNODE33: v33:(34,11)
+DNODE34: v34:(37,10) <START DELETION
+DNODE35: v35:(40,9)v36:(42,9) <INSERTION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:2 v:3
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v2:(42,43)
+Size of cluster q:1 element is v3:(44,43)
+ Assigning long and short clusters... Placing v2:(42,43) into v3:(44,43)... Done.
+Finding end of short cluster... v2:(42,43).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v0:(41,45)
+DNODE2: v1:(39,44) <START DELETION
+DNODE3: v2:(42,43)v3:(44,43) <INSERTION <END DELETION
+DNODE4: v4:(10,42)
+DNODE5: v5:(38,42)
+DNODE6: v6:(8,41)
+DNODE7: v7:(41,41)
+DNODE8: v8:(13,40)
+DNODE9: v9:(45,40)
+DNODE10: v10:(7,39)
+DNODE11: v11:(38,39)
+DNODE12: v12:(42,39)
+DNODE13: v13:(9,38)
+DNODE14: v14:(12,38)
+DNODE15: v15:(19,38)
+DNODE16: v16:(25,38)
+DNODE17: v17:(6,37)
+DNODE18: v19:(9,34)
+DNODE19: v18:(13,35)v20:(12,34)
+DNODE20: v21:(32,27)
+DNODE21: v22:(26,25)
+DNODE22: v23:(39,24)
+DNODE23: v24:(34,23)
+DNODE24: v25:(37,23)
+DNODE25: v26:(22,22)
+DNODE26: v27:(38,21)
+DNODE27: v28:(35,20)
+DNODE28: v29:(31,18)
+DNODE29: v30:(26,16)
+DNODE30: v31:(38,13)
+DNODE31: v32:(29,11)
+DNODE32: v33:(34,11)
+DNODE33: v34:(37,10)
+DNODE34: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:0 v:2
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v0:(41,45)
+Size of cluster q:2 element is v2:(42,43)
+ Assigning long and short clusters... Placing v0:(41,45) into v2:(42,43)... Done.
+Finding end of short cluster... v0:(41,45).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44) <END DELETION
+DNODE2: v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION
+DNODE3: v4:(10,42)
+DNODE4: v5:(38,42)
+DNODE5: v6:(8,41)
+DNODE6: v7:(41,41)
+DNODE7: v8:(13,40)
+DNODE8: v9:(45,40)
+DNODE9: v10:(7,39)
+DNODE10: v11:(38,39)
+DNODE11: v12:(42,39)
+DNODE12: v13:(9,38)
+DNODE13: v14:(12,38)
+DNODE14: v15:(19,38)
+DNODE15: v16:(25,38)
+DNODE16: v17:(6,37)
+DNODE17: v19:(9,34)
+DNODE18: v18:(13,35)v20:(12,34)
+DNODE19: v21:(32,27)
+DNODE20: v22:(26,25)
+DNODE21: v23:(39,24)
+DNODE22: v24:(34,23)
+DNODE23: v25:(37,23)
+DNODE24: v26:(22,22)
+DNODE25: v27:(38,21)
+DNODE26: v28:(35,20)
+DNODE27: v29:(31,18)
+DNODE28: v30:(26,16)
+DNODE29: v31:(38,13)
+DNODE30: v32:(29,11)
+DNODE31: v33:(34,11)
+DNODE32: v34:(37,10)
+DNODE33: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:4 v:6
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v4:(10,42)
+Size of cluster q:1 element is v6:(8,41)
+ Assigning long and short clusters... Placing v4:(10,42) into v6:(8,41)... Done.
+Finding end of short cluster... v4:(10,42).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v0:(41,45)v2:(42,43)v3:(44,43) <START DELETION
+DNODE3: v5:(38,42) <END DELETION
+DNODE4: v4:(10,42)v6:(8,41) <INSERTION
+DNODE5: v7:(41,41)
+DNODE6: v8:(13,40)
+DNODE7: v9:(45,40)
+DNODE8: v10:(7,39)
+DNODE9: v11:(38,39)
+DNODE10: v12:(42,39)
+DNODE11: v13:(9,38)
+DNODE12: v14:(12,38)
+DNODE13: v15:(19,38)
+DNODE14: v16:(25,38)
+DNODE15: v17:(6,37)
+DNODE16: v19:(9,34)
+DNODE17: v18:(13,35)v20:(12,34)
+DNODE18: v21:(32,27)
+DNODE19: v22:(26,25)
+DNODE20: v23:(39,24)
+DNODE21: v24:(34,23)
+DNODE22: v25:(37,23)
+DNODE23: v26:(22,22)
+DNODE24: v27:(38,21)
+DNODE25: v28:(35,20)
+DNODE26: v29:(31,18)
+DNODE27: v30:(26,16)
+DNODE28: v31:(38,13)
+DNODE29: v32:(29,11)
+DNODE30: v33:(34,11)
+DNODE31: v34:(37,10)
+DNODE32: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:8 v:14
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v8:(13,40)
+Size of cluster q:1 element is v14:(12,38)
+ Assigning long and short clusters... Placing v8:(13,40) into v14:(12,38)... Done.
+Finding end of short cluster... v8:(13,40).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE3: v5:(38,42)
+DNODE4: v4:(10,42)v6:(8,41)
+DNODE5: v7:(41,41) <START DELETION
+DNODE6: v9:(45,40) <END DELETION
+DNODE7: v10:(7,39)
+DNODE8: v11:(38,39)
+DNODE9: v12:(42,39)
+DNODE10: v13:(9,38)
+DNODE11: v8:(13,40)v14:(12,38) <INSERTION
+DNODE12: v15:(19,38)
+DNODE13: v16:(25,38)
+DNODE14: v17:(6,37)
+DNODE15: v19:(9,34)
+DNODE16: v18:(13,35)v20:(12,34)
+DNODE17: v21:(32,27)
+DNODE18: v22:(26,25)
+DNODE19: v23:(39,24)
+DNODE20: v24:(34,23)
+DNODE21: v25:(37,23)
+DNODE22: v26:(22,22)
+DNODE23: v27:(38,21)
+DNODE24: v28:(35,20)
+DNODE25: v29:(31,18)
+DNODE26: v30:(26,16)
+DNODE27: v31:(38,13)
+DNODE28: v32:(29,11)
+DNODE29: v33:(34,11)
+DNODE30: v34:(37,10)
+DNODE31: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:2 v:7
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:3 element is v2:(42,43)
+Size of cluster q:1 element is v7:(41,41)
+ Assigning long and short clusters... Placing v7:(41,41) into v2:(42,43)... Done.
+Finding end of short cluster... v7:(41,41).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION
+DNODE3: v5:(38,42)
+DNODE4: v4:(10,42)v6:(8,41) <START DELETION
+DNODE5: v9:(45,40) <END DELETION
+DNODE6: v10:(7,39)
+DNODE7: v11:(38,39)
+DNODE8: v12:(42,39)
+DNODE9: v13:(9,38)
+DNODE10: v8:(13,40)v14:(12,38)
+DNODE11: v15:(19,38)
+DNODE12: v16:(25,38)
+DNODE13: v17:(6,37)
+DNODE14: v19:(9,34)
+DNODE15: v18:(13,35)v20:(12,34)
+DNODE16: v21:(32,27)
+DNODE17: v22:(26,25)
+DNODE18: v23:(39,24)
+DNODE19: v24:(34,23)
+DNODE20: v25:(37,23)
+DNODE21: v26:(22,22)
+DNODE22: v27:(38,21)
+DNODE23: v28:(35,20)
+DNODE24: v29:(31,18)
+DNODE25: v30:(26,16)
+DNODE26: v31:(38,13)
+DNODE27: v32:(29,11)
+DNODE28: v33:(34,11)
+DNODE29: v34:(37,10)
+DNODE30: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:23 v:25
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v23:(39,24)
+Size of cluster q:1 element is v25:(37,23)
+ Assigning long and short clusters... Placing v23:(39,24) into v25:(37,23)... Done.
+Finding end of short cluster... v23:(39,24).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE3: v5:(38,42)
+DNODE4: v4:(10,42)v6:(8,41)
+DNODE5: v9:(45,40)
+DNODE6: v10:(7,39)
+DNODE7: v11:(38,39)
+DNODE8: v12:(42,39)
+DNODE9: v13:(9,38)
+DNODE10: v8:(13,40)v14:(12,38)
+DNODE11: v15:(19,38)
+DNODE12: v16:(25,38)
+DNODE13: v17:(6,37)
+DNODE14: v19:(9,34)
+DNODE15: v18:(13,35)v20:(12,34)
+DNODE16: v21:(32,27)
+DNODE17: v22:(26,25) <START DELETION
+DNODE18: v24:(34,23) <END DELETION
+DNODE19: v23:(39,24)v25:(37,23) <INSERTION
+DNODE20: v26:(22,22)
+DNODE21: v27:(38,21)
+DNODE22: v28:(35,20)
+DNODE23: v29:(31,18)
+DNODE24: v30:(26,16)
+DNODE25: v31:(38,13)
+DNODE26: v32:(29,11)
+DNODE27: v33:(34,11)
+DNODE28: v34:(37,10)
+DNODE29: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:25 v:27
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is v25:(37,23)
+Size of cluster q:1 element is v27:(38,21)
+ Assigning long and short clusters... Placing v27:(38,21) into v25:(37,23)... Done.
+Finding end of short cluster... v27:(38,21).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE3: v5:(38,42)
+DNODE4: v4:(10,42)v6:(8,41)
+DNODE5: v9:(45,40)
+DNODE6: v10:(7,39)
+DNODE7: v11:(38,39)
+DNODE8: v12:(42,39)
+DNODE9: v13:(9,38)
+DNODE10: v8:(13,40)v14:(12,38)
+DNODE11: v15:(19,38)
+DNODE12: v16:(25,38)
+DNODE13: v17:(6,37)
+DNODE14: v19:(9,34)
+DNODE15: v18:(13,35)v20:(12,34)
+DNODE16: v21:(32,27)
+DNODE17: v22:(26,25)
+DNODE18: v24:(34,23)
+DNODE19: v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE20: v26:(22,22) <START DELETION
+DNODE21: v28:(35,20) <END DELETION
+DNODE22: v29:(31,18)
+DNODE23: v30:(26,16)
+DNODE24: v31:(38,13)
+DNODE25: v32:(29,11)
+DNODE26: v33:(34,11)
+DNODE27: v34:(37,10)
+DNODE28: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:10 v:13
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v10:(7,39)
+Size of cluster q:1 element is v13:(9,38)
+ Assigning long and short clusters... Placing v10:(7,39) into v13:(9,38)... Done.
+Finding end of short cluster... v10:(7,39).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)
+DNODE2: v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE3: v5:(38,42)
+DNODE4: v4:(10,42)v6:(8,41)
+DNODE5: v9:(45,40) <START DELETION
+DNODE6: v11:(38,39) <END DELETION
+DNODE7: v12:(42,39)
+DNODE8: v10:(7,39)v13:(9,38) <INSERTION
+DNODE9: v8:(13,40)v14:(12,38)
+DNODE10: v15:(19,38)
+DNODE11: v16:(25,38)
+DNODE12: v17:(6,37)
+DNODE13: v19:(9,34)
+DNODE14: v18:(13,35)v20:(12,34)
+DNODE15: v21:(32,27)
+DNODE16: v22:(26,25)
+DNODE17: v24:(34,23)
+DNODE18: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE19: v26:(22,22)
+DNODE20: v28:(35,20)
+DNODE21: v29:(31,18)
+DNODE22: v30:(26,16)
+DNODE23: v31:(38,13)
+DNODE24: v32:(29,11)
+DNODE25: v33:(34,11)
+DNODE26: v34:(37,10)
+DNODE27: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:0 v:1
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:4 element is v0:(41,45)
+Size of cluster q:1 element is v1:(39,44)
+ Assigning long and short clusters... Placing v1:(39,44) into v0:(41,45)... Done.
+Finding end of short cluster... v1:(39,44).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION <END DELETION
+DNODE2: v5:(38,42)
+DNODE3: v4:(10,42)v6:(8,41)
+DNODE4: v9:(45,40)
+DNODE5: v11:(38,39)
+DNODE6: v12:(42,39)
+DNODE7: v10:(7,39)v13:(9,38)
+DNODE8: v8:(13,40)v14:(12,38)
+DNODE9: v15:(19,38)
+DNODE10: v16:(25,38)
+DNODE11: v17:(6,37)
+DNODE12: v19:(9,34)
+DNODE13: v18:(13,35)v20:(12,34)
+DNODE14: v21:(32,27)
+DNODE15: v22:(26,25)
+DNODE16: v24:(34,23)
+DNODE17: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE18: v26:(22,22)
+DNODE19: v28:(35,20)
+DNODE20: v29:(31,18)
+DNODE21: v30:(26,16)
+DNODE22: v31:(38,13)
+DNODE23: v32:(29,11)
+DNODE24: v33:(34,11)
+DNODE25: v34:(37,10)
+DNODE26: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:1 v:5
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:5 element is v1:(39,44)
+Size of cluster q:1 element is v5:(38,42)
+ Assigning long and short clusters... Placing v5:(38,42) into v1:(39,44)... Done.
+Finding end of short cluster... v5:(38,42).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION <START DELETION
+DNODE2: v4:(10,42)v6:(8,41) <END DELETION
+DNODE3: v9:(45,40)
+DNODE4: v11:(38,39)
+DNODE5: v12:(42,39)
+DNODE6: v10:(7,39)v13:(9,38)
+DNODE7: v8:(13,40)v14:(12,38)
+DNODE8: v15:(19,38)
+DNODE9: v16:(25,38)
+DNODE10: v17:(6,37)
+DNODE11: v19:(9,34)
+DNODE12: v18:(13,35)v20:(12,34)
+DNODE13: v21:(32,27)
+DNODE14: v22:(26,25)
+DNODE15: v24:(34,23)
+DNODE16: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE17: v26:(22,22)
+DNODE18: v28:(35,20)
+DNODE19: v29:(31,18)
+DNODE20: v30:(26,16)
+DNODE21: v31:(38,13)
+DNODE22: v32:(29,11)
+DNODE23: v33:(34,11)
+DNODE24: v34:(37,10)
+DNODE25: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:10 v:17
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is v10:(7,39)
+Size of cluster q:1 element is v17:(6,37)
+ Assigning long and short clusters... Placing v17:(6,37) into v10:(7,39)... Done.
+Finding end of short cluster... v17:(6,37).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v4:(10,42)v6:(8,41)
+DNODE3: v9:(45,40)
+DNODE4: v11:(38,39)
+DNODE5: v12:(42,39)
+DNODE6: v17:(6,37)v10:(7,39)v13:(9,38) <INSERTION
+DNODE7: v8:(13,40)v14:(12,38)
+DNODE8: v15:(19,38)
+DNODE9: v16:(25,38) <START DELETION
+DNODE10: v19:(9,34) <END DELETION
+DNODE11: v18:(13,35)v20:(12,34)
+DNODE12: v21:(32,27)
+DNODE13: v22:(26,25)
+DNODE14: v24:(34,23)
+DNODE15: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE16: v26:(22,22)
+DNODE17: v28:(35,20)
+DNODE18: v29:(31,18)
+DNODE19: v30:(26,16)
+DNODE20: v31:(38,13)
+DNODE21: v32:(29,11)
+DNODE22: v33:(34,11)
+DNODE23: v34:(37,10)
+DNODE24: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:6 v:10
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:2 element is v6:(8,41)
+Size of cluster q:3 element is v10:(7,39)
+ Assigning long and short clusters... Placing v6:(8,41) into v10:(7,39)... Done.
+Finding end of short cluster... v6:(8,41).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <START DELETION
+DNODE2: v9:(45,40) <END DELETION
+DNODE3: v11:(38,39)
+DNODE4: v12:(42,39)
+DNODE5: v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <INSERTION
+DNODE6: v8:(13,40)v14:(12,38)
+DNODE7: v15:(19,38)
+DNODE8: v16:(25,38)
+DNODE9: v19:(9,34)
+DNODE10: v18:(13,35)v20:(12,34)
+DNODE11: v21:(32,27)
+DNODE12: v22:(26,25)
+DNODE13: v24:(34,23)
+DNODE14: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE15: v26:(22,22)
+DNODE16: v28:(35,20)
+DNODE17: v29:(31,18)
+DNODE18: v30:(26,16)
+DNODE19: v31:(38,13)
+DNODE20: v32:(29,11)
+DNODE21: v33:(34,11)
+DNODE22: v34:(37,10)
+DNODE23: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:7 v:12
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:6 element is v7:(41,41)
+Size of cluster q:1 element is v12:(42,39)
+ Assigning long and short clusters... Placing v12:(42,39) into v7:(41,41)... Done.
+Finding end of short cluster... v12:(42,39).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION
+DNODE2: v9:(45,40)
+DNODE3: v11:(38,39) <START DELETION
+DNODE4: v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <END DELETION
+DNODE5: v8:(13,40)v14:(12,38)
+DNODE6: v15:(19,38)
+DNODE7: v16:(25,38)
+DNODE8: v19:(9,34)
+DNODE9: v18:(13,35)v20:(12,34)
+DNODE10: v21:(32,27)
+DNODE11: v22:(26,25)
+DNODE12: v24:(34,23)
+DNODE13: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE14: v26:(22,22)
+DNODE15: v28:(35,20)
+DNODE16: v29:(31,18)
+DNODE17: v30:(26,16)
+DNODE18: v31:(38,13)
+DNODE19: v32:(29,11)
+DNODE20: v33:(34,11)
+DNODE21: v34:(37,10)
+DNODE22: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:19 v:20
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v19:(9,34)
+Size of cluster q:2 element is v20:(12,34)
+ Assigning long and short clusters... Placing v19:(9,34) into v20:(12,34)... Done.
+Finding end of short cluster... v19:(9,34).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v9:(45,40)
+DNODE3: v11:(38,39)
+DNODE4: v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE5: v8:(13,40)v14:(12,38)
+DNODE6: v15:(19,38)
+DNODE7: v16:(25,38) <START DELETION
+DNODE8: v19:(9,34)v18:(13,35)v20:(12,34) <INSERTION <END DELETION
+DNODE9: v21:(32,27)
+DNODE10: v22:(26,25)
+DNODE11: v24:(34,23)
+DNODE12: v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE13: v26:(22,22)
+DNODE14: v28:(35,20)
+DNODE15: v29:(31,18)
+DNODE16: v30:(26,16)
+DNODE17: v31:(38,13)
+DNODE18: v32:(29,11)
+DNODE19: v33:(34,11)
+DNODE20: v34:(37,10)
+DNODE21: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:24 v:25
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v24:(34,23)
+Size of cluster q:3 element is v25:(37,23)
+ Assigning long and short clusters... Placing v24:(34,23) into v25:(37,23)... Done.
+Finding end of short cluster... v24:(34,23).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v9:(45,40)
+DNODE3: v11:(38,39)
+DNODE4: v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE5: v8:(13,40)v14:(12,38)
+DNODE6: v15:(19,38)
+DNODE7: v16:(25,38)
+DNODE8: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE9: v21:(32,27)
+DNODE10: v22:(26,25) <START DELETION
+DNODE11: v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION <END DELETION
+DNODE12: v26:(22,22)
+DNODE13: v28:(35,20)
+DNODE14: v29:(31,18)
+DNODE15: v30:(26,16)
+DNODE16: v31:(38,13)
+DNODE17: v32:(29,11)
+DNODE18: v33:(34,11)
+DNODE19: v34:(37,10)
+DNODE20: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:5 v:11
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:7 element is v5:(38,42)
+Size of cluster q:1 element is v11:(38,39)
+ Assigning long and short clusters... Placing v11:(38,39) into v5:(38,42)... Done.
+Finding end of short cluster... v11:(38,39).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION
+DNODE2: v9:(45,40) <START DELETION
+DNODE3: v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <END DELETION
+DNODE4: v8:(13,40)v14:(12,38)
+DNODE5: v15:(19,38)
+DNODE6: v16:(25,38)
+DNODE7: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE8: v21:(32,27)
+DNODE9: v22:(26,25)
+DNODE10: v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE11: v26:(22,22)
+DNODE12: v28:(35,20)
+DNODE13: v29:(31,18)
+DNODE14: v30:(26,16)
+DNODE15: v31:(38,13)
+DNODE16: v32:(29,11)
+DNODE17: v33:(34,11)
+DNODE18: v34:(37,10)
+DNODE19: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:13 v:14
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:5 element is v13:(9,38)
+Size of cluster q:2 element is v14:(12,38)
+ Assigning long and short clusters... Placing v14:(12,38) into v13:(9,38)... Done.
+Finding end of short cluster... v14:(12,38).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v9:(45,40)
+DNODE3: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <INSERTION <START DELETION
+DNODE4: v15:(19,38) <END DELETION
+DNODE5: v16:(25,38)
+DNODE6: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE7: v21:(32,27)
+DNODE8: v22:(26,25)
+DNODE9: v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE10: v26:(22,22)
+DNODE11: v28:(35,20)
+DNODE12: v29:(31,18)
+DNODE13: v30:(26,16)
+DNODE14: v31:(38,13)
+DNODE15: v32:(29,11)
+DNODE16: v33:(34,11)
+DNODE17: v34:(37,10)
+DNODE18: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:23 v:27
+EDGE: u:9 v:12
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v9:(45,40)
+Size of cluster q:8 element is v12:(42,39)
+ Assigning long and short clusters... Placing v9:(45,40) into v12:(42,39)... Done.
+Finding end of short cluster... v9:(45,40).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43) <INSERTION <START DELETION
+DNODE2: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <END DELETION
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE6: v21:(32,27)
+DNODE7: v22:(26,25)
+DNODE8: v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE9: v26:(22,22)
+DNODE10: v28:(35,20)
+DNODE11: v29:(31,18)
+DNODE12: v30:(26,16)
+DNODE13: v31:(38,13)
+DNODE14: v32:(29,11)
+DNODE15: v33:(34,11)
+DNODE16: v34:(37,10)
+DNODE17: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:24 v:28
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:4 element is v24:(34,23)
+Size of cluster q:1 element is v28:(35,20)
+ Assigning long and short clusters... Placing v28:(35,20) into v24:(34,23)... Done.
+Finding end of short cluster... v28:(35,20).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE6: v21:(32,27)
+DNODE7: v22:(26,25)
+DNODE8: v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE9: v26:(22,22) <START DELETION
+DNODE10: v29:(31,18) <END DELETION
+DNODE11: v30:(26,16)
+DNODE12: v31:(38,13)
+DNODE13: v32:(29,11)
+DNODE14: v33:(34,11)
+DNODE15: v34:(37,10)
+DNODE16: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:27 v:28
+EDGE: u:1 v:2
+EDGE: u:31 v:34
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v31:(38,13)
+Size of cluster q:1 element is v34:(37,10)
+ Assigning long and short clusters... Placing v31:(38,13) into v34:(37,10)... Done.
+Finding end of short cluster... v31:(38,13).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE6: v21:(32,27)
+DNODE7: v22:(26,25)
+DNODE8: v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE9: v26:(22,22)
+DNODE10: v29:(31,18)
+DNODE11: v30:(26,16) <START DELETION
+DNODE12: v32:(29,11) <END DELETION
+DNODE13: v33:(34,11)
+DNODE14: v31:(38,13)v34:(37,10) <INSERTION
+DNODE15: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:5 v:7
+EDGE: u:33 v:34
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v33:(34,11)
+Size of cluster q:2 element is v34:(37,10)
+ Assigning long and short clusters... Placing v33:(34,11) into v34:(37,10)... Done.
+Finding end of short cluster... v33:(34,11).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE6: v21:(32,27)
+DNODE7: v22:(26,25)
+DNODE8: v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE9: v26:(22,22)
+DNODE10: v29:(31,18)
+DNODE11: v30:(26,16)
+DNODE12: v32:(29,11) <START DELETION
+DNODE13: v33:(34,11)v31:(38,13)v34:(37,10) <INSERTION <END DELETION
+DNODE14: v35:(40,9)v36:(42,9)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:34 v:35
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:3 element is v34:(37,10)
+Size of cluster q:2 element is v35:(40,9)
+ Assigning long and short clusters... Placing v35:(40,9) into v34:(37,10)... Done.
+Finding end of short cluster... v36:(42,9).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v19:(9,34)v18:(13,35)v20:(12,34)
+DNODE6: v21:(32,27)
+DNODE7: v22:(26,25)
+DNODE8: v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE9: v26:(22,22)
+DNODE10: v29:(31,18)
+DNODE11: v30:(26,16)
+DNODE12: v32:(29,11)
+DNODE13: v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10) <INSERTION <START DELETION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:3 v:9
+EDGE: u:13 v:17
+EDGE: u:6 v:13
+EDGE: u:14 v:18
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:7 element is v14:(12,38)
+Size of cluster q:3 element is v18:(13,35)
+ Assigning long and short clusters... Placing v18:(13,35) into v14:(12,38)... Done.
+Finding end of short cluster... v20:(12,34).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <INSERTION
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38) <START DELETION
+DNODE5: v21:(32,27) <END DELETION
+DNODE6: v22:(26,25)
+DNODE7: v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE8: v26:(22,22)
+DNODE9: v29:(31,18)
+DNODE10: v30:(26,16)
+DNODE11: v32:(29,11)
+DNODE12: v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:4 v:8
+EDGE: u:25 v:28
+EDGE: u:1 v:7
+EDGE: u:0 v:3
+EDGE: u:3 v:7
+EDGE: u:7 v:11
+EDGE: u:2 v:12
+EDGE: u:11 v:12
+EDGE: u:13 v:19
+EDGE: u:14 v:20
+EDGE: u:0 v:7
+EDGE: u:2 v:5
+EDGE: u:4 v:13
+EDGE: u:7 v:9
+EDGE: u:18 v:19
+EDGE: u:4 v:10
+EDGE: u:2 v:9
+EDGE: u:0 v:5
+EDGE: u:17 v:19
+EDGE: u:8 v:13
+EDGE: u:21 v:24
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v21:(32,27)
+Size of cluster q:5 element is v24:(34,23)
+ Assigning long and short clusters... Placing v21:(32,27) into v24:(34,23)... Done.
+Finding end of short cluster... v21:(32,27).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38) <START DELETION
+DNODE5: v22:(26,25) <END DELETION
+DNODE6: v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE7: v26:(22,22)
+DNODE8: v29:(31,18)
+DNODE9: v30:(26,16)
+DNODE10: v32:(29,11)
+DNODE11: v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:24 v:27
+EDGE: u:4 v:14
+EDGE: u:28 v:29
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:6 element is v28:(35,20)
+Size of cluster q:1 element is v29:(31,18)
+ Assigning long and short clusters... Placing v29:(31,18) into v28:(35,20)... Done.
+Finding end of short cluster... v29:(31,18).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v22:(26,25)
+DNODE6: v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE7: v26:(22,22) <START DELETION
+DNODE8: v30:(26,16) <END DELETION
+DNODE9: v32:(29,11)
+DNODE10: v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:31 v:33
+EDGE: u:31 v:35
+EDGE: u:6 v:17
+EDGE: u:3 v:12
+EDGE: u:8 v:18
+EDGE: u:22 v:26
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v22:(26,25)
+Size of cluster q:1 element is v26:(22,22)
+ Assigning long and short clusters... Placing v22:(26,25) into v26:(22,22)... Done.
+Finding end of short cluster... v22:(26,25).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38) <START DELETION
+DNODE5: v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <END DELETION
+DNODE6: v22:(26,25)v26:(22,22) <INSERTION
+DNODE7: v30:(26,16)
+DNODE8: v32:(29,11)
+DNODE9: v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:32 v:33
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v32:(29,11)
+Size of cluster q:5 element is v33:(34,11)
+ Assigning long and short clusters... Placing v32:(29,11) into v33:(34,11)... Done.
+Finding end of short cluster... v32:(29,11).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE6: v22:(26,25)v26:(22,22)
+DNODE7: v30:(26,16) <START DELETION
+DNODE8: v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10) <INSERTION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:5 v:12
+EDGE: u:13 v:18
+EDGE: u:13 v:20
+EDGE: u:6 v:14
+EDGE: u:14 v:19
+EDGE: u:23 v:24
+EDGE: u:1 v:3
+EDGE: u:10 v:14
+EDGE: u:34 v:36
+EDGE: u:1 v:11
+EDGE: u:6 v:8
+EDGE: u:29 v:30
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:7 element is v29:(31,18)
+Size of cluster q:1 element is v30:(26,16)
+ Assigning long and short clusters... Placing v30:(26,16) into v29:(31,18)... Done.
+Finding end of short cluster... v30:(26,16).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v30:(26,16)v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE6: v22:(26,25)v26:(22,22) <START DELETION
+DNODE7: v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10) <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:10 v:19
+EDGE: u:23 v:28
+EDGE: u:2 v:11
+EDGE: u:31 v:36
+EDGE: u:24 v:29
+EDGE: u:30 v:32
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:8 element is v30:(26,16)
+Size of cluster q:6 element is v32:(29,11)
+ Assigning long and short clusters... Placing v32:(29,11) into v30:(26,16)... Done.
+Finding end of short cluster... v34:(37,10).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v15:(19,38)
+DNODE4: v16:(25,38)
+DNODE5: v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)v30:(26,16)v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION
+DNODE6: v22:(26,25)v26:(22,22) <START DELETION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:1 v:12
+EDGE: u:15 v:16
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:1 element is v15:(19,38)
+Size of cluster q:1 element is v16:(25,38)
+ Assigning long and short clusters... Placing v15:(19,38) into v16:(25,38)... Done.
+Finding end of short cluster... v15:(19,38).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <START DELETION
+DNODE3: v15:(19,38)v16:(25,38) <INSERTION <END DELETION
+DNODE4: v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)v30:(26,16)v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23)
+DNODE5: v22:(26,25)v26:(22,22)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:8 v:10
+EDGE: u:8 v:20
+EDGE: u:14 v:17
+EDGE: u:0 v:12
+EDGE: u:3 v:5
+EDGE: u:8 v:15
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:10 element is v8:(13,40)
+Size of cluster q:2 element is v15:(19,38)
+ Assigning long and short clusters... Placing v15:(19,38) into v8:(13,40)... Done.
+Finding end of short cluster... v16:(25,38).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v15:(19,38)v16:(25,38)v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38) <INSERTION <START DELETION
+DNODE3: v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)v30:(26,16)v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <END DELETION
+DNODE4: v22:(26,25)v26:(22,22)
+
+++++++++++++++
+UNION COMPLETE
+
+EDGE: u:21 v:22
+
+
+
+UNION INITIATED
++++++++++++++++
+
+Size of cluster p:14 element is v21:(32,27)
+Size of cluster q:2 element is v22:(26,25)
+ Assigning long and short clusters... Placing v22:(26,25) into v21:(32,27)... Done.
+Finding end of short cluster... v26:(22,22).
+Rearranging nodes... Done.
+Rearranging clusters... Done.
+System at present:
+
+DNODE1: v9:(45,40)v11:(38,39)v12:(42,39)v5:(38,42)v1:(39,44)v7:(41,41)v0:(41,45)v2:(42,43)v3:(44,43)
+DNODE2: v15:(19,38)v16:(25,38)v19:(9,34)v18:(13,35)v20:(12,34)v8:(13,40)v14:(12,38)v4:(10,42)v6:(8,41)v17:(6,37)v10:(7,39)v13:(9,38)
+DNODE3: v22:(26,25)v26:(22,22)v32:(29,11)v35:(40,9)v36:(42,9)v33:(34,11)v31:(38,13)v34:(37,10)v30:(26,16)v29:(31,18)v21:(32,27)v28:(35,20)v24:(34,23)v27:(38,21)v23:(39,24)v25:(37,23) <INSERTION <START DELETION <END DELETION
+
+++++++++++++++
+UNION COMPLETE
+
+++++++++++++++++
+FOREST HAS GROWN
+
+after Kruskal Algorithm
+
+Clusters created by the algorithm:
+Cluster 1 (size=9): v9:(45,40),v11:(38,39),v12:(42,39),v5:(38,42),v1:(39,44),v7:(41,41),v0:(41,45),v2:(42,43),v3:(44,43),
+Cluster 2 (size=12): v15:(19,38),v16:(25,38),v19:(9,34),v18:(13,35),v20:(12,34),v8:(13,40),v14:(12,38),v4:(10,42),v6:(8,41),v17:(6,37),v10:(7,39),v13:(9,38),
+Cluster 3 (size=16): v22:(26,25),v26:(22,22),v32:(29,11),v35:(40,9),v36:(42,9),v33:(34,11),v31:(38,13),v34:(37,10),v30:(26,16),v29:(31,18),v21:(32,27),v28:(35,20),v24:(34,23),v27:(38,21),v23:(39,24),v25:(37,23),

@@ -1,0 +1,39 @@
+#  file36.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "Species" is the name of the species.
+#
+#  "1" through "36" contain the amino acid in positions
+#  3, 4, 9, 11, 12, 15, 20, 22, 28, 33, 36, 44, 46, 47, 50,
+#  54, 58, 60, 61, 62, 65, 66, 81, 83, 85, 86, 88, 89, 92, 93,
+#  95, 100, 101, 102, 103 and 104.
+# 
+"Amino Acid Sequence in Cytochrome-c for Vertebrates, Hartigan page 240"
+37 columns
+17 rows
+"Species" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36
+"Man"         V E I I M  S V K T H  F P Y S A  N I G E D  M E I V I  K K E A D  I K A T N E
+"Monkey"      V E I I M  S V K T H  F P Y S A  N I G E D  M E I V I  K K E A D  I K A A N E
+"Horse"       V E I V Q  A V K T H  F P F T D  N T K E E  M E I V I  K K T E D  I K A T N E
+"Donkey"      V E I V Q  A V K T H  F P F S D  N T K E E  M E I V I  K K T E D  I K A T N E
+"Pig"         V E I V Q  A V K T H  F P F S D  N T G E E  M E I V I  K K G E D  I K A T N E
+"Dog"         V E I V Q  A V K T H  F P F S D  N T G E E  M E I V I  K K G A D  I K A T K E
+"Rabbit"      V E I V Q  A V K T H  F V F S D  N T G E D  M E I V I  K K D A D  I K A T N E
+"Whale"       V E I V Q  A V K T H  F V F S D  N T G E E  M E I V I  K K G A D  I K A T N E
+"Kangaroo"    V E I V Q  A V K T N  F P F T D  N I G E D  M E I V I  K K G A D  I K A T N E
+"Chicken"     I E I V Q  S V K T H  F E F S D  N T G E D  M E I V I  K K S V D  I D A T S K
+"Pigeon"      I E I V Q  S V K T H  F E F S D  N T G E D  M E I V I  K K A A D  I Q A T A K
+"Duck"        V E I V Q  S V K T H  F E F S D  N T G E D  M E I V I  K K S A D  I D A T A K
+"Turtle"      V E I V Q  A V K T N  I E F S E  N T G E E  M E I V I  K K A A D  I D A T S K
+"Rattlesnake" V E I V Q  S V K T H  F V Y S A  N I G E D  M E V T L  S K K T N  I E K T A A
+"Bullfrog"    V E I T M  A C K V Y  I A F S D  N T G E D  M E I V I  K K G Q D  I S A C S K
+"Tuna"        V A T V Q  A V N V W  F E Y S D  S V N N D  M E I V I  K K G Q D  V S A T S -
+"Dogfish"     V E V V Q  A V N T S  F Q F S D  S T Q Q E  R I I V L  K K S Q D  I K T A A S

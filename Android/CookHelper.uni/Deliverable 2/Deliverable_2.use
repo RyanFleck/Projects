@@ -1,0 +1,103 @@
+model Deliverable_2
+
+class ArrayAdapter
+operations
+	getView()
+end
+
+class CustomAdapter<ArrayAdapter
+end
+
+class AppCompatActivity
+operations
+	onCreate()
+	onResume()
+	finsh()
+end
+
+class MainActivity<AppCompatActivity
+operations
+	readRecipies()
+end
+
+class RecipeActivity<AppCompatActivity
+attributes
+	title:String
+	types:String
+	categories:String
+end
+
+class SearchActivity<AppCompatActivity
+end
+
+class ListActivity<AppCompatActivity
+end
+
+class SettingsActivity<AppCompatActivity
+end
+
+class HelpActivity<AppCompatActivity
+end
+
+class Recipe
+attributes
+	title:String
+	categories:String
+	types:String
+operations
+	saveOrRevert()
+	readFromFile()
+	loadRecipeText()
+	userDeleted()
+	
+	finishDisplaying()
+	finishEditing()
+	displayRecipe()
+	editRecipe()
+end
+
+class RecipeText
+attributes
+	theInstance:RecipeText
+operations
+	getInstance()
+end
+
+class Comparable
+operations
+	compareTo()
+end
+
+class Result <Comparable
+attributes
+	relevance:Integer
+	excluded:Boolean
+operations
+	setResult()
+	getRecipe()
+end
+	
+association SemiProxy between
+	Recipe [0..*] role parameters
+	RecipeText [1] role textContainer
+end
+
+association _ between
+	Result [0..1]
+	Recipe [1]
+end
+
+association __ between
+	ListActivity[1]
+	Result[*]
+end
+
+association ___ between
+	RecipeActivity[0..1]
+	Recipe[1]
+end
+
+association ____ between
+	ListActivity[1]
+	CustomAdapter[0..1]
+end

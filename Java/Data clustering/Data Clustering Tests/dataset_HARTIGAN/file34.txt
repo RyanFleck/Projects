@@ -1,0 +1,68 @@
+#  file34.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  AE: Almond essence, teaspoon
+#  BM: Buttermilk, cup
+#  BP: Baking powder, teaspoon
+#  BR: Butter, cup
+#  BS: Bananas, one
+#  CA: Cocoa, tablespoon
+#  CC: Cottage Cheese, pound
+#  CE: Chocolate, ounce
+#  CI: Crushed Ice, cup
+#  CS: Crumbs, cup
+#  CT: Cream of tartar, teaspoon
+#  DC: Dried currants, tablespoon
+#  EG: Eggs, one
+#  EW: Egg white, one
+#  EY: Egg yolk, one
+#  FR: Sifted flour, cup
+#  GN: Gelatin, tablespoon
+#  HC: Heavy cream, cup
+#  LJ: Lemon juice, tablespoon
+#  LR: Lemon rind, teaspoon
+#  MK: Milk, cup
+#  NG: Nutmeg, teaspoon
+#  NS: Nuts, cup
+#  RM: Rum, ounce
+#  SA: Soda, teaspoon
+#  SC: Sour cream cup
+#  SG: Shortening, tablespoon
+#  SR: Granulated sugar, cup
+#  SS: Strawberries, quart
+#  ST: Salt, teaspoon
+#  VE: Vanilla extract, teaspoon
+#  WR: Water, cup
+#  YT; Yeast, ounce
+#  ZH: Zwiebach, ounce
+#
+"Ingredients in cakes, Hartigan page 229"
+12 columns
+18 rows
+"Cake" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11"
+"Angel"                FR=1 SR=1.5 EW=10 CT=1.25 ST=0.25 VE=1 AE=0.25
+"Babas au Rhum"        MK=0.25 BR=0.25 YT=0.6 WR=0.25 EY=2 SR=0.25 EG=1 LR=0.5 DC=2 FR=1.75 RM=2
+"Sweet Chocolate"      CE=4 WR=0.5 BR=1 SR=2 EG=4 VE=1 FR=2.5 SA=1 ST=0.5 BK=1
+"Buche de Noel"        FR=1 ST=0.5 SR=1.3 EG=4 VE=1
+"Cheesecake"           ZH=6 SR=1 BR=0.25 CC=1.5 FR=0.25 ST=0.25 EG=6 SC=1 LR=1 LJ=1
+"Rum Cheesecake"       GN=2 SR=1 ST=0.25 EG=2 MK=1 LR=1 LJ=1 RM=1 CC=1.5 HC=1
+"Blender Cheesecake"   GN=1 LJ=1 LR=1 WR=0.5 GS=0.3 EY=2 CC=0.5 CI=1 SC=1
+"One Bowl Chocolate"   FR=2 BP=2 SA=0.5 ST=0.25 CA=10 SR=1.5 SG=10 WR=0.5 MK=0.7 EG=2 VE=1
+"Red Devil's Food"     FR=1.75 SR=1.5 CA=0.3 SA=1.25 ST=1 SG=0.5 MK=1 EG=2 VE=1
+"Sour Cream Fudge"     FR=2 SR=1.5 SA=1 ST=1 SG=0.3 SC=1CE=3 EG=2 VE=1 WR=0.25
+"Hungarian Cream"      FR=3 BP=3 ST=1 EG=3 AE=1.5 VE=2 SR=1.5 HC=2
+"Crumb and Nut"        SG=1 SR=1 EG=4 VE=2 CS=3 NS=1 BP=3 MK=1
+"Spiced Pound"         BR=1 NG=1.5 ST=0.5 SR=1.7 EG=5 FR=2
+"Strawberry Roll"      EG=4 BP=0.75 ST=1 SR=0.75 VE=1 FR=0.75 CC=0.5 SS=1
+"Savarin"              YT=1 WR=0.25 FR=1.5 SR=0.6 ST=0.5 EG=3 MK=0.25 BR=0.7 LR=1
+"Banana Shortcake"     FR=3 ST=0.5 BP=4 SR=0.13 BR=0.6 MK=1 BS=3 HC=1
+"Strawberry Shortcake" FR=2 BP=3 ST=0.75 SR=0.6 CC=0.2 BR=0.12 EG=1 MK=0.5 SS=1 SC=1
+"Sponge"               FR=0.75 BP=1 ST=0.25 EG=4 SR=0.75 AE=0.5 WR=2

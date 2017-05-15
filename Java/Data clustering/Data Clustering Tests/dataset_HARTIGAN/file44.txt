@@ -1,0 +1,33 @@
+#  file44.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  The percentage of cropland devoted to various crops in
+#  Ohio counties was recorded.
+#
+"Ohio Croplands, Hartigan page 287"
+8 columns
+15 rows
+County      Corn  Mixed  Wheat  Oats  Barley  Soy   Hay
+Adams       42.41  0.21  22.47   1.07  0.37   0.62  27.80
+Allen       34.43  0.13  23.76  18.35  0.11  12.18  15.31
+Ashtabula   22.88  0.24  13.52  15.67  0.02   1.30  38.89
+Athens      26.61  0.18   8.89   3.42  0.05   0.71  53.91
+Delaware    33.52  0.13  17.60  11.33  0.16  11.82  22.69
+Clinton     48.45  0.24  29.50   3.10  0.25   2.72   9.85
+Gallia      31.38  0.83  13.07   2.03  0.60   0.71  44.07
+Geauga      23.04  0.21  12.68  17.44  0.11   0.41  37.80
+Hancock     36.13  0.12  24.64  16.56  0.13  13.91  16.46
+Highland    47.83  0.11  31.57   1.59  0.05   1.46  16.10
+Meigs       28.20  0.28  14.08   3.06  0.18   0.67  46.71
+Portage     26.67  0.11  19.13  18.67  0.03   0.69  27.33
+Putnam      30.97  0.13  24.16  15.28  0.13  14.10  12.61
+Warren      43.23  0.09  24.97   3.20  0.24   4.68  18.72
+Washington  25.08  0.08  13.43   1.96  0.66   1.06  50.27

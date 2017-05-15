@@ -1,0 +1,38 @@
+#  file22.txt
+#
+#  Reference:
+#
+#    John Hartigan,
+#    Clustering Algorithms,
+#    Wiley, 1975.
+#    ISBN 0-471-35645-X
+#    LC: QA278.H36
+#    Dewey: 519.5'3
+#
+#  "City" and "Year" are the city and year of the census.
+#
+#  "M00", "M25", "M50" and "M75" are the further life expectancies
+#  for males age 0, 25, 50 and 75.  
+#
+#  "F00", "F25", "F50" and "F75" are the same quantities for females.
+#
+"Expectation of Life in Various Cities, Hartigan page 182"
+10 columns
+16 rows
+"City"  "Year"  "M00"  "M25"  "M50"  "M75"  "F00"  "F25"  "F50"  "F75"
+"Montreal"     1966   67  44  22   7  73  51  28   9
+"Toronto"      1966   68  45  23   8  75  53  29  10
+"Vancouver"    1966   68  46  23   8  75  53  30  11
+"Kaohsiung"    1966   66  43  22   8  71  49  26   9
+"Taipei"       1966   69  46  24   8  72  50  27   9
+"Djakarta"     1961   44  36  18   6  46  37  19   6
+"Copenhagen"   1966   68  46  23   8  75  56  28   9
+"Helsinki"     1966   66  42  21   7  73  50  27   8
+"East Berlin"  1961   66  45  22   7  71  49  27   8
+"West Berlin"  1961   66  45  22   7  72  50  27   9
+"West Berlin"  1967   67  45  22   7  73  50  27   9
+"Dusseldorf"   1966   67  45  22   8  74  51  28   9
+"Hamburg"      1966   68  46  23   7  74  51  27   9
+"Stockholm"    1960   69  46  23   7  75  52  28   9
+"London"       1967   69  47  23   8  77  54  30  12
+"Sydney"       1967   67  44  22   7  73  50  27   9
