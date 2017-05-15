@@ -1,5 +1,4 @@
 Documentation - Ryan's Sumbmitted Work
-######################################
 
 These files contained in this archive are samples of work performed by Ryan Fleck. The majority of these were created as personal experiments or hackathons, but some files (which are denoted by a .uni extension on the folder) were made during courses.
 
