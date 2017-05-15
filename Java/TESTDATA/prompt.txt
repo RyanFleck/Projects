@@ -1,0 +1,4 @@
+ch : A syntax checker for vim programming language
+vim-latex.noarch : Tools to view, edit and compile LaTeX documents in Vim
+vim-X11.x86_64 : The VIM version of the vi editor for the X Window System
+vim-common.x86_64 : The common files needed by any version of the VIM editor
