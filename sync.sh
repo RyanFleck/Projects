@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Synchronizing git repo."
 
-
+git pull
 git add .
 git status
-git commit -m "Timed sync. Updated Java folder."
+git commit -m "Scripted sync."
 git push
