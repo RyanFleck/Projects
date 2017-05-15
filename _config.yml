@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Keyboard made of Meddle
 description: This page is under construction! This site will be updated regularly with new content throughout the next 4 months.
+author: Ryan Fleck
+author_email: ryan.fleck@protonmail.com
+parmalink: pretty
+paginate: 10
