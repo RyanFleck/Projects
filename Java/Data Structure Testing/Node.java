@@ -1,5 +1,5 @@
 /*
- * Template.java
+ * Node.java
  * 
  * Copyright 2017 Ryan Fleck <rflec028@uottawa.ca>
  * 
@@ -22,19 +22,6 @@
  */
 
 
-public class Template{
-	
-	private String name="";
-	
-	public Template(String name){
-		System.out.println("Template "+name+" initialized.");
-	}
-	
-	public static void main (String[] args) {
-		System.out.println("");
-		Template underlingTemplateA = new Template("Ross");
-		Template underlingTemplateB = new Template("Rick");
-		Template underlingTemplateC = new Template("Randy");
-	}
+public class Node {
+	public Node(int )
 }
-
