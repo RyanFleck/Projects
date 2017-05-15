@@ -3,9 +3,12 @@ Documentation - Ryan's Sumbmitted Work
 These files contained in this archive are samples of work performed by Ryan Fleck. The majority of these were created as personal experiments or hackathons, but some files (which are denoted by a .uni extension on the folder) were made during courses.
 
 Notable Contents:
+
 JAVA folder:
-
-
+-Clustering.uni, run Clusters2DTest123 to see my implementation of the Kruskal Algorithm.
+-Huffman.uni, run TestHuffmanWithStrings to see my implementation of Huffman Algs.
+-RPG.Experiment, an unfinished chronicling RPG that records a story as you play.
+-Data Structure Testing, where I create and apply data structures as learned in CSI courses.
 
 LINUX folder:
 -setupOS.sh, a script I regularly use when I reinstall Fedora.
