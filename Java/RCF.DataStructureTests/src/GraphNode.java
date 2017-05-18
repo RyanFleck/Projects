@@ -31,6 +31,14 @@ public class GraphNode extends TestClass{
 	}
 	
 	public Integer dijkstraDistance(GraphNode other){
+		//Implement me!
+		return 0;
+	}
+	
+	public Integer simpleDistance(GraphNode other){
+		if(isConnected(other)){
+			
+		}
 		return 0;
 	}
 	
