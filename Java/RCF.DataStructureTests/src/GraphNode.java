@@ -3,6 +3,8 @@
  */
 
 import java.util.HashMap;
+import java.util.Set;
+import java.util.Iterator;
 
 /**
  * @author rflec028
@@ -17,13 +19,21 @@ public class GraphNode extends TestClass{
 		nodeMap = new HashMap<GraphNode,Integer>();
 	}
 	
+	//Queries and graph information:
+	
+	public GraphNode[] getConnectedNodes(){
+		Set<GraphNode> connectedNodes = nodeMap.keySet();
+		return (GraphNode[])connectedNodes.toArray();
+	}
+	
+	public Boolean isConnected(GraphNode other){
+		return nodeMap.containsKey(other);
+	}
 	
 	
 	
 	
-	
-	
-	//Simple connection methods:
+	//Simple graph building methods:
 	
 	public void connect(GraphNode other,Integer distance){
 		this.addSingleLink(other, distance,1);
