@@ -38,13 +38,15 @@ public class GraphNode extends TestClass{
 		else if(isConnected(other)){
 			return(nodeMap.get(other));
 		}else{
-			//GraphNode[] testNodes = getConnectedNodes();
+			GraphNode[] testNodes = this.getConnectedNodes();
 			
 			System.out.println("A");
 			int distance = 0;
-			for(GraphNode x:getConnectedNodes()){
+			for(GraphNode x:testNodes){
+				System.out.println(x.getName()+" to "+other.getName());
 				if(x.isConnected(other)){
-					int tempDistance = x.simpleDistanceToNode(other)+this.simpleDistanceToNode(x);
+					System.out.println(x.getName()+" to "+other.getName());
+					Integer tempDistance = x.simpleDistanceToNode(other)+this.simpleDistanceToNode(x);
 					if(distance==-1 || tempDistance<distance){
 						distance=tempDistance;}
 				}
