@@ -34,27 +34,7 @@ public class GraphNode extends TestClass{
 	
 	//Searches through two layers. Implement Dijsktra algorithm later.
 	public Integer simpleDistanceToNode(GraphNode other){
-		if(other.equals(this)){return 0;}
-		else if(isConnected(other)){
-			return(nodeMap.get(other));
-		}else{
-			GraphNode[] testNodes = this.getConnectedNodes();
-			
-			System.out.println("A");
-			int distance = 0;
-			for(GraphNode x:testNodes){
-				System.out.println(x.getName()+" to "+other.getName());
-				if(x.isConnected(other)){
-					System.out.println(x.getName()+" to "+other.getName());
-					Integer tempDistance = x.simpleDistanceToNode(other)+this.simpleDistanceToNode(x);
-					if(distance==-1 || tempDistance<distance){
-						distance=tempDistance;}
-				}
-			
-			}
-			System.out.println("B");
-			return distance;
-		}
+		return 0;
 	}
 	
 	//Simple graph building methods:
