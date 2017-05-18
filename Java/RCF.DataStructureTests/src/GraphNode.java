@@ -30,8 +30,9 @@ public class GraphNode extends TestClass{
 		return nodeMap.containsKey(other);
 	}
 	
-	
-	
+	public Integer dijkstraDistance(GraphNode other){
+		return 0;
+	}
 	
 	//Simple graph building methods:
 	
@@ -42,6 +43,8 @@ public class GraphNode extends TestClass{
 	
 	public void addSingleLink(GraphNode other,Integer distance, int displayDist){
 		nodeMap.put(other,distance);
+		
+		//This IF statement and int displayDist for testing and can be removed later.
 		if(displayDist==1){System.out.println("Nodes "+this.getName()+" and "+other.getName()+" linked!\nDistance: "+nodeMap.get(other));
 		}}
 	

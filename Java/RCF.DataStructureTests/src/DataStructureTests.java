@@ -26,6 +26,8 @@ public class DataStructureTests {
 		two.connect(three, 4);
 		three.connect(one, 7);
 
+		System.out.println();
+		
 	}
 
 }
