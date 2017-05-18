@@ -37,7 +37,8 @@ public class GraphNode extends TestClass{
 		
 		Integer distance = this.rawNodeDist(other);
 		if(distance==null){
-			
+			for(GraphNode x : this.getConnectedNodes()){
+				System.out.println(x.getName());}
 		}
 		
 		return distance;
