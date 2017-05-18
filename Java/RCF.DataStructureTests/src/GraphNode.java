@@ -34,7 +34,17 @@ public class GraphNode extends TestClass{
 	
 	//Searches through two layers. Implement Dijsktra algorithm later.
 	public Integer simpleDistanceToNode(GraphNode other){
-		return 0;
+		
+		Integer distance = this.rawNodeDist(other);
+		if(distance==null){
+			
+		}
+		
+		return distance;
+	}
+	
+	private Integer rawNodeDist(GraphNode other){
+		return this.nodeMap.get(other);
 	}
 	
 	//Simple graph building methods:

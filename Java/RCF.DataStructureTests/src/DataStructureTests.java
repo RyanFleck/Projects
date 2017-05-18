@@ -42,7 +42,7 @@ public class DataStructureTests {
 		System.out.println("Distance between nodes one and four: "+one.simpleDistanceToNode(four));
 		System.out.println("Distance between nodes two and four: "+two.simpleDistanceToNode(four));
 		
-		//System.out.println("\nDistance between bridged nodes three and four: "+three.simpleDistanceToNode(four));
+		System.out.println("\nDistance between bridged nodes three and four: "+three.simpleDistanceToNode(four));
 		
 	}
 
