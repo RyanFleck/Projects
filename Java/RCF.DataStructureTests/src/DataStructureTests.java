@@ -12,7 +12,9 @@ public class DataStructureTests {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		GraphNode one = new GraphNode();
+		GraphNode two = new GraphNode();
+		one.connect(two, 14);
 
 	}
 
