@@ -1,10 +1,5 @@
-/**
- * 
- */
-
 import java.util.HashMap;
 import java.util.Set;
-import java.util.Iterator;
 
 /**
  * @author rflec028
@@ -30,14 +25,18 @@ public class GraphNode extends TestClass{
 		return nodeMap.containsKey(other);
 	}
 	
-	public Integer dijkstraDistance(GraphNode other){
+	public Integer dijkstraDistanceToNode(GraphNode other){
 		//Implement me!
+		//Use a different class to keep track of the spanning set.
+		//Include method in new class to re-factor spanning set with all nodes.
 		return 0;
 	}
 	
-	public Integer simpleDistance(GraphNode other){
+	public Integer simpleDistanceToNode(GraphNode other){
 		if(isConnected(other)){
-			
+			return(nodeMap.get(other));
+		}else{
+			GraphNode[] testNodes = getConnectedNodes();
 		}
 		return 0;
 	}
