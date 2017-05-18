@@ -26,14 +26,14 @@ public class GraphNode extends TestClass{
 	//Simple connection methods:
 	
 	public void connect(GraphNode other,Integer distance){
-		this.addSingleLink(other, distance);
-		other.addSingleLink(this, distance);
+		this.addSingleLink(other, distance,1);
+		other.addSingleLink(this, distance,0);
 	}
 	
-	public void addSingleLink(GraphNode other,Integer distance){
+	public void addSingleLink(GraphNode other,Integer distance, int displayDist){
 		nodeMap.put(other,distance);
-		System.out.println("Nodes linked!");
-	}
+		if(displayDist==1){System.out.println("Nodes "+this.getName()+" and "+other.getName()+" linked!\nDistance: "+nodeMap.get(other));
+		}}
 	
 	
 	

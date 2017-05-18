@@ -9,14 +9,19 @@
  *
  */
 public class TestClass {
-	@SuppressWarnings("unused")
+	
 	private String name;
 	
 	public TestClass(){
-		name = null;
+		name = ("Object:".concat(this.getClass().getSimpleName()));
+		
 	}
 	
 	public void setName(String newName){
 		name = newName;
+	}
+	
+	public String getName(){
+		return name;
 	}
 }
