@@ -17,6 +17,7 @@ public class GraphNode extends TestClass{
 	
 	//Queries and graph information:
 	
+	//NOT FUNCTIONAL.
 	public GraphNode[] getConnectedNodes(){
 		System.out.println("Getting connected nodes...");
 		//Set<GraphNode> connectedNodes = nodeMap.keySet();
@@ -50,16 +51,7 @@ public class GraphNode extends TestClass{
 			//Integer secondDistance = null;
 			System.out.println("Node indirectly connected!");
 			
-			this.getConnectedNodes();
-			
-			
-			
-			
-			//System.out.println(nodeArray[0]);
-			
-			
-			
-			System.out.println("Finished FOR loop.");
+			System.out.println("Found distances.");
 			return distance;
 		}else{
 			System.out.println("Node directly connected.");
