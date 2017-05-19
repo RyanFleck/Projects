@@ -12,14 +12,22 @@ public class GraphNode extends TestClass{
 	public GraphNode(){
 		System.out.println("Node created!");
 		nodeMap = new HashMap<GraphNode,Integer>();
+		//this.connect(this, 0);
 	}
 	
 	//Queries and graph information:
 	
 	public GraphNode[] getConnectedNodes(){
-		Set<GraphNode> connectedNodes = nodeMap.keySet();
-		return (GraphNode[])connectedNodes.toArray();
+		System.out.println("Getting connected nodes...");
+		//Set<GraphNode> connectedNodes = nodeMap.keySet();
+		//GraphNode[] nodes = (GraphNode[]) connectedNodes.toArray();
+		GraphNode[] nodes = (GraphNode[])nodeMap.keySet().toArray();
+		for(GraphNode x : nodes){
+			System.out.println("Connected node: "+x.getName());
+		}
+		return nodes;
 	}
+
 	
 	public Boolean isConnected(GraphNode other){
 		return nodeMap.containsKey(other);
@@ -35,18 +43,32 @@ public class GraphNode extends TestClass{
 	//Searches through two layers. Implement Dijsktra algorithm later.
 	public Integer simpleDistanceToNode(GraphNode other){
 		
+		System.out.println("Getting distance...");
 		Integer distance = this.rawNodeDist(other);
-		if(distance==null){
-			for(GraphNode x : this.getConnectedNodes()){
-				System.out.println(x.getName());}
-		}
 		
-		return distance;
+		if(distance==null){
+			//Integer secondDistance = null;
+			System.out.println("Node indirectly connected!");
+			
+			this.getConnectedNodes();
+			
+			
+			
+			
+			//System.out.println(nodeArray[0]);
+			
+			
+			
+			System.out.println("Finished FOR loop.");
+			return distance;
+		}else{
+			System.out.println("Node directly connected.");
+			return distance;}
 	}
-	
 	private Integer rawNodeDist(GraphNode other){
 		return this.nodeMap.get(other);
 	}
+	
 	
 	//Simple graph building methods:
 	
