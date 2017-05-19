@@ -1,5 +1,7 @@
 import java.util.HashMap;
 import java.util.Set;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * @author rflec028
@@ -8,16 +10,24 @@ import java.util.Set;
 public class GraphNode extends TestClass{
 
 	private HashMap<GraphNode,Integer> nodeMap;
+	private Set nodeSet;
+	private Iterator nodeMapIterator;
 	
 	public GraphNode(){
 		System.out.println("Node created!");
 		nodeMap = new HashMap<GraphNode,Integer>();
+		generateIterator();
 		//this.connect(this, 0);
+	}
+	private void generateIterator(){
+		nodeSet = nodeMap.entrySet();
+		nodeMapIterator = nodeSet.iterator();
 	}
 	
 	//Queries and graph information:
 	
-	//NOT FUNCTIONAL.
+	/*
+	//NOT FUNCTIONAL. Implement with an iterator.
 	public GraphNode[] getConnectedNodes(){
 		System.out.println("Getting connected nodes...");
 		//Set<GraphNode> connectedNodes = nodeMap.keySet();
@@ -27,8 +37,7 @@ public class GraphNode extends TestClass{
 			System.out.println("Connected node: "+x.getName());
 		}
 		return nodes;
-	}
-
+	}*/
 	
 	public Boolean isConnected(GraphNode other){
 		return nodeMap.containsKey(other);
@@ -48,14 +57,26 @@ public class GraphNode extends TestClass{
 		Integer distance = this.rawNodeDist(other);
 		
 		if(distance==null){
-			//Integer secondDistance = null;
-			System.out.println("Node indirectly connected!");
+			System.out.println("A");
+			generateIterator();
+			System.out.println("B");
+			while(nodeMapIterator.hasNext()){
+				System.out.println("C");
+				GraphNode temp = (GraphNode) nodeMapIterator.next();
+				/*
+				 * This is a huge problem- I need to contact someone with more java expertise.
+				 * An error that keeps occuring:
+				 * 	-Try to retrieve items from hashmap.
+				 * 	-Items are returned as "object" and need to be cast to graphnode.
+				 * 	-This line never runs.
+				 */
+				System.out.println("D");
+				System.out.println("Node "+temp.getName()+" connected.");
+				
+			}
 			
-			System.out.println("Found distances.");
-			return distance;
-		}else{
-			System.out.println("Node directly connected.");
-			return distance;}
+			return 0;}//Come back later.
+		else{return distance;}
 	}
 	private Integer rawNodeDist(GraphNode other){
 		return this.nodeMap.get(other);
