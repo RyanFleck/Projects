@@ -6,12 +6,15 @@
  * @author rflec028
  *
  */
-public class TreeNode {
+public class TreeNode extends TestClass {
 	private TreeNode left=null,right=null,prev=null;
 	private String info;
 	private Object storedObject;
 	
-	public TreeNode(){}
+	public TreeNode(String infoIn, Object objIn){
+		info = infoIn;
+		storedObject = objIn;
+	}
 	
 	//Setters:
 	public void setLeft(TreeNode x){left = x;}
