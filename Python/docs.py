@@ -34,9 +34,9 @@ class Docs:
 		print("Programmer can be contacted at "+self.email)
 		print("Currently, programmer is a "+self.job+".\n")
 		print("Copyright 2017 "+self.name+" under the GNU GPL 2+. See code for details.\n\n")
-		print("- PROGRAM START -".center(80,'='))
+		print(" PROGRAM START ".center(80,'='))
 		print("")
 
 	def printFooter(self):
 		print("")
-		print("- PROGRAM END -".center(80,'='))
+		print(" PROGRAM END ".center(80,'='))
