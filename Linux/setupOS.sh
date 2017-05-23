@@ -43,11 +43,19 @@ dnf install -y vim f25-backgrounds-extras-gnome geany geany-themes gnome-tweak-t
 
 #Install dev tools and libraries.
 #Kept seperate so specific groups can be disabled for lite install.
-dnf groupinstall -y 'Development Tools'
-dnf groupinstall -y 'RPM Development Tools'
-dnf groupinstall -y 'C Development Tools and Libraries'
-dnf groupinstall -y 'Design Suite' #Heavy.
-dnf groupinstall -y 'Engineering and Scientific' #Heavy.
+#dnf groupinstall -y 'Development Tools'
+#dnf groupinstall -y 'RPM Development Tools'
+#dnf groupinstall -y 'C Development Tools and Libraries'
+#dnf groupinstall -y 'Design Suite' #Heavy.
+#dnf groupinstall -y 'Engineering and Scientific' #Heavy.
+
+#Configure git.
+git config --global user.name "Ryan Fleck"
+git config --global user.email "ryan.fleck@protonmail.com"
+git config --global core.editor vim
+git config --global credential.helper 'cache --timeout=7200'
+echo"Saved git settings:"
+git config --list
 
 
 #TODO: Configure gnome-shell and tweaks.
