@@ -3,7 +3,7 @@
 #
 #  regexTesting.py
 #  
-#  Copyright 2017 Ryan Fleck <rflec028@localhost.localdomain>
+#  Copyright 2017 Ryan Fleck <ryan.fleck@protonmail.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -21,19 +21,22 @@
 #  MA 02110-1301, USA.
 #  
 #  
-
+from docs import Docs
 
 def main(args):
-	print("RCF - Regular Expression experimentation.")
+	d = Docs(args[0])
+	d.printHeader()
+	
+	
 	
     
 
 
 
 
+	
 
-
-
+	d.printFooter()
 
 
 

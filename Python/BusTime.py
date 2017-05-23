@@ -25,34 +25,38 @@
 import requests
 import json
 import sys
+from docs import Docs
 
 def main():
-		#Learn how to verify.
-        ocdata = requests.post(
-            'https://api.octranspo1.com/v1.2/GetNextTripsForStop',
-            data={
-            "appID": "e92b563f",
-            "apiKey": '181e5772302f2afeed2b69f65b2e1cf1',
-            "stopNo": "8615",
-            "routeNo": '14' ,
-            "format": "json"}
-            ,verify=False).json()
-        
-        print("\n\nData Retrieved.")
-        
-        printedData = ocdata["GetNextTripsForStopResult"]["Route"]["RouteDirection"]["Trips"]["Trip"]
-        
-        toSerial = {}
-        x=0
-        for i in printedData:
-            print ("Trip in {} mins.".format(i['AdjustedScheduleTime']))
-            toSerial['Bus{}'.format(x)]=i['AdjustedScheduleTime']
-            x+=1
-            
-        serialData = json.dumps(toSerial)
-        with open('BUSDATA.json', 'w') as f:
-            json.dump(serialData, f)
-            
+	d = Docs("BusTime.py")
+	d.printHeader()
+	#Learn how to verify.
+	ocdata = requests.post(
+		'https://api.octranspo1.com/v1.2/GetNextTripsForStop',
+		data={
+		"appID": "e92b563f",
+		"apiKey": '181e5772302f2afeed2b69f65b2e1cf1',
+		"stopNo": "8615",
+		"routeNo": '14' ,
+		"format": "json"}
+		,verify=False).json()
+	
+	print("\n\nData Retrieved.")
+	
+	printedData = ocdata["GetNextTripsForStopResult"]["Route"]["RouteDirection"]["Trips"]["Trip"]
+	
+	toSerial = {}
+	x=0
+	for i in printedData:
+		print ("Trip in {} mins.".format(i['AdjustedScheduleTime']))
+		toSerial['Bus{}'.format(x)]=i['AdjustedScheduleTime']
+		x+=1
+		
+	serialData = json.dumps(toSerial)
+	with open('BUSDATA.json', 'w') as f:
+		json.dump(serialData, f)
+		
+	d.printFooter()
 
 main()
 

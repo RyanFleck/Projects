@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  fileIOTesting.py
+#  docs.py
 #
 #  Copyright 2017 Ryan Fleck <ryan.fleck@protonmail.com>
 #
@@ -21,32 +21,22 @@
 #  MA 02110-1301, USA.
 #
 #
-#	This program was built to test Python3's file management capabilities.
-#	Tested within this program:
-#		-Reading from and using REGEXs to attain input.
-#		-Creating and saving to files of different formats.
-#		-Organizing folders and filesystems.
-#		-Organizing thousands of files into seperate folders
-#		-
-#
-from docs import Docs
-
-def main(args):
-	#Standard documentation.
-	d = Docs(args[0])
-	d.printHeader()
-
-	#Initialize
+class Docs:
+	def __init__(self,programName="Program"):
+		self.program = programName
+		self.name = "Ryan Fleck"
+		self.email = "ryan.fleck@protonmail.com"
+		self.job = "Computer Engineering Student"
 
 
+	def printHeader(self):
+		print("This program, '"+self.program+"', created by "+self.name+".")
+		print("Programmer can be contacted at "+self.email)
+		print("Currently, programmer is a "+self.job+".\n")
+		print("Copyright 2017 "+self.name+" under the GNU GPL 2+. See code for details.\n\n")
+		print("- PROGRAM START -".center(80,'='))
+		print("")
 
-
-
-
-
-
-	d.printFooter()
-
-if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
+	def printFooter(self):
+		print("")
+		print("- PROGRAM END -".center(80,'='))
