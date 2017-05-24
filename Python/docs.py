@@ -30,7 +30,7 @@ class Docs:
 
 
 	def printHeader(self):
-		print("This program, '"+self.program+"', created by "+self.name+".")
+		print("\nThis program, '"+self.program+"', created by "+self.name+".")
 		print("Programmer can be contacted at "+self.email)
 		print("Currently, programmer is a "+self.job+".\n")
 		print("Copyright 2017 "+self.name+" under the GNU GPL 2+. See code for details.\n\n")
