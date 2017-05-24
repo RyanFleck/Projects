@@ -24,3 +24,6 @@ AGILE folder:
 
 PYTHON folder:
 - BusTime, uses OCTranspo API to fetch time until next bus arrives.
+
+
+Please note that all scripts were created on Fedora Desktop 25 and 26 releases, and are intended to work with the tools included in these operating systems. POSIX-Compatiple systems should all run the scripts without issues.
