@@ -11,6 +11,7 @@ currentYear = 2017
 
 #My first class.
 class Human
+	attr_accessor :name #Allow class vars to be accessed.
 	def initialize(name="Unnamed",age="Unknown",gender="Genderless")
 		@name=name
 		@age=age
@@ -25,6 +26,12 @@ class Human
 	end
 end
 	
+	
+class Machine
+	def initialize(items="Empty")
+		
+	end
+end
 	
 	
 #SECTION THREE: Application of basic classes and methods written above.
@@ -44,6 +51,9 @@ if __FILE__ == $0
 	paul.age
 	paul.age
 	paul.hello
+	puts paul.name
+	
+	
 	
 	#Useful for debugging:
 	#puts "\nList instance methods for Humans:"
