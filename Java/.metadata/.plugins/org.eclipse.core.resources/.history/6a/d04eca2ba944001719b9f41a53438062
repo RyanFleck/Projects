@@ -1,0 +1,5 @@
+package com.libgdx.battlecommander;
+
+public interface Unit{
+	public boolean move(int coordA, int coordB);
+}

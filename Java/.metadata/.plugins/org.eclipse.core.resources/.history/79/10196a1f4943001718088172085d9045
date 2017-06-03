@@ -1,0 +1,27 @@
+
+package com.libgdx.battlecommander;
+
+/**
+ * @author rflec028
+ *
+ */
+public class Soldier {
+	String name;
+	int hp;
+	
+	public Soldier(String name_i){
+		this.name = name_i;
+		this.hp = 100;
+		System.out.println(this.name.toString()+" reporting for duty, SIR!");
+	}
+	
+	public void Target(Soldier other){
+		
+	}
+	
+	public void RollCall(){
+		System.out.println()
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+
+package com.libgdx.battlecommander;
+
+/**
+ * @author rflec028
+ *
+ */
+public class Soldier {
+	String name;
+	int hp;
+	
+	
+}

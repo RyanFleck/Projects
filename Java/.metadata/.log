@@ -179,3 +179,87 @@ org.apache.lucene.index.IndexFormatTooOldException: Format version is not suppor
 	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
 	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION Sat May 27 20:23:19 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-27 20:23:19.445
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-27 20:23:19.420 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-27 20:23:19.753
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-27 20:23:21.052
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Sun May 28 12:41:13 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-28 12:41:13.195
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-28 12:41:13.157 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-28 12:41:13.467
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-28 12:41:14.742
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Sun May 28 19:08:57 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-28 19:08:57.088
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-28 19:08:57.049 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-28 19:08:57.358
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-28 19:08:58.696
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Mon May 29 15:48:11 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-29 15:48:11.073
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-29 15:48:11.028 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-29 15:48:11.387
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Mon May 29 23:53:02 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-29 23:53:02.596
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-29 23:53:02.560 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-29 23:53:02.876
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-29 23:53:04.137
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Tue May 30 08:09:59 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-05-30 08:09:59.142
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-05-30 08:09:59.105 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-30 08:09:59.431
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.

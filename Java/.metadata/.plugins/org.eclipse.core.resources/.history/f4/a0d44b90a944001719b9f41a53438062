@@ -1,0 +1,38 @@
+package com.libgdx.battlecommander;
+
+public interface Unit{
+	
+	/*
+	====================
+	Move
+	Checks if the coordinate can be moved to, then moves the unit to the coordinates.
+	====================
+	*/
+	public boolean move(int coordA, int coordB);
+	
+	/*
+	====================
+	Attack
+	Checks if a target is within range, 
+	====================
+	*/
+	public boolean attack(int coordA,int coordB,int[] range);
+	
+	/*
+	====================
+	FunctionName
+	Description
+	====================
+	*/
+	public String info();
+	
+	/*
+	====================
+	FunctionName
+	Description
+	====================
+	*/
+	public void printDebugInfo();
+	
+	
+}

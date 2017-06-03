@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.scenes.scene2d.Actor;
+
+/**
+ * @author rflec028
+ *
+ */
+public class Soldier extends Actor implements Unit{
+	
+}

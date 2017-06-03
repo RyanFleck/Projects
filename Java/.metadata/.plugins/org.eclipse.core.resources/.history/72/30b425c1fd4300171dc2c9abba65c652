@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.libgdx.battlecommander;
+
+/**
+ * @author rflec028
+ *
+ */
+public class Soldier extends Sprite {
+
+}

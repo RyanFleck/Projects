@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.Game;
+
+/**
+ * @author rflec028
+ *
+ */
+public class TestGame extends Game{
+
+}
