@@ -1,0 +1,101 @@
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+
+/**
+ * @author rflec028
+ *
+ */
+public class Soldier extends Actor implements Unit{
+
+	private Texture sTex;
+	private float x,y,nextx,nexty,xdis,ydis,speed;
+	private SpriteBatch sb;
+	private Sprite sSprite;
+	
+	public Soldier(SpriteBatch globalSpriteBatch,float spawnx,float spawny){
+		x=spawnx;
+		y=spawny;
+		nextx=x;
+		nexty=y;
+		System.out.println("Soldier spawned!");
+		sb = globalSpriteBatch;
+		sTex = new Texture(Gdx.files.internal("SoldierC.png"));
+		sSprite = new Sprite(sTex);
+		sSprite.setCenter(16, 16);
+		sSprite.setOriginCenter();
+		sSprite.setX(x);
+		sSprite.setY(y);
+		speed=5;
+	}
+	public void render(){
+		
+		if(x!=nextx){
+			System.out.println(x+y);
+			xdis= Math.abs(x-nextx);
+			ydis= Math.abs(y-nexty);
+			if(xdis<5)
+				x=nextx;
+			else if(x>nextx)
+				x-=speed;
+			else if(x<nextx)
+				x+=speed;
+			
+		}else if(y!=nexty){
+			if(ydis<5)
+				y=nexty;
+			if(y>nexty)
+				y-=speed;
+			else if(y<nexty)
+				y+=speed;
+		}
+		sSprite.setX(x);
+		sSprite.setY(y);
+		sSprite.draw(sb);
+	}
+	
+	@Override
+	public boolean Move(int coordA, int coordB) {
+		nextx = Math.round(coordA);
+		nexty = Math.round(coordB);
+		System.out.println("Moving from ("+x+","+y+") to ("+nextx+","+nexty+").");
+		return true;
+	}
+
+	@Override
+	public boolean Attack(int coordA, int coordB, int[] range) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean RecieveFocus() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean LoseFocus() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String Info() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void PrintDebugInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

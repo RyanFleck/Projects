@@ -39,7 +39,7 @@ dnf distro-sync -y
 echo "Adding new repos and installing favourites..."
 dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf distro-sync -y
-dnf install -y vim f25-backgrounds-extras-gnome geany geany-themes gnome-tweak-tool gnome-shell-extension-openweather gnome-books transmission eclipse firefox arduino java-1.8.0-openjdk nautilus-open-terminal pidgin purple-facebook dropbox terminus-fonts terminus-fonts-console dconf-editor
+dnf install -y vim f25-backgrounds-extras-gnome geany geany-themes gnome-tweak-tool gnome-shell-extension-openweather gnome-books transmission eclipse firefox arduino java-1.8.0-openjdk nautilus-open-terminal pidgin purple-facebook dropbox terminus-fonts terminus-fonts-console dconf-editor ruby-devel
 
 #Install dev tools and libraries.
 #Kept seperate so specific groups can be disabled for lite install.

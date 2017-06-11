@@ -1,0 +1,66 @@
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
+
+/*
+ * Panning battle map:
+ * https://github.com/libgdx/libgdx/wiki/Orthographic-camera
+ * 
+ * 
+ * */
+
+
+public class BattleCommander extends ApplicationAdapter {
+	private Texture img;
+	private TiledMap map;
+	private OrthographicCamera cam;
+	private TiledMapRenderer mapRenderer;
+	
+	
+	
+	@Override
+	public void create () {
+		
+		
+	}
+
+	@Override
+	public void render () {
+
+		queryInput();
+
+		adjustVariables();
+
+		drawGraphics();
+
+	}
+	
+	@Override
+	public void dispose () {
+
+
+	}
+	
+	@Override
+	public void resize(int width, int height){
+		//viewport.update(width,height);
+	}
+	
+	public void queryInput(){
+		
+	}
+	public void adjustVariables(){
+		
+		
+	}
+	
+	public void drawGraphics(){
+		
+	}
+	
+	
+}
