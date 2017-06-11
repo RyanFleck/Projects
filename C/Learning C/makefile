@@ -1,9 +1,5 @@
 all:
-	gcc -g -Wall -o test.o test.c
+	gcc -g -Wall -o test test.c
 
 test.c:
-	gcc -g -Wall -o test.o test.c
-
-clean:
-	$(RM) test.o
-
+	gcc -g -Wall -o test test.c
