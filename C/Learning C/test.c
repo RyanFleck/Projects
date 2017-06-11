@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 /*
  * Ryan's 'C' language learning file.
@@ -18,6 +19,9 @@
 
 //Functions below main, in order:
 int sum(int a,int b);
+int varTypes();
+int ifStatements();
+
 
 int main()
 {
@@ -26,6 +30,10 @@ int main()
 	int sumy = sum(sumx,4);
 	int sumz = sum(sumx,sumy);
 	sum(sumy,sumz);	
+	
+	varTypes();
+	ifStatements();
+	
 	
 	return 0;
 }
@@ -41,4 +49,49 @@ int sum(int a,int b)
 }
 /*
  * Quick note on data types:
+ * 
+ * TYPES: char,int,float,double
+ * MODIFIERS: signed, unsigned, const
+ *
+ * TYPES are data containers with a specific kind of data.
+ * MODIFIERS signify if a number can be less than zero (signed) or above (un)
+ * const means a varible cannot be changed after it is set.
+ * short and long are kinds of ints that have a different amount of storage.
+ * 
  */
+int varTypes()
+{
+	printf("\nTEST: Variable types:\n");	
+	/* These are just here to ensure that I'm assigning types correctly,
+	 * and to ensure I don't get any compile-time errors.*/
+	char c = 'a';
+	int i = 123;
+	float f = 12314.123;
+	long double ld = 71098437019832740187432.093284;
+
+	printf("Ay! I can assign variables! But can I print them?\n");
+	printf("c:%c\ni:%i\nf:%f\nld:%Lf\n",c,i,f,ld);
+
+	return 0;
+}
+
+int ifStatements()
+{	
+	printf("\nTEST: If Statements:\n");	
+	bool verifySum = false;
+	
+	//Checks if sum function works:
+	if ( sum(1,4)==5 )
+		verifySum=true;
+	else
+		verifySum=false;
+	
+	//Reports if sum function/booleans work:
+	if ( verifySum==true )	
+		printf("Sum function works! 1+4 is equal to 5!\n");
+	else
+		printf("Sum function failed! 1+4 is not equal to 5!\n");
+	
+	
+	return 0;
+}
