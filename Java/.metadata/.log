@@ -416,3 +416,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.core.resources 2 10035 2017-06-11 17:24:50.968
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Sun Jun 11 20:40:47 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-11 20:40:47.353
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-11 20:40:47.332 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-11 20:40:47.611
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
