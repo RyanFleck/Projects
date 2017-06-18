@@ -428,3 +428,176 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.osgi 4 0 2017-06-11 20:40:47.611
 !MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Mon Jun 12 15:01:07 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-12 15:01:07.905
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-12 15:01:07.856 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-12 15:01:08.182
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Mon Jun 12 15:42:51 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-12 15:42:51.631
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-12 15:42:51.603 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-12 15:42:51.881
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.mylyn.tasks.index.core 4 0 2017-06-12 15:46:59.825
+!MESSAGE Failed to update task list index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1103)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	... 3 more
+!SUBENTRY 1 org.eclipse.mylyn.tasks.index.core 4 0 2017-06-12 15:46:59.825
+!MESSAGE Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+!STACK 0
+org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.mylyn.tasks.index.core 4 0 2017-06-12 15:46:59.825
+!MESSAGE Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+!STACK 0
+org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 2 2 2017-06-12 18:35:40.929
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+!SESSION Tue Jun 13 10:44:18 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-13 10:44:18.465
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-13 10:44:18.425 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-13 10:44:18.785
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-06-13 10:44:20.322
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Tue Jun 13 14:28:25 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-13 14:28:25.029
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-13 14:28:25.005 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-13 14:28:25.274
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-06-13 14:28:26.374
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION Tue Jun 13 17:55:09 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-13 17:55:09.612
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-13 17:55:09.585 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-13 17:55:09.888
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Tue Jun 13 18:13:20 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-13 18:13:20.065
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-13 18:13:20.044 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-13 18:13:20.318
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Sat Jun 17 13:11:03 EDT 2017 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-17 13:11:03.957
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-17 13:11:03.875 -----------------------------------------------
+eclipse.buildId=4.6.3.v20170306-1705
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-17 13:11:04.616
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.mylyn.tasks.index.core 4 0 2017-06-17 14:03:34.180
+!MESSAGE Failed to update task list index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1103)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	... 3 more
+!SUBENTRY 1 org.eclipse.mylyn.tasks.index.core 4 0 2017-06-17 14:03:34.181
+!MESSAGE Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+!STACK 0
+org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.mylyn.tasks.index.core 4 0 2017-06-17 14:03:34.181
+!MESSAGE Unexpected exception: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+!STACK 0
+org.apache.lucene.index.IndexFormatTooOldException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/home/rflec028/Dropbox/Work/RCF.Submission/Java/.metadata/.mylyn/.taskListIndex/segments_1"))): -11 (needs to be between 1071082519 and 1071082519). This version of Lucene only supports indexes created with release 4.0 and later.
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:299)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:910)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1278)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:183)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

@@ -1,0 +1,76 @@
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+
+
+
+
+
+public class Soldier extends Actor implements Unit{
+	
+	//Soldier position and direction:
+	private int sx,sy;
+	
+	//Visual:
+	private Texture sTex;
+	
+	//Soldier data:
+	private boolean selected;
+	
+	public Soldier() {
+		selected=false;
+	
+		setBounds(sx,sy,32,32);
+		addListener(new InputListener(){
+            public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+                ((Soldier)event.getTarget()).selected = true;
+                return true;
+            }
+	}
+
+	@Override 
+	public void draw(Batch batch, float alpha){
+        batch.draw(texture,sx,sy);
+    }
+	
+	@Override
+	public boolean Move(int coordX, int coordY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean Attack(int coordX, int coordY, int[] range) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean RecieveFocus() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean LoseFocus() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String Info() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void PrintDebugInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

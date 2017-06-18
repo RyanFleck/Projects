@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
 	<section name="FatJarPackageWizard">
 		<item value="/home/rflec028/Dropbox/Work/RCF.Submission/Java" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="DesktopLauncher - BattleCommander-desktop" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
@@ -13,6 +17,9 @@
 			<item value="/home/rflec028/Dropbox/Work/RCF.Submission/Java"/>
 			<item value=".xml"/>
 		</list>
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item value="false" key="GenerateJavadoc"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>

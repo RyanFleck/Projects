@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.libgdx.battlecommander.BattleCommander.focusedUnit&apos; in &apos;com.libgdx.battlecommander.BattleCommander&apos;&#x0A;- Original project: &apos;BattleCommander-core&apos;&#x0A;- Original element: &apos;com.libgdx.battlecommander.BattleCommander.focusedUnit&apos;&#x0A;- Getter method name: &apos;getFocusedUnit&apos;&#x0A;- Setter method name: &apos;setFocusedUnit&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;focusedUnit&apos;" flags="589830" getter="getFocusedUnit" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.libgdx.battlecommander{BattleCommander.java[BattleCommander^focusedUnit" insertion="8" setter="setFocusedUnit" stamp="1497390102291" version="1.0" visibility="1"/>
+</session>
