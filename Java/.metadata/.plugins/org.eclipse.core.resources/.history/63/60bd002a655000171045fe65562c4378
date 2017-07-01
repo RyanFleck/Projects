@@ -1,0 +1,115 @@
+package com.libgdx.battlecommander;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
+
+
+
+
+
+public class Soldier extends Actor implements Unit{
+	
+	//Soldier position, size(pixels) and direction:
+	private int sx,sy,size;
+	
+	//Visual:
+	private Texture sTex;
+	
+	//Soldier data:
+	public boolean selected;
+	
+	//Action data:
+	private MoveToAction movAct;
+	
+	public Soldier() {
+		
+		//Initialize basic variables:
+		selected=false;
+		sTex = new Texture(Gdx.files.internal("SoldierC/SoldierCd.png"));
+		size=32;
+		
+		//System to check if mouse clicks unit:
+		setBounds(sx,sy,size,size);
+		addListener(
+		new InputListener(){
+		@Override
+		public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+		((Soldier)event.getTarget()).selected = true;
+		((Soldier)event.getTarget()).RecieveFocus();
+		((Soldier)event.getTarget()).Move(100,100);
+		return true;}});
+		
+		//Instantiate movement sequence:
+		movAct = new MoveToAction();
+		
+		
+		
+	}
+
+	@Override 
+	public void draw(Batch batch, float alpha){
+        batch.draw(sTex,sx,sy,size,size);
+    }
+		
+	@Override
+	public boolean Move(int coordX, int coordY) {
+		//Db("Preparing action...");
+		movAct.setPosition(coordX, coordY);
+		//double distance = Math.sqrt(  coordX^2 + coordY^2  );
+		//movAct.setDuration((float) (distance*0.1));
+		//Db("Adding action...");
+		sx=coordX;
+		sy=coordY;
+		Soldier.this.addAction(movAct);
+		//Db("Action added!");
+		
+		
+		return true;
+	}
+	
+	@Override
+	public void act(float delta) {
+	    super.act(delta);
+	}
+	
+	@Override
+	public boolean Attack(int coordX, int coordY, int[] range) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean RecieveFocus() {
+		Db("Focus attained!");
+		return false;
+	}
+
+	@Override
+	public boolean LoseFocus() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String Info() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void PrintDebugInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Db(String message) {
+		System.out.println("Soldier.java DEBUGMSG: "+message);
+	}
+	
+	
+}
