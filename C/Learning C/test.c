@@ -25,22 +25,6 @@ int casting();
 
 int main()
 {
-<<<<<<< HEAD
-    printf("Hello, World.\n");
-    printf("\nTEST PROGRAM ONE-ALPHA\nRyan's C learning file.\n\n");
-
-    //Tests for sum function:
-    int sumx = sum(1,2);
-    int sumy = sum(sumx,4);
-    int sumz = sum(sumx,sumy);
-    sum(sumy,sumz);
-
-    varTypes();
-    ifStatements();
-    casting();
-
-    return 0;
-=======
 	printf("\nTEST PROGRAM ONE\nRyan's C learning file.\n\n");
 	int sumx = sum(1,2);
 	int sumy = sum(sumx,4);
@@ -52,7 +36,6 @@ int main()
 	casting();
 	
 	return 0;
->>>>>>> f0c350e3c5517f4fd1dba6245c1a7ec53164ba9f
 }
 
 
@@ -93,25 +76,6 @@ int varTypes()
 }
 
 int ifStatements()
-<<<<<<< HEAD
-{
-    printf("\nTEST: If Statements:\n");
-    bool verifySum = false;
-
-    //Checks if sum function works:
-    if ( sum(1,4)==5 )
-        verifySum=true;
-    else
-        verifySum=false;
-
-    //Reports if sum function/booleans work:
-    if ( verifySum==true ) {
-        printf("Sum function works! 1+4 is equal to 5!\n");
-    } else {
-        printf("Sum function failed! 1+4 is not equal to 5!\n");
-    }
-    return 0;
-=======
 {	
 	printf("\nTEST: If Statements:\n");	
 	bool verifySum = false;
@@ -130,7 +94,6 @@ int ifStatements()
 	
 	
 	return 0;
->>>>>>> f0c350e3c5517f4fd1dba6245c1a7ec53164ba9f
 }
 
 int casting()
