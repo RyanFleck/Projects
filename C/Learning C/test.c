@@ -25,7 +25,10 @@ int casting();
 
 int main()
 {
+    printf("Hello, World.\n");
     printf("\nTEST PROGRAM ONE-ALPHA\nRyan's C learning file.\n\n");
+
+    //Tests for sum function:
     int sumx = sum(1,2);
     int sumy = sum(sumx,4);
     int sumz = sum(sumx,sumy);
@@ -87,12 +90,11 @@ int ifStatements()
         verifySum=false;
 
     //Reports if sum function/booleans work:
-    if ( verifySum==true )
+    if ( verifySum==true ) {
         printf("Sum function works! 1+4 is equal to 5!\n");
-    else
+    } else {
         printf("Sum function failed! 1+4 is not equal to 5!\n");
-
-
+    }
     return 0;
 }
 
