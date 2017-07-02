@@ -1,0 +1,9 @@
+#!/bin/bash
+    printf "\nCompiling COBOL files.\n"
+    for i in $( find . -name '*.cbl' ); do
+	FILE=$i
+	FILE=${FILE%.*}
+        printf "\nCompiling CBL file: $FILE.cbl"
+        cobc -free -x -o $FILE $FILE.cbl
+    done
+    printf "\nCompiled all COBOL files.\n"
