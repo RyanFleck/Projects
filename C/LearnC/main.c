@@ -72,6 +72,8 @@ int tempTable() //Prints deg F/deg C table for 0,20...300.
         printf(  "%d\t%d\n", fahr, celsius  );
         fahr = fahr + step ;
     }
+
+    return 0;
 }
 
 
