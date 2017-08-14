@@ -27,7 +27,7 @@ int tempTable();
 
 int main()
 {
-	printf("\nTEST PROGRAM ONE\nRyan's C learning file.\n\n");
+	printf("C program compiled correctly and is running.\n\rINIT TEST PROGRAM ONE\nRyan's C learning file.\n\n");
 	int sumx = sum(1,2);
 	int sumy = sum(sumx,4);
 	int sumz = sum(sumx,sumy);
