@@ -11,6 +11,8 @@ int announceTest();
 //Functions based on problems in the textbook:
 int tempTable();
 int tempTableAlternate();
+int stdIOTest();
+
 
 int main(){
   printf("C program 'test.c' compiled correctly.\nRunning test functions:\n");
@@ -18,7 +20,8 @@ int main(){
   //CHAPTER ONE
   tempTable();
   tempTableAlternate();
-  return 0;
+  //stdIOTest(); 
+	return 0;
 }
 int announceTest(char testName[]){
   printf( "\nFunction '%s' output:\n\n",testName );
@@ -56,3 +59,13 @@ int tempTableAlternate(){ //(1.3) Temp table with for loop.
   } 
   return 0;
 }
+
+int stdIOTest(){
+  announceTest("Standard input and output test.");
+  int c;
+  while((c = getchar())!= EOF){
+    putchar(c);}
+  return 0;
+}	
+
+//CURRENT PAGE: 15
