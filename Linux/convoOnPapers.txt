@@ -1,0 +1,65 @@
+‎[10:17] ‎<‎tsahyt‎>‎ Winter_Foxo: MS research is excellent
+‎[10:17] ‎<‎browndawg‎>‎ ^
+‎[10:17] ‎<‎justJanne‎>‎ this isn’t a joke
+‎[10:17] ‎<‎tsahyt‎>‎ they're doing some really great stuff, they have plenty of funding
+‎[10:17] ‎<‎justJanne‎>‎ they employ like half of the people that work regularly on haskell stuff
+‎[10:17] ‎<‎tsahyt‎>‎ and lots of really smart people
+‎[10:17] ‎<‎justJanne‎>‎ and many more on F# and co
+‎[10:17] ‎<‎tsahyt‎>‎ yes that too
+‎[10:17] ‎<‎rflec028‎>‎ tsahyt: Wait, really? Neat.
+‎[10:18] ‎<‎justJanne‎>‎ A friend of mine that used to be a fan of haskell now works there
+‎[10:18] ‎<‎rflec028‎>‎ tsahyt: Good to know
+‎[10:18] ‎<‎Nowyouseeme‎>‎ Why would Microsoft check for degrees when Bill Gates didn't graduate himself?
+‎[10:18] ‎<‎justJanne‎>‎ Nowyouseeme: it’s not about degrees
+‎[10:18] ‎<‎justJanne‎>‎ it’s about having written some papers
+‎[10:18] ‎<‎justJanne‎>‎ done some research
+‎[10:18] ‎<‎tsahyt‎>‎ I suppose a degree helps tho
+‎[10:18] ‎<‎tsahyt‎>‎ having a PhD to back up your credentials isn't a bad idea yet
+‎[10:18] ‎<‎justJanne‎>‎ definitely not
+‎[10:18] ‎<‎Nowyouseeme‎>‎ so the ones who don't have a degree, would have to show their github to the employer?
+‎[10:18] ‎<‎tsahyt‎>‎ but there's a watering down of degrees that has been happening over the last few decades. basically if everyone has a BSc, nobody does.
+‎[10:18] ‎<‎rflec028‎>‎ justJanne: if I wanted to work at a place like that, what should I be learning and persuing right now?
+‎[10:18] ‎<‎justJanne‎>‎ Nowyouseeme: github, your publishing history in papers, etc
+‎[10:19] ‎<‎Nowyouseeme‎>‎ Is that the best way for them to approach an interview?
+‎[10:19] ‎<‎tsahyt‎>‎ A BSc nowadays just says that you're literate
+‎[10:19] ‎<‎Nowyouseeme‎>‎ so how do you publish anything? and where?
+‎[10:19] ‎<‎justJanne‎>‎ tsahyt: depends on where it’s from
+‎[10:19] ‎<‎tsahyt‎>‎ justJanne: I suppose so
+‎[10:19] ‎<‎justJanne‎>‎ Nowyouseeme: rflec028: publishing automatically happens at uni
+‎[10:19] ‎<‎rflec028‎>‎ So much for that $60K I've spent on my degree.
+‎[10:19] ‎<‎justJanne‎>‎ usually during bachelor already you write one or two papers and a thesis that are published,
+‎[10:19] ‎<‎tsahyt‎>‎ justJanne: but I was just about to say that I don't see it as a requirement for some jobs that "require" one
+‎[10:19] ‎<‎justJanne‎>‎ but at least during master
+‎[10:20] ‎<‎tsahyt‎>‎ the most obvious one here is writing code.
+‎[10:20] ‎<‎Nowyouseeme‎>‎ do you have to invent anything new for that? at least an observation?
+‎[10:20] ‎<‎rflec028‎>‎ justJanne: Where can I find published papers on topics like Haskell, C, Lisp, GNU, etc?
+‎[10:20] ‎<‎Nowyouseeme‎>‎ what if you couldn't find anything new to publish? would you be denied your degree?
+‎[10:20] ‎<‎justJanne‎>‎ rflec028: oh, that’s an interesting question
+‎[10:20] ‎<‎tsahyt‎>‎ rflec028: I can list you a ton of haskell related papers if you need them
+‎[10:20] ‎<‎justJanne‎>‎ Nowyouseeme: yes.
+‎[10:20] ‎[Notify]‎ justJanne is online (irc.snoonet.org).
+‎[10:20] ‎<‎justJanne‎>‎ you can at normal universities only get a degree if you publish something
+‎[10:21] ‎<‎justJanne‎>‎ don’t worry, you don’t have to invent anything
+‎[10:21] ‎<‎rflec028‎>‎ tsahyt: I don't want to put you through a lot of work, is there an online repository?
+‎[10:21] ‎<‎justJanne‎>‎ you can also do replication, meta or comparison studies
+‎[10:21] ‎<‎justJanne‎>‎ rflec028: kinda.
+‎[10:21] ‎<‎justJanne‎>‎ you use https://scholar.google.de/ to find papers
+‎[10:21] ‎<‎gonzobot‎>‎ Title: Google Scholar
+‎[10:21] ‎<‎rflec028‎>‎ Heh
+‎[10:21] ‎<‎justJanne‎>‎ http://sci-hub.io/ to access them
+‎[10:21] ‎<‎gonzobot‎>‎ Title: Sci-Hub: removing barriers in the way of science
+‎[10:21] ‎<‎rflec028‎>‎ Oh, that's new.
+‎[10:21] ‎<‎rflec028‎>‎ Neato.
+‎[10:22] ‎<‎justJanne‎>‎ they’re the #1 piracy site for papers
+‎[10:22] --> lunix (lunix@typical.linux.user) has joined this channel.
+‎[10:22] *** systemd gives lunix permission to talk.
+‎[10:22] ‎<‎browndawg‎>‎ sci-hub and libgen are godsend
+‎[10:22] ‎<‎lunix‎>‎ fuck arch!
+‎[10:22] ‎<‎rflec028‎>‎ Wow
+‎[10:22] ‎<‎lunix‎>‎ I just spent 3 hours setting up printer drivers
+‎[10:22] ‎<‎alrayyes‎>‎ Anyone here know of a solution to screen share with normal (ie non linux) people?
+‎[10:22] ‎<‎justJanne‎>‎ Winter_Foxo: http://research.microsoft.com/en-us/people/simonpj/ http://research.microsoft.com/en-us/people/simonmar/ http://research.microsoft.com/en-us/um/people/emeijer/
+‎[10:22] ‎<‎tsahyt‎>‎ rflec028: http://sprunge.us/hMBB
+‎[10:22] ‎<‎tsahyt‎>‎ quick dump of part of my zotero database
+‎[10:22] ‎<‎justJanne‎>‎ >  What is up with that, anyway? Three of the most important people in Haskell -- the originators of the language and primary developers of GHC, and the foremost researchers in functional programming as I've experienced it who aren't employed by universities, Galois or wherever the fuck okmij works -- are employed by Microsoft Research [0]
+‎[10:22] ‎<‎rflec028‎>‎ justJanne tsahyt why didn't I know about these before, jeezus.
