@@ -2,9 +2,11 @@
 
 //Ryan Fleck - Learning C - Practice Exercise.
 //From "The C Programming Language" 2e, K&R
+//PROGRAM DESC:
+//
 
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  00		
+#define EXERCISE 00
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
