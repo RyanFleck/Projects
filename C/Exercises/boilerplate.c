@@ -6,7 +6,7 @@
 #define CHAPTER  0		
 #define EXERCISE 0
 
-void main(){
+int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	//Beginning of exercise code:
 
@@ -20,5 +20,6 @@ void main(){
 
 	//End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
+	return 0;
 }
 
