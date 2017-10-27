@@ -12,13 +12,14 @@
 */
 
 #include<stdio.h>
-#define CHAPTER  00		
-#define EXERCISE 00
+#define CHAPTER  01		
+#define EXERCISE 01
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
-
+  
+  printf("Hello, world! That's one small step for Ryan, one big step for...");
 
 	// End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);

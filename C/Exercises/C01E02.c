@@ -12,14 +12,19 @@
 */
 
 #include<stdio.h>
-#define CHAPTER  00		
-#define EXERCISE 00
+#define CHAPTER  01		
+#define EXERCISE 02
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
+  
+  printf("TEST \tTEST \b\b\b\bTEST \\TEST \"TEST \nTEST \aTEST \bTEST \cTEST \dTEST \eTEST \fTEST \gTEST \hTEST");
+  
+  printf("\n\nTEST\fING");
 
-
+  printf("\n\nDown\fthe\frabbit\fhole");
+  
 	// End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
 	return 0;
