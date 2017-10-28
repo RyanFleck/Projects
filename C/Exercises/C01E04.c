@@ -9,11 +9,13 @@
 * Ryan Fleck - Learning C - Textbook Exercise
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
+* 
+* Simple Celsius to Fahrenheit conversion table generator.
 */
 
 #include<stdio.h>
 #define CHAPTER  01		
-#define EXERCISE 03
+#define EXERCISE 04
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
@@ -22,19 +24,19 @@ int main(void){
   float fht, cls;
   int lower, upper, step;
 
-  cls = 0;
-  lower = 0;
-  upper = 300;
+  fht = 0;
+  lower = -100;
+  upper = 100;
   step = 20;
 
-  fht = lower;
+  cls = lower;
 
-  printf("Temperature Conversion Table:\nFahr:\tCel:\n");
+  printf("Temperature Conversion Table:\nCel:\tFahr:\n");
 
-  while (  fht <= upper  ){
-    cls = 5.0 * (fht-32) / 9.0;
-    printf("%3.0f\t%6.2f\n", fht, cls);
-    fht = fht + step; 
+  while (  cls <= upper  ){
+    fht = ((9.0/5.0)*cls)+32;
+    printf("%3.0f\t%6.2f\n", cls, fht);
+    cls = cls + step; 
     }  
 
 	// End of exersise code.
