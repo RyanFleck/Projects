@@ -9,30 +9,30 @@
 * Ryan Fleck - Learning C - Textbook Exercise
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
+*
+* Simple character replacement program.
 */
 
 #include<stdio.h>
-#define CHAPTER  1		
-#define EXERCISE 8
+#define CHAPTER 1		
+#define EXERCISE 10
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
-
-  int c, blanks=0, tabs=0, newlines=0;
+  
+  int c;
 
   while(  (c=getchar()) != EOF  ){
-    if( c==' ')
-      ++blanks;
-    if( c=='\t')
-      ++tabs;
-    if( c=='\n')
-      ++newlines;
+    if(c=='\t')
+      printf("\\t");
+    else if(c=='\b')
+      printf("\\b");
+    else if(c=='\\')
+      printf("\\\\");
+    else
+      putchar(c);
     }
-
-  
-
-  printf("\nCharacter breakdown:\n\nBlanks:\t\t%d\nTabs:\t\t%d\nNewlines:\t%d\n",blanks,tabs,newlines);
 
 	// End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
