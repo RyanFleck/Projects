@@ -12,8 +12,8 @@
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  1		
+#define EXERCISE 8
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);

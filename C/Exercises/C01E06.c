@@ -12,15 +12,25 @@
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  01		
+#define EXERCISE 06
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
+  
+  int c;
 
+  /*c = (getchar() != EOF);
 
-	// End of exersise code.
+  printf("c==0?: %d\n",  c==0  );
+
+  printf("c==1?: %d\n",  c==1  );*/
+
+  while((c = getchar()) != EOF)
+    putchar(c);
+
+  // End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
 	return 0;
 }
