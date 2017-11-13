@@ -1,0 +1,23 @@
+RCF - Guide to SSH keys.
+
+To generate a key:
+	ssh-keygen -t rsa -b 4096 -C "email@email.com"
+	> Save this in the default location.	
+
+To add the key to your ssh service:
+	eval "$(ssh-agent -s)"	> Starts the SSH service.
+	ssh-add ~/.ssh/id_rsa	> Adds the key.
+
+To add the key to the github account:
+	> Use the website, lol. Add the .pub key.
+	> On your computer, set:
+	git config --global user.name "First Last"
+	git config --global user.email "email@email.com"
+	git config --global core.editor "vim"
+
+	> Now you can add repos, like so:
+	git clone ssh://git@github.com/RyanFleck/School.git
+	git clone ssh://git@github.com/RyanFleck/Projects.git
+
+	> As long as you have access to the repo they will clone properly.
+	> You no longer have to enter a username and password to push/pull.
