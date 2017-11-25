@@ -3,7 +3,7 @@
 #
 #  setupOS.sh - shell script to configure Fedora 24 and above.
 #  
-#  Copyright 2017 Ryan Fleck <rflec028@uottawa.ca>
+#  Copyright 2017 Ryan Fleck <ryan.fleck@protonmail.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
