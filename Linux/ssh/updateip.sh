@@ -8,7 +8,8 @@ echo "#!/bin/bash" > $prog
 echo "ssh -XC rflec028@$ip" >> $prog
 echo "#RCF - Last updated $date" >> $prog
 chmod +x $prog
+mkdir -p ~/Remote
 for x in *.connect.sh; do
-  \cp $x ~/$x
+  \cp $x ~/Remote/$x
 done
 
