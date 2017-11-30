@@ -1,4 +1,5 @@
 #!/bin/bash
+#RCF 2017
 
 #GATHER INFORMATION
 ip=`wget -qO- http://ipecho.net/plain`
@@ -27,4 +28,5 @@ if [ $lastip != $ip ]; then
   git commit -m "RCF-AUTO: Updated IP for $name."
   git push
 fi
+
 
