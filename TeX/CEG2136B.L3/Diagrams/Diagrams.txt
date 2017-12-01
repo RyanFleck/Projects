@@ -1,0 +1,17 @@
+Block diagrams:
+
+BlockDiagram_1bitISC.PNG
+BlockDiagram_4bitISC.PNG
+BlockDiagram_4BitRegister.PNG
+BlockDiagram_4BitRegister_VER2.PNG
+BlockDiagram_ABXIO.PNG
+BlockDiagram_AC.PNG
+BlockDiagram_AC_VER2.PNG
+BlockDiagram_FullAdder.PNG
+BlockDiagram_FULL_ALU.PNG
+BlockDiagram_StateIV.PNG
+
+
+Diagnostics_CompilationReport.PNG
+WaveFormSimFinalFailed.PNG
+WaveFormSimulation.PNG

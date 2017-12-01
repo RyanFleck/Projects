@@ -1,0 +1,7 @@
+Intro to Quartus II.
+
+Derived Equation of Fig.2:
+
+F = (A+B) * (C*D)
+
+

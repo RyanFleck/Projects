@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Theoretical Implementation}{1}
+\contentsline {subsection}{\numberline {1.1}Lab Objectives}{1}
+\contentsline {subsection}{\numberline {1.2}Discussion of Requirements}{1}
+\contentsline {subsection}{\numberline {1.3}Proposed Algorithmic Solution}{1}
+\contentsline {section}{\numberline {2}Design}{2}
+\contentsline {subsection}{\numberline {2.1}QUARTUS II Circuit Diagrams}{2}
+\contentsline {subsection}{\numberline {2.2}Components Utilized}{2}
+\contentsline {subsection}{\numberline {2.3}Implemented Solution}{2}
+\contentsline {subsection}{\numberline {2.4}Challenging Problems Encountered}{3}
+\contentsline {section}{\numberline {3}Implementation}{3}
+\contentsline {subsection}{\numberline {3.1}Simulation Results}{3}
+\contentsline {subsection}{\numberline {3.2}Simulation Verificaiton}{3}
+\contentsline {section}{\numberline {4}Discussion}{4}
+\contentsline {subsection}{\numberline {4.1}Errors Encountered}{4}
+\contentsline {subsection}{\numberline {4.2}Conclusions}{5}
