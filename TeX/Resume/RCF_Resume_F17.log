@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.8)  30 NOV 2017 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  2 DEC 2017 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **RCF_Resume_F17.tex
 (./RCF_Resume_F17.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 5 language(s) loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 (./res.cls
 Document Style `res' <26 Sep 89>.
 Document Class: res 2000/05/19 v1.4b Resume class
@@ -82,10 +82,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
 [2] ) 
 Here is how much of TeX's memory you used:
- 305 strings out of 494902
- 3374 string characters out of 6179891
- 55060 words of memory out of 5000000
- 3687 multiletter control sequences out of 15000+600000
+ 305 strings out of 494910
+ 3374 string characters out of 6179836
+ 54957 words of memory out of 5000000
+ 3677 multiletter control sequences out of 15000+600000
  4906 words of font info for 18 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  29i,8n,19p,412b,175s stack positions out of 5000i,500n,10000p,200000b,80000s

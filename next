@@ -1,3 +1,7 @@
+Websites:
 leetcode-cli
 exercism.io
 projecteuler.net
+
+Scripts to write:
+gacp - git add-commit-push - takes commit message as only argument.
