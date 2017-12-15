@@ -2,7 +2,8 @@
 #RCF 2017
 
 #GATHER INFORMATION
-ip=`wget -qO- http://ipecho.net/plain`
+echo "1/3: Gathering system info."
+ip=`timeout 10 wget -qO- http://ipecho.net/plain`
 name=`hostname`
 name=${name,,}
 date=`date`
@@ -11,6 +12,7 @@ data=ip.$name
 lastip=`cat $data`
 
 #WRITE FILES
+echo "2/3: Writing files."
 echo "$ip" > $data
 echo "#!/bin/bash" > $prog
 echo "ssh -XC rflec028@$ip" >> $prog
@@ -22,6 +24,7 @@ for x in *.connect.sh; do
 done
 
 #UPLOAD CHANGES
+echo "3/3: Uploading changes."
 if [ $lastip != $ip ]; then
   echo "IP Changed from $lastip to $ip! Pushing changes."
   git add $prog
