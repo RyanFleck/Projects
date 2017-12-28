@@ -22,7 +22,7 @@ int main(void){
 	// Beginning of exercise code.
   
   int start, stop, step;
-  float degf, degc;
+  float degf;
   
   stop=0;
   start=300;
@@ -32,7 +32,7 @@ int main(void){
   printf("F\tC\n");
 
   for( degf=start; degf>=stop; degf=degf+step ){
-    printf("%3.0f\t%3.3f\n",degf,degc);
+    printf("%3.0f\t%3.3f\n",degf,((degf-32)*(5.0/9.0)));
   }
   
   
