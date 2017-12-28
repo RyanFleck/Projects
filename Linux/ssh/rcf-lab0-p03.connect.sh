@@ -1,3 +1,3 @@
 #!/bin/bash
-ssh -XC rflec028@
-#RCF - Last updated Fri Dec 15 14:51:42 EST 2017
+ssh -XC rflec028@50.99.243.176
+#RCF - Last updated Wed Dec 27 08:01:25 MST 2017
