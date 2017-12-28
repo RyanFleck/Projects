@@ -9,6 +9,8 @@
 * Ryan Fleck - Learning C - Textbook Exercise
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
+*
+* PROGRAM: Uses a for loop to print the conversion from F -> C in reverse.
 */
 
 #include<stdio.h>
@@ -16,12 +18,28 @@
 #define EXERCISE 0
 
 int main(void){
-	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
+	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
+  
+  int start, stop, step;
+  float degf, degc;
+  
+  stop=0;
+  start=300;
+  step=-20;
 
+  
+  printf("F\tC\n");
 
+  for( degf=start; degf>=stop; degf=degf+step ){
+    printf("%3.0f\t%3.3f\n",degf,degc);
+  }
+  
+  
+  
+  
 	// End of exersise code.
-	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
+	printf("\n\nRCF.KR_Exercise.%d-%d.END\n",CHAPTER,EXERCISE);
 	return 0;
 }
 

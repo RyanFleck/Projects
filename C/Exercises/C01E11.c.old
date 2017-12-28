@@ -12,13 +12,33 @@
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  1		
+#define EXERCISE 11
 
 int main(void){
 	printf("RCF.TestProg.%d-%d.START\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
 
+  int c, blanks=0, tabs=0, newlines=0, characters=0;
+
+  while(  (c=getchar()) != EOF  ){
+    
+    
+    if( c==' ')
+      ++blanks;
+    else if( c=='\t')
+      ++tabs;
+    else if( c=='\n')
+      ++newlines;
+    else
+      ++characters;
+   
+    }
+
+  
+
+  printf("\nCharacter breakdown:\n\nBlanks:\t\t%d\nTabs:\t\t%d\nNewlines:\t%d\nCharacters:\t%d\n"
+    ,blanks,tabs,newlines,characters);
 
 	// End of exersise code.
 	printf("\n\nRCF.TestProg.%d-%d.END\n",CHAPTER,EXERCISE);
