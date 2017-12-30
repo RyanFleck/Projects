@@ -10,20 +10,36 @@
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
 *
-* PROGRAM: 
+* PROGRAM: Verify that getchar != EOF is 0 or 1.
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  1		
+#define EXERCISE 6
 
 int main(void){
 	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
   
+  int c;
+
+  c = getchar();
+  while( c != EOF ){
+    putchar(c);
+    c = getchar();
+  }
   
-  
-  
+  if( c==0 ){
+    printf("EOF = 0");
+  }
+  else if ( c==1 ){
+    printf("EOF = 1");
+  }
+  else{
+    printf("EOF != 0 or 1"); //This always triggers.
+  }
+ 
+  printf("\nEOF = %d",c);
   
   
 	// End of exersise code.
