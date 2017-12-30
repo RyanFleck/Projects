@@ -10,12 +10,12 @@
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
 *
-* PROGRAM: 
+* PROGRAM: Copies input to output, replacing sequential spaces with a single.
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  1		
+#define EXERCISE 9
 
 int main(void){
 	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
