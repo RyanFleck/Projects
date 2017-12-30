@@ -21,7 +21,22 @@ int main(void){
 	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
   
-    
+  int c, nl, bl, tb;
+
+  nl = bl = tb = 0;
+  
+
+  while (  (c = getchar()) != EOF  ){
+    if(c == '\n'){
+      ++nl;
+    }else if( c == '\t'){
+      ++tb;
+    }else if( c == ' '){
+      ++bl;
+    }
+  }
+  printf("\nContents:\n%d new lines\n%d blanks\n%d tabs\n",nl,bl,tb);
+  
   
   
   

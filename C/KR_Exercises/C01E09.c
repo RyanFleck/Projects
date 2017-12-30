@@ -21,7 +21,27 @@ int main(void){
 	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
   
-  
+  int c;
+  int flag; //Flag is 1 when a space is detected, 0 when regular char.
+
+  c = getchar();
+
+  while( c != EOF ){
+    
+    if( c != ' ' ){
+    flag = 0;
+    putchar(c);
+    }
+
+    else if(c==' ' && !flag){
+      putchar(c);
+      flag=1;
+    }
+   
+   //No special case for flag==1 and c==' ', as neither if will trigger.
+
+    c = getchar();
+  }
   
   
   
