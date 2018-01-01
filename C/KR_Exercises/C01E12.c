@@ -10,18 +10,33 @@
 * BEERWARE license written by Poul-Henning Kamp <phk@FreeBSD.ORG> 
 * Exercises from "THE C PROGRAMMING LANGUAGE" 2E, K&R
 *
-* PROGRAM: 
+* PROGRAM: Print input one word per line. 
 */
 
 #include<stdio.h>
-#define CHAPTER  0		
-#define EXERCISE 0
+#define CHAPTER  1		
+#define EXERCISE 12
 
 int main(void){
 	printf("RCF.KR_Exercise.%d-%d.BEGIN\n\n",CHAPTER,EXERCISE);
 	// Beginning of exercise code.
   
-  
+  int c, state; //State(0) == out of a word, (1) = in. 
+
+  state = 0;
+
+  while( (c=getchar()) != EOF ){
+
+    if(c==' '){
+      if( state == 1 ){
+        printf("\n");
+        state=0;
+      }
+    }else{
+      state=1;
+      putchar(c);
+    }
+  }
   
   
   
