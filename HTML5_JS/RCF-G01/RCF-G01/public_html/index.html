@@ -29,6 +29,7 @@
                 HTML5 canvas feature unavailable.
         </canvas>
         </center>
+    
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
@@ -36,6 +37,20 @@
         <script src="js/main.js"></script>
         <script src="js/vertexbuffer.js"></script>
 
+        <script type="x-shader/x-vertex" id="VertexShader">
+            attribute vec3 aSquareVertexPosition;
+            void main(void){
+                gl_Position = vec4(aSquareVertexPosition,1.0);
+            }
+        </script>
+        
+        <script type="x-shader/x-vertex" id="FragmentShader">
+            void main(void){
+                gl_FragColor = vec4(1.0,1.0,1.0,1.0);
+            }
+        </script>
+        
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
