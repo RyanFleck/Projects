@@ -25,3 +25,4 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+/HTML5_JS/RCF-G01/RCF-G01/nbproject/private/
