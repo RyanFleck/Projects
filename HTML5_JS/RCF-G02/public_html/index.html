@@ -9,12 +9,51 @@ and open the template in the editor.
         <title>RCF-LAB G02</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" charset="utf-8">
+        function pageLoaded(){
+            var canvas = document.getElementById("testcanvas");
+            var context = canvas.getContext("2d");
+            
+            //Drawing orders:
+            //context.fillRect(50,70,90,30);
+            
+            //Neat logo
+            var lx = 10;
+            var ly = 10;
+            var a = 4;
+            var b = 4;
+            
+            //DRAW THE R:
+            context.beginPath();
+            context.moveTo(lx,ly);
+            context.lineTo((lx+a*20),(ly+b*0));
+            context.lineTo((lx+a*25),(ly+b*10));
+            context.lineTo((lx+a*20),(ly+b*20));
+            context.lineTo((lx+a*25),(ly+b*30));
+            context.lineTo((lx+a*12),(ly+b*30));
+            context.lineTo((lx+a*10),(ly+b*28));
+            context.lineTo((lx+a*10),(ly+b*30));
+            context.lineTo((lx+a*0),(ly+b*30));
+            //context.moveTo((lx+0),(ly+0));
+            context.fill();
+            
+    
+    
+        }
+        </script>
+    
+    
+    
     </head>
-    <body>
+    <body onload="pageLoaded();">
         <center>
         <p>RCF - WEB GRAPHICS TEST 02</p>
-    
         
+        <canvas width="640" height="480" id="testcanvas" style="border:white 1px solid;">
+            Upgrade your browser for HTML5 support.
+        </canvas>        
         </center>
+        
+    
     </body>
 </html>
