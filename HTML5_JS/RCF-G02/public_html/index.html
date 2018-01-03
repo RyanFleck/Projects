@@ -32,7 +32,7 @@ and open the template in the editor.
             context.lineTo((lx+a*20),(ly+b*20));
             context.lineTo((lx+a*25),(ly+b*30));
             context.lineTo((lx+a*12),(ly+b*30));
-            context.lineTo((lx+a*10),(ly+b*28));
+            context.lineTo((lx+a*10),(ly+b*26));
             context.lineTo((lx+a*10),(ly+b*30));
             context.lineTo((lx+a*0),(ly+b*30));
             //context.moveTo((lx+0),(ly+0));
@@ -73,7 +73,47 @@ and open the template in the editor.
             context.fillText("Figure 2: Circle art.",(ctx-30),(cty+50));
             
             
+            //R LOGO:
+            function drawRv2(ilx,ily,is){
+            //Scaling and position:
+            var lx = ilx;
+            var ly = ily;
+            var a = is;
+            var b = is;
+            //DRAW THE R:
+            context.beginPath();
+            context.moveTo(lx,ly);
+            context.lineTo((lx+a*20),(ly+b*0));
+            context.lineTo((lx+a*25),(ly+b*10));
+            context.lineTo((lx+a*20),(ly+b*20));
+            context.lineTo((lx+a*25),(ly+b*30));
+            context.lineTo((lx+a*12),(ly+b*30));
+            context.lineTo((lx+a*10),(ly+b*26));
+            context.lineTo((lx+a*10),(ly+b*30));
+            context.lineTo((lx+a*0),(ly+b*30));
+            //context.moveTo((lx+0),(ly+0));
+            context.fill();
+            context.fillStyle = "rgba(0,0,0,1)";
+            }
             
+            context.fillStyle = "rgba(100,0,100,0.5)";
+            drawRv2(300,20,3);
+            context.fillStyle = "rgba(100,0,100,1)";
+            drawRv2(305,25,3);
+            
+            var gameLoop = setInterval(drawingLoop,20);
+            
+            function animationLoop(){
+                //Iterate through moving items, then move them.
+                
+            }
+            function drawingLoop(){
+                //Call drawingloop after 20ms
+                var gameLoop = setTimeout(drawingLoop,20);
+                //Clear Canvas
+                
+                //Iterate through all items and draw them.
+            }
     
     
         }
