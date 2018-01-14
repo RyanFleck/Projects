@@ -6,9 +6,10 @@ leetcode-cli
 exercism.io
 projecteuler.net
 
-Scripts to write:
+Ultra simple scripts to write:
 gacp - git add-commit-push - takes commit message as only argument.
 rtouch - takes -l lang as an option and initializes a file with boilerplate and RCF-timestamp.
+clrs - clears display and lists basic directory info. Saves a tiny bit of time.
 
 New standards to propogate:
 RCF-Timestamp: 00 00 00 0000
