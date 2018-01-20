@@ -37,8 +37,6 @@ int main(void){
       putchar(c);
       flag=1;
     }
-   
-   //No special case for flag==1 and c==' ', as neither if will trigger.
 
     c = getchar();
   }
