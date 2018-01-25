@@ -1,0 +1,6 @@
+var1: 18
+var2: 9384
+something: pies
+region: us_north
+another_one: dj_invalid
+owo: bad_meme
