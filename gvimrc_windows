@@ -2,7 +2,7 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 syntax on
-colorscheme ron
+colorscheme koehler
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
