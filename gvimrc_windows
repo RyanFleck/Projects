@@ -10,6 +10,10 @@ set expandtab
 set smarttab
 set autoindent
 set guifont=Terminus_(TTF)_for_Windows:h12:cANSI:qDRAFT
+set guioptions-=r
+set guioptions-=L
+set guioptions-=T
+set nobackup
 
 set diffexpr=MyDiff()
 function MyDiff()
