@@ -2,9 +2,49 @@
 <html>
 <head>
   <title>RCF - CSS Grid Tests</title>
+  <style>
+    .header {
+    grid-area: header;
+    }
+    .main {
+    grid-area: main;
+    }
+    .sidebar {
+    grid-area: sidebar;
+    }
+    .footer {
+    grid-area: footer;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+    }
+  </style>
 </head>
 <body>
   <h3>RCF-GRIDTEST-03</h3>
+  <div class="container">
+  <div class="Header">
+    HEADER Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate doloremque porro et consequatur possimus amet, distinctio provident odit ab? Accusantium error, cupiditate illum totam quae iusto maiores ratione ab.
+  </div>
+  <div class="Main">
+    MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate doloremque porro et consequatur possimus amet, distinctio provident odit ab? Accusantium error, cupiditate illum totam quae iusto maiores ratione ab.
+  </div>
+
+  <div class="Sidebar">
+    SIDEBAR Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate doloremque porro et consequatur possimus amet, distinctio provident odit ab? Accusantium error, cupiditate illum totam quae iusto maiores ratione ab.
+  </div>
+
+  <div class="Footer">
+    FOOTER Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate doloremque porro et consequatur possimus amet, distinctio provident odit ab? Accusantium error, cupiditate illum totam quae iusto maiores ratione ab.
+  </div>
+  </div>
 
 </body>
 </html>
