@@ -1,0 +1,17 @@
+###Weaksauce Laptops Are The Bomb
+Many individuals in my industry rely on either heavy and powerful desktop replacements or luxe thin-and-light ultraportables. In my humble opinion, these are both terrible options without a specific usage case or personal preference. For a fraction of the money, you can be equally productive and far more portable with a less powerful laptop.
+
+###My Laptop: The Dell P22T
+While technically a Chromebook, the Dell P22T "Chromebook 11" is the perfect cantidate for a lightweight GNU/Linux installation of either Debian or the purpose-built Gallium OS, which is based on Ubuntu and designed to run on the very weak Intel Celeron N2840 (along with other ChromeOS devices.) The P22T's dual-core 2.16 GHz processor, paired with 4GB of DDR3L, sips a rediculously small amount of power. The P22T can last up to 12 hours with a window manager running, or past than 20 with just virtual terminals. Dell's P22T is unable to run programs heavier than eclipse, and cannot edit video, 3D models or build android applications. While it relies on remote machines for these heavier tasks, the P22T is more than capable of editing and compiling the vast majority of programming languages.
+
+###How Much Power Do I Need?
+My use case is this: Java, Python, C, reading textbooks, email, LaTeX and Godot in 2D. Compute-heavy portions of these tasks will run much faster on better hardware, but the difference will be measured in milliseconds. Most consumers will also only use these lighter applications- email, web browsing, watching video- and don't need a powerful processor or backlit keyboard for an excellent computing experience. More importantly, the performance of these applications is very similar on high-end and low-end processors.
+
+###Dell P22T vs Macbook Air
+Coming in at 1/4-1/6 of the price of the Air, the P22T is certainly no match in the performance or appearance department. The beautiful Macbook Air, with its sleek form factor, beautiful keyboard and display, and robust mobile i5 is a reasonable machine for writing, email and programming on the go. The battery life is, while not comparable to the P22T, more than enough to last through a day of work. This being said, the keyboard and screen on the P22T are both very good, and the use cases for these machines are similar. The Air has more power, but will still underperform with CAD and Multimedia tasks. Apple's Macbook Air is worth the extra $800-1000 only to those who prize the asthetics of the MacBook.
+
+###Dell P22T vs Alienware 13
+Dell's own Alienware laptops are formidable: Fast mobile i7 processors and screaming discrete graphics. Unless you are buying a machine specifically for CAD or portable gaming, though, the vast majority of tasks will run just as well on the Celeron N2840, and you'll have an identical desktop/typing experience. For the $1500-2000 a decent Alienware laptop costs, it is possible to purchase a far more powerful desktop with heaps more power. If this power is required by your work, you can choose either to use a powerful laptop or use a light one and utilize your heavy applications remotely.
+
+###The Case For The P22T + GalliumOS
+For light programming and writing all day, the P22T is king. Unless you have heavy applications to uitilize, a cheap laptop running GNU/Linux like the P22T is far more economical than a laptop running Windows or MacOS.
