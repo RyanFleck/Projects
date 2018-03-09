@@ -7,7 +7,15 @@ fi
 
 apt update
 apt upgrade
-apt install vim gcc g++ ruby2.3-dev python3 python3-pip tmux vim
+
+#Essentials
+apt install -y tmux vim htop curl transmission vlc geary
+#Development
+apt install -y gcc g++ ruby2.3-dev python3 python3-pip
+#Electronics
+apt install -y caneda arduino
+#Editors
+apt install -y vim emacs25-lucid eclipse 
 
 gem update --system
 gem install bundler
