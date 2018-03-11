@@ -16,6 +16,8 @@ apt install -y gcc g++ ruby2.3-dev python3 python3-pip
 apt install -y caneda arduino
 #Editors
 apt install -y vim emacs25-lucid eclipse 
+#Documentation
+apt install -y pandoc okular texmaker lyx
 
 gem update --system
 gem install bundler
