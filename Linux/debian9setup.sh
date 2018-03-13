@@ -19,11 +19,17 @@ apt install -y vim emacs25-lucid eclipse
 #Documentation
 apt install -y pandoc okular texmaker lyx
 
+#Update Ruby and Python
 gem update --system
 gem install bundler
 gem install jekyll
-
 pip3 install pandas
+
+#Move config files
+if [ -f vimrc ]; then
+	cp -r vimrc //home/rflec028/.vimrc
+fi
+
 
 #In Transmission:
 #Require Encryption.
