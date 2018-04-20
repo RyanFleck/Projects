@@ -1,1 +1,1 @@
-(  ) Ryan Fleck 2015-2018
+All original work Copyleft (Ↄ) Ryan Fleck 2015-2018
