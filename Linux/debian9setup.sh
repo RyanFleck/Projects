@@ -19,7 +19,7 @@ apt install -y vim emacs25-lucid eclipse
 #Documentation
 apt install -y pandoc okular texmaker lyx
 #Dev tools
-apt install -y gettext autopoint make build-essential gnome-builder
+apt install -y gettext autopoint make build-essential gnome-builder libtool-bin
 apt-get build-dep gnome-builder
 apt-get build-dep eclipse
 
