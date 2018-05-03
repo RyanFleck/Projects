@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root. Exiting." 
+  echo "This script must be run as root. Exiting."
   exit 1
 fi
 
@@ -15,9 +15,13 @@ apt install -y gcc g++ ruby2.3-dev python3 python3-pip
 #Electronics
 apt install -y caneda arduino
 #Editors
-apt install -y vim emacs25-lucid eclipse 
+apt install -y vim emacs25-lucid eclipse
 #Documentation
 apt install -y pandoc okular texmaker lyx
+#Dev tools
+apt install -y gettext autopoint make build-essential gnome-builder libtool-bin
+apt-get build-dep gnome-builder
+apt-get build-dep eclipse
 
 #Update Ruby and Python
 gem update --system
