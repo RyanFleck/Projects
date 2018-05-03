@@ -1,3 +1,4 @@
+(princ "[RCF]20180503")
 (defparameter *big* 100)
 (defparameter *small* 1)
 
@@ -5,7 +6,7 @@
   (ash (+ *small* *big*) -1)
 )
 (defun smaller ()
-  (setf *big* (1+ (guess-my-number)))
+  (setf *big* (1- (guess-my-number)))
   (guess-my-number)
 )
 (defun bigger () 

@@ -5,6 +5,8 @@ This compilation of thoughts regarding the general structure of common/ANSI Lisp
 Programming Language: CLISP (+ clojure arc etc)
 Textbook(s): LAND OF LISP, various online sources.
 
+To run xyz.lisp as interactive:
+clisp -repl xyz.lisp
 
 Assign global variables:
 
@@ -13,8 +15,10 @@ Assign global variables:
 
 Define a function:
 
+'''lisp
 (defun function_one (arguments)
   ...)
+'''
 
 
 An arithmetic shift takes the bits in memory and shifts the number.
