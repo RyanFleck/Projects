@@ -1,11 +1,17 @@
-RCF - Notes on common LISP, and the functional programming paradigm.
+# LISP is Beautiful
+Notes on common LISP, and the functional programming paradigm.
 
 This compilation of thoughts regarding the general structure of common/ANSI Lisp is indended to be a personal and functional guide to the language, and so it follows no structure or logical syntax. 
 
-Programming Language: CLISP (+ clojure arc etc)
-Textbook(s): LAND OF LISP, various online sources.
+* Programming Language: CLISP (+ clojure arc etc?)
+* Textbook(s): LAND OF LISP, various online sources.
 
-To run xyz.lisp as interactive:
+### Compatability goals for all programs written:
+1. **ANSI CLisp**, implementation by B.Haible of Karlsruhe University and M.Stoll of Munich University.
+2. **GNU Common Lisp** official GNU ANSI LISP. 
+3. **Steel Bank Common Lisp**, "Steel" referring to Andrew Varnegie and "Bank" referring to Andrew Mellon, developed at the Carnegie Mellon University. A descendant of Spice Lisp, and CMUCL.
+
+### To run xyz.lisp as interactive:
 1. ANSI CLisp: `clisp -repl xyz.lisp`
 2. GNU Common Lisp: `gcl -load xyz.lisp`
 3. Steel Bank Common Lisp: `sbcl --load xyz.lisp`
@@ -23,7 +29,7 @@ Define a function:
 '''
 
 
-An arithmetic shift takes the bits in memory and shifts the number.
+NEAT: An arithmetic shift takes the bits in memory and shifts the number.
 
 (ash *shiftnum* shiftamount)
 
