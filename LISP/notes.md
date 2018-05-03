@@ -6,7 +6,9 @@ Programming Language: CLISP (+ clojure arc etc)
 Textbook(s): LAND OF LISP, various online sources.
 
 To run xyz.lisp as interactive:
-clisp -repl xyz.lisp
+1. ANSI CLisp: `clisp -repl xyz.lisp`
+2. GNU Common Lisp: `gcl -load xyz.lisp`
+3. Steel Bank Common Lisp: `sbcl --load xyz.lisp`
 
 Assign global variables:
 
