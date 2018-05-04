@@ -1,5 +1,6 @@
 # LISP is Beautiful
 Notes on common LISP, and the functional programming paradigm.
+To view markdown notes in CLI, type `markdown notes.md | lynx --stdin`
 
 This compilation of thoughts regarding the general structure of common/ANSI Lisp is indended to be a personal and functional guide to the language, and so it follows no structure or logical syntax. 
 
@@ -23,10 +24,10 @@ Assign global variables:
 
 Define a function:
 
-'''lisp
+```lisp
 (defun function_one (arguments)
   ...)
-'''
+```
 
 
 NEAT: An arithmetic shift takes the bits in memory and shifts the number.
