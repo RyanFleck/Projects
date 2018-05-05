@@ -40,4 +40,6 @@ So, for (ash 11 1), 11 will be shifted by 1 bit.
 
 (ash 11 1) returns 22.
 
-
+#### Conrad's Rule of Thumb for Comparing Stuff:
+1. Use **eq** to compare symbols.
+2. Use **equal** to compare everything else.
