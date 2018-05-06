@@ -1,3 +1,6 @@
+;;;; Prog4: Example usage of "case"
+;;;; RCF 2018 - Land of Lisp
+
 (defvar *description* nil)
 (defun d-scribe (person)
   (case person

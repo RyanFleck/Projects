@@ -1,5 +1,5 @@
-(print "Copyright (c) Ryan Fleck 2018")
-(print "This program is free software, see license.txt")
+;;;; Prog1: Basic LISP structures.
+;;;; RCF 2018 - Land of Lisp p.21
 
 (defparameter *big* 100)
 (defparameter *small* 1)

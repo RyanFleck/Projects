@@ -1,3 +1,6 @@
+;;;; Prog2: Example "list eater"
+;;;; RCF 2018 - Land of Lisp p.49
+
 (print "List Eater")
 
 (defun has_items (list)

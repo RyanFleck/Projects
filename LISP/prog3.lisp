@@ -1,3 +1,6 @@
+;;;; Prog3: Example usage of "cond"
+;;;; RCF 2018 - Land of Lisp p.56
+
 (defvar *arch-enemy* nil)
 (defun pudding-eater (person)
   (cond
