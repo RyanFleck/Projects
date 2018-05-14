@@ -1,18 +1,7 @@
-# Personal Projects
+# RCF - Personal Projects
 
-This is a repo packed full of small, interesting, occasionally useful things. Notable experiments are as follows:
+Folders are named according to the common file extension of each language for automation's sake.
 
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
-1. [**Name**](https://ryanfleck.github.io) - Body.
+Things to note:
+- The **sh** folder contains a ton of GNU/Linux resources as well that compliment the shell scripts.
+- 

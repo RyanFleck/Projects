@@ -1,6 +1,0 @@
-package com.libgdx.battlecommander;
-
-public interface Unit{
-	public boolean move(int coordA, int coordB);
-	public boolean attack(int coordA,int coordB,int[] range,)
-}

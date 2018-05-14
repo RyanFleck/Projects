@@ -1,5 +1,0 @@
-package com.libgdx.battlecommander;
-
-public interface Unit{
-	
-}
