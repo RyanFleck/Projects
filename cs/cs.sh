@@ -5,7 +5,7 @@ if [ -z $1 ]; then
   do
     y="${x%.cs}"
     echo "Compiling C# program $y"
-    # mcs $y.cs 
+    # mcs $y.cs
     echo "Compiling all programs has been disabled for now, please insert the name of the program you wish to compile and run as the first option."
   done
 else
