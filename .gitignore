@@ -27,3 +27,6 @@ local.properties
 *.launch
 /HTML5_JS/RCF-G01/RCF-G01/nbproject/private/
 /HTML5_JS/RCF-G02/nbproject/private/
+
+# CSHARP
+cs/*.exe
