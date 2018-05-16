@@ -9,7 +9,7 @@ Bwah, *LISP?* From the *50s?* Yes- Lisp is more common than you might think; oft
 
 > Lisp has been hailed as the world’s most powerful programming language, but its cryptic syntax and academic reputation can be enough to scare off even experienced programmers. Those dark days are finally over — Land of Lisp brings the power of functional programming to the people!
 
-![Image.]({{ site.url }}/assets/SymbolicsKB.jpg)
+![Symbolics KB](https://ryanfleck.github.io/assets/SymbolicsKB.jpg)
 
 ## CLISP Basics
 1. Define a **global variable** with *defparameter*: `(defparameter *xyz* 18)`
