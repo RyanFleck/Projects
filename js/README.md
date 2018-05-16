@@ -1,8 +1,5 @@
 # Ryan's Javascript Manual
 
-<h3>Table of Contents</h3>
-1. Seed list entry.
-{:toc}
 
 ## Vanilla ECMAScript 6, AKA Javascript
 

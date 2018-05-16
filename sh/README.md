@@ -1,7 +1,4 @@
 # Ryan's Shell Scripting Manual
-<h3>Table of Contents</h3>
-1. Seed list entry.
-{:toc}
 
 ## What is Bash Shell Scripting?
 

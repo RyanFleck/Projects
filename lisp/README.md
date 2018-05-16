@@ -1,7 +1,4 @@
 # Ryan's Lisp Manual
-<h3>Table of Contents</h3>
-1. Seed list entry.
-{:toc}
 
 
 Bwah, *LISP?* From the *50s?* Yes- Lisp is more common than you might think; often the "secret sauce" of successful companies like [Grammarly](https://tech.grammarly.com/blog/running-lisp-in-production) and [Amazon](https://groups.google.com/forum/#!topic/comp.lang.lisp/SD-8ULlEfy0%5B1-25%5D) is a finely crafted lispy back-end. Lisps are beautifully simple and functional tools; the following article contains my impressions as I begin to learn the CLISP dialect. While many speak poorly of its age, there have been a few occasions in the first 30 pages where I've been caught off guard by the effortlessness of construction and computation that lisp provides. I almost cried the first time I saw LISP handle rational numbers.

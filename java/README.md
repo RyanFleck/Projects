@@ -1,8 +1,5 @@
 # Ryan's Java Manual
 
-<h3>Table of Contents</h3>
-1. Seed list entry.
-{:toc}
 
 
 ## Heading One
