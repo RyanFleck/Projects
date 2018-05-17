@@ -1,6 +1,17 @@
 # Ryan's C# Manual
 
 
+```csharp
+using System;
+
+class Hello
+{
+  static void Main()
+  {
+    Console.WriteLine("Hello, World!");
+  }
+}
+```
 
 ## Why C#?
 
@@ -122,8 +133,6 @@ bool george = true;
 ```
 *Types* define what kind of value is stored in a location. *Variables* can be changed, but a *constant* will always represent the same value. C# provides predefined int, string, and bool types.
 
-*Custom Types* can be created from these simpler types. 
+*Custom Types* can be created from these simpler types.
 
 ### String Manipulation
-
-
