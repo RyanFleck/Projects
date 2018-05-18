@@ -9,6 +9,11 @@ print("Hello, World!")
 *Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell.
 
 ## TK and GUIs.
+
+GUIS, or Graphical User Interfaces, are designed to allow the general public to interact with the software running beneath.
+
+By default, Python uses TKinter (TK Interface) to create simple GUIs. Below is an simple example of a GUI with a window, a label, and a button.
+
 ```python
 import tkinter as tk
 top = tk.Tk()
