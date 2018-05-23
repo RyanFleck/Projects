@@ -21,7 +21,7 @@ Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpo
 
 On **GNU/Linux**, you'll need to install the mono tools. Mono is a libre implementation of Microsoft's C#. To compile and run C# code, install the `mono-devel` package on your distro of choice. After installation, you'll be able to invoke `csc file.cs` to compile your C# file, and `mono file.exe` to run it.
 
-On **Windows**, you'll need to find a C# compiler, like the one included in Visual Studio, and add the location of `csc` to your path. After csc has been added to the Windows PATH, `csc file.cs` can be run to compile your C# file, and `.\file.exe` will run it.
+On **Windows**, you'll need to find a C# compiler, like the one included in Visual Studio or ["Roslyn", the MS open-source C# compiler](https://github.com/dotnet/roslyn), and add the location of `csc` to your path. After csc has been added to the Windows PATH, `csc file.cs` can be run to compile your C# file, and `.\file.exe` will run it.
 
 **GNU/Linux compile+run script cs.sh:**
 ```sh
@@ -54,7 +54,7 @@ Both of these scripts take one argument, a .cs program, then proceed to compile 
 - A *library* with a `.dll` extension, like an *.exe* without an entry point.
 
 ## C# Basics
-### Hello World
+### Hello World <!--Page 9-->
 ```csharp
 using System;
 
@@ -68,7 +68,7 @@ class Test
 }
 ```
 
-### Simple Functions
+### Simple Functions <!--Page 10-->
 ```csharp
 using System;
 
@@ -89,7 +89,7 @@ class Program
 }
 ```
 
-### Namespaces
+### Namespaces <!--Page 11-->
 ```csharp
 using System;
 
@@ -102,8 +102,45 @@ namespace RCF_NSP01
   { ... }
 }
 ```
+More complex class/namespace calling.
+```csharp
+using System;
 
-### C# Syntax
+namespace RCF_NSP01
+{
+  class RCF_CLS01 //Classes can be loaded separately by other programs! Ex. `using Namespace.Class;`
+  {
+    static void Main() // Only a single class can have the entry point.
+    {
+      Console.WriteLine("RCF003 - Namespaces.\n"); 
+      Console.WriteLine("Class one loaded!");
+	  Console.WriteLine( "16 -> " + Double(8) );
+	  Console.WriteLine( "4  -> " + RCF_NSP01.RCF_CLS02.DivideByTwo(8) );
+	  Console.WriteLine( "7  -> " + RCF_NSP01.RCF_CLS03.DivideByThree(21) );
+    }
+    static int Double(int x)
+    {
+      return x*2;
+    }
+  }
+  class RCF_CLS02
+  {
+    public static int DivideByTwo(int x)
+    {
+      return x/2;
+    }
+  }
+  class RCF_CLS03
+  {
+    public static int DivideByThree(int x)
+    {
+      return x/3;
+    }
+  }
+}
+```
+
+### C# Syntax <!--Page 12-->
 ```csharp
 using System;
 
@@ -124,7 +161,7 @@ class Program
 - **Operators** apply mathematical functions to data, ex. `. () * = /`
 - **Comments** can be made `// like this ` or `/* like this. */`
 
-### Types
+### Types  <!--Page 15-->
 ```csharp
 int x = 144/12;
 string message = "Hello World!";
@@ -135,4 +172,4 @@ bool george = true;
 
 *Custom Types* can be created from these simpler types.
 
-### String Manipulation
+### String Manipulation 

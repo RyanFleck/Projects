@@ -18,21 +18,22 @@ console.log("Hello, World!");
 ### Primitives
 *Primitive Data Types* include *strings, numbers, booleans, null* and *undefined*. **Strings** can be surrounded by single or double quotes. **Numbers** can be integers or floating point numbers. **Booleans** in JavaScript are `true` and `false`, and are explicitly lower-case. **Null** represents an empty value.
 ```js
-console.log('Javascript');
-console.log(33.7);
-console.log(true);
-console.log(null);
+let aString = 'Javascript';
+let aNumber = 33.7;
+let aBoolean = true;
+let aNullValue = null;
+let anEmptyVariable; //Returns 'undefined'
 ```
 
 ### Algebra
 Basic mathematical operators are `+ - * / %`.
 ```js
-var x = (3 + 3) / 2; //Brackets
-var x = 3 / 3; //Division
-var x = 3 * 3; //Multiplication
-var x = 3 + 3; //Addition
-var x = 3 - 3; //Subtraction
-var x = 3 % 3; //Modulus
+let x = (3 + 3) / 2; //Brackets
+let x = 3 / 3; //Division
+let x = 3 * 3; //Multiplication
+let x = 3 + 3; //Addition
+let x = 3 - 3; //Subtraction
+let x = 3 % 3; //Modulus
 ```
 
 ### Getting Properties
@@ -63,7 +64,7 @@ console.log(Number.isInteger(2017));
 ```
 
 ### Variables
-Variables can be declared in JavaScript with *let* and *const*. *Constant* variables cannot be re-assigned, and will throw a *TypeError* if attempted. JavaScript conventions are similar to *Java*: variables begin lowercase, with each additional word capitalized. Variables are assigned with the `=` operator. If no data is assigned, the variable will store the value *undefined*.
+Variables can be declared in JavaScript with *let* and *const*. *Constant* variables cannot be re-assigned, and will throw a *TypeError* if attempted. JavaScript conventions are similar to *Java*: variables begin lowercase, with each additional word capitalized. Variables are assigned with the `=` operator. If no data is assigned, the variable will store the value *undefined*. **Don't use 'var' in ES6.**
 ```js
 const seaLevelAtSeaLevel = 0; //Cannot be changed.
 let height = 182; //Modifiable.
@@ -111,13 +112,13 @@ switch (string.toLowerCase()) {
 
 **TERNARY OP** is a condensed if/else.
 ```js
+value > 3 ? runIfTrue("Hooray!") : runIfFalse("Goodbye.");
+//Is the condensed version of the if/else statement below:
 if (value > 3) {
   runIfTrue("Hooray!");
 } else {
   runIfFalse("Goodbye.");
 }
-//Can be condensed to:
-value > 3 ? runIfTrue("Hooray!") : runIfFalse("Goodbye.");
 ```
 
 **FOR** can iterate through lists of items and objects.
