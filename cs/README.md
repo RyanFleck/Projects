@@ -108,7 +108,9 @@ using System;
 
 namespace RCF_NSP01
 {
-  class RCF_CLS01 //Classes can be loaded separately by other programs! Ex. `using Namespace.Class;`
+  class RCF_CLS01 
+  // Classes can be loaded separately by other programs! 
+  // Ex. `using Namespace.Class;`
   {
     static void Main() // Only a single class can have the entry point.
     {
@@ -168,8 +170,168 @@ string message = "Hello World!";
 const int life = 42;
 bool george = true;
 ```
-*Types* define what kind of value is stored in a location. *Variables* can be changed, but a *constant* will always represent the same value. C# provides predefined int, string, and bool types.
+*Types* define what kind of value is stored in a location. *Variables* can be changed, but a *constant* will always represent the same value. C# provides predefined int, string, and bool types. Types are categorized like so:
+* **Value types** include most built-in types. Composed of a stored value. Copied value types have independant storage.
+* **Reference types** include all class, array, interface and strings types. Composed of a **reference** that points to an object holding the values. Copied reference types point to the same object. Can be assigned to null, where value-types will not (and throw a compile-time error.)
+* **Generic type parameters** [^2]
+* **Pointer types** [^3]
 
-*Custom Types* can be created from these simpler types.
 
-### String Manipulation 
+
+### Custom Types <!--Page 17-->
+
+*Custom Types* can be created from simpler types.
+
+```csharp
+using System;
+
+namespace TypeTest
+{
+	class Program
+	{
+	  static void Main()
+	  {
+		Multiplier m1 = new Multiplier (3);
+		Console.WriteLine( m1.Apply(3) ); // Prints 9
+		
+		Multiplier m2 = new Multiplier (99);
+		Console.WriteLine( m2.Apply(1) ); // Prints 99
+	  }
+	}
+	
+	public class Multiplier
+	{
+		// Data members:
+		int factor; // Field
+		
+		// Function members:
+		
+		// Constructor
+		public Multiplier ( int input ) { factor = input; }
+		
+		// Method
+		public int Apply ( int input ) { return input * factor; }
+	}
+	
+}
+```
+Data is made availabe to a program when it is *instantiated*. Built-in types can be instantiated by using a literal ( true , 18 ). Custom types use the *new* operator, which passes arguments to the constructor.
+
+```csharp
+Kraken Steve = new Kraken("Steve Jones");
+```
+
+> Data members and function members that don’t operate on the instance of the type, but rather on the type itself, must be marked as static.[^1]
+
+Therefore, *static data members are shared among all instances of a custom type*. This is demonstrated below:
+
+**StaticTests** custom type.
+```csharp
+public class StaticTests
+	{
+		public static int isStatic;
+		public int notStatic;
+		
+		// 'public' keyword exposes method to other classes.
+		public StaticTests () 
+		{
+			isStatic++;
+			notStatic++;
+			Console.WriteLine("Static: "+isStatic);
+			Console.WriteLine("Not static: "+notStatic);
+		}
+	}
+```
+
+**Main**, each instantiation adds 1 to both *isStatic* and *notStatic*.
+```csharp
+StaticTests a = new StaticTests();
+StaticTests b = new StaticTests();
+StaticTests c = new StaticTests();
+StaticTests d = new StaticTests();
+StaticTests e = new StaticTests();
+// At this point, isstatic == 5. 
+// Not static for each instance is 1.
+```
+### Conversions and Casting <!--Page 18-->
+- *Implicit* conversions are guaranteed by the compiler to succeed, and all data will be retained. Implicit conversions happen automatically.
+- *Explicit* conversions may fail, and data may be lost. Explicit conversions require *casting*
+
+```csharp
+int a = 134; //An integer (32 bits.)
+long b = a; //Conversion (64 bits.)
+short c = (short)a; //Cast (16 bits.) Possible data loss.
+```
+
+### Number Types <!--Page 23-->
+Whoa! Conversions, overflow and many types... oh my! While this is great, I'm skipping it for now because it looks familiar to the way it's implemented in *Java*. This example is interesting, though:
+```csharp
+//From "C# 5.0 in a Nutshell" Page 26.
+int x = 0, y = 0;
+Console.WriteLine (x++); // Outputs 0; x is now 1
+Console.WriteLine (++y); // Outputs 1; y is now 1
+```
+### Boolean Types
+Booleans in C# can be evaluated with the usual comparators, equal `==` and not equal `!=`, along with and `&&`, or `||` and brackets `(  )`. Using single `&` or `|` operators will cause all items to be evaluated instead of *"short-circuiting"* and breaking as soon as the evaluation can only be true.
+
+### String Types <!--Page 32-->
+
+
+<!--Table
+|a|b|c|
+|--|
+|c|d|e|
+|c|d|f|
+|a|b|c|
+|c|d|e|
+|c|d|f|
+-->
+
+### Arrays
+```csharp
+using System;
+
+class Program
+{
+  static void Main()
+  {
+    Console.WriteLine("RCF007 - Arrays\n");
+	
+	//Simple declaration:
+	int[] letters = new int[5];
+	
+	//Iterate through and assign values
+	for(int i=0; i < letters.Length; i++)
+	{
+		letters[i] = 10-i;
+	}	
+	
+	//Print values
+	for(int i=0; i<letters.Length; i++)
+	{
+		Console.WriteLine("letters["+i+"] = "+letters[i]);
+	}
+	
+	PrintArray(new int[] {1, 2, 3, 234, 32, 2, 1});
+  }
+  
+  
+  static void PrintArray (int[] array)
+  {
+	Console.WriteLine("Contents of Array:");  
+	for(int i=0; i<array.Length; i++)
+	{
+		Console.WriteLine("array["+i+"] = "+array[i]);
+	}
+  }
+  
+}
+```
+
+
+## References
+Many are from "C# 5.0 in a Nutshell" 5e. J. and B. Albahari, O'Reilly 2012.
+
+[^1]: "C# 5.0 in a Nutshell" 5e. **Page 17.** Type Basics.
+[^2]: "C# 5.0 in a Nutshell" 5e. **Page 106.** Generics.
+[^3]: "C# 5.0 in a Nutshell" 5e. **Page 177.** Unsafe Code and Pointers.
