@@ -274,6 +274,11 @@ Console.WriteLine (++y); // Outputs 1; y is now 1
 ### Boolean Types
 Booleans in C# can be evaluated with the usual comparators, equal `==` and not equal `!=`, along with and `&&`, or `||` and brackets `(  )`. Using single `&` or `|` operators will cause all items to be evaluated instead of *"short-circuiting"* and breaking as soon as the evaluation can only be true.
 
+C# also has a ternary operator that takes three inputs: A boolean statement, the action for true, and the action for false:
+```csharp
+return (a > b) ? a : b;
+```
+
 ### String Types <!--Page 32-->
 
 
@@ -287,7 +292,9 @@ Booleans in C# can be evaluated with the usual comparators, equal `==` and not e
 |c|d|f|
 -->
 
-### Arrays
+### Arrays  <!--Page 35-->
+An array is a container for variables, and can hold an explicit number of values of a given type. Simple arrays are initialized like `type[] array = new type[length];`. For example, an array of 12 characters would be instantiated as `char[] arr = new char[12];`. (As per CompSci norms, an array with 12 characters will be addressable as indices zero through eleven, for a total of 12 indices.) Simple creation and reading of an array is shown below:
+
 ```csharp
 using System;
 
@@ -300,16 +307,16 @@ class Program
 	//Simple declaration:
 	int[] letters = new int[5];
 	
-	//Iterate through and assign values
+	//Iterate through and assign values, .length returns length.
 	for(int i=0; i < letters.Length; i++)
 	{
-		letters[i] = 10-i;
+	  letters[i] = 10-i;
 	}	
 	
 	//Print values
 	for(int i=0; i<letters.Length; i++)
 	{
-		Console.WriteLine("letters["+i+"] = "+letters[i]);
+	  Console.WriteLine("letters["+i+"] = "+letters[i]);
 	}
 	
 	PrintArray(new int[] {1, 2, 3, 234, 32, 2, 1});
@@ -321,12 +328,22 @@ class Program
 	Console.WriteLine("Contents of Array:");  
 	for(int i=0; i<array.Length; i++)
 	{
-		Console.WriteLine("array["+i+"] = "+array[i]);
+	  Console.WriteLine("array["+i+"] = "+array[i]);
 	}
   }
   
 }
 ```
+An array will always be initialized with the default values for the structure in question. If the array is filled with a type, it will be filled with the default values for that type.
+```csharp
+int[] x = new int[] {1, 2, 3, 234, 32, 2, 1};
+```
+
+It is possible to initialize and populate an array in one line:
+```csharp
+int[] x = new int[] {1, 2, 3, 234, 32, 2, 1};
+```
+
 
 
 ## References
