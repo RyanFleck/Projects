@@ -33,9 +33,21 @@ namespace TypeTest
 		StaticTests c = new StaticTests();
 		StaticTests d = new StaticTests();
 		StaticTests e = new StaticTests();
-		// At this point, isstatic == 5. 
+		// At this point, isstatic == 5.
+		
+		//Utilizing TernaryCompare method:
+		Console.WriteLine("MAX( 4 2 )? >> "+TernaryCompare(4,2));
+		Console.WriteLine("MAX( 42 212 )? >> "+TernaryCompare(42,212));
+		
+		Console.WriteLine((12 > 121) ?  "True" : "False"); //Bleh
 		
 	  }
+	  
+	  static int TernaryCompare(int a, int b)
+	  {
+		  return (a > b) ? a : b;
+	  }
+	  
 	}
 	
 	public class Multiplier
@@ -65,5 +77,4 @@ namespace TypeTest
 			Console.WriteLine("Not static: "+notstatic);
 		}
 	}
-	
 }
