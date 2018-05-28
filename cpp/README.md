@@ -2,6 +2,10 @@
 
 
 
-## Heading One
+## Core C++
 
-*Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell.
+Every C++ program must have **main**, the entry point. A nonzero value returned from `main()` indicates failure.
+
+```cpp
+int main(){}
+```
