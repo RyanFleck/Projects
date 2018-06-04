@@ -29,7 +29,7 @@ Bwah, *LISP?* From the *50s?* Yes- Lisp is more common than you might think; oft
 5. Like *flet*, *labels* defines local functions, but also allows recursive calls.
 
 A simple number-guessing game, using arithmetic shifts (binary search,) can be written like so with a few global functions:
-```
+```lisp
 (defparameter *big* 100)
 (defparameter *small* 1)
 
@@ -56,7 +56,7 @@ In higher-order functions, `#'x` stands in for (function x).
 
 Obviously unfinished.
 
-```clisp
+```lisp
 ;;;; Prog5: "Wizard Adventure Game"
 ;;;; RCF 2018 - Land of Lisp p.70
 
