@@ -8,6 +8,10 @@ print("Hello, World!")
 
 *Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell.
 
+## Pandas Data Analysis
+
+*Pandas* is a Python library for creating and manipulating *dataframes*, allowing for easy organization and processing of data.
+
 ## TK and GUIs.
 
 GUIS, or Graphical User Interfaces, are designed to allow the general public to interact with the software running beneath.
