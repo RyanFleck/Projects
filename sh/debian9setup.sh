@@ -11,7 +11,7 @@ apt upgrade
 #Essentials
 apt install -y tmux vim htop curl transmission vlc geary
 #Development
-apt install -y gcc g++ ruby2.3-dev python3 python3-pip
+apt install -y gcc g++ ruby2.3-dev python3 python3-tk python3-pip
 #Electronics
 apt install -y caneda arduino
 #Editors
@@ -27,6 +27,7 @@ apt-get build-dep eclipse
 gem update --system
 gem install bundler
 gem install jekyll
+pip3 check
 pip3 install pandas
 
 #Move config files
