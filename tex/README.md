@@ -5,7 +5,3 @@
 
 ## Unreasonable amounts of polish for student docs.
 Potential future project: **BSTEM**, "Beautiful Scientific Typesetting Effortlessly Made"
-
-
-
-

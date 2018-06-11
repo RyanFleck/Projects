@@ -1,6 +1,10 @@
 # Ryan's C# Manual
 
+I've always had strong feelings against the anti-competetive Microsoft, and the products it produces. Yesterday's Github aquisition will probably end in the same way the aquisitions of Nokia, Rare, LinkedIn, Mojang and Xamarin did; with stagnation, a halt in new and interesting innovations, and no new fantastic products.
 
+This being said, I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience, and to do this competently I feel it is in my best interest to invest some time in C#.
+
+[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```csharp
 using System;
 
@@ -12,6 +16,8 @@ class Hello
   }
 }
 ```
+
+
 
 ## Why C#?
 
@@ -108,13 +114,13 @@ using System;
 
 namespace RCF_NSP01
 {
-  class RCF_CLS01 
-  // Classes can be loaded separately by other programs! 
+  class RCF_CLS01
+  // Classes can be loaded separately by other programs!
   // Ex. `using Namespace.Class;`
   {
     static void Main() // Only a single class can have the entry point.
     {
-      Console.WriteLine("RCF003 - Namespaces.\n"); 
+      Console.WriteLine("RCF003 - Namespaces.\n");
       Console.WriteLine("Class one loaded!");
 	  Console.WriteLine( "16 -> " + Double(8) );
 	  Console.WriteLine( "4  -> " + RCF_NSP01.RCF_CLS02.DivideByTwo(8) );
@@ -193,26 +199,26 @@ namespace TypeTest
 	  {
 		Multiplier m1 = new Multiplier (3);
 		Console.WriteLine( m1.Apply(3) ); // Prints 9
-		
+
 		Multiplier m2 = new Multiplier (99);
 		Console.WriteLine( m2.Apply(1) ); // Prints 99
 	  }
 	}
-	
+
 	public class Multiplier
 	{
 		// Data members:
 		int factor; // Field
-		
+
 		// Function members:
-		
+
 		// Constructor
 		public Multiplier ( int input ) { factor = input; }
-		
+
 		// Method
 		public int Apply ( int input ) { return input * factor; }
 	}
-	
+
 }
 ```
 Data is made availabe to a program when it is *instantiated*. Built-in types can be instantiated by using a literal ( true , 18 ). Custom types use the *new* operator, which passes arguments to the constructor.
@@ -231,9 +237,9 @@ public class StaticTests
 	{
 		public static int isStatic;
 		public int notStatic;
-		
+
 		// 'public' keyword exposes method to other classes.
-		public StaticTests () 
+		public StaticTests ()
 		{
 			isStatic++;
 			notStatic++;
@@ -250,7 +256,7 @@ StaticTests b = new StaticTests();
 StaticTests c = new StaticTests();
 StaticTests d = new StaticTests();
 StaticTests e = new StaticTests();
-// At this point, isstatic == 5. 
+// At this point, isstatic == 5.
 // Not static for each instance is 1.
 ```
 ### Conversions and Casting <!--Page 18-->
@@ -284,7 +290,7 @@ return (a > b) ? a : b;
 
 <!--Table
 |a|b|c|
-|--|
+|----|
 |c|d|e|
 |c|d|f|
 |a|b|c|
@@ -303,26 +309,26 @@ class Program
   static void Main()
   {
     Console.WriteLine("RCF007 - Arrays\n");
-	
+
 	//Simple declaration:
 	int[] letters = new int[5];
-	
+
 	//Iterate through and assign values, .length returns length.
 	for(int i=0; i < letters.Length; i++)
 	{
 	  letters[i] = 10-i;
-	}	
-	
+	}
+
 	//Print values
 	for(int i=0; i<letters.Length; i++)
 	{
 	  Console.WriteLine("letters["+i+"] = "+letters[i]);
 	}
-	
+
 	PrintArray(new int[] {1, 2, 3, 234, 32, 2, 1});
   }
-  
-  
+
+
   static void PrintArray (int[] array)
   {
 	Console.WriteLine("Contents of Array:");  
@@ -331,7 +337,7 @@ class Program
 	  Console.WriteLine("array["+i+"] = "+array[i]);
 	}
   }
-  
+
 }
 ```
 An array will always be initialized with the default values for the structure in question. If the array is filled with a type, it will be filled with the default values for that type.

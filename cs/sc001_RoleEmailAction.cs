@@ -13,7 +13,8 @@ using Sitecore.Diagnostics;
 // OLD: Sitecore.Workflows.Simple.EmailAction, Sitecore.Kernel
 // NEW: Sitecore.Feature.Security.RoleEmailAction
 
-namespace Sitecore.Feature.Security
+//Obviously this item is far out of it's project and the namespace is not applicable to gh.
+namespace Sitecore.Feature.Redacted
 {
     public class RoleEmailAction
     {

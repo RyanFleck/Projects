@@ -1,12 +1,29 @@
 # Ryan's JavaScript Manual
 
+<!--YDKJS:p0-->
+<!--EQJS:p12-->
+
+Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language. 
+
+[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```js
 console.log("Hello, World!");
 ```
 
+> Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure. ...Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. **Because JavaScript can be used without understanding, the understanding of the language is often never attained.** ([Kyle](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md))
+
+>JavaScript: If it can be done in another language, it should be done in another language. ([Doug](http://fuelyourcoding.com/))
+
+> There are those who will say *terrible* things about the JavaScript language. Many of thse things are true. (Eloquent JS, p.6)
+
+
+## Resources
+1. [**You Don't Know JS,** Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
+2. [Eloquent JavaScript]() by XYZ.
+3. **CodeCademy** [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
 
 ## ES6 JavaScript
-*JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. `//>` indicates output printed to the console. Comments are inserted with `//` for shortform and `/* xyz */` for multi-line.
+*JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. JavaScript was originally included withing *Netscape Navigator* in 1995 to add programs to webpages. In the programs below, `//>` indicates output printed to the console. Comments are inserted with `//` for shortform and `/* xyz */` for multi-line.
 
 ### Console Output
 Useful for debugging and developer interaction, spitting data and text onto the command line is a great way to know if your script is actually functioning, or failed silently.
@@ -148,6 +165,11 @@ const addFour = (input) => {return input + 4 ;}
 console.log(addFour(5));
 //> 9
 ```
+Functions can also be more permanently *declared*:
+```js
+function name (prams) {  code  }
+```
+
 
 ## ReactJS Library
 

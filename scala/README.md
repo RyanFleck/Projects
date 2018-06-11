@@ -1,5 +1,7 @@
 # Ryan's Scala Manual
 
+[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
+
 What? Object-oriented *and* functional? Neato.
 
 
