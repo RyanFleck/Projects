@@ -4,6 +4,6 @@ class Program
 {
   static void Main()
   {
-    Console.WriteLine("RCF"); 
+    Console.WriteLine("RCF000 - Program Name\n"); 
   }
 }
