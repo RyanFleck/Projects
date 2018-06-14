@@ -15,13 +15,14 @@ apt install -y gcc g++ ruby2.3-dev python3 python3-tk python3-pip
 #Electronics
 apt install -y caneda arduino
 #Editors
-apt install -y vim emacs25-lucid eclipse
+apt install -y vim emacs25-lucid eclipse monodevelop codeblocks
 #Documentation
 apt install -y pandoc okular texmaker lyx
 #Dev tools
 apt install -y gettext autopoint make build-essential gnome-builder libtool-bin
 apt-get build-dep gnome-builder
 apt-get build-dep eclipse
+apt-get build-dep monodevelop
 
 #Update Ruby and Python
 gem update --system
