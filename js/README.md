@@ -3,7 +3,7 @@
 <!--YDKJS:p0-->
 <!--EQJS:p12-->
 
-Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language. 
+Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language.
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```js
@@ -181,6 +181,14 @@ Allows users to build compile-to-native mobile apps in javascript.
 
 ## JQuery
 ### OWL Carousel
+
+## Babel
+Babel, an ES6 to ES5 compiler (termed *transpiler* by some,) is a tool for ensuring modern JavaScript code does not confuse older browsers by converting modern (Post-2015) JavaScript to a backwards-compatible version.
+
+For context, I feel I should include the ESV bible verse after which the project is named. The *Babel Fish*, a creature from *Hitchhiker's Guide to the Galaxy* that performs instant translations, also derives its name from this text.
+
+**Genesis 11:1-9 English Standard Version (ESV)**
+>Now the whole earth had one language and the same words. And as people migrated from the east, they found a plain in the land of Shinar and settled there. And they said to one another, “Come, let us make bricks, and burn them thoroughly.” And they had brick for stone, and bitumen for mortar. Then they said, “Come, let us build ourselves a city and a tower with its top in the heavens, and let us make a name for ourselves, lest we be dispersed over the face of the whole earth.” And the Lord came down to see the city and the tower, which the children of man had built. And the Lord said, “Behold, they are one people, and they have all one language, and this is only the beginning of what they will do. And nothing that they propose to do will now be impossible for them. Come, let us go down and there confuse their language, so that they may not understand one another's speech.” So the Lord dispersed them from there over the face of all the earth, and they left off building the city. Therefore its name was called Babel, because there the Lord confused the language of all the earth. And from there the Lord dispersed them over the face of all the earth.
 
 <!--
 ### T

@@ -350,6 +350,69 @@ It is possible to initialize and populate an array in one line:
 int[] x = new int[] {1, 2, 3, 234, 32, 2, 1};
 ```
 
+**Square Arrays**
+```csharp
+//Simple declaration:
+int[] Letters = new int[5];
+
+//SQUARE arrays:
+//Declare a matrix:
+int[,] Matrix = new int[3,3];
+
+//Declare and fill a matrix:
+int[,] MatrixTwo = new int[,]
+{
+  {0,1,2},
+  {3,4,5},
+  {6,7,8}
+};
+```
+
+**Jagged Arrays**
+```csharp
+//Jagged array with outermost dimension 3:
+int[][] JaggedOne = new int[3][];
+//(Internal arrays are null.)
+
+//Jagged array with alternate instantiation:
+int[][] JaggedTwo = new int[][]
+{
+  new int[]{1,2,3},
+  new int[]{4,5,6,7,8},
+  new int[]{9,10,11}
+};
+
+//Initialize internal arrays:
+for (int x=0; x<JaggedOne.Length; x++)
+{
+  JaggedOne[x] = new int[3];
+  for (int y=0; y<JaggedOne[x].Length; y++)
+  {
+    JaggedOne[x][y]= x*3+y;
+  }
+}
+```
+
+### Variables and Parameters <!--Page 38-->
+**C#** enforces *definite assignment*, where it is impossible to access memory that has not been initialized by the running program. Calling an unassigned variable will usually result in a *compile-time error* unless the assignment method infers a *default value*.
+- A **stack** is a block of memory for storing variables and parameters.
+- A **heap** is a block of memory for storing objects. 
+
+
+## Monodevelop
+
+When first installing *monodevelop*, it was very unstable. I ran it from the command line to see any errors, and sure enough:
+
+```
+*** Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x70bfb)[0x7f630072cbfb]
+/lib/x86_64-linux-gnu/libc.so.6(+0x76fc6)[0x7f6300732fc6]
+/lib/x86_64-linux-gnu/libc.so.6(+0x7780e)[0x7f630073380e]
+[0x4196d520]
+======= Memory map: ========
+```
+Note to self: `apt-get build-dep monodevelop` should fix problems.
 
 
 ## References
@@ -358,3 +421,4 @@ Many are from "C# 5.0 in a Nutshell" 5e. J. and B. Albahari, O'Reilly 2012.
 [^1]: "C# 5.0 in a Nutshell" 5e. **Page 17.** Type Basics.
 [^2]: "C# 5.0 in a Nutshell" 5e. **Page 106.** Generics.
 [^3]: "C# 5.0 in a Nutshell" 5e. **Page 177.** Unsafe Code and Pointers.
+
