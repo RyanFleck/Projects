@@ -346,12 +346,12 @@ int[] x = new int[] {1, 2, 3, 234, 32, 2, 1};
 ```
 
 It is possible to initialize and populate an array in one line:
-```csharp
+```cs
 int[] x = new int[] {1, 2, 3, 234, 32, 2, 1};
 ```
 
 **Square Arrays**
-```csharp
+```cs
 //Simple declaration:
 int[] Letters = new int[5];
 
@@ -369,7 +369,7 @@ int[,] MatrixTwo = new int[,]
 ```
 
 **Jagged Arrays**
-```csharp
+```cs
 //Jagged array with outermost dimension 3:
 int[][] JaggedOne = new int[3][];
 //(Internal arrays are null.)
@@ -395,22 +395,252 @@ for (int x=0; x<JaggedOne.Length; x++)
 
 ### Variables and Parameters <!--Page 38-->
 **C#** enforces *definite assignment*, where it is impossible to access memory that has not been initialized by the running program. Calling an unassigned variable will usually result in a *compile-time error* unless the assignment method infers a *default value*.
+
 - A **stack** is a block of memory for storing variables and parameters.
 - A **heap** is a block of memory for storing objects. 
 
+Both of these structures have garbage collection active, freeing memory by deallocating any variables, parameters or objects that are no longer referenced by *living code*.
+
+Type | Default Value 
+-----|--------------
+Reference types | null
+Numeric types | 0
+CHARs | '\0'
+BOOLs | false
+
+To pass by reference, `ref` can be used in a function definition (`static void Foo(ref int x)`) instead of the default which copies. This is essential for some methods that must alter the input data.
+```cs
+//From Page 43 of C# In a Nutshell:
+class Test
+{
+  static void Swap (ref string a, ref string b)
+  {
+    string temp = a;
+    a = b;
+    b = temp;
+  }
+  static void Main()
+  {
+    string x = "Penn";
+    string y = "Teller";
+    Swap (ref x, ref y);
+    Console.WriteLine (x); // Teller
+    Console.WriteLine (y); // Penn
+  }
+}
+```
+
+**Note to self:** return to this section to review the other methods to pass by reference, out and params.
+
+### Statements <!--Page 51-->
+
+**Varibles** are *delcared*, and the scope extends within the encapsulating block.
+
+C# is able to initialize variables if the compiler is able to infer the type by the initialization expression:
+```cs
+var x = "String"; //String
+var y = new System.Text.StringBuilder(); //System.Text.StringBuilder
+var z = 1.21; //float
+```
+
+**Expressions** can be of a few forms:
+
+Assignment | `x = 2 + 2;`
+Increment | `x++;`
+Assignment | `x = Math.Max(a,b,c);`
+Method Call | `Console.Writeline(y);`
+Assignment | `var sb = new Klaxon();`
+Object Instantiation | `new Klaxon();`
+
+**Selection** statements, or **control flow**, include if, else, and switch.
+
+**if else** 
+
+```cs
+if ( boolean )
+{
+  Console.WriteLine("Boolean was true.");
+} else if ( anotherBoolean ) {
+  Console.WriteLine("Another boolean was false.");
+} else {
+  Console.WriteLine("Both booleans were false.");
+}
+```
+
+**switch** 
+```cs
+switch ( number )
+{
+  case 1:
+    Console.WriteLine("Option I");
+    break;
+  case 2:
+  case 3:
+  case 4:
+    Console.WriteLine("Option II-IV");
+    break;
+  case 5:
+    Console.WriteLine("Option V");
+    break;
+  default:
+    Console.WriteLine("Out of bounds option.");
+    break;
+}
+```
+
+**Iteration** statements include while, do-while, for, and foreach.
+
+**while** `while ( boolean )`
+```cs
+while ( x < 1000 )
+{
+  Console.WriteLine(x);
+  x++;
+}
+```
+
+**do-while** tests the expression after execution.
+```cs
+do
+{
+  Console.WriteLine(x);
+  x++;
+}
+while ( x < 1000 );
+```
+
+**for** has clauses: `for ( initialization ; condition ; iteration )`
+```cs
+for ( int x=0, y=1000; x < y; x++ )
+{
+  Console.WriteLine( x + ", " + y );
+}
+```
+...any of the clauses can be omitted. `for (;;)` is valid as an infinite loop.
+
+
+**foreach** iterates over enumerable lists of elements.
+```cs
+for ( char c in "chopsticks" ) 
+{
+  Console.WriteLine( c );
+}
+```
+
+**Jump** statements include break, continue, goto, return and throw.
+
+**break** ends the execution of an iteration or switch.
+```cs
+while ( true )
+{
+  if ( x > y )
+    break;
+}
+```
+
+**continue** moves to the next iteration of a loop.
+```cs
+for ( int x=0, y=1000; x < y; x++ )
+{
+  if ( ( x%2 ) == 0 )
+    continue; //Skips printing for even numbers.
+
+  Console.WriteLine( x + ", " + y );
+}
+```
+
+**goto** moves execution to a statement-label.
+```cs
+int x = 4;
+labelA:
+if( x < 10)
+{
+  x++;
+  goto labelA;
+}
+```
+
+**return** exits the method and returns a method corresponding to the method's return type.
+```cs
+return true;
+```
+
+**throw** is used to indicate errors.
+```cs
+if ( x == null )
+  throw new ArgumentNullException();
+```
+
+### Addressing Types in Namespaces <!--Page 59-->
+
+`namespace` defines the namespace for types within a block.
+```cs
+namespace Outer.Middle.Inner
+{
+  class A {}
+  class B {} //Outer.Middle.Inner.B
+}
+```
+Class `B` has a *fully qualified name* of `Outer.Middle.Inner.B`
+
+
+`using` imports a namespace. Importing the `Outer.Middle.Inner` shown above allows for the use of the `A` and `B` type without using the *fully qualified name*.
+```cs
+using Outer.Middle.Inner;
+
+A objA = new A();
+B objB;
+```
+
+**Namespace rules:**
+1. Type names can be re-used within a namespace, but not at the same level.
+2. Names declared in the outer namespaces can be used unconditionally in inner namespace.
+3. Namespace declaraions can exist in multiple files.
+4. To import a single type or partial namespace, use an alias:
+
+```cs
+using RLogger = System.Custom.Logs.RLogger;
+```
+
+### Creating Types <!--Page 67-->
+
+**Definitions:**
+- **Class** - The most common reference type.
+- **Field** - A variable member of a class or struct. 
+- **Method** - Executes a series of statements. 
+- **x** - a 
+- **x** - a 
+- **x** - a 
+- **x** - a 
+
+Fields allow the following *field modifiers*:
+
+`static` | Static something
+`public` | Allows external method access.
+`internal` | 
+`private` |
+`protected` | 
+`new` |
+`unsafe` |
+`readonly` | Prevents modification after construction. 
+`volatile` | 
+
+See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/access-modifiers) for more information.
+
+
+<!-- End of C# core language manual. -->
 
 ## Monodevelop
 
 When first installing *monodevelop*, it was very unstable. I ran it from the command line to see any errors, and sure enough:
 
 ```
-*** Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80 ***
+Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80
 ======= Backtrace: =========
 /lib/x86_64-linux-gnu/libc.so.6(+0x70bfb)[0x7f630072cbfb]
 /lib/x86_64-linux-gnu/libc.so.6(+0x76fc6)[0x7f6300732fc6]
 /lib/x86_64-linux-gnu/libc.so.6(+0x7780e)[0x7f630073380e]
 [0x4196d520]
-======= Memory map: ========
 ```
 Note to self: `apt-get build-dep monodevelop` should fix problems.
 
