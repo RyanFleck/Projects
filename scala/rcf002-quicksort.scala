@@ -5,6 +5,8 @@ object QuickSortTest{
 
   def main(args: Array[String]){
     println("Hello, World!");
+    val x = List(1,2,3,4,9,8,7,6)
+    println(quicksort(x));
   }
 
 
@@ -23,6 +25,12 @@ object QuickSortTest{
       val pivot = ar1((x+y)/2);
 
       while( x <= y ){
+        while( ar1(x) < pivot ) x+=1;
+        while( ar1(y) < pivot ) y-=1;
+        if(x <= y){
+          swap(x,y)
+
+        }
          
       
       }
