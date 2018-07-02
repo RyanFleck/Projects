@@ -10,8 +10,6 @@ FAIL  = '\033[91m'
 
 
 def dbg(warntype, section, message):
-  
-  print("Saw "+warntype.upper()[0:4])
   messageColor = warntype.upper()[0:4]
   TYPE = GOOD
   if(messageColor == "WARN"):
@@ -22,7 +20,7 @@ def dbg(warntype, section, message):
   print("[ "+TYPE+section.center(8)+RESET+" ] "+message)
 
 
-'''
+'''Debugging messages:
 rcf_print("good","init","Custom printing is functional.")
 rcf_print("warning","bad","Custom printing is functional.")
 rcf_print("failure","fail","Custom printing is functional.")

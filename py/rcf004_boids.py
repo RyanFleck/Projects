@@ -26,25 +26,26 @@ except:
   sys.exit()
 
 try:
-  import rcf002_logs
+  import rcf_logs
+  dbg = rcf_logs.dbg
 except:
-  print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please download rcf002_logs.py to this file for enhanced logging.")
+  print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please download rcf_logs.py to this directory for enhanced logging.")
   def dbg(x,y,message):
-    print("[ "+'\033[91m'+"log"+'\033[0m'+" ] "+message) 
+    print("["+'\033[92m'+y.center(8)+'\033[0m'+"] "+message) 
 
-
-#Console Colors
-RESET = '\033[0m'
-GOOD  = '\033[92m'
-WARN  = '\033[93m'
-FAIL  = '\033[91m'
 
 #Configuration
 width, height = 640,480
 N = 100
 
 #Compute boid start info
-print("[ "+GOOD+"init"+RESET+" ] Compute positions and velocities...")
+dbg("good","init","Compute positions and velocities...")
 pos = [width/2.0, height/2.0] + 10*np.random.rand(2*N).reshape(N,2)
 angles = 2*math.pi*np.random.rand(N)
 vel = np.array(list(zip(np.sin(angles), np.cos(angles))))
+
+
+dbg("good","init","Compute positions and velocities...")
+dbg("warning","damnit","Compute positions and velocities...")
+dbg("failure","augh!","Compute positions and velocities...")
+dbg("good","halleujah","Compute positions and velocities...")
