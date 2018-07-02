@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-# Ryan Fleck 2018 
+# Ryan Fleck 2018
+# State: UNFINISHED
 
 # Requirements:
 # - numpy
@@ -32,8 +33,9 @@ except:
   sys.exit()
 
 try:
-  import rcf_logs
-  dbg = rcf_logs.dbg
+  import rcf_logs as rcf
+  dbg = rcf.dbg
+  print("\nBoid - Derivative work, Ryan Fleck 2018\n")
 except:
   print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please download rcf_logs.py to this directory for enhanced logging.")
   def dbg(x,y,message):
@@ -73,4 +75,4 @@ pts, = ax.plot([],[], markersize=10, c='k', marker='o', ls='None')
 beak, = ax.plot([],[], markersize=4, c='r', marker='o', ls='None')
 #anim = animation.FuncAnimation(fig,tick,fargs=(pts,beak,boids), interval=50)
 
-fig.plot()
+fig.plot() #UNFINISHED.

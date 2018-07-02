@@ -13,6 +13,7 @@ except:
 try:
   import rcf_logs
   dbg = rcf_logs.dbg
+  rcf_logs.intro("PyPlot Experiment",2018)
 except:
   print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please download rcf_logs.py to this directory for enhanced logging.")
   def dbg(x,y,message):
