@@ -17,7 +17,7 @@ def dbg(warntype, section, message):
   elif(messageColor == "FAIL"):
     TYPE = FAIL
 
-  print("[ "+TYPE+section.center(8)+RESET+" ] "+message)
+  print("["+TYPE+section.center(8)+RESET+"] "+message)
 
 
 '''Debugging messages:

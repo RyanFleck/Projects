@@ -15,11 +15,14 @@
 #   - Point each boid in the average direction of those around it.
 #   - Move each boid towards the center of mass of those around it.
 
+# Adapted from "Python Playground", Mahesh Venkitachalam 2016, No Starch Press
+
 #Imports:
 import sys
 
 try:
   import math
+  import matplotlib
   import numpy as np
 except:
   print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please install prerequisite modules.")
@@ -33,19 +36,31 @@ except:
   def dbg(x,y,message):
     print("["+'\033[92m'+y.center(8)+'\033[0m'+"] "+message) 
 
+dbg("good","init","Prerequisites loaded.")
 
 #Configuration
 width, height = 640,480
 N = 100
 
 #Compute boid start info
-dbg("good","init","Compute positions and velocities...")
+dbg("good","init","Computing positions and velocities.")
 pos = [width/2.0, height/2.0] + 10*np.random.rand(2*N).reshape(N,2)
 angles = 2*math.pi*np.random.rand(N)
 vel = np.array(list(zip(np.sin(angles), np.cos(angles))))
 
+#Boundaries for boids:
+# Velocity preserved, boid appears on other side of map.
+def applyBC(self):
+  deltaR = 2.0
+  for coord in self.pos:
+    if coord[0] > width + deltaR:
+      coord[0] = - deltaR
+    if coord[0] < -deltaR:
+      coord[0] = width + deltaR
+    if coord[1] > height + deltaR:
+      coord[1] = -deltaR
+    if coord[1] < - deltaR:
+      coord[1] = height + deltaR
 
-dbg("good","init","Compute positions and velocities...")
-dbg("warning","damnit","Compute positions and velocities...")
-dbg("failure","augh!","Compute positions and velocities...")
-dbg("good","halleujah","Compute positions and velocities...")
+fig = plt.figure()
+
