@@ -20,6 +20,9 @@ local.properties
 .settings/
 .loadpath
 
+#PYTHON
+py/__pycache__
+
 # External tool builders
 .externalToolBuilders/
 

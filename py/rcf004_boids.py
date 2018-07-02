@@ -25,7 +25,7 @@ try:
   import matplotlib
   import numpy as np
 except:
-  print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please install prerequisite modules.")
+  print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please install prerequisite modules:\n- Numpy\n- Argparse\n- MatPlotLib\n- SciPy\n- rcf_logs.py")
   sys.exit()
 
 try:
