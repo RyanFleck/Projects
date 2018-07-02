@@ -639,11 +639,10 @@ Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80
 ======= Backtrace: =========
 /lib/x86_64-linux-gnu/libc.so.6(+0x70bfb)[0x7f630072cbfb]
 /lib/x86_64-linux-gnu/libc.so.6(+0x76fc6)[0x7f6300732fc6]
-/lib/x86_64-linux-gnu/libc.so.6(+0x7780e)[0x7f630073380e]
-[0x4196d520]
 ```
-Note to self: `apt-get build-dep monodevelop` should fix problems.
+Running `apt-get build-dep monodevelop` fixed all of my stability problems. 
 
+<br />
 
 ## References
 Many are from "C# 5.0 in a Nutshell" 5e. J. and B. Albahari, O'Reilly 2012.
