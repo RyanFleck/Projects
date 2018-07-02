@@ -22,8 +22,11 @@ import sys
 
 try:
   import math
-  import matplotlib
+  import matplotlib.pyplot as plt
+  import matplotlib.animation as animation
   import numpy as np
+  from scipy.spatial.distance import squareform, pdist, cdist
+  from numpy.linalg import norm
 except:
   print("[ "+'\033[91m'+"log"+'\033[0m'+" ] Please install prerequisite modules:\n- Numpy\n- Argparse\n- MatPlotLib\n- SciPy\n- rcf_logs.py")
   sys.exit()
@@ -64,3 +67,10 @@ def applyBC(self):
 
 fig = plt.figure()
 
+ax = plt.axes( xlim=(0,width), ylim=(0, height))
+
+pts, = ax.plot([],[], markersize=10, c='k', marker='o', ls='None')
+beak, = ax.plot([],[], markersize=4, c='r', marker='o', ls='None')
+#anim = animation.FuncAnimation(fig,tick,fargs=(pts,beak,boids), interval=50)
+
+fig.plot()
