@@ -37,7 +37,7 @@ cs/*.exe
 # REACT
 
 .DS_STORE
-node_modules
+*node_modules/*
 scripts/flow/*/.flowconfig
 *~
 *.pyc
