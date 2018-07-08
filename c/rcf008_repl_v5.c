@@ -13,14 +13,11 @@
  *   (GNU/Linux) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
  */
 
-
-//PREPROCESSOR COMMANDS for Windows portability!
 #ifdef _WIN32
 #include<string.h>
 
 static char buffer[2048];
 
-//Functions for just Win32
 char* readline(char* prompt){
   fputs(prompt, stdout);
   fgets(buffer, 2040, stdin);
@@ -32,14 +29,15 @@ char* readline(char* prompt){
 
 void add_history(char* unused){}
 
-//Otherwise use the library's functions:
 #else
 #include<editline/readline.h>
 #include<editline/history.h>
 #endif
+#include"mpc.h" //Included in projects repo.
 
-#include"mpc.h" //Included in this repo.
 
+
+int rml_analyze(mpc_ast_t* tree);
 long rml_eval(mpc_ast_t* tree);
 long rml_op(long x, char* op, long y);
 
@@ -61,7 +59,10 @@ int main(int argc, char** argv){
   //Enter REPL:
   puts("Ryan's Micro LISP (RML) Version 0.0.0.5"); 
   puts("Press Ctrl+C to Exit\n");
-  
+
+  //Add an item to the history so I don't need to type it over and over:
+  add_history("+ 1 2 (+ 3 4 5) 6 (* 7 8 (+ 9 10))");
+
   while(1){
     
     char* input = readline("rml > ");
@@ -69,7 +70,7 @@ int main(int argc, char** argv){
     add_history(input);
     
     if( mpc_parse("<stdin>", input, RML, &r) ){
-      mpc_ast_print(r.output); //Debug: Prints syntax tree.
+      rml_analyze(r.output);
       long result = rml_eval(r.output); 
       printf("\n\nans > %li\n\n", result);
       mpc_ast_delete(r.output);  
@@ -88,6 +89,7 @@ int main(int argc, char** argv){
 //strcmp() takes two char*s as input and returns 0 if they are equal.
 //strstr() Checks if the second string is present within the first.
 
+//Evaluates the MPC tree.
 long rml_eval(mpc_ast_t* tree){
   
   if(strstr(tree->tag, "number")){
@@ -106,10 +108,41 @@ long rml_eval(mpc_ast_t* tree){
   return x;
 }
 
+//Performs an operation on two numbers.
 long rml_op(long x, char* op, long y){
   if(!strcmp(op,"+")){return x+y;} 
   if(!strcmp(op,"-")){return x-y;} 
   if(!strcmp(op,"/")){return x/y;} 
   if(!strcmp(op,"*")){return x*y;} 
+  return 0;
+}
+
+//Recursive analysis functions. (Half implemented.)
+int rml_analyze(mpc_ast_t* tree){
+
+  puts("\nMPC Syntax Tree:"); 
+  mpc_ast_print(tree);
+  puts(""); 
+  
+  int count_nodes(mpc_ast_t* tree){
+    puts("Counting nodes...");
+    return 0;
+  }
+  int nodes = count_nodes(tree);
+  
+  int count_children(mpc_ast_t* tree){
+    puts("Counting children...");
+    return 0;
+  }
+  int children = count_children(tree);
+  
+  int count_branches(mpc_ast_t* tree){
+    puts("Counting branches...");
+    return 0;
+  }
+  int branches = count_branches(tree);
+  
+  printf("\nTree Info:\n\nNodes: %i\nChildren: %i\nBranches: %i", 
+    nodes, children, branches);
   return 0;
 }
