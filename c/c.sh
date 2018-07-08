@@ -5,7 +5,7 @@ else
   x=$1 
   y="${x%.c}"
   echo "Compiling $x"
-  gcc -Wall $x
+  cc -std=c99 -Wall $x -L/usr/local/lib -I/usr/local/include -lreadline
   echo "Compilation done. Running..."
   echo
   ./a.out
