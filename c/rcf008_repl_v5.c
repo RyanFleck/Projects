@@ -13,10 +13,31 @@
  *   (GNU/Linux) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
  */
 
-#include<stdio.h>
-#include<stdlib.h>
+
+//PREPROCESSOR COMMANDS for Windows portability!
+#ifdef _WIN32
+#include<string.h>
+
+static char buffer[2048];
+
+//Functions for just Win32
+char* readline(char* prompt){
+  fputs(prompt, stdout);
+  fgets(buffer, 2040, stdin);
+  char* cpy = malloc(strlen(buffer)+1);
+  strcpy(cpy, buffer);
+  cpy[strlen(cpy)-1]='\0';
+  return cpy;
+}
+
+void add_history(char* unused){}
+
+//Otherwise use the library's functions:
+#else
 #include<editline/readline.h>
 #include<editline/history.h>
+#endif
+
 #include"mpc.h" //Included in this repo.
 
 long rml_eval(mpc_ast_t* tree);
@@ -72,12 +93,10 @@ long rml_eval(mpc_ast_t* tree){
   if(strstr(tree->tag, "number")){
     return atoi(tree->contents);
   }
-  
+
   char* op = tree->children[1]->contents;
-  printf("\n     Operator: %s",op); //Debug: print operator.
-
   long x = rml_eval(tree->children[2]);
-
+  
   int i = 3;
   while( strstr(tree->children[i]->tag, "expr") ){
     x = rml_op(x, op, rml_eval(tree->children[i])); 
