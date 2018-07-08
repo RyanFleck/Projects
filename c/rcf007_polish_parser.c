@@ -44,7 +44,7 @@ int main(int argc, char** argv){
     add_history(input);
     
     if( mpc_parse("<stdin>", input, RML, &r) ){
-      mpc_ast_print(r.output);  
+      mpc_ast_print(r.output); //Yay, syntax tree! 
       mpc_ast_delete(r.output);  
     }else{
       mpc_err_print(r.error); 
