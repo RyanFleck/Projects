@@ -6,7 +6,7 @@
  *
  *  Copyright (C) 2018 Ryan Fleck under the GNU GPLv3.
  *
- *  Prerequisites: mpc.c, mpc.h, libedit-dev.
+ *  Prerequisites: mpc.c, mpc.h, libedit-dev, libreadline-dev.
  *   MPC repo at <github.com/orangeduck/mpc> 
  *
  *  Compilation Instructions:  
