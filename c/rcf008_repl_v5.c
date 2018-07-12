@@ -51,7 +51,7 @@ int main(int argc, char** argv){
   mpca_lang( MPCA_LANG_DEFAULT,
   "                                                    \
     number   : /-?[0-9]+/ ;                            \
-    operator : '+' | '-' | '*' | '/' ;                 \
+    operator : '+' | '-' | '*' | '/' | '^' | '%' ;                 \
     expr     : <number> | '(' <operator> <expr>+ ')' ; \
     rml      : /^/ <operator> <expr>+ /$/ ;    \
   ", Number, Operator, Expr, RML );
@@ -114,6 +114,15 @@ long rml_op(long x, char* op, long y){
   if(!strcmp(op,"-")){return x-y;} 
   if(!strcmp(op,"/")){return x/y;} 
   if(!strcmp(op,"*")){return x*y;} 
+  if(!strcmp(op,"^")){
+    int z = x;
+    printf("Multiplying %i exponentially by %i",x,y);
+    for(int i=0; i<y; i++){z = z*x;}
+    return z;
+    } 
+  if(!strcmp(op,"%")){
+    return 1;
+    } 
   return 0;
 }
 
