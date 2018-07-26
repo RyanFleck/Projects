@@ -70,7 +70,7 @@ int main(int argc, char** argv){
     add_history(input);
     
     if( mpc_parse("<stdin>", input, RML, &r) ){
-      rml_analyze(r.output);
+      //rml_analyze(r.output);
       long result = rml_eval(r.output); 
       printf("\n\nans > %li\n\n", result);
       mpc_ast_delete(r.output);  
