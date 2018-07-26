@@ -53,5 +53,6 @@ int main(int argc, char** argv){
  * cc -std=c99 -Wall $x -L/usr/local/lib -I/usr/local/include -lreadline
  * 
  * After further experimentation, all you need is -ledit flag.
- *  apt-get install libedit-dev   or   dnf install libedit-dev*  
+ *  apt-get install libedit-dev
+ *  apt-get install libreadline-dev
  */
