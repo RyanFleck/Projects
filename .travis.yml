@@ -19,13 +19,6 @@ matrix:
       script:
         - ./test
     
-    - language: csharp 
-      mono: latest
-      before_script:
-        - cd cs/tests
-      script:
-        - ./test
-    
     - language: java
       jdk: openjdk8
       before_script:
