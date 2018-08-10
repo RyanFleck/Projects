@@ -12,25 +12,28 @@ matrix:
       script:
         - ./test
 
-    - language: cpp
+    - language: cpp 
+      compiler: gcc
       before_script:
         - cd cpp/tests
       script:
         - ./test
     
     - language: csharp 
+      mono: latest
       before_script:
         - cd cs/tests
       script:
         - ./test
     
     - language: java
+      jdk: openjdk8
       before_script:
         - cd java/tests
       script:
         - ./test
     
-    - language: javascript
+    - language: node_js 
       before_script:
         - cd js/tests
       script:
@@ -49,7 +52,9 @@ matrix:
         - ./test
     
     - language: python
-      python: 3.x
+      python:
+        - "2.7"
+        - "3.6"
       before_script:
         - cd py/tests
       script:
