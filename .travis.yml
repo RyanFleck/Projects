@@ -67,6 +67,8 @@ matrix:
         - ./test
     
     - language: scala
+      scala: 2.12.2
+      jdk: oraclejdk8
       before_script:
         - cd scala/tests
       script:
