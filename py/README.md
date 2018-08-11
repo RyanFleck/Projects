@@ -2,7 +2,7 @@
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
 
-  [Formatted Manual](https://ryanfleck.github.io/py)
+  View formatted manual on [ryanfleck.github.io/py](https://ryanfleck.github.io/py)
   
 
 
