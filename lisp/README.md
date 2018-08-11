@@ -1,5 +1,10 @@
 # Ryan's Lisp Manual
 
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  View formatted manual on [ryanfleck.github.io/lisp](https://ryanfleck.github.io/lisp)
+  
+
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```lisp
 (print "Hello World")

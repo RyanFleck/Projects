@@ -1,5 +1,10 @@
 # Ryan's Scala Manual
 
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  View formatted manual on [ryanfleck.github.io/scala](https://ryanfleck.github.io/scala)
+  
+
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 
 <iframe height="200px" frameborder="0" style="width: 100%" src="https://embed.scalafiddle.io/embed?sfid=41wVc7n/0&layout=v50"></iframe>

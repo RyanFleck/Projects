@@ -9,8 +9,9 @@
  *  Prerequisites: mpc.c, mpc.h, libedit-dev, libreadline-dev.
  *   MPC repo at <github.com/orangeduck/mpc> 
  *
- *  Compilation Instructions:  
- *   (GNU/Linux) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
+ *  Compilation Instructions:
+ *   (Debian 9) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
+ *   (Fedora 28) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
  */
 
 #ifdef _WIN32
@@ -30,8 +31,8 @@ char* readline(char* prompt){
 void add_history(char* unused){}
 
 #else
-#include<editline/readline.h>
-#include<editline/history.h>
+//#include<editline/readline.h>
+//#include<editline/history.h>
 #endif
 #include"mpc.h" //Included in projects repo.
 

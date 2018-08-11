@@ -1,0 +1,77 @@
+os: linux
+sudo: false
+
+matrix:
+  include:
+    - language: c
+      compiler:
+        - clang
+        - gcc
+      before_script:
+        - cd c/tests
+      script:
+        - ./test
+
+    - language: cpp 
+      compiler: gcc
+      before_script:
+        - cd cpp/tests
+      script:
+        - ./test
+    
+    - language: java
+      jdk: openjdk8
+      before_script:
+        - cd java/tests
+      script:
+        - ./test
+    
+    - language: node_js 
+      before_script:
+        - cd js/tests
+      script:
+        - ./test
+    
+    - language: lisp
+      before_script:
+        - cd lisp/tests
+      script:
+        - ./test
+    
+    - language: php
+      before_script:
+        - cd php/tests
+      script:
+        - ./test
+    
+    - language: python
+      python:
+        - "2.7"
+        - "3.6"
+      before_script:
+        - cd py/tests
+      script:
+        - ./test
+    
+    - language: ruby
+      before_script:
+        - cd rb/tests
+      script:
+        - ./test
+    
+    - language: scala
+      scala: 2.12.2
+      jdk: oraclejdk8
+      before_script:
+        - cd scala/tests
+      script:
+        - ./test
+    
+    - language: bash
+      before_script:
+        - cd sh/tests
+      script:
+        - ./test
+
+notifications:
+  email: false
