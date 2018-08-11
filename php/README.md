@@ -1,6 +1,9 @@
 # Ryan's PHP Manual
-[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
-[Link to pretty manual](https://ryanfleck.github.io/php)
+
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  [Formatted Manual](https://ryanfleck.github.io/php)
+  
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```php
 echo "Hello, World!";

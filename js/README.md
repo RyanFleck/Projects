@@ -1,6 +1,9 @@
 # Ryan's JavaScript Manual
-[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
-[Link to pretty manual](https://ryanfleck.github.io/js)
+
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  [Formatted Manual](https://ryanfleck.github.io/js)
+  
 
 <!--YDKJS:p0-->
 <!--EQJS:p12-->

@@ -1,6 +1,9 @@
 # Ryan's LaTeX Manual
-[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
-[Link to pretty manual](https://ryanfleck.github.io/tex)
+
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  [Formatted Manual](https://ryanfleck.github.io/tex)
+  
 
 *LaTeX* is a typesetting language designed for producing beautiful documents. I haven't done any work on this manual yet, but it should be updated sometime during **December 2018**.
 

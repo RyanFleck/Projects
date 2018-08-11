@@ -1,6 +1,9 @@
 # Ryan's C++ Manual
-[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
-[Link to pretty manual](https://ryanfleck.github.io/cpp)
+
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+
+  [Formatted Manual](https://ryanfleck.github.io/cpp)
+  
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 
 
