@@ -1,4 +1,6 @@
-[Link to pretty manual](https://ryanfleck.github.io/cs.markdown)
+# Ryan's C# Manual
+[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+[Link to pretty manual](https://ryanfleck.github.io/cs)
 
 I've always had strong feelings against the anti-competetive Microsoft, and the products it produces. Yesterday's Github aquisition will probably end in the same way the aquisitions of Nokia, Rare, LinkedIn, Mojang and Xamarin did; with stagnation, a halt in new and interesting innovations, and no new fantastic products.
 

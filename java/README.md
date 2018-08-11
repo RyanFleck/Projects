@@ -1,4 +1,6 @@
-[Link to pretty manual](https://ryanfleck.github.io/java.markdown)
+# Ryan's Java Manual
+[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+[Link to pretty manual](https://ryanfleck.github.io/java)
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```java
