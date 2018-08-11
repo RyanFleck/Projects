@@ -1,4 +1,4 @@
-# Ryan's Lisp Manual
+[Link to pretty manual](https://ryanfleck.github.io/lisp.markdown)
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```lisp

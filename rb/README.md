@@ -1,4 +1,4 @@
-# Ryan's Ruby Manual
+[Link to pretty manual](https://ryanfleck.github.io/rb.markdown)
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```ruby

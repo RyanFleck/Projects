@@ -1,4 +1,4 @@
-# Ryan's PHP Manual
+[Link to pretty manual](https://ryanfleck.github.io/php.markdown)
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```php
 echo "Hello, World!";

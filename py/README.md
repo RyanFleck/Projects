@@ -1,4 +1,4 @@
-# Ryan's Python 3 Manual
+[Link to pretty manual](https://ryanfleck.github.io/py.markdown)
 
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)

@@ -1,4 +1,4 @@
-# Ryan's LaTeX Manual
+[Link to pretty manual](https://ryanfleck.github.io/tex.markdown)
 
 *LaTeX* is a typesetting language designed for producing beautiful documents. I haven't done any work on this manual yet, but it should be updated sometime during **December 2018**.
 

@@ -1,4 +1,4 @@
-# Ryan's C Manual
+[Link to pretty manual](https://ryanfleck.github.io/c.markdown)
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```c

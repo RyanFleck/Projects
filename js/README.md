@@ -1,4 +1,4 @@
-# Ryan's JavaScript Manual
+[Link to pretty manual](https://ryanfleck.github.io/js.markdown)
 
 <!--YDKJS:p0-->
 <!--EQJS:p12-->

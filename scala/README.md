@@ -1,4 +1,4 @@
-# Ryan's Scala Manual
+[Link to pretty manual](https://ryanfleck.github.io/scala.markdown)
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 
