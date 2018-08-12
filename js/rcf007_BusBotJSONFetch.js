@@ -41,15 +41,16 @@ async function nextBus (stop, route=0, direction=0) {
 
 
 async function stopInfo (stop) {
-  console.log("stopinfo("+stop+")");
+  
+  const output = [];
   
   const busData = await fetchData(stop).catch(function(err) {
       console.log('Error: '+err);
       });
 
   console.log(busData);
-  console.log("Information for stop "+busData.StopNo+" at "+busData.StopDescription+":");
-  console.log("Stop Connections:");
+  output.push("Information for stop "+busData.StopNo+" at "+busData.StopDescription+":");
+  output.push("Connections:");
   for(busNum in busData.Routes.Route){
     const Route = busData.Routes.Route[busNum];
     const TripArray=[]; 
@@ -57,11 +58,13 @@ async function stopInfo (stop) {
       const Trip = Route.Trips[tripNum];
       TripArray.push(Trip.TripStartTime);
     }
-    console.log("  "+Route.RouteNo+" "+Route.Direction+" to "+Route.RouteHeading+" at "+
+    output.push("*"+Route.RouteNo+"* "+Route.Direction+" to "+Route.RouteHeading+" at "+
     TripArray.join(", ")+".");
   }
-  
-  return 0;  
+
+  jsonOut = { "text" : output.join("\n") };
+  console.log(jsonOut);
+  return jsonOut;  
 }
 
 
