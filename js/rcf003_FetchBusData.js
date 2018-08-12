@@ -8,19 +8,19 @@ const util = require('./octranspo-service.js');
 async function fetchData (stop,route,direction) {
   console.log(stop+" "+route+" "+direction);
   const postData={};
+
+  //Better way to do this?
   if(stop){postData.stopNo = stop;}
   if(route){postData.routeNo = route;}
   if(direction){postData.direction = direction;}
 
-  console.log(postData);
-
-  console.log("\n\nFetching URL:\n"+util.getUrl("GetNextTripsForStopAllRoutes",postData)+"\n");
+  //console.log(postData);
+  //console.log("\n\nPOSTing URL:\n"+util.getUrl("GetNextTripsForStopAllRoutes",postData)+"\n");
   
   try{
     const response =  await fetch(util.getUrl("GetNextTripsForStopAllRoutes",postData)); 
-    const responsejson = await response.json();
-    console.log(responsejson);
-  } catch (error) { console.log(error); }
+    return await response.json();
+  } catch (error) { console.log("Error in fetchData(): "+error); }
 }
 
 
@@ -34,18 +34,18 @@ function nextBus (stop, route, direction) {
       return stopInfo(stop);
     }
   
-  fetchData(stop, route, direction);
+  return fetchData(stop, route, direction);
 }
 
 function stopInfo (stop, direction) {
   console.log("stopinfo("+stop+" "+direction+")");
-  fetchData(stop, direction);
+  return fetchData(stop, direction);
 }
 
 
 
 //Tests
-nextBus(3011,64);
+console.log(nextBus(3011,64));
 
 
 module.exports = { nextBus, stopInfo };

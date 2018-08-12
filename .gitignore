@@ -4,8 +4,10 @@
 *.ear
 *.class
 *.out
-node_modules/
 
+#JS
+node_modules/
+.env
 # eclipse specific git ignore
 *.pydevproject
 .project
