@@ -1,0 +1,53 @@
+{
+  "GetNextTripsForStopResult":{
+    "StopNo":"1600",
+    "StopLabel":"MARCH \/ TERON",
+    "Error":"",
+    "Route":{
+      "RouteDirection":{
+        "RouteNo":63,
+        "RouteLabel":"Mackenzie King via Briarbrook",
+        "Direction":"Outbound",
+        "Error":"",
+        "RequestProcessingTime":"20180811204146",
+        "Trips":{
+          "Trip":[
+            {
+              "TripDestination":"Tunney's Pasture",
+              "TripStartTime":"20:25",
+              "AdjustedScheduleTime":"7",
+              "AdjustmentAge":"2.14",
+              "LastTripOfSchedule":false,
+              "BusType":"4L - IN",
+              "Latitude":"45.345884",
+              "Longitude":"-75.931735",
+              "GPSSpeed":"10.3"
+            },
+            {
+              "TripDestination":"Tunney's Pasture",
+              "TripStartTime":"20:55",
+              "AdjustedScheduleTime":"39",
+              "AdjustmentAge":"-1",
+              "LastTripOfSchedule":false,
+              "BusType":"4L - IN",
+              "Latitude":"",
+              "Longitude":"",
+              "GPSSpeed":""
+            },
+            {
+              "TripDestination":"Tunney's Pasture",
+              "TripStartTime":"21:25",
+              "AdjustedScheduleTime":"69",
+              "AdjustmentAge":"-1",
+              "LastTripOfSchedule":false,
+              "BusType":"4L - IN",
+              "Latitude":"",
+              "Longitude":"",
+              "GPSSpeed":""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

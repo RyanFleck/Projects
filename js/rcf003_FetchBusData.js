@@ -1,14 +1,10 @@
-console.log("It's alive!");
+const fetch = require('node-fetch');
 
+function requestData () {}
 
-function bar () {
-    console.log("BAR");
-  }
+function nextbus () {}
 
-module.exports = {
-  foo: function () {
-      console.log("FOO");
-    },
-  bar
-  };
+function stopinfo () {}
+
+module.exports = { nextbus, stopinfo };
 
