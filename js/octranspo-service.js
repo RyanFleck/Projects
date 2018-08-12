@@ -5,7 +5,6 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').load();
 }
 
-
 const BASE_URL = "https://api.octranspo1.com/v1.2";
 const DEFAULT_QUERY_PARAMS = [
   ["format", "json"],
@@ -20,7 +19,7 @@ function getUrl(endpoint, queryParams) {
   return `${BASE_URL}/${endpoint}?${queryString}`
 }
 
-console.log("\n\nURL:\n"+getUrl("GetNextTripsForStopAllRoutes",{"stopNo":1600})+"\n");
+//console.log("\n\nURL:\n"+getUrl("GetNextTripsForStopAllRoutes",{"stopNo":1600})+"\n");
 
 async function getData () {
 try{
