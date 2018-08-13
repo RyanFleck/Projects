@@ -1,0 +1,20 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "JavaScript Experiments",
+  "main": "rcf000_main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "node-fetch": "^2.2.0",
+    "node-fetch-json": "^0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "rcf000_test.js"
+  },
+  "author": "Ryan Fleck",
+  "license": "ISC"
+}
