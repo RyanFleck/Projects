@@ -13,7 +13,7 @@ matrix:
         - ./test
 
     - language: cpp 
-      compiler: gcc
+      compiler: g++ 
       before_script:
         - cd cpp/tests
       script:

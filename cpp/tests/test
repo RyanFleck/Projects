@@ -4,5 +4,5 @@ cd ..
 for x in *.cpp
 do
   echo "Compiling $x"
-  g++ -Wall $x
+  g++ -Wall -std=c++11 $x
 done
