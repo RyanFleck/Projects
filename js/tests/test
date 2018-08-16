@@ -2,4 +2,5 @@
 echo "Testing Projects/JS, JavaScript"
 echo "Installed NPM Packages:"
 cd ..
+npm install
 npm ls

@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "rcf000_test.js"
+    "test": "node rcf000_test.js"
   },
   "author": "Ryan Fleck",
   "license": "ISC"
