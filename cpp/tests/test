@@ -1,2 +1,8 @@
 #!/bin/sh
 echo "Testing Projects/CPP, C++ Files"
+cd ..
+for x in *.cpp
+do
+  echo "Compiling $x"
+  g++ -Wall $x
+done
