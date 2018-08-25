@@ -67,11 +67,11 @@ function subtitle( y ){
 // Internal Library Methods
 
 function ul(str){
-  return("\n"+str+" \n"+"-".repeat(str.length));
+  return("\n"+str+" \n"+"-".repeat(str.length)+"+");
 }
 
 function ulplus(str){
-  return("\n\n\t "+str+" \n\t"+"+"+"-".repeat(str.length)+"+\n");
+  return("\n".repeat(9)+"\t "+str+" \n\t"+"+"+"-".repeat(str.length)+"+\n");
 }
 
 
