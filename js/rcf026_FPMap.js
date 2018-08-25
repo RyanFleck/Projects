@@ -28,3 +28,42 @@ const evens = _.filter(nums, function (element) {
 
 console.log('Nums: ' + nums)
 console.log('Evens: ' + evens)
+
+// !Thicc arrow syntax =>
+// const func = (x,y) => { do stuff with x and y };
+// If only one arg:  const func = x => { do stuff };
+// If no args:  const func = () => { do stuff };
+
+const employees = [
+  {name: 'A', salary: 30000},
+  {name: 'B', salary: 40000},
+  {name: 'C', salary: 90000},
+  {name: 'D', salary: 100000},
+  {name: 'E', salary: 120000}
+]
+
+// Filter
+const underpaid = _.filter(employees, (employee) => employee.salary < 70000)
+console.log(underpaid)
+
+// Some
+const containsEvenNumbers = (array) => {
+  return _.some(array, (element) => element % 2 === 0)
+}
+
+// Every
+const allEvenNumbers = (array) => {
+  return _.every(array, (element) => element % 2 === 0)
+}
+
+console.log('NUMS contains even numbers: ' + containsEvenNumbers(nums))
+console.log('NUMS is all even numbers: ' + allEvenNumbers(nums))
+
+/*
+ * Perhaps it is best to save the arrow notation for specific use-cases, like
+ * short boolean tests or returning arguments for reducing an array. Seems
+ * strange to use them everywhere, though they're definitely better than a
+ * full function xyz() {} when the function is just one return statement.
+ */
+
+r.subtitle('Filtering Arrays')
