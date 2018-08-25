@@ -35,11 +35,11 @@ console.log('Evens: ' + evens)
 // If no args:  const func = () => { do stuff };
 
 const employees = [
-  {name: 'A', salary: 30000},
-  {name: 'B', salary: 40000},
-  {name: 'C', salary: 90000},
-  {name: 'D', salary: 100000},
-  {name: 'E', salary: 120000}
+  {name: 'A', salary: 30000.0},
+  {name: 'B', salary: 40000.0},
+  {name: 'C', salary: 90000.0},
+  {name: 'D', salary: 100000.0},
+  {name: 'E', salary: 120000.0}
 ]
 
 // Filter
@@ -66,4 +66,35 @@ console.log('NUMS is all even numbers: ' + allEvenNumbers(nums))
  * full function xyz() {} when the function is just one return statement.
  */
 
-r.subtitle('Filtering Arrays')
+r.subtitle('Reducing Arrays')
+
+const accumulate = _.reduce(nums, (acc, element) => acc + element)
+
+console.log('Array: ' + nums)
+console.log('Accumulate: ' + accumulate)
+
+// This doensn't work and I don't understand _why_.
+// SOLVED: Needed to specify array start point when parsing objects.
+const staffPay = _.reduce(employees, (acc, e) => acc + e.salary, 0)
+console.log('Total cost of employees: ' + staffPay)
+
+
+r.subtitle('Combined Operations: Chaning Map, Filter, Reduce')
+
+const people = [
+  { name: "Dan",   salary: 62300,  age: 27, gender: 'M' },
+  { name: "Eve",   salary: 113500, age: 50, gender: 'F' },
+  { name: "Jude",  salary: 50500,  age: 21, gender: 'F' },
+  { name: "Ed",   salary: 107000, age: 45, gender: 'M' },
+  { name: "Emmanuel",  salary: 99000,  age: 39, gender: 'M' },
+  { name: "Alice",   salary: 75000,  age: 36, gender: 'F' }
+]
+
+const males = _.filter(people , (p) => p.gender === 'M')
+const females = _.filter(people, (p) => p.gender === 'F')
+const names = ( people_list ) => _.map(people_list, (p) => p.name)
+//const avgAge = ( ppl ) => _.reduce(_.map(people_list, (p) => p.name),(acc,
+//const avgPay = ( ppl ) => 
+
+console.log('Males: ' + names(males));
+console.log('Females: ' + names(females));
