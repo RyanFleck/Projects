@@ -1,26 +1,26 @@
 // Calculate the difference between the sum of squares and square of sums.
 
-alg6(10);
-alg6(100);
+alg6(10)
+alg6(100)
 
-function alg6( x ){
-  console.log(x);
-  let answer = squareOfSum(x) - sumOfSquares(x); 
-  console.log(answer);
+function alg6 (x) {
+  console.log(x)
+  let answer = squareOfSum(x) - sumOfSquares(x)
+  console.log(answer)
 
-  function sumOfSquares(y){
-    let acc = 0;
-    for(let z = 1; z <= y; z++){
-      acc+=(z*z);
+  function sumOfSquares (y) {
+    let acc = 0
+    for (let z = 1; z <= y; z++) {
+      acc += (z * z)
     }
-    return acc;
+    return acc
   }
-  
-  function squareOfSum(y){
-    let acc = 0;
-    for(let z = 1; z <= y; z++){
-      acc+=z; 
+
+  function squareOfSum (y) {
+    let acc = 0
+    for (let z = 1; z <= y; z++) {
+      acc += z
     }
-    return acc*acc ;
+    return acc * acc
   }
 }
