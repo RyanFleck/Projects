@@ -57,13 +57,21 @@ function sum(x){
 }
 
 function title( y ){
+  console.log(ulplus(y));
+}
+
+function subtitle( y ){
   console.log(ul(y));
 }
 
 // Internal Library Methods
 
 function ul(str){
-  return("\n\n\t"+str+"\n\t"+"-".repeat(str.length)+"\n");
+  return("\n"+str+" \n"+"-".repeat(str.length));
+}
+
+function ulplus(str){
+  return("\n\n\t "+str+" \n\t"+"+"+"-".repeat(str.length)+"+\n");
 }
 
 
@@ -71,4 +79,4 @@ function prObj(name,obj){
 console.log("\n"+name+" Properties:\n"+JSON.stringify(obj,null,2));
 }
 
-module.exports = { title, primep, factorp, sumto, range, sum };
+module.exports = { primep, factorp, sumto, range, sum, title, subtitle };
