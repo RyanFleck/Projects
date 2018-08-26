@@ -78,23 +78,42 @@ console.log('Accumulate: ' + accumulate)
 const staffPay = _.reduce(employees, (acc, e) => acc + e.salary, 0)
 console.log('Total cost of employees: ' + staffPay)
 
-
 r.subtitle('Combined Operations: Chaning Map, Filter, Reduce')
 
 const people = [
-  { name: "Dan",   salary: 62300,  age: 27, gender: 'M' },
-  { name: "Eve",   salary: 113500, age: 50, gender: 'F' },
-  { name: "Jude",  salary: 50500,  age: 21, gender: 'F' },
-  { name: "Ed",   salary: 107000, age: 45, gender: 'M' },
-  { name: "Emmanuel",  salary: 99000,  age: 39, gender: 'M' },
-  { name: "Alice",   salary: 75000,  age: 36, gender: 'F' }
+  { name: 'Dan', salary: 62300, age: 27, gender: 'M' },
+  { name: 'Eve', salary: 113500, age: 50, gender: 'F' },
+  { name: 'Jude', salary: 50500, age: 21, gender: 'F' },
+  { name: 'Ed', salary: 107000, age: 45, gender: 'M' },
+  { name: 'Emmanuel', salary: 99000, age: 39, gender: 'M' },
+  { name: 'Alice', salary: 75000, age: 36, gender: 'F' }
 ]
 
-const males = _.filter(people , (p) => p.gender === 'M')
+const males = _.filter(people, (p) => p.gender === 'M')
 const females = _.filter(people, (p) => p.gender === 'F')
-const names = ( people_list ) => _.map(people_list, (p) => p.name)
-//const avgAge = ( ppl ) => _.reduce(_.map(people_list, (p) => p.name),(acc,
-//const avgPay = ( ppl ) => 
+const names = (people) => _.map(people, (p) => p.name)
+const avgAge = (ppl) => _.reduce(_.map(ppl, (p) => p.age), (acc, age) => acc + age) / ppl.length
+// const avgPay = ( ppl ) => ...
 
-console.log('Males: ' + names(males));
-console.log('Females: ' + names(females));
+console.log('Workers: ' + names(people))
+console.log('Average working age: ' + avgAge(people))
+
+console.log('\nMales: ' + names(males))
+console.log('Average Male working age: ' + avgAge(males))
+console.log('\nFemales: ' + names(females))
+console.log('Average working age: ' + avgAge(females))
+
+/*
+ * We don't read and write poetry because it's cute. We read and write poetry
+ * because we are members of the human race. And the human race is filled with
+ * passion. And medicine, law, business, engineering, these are noble pursuits
+ * and necessary to sustain life. But poetry, beauty, romance, love, these are
+ * what we stay alive for. To quote from Whitman, "O me! O life!... of the
+ * questions of these recurring; of the endless trains of the faithless...
+ * of cities filled with the foolish; what good amid these, O me, O life?"
+ * Answer. That you are here - that life exists, and identity; that the
+ * powerful play goes on and you may contribute a verse. That the powerful
+ * play *goes on* and you may contribute a verse. What will your verse be?
+ *
+ *     John Keating
+ */
