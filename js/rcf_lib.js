@@ -62,6 +62,10 @@ function subtitle (y) {
   console.log(ul(y))
 }
 
+function jsonf( obj ){
+  console.log(JSON.stringify(obj,null,2))
+}
+
 // Internal Library Methods
 
 function ul (str) {
@@ -76,4 +80,4 @@ function prObj (name, obj) {
   console.log('\n' + name + ' Properties:\n' + JSON.stringify(obj, null, 2))
 }
 
-module.exports = { primep, factorp, sumto, range, sum, title, subtitle }
+module.exports = { primep, factorp, sumto, range, sum, title, subtitle, jsonf }
