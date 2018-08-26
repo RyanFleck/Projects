@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <title>React Library Test</title>
+  <style>
+    .test{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+	<div id="react-container"></div>
+	<div id="content-one"></div>
+	<div id="content-two"></div>
+	<div id="react-container-2"></div>
+
+	<script type="text/babel">
+    
+    //Stateless Component w/Props
+		const BannerP1 = (props) => (
+			<div>
+				<h1 className="test">REACT {props.x}</h1>
+			</div>	
+		)
+    
+    //Stateless Component w/Single Prop
+		const BannerP2 = ({y}) => (
+			<div>
+				<h1 className="test">REACT {y}</h1>
+			</div>	
+		)
+    //Regular React Component
+    class DynamicContent extends React.Component {
+      render(){
+        return(
+          <div className="content">
+            <p>Hello, {this.props.variable}!</p>
+            <p>Numbers need jsx braces, {this.props.anumber}!</p>
+          </div>
+        )
+    }}
+    
+    //Update React DOM; Neat! I can see how this would fn well with async.
+		ReactDOM.render(<DynamicContent anumber={18} variable="World2"/>,document.getElementById('content-two'))
+		ReactDOM.render(<BannerP1 x={21} />,document.getElementById('react-container'))
+		ReactDOM.render(<BannerP2 y={98} />,document.getElementById('react-container-2'))
+    
+
+	</script>
+</body>
+</html>
