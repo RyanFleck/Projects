@@ -1,6 +1,10 @@
 // Useful functions for handling prime numbers.
 // Just temp until I can get home and install math.js module.
 
+// Expanded 20180906 to include file i/o methods.
+const fs = require('fs')
+const _ = require('lodash')
+
 // Returns true if x is prime.
 function primep (x) {
   let sqx = parseInt(Math.sqrt(x))
@@ -66,6 +70,33 @@ function jsonf( obj ){
   console.log(JSON.stringify(obj,null,2))
 }
 
+// Input for ./folder/string.txt is folder/string.txt
+function loadFile( file ){
+  const filestr = "./"+file
+  console.log("[loadFile] Loading "+filestr)
+  return fs.readFileSync(filestr,'utf8', (err,data)=>{
+    if(err){
+      console.log("[loadFile] Error: "+err)
+      throw err
+    }
+    return data
+  })
+}
+
+function parseToInt( txt ){
+  return parseInt(parseToString(txt));
+}
+
+function parseToString( txt ){
+  const rawfile = loadFile( txt )
+  return rawfile;
+}
+
+function parseToIntArray( txt ){
+  return parseToString(txt).split('\n').map((x)=>parseInt(x))
+}
+
+
 // Internal Library Methods
 
 function ul (str) {
@@ -80,4 +111,4 @@ function prObj (name, obj) {
   console.log('\n' + name + ' Properties:\n' + JSON.stringify(obj, null, 2))
 }
 
-module.exports = { primep, factorp, sumto, range, sum, title, subtitle, jsonf }
+module.exports = { primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray }
