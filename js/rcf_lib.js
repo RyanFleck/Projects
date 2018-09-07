@@ -93,11 +93,15 @@ function parseToString( txt ){
 }
 
 function parseToIntArray( txt ){
-  return parseToString(txt).split('\n').map((x)=>parseInt(x))
+  return parseToString(txt).split('\n').map((x)=>parseInt(x)).filter((x)=>isNum(x))
 }
 
 
 // Internal Library Methods
+
+function isNum(x){
+  return Number.isInteger(x) 
+}
 
 function ul (str) {
   return ('\n' + str + ' \n' + '-'.repeat(str.length) + '+')
