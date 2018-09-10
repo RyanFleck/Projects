@@ -43,7 +43,24 @@ import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 
 > A marker trait that enables dynamic invocations.
 
+## Spark
 
+
+```
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.1
+      /_/
+         
+Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_181)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> printf("Hello, world!")
+Hello, world!
+```
 
 
 ## ScalaJS
