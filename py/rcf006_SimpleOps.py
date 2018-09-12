@@ -2,6 +2,9 @@
 # Test program rcf006_SimpleOps.py
 # Tested in program rcf005_UnitTest.py
 
+import random
+import unittest
+
 def iterate(x):
   x = x+1
   return x
@@ -26,6 +29,10 @@ def cube(x):
   x = x**3
   return x
 
+def questionable(x):
+  x = x*random.random()*2
+  return x
+
 '''
 print( iterate(3) )
 print( reiterate(3) )
@@ -34,3 +41,11 @@ print( double(3) )
 print( square(3) )
 print( cube(3) )
 '''
+
+class TestMethods(unittest.TestCase):
+
+  def test_iterate(self):
+    self.assertTrue( 1 == 1 )
+
+if __name__ == '__main__':
+  unittest.main()
