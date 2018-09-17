@@ -23,7 +23,7 @@ function getUrl (endpoint, queryParams) {
 
 async function getData () {
   try {
-    const response = await fetch(getUrl('GetNextTripsForStopAllRoutes', {'stopNo': 1600}))
+    const response = await fetch(getUrl('GetNextTripsForStopAllRoutes', { 'stopNo': 1600 }))
     const responsejson = await response.json()
     console.log(responsejson)
   } catch (error) { console.log(error) }

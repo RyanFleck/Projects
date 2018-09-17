@@ -52,7 +52,7 @@ for (x of ['Paris    ', 'London  ', 'Shanghai', 'New York', 'Toronto ', '']) { c
 
 // References do not use their own storage space:
 console.log(ul('Test how references are stored:'))
-let rone = {'value': true}
+let rone = { 'value': true }
 let rtwo = rone // Two should point to, and not copy, one.
 console.log('Storage test: one=' + rone.value + ', two=' + rtwo.value + '.')
 rone.value = false // Two should change.

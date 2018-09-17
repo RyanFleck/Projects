@@ -66,41 +66,40 @@ function subtitle (y) {
   console.log(ul(y))
 }
 
-function jsonf( obj ){
-  console.log(JSON.stringify(obj,null,2))
+function jsonf (obj) {
+  console.log(JSON.stringify(obj, null, 2))
 }
 
 // Input for ./folder/string.txt is folder/string.txt
-function loadFile( file ){
-  const filestr = "./"+file
-  console.log("[loadFile] Loading "+filestr)
-  return fs.readFileSync(filestr,'utf8', (err,data)=>{
-    if(err){
-      console.log("[loadFile] Error: "+err)
+function loadFile (file) {
+  const filestr = './' + file
+  console.log('[loadFile] Loading ' + filestr)
+  return fs.readFileSync(filestr, 'utf8', (err, data) => {
+    if (err) {
+      console.log('[loadFile] Error: ' + err)
       throw err
     }
     return data
   })
 }
 
-function parseToInt( txt ){
-  return parseInt(parseToString(txt));
+function parseToInt (txt) {
+  return parseInt(parseToString(txt))
 }
 
-function parseToString( txt ){
-  const rawfile = loadFile( txt )
-  return rawfile;
+function parseToString (txt) {
+  const rawfile = loadFile(txt)
+  return rawfile
 }
 
-function parseToIntArray( txt ){
-  return parseToString(txt).split('\n').map((x)=>parseInt(x)).filter((x)=>isNum(x))
+function parseToIntArray (txt) {
+  return parseToString(txt).split('\n').map((x) => parseInt(x)).filter((x) => isNum(x))
 }
-
 
 // Internal Library Methods
 
-function isNum(x){
-  return Number.isInteger(x) 
+function isNum (x) {
+  return Number.isInteger(x)
 }
 
 function ul (str) {

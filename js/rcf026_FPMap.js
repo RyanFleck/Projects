@@ -35,11 +35,11 @@ console.log('Evens: ' + evens)
 // If no args:  const func = () => { do stuff };
 
 const employees = [
-  {name: 'A', salary: 30000.0},
-  {name: 'B', salary: 40000.0},
-  {name: 'C', salary: 90000.0},
-  {name: 'D', salary: 100000.0},
-  {name: 'E', salary: 120000.0}
+  { name: 'A', salary: 30000.0 },
+  { name: 'B', salary: 40000.0 },
+  { name: 'C', salary: 90000.0 },
+  { name: 'D', salary: 100000.0 },
+  { name: 'E', salary: 120000.0 }
 ]
 
 // Filter
