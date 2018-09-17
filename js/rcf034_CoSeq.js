@@ -11,7 +11,7 @@ while (x < roof) {
   let ychain = [y]
 
   while (y > 1) {
-    y = (y % 2 == 0) ? (even(y)) : (odd(y))
+    y = (y % 2 === 0) ? (even(y)) : (odd(y))
     ychain.push(y)
   }
 

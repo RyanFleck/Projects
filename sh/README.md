@@ -1,6 +1,6 @@
 # Ryan's Shell Scripting Manual
 
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   View formatted manual on [ryanfleck.github.io/sh](https://ryanfleck.github.io/sh)
   
@@ -9,6 +9,9 @@
 ```bash
 echo "Hello, World!"
 ```
+
+
+## Why I am Writing Shell Scripts
 
 
 ## What is Bash Shell Scripting?

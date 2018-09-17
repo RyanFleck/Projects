@@ -1,6 +1,6 @@
 # Ryan's Scala Manual
 
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   View formatted manual on [ryanfleck.github.io/scala](https://ryanfleck.github.io/scala)
   
@@ -13,6 +13,9 @@
 println("Hello, World!")
 ```
 
+
+
+## Why I am Writing Programs in Scala
 
 
 ## Scala
@@ -43,24 +46,7 @@ import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 
 > A marker trait that enables dynamic invocations.
 
-## Spark
 
-
-```
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /___/ .__/\_,_/_/ /_/\_\   version 2.3.1
-      /_/
-         
-Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_181)
-Type in expressions to have them evaluated.
-Type :help for more information.
-
-scala> printf("Hello, world!")
-Hello, world!
-```
 
 
 ## ScalaJS

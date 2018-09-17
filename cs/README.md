@@ -1,6 +1,6 @@
 # Ryan's C# Manual
 
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   View formatted manual on [ryanfleck.github.io/cs](https://ryanfleck.github.io/cs)
   
@@ -27,6 +27,9 @@ class Hello
 ## Why C#?
 
 Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform.
+
+
+## Why I am Writing Programs in C#
 
 ## Setup
 
@@ -336,7 +339,7 @@ class Program
 
   static void PrintArray (int[] array)
   {
-	Console.WriteLine("Contents of Array:");  
+	Console.WriteLine("Contents of Array:");
 	for(int i=0; i<array.Length; i++)
 	{
 	  Console.WriteLine("array["+i+"] = "+array[i]);
@@ -402,11 +405,11 @@ for (int x=0; x<JaggedOne.Length; x++)
 **C#** enforces *definite assignment*, where it is impossible to access memory that has not been initialized by the running program. Calling an unassigned variable will usually result in a *compile-time error* unless the assignment method infers a *default value*.
 
 - A **stack** is a block of memory for storing variables and parameters.
-- A **heap** is a block of memory for storing objects. 
+- A **heap** is a block of memory for storing objects.
 
 Both of these structures have garbage collection active, freeing memory by deallocating any variables, parameters or objects that are no longer referenced by *living code*.
 
-Type | Default Value 
+Type | Default Value
 -----|--------------
 Reference types | null
 Numeric types | 0
@@ -459,7 +462,7 @@ Object Instantiation | `new Klaxon();`
 
 **Selection** statements, or **control flow**, include if, else, and switch.
 
-**if else** 
+**if else**
 
 ```cs
 if ( boolean )
@@ -472,7 +475,7 @@ if ( boolean )
 }
 ```
 
-**switch** 
+**switch**
 ```cs
 switch ( number )
 {
@@ -526,7 +529,7 @@ for ( int x=0, y=1000; x < y; x++ )
 
 **foreach** iterates over enumerable lists of elements.
 ```cs
-for ( char c in "chopsticks" ) 
+for ( char c in "chopsticks" )
 {
   Console.WriteLine( c );
 }
@@ -611,24 +614,24 @@ using RLogger = System.Custom.Logs.RLogger;
 
 **Definitions:**
 - **Class** - The most common reference type.
-- **Field** - A variable member of a class or struct. 
-- **Method** - Executes a series of statements. 
-- **x** - a 
-- **x** - a 
-- **x** - a 
-- **x** - a 
+- **Field** - A variable member of a class or struct.
+- **Method** - Executes a series of statements.
+- **x** - a
+- **x** - a
+- **x** - a
+- **x** - a
 
 Fields allow the following *field modifiers*:
 
 `static` | Static something
 `public` | Allows external method access.
-`internal` | 
+`internal` |
 `private` |
-`protected` | 
+`protected` |
 `new` |
 `unsafe` |
-`readonly` | Prevents modification after construction. 
-`volatile` | 
+`readonly` | Prevents modification after construction.
+`volatile` |
 
 See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/access-modifiers) for more information.
 
@@ -645,7 +648,7 @@ Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80
 /lib/x86_64-linux-gnu/libc.so.6(+0x70bfb)[0x7f630072cbfb]
 /lib/x86_64-linux-gnu/libc.so.6(+0x76fc6)[0x7f6300732fc6]
 ```
-Running `apt-get build-dep monodevelop` fixed all of my stability problems. 
+Running `apt-get build-dep monodevelop` fixed all of my stability problems.
 
 <br />
 
