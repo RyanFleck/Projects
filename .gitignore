@@ -27,6 +27,9 @@ local.properties
 #PYTHON
 py/__pycache__
 
+#Data
+~$*.xlsx
+
 # External tool builders
 .externalToolBuilders/
 
