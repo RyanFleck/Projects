@@ -1,6 +1,6 @@
 # Ryan's JavaScript Manual
 
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   View formatted manual on [ryanfleck.github.io/js](https://ryanfleck.github.io/js)
   
@@ -29,6 +29,9 @@ console.log("Hello, World!");
 
 ## ES6 JavaScript
 *JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. JavaScript was originally included withing *Netscape Navigator* in 1995 to add programs to webpages. In the programs below, `//>` indicates output printed to the console. Comments are inserted with `//` for shortform and `/* xyz */` for multi-line.
+
+
+## Why I am Writing Programs in JavaScript
 
 ### Console Output
 Useful for debugging and developer interaction, spitting data and text onto the command line is a great way to know if your script is actually functioning, or failed silently.
@@ -175,6 +178,93 @@ Functions can also be more permanently *declared*:
 function name (prams) {  code  }
 ```
 
+## Fat Arrow Notation
+*"Fat Arrow Notation"* is simply a way of expressing functions more simply in JavaScript ES6. The rules are quite simple, and knowing how to read arrow functions can dramatically simplify your programs. This is what a normal function looks like expressed as a verbose function, and simpler fat arrow functions:
+
+```js
+// Verbose function syntax:
+function increment_a ( x ) {
+  return x+1
+}
+
+// Store a verbose function as a const:
+const increment_b = function ( x ) {
+  return x+1
+}
+
+// Fat arrow complex:
+const increment_c = ( x ) => {
+  return x + 1
+}
+
+// Fat arrow simple:
+const increment_d = x => x + 1
+
+// All of these can be called in an identical manner: increment_*( x )
+```
+
+Herein lies the power of simplified functions: it makes it far simpler to pass functions as arguments, as `x => x+1` could be used in many ways.
+
+**Note:** below this point, different function notation will be used where it is relevant. Creating a `function` is best suited to call-anywhere, large functions, whereas arrow functions are best used embedded or for small stateless operations.
+
+## Functional Programming with LoDash
+
+Currently, the richest library of functional-programming methods is **LoDash**. Using ES6 arrow functions to clearly pass functions as arguments, and functional paradigms, it is possible to write very functional code in JS. To begin, import LoDash:
+
+```js
+const _ = require('lodash')
+```
+
+### Functions as Arguments
+
+Functions can be manipulated in JS through a variety of means, though not all are recommended and some reduce readability. The most useful way to utilize functions stored as variables is to pass them as arguments. Two important things to know before proceeding:
+1. Adding `()` to a function transforms it into it's return value.
+2. Use `const` to avoid state change/ mutable data.
+
+```js
+// Simple function that simply runs another function:
+const runfunction = function (x, func) {
+  return func(x)
+}
+```
+
+### Map
+```js
+```
+
+### Reduce
+```js
+```
+
+### Filter
+```js
+```
+
+### Some and Every
+```js
+```
+
+### Functional Programming in ES6
+
+Many of the functions present in LoDash have been implemented in the core library of ES6, meaning you usually won't have to import LoDash. Map, reduce and filter all have solid implementations now.
+
+
+## Linters
+I enjoy using the *Standard* linter because of its popularity. Running `standard --fix *.js` cleans the JS I write up nicely, and I've never had problems with execution afterwards. `--fix` does assume you are writing ES6 primarily for NodeJS, and transpiling if you need it to run in a browser.
+
+## Asynchrony
+
+**Resources:**
+1. [Essay on Callbacks](https://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/)
+1. [Async/Await Tutorial](https://javascript.info/async-await)
+1. [Learn Promises Before Async/Await](https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8)
+1. [Async Map in JavaScript](https://medium.com/@ian.mundy/async-map-in-javascript-b19439f0099)
+
+### Promises
+
+### Callbacks
+
+### Async/Await
 
 ## ReactJS Library
 

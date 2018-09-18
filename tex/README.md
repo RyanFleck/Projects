@@ -1,6 +1,6 @@
 # Ryan's LaTeX Manual
 
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   View formatted manual on [ryanfleck.github.io/tex](https://ryanfleck.github.io/tex)
   
@@ -8,6 +8,10 @@
 *LaTeX* is a typesetting language designed for producing beautiful documents. I haven't done any work on this manual yet, but it should be updated sometime during **December 2018**.
 
 
+
+## Why I am Writing Documents in LaTeX
+
+## What is LaTeX
 > LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. [latex-project.org](https://www.latex-project.org/about/)
 
 ## Resume
@@ -62,9 +66,9 @@ Currently, I process my resume in LaTeX:
 
 
 
-\section{PERSONAL \\ PROJECTS}     
-	{\sl Server} - Maintains a Debian server for Mumble, a personal cloud, remote computing.\\   
-	{\sl Blog} - Built a site using Ruby and the Jekyll static site generator. Project blog.\\   
+\section{PERSONAL \\ PROJECTS}
+	{\sl Server} - Maintains a Debian server for Mumble, a personal cloud, remote computing.\\
+	{\sl Blog} - Built a site using Ruby and the Jekyll static site generator. Project blog.\\
 	{\sl BCOM} - Top-down turn-based strategy game implemented in Java based LibGDX.\\
 	{\sl GameMaker Engine} - Has made a handful of 1-4 player, 2-D physics games.\\
 	{\sl Art, Sound, Animation} - Creates assets for games using Krita, Gimp, Audacity, etc.\\
@@ -108,7 +112,7 @@ Currently, I process my resume in LaTeX:
 
 
 \section{SPECIFIC \\ LANGUAGE \\ EXPERIENCE}
-{\sl Shell Scripting} - Uses shell scripts to initialize and automate Linux installations.\\       
+{\sl Shell Scripting} - Uses shell scripts to initialize and automate Linux installations.\\
 {\sl Java} - All school projects are completed in Java. Also used for many personal projects.\\
 {\sl Python} - First programming language. Heavily utilized in personal sysadmin.\\
 {\sl Haskell} -  Tinkered with while taking a statistics course, along with R and cLISP.\\
@@ -126,7 +130,7 @@ Currently, I process my resume in LaTeX:
 
 
 
-\section{SOCIAL \\ MEDIA}        
+\section{SOCIAL \\ MEDIA}
 {\sl Github} - github.com/ryanfleck \\
 {\sl Linkedin} - linkedin.com/in/ryan-fleck-b5769412a \\
 {\sl Facebook} - facebook.com/ryan.fleck.585 \\

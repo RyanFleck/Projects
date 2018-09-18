@@ -3,20 +3,20 @@
 
 // Expanded 20180906 to include file i/o methods.
 const fs = require('fs')
-const _ = require('lodash')
+// const _ = require('lodash')
 
 // Returns true if x is prime.
 function primep (x) {
   let sqx = parseInt(Math.sqrt(x))
   for (let i = 2; i <= sqx; i++) {
-    if (x % i == 0) { return false }
+    if (x % i === 0) { return false }
   }
   return true
 }
 
 // Returns true if x is a factor of y.
 function factorp (x, y) {
-  return ((y % x) == 0)
+  return ((y % x) === 0)
 }
 
 // Sums primes from two to x.
@@ -46,7 +46,7 @@ function sum (x) {
     // Ensure all args are same type.
     // Sum args.
     return 0
-  } else if (arglen == 1) {
+  } else if (arglen === 1) {
     switch (typeof x) {
       default:
         console.log(typeof x)
@@ -96,6 +96,24 @@ function parseToIntArray (txt) {
   return parseToString(txt).split('\n').map((x) => parseInt(x)).filter((x) => isNum(x))
 }
 
+function logSquareArray (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+}
+
+// Modified lodash methods:
+
+/*
+function minimumElement (array) {
+  return _.reduce()
+}
+*/
+
+// RTree
+
+class rTreeNode 
+
 // Internal Library Methods
 
 function isNum (x) {
@@ -114,4 +132,4 @@ function prObj (name, obj) {
   console.log('\n' + name + ' Properties:\n' + JSON.stringify(obj, null, 2))
 }
 
-module.exports = { primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray }
+module.exports = { logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray }
