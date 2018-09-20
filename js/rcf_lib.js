@@ -1,5 +1,6 @@
 // Useful functions for handling prime numbers.
 // Just temp until I can get home and install math.js module.
+// ...and it's grown. Needs to be transpiled before web use.
 
 // Expanded 20180906 to include file i/o methods.
 const fs = require('fs')
@@ -110,9 +111,25 @@ function minimumElement (array) {
 }
 */
 
-// RTree
+// Binary Tree
 
-class rTreeNode 
+class TNode {
+  constructor (data, left = null, right = null) {
+    this.data = data
+    this.left = left
+    this.right = right
+    this.depth = null
+  }
+}
+
+class BinaryTree {
+  constructor (rootdata) {
+    this.root = new TNode(rootdata)
+  }
+}
+
+class BinarySearchTree extends BinaryTree {
+}
 
 // Internal Library Methods
 
@@ -132,4 +149,4 @@ function prObj (name, obj) {
   console.log('\n' + name + ' Properties:\n' + JSON.stringify(obj, null, 2))
 }
 
-module.exports = { logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray }
+module.exports = { BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray }
