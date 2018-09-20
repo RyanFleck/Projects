@@ -8,6 +8,8 @@
 #JS
 node_modules/
 .env
+.vs/
+
 # eclipse specific git ignore
 *.pydevproject
 .project

@@ -1,5 +1,9 @@
 // ES5
+
+// Successfully renders a spinning cube.
+
 // Based on tutorial https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/
+// Based on tutorial https://www.jonathan-petitcolas.com/2013/04/02/create-rotating-cube-in-webgl-with-threejs.html
 
 console.log('[RCF037] Loaded!');
 
@@ -14,7 +18,7 @@ let colors = {
 
 window.addEventListener('load',init,false);
 
-var scene, camera, fieldOfView, aspectRatio, 
+var scene, camera, fieldOfView, aspectRatio, cube, cube2, cube3 
     nearPlane, farPlane, HEIGHT, WIDTH,renderer, container;
 
 
@@ -23,6 +27,7 @@ function init(){
     createScene();
     //createLights();
     //createObj();
+    render();
 }
 
 function createScene(){
@@ -37,13 +42,11 @@ function createScene(){
     aspectRatio = WIDTH/HEIGHT;
     fieldOfView = 75;
     nearPlane = 1;
-    farPlane = 10000;
+    farPlane = 10;
     camera = new THREE.PerspectiveCamera( fieldOfView, aspectRatio,
         nearPlane, farPlane );
-    let cp = camera.position;
-    cp.x = 0;
-    cp.y = 100;
-    cp.z = 200;
+    camera.position.set(0,3.5,5);
+    camera.lookAt(scene.position)
 
     console.log('[RCF037] createScene(): Init renderer.');
     renderer = new THREE.WebGLRenderer({
@@ -58,16 +61,44 @@ function createScene(){
     container = document.getElementById('rcf037');
     container.appendChild(renderer.domElement);
     window.addEventListener('resize',handleWindowResize, false);
-    /*
-    window.addEventListener('resize',function () {
-        setTimeout(function() {handleWindowResize()}, 250)}, false);
-        // This still makes a bunch of calls, but they are ignored.
-        //   ...rework needed.
-    */
+
+    // Cube
+    cube = new THREE.Mesh(new THREE.CubeGeometry(2, 2, 2), new THREE.MeshNormalMaterial());
+    cube2 = new THREE.Mesh(new THREE.CubeGeometry(2, 2, 2), new THREE.MeshNormalMaterial());
+    cube3 = new THREE.Mesh(new THREE.CubeGeometry(2, 2, 2), new THREE.MeshNormalMaterial());
+    scene.add(cube);
+    //cube2.translateX(4).translateZ(-1);
+    //cube3.translateX(-4).transalteZ(1);
+    scene.add(cube2);
+    scene.add(cube3);
+}
+
+function render(){
+    requestAnimationFrame(render);
+    rotateCubes();
+    renderer.render(scene,camera);
+}
+
+function rotateCubes(){
+    let speed = 0.01;
+    let c1 = cube.rotation;
+    let c2 = cube2.rotation;
+    let c3 = cube3.rotation;
+
+    c1.x -= speed * 2;
+    c1.y -= speed;
+    c1.z -= speed * 3;
+
+    c2.x -= speed * 2;
+    c2.z -= speed;
+    c2.y -= speed * 3;
+
+    c3.y -= speed * 2;
+    c3.x -= speed;
+    c3.z -= speed * 3;
 }
 
 function handleWindowResize() {
-    //if( HEIGHT != window.innerHeight || WIDTH != window.innerWidth){
     HEIGHT = window.innerHeight;
     WIDTH = window.innerWidth;
     console.log("[RCF037] handleWindowResize(): Resizing to "+WIDTH+", "+HEIGHT+".")
