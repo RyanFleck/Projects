@@ -8,12 +8,16 @@
 <!--YDKJS:p0-->
 <!--EQJS:p12-->
 
-Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language.
-
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```js
 console.log("Hello, World!");
 ```
+
+<br />
+
+Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language.
+
+<br />
 
 > Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure. ...Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. **Because JavaScript can be used without understanding, the understanding of the language is often never attained.** ([Kyle](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md))
 
@@ -21,6 +25,12 @@ console.log("Hello, World!");
 
 > There are those who will say *terrible* things about the JavaScript language. Many of thse things are true. (Eloquent JS, p.6)
 
+
+<br />
+
+
+
+<br />
 
 ## Resources
 1. [**You Don't Know JS,** Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
@@ -32,6 +42,9 @@ console.log("Hello, World!");
 
 
 ## Why I am Writing Programs in JavaScript
+In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments can be viewed online.
+
+<br />
 
 ### Console Output
 Useful for debugging and developer interaction, spitting data and text onto the command line is a great way to know if your script is actually functioning, or failed silently.
@@ -265,6 +278,12 @@ I enjoy using the *Standard* linter because of its popularity. Running `standard
 ### Callbacks
 
 ### Async/Await
+
+## Three.js
+
+**Resources:**
+1. [Running game and production walkthrough.](https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/)
+2. [ES6/Webpack/ThreeJS starter kit.](https://www.giacomodebidda.com/threejs-project-starter-for-es6-and-webpack2/)
 
 ## ReactJS Library
 

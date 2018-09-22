@@ -11,11 +11,20 @@ puts "Hello, World!"
 ```
 
 
+<br />
+
+
+
+<br />
+
 ## What is Ruby?
 
 In descriptors: high-level, object-oriented and interpreted. Ruby occupies a similar market space to *Python*, with both striving to create a more human-readable language. I'll update this as I learn more, with my primary resources being [Ruby Koans](http://rubykoans.com/) and [Codecademy](https://www.codecademy.com/courses/learn-ruby). In code blocks below, `#>` indicates text that is printed to the console.
 
 ## Why I am Writing Programs in Ruby
+I'm not, really; it seems like a fun language with lots of respected devs. I don't have time to learn or tinker with this very flexible scripting lang at the moment.
+
+<br />
 
 ## The Basics
 

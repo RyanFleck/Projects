@@ -14,9 +14,15 @@ println("Hello, World!")
 ```
 
 
+<br />
+
+
+
+<br />
+
 
 ## Why I am Writing Programs in Scala
-
+*Xalgorithms* work is currently done on a base of scalable technologies: Kafka, Akka, Spark, Kubernetes, etc. To contribute to the project, I've learned a little Scala.
 
 ## Scala
 
@@ -47,6 +53,9 @@ import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 > A marker trait that enables dynamic invocations.
 
 
+
+
+<br />
 
 
 ## ScalaJS

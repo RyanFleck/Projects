@@ -15,13 +15,13 @@ int main(void){
 }
 ```
 
+<br />
 
 
-## Venerable, Glorious C
-
-Insert: Something about how C is the lowlevel backbone of modern computing.
+<br />
 
 ## Why I am Writing Programs in C
+C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML)
 
 ## Installation
 

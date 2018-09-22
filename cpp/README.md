@@ -14,9 +14,19 @@ int main(){
 ```
 
 
+<br />
+
+
+
+<br />
+
 ## What is C++?
+C with a billion things stuck on. A whole different beast.
 
 ## Why I am Writing Programs in C++
+To keep up with my friends in advanced programming courses at *uOttawa* at the time of writing.
+
+<br />
 
 ## Core C++
 
@@ -31,7 +41,7 @@ Simple standard output:
 #include <iostream>
 
 int main(){
-  // <<  is the PUT TO operator, and writes the second arg into the first. 
+  // <<  is the PUT TO operator, and writes the second arg into the first.
   std::cout << "Hello, World!\n";
   // std::  specifies that cout is found in the standard library namespace.
   // cout  is the standard output stream.
@@ -85,8 +95,8 @@ int main(){
   cout << "Multiply x*y="<< x*y <<"\n";
   cout << "Divide y/x="<< y/x <<"\n";
   cout << "Modulo x\%y="<< x%y <<"\n";
- 
-  
+
+
   complex<double> cz = 1;
   complex<double> cy {2.3,2.5};
   vector<int> v {1,2,3,4,5,6};
@@ -128,14 +138,14 @@ bool accept_switch(){
     default:
       cout << "I'll take that as a 'No'...\n";
       return false;
-  } 
+  }
   return false;
 
 }
 
 int main(){
   cout << "RCF004 - Simple cin user input.\n";
- 
+
   /*
   if(accept()){
     cout << "Yes!";
@@ -162,7 +172,7 @@ bool prompt(){
     cout << "Would you like to proceed? (y/n) >> ";
     char answer = 0;
     cin >> answer;
-    
+
     switch( answer ){
       case 'y':
       case 'Y':
@@ -185,7 +195,7 @@ bool prompt(){
 
 int main(){
   cout << "RCF005 - Simple++ cin user input.\n";
-  prompt(); 
+  prompt();
 
   //Output:
   //  Would you like to proceed? (y/n) >> y
@@ -200,7 +210,7 @@ using namespace std;
 
 int main(){
   cout << "RCF006 - Pointers and Arrays\n";
-  
+
   char v[6]; // Array of six characters.
   char* p;   // Pointer to a character (*).
 
@@ -211,13 +221,13 @@ int main(){
 
   for(auto x:v1) cout << x << " ";
   cout << "\n";
- 
+
   //This prints garbage integers, what is going on?
   for(auto x:v2) cout << x << " ";
   cout << "\n";
 
   for(auto x:{"foo","bar","blatz"}){
-    cout << x << " "; 
+    cout << x << " ";
   }
 
   int* ip = &v1[3];

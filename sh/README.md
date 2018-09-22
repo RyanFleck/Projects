@@ -10,9 +10,14 @@
 echo "Hello, World!"
 ```
 
+<br />
+
+
+
+<br />
 
 ## Why I am Writing Shell Scripts
-
+'Cause having your computer do something you do daily *on your behalf* is fantastic.
 
 ## What is Bash Shell Scripting?
 

@@ -5,10 +5,6 @@
   View formatted manual on [ryanfleck.github.io/cs](https://ryanfleck.github.io/cs)
   
 
-I've always had strong feelings against the anti-competetive Microsoft, and the products it produces. Yesterday's Github aquisition will probably end in the same way the aquisitions of Nokia, Rare, LinkedIn, Mojang and Xamarin did; with stagnation, a halt in new and interesting innovations, and no new fantastic products.
-
-This being said, I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience, and to do this competently I feel it is in my best interest to invest some time in C#.
-
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```csharp
 using System;
@@ -22,6 +18,17 @@ class Hello
 }
 ```
 
+<br />
+
+I've always had strong feelings against the anti-competetive Microsoft, and the products it produces. Yesterday's Github aquisition will probably end in the same way the aquisitions of Nokia, Rare, LinkedIn, Mojang and Xamarin did; with stagnation, a halt in new and interesting innovations, and no new fantastic products.
+
+This being said, I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience, and to do this competently I feel it is in my best interest to invest some time in C#.
+
+<br />
+
+
+
+<br />
 
 
 ## Why C#?
@@ -30,6 +37,9 @@ Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpo
 
 
 ## Why I am Writing Programs in C#
+
+
+<br />
 
 ## Setup
 
@@ -638,6 +648,9 @@ See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/cs
 
 <!-- End of C# core language manual. -->
 
+
+<br />
+
 ## Monodevelop
 
 When first installing *monodevelop*, it was very unstable. I ran it from the command line to see any errors, and sure enough:
@@ -649,6 +662,9 @@ Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80
 /lib/x86_64-linux-gnu/libc.so.6(+0x76fc6)[0x7f6300732fc6]
 ```
 Running `apt-get build-dep monodevelop` fixed all of my stability problems.
+
+<br />
+
 
 <br />
 

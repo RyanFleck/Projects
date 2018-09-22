@@ -8,8 +8,14 @@
 *LaTeX* is a typesetting language designed for producing beautiful documents. I haven't done any work on this manual yet, but it should be updated sometime during **December 2018**.
 
 
+<br />
+
+
+<br />
+
 
 ## Why I am Writing Documents in LaTeX
+Pretty.
 
 ## What is LaTeX
 > LaTeX, which is pronounced «Lah-tech» or «Lay-tech» (to rhyme with «blech» or «Bertolt Brecht»), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. [latex-project.org](https://www.latex-project.org/about/)
