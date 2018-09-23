@@ -1,0 +1,11 @@
+/home/rflec028/Projects/cs/rcf012_dotnet/bin/Debug/netcoreapp2.1/rcf012_dotnet.deps.json
+/home/rflec028/Projects/cs/rcf012_dotnet/bin/Debug/netcoreapp2.1/rcf012_dotnet.runtimeconfig.json
+/home/rflec028/Projects/cs/rcf012_dotnet/bin/Debug/netcoreapp2.1/rcf012_dotnet.runtimeconfig.dev.json
+/home/rflec028/Projects/cs/rcf012_dotnet/bin/Debug/netcoreapp2.1/rcf012_dotnet.dll
+/home/rflec028/Projects/cs/rcf012_dotnet/bin/Debug/netcoreapp2.1/rcf012_dotnet.pdb
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.csprojAssemblyReference.cache
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.csproj.CoreCompileInputs.cache
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.AssemblyInfoInputs.cache
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.AssemblyInfo.cs
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.dll
+/home/rflec028/Projects/cs/rcf012_dotnet/obj/Debug/netcoreapp2.1/rcf012_dotnet.pdb
