@@ -38,7 +38,7 @@ def title(title_string):
 
 def subtitle(subtitle_string):
     """Prints a more subtle section divider in the same style as title()"""
-    print(" "+subtitle_string)
+    print("\n "+subtitle_string)
     print("-"+(len(subtitle_string)*"-")+"-+\n")
 
 
@@ -107,7 +107,27 @@ class TableGlob:
 
     # Modification methods.
 
-    # Deprecated, legacy functionality.
+
+
+
+    # Debugging methods.
+
+    def dump_table(self, sheetid):
+        """Given a sheet id, prints the corresponding table."""
+        if self.sheet_data_frames.__contains__(sheetid):
+            frame = self.sheet_data_frames[sheetid]
+            subtitle("Sheet {0}".format(sheetid))
+            print(frame.to_string())
+            return True
+        return False
+
+    def dump_all_tables(self):
+        """Prints all tables in glob to console."""
+        title("Dump Table '{0}'".format(self.name))
+        for sheet in self.sheet_data_frames:
+            self.dump_table(sheet)
+
+    # Deprecated and legacy functionality.
 
     def sheets(self):
         """Deprecated."""
@@ -130,8 +150,8 @@ class TableGlob:
         dbg(e, "good", "TblGlb", "Data Shape (ROW,COL): {0}".format(tuples))
         return tuples
 
-# Word Document I/O
 
+# Word Document I/O
 
 class DocuGlob:
     """Docs"""
@@ -193,6 +213,9 @@ class TestTableGlob(unittest.TestCase):
         dbg(True, "good", "Unit", "Testing table import: data shape tuples.")
         table = TableGlob("Primary Table")
         self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
+
+        # To reduce disk R/W, this unit test is disabled for now.
+        '''
         write_name = table.export_excel_table()
         self.assertIsNotNone(write_name)
         written = os.path.exists(write_name)
@@ -200,6 +223,15 @@ class TestTableGlob(unittest.TestCase):
         if(written):
             os.remove(write_name)
         self.assertFalse(os.path.exists(write_name))
+        '''
+
+    def test_04_dumping(self):
+        """Ensures debugging dump-table methods work."""
+        dbg(True, "good", "Unit", "Testing table import: data shape tuples.")
+        table = TableGlob("Primary Table")
+        self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
+        table.dump_all_tables()
+
 
 if __name__ == '__main__':
     e = True  # Debug is ON when unit testing.
