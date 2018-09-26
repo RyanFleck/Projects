@@ -59,8 +59,9 @@ class TableGlob:
         self.name = name
         self.filepath = ""
         self.tablefile = None
-        self.sheetlist = None  # Deprecated. TODO: Remove functionality.
+        self.sheetlist = None  # Deprecated.
         self.sheet_data_frames = {}
+        self.test_date = TIME.strftime("%Y%m%d")
 
     def import_table(self, filepath):
         """Given a path to an excel table, attempts to ingest the table's sheets."""
@@ -107,8 +108,11 @@ class TableGlob:
 
     # Modification methods.
 
-
-
+    def get_sheet(self, sheetid):
+        """passes the dataframe by reference for modification."""
+        if self.sheet_data_frames.__contains__(sheetid):
+            return self.sheet_data_frames[sheetid]
+        return False
 
     # Debugging methods.
 
@@ -124,28 +128,22 @@ class TableGlob:
     def dump_all_tables(self):
         """Prints all tables in glob to console."""
         title("Dump Table '{0}'".format(self.name))
+        x = 0
         for sheet in self.sheet_data_frames:
             self.dump_table(sheet)
+            x += 1
 
-    # Deprecated and legacy functionality.
+        print("\nDumped {0} tables from '{1}'.\n".format(x, self.name))
 
     def sheets(self):
-        """Deprecated."""
+        """Returns the original list of excel sheets."""
         return self.sheetlist
 
-    # Returns a pandas dataframe from the excel sheet specified.
-    def get_df(self, sheetid):
-        """Deprecated."""
-        if str(sheetid) in self.sheetlist:
-            return self.tablefile.parse(sheetid)
-        return False
-
     def data_shape_tuple(self):
-        """Deprecated."""
+        """Deprecated method."""
         tuples = []
-        for sheetid in self.sheetlist:
-            temptable = self.get_df(str(sheetid))
-            tuples.append((temptable.shape[0], temptable.shape[1]))
+        for sheet in self.sheet_data_frames:
+            tuples.append((self.sheet_data_frames[sheet].shape[1],self.sheet_data_frames[sheet].shape[0]))
 
         dbg(e, "good", "TblGlb", "Data Shape (ROW,COL): {0}".format(tuples))
         return tuples
