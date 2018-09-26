@@ -12,8 +12,8 @@
  *  4. Setup your database and users. Import data.
  *  5. Find out where your pg_hba.conf file is located by running in psql:
  *      show hba_file
- *  6. Modify the hba file to trust users from localhost.
- *
+ *  6. Modify the hba file to trust users from... 
+ *         (You'll have to figure this out yourself.)
  */
 
 import java.sql.DriverManager
@@ -32,3 +32,5 @@ val resultSet = statement.executeQuery("select * from emps")
 
 println("Result in set? >> "+resultSet.next)
 println("Property of first result? >> "+resultSet.getString("last_name"))
+
+// It works!
