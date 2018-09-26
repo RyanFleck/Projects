@@ -14,19 +14,19 @@ from rcf_logs import dbg
 
 # Program Information and Options
 revision = "1.1.1"
-debug = False #True enables verbose logging {and Chrome GUI}.
+debug = False  # True enables verbose logging {and Chrome GUI}.
+
 
 def iterate(x):
-  x = x+1
-  return x
-
-
+    x = x+1
+    return x
 
 
 class TestMethods(unittest.TestCase):
 
-  def test_iterate(self):
-    self.assertTrue( 1 == 1 )
+    def test_iterate(self):
+        self.assertTrue(1 == 1)
+
 
 if __name__ == '__main__':
-  unittest.main()
+    unittest.main()

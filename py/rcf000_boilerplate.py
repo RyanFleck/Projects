@@ -5,25 +5,27 @@
 # Import Modules:
 import sys
 
-errs=0
+errs = 0
 
 try:
-  import rcf_logs as rcf
-  dbg = rcf.dbg
-  rcf.intro("Program Name",1997)
+    import rcf_logs as rcf
+    dbg = rcf.dbg
+    rcf.intro("Program Name", 1997)
 except:
-  print("[ "+'\033[91m'+"logs"+'\033[0m'+" ] Please download rcf_logs.py to this directory for enhanced logging.")
-  def dbg(x,y,message):
-    print("["+'\033[92m'+y.center(8)+'\033[0m'+"] "+message) 
+    print("[ "+'\033[91m'+"logs"+'\033[0m' +
+          " ] Please download rcf_logs.py to this directory for enhanced logging.")
 
-dbg("good","init","Modules loaded.")
+    def dbg(x, y, message):
+        print("["+'\033[92m'+y.center(8)+'\033[0m'+"] "+message)
+
+dbg("good", "init", "Modules loaded.")
 
 
-#Program
+# Program
 
 
-#Exit Message:
-if( errs == 0 ):
-  dbg("good","exit","Program completed successfully.")
+# Exit Message:
+if(errs == 0):
+    dbg("good", "exit", "Program completed successfully.")
 else:
-  dbg("warning","exit","Program completed with "+str(errs)+" errors.")
+    dbg("warning", "exit", "Program completed with "+str(errs)+" errors.")

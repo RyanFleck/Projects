@@ -1,10 +1,25 @@
 #!/usr/bin/python3
+"""RCF-LIB.py
+
+A useful collection of functions primarily for I/O on the command line and to
+or from Microsoft file formats. Notable functionality includes:
+
+    TableGlob()
+        Object that holds mutable copies of all sheets within an MS-Excel file.
+
+    DocuGlob()
+        Object that holds a mutable copy of a MS-Word document.
+
+Todo:
+    * Fix TableGlob
+    * Implement DocuGlob
+"""
 
 import os
-import random
+# import random
 import unittest
 import pandas as pd
-import xlrd
+# import xlrd
 from rcf_logs import dbg
 
 e = False  # Debug.
@@ -80,7 +95,7 @@ class TableGlob:
     # Exports to the same directory as the imported file with a mutated
     # filename. Mutation in the form string, "{0}-out" , where {0} inserts
     # the original filename. ".xslx" is automatically appended.
-    def exportExcelTable(self, mutation):
+    def export_excel_table(self, mutation):
         """Docs"""
         return 0
 
