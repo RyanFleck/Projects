@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
 # Ryan Fleck 2018
-
-import os
 
 # Console Colors
 RESET = '\033[0m'

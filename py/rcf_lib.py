@@ -16,6 +16,7 @@ Todo:
 """
 
 import os
+from datetime import datetime as dt
 # import random
 import unittest
 import pandas as pd
@@ -23,6 +24,7 @@ import pandas as pd
 from rcf_logs import dbg
 
 e = False  # Debug.
+TIME = dt.now()
 
 
 def title(title_string):
@@ -52,6 +54,9 @@ class TableGlob:
 
     def __init__(self, name):
         self.name = name
+        self.filepath = ""
+        self.tablefile = None
+        self.sheet_data_frames = {}
 
     def import_table(self, filepath):
         """Given a path to an excel table, attempts to ingest the table's sheets."""
@@ -63,6 +68,7 @@ class TableGlob:
                 self.sheetlist = self.tablefile.sheet_names
                 dbg(e, "good", "TblGlb", "Sheets: {0}".format(self.sheetlist))
                 self.filepath = filepath
+                self.__process_sheets_to_dataframes()
                 return True
             else:
                 dbg(e, "fail", "TblGlb", "Path incorrect or table invalid!")
@@ -71,19 +77,42 @@ class TableGlob:
             dbg(e, "fail", "TblGlb", "Table already imported!")
             return False
 
+    def __process_sheets_to_dataframes(self):
+        """Places each sheet into a Pandas dataframe for processing."""
+        for sheet in self.tablefile.sheet_names:
+            dbg(e, "good", "TblGlb", "Importing sheet: {0}".format(sheet))
+            self.sheet_data_frames[sheet] = pd.read_excel(
+                self.tablefile, sheet)
+
+    def export_excel_table(self):
+        """Saves all dataframe sheets to an excel table.
+
+        Exports to the same directory as the imported file with a mutated
+        filename. Mutation in the form string, "{0}-out" , where {0} inserts
+        the original filename. ".xslx" is automatically appended.
+        """
+        dbg(e, "good", "TblGlb", "Exporting excel table as {0}".format(
+            TIME.strftime("Auto%Y%m%d")))
+        # writer = pd.ExcelWriter('table_export.xslx')
+        for dataframe in self.sheet_data_frames:
+            print(self.sheet_data_frames[dataframe].to_string())
+        return True
+
+    # Deprecated, legacy functionality.
+
     def sheets(self):
-        """Docs"""
+        """Deprecated."""
         return self.sheetlist
 
     # Returns a pandas dataframe from the excel sheet specified.
     def get_df(self, sheetid):
-        """Docs"""
+        """Deprecated."""
         if str(sheetid) in self.sheetlist:
             return self.tablefile.parse(sheetid)
         return False
 
     def data_shape_tuple(self):
-        """Docs"""
+        """Deprecated."""
         tuples = []
         for sheetid in self.sheetlist:
             temptable = self.get_df(str(sheetid))
@@ -91,13 +120,6 @@ class TableGlob:
 
         dbg(e, "good", "TblGlb", "Data Shape (ROW,COL): {0}".format(tuples))
         return tuples
-
-    # Exports to the same directory as the imported file with a mutated
-    # filename. Mutation in the form string, "{0}-out" , where {0} inserts
-    # the original filename. ".xslx" is automatically appended.
-    def export_excel_table(self, mutation):
-        """Docs"""
-        return 0
 
 # Word Document I/O
 
@@ -155,6 +177,14 @@ class TestTableGlob(unittest.TestCase):
         self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
         self.assertIsNotNone(table.data_shape_tuple())
 
+    def test_03_export(self):
+        """Ensures that the table is imported correctly by verifying the data
+        in each sheet has a shape.
+        """
+        dbg(True, "good", "Unit", "Testing table import: data shape tuples.")
+        table = TableGlob("Primary Table")
+        self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
+        self.assertTrue(table.export_excel_table())
 
 if __name__ == '__main__':
     e = True  # Debug is ON when unit testing.
