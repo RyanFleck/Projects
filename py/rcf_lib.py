@@ -13,14 +13,17 @@ or from Microsoft file formats. Notable functionality includes:
 Todo:
     * Fix TableGlob
     * Implement DocuGlob
+
+Additional modules required:
+    * xlrd
+    * openpyxl
+    * pandas
 """
 
 import os
 from datetime import datetime as dt
-# import random
 import unittest
 import pandas as pd
-# import xlrd
 from rcf_logs import dbg
 
 e = False  # Debug.
@@ -56,6 +59,7 @@ class TableGlob:
         self.name = name
         self.filepath = ""
         self.tablefile = None
+        self.sheetlist = None  # Deprecated. TODO: Remove functionality.
         self.sheet_data_frames = {}
 
     def import_table(self, filepath):
@@ -77,26 +81,31 @@ class TableGlob:
             dbg(e, "fail", "TblGlb", "Table already imported!")
             return False
 
+    # Import/export functionality.
+
     def __process_sheets_to_dataframes(self):
         """Places each sheet into a Pandas dataframe for processing."""
         for sheet in self.tablefile.sheet_names:
             dbg(e, "good", "TblGlb", "Importing sheet: {0}".format(sheet))
             self.sheet_data_frames[sheet] = pd.read_excel(
                 self.tablefile, sheet)
+        return True
 
     def export_excel_table(self):
-        """Saves all dataframe sheets to an excel table.
-
-        Exports to the same directory as the imported file with a mutated
-        filename. Mutation in the form string, "{0}-out" , where {0} inserts
-        the original filename. ".xslx" is automatically appended.
-        """
-        dbg(e, "good", "TblGlb", "Exporting excel table as {0}".format(
-            TIME.strftime("Auto%Y%m%d")))
-        # writer = pd.ExcelWriter('table_export.xslx')
+        """Saves all dataframe sheets to an excel table. Returns saved filename."""
+        new_file_name = self.filepath[0:-5] + \
+            "-auto-{0}".format(TIME.strftime("%Y%m%d-%H%M.xlsx"))
+        dbg(e, "good", "TblGlb",
+            "Exporting excel table as {0}".format(new_file_name))
+        writer = pd.ExcelWriter(new_file_name)
         for dataframe in self.sheet_data_frames:
             print(self.sheet_data_frames[dataframe].to_string())
-        return True
+            self.sheet_data_frames[dataframe].to_excel(writer, dataframe)
+
+        writer.save()
+        return new_file_name
+
+    # Modification methods.
 
     # Deprecated, legacy functionality.
 
@@ -184,7 +193,13 @@ class TestTableGlob(unittest.TestCase):
         dbg(True, "good", "Unit", "Testing table import: data shape tuples.")
         table = TableGlob("Primary Table")
         self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
-        self.assertTrue(table.export_excel_table())
+        write_name = table.export_excel_table()
+        self.assertIsNotNone(write_name)
+        written = os.path.exists(write_name)
+        self.assertTrue(written)
+        if(written):
+            os.remove(write_name)
+        self.assertFalse(os.path.exists(write_name))
 
 if __name__ == '__main__':
     e = True  # Debug is ON when unit testing.
