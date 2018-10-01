@@ -28,6 +28,16 @@ local.properties
 
 #PYTHON
 py/__pycache__
+/*.egg-info
+/.spyderproject
+.spyderproject
+.idea/*
+/**/__pycache__
+/**/.ipynb_checkpoints
+/.doit.db.bak
+/.doit.db.dat
+/.doit.db.dir
+py/webdrivers/*.exe
 
 #Data
 ~$*.xlsx

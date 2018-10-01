@@ -24,7 +24,9 @@ import os
 from datetime import datetime as dt
 import unittest
 import pandas as pd
+from colorama import init as cinit
 from rcf_logs import dbg
+cinit()  # Filters ANSI escape sequences and inserts Win32 calls.
 
 e = False  # Debug.
 TIME = dt.now()
@@ -143,7 +145,8 @@ class TableGlob:
         """Deprecated method."""
         tuples = []
         for sheet in self.sheet_data_frames:
-            tuples.append((self.sheet_data_frames[sheet].shape[1],self.sheet_data_frames[sheet].shape[0]))
+            tuples.append(
+                (self.sheet_data_frames[sheet].shape[1], self.sheet_data_frames[sheet].shape[0]))
 
         dbg(e, "good", "TblGlb", "Data Shape (ROW,COL): {0}".format(tuples))
         return tuples
@@ -166,6 +169,13 @@ class DocuGlob:
         return 0
 
     # TODO: Implement me :)
+
+
+# BrowserUnit creates UnitTest objects.
+
+class BrowserUnit:
+    def __init__(self, name, destructive=True):
+        self.name = name
 
 
 # Unit Tests for RCF-Lib methods.
@@ -230,6 +240,12 @@ class TestTableGlob(unittest.TestCase):
         self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
         table.dump_all_tables()
 
+    def test_05_bu_init(self):
+        """Ensures BrowserUnit can be instantiated correctly."""
+        dbg(True, "good", "Unit", "Testing BrowserUnit: ")
+        table = TableGlob("Primary Table")
+        self.assertTrue(table.import_table(self.TEST_TABLE_PATH))
+        table.dump_all_tables()
 
 if __name__ == '__main__':
     e = True  # Debug is ON when unit testing.
