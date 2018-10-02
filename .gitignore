@@ -38,6 +38,8 @@ py/__pycache__
 /.doit.db.dat
 /.doit.db.dir
 py/webdrivers/*.exe
+py/webdrivers/gecko*
+py/webdrivers/chrome*
 
 #Data
 ~$*.xlsx
