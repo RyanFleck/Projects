@@ -1,8 +1,8 @@
-const r = require('./rcf_lib')
+const r = require('./rcf_lib');
 
-r.title('Testing')
+r.title('Testing');
 
-console.log(r.range(12))
+console.log(r.range(12));
 
-r.sum(12)
-r.sum('Hello')
+r.sum(12);
+r.sum('Hello');
