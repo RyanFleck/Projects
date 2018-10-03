@@ -1,7 +1,7 @@
 // Lists the largest prime factor.
 
 const initial = 879643292384;
-let target = parseInt(Math.sqrt(initial));
+let target = parseInt(Math.sqrt(initial), 10);
 let answer = 0;
 
 while (target > 0) {

@@ -21,18 +21,22 @@ const line = console.log;
 line('Test line');
 
 function randomFunction() {
-  switch (parseInt(3 * Math.random())) {
+  switch (parseInt(3 * Math.random(), 10)) {
     case 0:
-      return function () {
+      return () => {
         console.log('Zero.');
       };
     case 1:
-      return function () {
+      return () => {
         console.log('One.');
       };
     case 2:
-      return function () {
+      return () => {
         console.log('Two.');
+      };
+    default:
+      return () => {
+        console.log('Generator failed.');
       };
   }
 }
@@ -74,15 +78,17 @@ function doIfSafe(n, string, func) {
       return func(n, string);
     }
   }
+  return false;
 }
 
 function createSafeVersion(func) {
-  return function (n, string) {
+  return (n, string) => {
     if (n != null && typeof n === 'number') {
       if (string != null && typeof string === 'string') {
         return func(n, string);
       }
     }
+    return false;
   };
 }
 
@@ -97,7 +103,7 @@ function getSubstringOfLen(n, substr) {
 doIfSafe(3, 'Hello?', printMessageNTimes);
 console.log(doIfSafe(4, 'Hello?', getSubstringOfLen));
 
-const printMessageNTimes_Safe = createSafeVersion(printMessageNTimes);
+const printMessageNTimesSafe = createSafeVersion(printMessageNTimes);
 
-printMessageNTimes_Safe(3, "Hm? Safe version? Next call for 3x shouldn't run:");
-printMessageNTimes_Safe(3, null);
+printMessageNTimesSafe(3, "Hm? Safe version? Next call for 3x shouldn't run:");
+printMessageNTimesSafe(3, null);

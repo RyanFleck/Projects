@@ -14,7 +14,7 @@ let z = 0;
 let t = 0;
 
 while (x < 4000000) {
-  if (x % 2 == 0) {
+  if (x % 2 === 0) {
     answer += x;
     console.log(x);
   }
