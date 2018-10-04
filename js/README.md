@@ -33,9 +33,11 @@ Ah, JavaScript; I've had mixed feelings about it for years now. My negative feel
 <br />
 
 ## Resources
+
+1. [**Eloquent JavaScript**](https://eloquentjavascript.net/) by Marijn Haverbeke.
+1. [**Mastering Modular JavaScript (ES6)**](https://github.com/mjavascript/mastering-modular-javascript/tree/master/chapters)
 1. [**You Don't Know JS,** Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
-2. [Eloquent JavaScript]() by XYZ.
-3. **CodeCademy** [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
+1. **CodeCademy** [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
 
 ## ES6 JavaScript
 *JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. JavaScript was originally included withing *Netscape Navigator* in 1995 to add programs to webpages. In the programs below, `//>` indicates output printed to the console. Comments are inserted with `//` for shortform and `/* xyz */` for multi-line.
@@ -284,6 +286,7 @@ I enjoy using the *Standard* linter because of its popularity. Running `standard
 **Resources:**
 1. [Running game and production walkthrough.](https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/)
 2. [ES6/Webpack/ThreeJS starter kit.](https://www.giacomodebidda.com/threejs-project-starter-for-es6-and-webpack2/)
+3. Gyro controls [A](https://gist.github.com/bellbind/d2be9cc09bf6241f255d) [B](https://www.learnthreejs.com/device-orientation-gyroscope-controls-tutorial/)
 
 ## ReactJS Library
 
@@ -295,6 +298,10 @@ Allows users to build compile-to-native mobile apps in javascript.
 
 ## JQuery
 ### OWL Carousel
+
+## NodeJS and MongoDB
+
+After installing MongoDB and loading <http://media.mongodb.org/zips.json> into the database, (or another from <https://github.com/ozlerhakan/mongodb-json-files>,)
 
 ## Babel
 Babel, an ES6 to ES5 compiler (termed *transpiler* by some,) is a tool for ensuring modern JavaScript code does not confuse older browsers by converting modern (Post-2015) JavaScript to a backwards-compatible version.

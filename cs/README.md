@@ -648,6 +648,25 @@ See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/cs
 
 <!-- End of C# core language manual. -->
 
+<br />
+
+## C\# on GNU/Linux
+
+*Mono* isn't nearly as stable or featureful as Microsoft's full implementation of C#. To use all the features of modern C#, it is necessary to install [.NET Core](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning). While it feels like mixing dirt into an otherwise free operating system, it's definitely better than just using Windows. Microsoft has gone to some effort to make their products and services compatible with 'Linux', and from what I've seen so far they've done a good job. (Though the microsoft design ethos remains.)
+
+After installing .NET Core and the .NET SDK, create a new project by invoking dotnet:
+```sh
+dotnet new console -o projectName
+cd projectName
+dotnet run
+ #> Hello, World!
+```
+To run from the `cs` folder, execute:
+```sh
+dotnet run --project rcfxxx_folder
+```
+
+[Get started with .NET Core.](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning)
 
 <br />
 
