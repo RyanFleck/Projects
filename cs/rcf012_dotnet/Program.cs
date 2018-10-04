@@ -7,6 +7,8 @@ namespace rcf012_dotnet
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Console.ReadKey(); // Prevent immediate closure at end of program.
         }
     }
 }

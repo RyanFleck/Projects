@@ -681,28 +681,30 @@
     ]
   },
   "packageFolders": {
-    "/home/rflec028/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\ryan.fleck\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rflec028/Projects/cs/rcf012_dotnet/rcf012_dotnet.csproj",
+      "projectUniqueName": "C:\\Users\\ryan.fleck\\Documents\\Projects\\cs\\rcf012_dotnet\\rcf012_dotnet.csproj",
       "projectName": "rcf012_dotnet",
-      "projectPath": "/home/rflec028/Projects/cs/rcf012_dotnet/rcf012_dotnet.csproj",
-      "packagesPath": "/home/rflec028/.nuget/packages/",
-      "outputPath": "/home/rflec028/Projects/cs/rcf012_dotnet/obj/",
+      "projectPath": "C:\\Users\\ryan.fleck\\Documents\\Projects\\cs\\rcf012_dotnet\\rcf012_dotnet.csproj",
+      "packagesPath": "C:\\Users\\ryan.fleck\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ryan.fleck\\Documents\\Projects\\cs\\rcf012_dotnet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/rflec028/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ryan.fleck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
