@@ -1,8 +1,8 @@
-# Ryan's Shell Scripting Manual
+# Programming in Shell Scripting
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-  View formatted manual on [ryanfleck.github.io/sh](https://ryanfleck.github.io/sh)
+  View formatted manual: [ryanfleck.github.io/sh](https://ryanfleck.github.io/sh)
   
 
 [Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
