@@ -1,0 +1,1 @@
+This project is primarily going to be used in Visual Studio, and so the appropriate files have been included.
