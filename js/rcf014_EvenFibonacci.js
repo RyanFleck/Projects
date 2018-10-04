@@ -8,17 +8,17 @@
  * Make it work, then make it work fast. 20180822
  */
 
-let answer = 0
-let x = 1
-let z = 0
-let t = 0
+let answer = 0;
+let x = 1;
+let z = 0;
+let t = 0;
 
 while (x < 4000000) {
-  if (x % 2 == 0) {
-    answer += x
-    console.log(x)
+  if (x % 2 === 0) {
+    answer += x;
+    console.log(x);
   }
-  x = fib(x)
+  x = fib(x);
 }
 
 // Was checking for four billion instead of million. Wow.
@@ -35,11 +35,11 @@ while(x<4000000000){
 }
 */
 
-function fib (x) {
-  t = x
-  x = x + z
-  z = t
-  return x
+function fib(x) {
+  t = x;
+  x += z;
+  z = t;
+  return x;
 }
 
 /*
@@ -50,4 +50,4 @@ function fib3(x){
   return x;
 }
 */
-console.log('\nSolution: ' + answer + '\n')
+console.log(`\nSolution: ${answer}\n`);

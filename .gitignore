@@ -40,6 +40,7 @@ py/__pycache__
 py/webdrivers/*.exe
 py/webdrivers/gecko*
 py/webdrivers/chrome*
+py/secrets.py
 
 #Data
 ~$*.xlsx

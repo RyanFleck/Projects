@@ -1,23 +1,23 @@
 // Lists the nth prime number.
 
-alg7(4)
-alg7(10341)
+alg7(4);
+alg7(10341);
 
-function alg7 (target) {
-  let prime = 1
-  let indice = 0
+function alg7(target) {
+  let prime = 1;
+  let indice = 0;
 
   while (indice < target) {
-    prime++
-    if (primep(prime)) { indice++ }
+    prime++;
+    if (primep(prime)) { indice++; }
   }
-  console.log('Solution: prime ' + indice + ' is ' + prime + '.')
+  console.log(`Solution: prime ${indice} is ${prime}.`);
 }
 
-function primep (x) {
-  let sqx = parseInt(Math.sqrt(x))
+function primep(x) {
+  const sqx = parseInt(Math.sqrt(x));
   for (let i = 2; i <= sqx; i++) {
-    if (x % i == 0) { return false }
+    if (x % i == 0) { return false; }
   }
-  return true
+  return true;
 }
