@@ -1,0 +1,10 @@
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\bin\Debug\netcoreapp2.1\rcf013_LearningCS.deps.json
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\bin\Debug\netcoreapp2.1\rcf013_LearningCS.runtimeconfig.json
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\bin\Debug\netcoreapp2.1\rcf013_LearningCS.runtimeconfig.dev.json
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\bin\Debug\netcoreapp2.1\rcf013_LearningCS.dll
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\bin\Debug\netcoreapp2.1\rcf013_LearningCS.pdb
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\obj\Debug\netcoreapp2.1\rcf013_LearningCS.csproj.CoreCompileInputs.cache
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\obj\Debug\netcoreapp2.1\rcf013_LearningCS.AssemblyInfoInputs.cache
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\obj\Debug\netcoreapp2.1\rcf013_LearningCS.AssemblyInfo.cs
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\obj\Debug\netcoreapp2.1\rcf013_LearningCS.dll
+C:\Users\ryan.fleck\Documents\Projects\cs\rcf013_LearningCS\rcf013_LearningCS\obj\Debug\netcoreapp2.1\rcf013_LearningCS.pdb
