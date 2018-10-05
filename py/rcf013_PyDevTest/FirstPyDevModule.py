@@ -7,6 +7,8 @@ Created on Oct. 4, 2018
 
 '''
 
+from datetime import datetime
+
 class FirstClass:
     
     def __init__(self, message):
@@ -17,6 +19,9 @@ class FirstClass:
         print(arg)
 
 
+class Utils(FirstClass): # Inherits from FirstClass
+    def timestamp(self):
+        print(datetime.now().strftime("%Y%m%d %H:%M"))
 
 
 
@@ -25,3 +30,9 @@ if __name__ == '__main__':
     
     inst = FirstClass("It's a gas!")
     inst.hello()
+    
+    u=Utils("Utilities!")
+    ts = u.timestamp
+    ts()
+    
+    # WOW. Breakpoints are crazy good.
