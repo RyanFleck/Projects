@@ -16,7 +16,7 @@ r.logSquareArray(grid);
 const entryExists = (arr, y, x) => (typeof arr[y] !== 'undefined' && typeof arr[y][x + 1] !== 'undefined');
 
 const movOpts = (arr, y, x) => {
-  console.log(entryExists(arr, y, x));
+    console.log(entryExists(arr, y, x));
 };
 
 movOpts(twoByTwo, 133, 13);

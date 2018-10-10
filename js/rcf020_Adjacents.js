@@ -8,13 +8,13 @@ const maxIndice = bigLen - adjWidth;
 const products = [];
 
 for (let indice = 0; indice <= maxIndice; indice++) {
-  const workingArray = bigArr.slice(indice, (indice + adjWidth));
-  let acc = 1;
-  for (let waind = 0; waind < adjWidth; waind++) {
-    acc *= workingArray[waind];
+    const workingArray = bigArr.slice(indice, (indice + adjWidth));
+    let acc = 1;
+    for (let waind = 0; waind < adjWidth; waind++) {
+        acc *= workingArray[waind];
     // console.log(acc);
-  }
-  if (acc != 0) { products.push(acc); }
+    }
+    if (acc != 0) { products.push(acc); }
 }
 
 products.sort((a, b) => b - a);

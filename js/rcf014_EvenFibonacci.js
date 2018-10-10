@@ -14,11 +14,11 @@ let z = 0;
 let t = 0;
 
 while (x < 4000000) {
-  if (x % 2 === 0) {
-    answer += x;
-    console.log(x);
-  }
-  x = fib(x);
+    if (x % 2 === 0) {
+        answer += x;
+        console.log(x);
+    }
+    x = fib(x);
 }
 
 // Was checking for four billion instead of million. Wow.
@@ -36,10 +36,10 @@ while(x<4000000000){
 */
 
 function fib(x) {
-  t = x;
-  x += z;
-  z = t;
-  return x;
+    t = x;
+    x += z;
+    z = t;
+    return x;
 }
 
 /*

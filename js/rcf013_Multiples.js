@@ -8,11 +8,11 @@ let answer = 0;
 const max = 1000;
 
 for (let x = 3; x < max; x += 3) {
-  answer += x;
+    answer += x;
 }
 
 for (let x = 5; x < max; x += 5) {
-  if (x % 3 != 0) { answer += x; }
+    if (x % 3 != 0) { answer += x; }
 }
 
 console.log(`\nSolution: ${answer}\n`);

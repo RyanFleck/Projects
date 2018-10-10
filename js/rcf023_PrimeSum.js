@@ -7,10 +7,10 @@ const limit = 2000000;
 let sum = 2;
 
 for (let x = 3; x < limit; x += 2) {
-  if (prime.primep(x)) {
-    sum += x;
+    if (prime.primep(x)) {
+        sum += x;
     // console.log("Adding prime "+x+" to total, now "+sum);
-  }
+    }
 }
 console.log(`Primes below ${limit} add to ${sum}`);
 

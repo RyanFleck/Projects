@@ -3,8 +3,8 @@
 console.log('TEST: Hello, World!');
 
 function increment(y) {
-  y += 1;
-  return y;
+    y += 1;
+    return y;
 }
 
 const x = 1;

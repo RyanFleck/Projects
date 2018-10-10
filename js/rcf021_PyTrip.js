@@ -17,26 +17,26 @@ const limit = 1000;
 let a = 1;
 
 while (a < limit) {
-  const maxB = limit - a - 1;
-  for (let b = a; b < maxB; b++) {
-    const c = limit - a - b;
-    // console.log("a:"+a+" b:"+b+" c:"+c);
-    if (testPythag(a, b, c) && testInequality(a, b, c)) {
-      console.log(`\nANSWER: a:${a} b:${b} c:${c}, product:${a * b * c}\n`);
-      break;
+    const maxB = limit - a - 1;
+    for (let b = a; b < maxB; b++) {
+        const c = limit - a - b;
+        // console.log("a:"+a+" b:"+b+" c:"+c);
+        if (testPythag(a, b, c) && testInequality(a, b, c)) {
+            console.log(`\nANSWER: a:${a} b:${b} c:${c}, product:${a * b * c}\n`);
+            break;
+        }
     }
-  }
 
-  a++;
+    a++;
 }
 
 function testInequality(x, y, z) {
-  // console.log("a:"+x+" b:"+y+" c:"+z+" a<b<c? "+( x < y && y < z ));
-  return (x < y && y < z);
+    // console.log("a:"+x+" b:"+y+" c:"+z+" a<b<c? "+( x < y && y < z ));
+    return (x < y && y < z);
 }
 
 function testPythag(x, y, z) {
-  // console.log("a:"+x+" b:"+y+" c:"+z+" Pythag? >>"+((x*x + y*y)== z*z));
-  // console.log("a:"+x+" b:"+y+" c:"+z+" a+b+c=1K? >>"+((x + y + z)== 1000));
-  return ((x * x + y * y) == z * z);
+    // console.log("a:"+x+" b:"+y+" c:"+z+" Pythag? >>"+((x*x + y*y)== z*z));
+    // console.log("a:"+x+" b:"+y+" c:"+z+" a+b+c=1K? >>"+((x + y + z)== 1000));
+    return ((x * x + y * y) == z * z);
 }

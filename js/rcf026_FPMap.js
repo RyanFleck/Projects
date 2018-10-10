@@ -31,11 +31,11 @@ console.log(`Evens: ${evens}`);
 // If no args:  const func = () => { do stuff };
 
 const employees = [
-  { name: 'A', salary: 30000.0 },
-  { name: 'B', salary: 40000.0 },
-  { name: 'C', salary: 90000.0 },
-  { name: 'D', salary: 100000.0 },
-  { name: 'E', salary: 120000.0 },
+    { name: 'A', salary: 30000.0 },
+    { name: 'B', salary: 40000.0 },
+    { name: 'C', salary: 90000.0 },
+    { name: 'D', salary: 100000.0 },
+    { name: 'E', salary: 120000.0 },
 ];
 
 // Filter
@@ -73,24 +73,24 @@ console.log(`Total cost of employees: ${staffPay}`);
 r.subtitle('Combined Operations: Chaning Map, Filter, Reduce');
 
 const people = [
-  {
-    name: 'Dan', salary: 62300, age: 27, gender: 'M',
-  },
-  {
-    name: 'Eve', salary: 113500, age: 50, gender: 'F',
-  },
-  {
-    name: 'Jude', salary: 50500, age: 21, gender: 'F',
-  },
-  {
-    name: 'Ed', salary: 107000, age: 45, gender: 'M',
-  },
-  {
-    name: 'Emmanuel', salary: 99000, age: 39, gender: 'M',
-  },
-  {
-    name: 'Alice', salary: 75000, age: 36, gender: 'F',
-  },
+    {
+        name: 'Dan', salary: 62300, age: 27, gender: 'M',
+    },
+    {
+        name: 'Eve', salary: 113500, age: 50, gender: 'F',
+    },
+    {
+        name: 'Jude', salary: 50500, age: 21, gender: 'F',
+    },
+    {
+        name: 'Ed', salary: 107000, age: 45, gender: 'M',
+    },
+    {
+        name: 'Emmanuel', salary: 99000, age: 39, gender: 'M',
+    },
+    {
+        name: 'Alice', salary: 75000, age: 36, gender: 'F',
+    },
 ];
 
 const males = _.filter(people, p => p.gender === 'M');

@@ -37,9 +37,9 @@ console.log(ul('Test Coercsion:'));
 const string = '5';
 const integer = 5;
 console.log((string == integer)
-  ? " '5' == 5 returns true." : " '5' == 5 returns false.");
+    ? " '5' == 5 returns true." : " '5' == 5 returns false.");
 console.log((string === integer)
-  ? " '5' === 5 returns true." : " '5' === 5 returns false.");
+    ? " '5' === 5 returns true." : " '5' === 5 returns false.");
 
 // Primitives can use methods:
 console.log(`${ul('Primitive Methods:')}\nStrings:`);
@@ -95,8 +95,8 @@ const rregex = new RegExp();
 // Object Literal syntax can also be used:
 const rlarray = ['one', 'two', 'three'];
 const rlobj = {
-  name: 'The best object.',
-  color: 'Red.',
+    name: 'The best object.',
+    color: 'Red.',
 };
 
 // CHAPTER 1 PAGE 10
@@ -104,11 +104,11 @@ const rlobj = {
 // Supportive methods:
 
 function ul(str) {
-  return (`\n\n${str}\n${'-'.repeat(str.length)}`);
+    return (`\n\n${str}\n${'-'.repeat(str.length)}`);
 }
 
 function pul(str) { console.log(ul(str)); }
 
 function prObj(name, obj) {
-  console.log(`\n${name} Properties:\n${JSON.stringify(obj, null, 2)}`);
+    console.log(`\n${name} Properties:\n${JSON.stringify(obj, null, 2)}`);
 }

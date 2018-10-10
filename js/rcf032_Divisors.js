@@ -4,22 +4,22 @@ const debug = true;
 const rlog = (str) => { if (debug) { console.log(str); } };
 
 const getTriangleNumber = (lastint) => {
-  let acc = 0;
-  for (let x = 1; x <= lastint; x++) {
-    acc += x;
-  }
-  return acc;
+    let acc = 0;
+    for (let x = 1; x <= lastint; x++) {
+        acc += x;
+    }
+    return acc;
 };
 
 const getDivisors = (trinum) => {
-  // sq = parseInt(Math.sqrt(trinum))
-  const half = parseInt(trinum / 2);
-  const ans = [1];
-  for (let x = 2; x <= half; x++) {
-    if (trinum % x == 0) { ans.push(x); }
-  }
-  ans.push(trinum);
-  return ans;
+    // sq = parseInt(Math.sqrt(trinum))
+    const half = parseInt(trinum / 2);
+    const ans = [1];
+    for (let x = 2; x <= half; x++) {
+        if (trinum % x == 0) { ans.push(x); }
+    }
+    ans.push(trinum);
+    return ans;
 };
 
 const getDivisorLen = trinum => getDivisors(trinum).length;
@@ -29,90 +29,90 @@ const getDivisorLen = trinum => getDivisors(trinum).length;
 // console.log(getDivisors(28))
 
 const algo12 = (start, upto) => {
-  // Log/Test this.
-  let acc = getTriangleNumber(start - 1);
-  let max = 0;
-  for (let x = start; x <= upto; x++) {
-    acc += x;
-    rlog(`Testing ${x}, acc=${acc}`);
-    const divisors = getDivisors(acc);
-    rlog(`Divisors: ${divisors}`);
-    const dlen = divisors.length;
-    console.log(`${x}: ${dlen}`);
-    if (x % 1000 == 0) { console.log(`Milestone: ${x}`); }
-    if (dlen > max) {
-      max = dlen;
-      console.log(`${x}: ${max}`);
-      if (dlen >= 500) {
-        console.log(`Testing ${x}, acc=${acc}`);
-        console.log(`Divisor len: ${dlen}`);
-        return acc;
-        // break;
-      }
+    // Log/Test this.
+    let acc = getTriangleNumber(start - 1);
+    let max = 0;
+    for (let x = start; x <= upto; x++) {
+        acc += x;
+        rlog(`Testing ${x}, acc=${acc}`);
+        const divisors = getDivisors(acc);
+        rlog(`Divisors: ${divisors}`);
+        const dlen = divisors.length;
+        console.log(`${x}: ${dlen}`);
+        if (x % 1000 == 0) { console.log(`Milestone: ${x}`); }
+        if (dlen > max) {
+            max = dlen;
+            console.log(`${x}: ${max}`);
+            if (dlen >= 500) {
+                console.log(`Testing ${x}, acc=${acc}`);
+                console.log(`Divisor len: ${dlen}`);
+                return acc;
+                // break;
+            }
+        }
     }
-  }
 };
 
 const getDivisors_Fast = (trinum) => {
-  const half = parseInt(trinum / 2);
-  const ans = [1];
-  for (let x = 2; x <= half; x++) {
-    if (trinum % x == 0) {
-      ans.push(x);
-    } else if (x <= 6) {
-      break;
+    const half = parseInt(trinum / 2);
+    const ans = [1];
+    for (let x = 2; x <= half; x++) {
+        if (trinum % x == 0) {
+            ans.push(x);
+        } else if (x <= 6) {
+            break;
+        }
     }
-  }
-  ans.push(trinum);
-  return ans;
+    ans.push(trinum);
+    return ans;
 };
 /* Algo12_Fast
  * Speed improvements made by quitting earlier.
  */
 
 const algo12_Fast = (start) => {
-  let acc = getTriangleNumber(start - 1);
-  let max = 0;
-  for (let x = start; max < 500; x++) {
-    acc += x;
-    const divisors = getDivisors_Fast(acc);
-    const dlen = divisors.length;
-    // console.log(x+": "+dlen)
-    if (x % 1000 === 0) { console.log(`Milestone: ${x}`); }
+    let acc = getTriangleNumber(start - 1);
+    let max = 0;
+    for (let x = start; max < 500; x++) {
+        acc += x;
+        const divisors = getDivisors_Fast(acc);
+        const dlen = divisors.length;
+        // console.log(x+": "+dlen)
+        if (x % 1000 === 0) { console.log(`Milestone: ${x}`); }
 
-    if (dlen > max) {
-      max = dlen;
-      console.log(`${x}: ${max}`);
-      if (dlen >= 500) {
-        console.log(`Testing ${x}, acc=${acc}`);
-        console.log(`Divisor len: ${dlen}`);
-        return acc;
-        // break;
-      }
+        if (dlen > max) {
+            max = dlen;
+            console.log(`${x}: ${max}`);
+            if (dlen >= 500) {
+                console.log(`Testing ${x}, acc=${acc}`);
+                console.log(`Divisor len: ${dlen}`);
+                return acc;
+                // break;
+            }
+        }
     }
-  }
 };
 
 // Failure.
 const scaleCalibrate1 = () => {
-  let len = 0;
-  let x = 1;
-  while (len < 500) {
-    len = getDivisorLen(x);
-    console.log(`${x}: ${len}`);
-    x *= 2;
-  }
+    let len = 0;
+    let x = 1;
+    while (len < 500) {
+        len = getDivisorLen(x);
+        console.log(`${x}: ${len}`);
+        x *= 2;
+    }
 };
 
 const scaleCalibrate2 = (targetDivLen) => {
-  // let divisors = []
-  let acc = 1;
-  for (let l = 1; l < targetDivLen; l++) {
-    acc *= l;
-    console.log(`${l}: ${acc}`);
+    // let divisors = []
+    let acc = 1;
+    for (let l = 1; l < targetDivLen; l++) {
+        acc *= l;
+        console.log(`${l}: ${acc}`);
     // divisors.push(l);
-  }
-  console.log(`The answer should be around ${acc}`);
+    }
+    console.log(`The answer should be around ${acc}`);
 };
 
 // algo12(5,7)
