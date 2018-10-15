@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="bizcard.css"?>
+<BusinessCard>
+    <name>Ryan Fleck</name>
+    <company>MNP LLP</company>
+    <position>Co-Op Developer</position>
+    <email type="work">ryan.fleck@protonmail.com</email>
+</BusinessCard>

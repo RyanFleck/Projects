@@ -1,0 +1,15 @@
+BusinessCard {
+    color: #333;
+    text-align: left;
+    width: 150px;
+    border: 1px solid #CCC;
+}
+
+name{
+    margin-bottom: 1%;
+}
+
+name::before{
+    content: "Name: ";
+    font-size: 70%;
+}
