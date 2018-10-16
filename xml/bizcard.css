@@ -1,15 +1,35 @@
+rolodex{
+    padding: 1em;
+}
+
 BusinessCard {
-    color: #333;
+    background: #444;
     text-align: left;
-    width: 150px;
-    border: 1px solid #CCC;
+    border: 1px solid gold;
+    color: gold;
+    margin: 1em;
+    padding: 1em;
+    display: block;
+    min-width: 100px;
+    max-width: 300px;
 }
 
-name{
-    margin-bottom: 1%;
+name, company, position, email {
+    color: gold;
+    display: block;
 }
 
-name::before{
-    content: "Name: ";
-    font-size: 70%;
+name {
+    font-size: 1.3em;
 }
+
+position {
+    font-size: 0.8em;
+}
+
+/*
+name::before{ font-size: 0.7em; content: "Name"; margin-right: 4px;}
+company::before{ font-size: 0.7em; content: "Company"; margin-right: 4px;}
+position::before{ font-size: 0.7em; content: "Position"; margin-right: 4px;}
+email::before{ font-size: 0.7em; content: "attr(type) email"; margin-right: 4px;}
+*/

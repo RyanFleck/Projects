@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="bizcard.css"?>
-<BusinessCard>
-    <name>Ryan Fleck</name>
-    <company>MNP LLP</company>
-    <position>Co-Op Developer</position>
-    <email type="work">ryan.fleck@protonmail.com</email>
-</BusinessCard>
+<rolodex>
+    <BusinessCard>
+        <name>Ryan Fleck</name>
+        <company>Unaffiliated</company>
+        <position>Consulting Developer</position>
+        <email type="work">ryan.fleck@protonmail.com</email>
+    </BusinessCard>
+
+    <BusinessCard>
+        <name>Clone of Ryan Fleck 12</name>
+        <company>MNP LLP</company>
+        <position>Co-Op Developer</position>
+        <email type="work">ryan.fleck@protonmail.com</email>
+    </BusinessCard>
+
+    <BusinessCard>
+        <name>Clone of Ryan Fleck 13</name>
+        <company>Starbucks Coffee</company>
+        <position>Barista</position>
+        <email type="work">ryan.fleck@protonmail.com</email>
+    </BusinessCard>
+
+        <BusinessCard>
+        <name>Clone of Ryan Fleck 22</name>
+        <company>Unaffiliated</company>
+        <position>Consulting Analyst</position>
+        <email type="work">ryan.fleck@protonmail.com</email>
+    </BusinessCard>
+</rolodex>
