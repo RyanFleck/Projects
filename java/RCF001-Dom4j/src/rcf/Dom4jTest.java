@@ -8,10 +8,16 @@ package rcf;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+
 import org.dom4j.Document;
 import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
+
+import rcf.utils.Doc;
+import rcf.utils.IO;
 
 /**
  * @since 1,0.0
@@ -19,7 +25,7 @@ import org.dom4j.io.SAXReader;
  * 
  *         FooBar is a test-class for tinkering with Dom4j.
  */
-public class FooBar {
+public class Dom4jTest {
 
     /**
      * This PSVM runs through the following concepts from the Dom4j page: 1 - Parsing XML from a file. 2 - Iterating through elements in a
@@ -61,7 +67,16 @@ public class FooBar {
 
         // 3 - Applying XPath expressions to select nodes.
 
-        printElementInfo(root);
+        printFullElementInfo(root);
+        
+        //List<Node> items = doc.selectNodes("//rss/channel/item");
+        //System.out.println(items.toString());
+        @SuppressWarnings("unused")
+        Node n = doc.selectSingleNode("//rss/channel");
+        
+        // Prove I can write utilites.
+        IO.prove();
+        Doc.prove();
 
     }
 
@@ -112,7 +127,7 @@ public class FooBar {
     /**
      * Prints the name, children array and short content of an XML node.
      */
-    private static void printElementInfo(Element x) {
+    private static void printFullElementInfo(Element x) {
 
         String name;
         String content;
@@ -134,7 +149,7 @@ public class FooBar {
 
         children = childArray.toString();
 
-        System.out.println("\nName: " + name + "\nContent: " + content + "\nChildren: " + children + "\n");
+        System.out.format("%nName: %s%nContent: %s%nChildren: %s%n", name, content, children);
     }
 
 }
