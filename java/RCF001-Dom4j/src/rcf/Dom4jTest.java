@@ -23,14 +23,24 @@ import rcf.utils.IO;
  * @since 1,0.0
  * @author Ryan.Fleck
  * 
- *         FooBar is a test-class for tinkering with Dom4j.
+ *         This is a test-class for tinkering with Dom4j.
+ * 
+ *         Requires dom4j and jaxen .jar files.
  */
 public class Dom4jTest {
 
     /**
-     * This PSVM runs through the following concepts from the Dom4j page: 1 - Parsing XML from a file. 2 - Iterating through elements in a
-     * document. 3 - Applying XPath expressions to select nodes. 4 - Fast looping method for large documents. 5 - Creating/writing XML documents
-     * to file system.
+     * This PSVM runs through the following concepts from the Dom4j page:
+     * 
+     * 1 - Parsing XML from a file.
+     * 
+     * 2 - Iterating through elements in a document.
+     * 
+     * 3 - Applying XPath expressions to select nodes.
+     * 
+     * 4 - Fast looping method for large documents.
+     * 
+     * 5 - Creating/writing XML documentsto file system.
      * 
      * @param args Canonical input-stream processing variable.
      */
@@ -56,24 +66,18 @@ public class Dom4jTest {
         Element root = doc.getRootElement();
         recursiveWalkDOM(root);
 
-        /*
-         * At this point in the program, output appears as follows:
-         * 
-         * Dom4j XML-Processing Experiment. Document read to var 'd'. Recursively walk DOM for rss, printing out tags. rss: channel: title: OC
-         * Transpo - Live Updates link: http://www.octranspo.com/ description: Daily route changes resulting ... link: item: title: Queensway
-         * Station: Elevator pubDate: Wed, 17 Oct 2018 07:08:00 EDT category: General Message category: affectedRoutes- link:
-         * http://octranspo1.com/update-d... description: October 17 2018 - <p><strong>Q... guid: http://octranspo1.com/update-d...
-         */
-
         // 3 - Applying XPath expressions to select nodes.
 
         printFullElementInfo(root);
+
+        // List<Node> items = doc.selectNodes("//rss/channel/item");
+        // System.out.println(items.toString());
+        Node n = doc.selectSingleNode("//rss/channel/item");
+        System.out.format("%nValue%s %s%n",":",n.valueOf("@title")); // Why won't this work?
         
-        //List<Node> items = doc.selectNodes("//rss/channel/item");
-        //System.out.println(items.toString());
-        @SuppressWarnings("unused")
-        Node n = doc.selectSingleNode("//rss/channel");
-        
+        List<Node> nl = doc.selectNodes("//rss/channel/item");
+        System.out.format("Found %s items in the RSS feed.%n%n",nl.toArray().length);
+
         // Prove I can write utilites.
         IO.prove();
         Doc.prove();
