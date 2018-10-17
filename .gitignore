@@ -81,3 +81,7 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+
+# JAVA
+
+java/*/doc/*
