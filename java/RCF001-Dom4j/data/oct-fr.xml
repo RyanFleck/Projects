@@ -1,0 +1,287 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+    <channel>
+        <title>OC Transpo - Live Updates</title>
+        <link>http://www.octranspo.com/</link>
+        <description>
+Les changements quotidiennement apportés aux circuits en raison de détours et d’annulations sont inscrits ici, jusqu’à 21 h la semaine et le samedi et jusqu’à 17 h le dimanche, par le personnel d’OC Transpo.
+        </description>
+        <atom:link href="http://www.octranspo1.com/feeds/updates-fr" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Ascenseur : Station Queensway</title>
+            <pubDate>
+                <!-- feeds -->
+Wed, 17 Oct 2018 07:12:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ General Message ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes- ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/213905</link>
+            <description>
+                <![CDATA[
+17 October 2018 - <p><strong>Queensway en direction sud ascenseur no. 3 :</strong><br /> L&rsquo;ascenseur situ&eacute; du c&ocirc;t&eacute; est de la station Queensway, en direction sud, est actuellement hors service en raison de mesures d&rsquo;entretiens impr&eacute;vus. Nous nous attendons &agrave; ce que l&rsquo;ascenseur soit hors service pendant quelques jours et regrettons tous les d&eacute;sagr&eacute;ments caus&eacute;s par cette interruption de service.</p><p> Les usagers qui ont besoin d&rsquo;utiliser un ascenseur pour acc&eacute;der &agrave; une autre plateforme seront en mesure de prendre celui situ&eacute; &agrave; l&rsquo;autre extr&eacute;mit&eacute; de la plateforme. Par exemple, si vous descendez &agrave; la plateforme inf&eacute;rieure en direction ouest et que vous devez acc&eacute;der &agrave; la plateforme sup&eacute;rieure en direction ouest, vous devrez utiliser l&rsquo;autre ascenseur de la plateforme direction ouest, monter &agrave; l&rsquo;&eacute;tage sup&eacute;rieur, vous rendre &agrave; l&rsquo;autre extr&eacute;mit&eacute; de la plateforme et y prendre l&rsquo;ascenseur vers le bas. Une fois arriv&eacute;, dirigez-vous vers l&rsquo;autre extr&eacute;mit&eacute; de la plateforme et reprenez l&rsquo;ascenseur vers le haut jusqu&rsquo;&agrave; la plateforme sup&eacute;rieure direction ouest.</p><p> Pour obtenir de l&rsquo;aide concernant la planification de trajets, t&eacute;l&eacute;phonez au 613-741-4390 ou appuyez sur la touche sans frais &laquo; Info &raquo; situ&eacute;e sur tous les t&eacute;l&eacute;phones Bell de la station. Pour obtenir de l&rsquo;aide en cas d&rsquo;urgence, utilisez la bo&icirc;te jaune d&rsquo;appel d&rsquo;urgence qui se trouve le plus proche de vous.</p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/213905</guid>
+        </item>
+        <item>
+            <title>
+DÉVIATION: Fermeture du croissant Chapel (entre les avenues Mann et Lees)
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Mon, 15 Oct 2018 14:51:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-16,85 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/215293</link>
+            <description>
+                <![CDATA[
+15 October 2018 - <p> Les 16 et 17 octobre 2018, de<strong> 9 h &agrave; 15 h 30</strong>, les autobus des <strong>circuits 16 et 85</strong> suivront un d&eacute;tour en raison de la fermeture du croissant Chapel entre les avenues Mann et Lees. Veuillez pr&eacute;voir quelques minutes suppl&eacute;mentaires pour vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuit 16 Main desservira Somerset, Chapel, Mann et Lees</li><li> Circuit 16 Britannia desservira Lees et Main</li><li> Circuit 85 Lees desservira King Edward et Lees</li><li> Circuit 85 Bayshore desservira Lees et King Edward</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 40%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style=" text-align: left;"> Circuits</th><th scope="col" style=" text-align: left;"> Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td rowspan="2"> n<sup>o</sup> 6804 --&nbsp;Chapel (c&ocirc;t&eacute;-est) et Wiggins</td><td> 16</td><td> n<sup>o</sup> 7617 --&nbsp;Mann (c&ocirc;t&eacute;-sud) et Chapel</td></tr><tr><td> 85</td><td> n<sup>o</sup> 6803 --&nbsp;Lees (c&ocirc;t&eacute;-est) et Chapel</td></tr><tr><td rowspan="2"> n<sup>o</sup> 6805 --&nbsp;Chapel (c&ocirc;t&eacute;-ouest) et Wiggins</td><td> 16</td><td> n<sup>o</sup> 7621 --&nbsp;Chapel (c&ocirc;t&eacute;-ouest) et Mann</td></tr><tr><td> 85</td><td> n<sup>o</sup> 6806 --&nbsp;Lees (c&ocirc;t&eacute;-ouest) et Chapel</td></tr></tbody></table><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/chapel_closure85_v2.pdf" target="_blank"><em><img alt="Carte des itinéraires de détour pour le circuit 85, fermeture du croissant Chapel" src="http://www.octranspo.com/images/files/maps/detours/2018/chapel_closure85_v2.png" style="width: 100%;" /></em></a></p><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/chapel_closure16_v2.pdf" target="_blank"><em><img alt="Carte des itinéraires de détour pour le circuits 16, fermeture du croissant Chapel" src="http://www.octranspo.com/images/files/maps/detours/2018/chapel_closure16_v2.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/215293</guid>
+        </item>
+        <item>
+            <title>Ascenceur : Station Bayshore</title>
+            <pubDate>
+                <!-- feeds -->
+Fri, 12 Oct 2018 08:39:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ General Message ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes- ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/123832</link>
+            <description>
+                <![CDATA[
+12 October 2018 - <p><u><strong>Bayshore en direction sud ascenseur no. 44 :</strong></u><br /> L&rsquo;ascenseur sud situ&eacute; &agrave; Bayshore l&rsquo;arr&ecirc;t 4B est hors service en raison de travaux d&#39;entretien. Nous nous attendons &agrave; ce que l&rsquo;ascenseur soit hors service jusqu&#39;au 19 oct., 15 h. Nous regrettons tout d&eacute;sagr&eacute;ment caus&eacute; par cette interruption de service.</p><p> Les usagers qui ont besoin d&rsquo;un ascenseur pour acc&eacute;der &agrave; la plateforme du Transitway en direction est ou au centre commercial peuvent emprunter le passage pour pi&eacute;tons jusqu&rsquo;&agrave; la plateforme locale en direction nord afin de prendre l&rsquo;ascenseur qui m&egrave;ne au centre commercial et &agrave; la plateforme du Transitway en direction est.</p><p> Pour obtenir de l&rsquo;aide concernant la planification de trajets, t&eacute;l&eacute;phonez au 613-741-4390 ou appuyez sur la touche sans frais &laquo; Info &raquo; situ&eacute;e sur tous les t&eacute;l&eacute;phones Bell de la station. Pour obtenir de l&rsquo;aide en cas d&rsquo;urgence, utilisez la bo&icirc;te jaune d&rsquo;appel d&rsquo;urgence qui se trouve le plus proche de vous</p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/123832</guid>
+        </item>
+        <item>
+            <title>DÉVIATION: Fermeture du chemin Piperville</title>
+            <pubDate>
+                <!-- feeds -->
+Wed, 03 Oct 2018 09:43:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-222 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/215188</link>
+            <description>
+                <![CDATA[
+03 October 2018 - <p> D&egrave;s <strong>7 h</strong> le lundi 15 octobre jusqu&rsquo;&agrave; <strong>17 h</strong> le mardi 30 octobre 2018, les autobus du <strong>circuit 222</strong> seront d&eacute;vi&eacute;s en raison de la fermeture du chemin Piperville, entre les tron&ccedil;ons nord et sud du chemin Anderson. Veuillez pr&eacute;voir quelques minutes de plus lors de vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Les autobus du circuit 222 Centre-ville prendront l&rsquo;autoroute 417, les chemins Boudary et Piperville, le stationnement du Centre communautaire de Carlsbad Spring et les chemins Piperville, Russell, Leitrim et Anderson.</li><li> Les autobus du circuit 222 Vars prendront l&rsquo;autoroute 417, les chemins Anderson, Leitrim, Russell et Piperville, le stationnement du Centre communautaire de Carlsbad Spring, et les chemins Piperville et Boundary jusqu&rsquo;&agrave; la bretelle d&rsquo;acc&egrave;s &agrave; l&rsquo;autoroute 417, en direction est.</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 40%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style="text-align: left;"> Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup>&nbsp;1535 --&nbsp;Anderson (c&ocirc;t&eacute;-ouest) et Piperville</td><td colspan="1"> &nbsp;</td></tr><tr><td> n<sup>o</sup>&nbsp;1533 --&nbsp;Piperville (c&ocirc;t&eacute;-nord) et Anderson</td><td colspan="1" rowspan="8"> n<sup>o</sup>&nbsp;1078 -- Piperville et Centre communautaire de Carlsbad Springs</td></tr><tr><td> n<sup>o</sup> 1571 -- Piperville (c&ocirc;t&eacute;-nord) et parc Landry</td></tr><tr><td> n<sup>o</sup> 1842 -- Piperville (c&ocirc;t&eacute;-nord) et Hall</td></tr><tr><td> n<sup>o</sup> 1810 -- Piperville (c&ocirc;t&eacute;-nord) et 4995&nbsp;Piperville</td></tr><tr><td> n<sup>o</sup> 1562 -- Piperville (c&ocirc;t&eacute;-nord) et Farmers</td></tr><tr><td> n<sup>o</sup> 1550 -- Piperville (c&ocirc;t&eacute;-nord) et Hall</td></tr><tr><td> n<sup>o</sup> 1844 -- Piperville (c&ocirc;t&eacute;-nord) et Hall&nbsp;</td></tr><tr><td> n<sup>o</sup> 1848 -- Piperville (c&ocirc;t&eacute;-sud) et Hall&nbsp;</td></tr><tr><td> n<sup>o</sup> 8511 -- Piperville (c&ocirc;t&eacute;-sud) et 4898&nbsp;Piperville</td><td colspan="1" rowspan="6"> n<sup>o</sup> 1079 -- Piperville et Centre communautaire de Carlsbad Springs</td></tr><tr><td> n<sup>o</sup>&nbsp;1564 --&nbsp;Piperville (c&ocirc;t&eacute;-sud) et Farmers</td></tr><tr><td> n<sup>o</sup> 1811 -- Piperville (c&ocirc;t&eacute;-sud) et 4992&nbsp;Piperville</td></tr><tr><td> n<sup>o</sup>&nbsp;1843 --&nbsp;Piperville (c&ocirc;t&eacute;-sud) et Hall</td></tr><tr><td> n<sup>o</sup> 1577 -- Piperville (c&ocirc;t&eacute;-sud) et parc Landry</td></tr><tr><td> n<sup>o</sup>&nbsp;1560 --&nbsp;Piperville (c&ocirc;t&eacute;-sud) et Hall</td></tr><tr><td> n<sup>o</sup>&nbsp;1529 --&nbsp;Anderson (c&ocirc;t&eacute;-est) et Leitrim</td><td> Arr&ecirc;t temporaire --&nbsp;Anderson et Leitrim</td></tr></tbody></table><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/piperville_closure.pdf" target="_blank"><em><img alt="Carte indiquant le détour du circuit 222, fermeture du chemin Piperville" src="http://www.octranspo.com/images/files/maps/detours/2018/piperville_closure.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/215188</guid>
+        </item>
+        <item>
+            <title>DÉVIATION: Fermeture du chemin Dunrobin.</title>
+            <pubDate>
+                <!-- feeds -->
+Tue, 02 Oct 2018 13:53:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-303 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/215110</link>
+            <description>
+                <![CDATA[
+02 October 2018 - <p> Du mercredi 3 octobre &agrave; <strong>8 h 57</strong> jusqu&rsquo;&agrave; nouvel ordre, les autobus du circuit 303 seront d&eacute;vi&eacute;s en raison de la fermeture du chemin Dunrobin. Veuillez pr&eacute;voir quelques minutes de plus lors de vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuit 303 en direction de Carlingwood desserviront les arr&ecirc;ts &agrave; partir du chemin March.</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 40%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style="width: 20%; text-align: left;"> Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup>&nbsp;6972 --&nbsp;Porcupine et Cricket</td><td colspan="1" rowspan="4"> Arr&ecirc;t temporaire -- March et Dunrobin</td></tr><tr><td> n<sup>o</sup>&nbsp;6973 --&nbsp;Porcupine et Cricket</td></tr><tr><td> n<sup>o</sup>&nbsp;6974 --&nbsp;Dunrobin et Thomas A Dolan</td></tr><tr><td> no 6975 --&nbsp;Dunrobin et Thomas A Dolan</td></tr></tbody></table><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/dunrobin_detour1.pdf" target="_blank"><em><img alt="Carte du détour du circuit 303, fermeture de la rue Dunrobin" src="http://www.octranspo.com/images/files/maps/detours/2018/dunrobin_detour1.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/215110</guid>
+        </item>
+        <item>
+            <title>
+DÉVIATION: Travaux d’asphaltage à la station St-Laurent
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Thu, 27 Sep 2018 09:33:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-18,40,61,62,94,95,101,104,106,129 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/215068</link>
+            <description>
+                <![CDATA[
+27 September 2018 - <p> Les autobus des circuits <strong>18, 40,&nbsp; 61, 62, 94, 95, 101, 104, 106 et 129</strong> seront d&eacute;vi&eacute;s au cours des nuits suivantes en raison de la fermeture de la bretelle r&eacute;serv&eacute;e aux autobus de la station St Laurent. Veuillez pr&eacute;voir quelques minutes de plus pour vos d&eacute;placements.</p><ul><li><strong>La nuit, de 22 h le lundi 15 octobre &agrave; 5 h du matin le j<strong>eudi&nbsp;</strong>18 octobre</strong>.</li></ul><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuits 18, 40, 61, 62,101 et 106 St- Laurant&nbsp;desservira St Laurent, Lemieux, Joseph, Cyrville, Ogilvie, St-Laurent et la bretelle menant &agrave; la station St Laurent.</li><li> Circuit 94&nbsp;Millennium&nbsp;desservira St-Laurent, Lemieux, Joseph, Cyrville, Ogilvie, St-Laurent et la bretelle menant &agrave; la station St-Laurent.</li><li> Circuit 95&nbsp;Orl&eacute;ans et Trim&nbsp;desservira St-Laurent, Lemieux, Joseph, Cyrville, Ogilvie, St-Laurent et la bretelle menant &agrave; la station St-Laurent.</li><li> Circuit 104 Place d&#39;Orl&eacute;ans&nbsp;desservira St-Laurent, Lemieux, Joseph, Cyrville, Ogilvie, St-Laurent et la bretelle menant &agrave; la station St-Laurent</li><li> Circuit 129 Carson&#39;s et Aviation desservira St-Laurent, Lemieux, Joseph, Cyrville, Ogilvie, St-Laurent et la bretelle menant &agrave; la station St-Laurent.</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><p> Aucun</p><p> &nbsp;</p><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/st_laurent.pdf" target="_blank"><em><img alt="Carte de la déviation des circuits 18, 40, 61, 62, 94, 95, 101, 104, 106 et 129 lors des travaux d’asphaltage à la station St-Laurent" src="http://www.octranspo.com/images/files/maps/detours/2018/st_laurent.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/215068</guid>
+        </item>
+        <item>
+            <title>
+Prolongement jusqu’à Saddleridge des trajets de pointe du circuit 34 Renaud
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Fri, 14 Sep 2018 07:45:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Route service change ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-34 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/214802</link>
+            <description>
+                <![CDATA[
+14 September 2018 - <p> La plupart des trajets de pointe du circuit 34&nbsp;Renaud ont &eacute;t&eacute; prolong&eacute;s jusqu&rsquo;&agrave; Saddleridge via Joshua.</p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/214802</guid>
+        </item>
+        <item>
+            <title>
+FIN DÉVIATION REPOUSSÉE: Fermeture du chemin River (entre les chemins Rideau et Earl-Armstrong)
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Fri, 31 Aug 2018 09:09:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-299 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/214669</link>
+            <description>
+                <![CDATA[
+31 August 2018 - <p> Du lundi 10 septembre &agrave; <strong>9 h</strong> au samedi 15 d&eacute;cembre 2018 &agrave; <strong>18 h</strong>, les autobus du <strong>circuit 299</strong> seront d&eacute;vi&eacute;s en raison de la fermeture du chemin River, entre les chemins Rideau et Earl-Armstrong. Veuillez pr&eacute;voir quelques minutes de plus lors de vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuit 299 LeBreton desservira River, Rideau, Spratt, Earl Armstrong et Station Riverview&nbsp;</li><li> Circuit 299 Manotick desservira Parc-o-bus Riverview, Earl Armstrong, Spratt, Rideau et River</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 40%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style="width: 20%; text-align: left;"> Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup>&nbsp;2121 --&nbsp;River (c&ocirc;t&eacute;-est) et Nicholls Island</td><td colspan="1" rowspan="2"> n<sup>o</sup>&nbsp;0971 --&nbsp; River (c&ocirc;t&eacute;-est) et Rideau</td></tr><tr><td> n<sup>o</sup>&nbsp;0976 --&nbsp;River (c&ocirc;t&eacute;-est) et Nicholls Island</td></tr><tr><td> n<sup>o</sup>&nbsp;2123 -- 752 River (c&ocirc;t&eacute;-est)</td><td colspan="1" rowspan="2"> n<sup>o</sup>&nbsp;3040 --&nbsp;Parc-o-bus Riverview</td></tr><tr><td> n<sup>o</sup>&nbsp;2011 -- 752 River (c&ocirc;t&eacute;-ouest)</td></tr><tr><td> n<sup>o</sup>&nbsp;0975 -- 806 River (c&ocirc;t&eacute;-ouest)&nbsp;</td><td colspan="1" rowspan="2"> n<sup>o</sup> 0972 --&nbsp;River (c&ocirc;t&eacute;-ouest) et Rideau</td></tr><tr><td> n<sup>o</sup>&nbsp;2122 --&nbsp;River (c&ocirc;t&eacute;-ouest) et Nicholls Island</td></tr></tbody></table><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/riverroad_closure.pdf" target="_blank"><em><img alt="Carte de la déviation du circuit 299, fermeture du chemin River." src="http://www.octranspo.com/images/files/maps/detours/2018/riverroad_closure.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/214669</guid>
+        </item>
+        <item>
+            <title>DÉVIATION: Fermeture de la rue Queen</title>
+            <pubDate>
+                <!-- feeds -->
+Wed, 29 Aug 2018 11:25:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-6,7,12,16,18,19 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/214626</link>
+            <description>
+                <![CDATA[
+29 August 2018 - <style type="text/css"> .page-header-important-announcements { background: #fce894; border: 1px dotted #cbad30; padding: 10px 5px 0px 5px; margin: 8px 15%; width: 70%; height: contain; overflow:hidden; }</style><p> &Agrave; compter du dimanche <strong>2 septembre 2018</strong> et jusqu&rsquo;&agrave; nouvel ordre, les circuits&nbsp;<strong><a href="#route6_7">6</a>, <a href="#route6_7">7</a>, <a href="#route12">12</a>, <a href="#route16">16</a>,&nbsp;<a href="#route18">18</a> et&nbsp;<a href="#route19">19</a></strong><strong>&nbsp;</strong> seront d&eacute;vi&eacute;s en raison de la fermeture de la rue Queen. Veuillez pr&eacute;voir quelques minutes de plus pour vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuit&nbsp; <strong>6 Centre-ville&nbsp;</strong>desservira Bank, Wellington et Rideau</li><li> Circuit <strong>6 Greenboro</strong> desservira Rideau, Wellington et Bank</li><li> Circuit <strong>7 St-Laurent</strong> desservira Bank, Wellington et Rideau</li><li> Circuit <strong>7 Carleton&nbsp;</strong>desservira&nbsp;Rideau, Wellington et Bank</li><li> Circuit <strong>12&nbsp;</strong><strong>Rideau&nbsp;<strong>(<strong><strong>certains trajets seulement</strong></strong>)</strong>&nbsp;</strong>desservira Rideau, Elgin, Queen, O&#39;Connor et Albert</li><li> Circuit <strong>16 Britannia</strong> desservira&nbsp;Mackenzie King et Albert</li><li> Circuit <strong>16 Main</strong> desservira Slater et Mackenzie King</li><li> Circuit <strong>18&nbsp;</strong><strong>Parlement&nbsp;</strong>desservira Rideau, Wellington et O&#39;Connor</li><li> Circuit <strong>18 St-Laurent</strong> desservira Bank, Wellington et Rideau</li><li> Circuit <strong>19 St-Laurent</strong> desservira Slater et Mackenzie King</li><li> Circuit <strong>19 Mackenzie King</strong> desservira Mackenzie King et Albert</li></ul><div class="page-header-important-announcements"><p> Le Planificateur de trajet indiquera les itin&eacute;raires en tenant compte du parcours d&eacute;finitif qui sera mis en place lors de la r&eacute;ouverture de la rue Queen.</p><p> Assurez-vous de v&eacute;rifier toutes les notes de d&eacute;viation de vos itin&eacute;raires et de vos horaires.</p></div><p><img alt="Exemple d'une note dans le Planificateur" src="http://www.octranspo.com/images/files/banners/TravelPlannerNotes_Banner_FR.png" style="width:71%; margin-left:15%; margin-right:15%;" /></p><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 40%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style=" text-align: left;"> Circuits</th><th scope="col" style=" text-align: left;"> Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup>&nbsp;7557 --&nbsp;Elgin (c&ocirc;t&eacute;-est) et Wellington</td><td> 6,7</td><td> n<sup>o</sup>&nbsp;3009 --&nbsp;Rideau 3A (c&ocirc;t&eacute;-sud) et Nicholas</td></tr><tr><td rowspan="2"> n<sup>o</sup> 1228 -- Queen (c&ocirc;t&eacute;-nord) et&nbsp;Metcalfe</td><td> 6, 7</td><td> n<sup>o</sup>&nbsp;7691 --&nbsp;Wellington (c&ocirc;t&eacute;-nord) et Metcalfe</td></tr><tr><td> 16</td><td> n<sup>o</sup> 3001 -- Albert (c&ocirc;t&eacute;-nord) et Metcalfe</td></tr><tr><td> n<sup>o</sup>&nbsp;7558 --&nbsp;Elgin (c&ocirc;t&eacute;-ouest) et Queen</td><td> 6, 7</td><td> n<sup>o</sup> 7691 -- Wellington (c&ocirc;t&eacute;-nord) et Metcalfe</td></tr><tr><td rowspan="2"> n<sup>o</sup> 3052 -- Station Parlement, arr&ecirc;t B</td><td> 6, 7</td><td> n<sup>o</sup> 7692 -- Wellington (c&ocirc;t&eacute;-nord) et O&#39;Connor</td></tr><tr><td> 16, 19</td><td> n<sup>o</sup> 3002 -- Albert (c&ocirc;t&eacute;-nord) et Bank&nbsp;</td></tr><tr><td colspan="1" rowspan="4"> n<sup>o</sup> 3052 -- Station Parlement, arr&ecirc;t A</td><td> 6, 7, 18</td><td> n<sup>o</sup> 7546 -- Bank (c&ocirc;t&eacute;-est) et Sparks</td></tr><tr><td> 16</td><td> n<sup>o</sup> 3007 -- Slater (c&ocirc;t&eacute;-sud) et Bank&nbsp;</td></tr><tr><td> 19</td><td> n<sup>o</sup> 3008 -- Slater (c&ocirc;t&eacute;-sud) et Metcalfe&nbsp;</td></tr><tr><td> 12</td><td> n<sup>o</sup> 3002 -- Albert et Bank</td></tr><tr><td rowspan="2"> n<sup>o</sup>&nbsp;1368 --&nbsp;Queen (c&ocirc;t&eacute;-sud) et Kent</td><td> 16</td><td> n<sup>o</sup> 3006 -- Slater (c&ocirc;t&eacute;-sud) et Kent</td></tr><tr><td> 12</td><td> n<sup>o</sup> 3002 -- Albert et Bank</td></tr><tr><td> n<sup>o</sup> 7683 -- Queen (c&ocirc;t&eacute;-nord) et&nbsp;Kent</td><td> 16</td><td> n<sup>o</sup> 3003 -- Albert (c&ocirc;t&eacute;-nord) et Kent</td></tr><tr><td rowspan="2"> n<sup>o</sup>&nbsp;1512 --&nbsp;Queen (c&ocirc;t&eacute;-sud) et Metcalfe</td><td> 6, 7, 18</td><td> n<sup>o</sup> 7694 -- Wellington (c&ocirc;t&eacute;-sud) et Metcalfe&nbsp;</td></tr><tr><td> 16</td><td> n<sup>o</sup> 3008 -- Slater (c&ocirc;t&eacute;-sud) et Metcalfe&nbsp;</td></tr><tr><td> n<sup>o</sup> 3051 -- Station Lyon, arr&ecirc;t B</td><td> 16</td><td> n<sup>o</sup> 3006 -- Slater (c&ocirc;t&eacute;-sud) et Kent&nbsp;</td></tr><tr><td> n<sup>o</sup> 3051 -- Station Lyon, arr&ecirc;t A</td><td> 16</td><td> n<sup>o</sup> 3003 --&nbsp;Albert (c&ocirc;t&eacute;-nord) et Kent</td></tr><tr><td> n<sup>o</sup> 7549 -- Bay (c&ocirc;t&eacute;-est) et Queen</td><td> 16</td><td> n<sup>o</sup> 3005 -- Slater (c&ocirc;t&eacute;-sud) et Bay&nbsp;</td></tr></tbody></table><h3> Cartes des d&eacute;viations</h3><h4> Circuits 6 et 7</h4><p id="route6_7"><a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte6_Rte7.pdf" target="_blank"><em><img alt="Carte des détours pour les circuits 6 et 7, fermeture de la rue Queen" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte6_Rte7.png" style="width: 100%;" /></em></a></p><h4> Circuit 12</h4><p id="route12"><a href="http://www.octranspo.com/images/files/maps/detours/2018/queenstreet_route12_v2.pdf" target="_blank"><em><img alt="Carte des détours pour les circuit 12, fermeture de la rue Queen" src="http://www.octranspo.com/images/files/maps/detours/2018/queenstreet_route12_v2.png" style="width: 100%;" /></em></a></p><h4> Circuit 16</h4><p id="route16"><a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte16.pdf" target="_blank"><em><img alt="Carte des détours pour les circuit 16, fermeture de la rue Queen" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte16.png" style="width: 100%;" /></em></a></p><h4> Circuit 18</h4><p id="route18"><a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte18.pdf" target="_blank"><em><img alt="Carte des détours pour les circuit 18, fermeture de la rue Queen" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte18.png" style="width: 100%;" /></em></a></p><h4> Circuit 19</h4><p id="route19"><a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte19.pdf" target="_blank"><em><img alt="Carte des détours pour les circuit 19, fermeture de la rue Queen" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte19.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/214626</guid>
+        </item>
+        <item>
+            <title>DÉVIATION : École Secondaire Bell - l’allée Bruin</title>
+            <pubDate>
+                <!-- feeds -->
+Mon, 27 Aug 2018 08:18:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-88,152,660,661,665,681,669 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/214546</link>
+            <description>
+                <![CDATA[
+27 August 2018 - <p> &Agrave; compter du mercredi 22 ao&ucirc;t 2018 &agrave; midi jusqu&#39;en Octobre 2018, <strong>les circuits&nbsp;88, 152, 660, 661, 665, 681 et 669 seront d&eacute;vi&eacute;s</strong> en raison de la fermeture de l&#39;all&eacute;e Bruin de Cassidy jusqu&#39;au milieu de l&#39;all&eacute;e Bruin.&nbsp;Pr&eacute;voyez quelques minutes de plus pour vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Les voyages &agrave; l&#39;&Eacute;cole Secondaire Bell desserviront l&#39;entr&eacute;e sud, Bruin (en direction ouest) et l&#39;arr&ecirc;t temporaire sur le c&ocirc;t&eacute; sud de l&#39;&eacute;cole</li><li> Les voyages de l&#39;&Eacute;cole Secondaire Bell desserviront l&#39;arr&ecirc;t temporaire sur le c&ocirc;t&eacute; sud de l&#39;&eacute;cole et Bruin (en direction ouest)</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width:100%;"><thead><tr><th scope="col" style="text-align: left;width:33%;"> Arr&ecirc;ts HORS service</th><th scope="col" style="text-align: left;width:33%;"> Arr&ecirc;ts de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup> 5304 -- &Eacute;.S. Bell / Cassidy</td><td> L&#39;arr&ecirc;t sera relocalis&eacute; temporairement approximativement 150m au sud-est jusqu&#39;au c&ocirc;t&eacute; sud de l&#39;&eacute;cole sur l&#39;all&eacute;e Bruin</td></tr><tr><td> n<sup>o</sup> 5305 -- &Eacute;.S. Bell</td><td> L&#39;arr&ecirc;t sera relocalis&eacute; temporairement approximativement 400m au sud jusqu&#39;au c&ocirc;t&eacute; sud de l&#39;&eacute;cole sur l&#39;all&eacute;e Bruin</td></tr></tbody></table>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/214546</guid>
+        </item>
+        <item>
+            <title>
+DÉVIATION: Fermeture de la rue Seneca (de Sunnyside à Grove)
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Fri, 22 Jun 2018 13:25:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-7 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/213163</link>
+            <description>
+                <![CDATA[
+22 June 2018 - <p> &Agrave; compter de 7&nbsp;h le mardi 10 juillet jusqu&rsquo;&agrave; 18 h le vendredi 30 novembre 2018, le <strong>circuit 7 sera d&eacute;vi&eacute;</strong> en raison de la fermeture de la rue Seneca entre les avenues Sunnyside et Grove. Veuillez pr&eacute;voir quelques minutes de plus pour vos d&eacute;placements.</p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Circuit 7 St-Laurent desservira Sunnyside, Leonard, Grove et Bank.</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="width: 57%; text-align: left;"> Arr&ecirc;ts HORS service</th><th scope="col" style="text-align: left;"> &nbsp;Arr&ecirc;t de rechange</th></tr></thead><tbody><tr><td> n<sup>o</sup> 6737 -- Seneca (c&ocirc;t&eacute;-ouest) et Glen</td><td colspan="1" rowspan="2"><p> n<sup>o</sup> 6683 --&nbsp;Sunnyside et Seneca</p><p> n<sup>o</sup> 6685 --&nbsp;Grove et Leonard</p></td></tr><tr><td> n<sup>o</sup> 6738 -- Grove (c&ocirc;t&eacute;-sud) et Seneca</td></tr><tr><td colspan="1"> n<sup>o</sup> 6685 --&nbsp;Grove (c&ocirc;t&eacute;-sud) et Leonard</td><td> Arr&ecirc;t temporaire -- Grove (c&ocirc;t&eacute;-nord) et Leonard</td></tr></tbody></table><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/seneca.pdf" target="_blank"><em><img alt="Detour map for routes 7 , Seneca Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/seneca.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/213163</guid>
+        </item>
+        <item>
+            <title>
+DÉVIATION : Pont McBean (entre Strachan et Royal York)
+            </title>
+            <pubDate>
+                <!-- feeds -->
+Wed, 13 Jun 2018 14:48:00 EDT
+            </pubDate>
+            <category>
+                <![CDATA[ Detours ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-283,301 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/212768</link>
+            <description>
+                <![CDATA[
+13 June 2018 - <p> &Agrave; compter du mercredi 20 juin 2018 jusqu&#39;&agrave; la fin de l&#39;automne en 2018, <strong>les circuits 283 et 301 seront d&eacute;vi&eacute;s </strong>en raison de la construction qui se prend place sur le pont McBean entre la rue Strachan et la rue Royal York.&nbsp;<strong>Le circuit 301 sera d&eacute;vi&eacute; les lundis seulement.</strong></p><h3><strong>Parcours d&eacute;vi&eacute;s</strong></h3><ul><li> Le circuit <a href="#283MackKing">283 Mackenzie King</a> desservira King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean et Strachan</li><li> Le circuit <a href="#283MackKing_Munster">283 Mackenzie King (voyages de Munster et Flewellyn)</a> desservira Eagleson, Ottawa, King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean et Strachan</li><li> Le circuit <a href="#283Richmond">283 Richmond</a> desservira McBean, Perth, Eagleson, Ottawa, McBean, Royal York et King</li><li> Le circuit <a href="#283Richmond_Munster">283 Richmond (voyages &agrave; Munster et Flewellyn)</a> desservira Strachan, McBean, Perth, Eagleson, Ottawa, McBean, Royal York, King, Ottawa, Eagleson et Perth</li><li> Le circuit <a href="#283Richmond_Stittsville">283 Richmond (voyages &agrave; Stittsville de Richmond)</a> desservira Strachan, McBean, Perth, Eagleson, Ottawa, McBean, Royal York, King, Ottawa, Eagleson et Perth</li><li> Le circuit <a href="#301Carlingwood">301 Carlingwood</a> desservira King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean et Strachan</li><li> Le circuit <a href="#301Richmond">301 Richmond</a> desservira McBean, Perth, Eagleson, Ottawa, McBean, Royal York et King</li></ul><h3><strong>Arr&ecirc;ts touch&eacute;s</strong></h3><table style="width: 100%;"><thead><tr><th scope="col" style="text-align: left;width:57%;"> Arr&ecirc;ts HORS service</th><th scope="col" style="text-align: left;width:57%;"> Arr&ecirc;ts de rechange</th></tr></thead><tbody><tr><td> no 6278 -- McBean (c&ocirc;t&eacute; ouest) et Strachan</td><td> L&#39;arr&ecirc;t sera temporairement relocalis&eacute; approximativement 50 m au nord-ouest jusqu&#39;&agrave; Strachan (c&ocirc;t&eacute; sud) et McBean</td></tr><tr><td> no 6281 -- McBean (c&ocirc;t&eacute; ouest) et Royal York</td><td> L&#39;arr&ecirc;t sera temporairement relocalis&eacute; approximativement 100 m au nord-est jusqu&#39;&agrave; Royal York (c&ocirc;t&eacute; nord) et McBean</td></tr></tbody></table><h3><strong>Cartes des d&eacute;viations</strong></h3><h4><a name="283MackKing"></a>283 Mackenzie King</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 283 Mackenzie King, déviation du pont McBean" name="283MackKing" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_new.png" style="width: 100%;" /></em></a></p><h4><a name="283MackKing_Munster"></a>283 Mackenzie King (voyages de Munster et Flewellyn)</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_Munster_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 283 Mackenzie King pour les voyages de Munster et Flewellyn, déviation du pont McBean" name="283MackKing_Munster" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_Munster_new.png" style="width: 100%;" /></em></a></p><h4><a name="283Richmond"></a>283 Richmond</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 283 Richmond, déviation du pont McBean" name="283Richmond" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_new.png" style="width: 100%;" /></em></a></p><h4><a name="283Richmond_Munster"></a>283 Richmond (voyages &agrave; Munster et Flewellyn)</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Munster_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 283 Richmond pour les voyages à Munster et Flewellyn, déviation du pont McBean" name="283Richmond_Munster" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Munster_new.png" style="width: 100%;" /></em></a></p><h4><a name="283Richmond_Stittsville"></a>283 Richmond (voyages &agrave; Stittsville de Richmond)</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Stittsville_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 283 Richmond pour les voyages à Stittsville de Richmond, déviation du pont McBean" name="283Richmond_Stittsville" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Stittsville_new.png" style="width: 100%;" /></em></a></p><h4><a name="301Carlingwood"></a>301 Carlingwood</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Carlingwood_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 301 Carlingwood, déviation du pont McBean" name="301Carlingwood" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Carlingwood_new.png" style="width: 100%;" /></em></a></p><h4><a name="301Richmond"></a>301 Richmond</h4><p><a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Richmond_new.pdf" target="_blank"><em><img alt="Carte pour le circuit 301 Richmond, déviation du pont McBean" name="301Richmond" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Richmond_new.png" style="width: 100%;" /></em></a></p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/212768</guid>
+        </item>
+        <item>
+            <title>Construction rue Elgin</title>
+            <pubDate>
+                <!-- feeds -->
+Fri, 09 Mar 2018 10:05:00 EST
+            </pubDate>
+            <category>
+                <![CDATA[ Other ]]>
+            </category>
+            <category>
+                <![CDATA[ affectedRoutes-5,14 ]]>
+            </category>
+            <link>http://octranspo1.com/details-mise-a-jour/208847</link>
+            <description>
+                <![CDATA[
+09 March 2018 - <p> Les circuits 5 et 14 respecteront leurs parcours r&eacute;guliers durant les travaux de construction, rue Elgin, qui commenceront le 12 mars 2018. Des retards pourraient &ecirc;tre occasionn&eacute;s.</p>
+]]>
+            </description>
+            <guid>http://octranspo1.com/details-mise-a-jour/208847</guid>
+        </item>
+    </channel>
+</rss>
