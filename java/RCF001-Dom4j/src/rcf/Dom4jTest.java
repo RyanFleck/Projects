@@ -6,14 +6,13 @@
  */
 package rcf;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 import org.dom4j.Document;
+import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.Node;
-import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
 
 import rcf.utils.Doc;
@@ -93,7 +92,13 @@ public class Dom4jTest {
 		// Prove I can write utilities.
 		IO.prove();
 		Doc.prove();
-
+		
+		// Wow! ConcurrentHashMaps are a thing:
+		// ConcurrentHashMap<String,List<String>> chm = new ConcurrentHashMap<>();
+		// chm.put("Burger", Arrays.asList("Lettuce","Bun","Tomato","Patty","Cheese"));
+		// chm.put("Salad", Arrays.asList("Lettuce","Tomato","Cucubmer","Carrots","Dressing"));
+		
+		// 4 - Fast Looping Method.
 	}
 
 	/**
