@@ -15,13 +15,18 @@ public class ServiceTest {
 	public static void main(String[] args) {
 		
 		//Test debug method:
-		dbg("Hello"+" World");
-		dbg(null);
+		//dbg("Hello"+" World");
+		//dbg(null);
 		
 		WeatherService mb = new DefaultWeatherService();
 		mb.prove();
-		
+		try {
+			mb.getWeather("Ottawa");
+		} catch (WeatherException e) {
+			dbg(e.toString());
+		}
 
+		
 	}
 	
 	/**
@@ -29,11 +34,11 @@ public class ServiceTest {
 	 * 
 	 * @param s Object to print to the console.
 	 */
-	public static void dbg(Object s) {
+	private static void dbg(Object s) {
 		try {
-			System.out.println("[DBG] "+s.toString());
+			System.out.println("[ServiceTest] "+s.toString());
 		}catch(Exception e){
-			System.out.println("[DBG] No toString() for Object. Error: "+e.toString());
+			System.out.println("[ServiceTest] No toString() for Object. Error: "+e.toString());
 		}
 	}
 

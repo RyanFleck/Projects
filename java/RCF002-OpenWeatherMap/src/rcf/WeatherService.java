@@ -1,9 +1,11 @@
 package rcf;
 
+import org.dom4j.Document;
+
 public interface WeatherService {
 
 	void prove();
 
-	String getWeather(String cityName) throws WeatherException;
+	Document getWeather(String cityName) throws WeatherException;
 
 }
