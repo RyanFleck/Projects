@@ -1,6 +1,6 @@
 package rcf;
 
-public interface MapBlob {
+public interface WeatherService {
 
 	void prove();
 

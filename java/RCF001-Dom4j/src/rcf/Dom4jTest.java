@@ -99,6 +99,11 @@ public class Dom4jTest {
 		// chm.put("Salad", Arrays.asList("Lettuce","Tomato","Cucubmer","Carrots","Dressing"));
 		
 		// 4 - Fast Looping Method.
+		
+		// Reading/Writing: (Seems to work fine.)
+		
+		Document doc2 = IO.read("data/oct-en.xml");
+		IO.write(doc2, "data/writetest.xml"); 
 	}
 
 	/**

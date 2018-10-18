@@ -7,8 +7,8 @@ package rcf;
  * @author rflec028
  *
  */
-public class DefaultMapBlob implements MapBlob {
-	public DefaultMapBlob() {
+public class DefaultWeatherService implements WeatherService {
+	public DefaultWeatherService() {
 
 	}
 

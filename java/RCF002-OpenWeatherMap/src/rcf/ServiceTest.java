@@ -7,7 +7,7 @@ package rcf;
  * @author Ryan Fleck
  *
  */
-public class OpenWeatherMap {
+public class ServiceTest {
 
 	/**
 	 * @param args Command Line Input.
@@ -18,7 +18,7 @@ public class OpenWeatherMap {
 		dbg("Hello"+" World");
 		dbg(null);
 		
-		MapBlob mb = new DefaultMapBlob();
+		WeatherService mb = new DefaultWeatherService();
 		mb.prove();
 		
 
