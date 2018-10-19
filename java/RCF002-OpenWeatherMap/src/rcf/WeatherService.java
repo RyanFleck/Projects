@@ -3,7 +3,12 @@ package rcf;
 import org.dom4j.Document;
 
 /**
- * WeatherService utilizes the OpenWeatherMap API to return XML from the OpenWeatherMap service.
+ * @author Ryan Fleck
+ * 
+ *         WeatherService utilizes the OpenWeatherMap API to return XML from the OpenWeatherMap service.
+ * 
+ *         IMPORTANT NOTE: config-default.xml must be copied to default.xml and populated with an OWM API key before use.
+ *
  */
 public interface WeatherService {
 

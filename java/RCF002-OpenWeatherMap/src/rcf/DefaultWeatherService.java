@@ -20,6 +20,8 @@ import org.dom4j.io.SAXReader;
  * @author Ryan Fleck
  * 
  *         External Content Service is assumed/emulated.
+ * 
+ *         IMPORTANT NOTE: config-default.xml must be copied to default.xml and populated with an OWM API key before use.
  *
  */
 public class DefaultWeatherService implements WeatherService {
@@ -74,10 +76,8 @@ public class DefaultWeatherService implements WeatherService {
              * Fetch XML and walk through +print the DOM to ensure the data was actually fetched:
              */
             Document doc = reader.read(new URL(request).openStream());
-            recursiveWalkDOM(doc.getRootElement());
+            //recursiveWalkDOM(doc.getRootElement()); //If enabled, prints a key/value tree of the fetched XML doc.
             if (doc.getRootElement().getName().equalsIgnoreCase("current")) {
-                dbg("City: " + doc.selectSingleNode("//current/city").valueOf("@name"));
-                dbg("Temp: " + doc.selectSingleNode("//current/temperature").valueOf("@value") + "C");
                 return doc;
             } else {
                 throw new MalformedURLException("City name malformed.");
@@ -88,7 +88,8 @@ public class DefaultWeatherService implements WeatherService {
         } catch (MalformedURLException mue) {
             dbg(gwError + "URL is malformed.. Error: " + mue.toString());
         } catch (IOException ioe) {
-            dbg(gwError + "I/O Exception. Error: " + ioe.toString());
+            String ioError = "WARNING: Arguments may be malformed, or API key invalid.\n";
+            dbg(gwError + ioError + "I/O Exception. Error: " + ioe.toString());
         }
 
         return null;
@@ -125,6 +126,7 @@ public class DefaultWeatherService implements WeatherService {
         }
     }
 
+    @SuppressWarnings("unused")
     private static void recursiveWalkDOM(Element documentRoot) {
         System.out.println("\nRecursively walk DOM for " + documentRoot.getName() + ", printing out tags:\n");
         recursiveStep(documentRoot, 0);
