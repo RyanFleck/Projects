@@ -1,3 +1,7 @@
+#DOTENV and CONFIG files.
+config.xml
+.env
+
 *target*
 *.war
 *.ear

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<apilink>https://api.com</apilink>
+	<parameters>
+		<item>mode=xml</item>
+		<item>appid=ABC123</item>
+		<item>units=metric</item>
+	</parameters>
+</configuration>

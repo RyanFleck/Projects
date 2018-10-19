@@ -19,9 +19,8 @@ public class ServiceTest {
 		//dbg(null);
 		
 		WeatherService mb = new DefaultWeatherService();
-		mb.prove();
 		try {
-			mb.getWeather("Ottawa");
+			mb.getWeather("Ottawa,CA");
 		} catch (WeatherException e) {
 			dbg(e.toString());
 		}
