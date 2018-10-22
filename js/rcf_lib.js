@@ -99,7 +99,9 @@ function parseToIntArray(txt) {
 
 function logSquareArray(arr) {
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
+        let string = "";
+        arr[i].map(x=>{string+=("\t"+x);});
+        console.log(string);
     }
 }
 
@@ -126,9 +128,28 @@ class BinaryTree {
     constructor(rootdata) {
         this.root = new TNode(rootdata);
     }
+    root(){
+        return this.root;
+    }
 }
 
 class BinarySearchTree extends BinaryTree {
+    
+}
+// Generates 2D array of n by n boxes, having n+1 by n+1 points.
+function genGrid(n){
+    let pointTotal = 0;
+    let points = n+1;
+    const grid = [];
+    for(let i=0; i<points; i++){
+        const inner = [];
+        for(let j=0; j<points; j++){
+            inner.push(pointTotal);
+            pointTotal+=1;
+        }
+        grid.push(inner);
+    }
+    return grid;
 }
 
 // Internal Library Methods
@@ -149,6 +170,5 @@ function prObj(name, obj) {
     console.log(`\n${name} Properties:\n${JSON.stringify(obj, null, 2)}`);
 }
 
-module.exports = {
-    BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
+module.exports = { genGrid, BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
 };
