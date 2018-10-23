@@ -22,13 +22,13 @@ function factorp(x, y) {
 
 // Sums primes from two to x.
 function sumto(limit) {
-    let sum = 2;
+    let fsum = 2;
 
     for (let x = 3; x < limit; x += 2) {
-        if (primep(x)) { sum += x; }
+        if (primep(x)) { fsum += x; }
     }
-    console.log(`Primes below ${limit} add to ${sum}`);
-    return sum;
+    console.log(`Primes below ${limit} add to ${fsum}`);
+    return fsum;
 }
 
 // Returns array with numbers 1 through x
@@ -99,8 +99,8 @@ function parseToIntArray(txt) {
 
 function logSquareArray(arr) {
     for (let i = 0; i < arr.length; i++) {
-        let string = "";
-        arr[i].map(x=>{string+=("\t"+x);});
+        let string = '';
+        arr[i].map((x) => { string += ('\t' + x); });
         console.log(string);
     }
 }
@@ -128,24 +128,25 @@ class BinaryTree {
     constructor(rootdata) {
         this.root = new TNode(rootdata);
     }
-    root(){
+
+    root() {
         return this.root;
     }
 }
 
 class BinarySearchTree extends BinaryTree {
-    
+
 }
 // Generates 2D array of n by n boxes, having n+1 by n+1 points.
-function genGrid(n){
+function genGrid(n) {
     let pointTotal = 0;
-    let points = n+1;
+    const points = n + 1;
     const grid = [];
-    for(let i=0; i<points; i++){
+    for (let i = 0; i < points; i++) {
         const inner = [];
-        for(let j=0; j<points; j++){
+        for (let j = 0; j < points; j++) {
             inner.push(pointTotal);
-            pointTotal+=1;
+            pointTotal += 1;
         }
         grid.push(inner);
     }
@@ -170,5 +171,6 @@ function prObj(name, obj) {
     console.log(`\n${name} Properties:\n${JSON.stringify(obj, null, 2)}`);
 }
 
-module.exports = { genGrid, BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
+module.exports = {
+ genGrid, BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
 };
