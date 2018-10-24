@@ -10,34 +10,36 @@ pool.on('connect', () => {
 });
 
 
-const queryText = `CREATE TABLE IF NOT EXISTS
-                    reflections(
-                        id UUID PRIMARY KEY,
-                        success VARCHAR(128) NOT NULL,
-                        low_point VARCHAR(128) NOT NULL,
-                        take_away VARCHAR(128) NOT NULL,
-                        created_date TIMESTAMP,
-                        modified_date TIMESTAMP
-                        )`;
+psQuery(`CREATE TABLE IF NOT EXISTS
+         messages(
+             username VARCHAR(140) NOT NULL,
+             message VARCHAR(300) NOT NULL,
+             time TIMESTAMP
+             )`);
 
-pool.query(queryText)
+
+psQuery(`CREATE TABLE IF NOT EXISTS
+         highscores(
+             username VARCHAR(140) NOT NULL,
+             score INT NOT NULL, 
+             time TIMESTAMP
+             )`);
+
+psQuery('SELECT * FROM messages');
+psQuery('SELECT * FROM highscores');
+
+
+function psQuery(qstring){
+    pool.query(qstring)
     .then((res) => {
-        console.log(`Result: ${res.toString()}`);
+        console.log(`Result:`);
+        console.log(JSON.stringify(res, null, 2));
     })
     .catch((err) => {
         console.log(`Error: ${err}`);
     });
+}
 
-
-pool.query('drop table reflections')
-    .then((res) => {
-        console.log(`Result: ${res}`);
-    })
-    .catch((err) => {
-        console.log(`Error: ${err}`);
-    });
-
-pool.end();
 /*
  *  create table messages (
  *    username varchar(140),
@@ -51,3 +53,6 @@ pool.end();
 */
 
 // .catch((err) => { console.log('lol'); });
+function end(){
+  pool.end();
+}
