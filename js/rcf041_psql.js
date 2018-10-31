@@ -25,6 +25,11 @@ psQuery(`CREATE TABLE IF NOT EXISTS
              time TIMESTAMP
              )`);
 
+u = 'Ryan'; m = 'Automatic Insertion';
+psQuery(`INSERT INTO messages VALUES ( '${u}', '${m}', current_timestamp );`);
+
+
+
 psQuery('SELECT * FROM messages');
 psQuery('SELECT * FROM highscores');
 
@@ -40,7 +45,9 @@ function psQuery(qstring){
     });
 }
 
-/*
+/*  
+ *  INITIAL TABLE CREATION:
+ *
  *  create table messages (
  *    username varchar(140),
  *    message varchar(300)
@@ -50,6 +57,21 @@ function psQuery(qstring){
  *    username varchar(140),
  *    highscore int
  *  );
+ *
+ *  INSERT A NEW MESSAGE:
+ *
+ *  insert into messages values ('{username}','{message}', current_timestamp);
+ *
+ *  RECALL LAST 10 MESSAGES:
+ *
+ *
+ *
+ *
+ *  RECALL LAST 10 HIGHSCORES:
+ *    (Sorted by time, subsorted by score.)
+ *
+ *
+ *
 */
 
 // .catch((err) => { console.log('lol'); });

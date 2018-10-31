@@ -77,29 +77,6 @@ function addNodeEx1(sourceArray, y, x, builtArray = []) {
     }
 }
 
-/*
-function addNodeEx0(arr, y, x) {
-    let complete = true;
-    console.log(`Node ${y},${x}`);
-
-    if (entryExists(arr, y, (x + 1))) {
-        nodemsg(y, (x + 1), arr);
-        addNode(arr, y, (x + 1));
-        complete = false;
-    }
-
-    if (entryExists(arr, (y + 1), x)) {
-        nodemsg((y + 1), x, arr);
-        addNode(arr, (y + 1), x);
-        complete = false;
-    }
-
-    if (complete) {
-        console.log(`Ended at ${y},${x} val=${arr[y][x]}`);
-        return true;
-    }
-} */
-
 function nodemsg(y, x, arr) {
     console.log(`Checking node (${y},${x}) = ${arr[y][x]}`);
 }
