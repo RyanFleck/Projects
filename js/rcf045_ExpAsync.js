@@ -61,5 +61,12 @@ pgquery();
  */
 
 webapp.get('/', (req,res) => {
-    console.log('Root page requested. Returning instructions to user.');
+    console.log(`Root page requested on port ${port}.`);
+    res.send("Hello, World!");
+});
+
+
+// Final Step: Start WebServer.
+server.listen(port, () => {
+    console.log(`Server UP on port ${port}`);
 });
