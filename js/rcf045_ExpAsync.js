@@ -62,6 +62,7 @@ pgquery();
 
 webapp.get('/', (req,res) => {
     console.log(`Root page requested on port ${port}.`);
+    // console.log(req); // Returns an insane amount of data. Cherry pick and return some.
     res.send("Hello, World!");
 });
 
