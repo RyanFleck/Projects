@@ -23,35 +23,81 @@ const http = require('http');
 const dotenv = require('dotenv');
 const rcf = require('./rcf_lib');
 
+// Init Logs
+dotenv.load();
+const debugEnabled = (process.env.NODE_ENV === 'development');
+const logger = new rcf.Logger(debugEnabled);
+logger.log(`.. Environment: ${process.env.NODE_ENV}.`);
+
 // Init Express and HTTP
+logger.log('.. Instantiating Express.js and WebServer.');
 const webapp = express();
 const server = http.Server(webapp);
 const port = process.env.PORT || 3000;
 
 // Init Helmet
+logger.log('.. Applying HELMET middleware.');
 webapp.use(helmet());
 
 // Init Postgres
-dotenv.load();
+logger.log('.. Instantiating PostgreSQL pool.');
 const pgpool = new postgres.Pool({
-    connectionString: process.env.DATABASE_URL
+    connectionString: process.env.DATABASE_URL,
+});
+
+logger.log('.. Testing PostgreSQL connection...');
+const testPSQL = async () => {
+    const client = await pgpool.connect();
+    client.release();
+};
+
+testPSQL().catch((e) => {
+    logger.err(`PSQL Init: ${e}`);
+    process.exit(1); // Forcefully crash if no PSQL.
 });
 
 /*
  * PSQL Implementation/Functions:
  * - pgquery provides a simple asynchronous implementation to run queries.
  */
-function pgquery( querystring, argumentarray, resfunction ){
-    if(!querystring){
-        console.error(">> pgquery() ERROR: No query provided.");
-        return null;
+
+/*
+  * Starts asynchronous function to query psql.
+  * querystring - sql query language string.
+  * argumentarray - array of args in querystring.
+  * resfunction - function to handle the query response.
+  */
+function pgQuery(querystring, argumentarray, resfunction) {
+    logger.log('>> pgQuery()');
+
+    if (!querystring) {
+        logger.err('-- pgquery() ERROR: No query provided.');
+        return false;
     }
-    (async (querystring, argumentarray, resfunction) => {
-        console.log(`>> pgquery() requested for query ${querystring.subString(0.10)}...`);
-    })().catch(e => console.error(e));
+
+    const pgq = async (query, args, rfunc) => {
+        logger.log(`>< pgquery().async requested for query '${query.slice(0, 20)}...'`);
+        const client = await pgpool.connect();
+        try {
+            const res = await client.query(query, args);
+            rfunc(res.rows);
+        } finally {
+            client.release();
+        }
+        logger.log('<> pgQuery().async');
+    };
+
+    pgq(querystring, argumentarray, resfunction).catch((e) => {
+        logger.err(`<> pgQuery().async: ${e}`);
+        process.exit(1); // Forcefully crash if no PSQL.
+    });
+
+    logger.log('<< pgQuery()');
+    return true;
 }
 
-pgquery();
+pgQuery();
+pgQuery('select * from messages;', [], console.log);
 
 
 /*
@@ -60,14 +106,27 @@ pgquery();
  * - Path xyz returns abc. (TODO)
  */
 
-webapp.get('/', (req,res) => {
-    console.log(`Root page requested on port ${port}.`);
+webapp.get('/', (req, res) => {
+    logger.log(`Root page requested on port ${port}.`);
     // console.log(req); // Returns an insane amount of data. Cherry pick and return some.
-    res.send("Hello, World!");
+    res.send('Hello, World!');
 });
 
 
 // Final Step: Start WebServer.
 server.listen(port, () => {
-    console.log(`Server UP on port ${port}`);
+    logger.log(`.. Server UP on port ${port}`);
 });
+
+
+/*
+ * This JS uses the following table:
+ *
+ * create table if not exists questions(
+ *   question VARCHAR(240) NOT NULL,
+ *   answer_a VARCHAR(240) NOT NULL,
+ *   answer_b VARCHAR(240) NOT NULL,
+ *   answer_c VARCHAR(240),
+ *   answer_d VARCHAR(240),
+ *   success INT );
+ */

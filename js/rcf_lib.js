@@ -4,6 +4,7 @@
 
 // Expanded 20180906 to include file i/o methods.
 const fs = require('fs');
+const colors = require('colors');
 // const _ = require('lodash')
 
 // Returns true if x is prime.
@@ -100,7 +101,7 @@ function parseToIntArray(txt) {
 function logSquareArray(arr) {
     for (let i = 0; i < arr.length; i++) {
         let string = '';
-        arr[i].map((x) => { string += ('\t' + x); });
+        arr[i].map((x) => { string += (`\t${x}`); });
         console.log(string);
     }
 }
@@ -171,6 +172,42 @@ function prObj(name, obj) {
     console.log(`\n${name} Properties:\n${JSON.stringify(obj, null, 2)}`);
 }
 
+/*
+ * Logger recommended format:
+ * '..' for a general message.
+ * '--' for a method messsage.
+ * '>>' for a method entry.
+ * '<<' for a method exit.
+ * '><' for an async entry.
+ * '<>' for an async exit.
+ */
+
+class Logger {
+    constructor(logEnabled) {
+        this.enabled = logEnabled;
+        this.con = console;
+        if (logEnabled) {
+            this.con.log(`\n[ ${'rcf'.magenta} ] .. Logger instantiated. Debugging logs are ${'enabled'.green}.`);
+        } else {
+            this.con.log(`\n[ ${'rcf'.magenta} ] .. Logger instantiated. Debugging logs are ${'disabled'.red}.`);
+        }
+    }
+
+    log(string) {
+        if (this.enabled) {
+            this.con.log(`[ ${'log'.green} ] ${string}`);
+        }
+    }
+
+    err(string) {
+        this.con.error(`[${'error'.red}] ${string}`);
+    }
+
+    done() {
+        this.con.error('        ...done.');
+    }
+}
+
 module.exports = {
- genGrid, BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
+    Logger, genGrid, BinarySearchTree, BinaryTree, TNode, logSquareArray, prObj, primep, factorp, sumto, range, sum, title, subtitle, jsonf, parseToInt, parseToString, parseToIntArray,
 };
