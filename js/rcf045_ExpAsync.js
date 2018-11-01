@@ -58,15 +58,27 @@ testPSQL().catch((e) => {
 
 /*
  * PSQL Implementation/Functions:
- * - pgquery provides a simple asynchronous implementation to run queries.
+ *
+ * qgQuery - Starts asynchronous function to query psql.
+ * qgQueryAsync - not to be called directly, creates client and sends query.
+ *
+ * querystring - sql query language string.
+ * argumentarray - array of args in querystring.
+ * resfunction - function to handle the query response.
  */
 
-/*
-  * Starts asynchronous function to query psql.
-  * querystring - sql query language string.
-  * argumentarray - array of args in querystring.
-  * resfunction - function to handle the query response.
-  */
+const pgQueryAsync = async (query, args, rfunc) => {
+    logger.log(`>< pgquery().async requested for query '${query.slice(0, 20)}...'`);
+    const client = await pgpool.connect();
+    try {
+        const res = await client.query(query, args);
+        rfunc(res.rows);
+    } finally {
+        client.release();
+    }
+    logger.log('<> pgQuery().async');
+};
+
 function pgQuery(querystring, argumentarray, resfunction) {
     logger.log('>> pgQuery()');
 
@@ -75,19 +87,7 @@ function pgQuery(querystring, argumentarray, resfunction) {
         return false;
     }
 
-    const pgq = async (query, args, rfunc) => {
-        logger.log(`>< pgquery().async requested for query '${query.slice(0, 20)}...'`);
-        const client = await pgpool.connect();
-        try {
-            const res = await client.query(query, args);
-            rfunc(res.rows);
-        } finally {
-            client.release();
-        }
-        logger.log('<> pgQuery().async');
-    };
-
-    pgq(querystring, argumentarray, resfunction).catch((e) => {
+    pgQueryAsync(querystring, argumentarray, resfunction).catch((e) => {
         logger.err(`<> pgQuery().async: ${e}`);
         process.exit(1); // Forcefully crash if no PSQL.
     });
