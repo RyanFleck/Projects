@@ -8,10 +8,12 @@
  * past, this file exists for practice calling many asynchronous operations
  * in the correct way, and passing the results to the frontend.
  *
- * No HTML GUI is provided; only an API that returns JSON.
+ * No HTML GUI is provided; only an API that returns JSON, and instructions
+ * at the root path describing the API.
  *
  * Node Dependencies: express, pg, helmet, http, dotenv
  * File Dependencies: data/rcf045_InitDb.sql, rcf_lib.js
+ * Require .env Vars: NODE_ENV, DATABASE_URL, PORT
  *
  */
 
@@ -21,6 +23,7 @@ const postgres = require('pg');
 const helmet = require('helmet');
 const http = require('http');
 const dotenv = require('dotenv');
+const fs = require('fs');
 const rcf = require('./rcf_lib');
 
 // Init Logs
@@ -52,9 +55,18 @@ const testPSQL = async () => {
 };
 
 testPSQL().catch((e) => {
-    logger.err(`PSQL Init: ${e}`);
+    logger.err(`!! PSQL Init: ${e}`);
     process.exit(1); // Forcefully crash if no PSQL.
 });
+
+try{
+    const initsql = fs.readFileSync('data/rcf045_InitDb.sql').toString();
+    pgQuery(initsql);
+}catch(e){
+    logger.err(`!! Could not load SQL for table init: ${e}`);
+    process.exit(1); // Forcefully crash if table cannot be populated.
+}finally{
+}
 
 /*
  * PSQL Implementation/Functions:
@@ -67,16 +79,17 @@ testPSQL().catch((e) => {
  * resfunction - function to handle the query response.
  */
 
-const pgQueryAsync = async (query, args, rfunc) => {
+async function pgQueryAsync(query, args, rfunc){
     logger.log(`>< pgquery().async requested for query '${query.slice(0, 20)}...'`);
     const client = await pgpool.connect();
     try {
         const res = await client.query(query, args);
-        rfunc(res.rows);
+        if(rfunc)
+            rfunc(res.rows);
     } finally {
         client.release();
     }
-    logger.log('<> pgQuery().async');
+    logger.log(`<> pgquery().async completed for query '${query.slice(0, 20)}...'`);
 };
 
 function pgQuery(querystring, argumentarray, resfunction) {
@@ -96,8 +109,8 @@ function pgQuery(querystring, argumentarray, resfunction) {
     return true;
 }
 
-pgQuery();
-pgQuery('select * from messages;', [], console.log);
+// pgQuery();
+// pgQuery('select * from messages where username = $1;', ['Test One'], console.log);
 
 
 /*
@@ -107,9 +120,12 @@ pgQuery('select * from messages;', [], console.log);
  */
 
 webapp.get('/', (req, res) => {
-    logger.log(`Root page requested on port ${port}.`);
+    logger.log(`>> webapp.get('/') - Root page requested on port ${port}.`);
     // console.log(req); // Returns an insane amount of data. Cherry pick and return some.
-    res.send('Hello, World!');
+    pgQuery('select * from messages where username = $1;', ['Test One'], (x)=>{
+        res.send(x);
+        logger.log("<< webapp.get('/') - Sent PSQL data."); 
+    });
 });
 
 
@@ -120,7 +136,7 @@ server.listen(port, () => {
 
 
 /*
- * This JS uses the following table:
+ * This JS uses the following table schema:
  *
  * create table if not exists questions(
  *   question VARCHAR(240) NOT NULL,
