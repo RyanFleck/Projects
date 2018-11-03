@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="RCF.LAB">
+  <meta name="author" content="Ryan Fleck">
+  <!--https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="document.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:200,300,400,400i,700" rel="stylesheet">
+</head>
+
+<body>
+    <div id="rcf-container">
+
+        <div id="rcf-title-container">
+            <h2 id="rcf-title">{{ title }}</h2>
+
+            
+            <div id="rcf-info">
+                    <p id="info-date">RCF &middot; Published {{ year }}&middot;{{ month }}&middot;{{ day }} {{ hour }}h</p>
+            </div>
+
+        </div>
+
+        <!--Content-->
+
+        <div id="rcf-content">
+            {{{body}}}
+            <div id="rcf-signature">
+                <p id="info-name">RCF{{sig}}</p>
+            </div>
+        </div>
+
+        
+
+        <div id="rcf-footer">
+            <h1>JS EXPERIMENT 046</h1>
+            <p>Perhaps more content could go down here? Menu? Image?</p>
+            <p>The usual links and navigation? Another Experiment?</p>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+

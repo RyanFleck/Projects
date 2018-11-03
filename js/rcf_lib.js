@@ -187,9 +187,9 @@ class Logger {
         this.enabled = logEnabled;
         this.con = console;
         if (logEnabled) {
-            this.con.log(`\n[ ${'rcf'.magenta} ] .. Logger instantiated. Debugging logs are ${'enabled'.green}.`);
+            this.con.log(`\n[ ${colors.magenta('rcf')} ] .. Logger instantiated. Debugging logs are ${'enabled'.green}.`);
         } else {
-            this.con.log(`\n[ ${'rcf'.magenta} ] .. Logger instantiated. Debugging logs are ${'disabled'.red}.`);
+            this.con.log(`\n[ ${colors.magenta('rcf')} ] .. Logger instantiated. Debugging logs are ${'disabled'.red}.`);
         }
     }
 
@@ -199,8 +199,14 @@ class Logger {
         }
     }
 
+    warn(string) {
+        if (this.enabled) {
+            this.con.log(`[${colors.yellow('alert')}] ${string}`);
+        }
+    }
+
     err(string) {
-        this.con.error(`[${'error'.red}] ${string}`);
+        this.con.error(`[${colors.red('error')}] ${string}`);
     }
 
     done() {
