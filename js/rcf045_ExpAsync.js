@@ -89,7 +89,7 @@ async function pgQueryAsync(query, args, rfunc){
     } finally {
         client.release();
     }
-    logger.log(`<> pgquery().async completed for query '${query.slice(0, 20)}...'`);
+    logger.log(`<> pgquery().async completed for query '${query.slice(0, 30)}...'`);
 };
 
 function pgQuery(querystring, argumentarray, resfunction) {
@@ -121,10 +121,36 @@ function pgQuery(querystring, argumentarray, resfunction) {
 
 webapp.get('/', (req, res) => {
     logger.log(`>> webapp.get('/') - Root page requested on port ${port}.`);
-    // console.log(req); // Returns an insane amount of data. Cherry pick and return some.
-    pgQuery('select * from messages where username = $1;', ['Test One'], (x)=>{
+    res.sendFile(`${__dirname}/rcf045_ExpAsync_AdminPanel.html`);
+});
+
+// Returns a set of messages for 'user' in URL.
+webapp.get('/messages/:user', (req, res) => {
+    pgQuery('select * from messages where username = $1;', [req.params.user], (x)=>{
         res.send(x);
         logger.log("<< webapp.get('/') - Sent PSQL data."); 
+    });
+});
+
+// Downloads all messages in database.
+webapp.get('/dl-messages', (req, res) => {
+    pgQuery('select * from messages;', [], (x)=>{
+        res.send(x);
+    });
+});
+
+// Downloads all highscores in database.
+webapp.get('/dl-messages', (req, res) => {
+    pgQuery('select * from messages;', [], (x)=>{
+        res.send(x);
+    });
+});
+
+// Wipes database.
+webapp.get('/admin-reset-db', (req, res) => {
+    const wipedb=``;
+    pgQuery(wipedb, [], (x)=>{
+        res.send(x);
     });
 });
 
