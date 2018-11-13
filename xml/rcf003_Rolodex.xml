@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xml" href="#stylesheet"?>
-<!DOCTYPE catelog [
-<!ATTLIST xsl:stylesheet
-  id    ID  #REQUIRED>
-]>
+<?xml-stylesheet type="text/xsl" href="rcf003_Rolodex.xsl"?>
 <rolodex>
-    <xsl:stylesheet id="stylesheet" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
-    <html>
-    <body>
-        <h1>Rolodex</h1>
-        <xsl:for-each select="rolodex/BusinessCard">
-            <table border="1">
-            <tr>
-                <td>Name</td>
-                <td><xsl:value-of select="name"/></td>
-            </tr>
-            <tr>
-                <td>Company</td>
-                <td><xsl:value-of select="company"/></td>
-            </tr>
-            </table>
-            <br />
-        </xsl:for-each>
-    </body>
-    </html>
-    </xsl:template>
-    </xsl:stylesheet>
-
     <BusinessCard>
         <name>Ryan Fleck</name>
         <company>Unaffiliated</company>
@@ -51,11 +24,18 @@
         <email type="pleasure">ryan.fleck@protonmail.com</email>
     </BusinessCard>
 
-        <BusinessCard>
+    <BusinessCard>
         <name>Clone of Ryan Fleck 22</name>
         <company>Unaffiliated</company>
         <position>Consulting Analyst</position>
         <email type="work">ryan.fleck@protonmail.com</email>
         <email type="home">ryan.fleck@protonmail.com</email>
+    </BusinessCard>
+
+    <BusinessCard>
+        <name>Richard Corey</name>
+        <company>Bank Co</company>
+        <position>Owns half the town.</position>
+        <email type="work">dead@cold.org</email>
     </BusinessCard>
 </rolodex>
