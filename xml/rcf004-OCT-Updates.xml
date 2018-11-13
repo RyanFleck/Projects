@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rcf004-OCT-Updates.xsl"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+    <channel>
+        <title>OC Transpo - Live Updates</title>
+        <link>http://www.octranspo.com/</link>
+        <description>Daily route changes resulting from detours and cancelled trips are listed here by OC Transpo staff on weekdays, Saturdays until 9 pm and Sundays until 5 pm.</description>
+        <atom:link href="http://octranspo1.com/feeds/updates-en" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Carling Station: Elevator</title>
+            <pubDate>Mon, 12 Nov 2018 08:41:00 EST</pubDate>
+            <category>
+                <![CDATA[General Message]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-]]>
+            </category>
+            <link>http://octranspo1.com/update-details/108919</link>
+            <description>
+                <![CDATA[November 12 2018 - <p>
+	<strong style="text-decoration: underline">Carling Elevator # 46:</strong></p>
+<p>
+	The elevator at Carling Station is out of service for unforeseen maintenance. We regret any inconvenience this may cause. To access the O-Train platforms, customers are advised to board or de-board at either Bayview or Carleton Stations.</p>
+<p>
+	The elevator should be back in service by Wednesday, November 14. </p>
+<p>
+	For Travel Planning assistance, please call <strong>613-741-4390 </strong>or press the free <strong>&ldquo;Info&rdquo; </strong>button on any Bell telephone in the station. For emergency assistance, use the nearest yellow emergency callbox.</p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/108919</guid>
+        </item>
+        <item>
+            <title>19 Parliament - Cancelled trip</title>
+            <pubDate>Fri, 09 Nov 2018 15:52:00 EST</pubDate>
+            <category>
+                <![CDATA[Cancelled trips]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-19]]>
+            </category>
+            <link>http://octranspo1.com/update-details/215725</link>
+            <description>
+                <![CDATA[November 09 2018 - <p>
+	The trip is cancelled between St Laurent station at 15:35 to Bank/Albert at 16:32. Next trip is 15 min later.</p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/215725</guid>
+        </item>
+        <item>
+            <title>DETOUR: Campus Avenue Closure</title>
+            <pubDate>Fri, 09 Nov 2018 12:20:00 EST</pubDate>
+            <category>
+                <![CDATA[Detours]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-7,10,104,111]]>
+            </category>
+            <link>http://octranspo1.com/update-details/215709</link>
+            <description>
+                <![CDATA[November 09 2018 - <p>
+	Campus Avenue at Carleton University will be closed to buses from 7am on Tuesday, November 13, until 7pm on Wednesday, November 14, 2018. Routes <strong>7, 10, 104 and 111</strong> will be detoured during this period. Please allow a few extra minutes for your travel.</p>
+<h3>
+	<strong>Detour routing</strong></h3>
+<ul>
+	<li>
+		Routes 7, 10, 104 and 111 into Carleton University will serve University Drive, Day Care Roadway, Raven Road and University Drive.</li>
+</ul>
+<h3>
+	<strong>Affected stops</strong></h3>
+<table style="width: 100%;">
+	<thead>
+		<tr>
+			<th scope="col" style="width: 45%; text-align: left;">
+				Bus stops (560#) NOT in use</th>
+			<th scope="col" style="text-align: left;">
+				Alternate service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				# 6612 -- Campus (west-side) and  Residence Commons</td>
+			<td>
+				Temporary stop -- University Drive (west-side) and Campus </td>
+		</tr>
+		<tr>
+			<td>
+				# 5813 -- Campus (west-side) and Library</td>
+			<td>
+				Temporary stop -- University Drive (west-side) and Daycare Road</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/campus_avenue_closure.pdf" target="_blank"><em><img alt="Detour map for route  7, 10, 104 and 111 , Campus avenue closure" src="http://www.octranspo.com/images/files/maps/detours/2018/campus_avenue_closure.png" style="width: 100%;" /></em></a></p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/215709</guid>
+        </item>
+        <item>
+            <title>91 St Laurent: Cancelled Trip</title>
+            <pubDate>Tue, 06 Nov 2018 09:18:00 EST</pubDate>
+            <category>
+                <![CDATA[Cancelled trips]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-91]]>
+            </category>
+            <link>http://octranspo1.com/update-details/213137</link>
+            <description>
+                <![CDATA[November 06 2018 - <p>
+	The trip is cancelled between Trim Station at 7:19 and St. Laurent Station at 7:37. Next trip is 8 minutes later.</p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/213137</guid>
+        </item>
+        <item>
+            <title>South Keys Station: Planned elevator outage</title>
+            <pubDate>Sun, 04 Nov 2018 09:33:00 EST</pubDate>
+            <category>
+                <![CDATA[General Message]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-]]>
+            </category>
+            <link>http://octranspo1.com/update-details/215710</link>
+            <description>
+                <![CDATA[November 04 2018 - <p>
+	<strong style="text-decoration: underline">South Keys elevator # 39 (south platform):</strong></p>
+<p>
+	The elevator at the south end of South Keys Station will be out of service from Tuesday, Nov. 13 at 7 am to Thursday, Nov. 15 at 7 am (approx.) for floor replacement work. We regret any inconvenience this may cause.</p>
+<p>
+	Customers requiring the use of an elevator to access the northbound platform are advised to: take any southbound bus at stop 1A to Transitway and Hunt Club, cross over to the northbound side and take any northbound bus at stop 8677 back to South Keys Station, or take Route 6 to the Bank Street side of the South Keys Shopping Centre.</p>
+<p>
+	For Travel Planning assistance, please call 613-741-4390 or press the free &ldquo;Info&rdquo; button on any Bell telephone in the station. For emergency assistance, use the nearest yellow emergency callbox.</p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/215710</guid>
+        </item>
+        <item>
+            <title>DETOUR EXTENDED: River Road Closure (Rideau to Earl Armstrong)</title>
+            <pubDate>Fri, 31 Aug 2018 09:09:00 EDT</pubDate>
+            <category>
+                <![CDATA[Detours]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-299]]>
+            </category>
+            <link>http://octranspo1.com/update-details/214628</link>
+            <description>
+                <![CDATA[August 31 2018 - <p>
+	From<strong> 9 am</strong> on Monday, September 10 until <strong>6 pm</strong> on Saturday, December 15 2018, <strong>Route 299</strong><strong> </strong>will be detoured<strong> </strong>due to the River Road closure between Rideau and Earl Armstrong. Please allow a few extra minutes for your travel.</p>
+<h3>
+	<strong>Detour routing</strong></h3>
+<ul>
+	<li>
+		Route 299 LeBreton will serve River, Rideau, Spratt, Earl Armstrong and Riverview Station</li>
+	<li>
+		Route 299 Manotick will serve Riverview Park &amp; Ride, Earl Armstrong, Spratt, Rideau and River</li>
+</ul>
+<h3>
+	<strong>Affected stops</strong></h3>
+<table style="width: 100%;">
+	<thead>
+		<tr>
+			<th scope="col" style="width: 40%; text-align: left;">
+				Bus stops (560#) NOT in use</th>
+			<th scope="col" style="width: 20%; text-align: left;">
+				Alternate service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				# 2121 -- River (east-side) and Nicholls Island</td>
+			<td colspan="1" rowspan="2">
+				# 0971 --  River (east-side) and Rideau</td>
+		</tr>
+		<tr>
+			<td>
+				# 0976 -- River (east-side) and Nicholls Island</td>
+		</tr>
+		<tr>
+			<td>
+				# 2123 -- 752 River (east-side)</td>
+			<td colspan="1" rowspan="2">
+				# 3040 -- Riverview Park &amp; Ride</td>
+		</tr>
+		<tr>
+			<td>
+				# 2011 -- 752 River (west-side)</td>
+		</tr>
+		<tr>
+			<td>
+				# 0975 -- 806 River (west-side) </td>
+			<td colspan="1" rowspan="2">
+				# 0972 -- River (west-side) and Rideau</td>
+		</tr>
+		<tr>
+			<td>
+				# 2122 -- River (west-side) and Nicholls Island</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/riverroad_closure.pdf" target="_blank"><em><img alt="Detour map for route 299 , River Road Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/riverroad_closure.png" style="width: 100%;" /></em></a></p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/214628</guid>
+        </item>
+        <item>
+            <title>DETOUR: Queen Street Closure</title>
+            <pubDate>Wed, 29 Aug 2018 11:25:00 EDT</pubDate>
+            <category>
+                <![CDATA[Detours]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-6,7,12,16,18,19]]>
+            </category>
+            <link>http://octranspo1.com/update-details/214593</link>
+            <description>
+                <![CDATA[August 29 2018 - <p>
+	From<strong> </strong>Sunday, September 2 2018 until further notice, <strong>Routes </strong><strong><a href="#route6_7">6</a>, <a href="#route6_7">7</a>, <a href="#route12">12</a>, <a href="#route16">16</a>, <a href="#route18">18</a> and <a href="#route19">19</a></strong><strong> </strong>will be detoured<strong> </strong>due to the Queen Street closure. Please allow a few extra minutes for your travel.</p>
+<h3>
+	<strong>Detour routing</strong></h3>
+<ul>
+	<li>
+		Route <strong>6 Downtown</strong> will serve Bank, Wellington and Rideau</li>
+	<li>
+		Route <strong>6 Greenboro</strong> will serve Rideau, Wellington and Bank</li>
+	<li>
+		Route <strong>7 St-Laurent</strong> will serve Bank, Wellington and Rideau</li>
+	<li>
+		Route <strong>7 Carleton University</strong> will serve Rideau, Wellington and Bank</li>
+	<li>
+		Route <strong>12 Rideau (only some trips) </strong>will serve Rideau, Elgin, Queen, O&#39;Connor and Albert</li>
+	<li>
+		Route <strong>16 Britannia</strong> will serve Mackenzie King and Albert</li>
+	<li>
+		Route <strong>16 Main</strong> will serve Slater and Mackenzie King</li>
+	<li>
+		Route <strong>18 Parliament</strong> will serve Rideau, Wellington and O&#39;Connor</li>
+	<li>
+		Route <strong>18 St-Laurent</strong> will serve Bank, Wellington and Rideau</li>
+	<li>
+		Route <strong>19 St-Laurent</strong> will serve Slater and Mackenzie King</li>
+	<li>
+		Route <strong>19 Mackenzie King</strong> will serve Mackenzie King and Albert</li>
+</ul>
+<style type="text/css">
+.page-header-important-announcements {
+    background: #fce894;
+    border: 1px dotted #cbad30;
+    padding: 10px 5px 0px 5px;
+margin: 8px 15%;
+width: 70%;
+height: contain;
+overflow:hidden;
+
+
+}</style>
+<div class="page-header-important-announcements">
+	<p>
+		The Travel Planner will reflect the final routing that will be in place once Queen Street reopens.</p>
+	<p>
+		Make sure you check the detour notes in your trip plans and schedules.</p>
+</div>
+<p>
+	<img alt="Example of a Travel Planner note" src="http://www.octranspo.com/images/files/banners/TravelPlannerNotes_Banner_EN.png" style="width:71%; margin-left:15%; margin-right:15%;" /></p>
+<h3>
+	<strong>Affected stops</strong></h3>
+<table style="width: 100%;">
+	<thead>
+		<tr>
+			<th scope="col" style="width: 40%; text-align: left;">
+				Bus stops (560#) NOT in use</th>
+			<th scope="col" style=" text-align: left;">
+				Routes</th>
+			<th scope="col" style=" text-align: left;">
+				Alternate service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				# 7557 -- Elgin (east-side) and Wellington</td>
+			<td>
+				6,7</td>
+			<td>
+				# 3009 -- Rideau 3A (south-side) and Nicholas</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				# 1228 -- Queen (north-side) and Metcalfe</td>
+			<td>
+				6, 7</td>
+			<td>
+				# 7691 -- Wellington (north-side) and Metcalfe</td>
+		</tr>
+		<tr>
+			<td>
+				16</td>
+			<td>
+				# 3001 -- Albert (north-side) and Metcalfe</td>
+		</tr>
+		<tr>
+			<td>
+				# 7558 -- Elgin (west-side) and Queen</td>
+			<td>
+				6, 7</td>
+			<td>
+				# 7691 -- Wellington (north-side) and Metcalfe</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				# 3052 -- Parliament Station B</td>
+			<td>
+				6, 7</td>
+			<td>
+				# 7692 -- Wellington (north-side) and O&#39;Connor</td>
+		</tr>
+		<tr>
+			<td>
+				16, 19</td>
+			<td>
+				# 3002 -- Albert (north-side) and Bank </td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="4">
+				# 3052 -- Parliament Station A</td>
+			<td>
+				6, 7, 18</td>
+			<td>
+				# 7546 -- Bank (east-side) and Sparks</td>
+		</tr>
+		<tr>
+			<td>
+				16</td>
+			<td>
+				# 3007 -- Slater (south-side) and Bank </td>
+		</tr>
+		<tr>
+			<td>
+				19</td>
+			<td>
+				# 3008 -- Slater (south-side) and Metcalfe </td>
+		</tr>
+		<tr>
+			<td>
+				12</td>
+			<td>
+				# 3002 -- Albert and Bank</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				# 1368 -- Queen (south-side) and Kent</td>
+			<td>
+				16</td>
+			<td>
+				# 3006 -- Slater (south-side) and Kent</td>
+		</tr>
+		<tr>
+			<td>
+				12</td>
+			<td>
+				# 3002 -- Albert and Bank</td>
+		</tr>
+		<tr>
+			<td>
+				# 7683 -- Queen (north-side) and Kent</td>
+			<td>
+				16</td>
+			<td>
+				# 3003 -- Albert (north-side) and Kent</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				# 1512 -- Queen (south-side) and Metcalfe</td>
+			<td>
+				6, 7, 18</td>
+			<td>
+				# 7694 -- Wellington (south-side) and Metcalfe </td>
+		</tr>
+		<tr>
+			<td>
+				16</td>
+			<td>
+				# 3008 -- Slater (south-side) and Metcalfe </td>
+		</tr>
+		<tr>
+			<td>
+				# 3051 -- Lyon Station B</td>
+			<td>
+				16</td>
+			<td>
+				# 3006 -- Slater (south-side) and Kent </td>
+		</tr>
+		<tr>
+			<td>
+				# 3051 -- Lyon Station A</td>
+			<td>
+				16</td>
+			<td>
+				# 3003 -- Albert (north-side) and Kent</td>
+		</tr>
+		<tr>
+			<td>
+				# 7549 -- Bay (east-side) and Queen</td>
+			<td>
+				16</td>
+			<td>
+				# 3005 -- Slater (south-side) and Bay </td>
+		</tr>
+	</tbody>
+</table>
+<h3>
+	Detour Maps</h3>
+<h4>
+	Routes 6 and 7</h4>
+<p id="route6_7">
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte6_Rte7.pdf" target="_blank"><em><img alt="Detour map for route 6 and 7 , Queen Street Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte6_Rte7.png" style="width: 100%;" /></em></a></p>
+<h4>
+	Route 12</h4>
+<p id="route12">
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/queenstreet_route12_v2.pdf" target="_blank"><em><img alt="Detour map for route 12 , Queen Street Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/queenstreet_route12_v2.png" style="width: 100%;" /></em></a></p>
+<h4>
+	Route 16</h4>
+<p id="route16">
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte16.pdf" target="_blank"><em><img alt="Detour map for route 16 , Queen Street Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte16.png" style="width: 100%;" /></em></a></p>
+<h4>
+	Route 18</h4>
+<p id="route18">
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte18.pdf" target="_blank"><em><img alt="Detour map for route 18 , Queen Street Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte18.png" style="width: 100%;" /></em></a></p>
+<h4>
+	Route 19</h4>
+<p id="route19">
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte19.pdf" target="_blank"><em><img alt="Detour map for route 19 , Queen Street Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/QueenStreet_Sept2018_Rte19.png" style="width: 100%;" /></em></a></p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/214593</guid>
+        </item>
+        <item>
+            <title>DETOUR: Seneca Closure (Sunnyside to Grove)</title>
+            <pubDate>Fri, 22 Jun 2018 08:03:00 EDT</pubDate>
+            <category>
+                <![CDATA[Detours]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-7]]>
+            </category>
+            <link>http://octranspo1.com/update-details/213141</link>
+            <description>
+                <![CDATA[June 22 2018 - <p>
+	From<strong> </strong>7:00 AM on Tuesday July 10th until 6:00 PM on Friday November 30th 2018,<strong> route 7 will be detoured </strong>due to the closure of Seneca Street between Sunnyside and Grove. Please allow a few extra minutes for your travel.</p>
+<h3>
+	<strong>Detour Routing</strong></h3>
+<ul>
+	<li>
+		Route 7 St-Laurent will serve Sunnyside, Leonard, Grove and Bank.</li>
+</ul>
+<h3>
+	<strong>Affected Stops</strong></h3>
+<table style="width: 100%;">
+	<thead>
+		<tr>
+			<th scope="col" style="width: 57%; text-align: left;">
+				Bus Stops (560#) NOT in use</th>
+			<th scope="col" style="text-align: left;">
+				 Alternate Service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				# 6737 -- Seneca (west-side) and Glen</td>
+			<td colspan="1" rowspan="2">
+				<p>
+					# 6683 -- Sunnyside and Seneca</p>
+				<p>
+					# 6685 -- Grove and Leonard</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				# 6738 -- Grove (south-side) and Seneca</td>
+		</tr>
+		<tr>
+			<td colspan="1">
+				# 6685 -- Grove (south-side) and Leonard</td>
+			<td>
+				Temporary Stop at Grove (north-side) and Leonard</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/seneca.pdf" target="_blank"><em><img alt="Detour map for routes 7 , Seneca Closure" src="http://www.octranspo.com/images/files/maps/detours/2018/seneca.png" style="width: 100%;" /></em></a></p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/213141</guid>
+        </item>
+        <item>
+            <title>DETOUR: McBean Bridge (between Strachan and Royal York)</title>
+            <pubDate>Wed, 13 Jun 2018 14:48:00 EDT</pubDate>
+            <category>
+                <![CDATA[Detours]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-283,301]]>
+            </category>
+            <link>http://octranspo1.com/update-details/212762</link>
+            <description>
+                <![CDATA[June 13 2018 - <p>
+	From Wednesday, June 20th 2018 until late fall 2018, <strong>routes 283 and 301 will be detoured</strong> due to construction work taking place on the McBean Bridge between Strachan Street and Royal York Street. <strong>Route 301 will be detoured on Mondays only.</strong></p>
+<h3>
+	<strong>Detour Routing</strong></h3>
+<ul>
+	<li>
+		Route <a href="#283MackKing">283 Mackenzie King</a> will serve King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean, and Strachan</li>
+	<li>
+		Route <a href="#283MackKing_Munster">283 Mackenzie King (trips from Munster and Flewellyn)</a> will serve Eagleson, Ottawa, King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean, and Strachan</li>
+	<li>
+		Route <a href="#283Richmond">283 Richmond</a> will serve McBean, Perth, Eagleson, Ottawa, McBean, Royal York, and King</li>
+	<li>
+		Route <a href="#283Richmond_Munster">283 Richmond (trips to Munster and Flewellyn)</a> will serve Strachan, McBean, Perth, Eagleson, Ottawa, McBean, Royal York, King, Ottawa, Eagleson, and Perth</li>
+	<li>
+		Route <a href="#283Richmond_Stittsville">283 Richmond (trips to Stittsville from Richmond)</a> will serve Strachan, McBean, Perth, Eagleson, Ottawa, McBean, Royal York, King, Ottawa, Eagleson, and Perth</li>
+	<li>
+		Route <a href="#301Carlingwood">301 Carlingwood</a> will serve King, Royal York, McBean, Ottawa, Eagleson, Perth, McBean, and Strachan</li>
+	<li>
+		Route <a href="#301Richmond">301 Richmond</a> will serve McBean, Perth, Eagleson, Ottawa, McBean, Royal York, and King</li>
+</ul>
+<h3>
+	<strong>Affected Stops</strong></h3>
+<table style="width:100%;">
+	<thead>
+		<tr>
+			<th scope="col" style="text-align: left;width:57%;">
+				Bus Stops (560#) NOT in use</th>
+			<th scope="col" style="text-align: left;width:57%;">
+				Alternate Service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				# 6278 -- McBean (west-side) and Strachan</td>
+			<td>
+				Stop will be temporarily relocated approximately 50 m northwest to Strachan (south-side) and McBean</td>
+		</tr>
+		<tr>
+			<td>
+				# 6281 -- McBean (west-side) and Royal York</td>
+			<td>
+				Stop will be temporarily relocated approximately 100 m northeast to Royal York (north-side) and McBean</td>
+		</tr>
+	</tbody>
+</table>
+<h3>
+	<strong>Detour Maps</strong></h3>
+<h4>
+	<a name="283MackKing"></a>283 Mackenzie King</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_new.pdf" target="_blank"><em><img alt="Map for Route 283 Mackenzie King, McBean Bridge Detour" name="283MackKing" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="283MackKing_Munster"></a>283 Mackenzie King (trips from Munster and Flewellyn)</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_Munster_new.pdf" target="_blank"><em><img alt="Map for Route 283 Mackenzie King trips from Munster and Flewellyn, McBean Bridge Detour" name="283MackKing_Munster" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283MackKing_Munster_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="283Richmond"></a>283 Richmond</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_new.pdf" target="_blank"><em><img alt="Map for Route 283 Richmond, McBean Bridge Detour" name="283Richmond" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="283Richmond_Munster"></a>283 Richmond (trips to Munster and Flewellyn)</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Munster_new.pdf" target="_blank"><em><img alt="Map for Route 283 Richmond trips to Munster and Flewellyn, McBean Bridge Detour" name="283Richmond_Munster" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Munster_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="283Richmond_Stittsville"></a>283 Richmond (trips to Stittsville from Richmond)</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Stittsville_new.pdf" target="_blank"><em><img alt="Map for Route 283 Richmond trips to Stittsville from Richmond, McBean Bridge Detour" name="283Richmond_Stittsville" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_283Richmond_Stittsville_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="301Carlingwood"></a>301 Carlingwood</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Carlingwood_new.pdf" target="_blank"><em><img alt="Map for Route 301 Carlingwood, McBean Bridge Detour" name="301Carlingwood" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Carlingwood_new.png" style="width: 100%;" /></em></a></p>
+<h4>
+	<a name="301Richmond"></a>301 Richmond</h4>
+<p>
+	<a href="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Richmond_new.pdf" target="_blank"><em><img alt="Map for Route 301 Richmond, McBean Bridge Detour" name="301Richmond" src="http://www.octranspo.com/images/files/maps/detours/2018/McBean_301Richmond_new.png" style="width: 100%;" /></em></a></p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/212762</guid>
+        </item>
+        <item>
+            <title>Elgin Street Construction</title>
+            <pubDate>Thu, 08 Mar 2018 16:08:00 EST</pubDate>
+            <category>
+                <![CDATA[Other]]>
+            </category>
+            <category>
+                <![CDATA[affectedRoutes-5,14]]>
+            </category>
+            <link>http://octranspo1.com/update-details/208832</link>
+            <description>
+                <![CDATA[March 08 2018 - <p>
+	Routes 5 and 14 will continue their regular routes during Elgin Street construction beginning March 12, 2018.  Construction may cause delays.</p>]]>
+            </description>
+            <guid>http://octranspo1.com/update-details/208832</guid>
+        </item>
+    </channel>
+</rss>
