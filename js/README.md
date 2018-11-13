@@ -222,9 +222,13 @@ Herein lies the power of simplified functions: it makes it far simpler to pass f
 
 **Note:** below this point, different function notation will be used where it is relevant. Creating a `function` is best suited to call-anywhere, large functions, whereas arrow functions are best used embedded or for small stateless operations.
 
-## Functional Programming with LoDash
+## Functional Programming in JavaScript
 
-Currently, the richest library of functional-programming methods is **LoDash**. Using ES6 arrow functions to clearly pass functions as arguments, and functional paradigms, it is possible to write very functional code in JS. To begin, import LoDash:
+Currently, the richest library of functional-programming methods is **LoDash**. Using ES6 arrow functions to clearly pass functions as arguments, and functional paradigms, it is possible to write very functional code in JS.
+
+The latest version of Javascript now has builtin map, reduce, filter, and other functional methods. LoDash is not strictly required.
+
+To begin, import LoDash:
 
 ```js
 const _ = require('lodash')
@@ -244,6 +248,7 @@ const runfunction = function (x, func) {
 ```
 
 ### Map
+Applies an operation to every item in an array.
 ```js
 ```
 
@@ -288,6 +293,27 @@ I enjoy using the *Standard* linter because of its popularity. Running `standard
 2. [ES6/Webpack/ThreeJS starter kit.](https://www.giacomodebidda.com/threejs-project-starter-for-es6-and-webpack2/)
 3. Gyro controls [A](https://gist.github.com/bellbind/d2be9cc09bf6241f255d) [B](https://www.learnthreejs.com/device-orientation-gyroscope-controls-tutorial/)
 
+## Web Apps using Express and Socket.IO
+
+Research completed when building <https://github.com/RyanFleck/SocketIOTriviaApp>.
+
+**Express** is a web application framework.
+
+**Socket.IO** is an event-based communication framework.
+
+Combined, these two Node libraries enable the expedited construction of fantastic web applications.
+
+### Express
+
+With NPM installed, Express installation is as simple as `npm i express`.
+
+What I *didn't know* when first using express is:
+- Using the `express-generator` is fantastic. It enables the quick creation of a project with the CSS compiler and templating engine of your choice. Read more here: <https://expressjs.com/en/starter/generator.html>. My default is `express --pug --css sass`.
+
+### Socket.IO
+
+First, take a quick walk through the simple and effective tutorial on the Socket.IO homepage.
+
 ## ReactJS Library
 
 ReactJS is a Javascript library for building web user interfaces. To learn the basics, I read the tutorial on [reactjs.org](https://reactjs.org/tutorial/tutorial.html).
@@ -300,8 +326,10 @@ Allows users to build compile-to-native mobile apps in javascript.
 ### OWL Carousel
 
 ## NodeJS and MongoDB
-
 After installing MongoDB and loading <http://media.mongodb.org/zips.json> into the database, (or another from <https://github.com/ozlerhakan/mongodb-json-files>,)
+
+## WebPack
+Nothing yet.
 
 ## Babel
 Babel, an ES6 to ES5 compiler (termed *transpiler* by some,) is a tool for ensuring modern JavaScript code does not confuse older browsers by converting modern (Post-2015) JavaScript to a backwards-compatible version.

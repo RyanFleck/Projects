@@ -35,10 +35,6 @@ This being said, I am beginning to work with Sitecore at work, a web content man
 
 Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform.
 
-
-## Why I am Writing Programs in C#
-
-
 <br />
 
 ## Setup
@@ -76,6 +72,29 @@ Both of these scripts take one argument, a .cs program, then proceed to compile 
 **A C# source file can be compiled into the following "assemblies":**
 - An *application* with a `.exe` extension, contains the *Main* method.
 - A *library* with a `.dll` extension, like an *.exe* without an entry point.
+
+<br />
+
+## dotNET Core on GNU/Linux
+
+*Mono* isn't nearly as stable or featureful as Microsoft's full implementation of C#. To use all the features of modern C#, it is necessary to install [.NET Core](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning). Microsoft has gone out of their Windows-Server-Only way to make their products and services compatible with 'Linux', and my experinece with dotNET Core has been positive. Creating new projects, building, running and packaging have all been smooth processes on Fedora 28.
+
+After installing .NET Core and the .NET SDK, create a new project by invoking dotnet:
+```sh
+dotnet new console -o projectName
+cd projectName
+dotnet run
+ #> Hello, World!
+```
+To run from the `cs` folder, execute:
+```sh
+dotnet run --project rcfxxx_folder
+```
+
+[Get started with .NET Core.](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning)
+
+<br />
+
 
 ## C# Basics
 ### Hello World <!--Page 9-->
@@ -650,25 +669,7 @@ See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/cs
 
 <br />
 
-## C\# on GNU/Linux
 
-*Mono* isn't nearly as stable or featureful as Microsoft's full implementation of C#. To use all the features of modern C#, it is necessary to install [.NET Core](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning). While it feels like mixing dirt into an otherwise free operating system, it's definitely better than just using Windows. Microsoft has gone to some effort to make their products and services compatible with 'Linux', and from what I've seen so far they've done a good job. (Though the microsoft design ethos remains.)
-
-After installing .NET Core and the .NET SDK, create a new project by invoking dotnet:
-```sh
-dotnet new console -o projectName
-cd projectName
-dotnet run
- #> Hello, World!
-```
-To run from the `cs` folder, execute:
-```sh
-dotnet run --project rcfxxx_folder
-```
-
-[Get started with .NET Core.](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning)
-
-<br />
 
 ## Monodevelop
 
