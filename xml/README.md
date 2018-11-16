@@ -203,3 +203,8 @@ Not studied yet.
 # XLink
 
 Not studied yet.
+
+# Resources
+
+1. IBM XSLT Intro <https://www.ibm.com/developerworks/xml/tutorials/x-introxslt/x-introxslt.html>
+
