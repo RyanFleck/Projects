@@ -20,11 +20,14 @@ matrix:
         - ./test
     
     - language: java
-      jdk: openjdk8
+      jdk: 
+        - openjdk8
+        - oraclejdk8
       before_script:
         - cd java/tests
       script:
         - ./test
+        - cd RCF005-Algorithms && mvn clean package
     
     - language: node_js 
       before_script:
