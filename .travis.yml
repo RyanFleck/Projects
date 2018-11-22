@@ -24,9 +24,8 @@ matrix:
         - openjdk8
         - oraclejdk8
       script:
-        - ./java/tests/test
-        - mvn -f java/RCF005-Algorithms/pom.xml clean package
-    
+        - mvn -f java/RCF005-Algorithms/pom.xml clean test
+
     - language: node_js 
       before_script:
         - cd js/tests
