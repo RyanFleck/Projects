@@ -20,10 +20,11 @@ matrix:
         - ./test
     
     - language: java
-      jdk: 
-        - openjdk8
-        - oraclejdk8
+      jdk: openjdk8
+      before_script:
+        - mvn install -f java/RCF005-Algorithms/pom.xml -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       script:
+        - ./java/tests/test
         - mvn -f java/RCF005-Algorithms/pom.xml clean test
 
     - language: node_js 
