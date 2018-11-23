@@ -28,7 +28,6 @@ public class AppTest extends TestCase {
 	/**
 	 * Rigourous Test :-)
 	 */
-	@Test
 	public void jUnitFunctional() throws Exception{
 		System.out.println("1 Running test...");
 		assertTrue( true );
