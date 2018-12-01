@@ -1,0 +1,6 @@
+[package]
+name = "rcf003-rustbook-chap-3-vars-mutability"
+version = "0.1.0"
+authors = ["Ryan Fleck <ryan.fleck@protonmail.com>"]
+
+[dependencies]
