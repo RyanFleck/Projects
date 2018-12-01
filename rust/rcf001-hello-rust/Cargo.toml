@@ -1,0 +1,7 @@
+[package]
+name = "rcf001-hello-rust"
+version = "0.1.0"
+authors = ["Ryan Fleck <ryan.fleck@protonmail.com>"]
+
+[dependencies]
+ferris-says = "0.1"

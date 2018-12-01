@@ -1,0 +1,6 @@
+[package]
+name = "rcf002-guess"
+version = "0.1.0"
+authors = ["Ryan Fleck <ryan.fleck@protonmail.com>"]
+
+[dependencies]
