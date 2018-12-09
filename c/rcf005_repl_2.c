@@ -8,17 +8,20 @@
 #include<editline/readline.h>
 #include<editline/history.h>
 
-int main(int argc, char** argv){
-  puts("Ryan's Micro LISP (RML) Version 0.0.0.2"); 
-  puts("Press Ctrl+C to Exit\n");
-  
-  while(1) {
-    char* input = readline("rml > ");
-    add_history(input);
-    printf("No, you're a %s\n", input); //Feedback.
-    free(input);
-  }
-  
+int
+main (int argc, char **argv)
+{
+  puts ("Ryan's Micro LISP (RML) Version 0.0.0.2");
+  puts ("Press Ctrl+C to Exit\n");
+
+  while (1)
+    {
+      char *input = readline ("rml > ");
+      add_history (input);
+      printf ("No, you're a %s\n", input);	//Feedback.
+      free (input);
+    }
+
   return 0;
 }
 

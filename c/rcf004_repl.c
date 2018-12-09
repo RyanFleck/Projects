@@ -5,18 +5,21 @@
 
 #include<stdio.h>
 
-static char input[2048]; //Buffer for user input.
+static char input[2048];	//Buffer for user input.
 
-int main(int argc, char** argv){
-  puts("Ryan's Micro LISP version 0.0.0.1"); 
-  puts("Press Ctrl+C to Exit\n");
-  
-  while(1) {
-    fputs("rml > ", stdout); //Input prompt. 
-    fgets(input, 2048, stdin); //Read user input.
-    printf("No, you're a %s", input); //Feedback.
-  }
-  
+int
+main (int argc, char **argv)
+{
+  puts ("Ryan's Micro LISP version 0.0.0.1");
+  puts ("Press Ctrl+C to Exit\n");
+
+  while (1)
+    {
+      fputs ("rml > ", stdout);	//Input prompt. 
+      fgets (input, 2048, stdin);	//Read user input.
+      printf ("No, you're a %s", input);	//Feedback.
+    }
+
   return 0;
 }
 
