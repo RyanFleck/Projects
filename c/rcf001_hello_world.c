@@ -5,9 +5,8 @@
 
 #include<stdio.h>		//Header, allows the use of functions from std i/o
 
-int
-main (int argc, char **argv)
+int main(int argc, char **argv)
 {
-  puts ("Hello, World.");
-  return 0;
+    puts("Hello, World.");
+    return 0;
 }
