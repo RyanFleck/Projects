@@ -16,10 +16,10 @@ int main(int argc, char **argv)
     puts("Hello, World!");
 
     if (secure_getenv("RCF_IS_DEBIAN")) {
-	printf("RCF_IS_DEBIAN environment variable is set to %s.\n",
-	       getenv("RCF_IS_DEBIAN"));
+        printf("RCF_IS_DEBIAN environment variable is set to %s.\n",
+               getenv("RCF_IS_DEBIAN"));
     } else {
-	puts("RCF_IS_DEBIAN is false or not present.");
+        puts("RCF_IS_DEBIAN is false or not present.");
     }
 
     vec a;
@@ -41,21 +41,21 @@ int main(int argc, char **argv)
     /*
      * Just a little code to satisfy the bonus marks section on this page:
      *   www.buildyourownlisp.com/chapter3_basics
-     *  
+     *
      */
 
     puts("Bonus Marks:");
 
     // 5 Hello, World with for loop:
     for (int i = 0; i < 5; i++) {
-	printf("for\t %i Hello, World!\n", (i + 1));
+        printf("for\t %i Hello, World!\n", (i + 1));
     }
 
     // 5 Hello, world with while loop:
     int j = 0;
     while (j < 5) {
-	j++;
-	printf("while\t %i Hello, World!\n", j);
+        j++;
+        printf("while\t %i Hello, World!\n", j);
     }
 
     // function helloLoop defined below
@@ -81,8 +81,8 @@ int main(int argc, char **argv)
     float fg, fh, fi;		// 4 bytes, 6 digit precision.
     double dj, dk, dl;		// 8 Bytes, 14 digit precision.
 
-    long double m, n;		// long can increase the size of numbers.  
-    short l, o;			// short can decrease the size of numbers. 
+    long double m, n;		// long can increase the size of numbers.
+    short l, o;			// short can decrease the size of numbers.
     unsigned int p;		// Can only hold positive numbers, but x^2 more.
     const int r;		// Cannot be changed later.
 
@@ -101,10 +101,9 @@ int main(int argc, char **argv)
 
     int iz = 0;
     do {
-	puts("Iterate.");
-	iz += 3;
-    }
-    while (iz < 2);
+        puts("Iterate.");
+        iz += 3;
+    } while (iz < 2);
 
     // What is the switch statement and how does it work?
     // Based on a case, will execute an action.
@@ -113,16 +112,16 @@ int main(int argc, char **argv)
 
     switch (zone) {
     case 'A':
-	puts("Zone A triggered.");
-	break;
+        puts("Zone A triggered.");
+        break;
     case 'B':
-	puts("Zone B triggered, deploying additional security.");
-	break;
+        puts("Zone B triggered, deploying additional security.");
+        break;
     case 'C':
-	puts("Zone C triggered, breach imminent.");
-	break;
+        puts("Zone C triggered, breach imminent.");
+        break;
     default:
-	puts("No breach detected.");
+        puts("No breach detected.");
     }
 
     // What is the break keyword and what does it do?
@@ -158,7 +157,7 @@ int helloLoop(int n)
 {
     printf("Hello, World %i Times:\n", n);
     for (int i = 0; i < n; i++) {
-	printf("func\t %i Hello, World!\n", (i + 1));
+        printf("func\t %i Hello, World!\n", (i + 1));
     }
     return 0;
 }

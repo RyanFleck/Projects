@@ -1,6 +1,6 @@
 /*
  *  rcf006_repl3_portable.c - Implements a basic REPL.
- *  New in Version 6: Preprocessing for Win32. 
+ *  New in Version 6: Preprocessing for Win32.
  *  Copyright (C) 2018 Ryan Fleck under the GNU GPLv3.
  */
 
@@ -40,22 +40,22 @@ int main(int argc, char **argv)
     puts("Press Ctrl+C to Exit\n");
 
     while (1) {
-	char *input = readline("rml > ");
-	add_history(input);
-	printf("      %s\n", input);	//Feedback.
-	/* Operations with input go here. */
-	free(input);
+        char *input = readline("rml > ");
+        add_history(input);
+        printf("      %s\n", input);	//Feedback.
+        /* Operations with input go here. */
+        free(input);
     }
 
     return 0;
 }
 
-/* 
+/*
  * Notes:
- * 
- * Must be compiled with the correct libraries linked: 
+ *
+ * Must be compiled with the correct libraries linked:
  * cc -std=c99 -Wall $x -L/usr/local/lib -I/usr/local/include -lreadline
- * 
+ *
  * After further experimentation, all you need is -ledit flag.
  *  apt-get install libedit-dev
  *  apt-get install libreadline-dev

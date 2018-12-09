@@ -54,7 +54,7 @@ int main(int argc, char **argv)
     mpc_parser_t *Expr = mpc_new("expr");
     mpc_parser_t *RML = mpc_new("rml");
     mpca_lang(MPCA_LANG_DEFAULT,
-	      "                                                    \
+              "                                                    \
     number   : /-?[0-9]+/ ;                            \
     operator : '+' | '-' | '*' | '/' | '^' | '%' ;                 \
     expr     : <number> | '(' <operator> <expr>+ ')' ; \
@@ -70,21 +70,21 @@ int main(int argc, char **argv)
 
     while (1) {
 
-	char *input = readline("rml > ");
-	mpc_result_t r;
-	add_history(input);
+        char *input = readline("rml > ");
+        mpc_result_t r;
+        add_history(input);
 
-	if (mpc_parse("<stdin>", input, RML, &r)) {
-	    //rml_analyze(r.output);
-	    long result = rml_eval(r.output);
-	    printf("\n\nans > %li\n\n", result);
-	    mpc_ast_delete(r.output);
-	} else {
-	    mpc_err_print(r.error);
-	    mpc_err_delete(r.error);
-	}
+        if (mpc_parse("<stdin>", input, RML, &r)) {
+            //rml_analyze(r.output);
+            long result = rml_eval(r.output);
+            printf("\n\nans > %li\n\n", result);
+            mpc_ast_delete(r.output);
+        } else {
+            mpc_err_print(r.error);
+            mpc_err_delete(r.error);
+        }
 
-	free(input);
+        free(input);
     }
 
     return 0;
@@ -99,7 +99,7 @@ long rml_eval(mpc_ast_t * tree)
 {
 
     if (strstr(tree->tag, "number")) {
-	return atoi(tree->contents);
+        return atoi(tree->contents);
     }
 
     char *op = tree->children[1]->contents;
@@ -107,8 +107,8 @@ long rml_eval(mpc_ast_t * tree)
 
     int i = 3;
     while (strstr(tree->children[i]->tag, "expr")) {
-	x = rml_op(x, op, rml_eval(tree->children[i]));
-	i++;
+        x = rml_op(x, op, rml_eval(tree->children[i]));
+        i++;
     }
 
     return x;
@@ -118,27 +118,27 @@ long rml_eval(mpc_ast_t * tree)
 long rml_op(long x, char *op, long y)
 {
     if (!strcmp(op, "+")) {
-	return x + y;
+        return x + y;
     }
     if (!strcmp(op, "-")) {
-	return x - y;
+        return x - y;
     }
     if (!strcmp(op, "/")) {
-	return x / y;
+        return x / y;
     }
     if (!strcmp(op, "*")) {
-	return x * y;
+        return x * y;
     }
     if (!strcmp(op, "^")) {
-	int z = x;
-	printf("Multiplying %i exponentially by %i", x, y);
-	for (int i = 0; i < y; i++) {
-	    z = z * x;
-	}
-	return z;
+        int z = x;
+        printf("Multiplying %i exponentially by %i", x, y);
+        for (int i = 0; i < y; i++) {
+            z = z * x;
+        }
+        return z;
     }
     if (!strcmp(op, "%")) {
-	return 1;
+        return 1;
     }
     return 0;
 }
@@ -152,44 +152,44 @@ int rml_analyze(mpc_ast_t * tree)
     puts("");
 
     int describe_node(mpc_ast_t * n) {
-	printf("\n\nNode Info:\n  Tag: %s\n  Content: %s\n  Children: %i",
-	       n->tag, n->contents, n->children_num);
-	return 0;
+        printf("\n\nNode Info:\n  Tag: %s\n  Content: %s\n  Children: %i",
+               n->tag, n->contents, n->children_num);
+        return 0;
     }
 
 
     int count_nodes(mpc_ast_t * tree) {
-	describe_node(tree);
-	if (tree->children_num == 0) {
-	    return 1;
-	}
-	if (tree->children_num >= 1) {
-	    int total = 1;
-	    for (int i = 0; i < tree->children_num; i++) {
-		total = total + count_nodes(tree->children[i]);
-	    }
-	    return total;
-	}
-	return 0;
+        describe_node(tree);
+        if (tree->children_num == 0) {
+            return 1;
+        }
+        if (tree->children_num >= 1) {
+            int total = 1;
+            for (int i = 0; i < tree->children_num; i++) {
+                total = total + count_nodes(tree->children[i]);
+            }
+            return total;
+        }
+        return 0;
     }
     int nodes = count_nodes(tree);
 
 
     int count_children(mpc_ast_t * tree) {
-	puts("Counting children...");
-	return 0;
+        puts("Counting children...");
+        return 0;
     }
     int children = count_children(tree);
 
 
     int count_branches(mpc_ast_t * tree) {
-	puts("Counting branches...");
-	return 0;
+        puts("Counting branches...");
+        return 0;
     }
     int branches = count_branches(tree);
 
 
     printf("\nTree Info:\n\nNodes: %i\nChildren: %i\nBranches: %i",
-	   nodes, children, branches);
+           nodes, children, branches);
     return 0;
 }

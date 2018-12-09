@@ -5,9 +5,9 @@
  *  Copyright (C) 2018 Ryan Fleck under the GNU GPLv3.
  *
  *  Prerequisites: mpc.c, mpc.h, libedit-dev.
- *   MPC repo at <github.com/orangeduck/mpc> 
+ *   MPC repo at <github.com/orangeduck/mpc>
  *
- *  Compilation Instructions:  
+ *  Compilation Instructions:
  *   (GNU/Linux) cc -stc=c99 -Wall <file> mpc.c -ledit -lm
  */
 
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
     //Regular expressions that describe the grammar.
     mpca_lang(MPCA_LANG_DEFAULT,
-	      "                                                    \
+              "                                                    \
     number   : /-?[0-9]+/ ;                            \
     operator : '+' | '-' | '*' | '/' ;                 \
     expr     : <number> | '(' <operator> <expr>+ ')' ; \
@@ -39,20 +39,20 @@ int main(int argc, char **argv)
     puts("Press Ctrl+C to Exit\n");
 
     while (1) {
-	char *input = readline("rml > ");
-	mpc_result_t r;
+        char *input = readline("rml > ");
+        mpc_result_t r;
 
-	add_history(input);
+        add_history(input);
 
-	if (mpc_parse("<stdin>", input, RML, &r)) {
-	    mpc_ast_print(r.output);	//Yay, syntax tree! 
-	    mpc_ast_delete(r.output);
-	} else {
-	    mpc_err_print(r.error);
-	    mpc_err_delete(r.error);
-	}
+        if (mpc_parse("<stdin>", input, RML, &r)) {
+            mpc_ast_print(r.output);	//Yay, syntax tree!
+            mpc_ast_delete(r.output);
+        } else {
+            mpc_err_print(r.error);
+            mpc_err_delete(r.error);
+        }
 
-	free(input);
+        free(input);
     }
 
     return 0;

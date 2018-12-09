@@ -14,22 +14,22 @@ int main(int argc, char **argv)
     puts("Press Ctrl+C to Exit\n");
 
     while (1) {
-	char *input = readline("rml > ");
-	add_history(input);
-	printf("No, you're a %s\n", input);	//Feedback.
-	free(input);
+        char *input = readline("rml > ");
+        add_history(input);
+        printf("No, you're a %s\n", input);	//Feedback.
+        free(input);
     }
 
     return 0;
 }
 
-/* 
+/*
  * Notes:
- * 
- * Must be compiled with the correct libraries linked: 
+ *
+ * Must be compiled with the correct libraries linked:
  * cc -std=c99 -Wall $x -L/usr/local/lib -I/usr/local/include -lreadline
- * 
+ *
  * After further experimentation, all you need is -ledit flag.
- * 
- * 
+ *
+ *
  */

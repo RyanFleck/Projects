@@ -1,5 +1,5 @@
 /*
- *  rcf002_structures.c - Implements a simple 3D-Point. 
+ *  rcf002_structures.c - Implements a simple 3D-Point.
  *  Copyright (C) 2018 Ryan Fleck under the GNU GPLv3.
  */
 

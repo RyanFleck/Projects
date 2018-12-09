@@ -1,5 +1,5 @@
 /*
- *  name.c - desc 
+ *  name.c - desc
  *  Copyright (C) 2018 Ryan Fleck under the GNU GPLv3.
  */
 
