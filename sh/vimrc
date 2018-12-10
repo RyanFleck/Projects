@@ -7,4 +7,8 @@ set expandtab
 set smarttab
 set autoindent
 
+set lbr
+set number
+highlight LineNr ctermfg=grey
+
 nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
