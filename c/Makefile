@@ -1,7 +1,7 @@
 
 .PHONY: format
 format:
-	astyle -A3 *.c
+	astyle -A3 *.c && rm *.orig
 
 .PHONY: clean 
 clean:
