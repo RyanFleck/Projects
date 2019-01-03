@@ -22,10 +22,11 @@
 #define MAXLINE 1000
 
 int r_getline(char line[]);
-int r_strindex(char source[], char searchfor[]);
+int r_strindex(char source[], char query[]);
 
 // Search Pattern
 char pattern[] = "ould";
+// char pattern[] = "asdf";
 
 int main()
 {
@@ -34,7 +35,9 @@ int main()
     int  lineno = 0;
 
     while( r_getline(line) > 0 ) {
-        printf("%i  %s", lineno, line);
+        if (r_strindex(line, pattern) >= 0){
+            printf("%i  %s", lineno, line);
+        }
         lineno++;
     }
 
@@ -48,7 +51,7 @@ int r_getline(char line[])
 
     // Alternatively, this can all be a one-liner: fgets(line, MAXLINE, stdin);
 
-    for( i=0; i < bound && (c=getchar())!=EOF && c!='\n'; i++) {
+    for( i=0; i < bound && (c=getchar())!=EOF && c!='\n'; i++ ) {
         line[i] = c;
     }
 
@@ -62,8 +65,16 @@ int r_getline(char line[])
     return i;
 }
 
-int r_strindex(char source[], char searchfor[])
+int r_strindex(char source[], char query[])
 {
+    int i, j, k;
 
+    for ( i=0 ; source[i] != '\0'; i++ ) {
+        for ( j=i, k=0; query[k] != '\0' && source[j] == query[k]; j++, k++ ) ;
 
+        if( k > 0 && query[k] == '\0' ) {
+            return i;
+        }
+    }
+    return -1;
 }
