@@ -20,9 +20,7 @@ class Hello
 
 <br />
 
-I've always had strong feelings against the anti-competetive Microsoft, and the products it produces. Yesterday's Github aquisition will probably end in the same way the aquisitions of Nokia, Rare, LinkedIn, Mojang and Xamarin did; with stagnation, a halt in new and interesting innovations, and no new fantastic products.
-
-This being said, I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience, and to do this competently I feel it is in my best interest to invest some time in C#.
+I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience. 
 
 <br />
 
