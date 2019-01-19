@@ -26,7 +26,7 @@ def countingValleys(n, s):
         if e < 0 and not vf:
             vf = True
 
-        if e >= 0 and vf
+        if e >= 0 and vf:
             vc += 1
             vf = False
 
@@ -34,17 +34,3 @@ def countingValleys(n, s):
         c += 1
 
     return vc
-
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input())
-
-    s = input()
-
-    result = countingValleys(n, s)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
