@@ -10,16 +10,17 @@
 
 #include <stdio.h>
 
-int main( int argc, char *argv[] ){
-    
-    if( argc == 1 ){
+int main( int argc, char *argv[] )
+{
+
+    if( argc == 1 ) {
         puts("No arguments supplied.");
         return 1;
     }
-    
+
     printf("Arguments given: %i\n",(argc-1));
 
-    for( int i = 1; i < argc; i++ ){
+    for( int i = 1; i < argc; i++ ) {
         printf( " %i: %s\n", i, argv[i] );
     }
 

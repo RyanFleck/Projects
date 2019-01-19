@@ -35,7 +35,7 @@ int main()
     int  lineno = 0;
 
     while( r_getline(line) > 0 ) {
-        if (r_strindex(line, pattern) >= 0){
+        if (r_strindex(line, pattern) >= 0) {
             printf("%i  %s", lineno, line);
         }
         lineno++;
