@@ -30,6 +30,15 @@ All of these use cases can see fantastic acceleration with just a little bit of 
 
 <br />
 
+## Environment Setup
+
+Most of my python is written either in *VIM* or *VS Code* with the [AutoPEP8](https://marketplace.visualstudio.com/items?itemName=himanoa.Python-autopep8) linter. You'll need *pylint* installed to use the VS Code extension.
+
+```bash
+python -m pip install -U pylint --user
+```
+
+
 ## Pandas Data Analysis
 
 *Pandas* is a Python library for creating and manipulating *dataframes*, allowing for easy organization and processing of data. Xlrd enables easy import of excel files into Pandas Dataframe format, and manipulation is easy from there.
