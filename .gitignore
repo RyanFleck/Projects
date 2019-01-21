@@ -229,3 +229,25 @@ pom.xml.tag
 
 #Visual Studio
 *.sln
+
+# C++
+*.o
+*.d
+*.slo
+*.lo
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+

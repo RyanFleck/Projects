@@ -1,7 +1,7 @@
 /* 
- * C++ Algorithms: 
+ * C++ Algorithms: Header File
  *
- * 
+ * Provides all algorithm function declarations.
  *
  * All algorithms are currently compiled and tested in algo_main.cpp,
  * as I learn more C++ the running/testing system will allow test runs
@@ -17,8 +17,11 @@ int bubbleSort(int *a, int len);
 
 // algo_array_tools.cpp
 int printArray(int *a, int len);
+int sumIntArray(int *a, int len);
 
 // algo_output_tools.cpp
 int printHeader(std::string s);
 int printSectionBreak(std::string s);
 
+// algo_multiples.cpp
+int *getMultiples(int a, int b, int ceil);

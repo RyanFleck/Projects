@@ -1,4 +1,4 @@
-/* 
+/*
  * C++ Algorithms: Bubble Sort
  *
  * Array sorting algorithm. O(n^2)

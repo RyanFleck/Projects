@@ -1,7 +1,7 @@
 /*
- * C++ Algorithms: Output Tools
+ * C++ Algorithms: Multiples
  *
- * Tools for printing stylized headers during execution or test cases.
+ * Finds the common multiples of two numbers below a third number.
  *
  * All algorithms are currently compiled and tested in algo_main.cpp,
  * as I learn more C++ the running/testing system will allow test runs
@@ -14,15 +14,9 @@
 
 using namespace std;
 
-int printHeader(string s)
+int *getMultiples(int a, int b, int ceil) // Under development.
 {
-    cout << s;
-    return 0;
-}
-
-int printSectionBreak(string s)
-{
-    cout << s;
-    return 0;
+    static int arr[3] = {4,5,6};
+    return arr;
 }
 

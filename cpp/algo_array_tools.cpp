@@ -1,5 +1,5 @@
-/* 
- * C++ Algorithms: Array Tools 
+/*
+ * C++ Algorithms: Array Tools
  *
  * Tools for debugging and visualizing arrays.
  *
@@ -24,5 +24,14 @@ int printArray(int *a, int len)
     }
     cout << ")\n";
     return 0;
+}
+
+int sumIntArray(int *a, int len)
+{
+    int total = 0;
+    for(int x=0; x<len; x++) {
+        total += a[x];
+    }
+    return total;
 }
 
