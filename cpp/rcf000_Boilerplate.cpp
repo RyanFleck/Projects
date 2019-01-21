@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-  cout << "RCF000 - Boilerplate\n";
+int main()
+{
+    cout << "RCF000 - Boilerplate\n";
 }

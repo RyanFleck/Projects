@@ -1,5 +1,5 @@
 FLAGS = -std=c++11 -O2 -Wall
-SRCS = $(wildcard *.cpp)
+SRCS = $(wildcard algo_*.cpp)
 
 project: algorithms.h $(SRCS); g++ $(FLAGS) algorithms.h $(SRCS) -o algorithms.o
 
