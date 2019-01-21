@@ -26,11 +26,13 @@ C with a billion things stuck on. A whole different beast.
 ## Why I am Writing Programs in C++
 To keep up with my friends in advanced programming courses at *uOttawa* at the time of writing.
 
+Also, seeing as I'm no C++ *aficionado*, I saw that the hackerrank challenge for Kinaxis could only be written in C++, so I'm taking some notes and binge studying today.
+
 <br />
 
 ## Core C++
 
-Every C++ program must have **main**, the entry point. A nonzero value returned from `main()` indicates failure.
+Every C++ program must have **main**, the entry point. A nonzero value returned from `main()` indicates failure. Compile with `g++`.
 
 ```cpp
 int main(){}
@@ -69,6 +71,46 @@ int main(){
   print_square(6);
 }
 ```
+
+Just like C. Neato.
+
+Common types:
+
+int | 0, 19
+double | 3.14, 239.2
+char | 'a', '\n'
+string | "Hello, World."
+bool | true, false
+
+Simple input:
+
+```cpp
+#include <iostream>
+
+int main() {
+  int tip = 0;
+  std::cout << "Enter tip amount: ";
+  std::cin >> tip;
+  std::cout << "You paid " << tip << " dollars.\n";
+}
+```
+
+Simple random:
+
+```cpp
+#include <iostream>
+#include <stdlib.h>
+#include <ctime>
+
+// 50% chance of returning true.
+bool fiftyfifty() {
+  srand (time(NULL));
+  return( rand() % 2 == 0 );
+}
+```
+
+For and while loops exist as they do in C.
+
 
 ```cpp
 #include <iostream>
@@ -243,3 +285,158 @@ int main(){
   //int x = nullptr;
 }
 ```
+
+## Competetive and Interview Programming in C++
+
+After flunking my IBM interview and noting Kinaxis (and others,) require C++ skills, I decided to seriously pursue C++ as a language of choice for interviews, project euler questions, and hackerrank challenges.
+
+**Resources:**
+1. Competetive programmer's handbook. [PDF](https://github.com/RyanFleck/ryanfleck.github.io/raw/master/Resources/cpp.pdf)
+2. Cracking the Coding Interview.
+
+## My First Linked Project
+
+`project.h` is used to provide all other methods to `main.cpp`.
+
+```cpp
+ #include <bits/stdc++.h>
+
+// arithmetic.cpp
+int add(int x, int y);
+int subtract(int x, int y);
+
+// basic_io.cpp
+int printArrayFromCIN();
+int grabIntFromCIN();
+
+// bubble_sort.cpp
+int bubbleSort(int *a, int len);
+int printArray(int *a, int len);
+```
+
+`main.cpp`
+
+```cpp
+#include "project.h"
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello, World!\n";
+
+    int x[9] = {3,2,6,2,1,56,7,0,12};
+    printArray(x,9);
+    cout << "Bubble sort array.\n";
+    bubbleSort(x,9);
+    printArray(x,9);
+
+    return 0;
+}
+```
+
+`arithmetic.cpp`
+
+```cpp
+#include <bits/stdc++.h>
+#include "project.h"
+
+using namespace std;
+
+int add(int x, int y)
+{
+    return x + y;
+}
+
+int subtract(int x, int y)
+{
+    return x - y;
+}
+```
+
+`basic_io.cpp`
+
+```cpp
+#include "project.h"
+
+using namespace std;
+
+/*
+ * Learning C++
+ * Simple I/O functions.
+ */
+
+int printArrayFromCIN()
+{
+    string x;
+    while ( cin >> x ) {
+        cout << "Processing " << x << '\n';
+    }
+    return 0;
+}
+
+int grabIntFromCIN()
+{
+    int x = 0;
+    cin >> x;
+    return x;
+}
+
+string grabLineFromCIN()
+{
+    string s = "";
+    getline(cin, s);
+    return s;
+}
+
+
+```
+
+`bubble_sort.cpp`
+
+```cpp
+#include "project.h"
+
+using namespace std;
+
+int bubbleSort(int *a, int len)
+{
+    for(int x=0; x<len; x++) {
+        for(int y=0; y<(len-1); y++) {
+            if(a[y] > a[y+1]) {
+                swap(a[y],a[y+1]);
+            }
+        }
+    }
+    return 0;
+}
+
+int printArray(int *a, int len)
+{
+    cout << "  (";
+    int terminus = len - 1;
+    for(int x=0; x<len; x++) {
+        cout << a[x];
+        if( x != terminus ) cout << ", ";
+    }
+    cout << ")\n";
+    return 0;
+}
+```
+
+These files are compiled with a *Makefile*, but the command ends up being:
+
+```sh
+g++ -std=c++11 -O2 -Wall project.h arithmetic.cpp basic_io.cpp bubble_sort.cpp main.cpp -o project
+```
+
+Running the executable generates the following output:
+
+```cpp
+Hello, World!
+  (3, 2, 6, 2, 1, 56, 7, 0, 12)
+Bubble sort array.
+  (0, 1, 2, 2, 3, 6, 7, 12, 56)
+```
+
+<br />
