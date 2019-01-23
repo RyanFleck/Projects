@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "SSHing to LAB."
+ssh -C rcf.madhacker.biz
+echo "Done."

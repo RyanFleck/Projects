@@ -1,0 +1,39 @@
+#!/bin/bash
+echo "Updating system."
+function detectos {
+case `uname` in
+    Linux )
+        LINUX=1
+        which dnf && { FEDORA=1; echo Fedora; return; }
+        which yum && { CENTOS=1; echo CentOS; return; }
+        which zypper && { SUSE=1; echo Suse; return; }
+        which apt && { DEBIAN=1; echo Debian; return; }
+        ;;
+    Darwin )
+        DARWIN=1
+        ;;
+    * )
+        OTHER=1
+        ;;
+esac
+}
+
+detectos
+
+if [ "$LINUX" = 1 ] ; then
+    echo "OS is good."
+fi
+
+if [ "$DEBIAN" = 1 ] ; then
+    echo "Updating Debian with the apt package manager."
+    sudo apt update 
+    sudo apt upgrade -y
+fi
+
+if [ "$FEDORA" = 1 ] ; then
+    echo "Updating Fedora with the dnf package manager."
+    sudo dnf update -y
+fi
+
+echo "Done."
+
