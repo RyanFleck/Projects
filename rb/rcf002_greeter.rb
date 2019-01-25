@@ -3,7 +3,7 @@
 # Implement Class
 
 class Greeter
-  def initialize(name = "World")
+  def initialize(name = 'World')
     @name = name
   end
 
@@ -16,16 +16,16 @@ class Greeter
   end
 end
 
-greet = Greeter.new("Mark")
+greet = Greeter.new('Mark')
 
-puts("Test greeter methods...")
+puts('Test greeter methods...')
 greet.say_hi
 greet.say_bye
 
 # puts(Greeter.instance_methods)
 
-puts("Inspect and augment greeter...")
-for element in ["name", "say_hi", "say_bye", "to_s", "yell"] do
+puts('Inspect and augment greeter...')
+%w[name say_hi say_bye to_s yell].each do |element|
   puts("Responds to #{element}? #{greet.respond_to?(element)}")
 end
 
@@ -35,7 +35,7 @@ class Greeter
   attr_accessor :name
 end
 
-greet.name = "John"
-puts("Test greeter methods again...")
+greet.name = 'John'
+puts('Test greeter methods again...')
 greet.say_hi
 greet.say_bye

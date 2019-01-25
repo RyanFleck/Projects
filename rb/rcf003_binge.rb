@@ -1,21 +1,15 @@
 #!/usr/bin/env ruby
 
-# Ryan Fleck - Ruby learning file.
-
-# SECTION ONE: Variables.
-
 name = 'Ryan'
-currentYear = 2017
+currentYear = 2019 # Two years since RCF001.rb!
 
-# SECTION TWO: Basic classes and methods.
-
-# My first class.
-class Human
-  attr_accessor :name # Allow class vars to be accessed.
-  def initialize(name = 'Unnamed', age = 'Unknown', gender = 'Genderless')
+class Customer 
+  attr_accessor :name # Allows class vars to be accessed.
+  def initialize(name = 'Unnamed', age = 'Unknown', gender = 'Not specified.')
     @name = name
     @age = age
     @gender = gender
+    @id = 0  #TODO: Learn how to generate random numbers.
   end
 
   def hello
@@ -27,6 +21,9 @@ class Human
     @age += 1
   end
 end
+
+class BeerGlass
+    attr_accessor :drinks_poured
 
 class Machine
   def initialize(items = 'Empty'); end
