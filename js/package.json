@@ -29,7 +29,8 @@
     "node-fetch": "^2.2.0",
     "node-fetch-json": "^0.1.8",
     "nodemon": "^1.18.5",
-    "pg": "^7.6.0"
+    "pg": "^7.6.0",
+    "serialport": "^7.1.4"
   },
   "scripts": {
     "test": "node rcf000_test.js"
