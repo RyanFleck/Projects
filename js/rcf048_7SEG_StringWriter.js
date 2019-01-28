@@ -1,6 +1,5 @@
 const sp = require('serialport');
-
-const { Readline } = sp.parsers;
+const readline = require('readline');
 
 const allports = [];
 sp.list((err, ports) => {
@@ -10,12 +9,20 @@ sp.list((err, ports) => {
     });
 }).then(() => {
     console.log(allports);
-    const port = allports[allports.length - 1];
+    const port = allports[0]; // Depends on the machine.
     console.log(`Using ${port}`);
     const arduino = new sp(port, 9600);
+    
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+        terminal: true 
+    });
 
-    const parser = new Readline();
-    arduino.pipe(parser);
+    rl.on('line',(l)=>{
+        arduino.write(l+'\n');
+    });
+
 }).catch(e => console.log(e));
 
 /*
