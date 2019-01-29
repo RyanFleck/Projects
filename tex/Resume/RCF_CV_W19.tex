@@ -47,7 +47,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -76,8 +76,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://ryanfleck.github.io}{\Large Ryan Fleck}} & Email : \href{mailto:ryan.fleck@protonmail.com}{ryan.fleck@protonmail.com}\\
-  \href{http://ryanfleck.github.io}{ryanfleck.github.io} & Mobile : +1 (613) 501-4043 \\
+  \textbf{\href{http://ryanfleck.github.io}{\Large Ryan Fleck}} &  \href{mailto:ryan.fleck@protonmail.com}{ryan.fleck@protonmail.com}\\
+  \href{http://ryanfleck.github.io}{ryanfleck.github.io} &  +1 (613) 501-4043 \\
 \end{tabular*}
 
 
@@ -85,8 +85,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Ottawa}{Ottawa, ON}
-      {Bachelor of Applied Science in Computer Engineering}{Sep. 2015 -- Apr. 2021}
+      {University of Ottawa}{Sep. 2015 -- Apr. 2021}
+      {Bachelor of Applied Science in Computer Engineering}{Ottawa, ON}
   \resumeSubHeadingListEnd
 
 
@@ -95,28 +95,28 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {MNP LLP}{Kanata, ON}
-      {Co-Op Developer}{Jan. 2018 - Dec. 2018}
+      {MNP LLP}{Jan. 2018 - Dec. 2018}
+      {Co-Op Developer}{Kanata, ON}
       \resumeItemListStart
         
-        \resumeItem{SiteCore -- C\#, Razor, JS, XML, MongoDB, SQL}
+        \resumeItem{SiteCore -- C\#, Razor, JS, XML, MongoDB, SQL:}
           {SiteCore is an Enterprise WCMS. Involved in quality assurance, testing, debugging, extending the backend and building components according to client requirements. }
        
         
       
-       \resumeItem{Adobe Experience Manager -- JSP, Java, JS, HTL}
+       \resumeItem{Adobe Experience Manager -- JSP, Java, JS, HTL:}
           {Assisted software architects with development of an AEM prototype for a client bid. Responsible for security, user \& group management, workflow and 2 components.}
     
-       \resumeItem{TeamSite -- XML, XSL, Java, JS, Spring, Bootstrap, CentOS}
+       \resumeItem{TeamSite -- XML, XSL, Java, JS, Spring, Bootstrap, CentOS:}
           {Maintained, debugged and extended an OpenText Teamsite system, a Java-based Spring Boot CMS. Utilized CI and CD in an agile team of five.}
           
-          \resumeItem{Drupal -- PHP, Twig, JS, MariaDB, Azure}
+          \resumeItem{Drupal -- PHP, Twig, JS, MariaDB, Azure:}
           {Investigated, developed and deployed a Drupal CMS to Azure in a team of three. Responsible for CentOS container prototype, components, search page.}  
       
-       \resumeItem{Technical Writing -- LaTeX, Python}
-          {Produced high-quality documentation for both non-technical and system administrator targets. Minimal revision was applied to system documentation before submission to clients.}
+       \resumeItem{Technical Writing -- LaTeX, Python:}
+          {Produced clean, high-quality documentation for non-technical and system administrator audiences. Responsible for writing release notes, instruction manuals and tutorials.}
       
-       \resumeItem{Quality Assurance -- Microsoft TFS, Jira, Python}
+       \resumeItem{Quality Assurance -- Microsoft TFS, Jira, Python:}
           {Designed and executed multiple successful Quality Assurance Protocols, utilized automated testing, hundreds of bugs captured, tracked and resolved.}
       
       
@@ -124,49 +124,65 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Xalgorithms Foundation}{Ottawa, ON}
-      {Contributing Developer \& Technical Writer}{Apr. 2018 - Present}
+      {Xalgorithms Foundation}{Apr. 2018 - Present}
+      {Contributing Developer \& Technical Writer}{Ottawa, ON}
       \resumeItemListStart
-        \resumeItem{Interpreter Development -- Scala, Ruby, Docker}
+        \resumeItem{Interpreter Development -- Scala, Ruby, Docker:}
           {The IoR Interpreter parses rules in .xalgo format and runs them against an internal collection of tables and provided sample data. Coded some methods and unit tests.}
-        \resumeItem{IoR Software Architecture}
-          {Involved in discussions regarding the implementation of the IoR and .xalgo language. For more information, please visit \href{https://xalgorithms.org/}{xalgorithms.org}.}
-        \resumeItem{Quality Assurance}
-          {Investigates the , posts all bugs to the \href{https://github.com/Xalgorithms}{Xalgorithms Github repositories}.}
+        \resumeItem{IoR Software Architecture:}
+          {Involved in discussions regarding the implementation of the IoR (Internet of Rules) and .xalgo language. For more information, please visit \href{https://xalgorithms.org/}{xalgorithms.org}.}
+        \resumeItem{Quality Assurance:}
+          {Responsible for debugging the Scala-based rule interpreter, and ensuring the .xalgo language is designed in an intuitive manner. Bugs and issues are posted and resolved in the \href{https://github.com/Xalgorithms}{Xalgo Github repositories}.}
 
       \resumeItemListEnd
 
 
   \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubItem{}{References for the organizations above are available on request.}
+  \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Personal Projects}
-Projects are unit tested with \textbf{Travis CI}, often in a \textbf{Heroku} container, and available for code review on \href{https://github.com/ryanfleck}{Github}.
+
   \resumeSubHeadingListStart
-    \resumeSubItem{Video Games -- Three.JS, Pixi.JS, LibGDX, Unreal, Socket.IO}
+  
+  \resumeSubItem{SuperPull -- NodeJS:}
+      {Crawls the filesystem for git directories and stores them in a config file. Executing \emph{superpull} brings all configured repositories and remote branches up to date. I use the tool daily. Currently rewriting in \textbf{Go}.}
+  
+    \resumeSubItem{Games -- Three.JS, Pixi.JS, LibGDX, Unreal, Socket.IO:}
       {Numerous 1-4 player titles, usually written and tested for use with four XBox 360 controllers, using Express and Socket.IO for game networking.}
-    \resumeSubItem{MorningData -- C++, NodeJS}
+    
+    
+    
+      \resumeSubItem{MorningData -- C++, NodeJS:}
       {A seven-segment display sits by my bed and displays the weather, and the arrival time of the next bus at a fixed stop. System composed of an Arduino reading serial input and NodeJS piping formatted OC-Transpo and OpenWeatherMap API Data to a serial port. Next phase: wireless module to connect pi and arduino.}
-    \resumeSubItem{SuperPull -- NodeJS}
-      {Crawls the filesystem for git directories and stores them in a config file. Executing \emph{superpull} brings all configured repositories and remote branches up to date.}
-    \resumeSubItem{RML: Ryan's Micro LISP -- C}
-      {Tiny not-quite-ANSI lisp repl.  Tokenization and parsing experiment.}
-    \resumeSubItem{NodeJS REST APIs -- PostgreSQL, Mongo, NodeJS, Express}
+    \resumeSubItem{NodeJS REST APIs -- PostgreSQL, Mongo, NodeJS, Express:}
       {Built multiple NodeJS APIs, using clever async database storage \& retrieval methods, for projects and internship applications. Most recent: \href{https://github.com/RyanFleck/Shopify-Challenge-S19}{S19 Shopify Dev Challenge}}
+      \resumeSubItem{RML: Ryan's Micro LISP -- C:}
+      {Tiny not-quite-ANSI lisp repl.  Tokenization and parsing experiment.}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubItem{}{Projects are unit tested with \textbf{Travis CI}, often in a \textbf{Heroku} container, and available for code review on \href{https://github.com/ryanfleck}{Github}.}
   \resumeSubHeadingListEnd
   
 %-----------PROJECTS-----------------
 \section{Group Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{CanUX Conference Booth Trivia: NodeJS, Socket.IO, WebPack, Heroku, SASS}
-      {Chat \& Trivia app that originated as a personal project, but was poached by MNP LLP and a frontend developer was assigned to design a frontend.}
-    \resumeSubItem{BusBot: NodeJS, MongoDB}
-      {Developed with M.Orchard. Developed a Slack Bot that pulls \& processes data from the OC-Transpo API and formats it for display in slack messages. Caches bus data in MongoDB.}
-       \resumeSubItem{LightShow: Blockchain Christmas Tree -- NodeJS, Express, Solidity, C++}
+    \resumeSubItem{CanUX Conference Booth Trivia: NodeJS, Socket.IO, WebPack, Heroku, SASS:}
+      {Chat \& Trivia app that started as a personal project. After being noticed, the project was given resources and allocated time at MNP LLP.}
+    \resumeSubItem{BusBot: NodeJS, MongoDB:}
+      {Developed with M.Orchard. Developed a Slack Bot that pulls \& processes data from the OC-Transpo API and formats it for display in Slack. Caches bus data in MongoDB. Hosted in Heroku.}
+       \resumeSubItem{LightShow: Blockchain Christmas Tree -- NodeJS, Express, Solidity, C++:}
       {Hackathon team of three. Utilized a simulated Ethereum blockchain to record transactions from a simple web app. Judges could use the app to change the color of the tree. Wrote the Node-to-Arduino serial interface for the dApp and the Arduino serial interpreter.}
   \resumeSubHeadingListEnd
-
+  
+  
+  
+% References available upon request. Last updated Jan. 30, 2018.
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
