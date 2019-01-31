@@ -59,3 +59,7 @@ func main() {
 
 Interesting things to note:
 1. functions are exported (public) if the name starts with a capital. For instance, `Parse()` will be available from outside our package, but `parse()` will be private.
+
+## Compiling Executables for Linux, OSX, Win.
+
+An article on [dave.cheney.net](https://dave.cheney.net/2015/08/22/cross-compilation-with-go-1-5) and a [stack overflow thread](got me up and running quickly with building my go applications.)

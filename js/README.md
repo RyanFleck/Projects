@@ -339,6 +339,98 @@ For context, I feel I should include the ESV bible verse after which the project
 **Genesis 11:1-9 English Standard Version (ESV)**
 >Now the whole earth had one language and the same words. And as people migrated from the east, they found a plain in the land of Shinar and settled there. And they said to one another, “Come, let us make bricks, and burn them thoroughly.” And they had brick for stone, and bitumen for mortar. Then they said, “Come, let us build ourselves a city and a tower with its top in the heavens, and let us make a name for ourselves, lest we be dispersed over the face of the whole earth.” And the Lord came down to see the city and the tower, which the children of man had built. And the Lord said, “Behold, they are one people, and they have all one language, and this is only the beginning of what they will do. And nothing that they propose to do will now be impossible for them. Come, let us go down and there confuse their language, so that they may not understand one another's speech.” So the Lord dispersed them from there over the face of all the earth, and they left off building the city. Therefore its name was called Babel, because there the Lord confused the language of all the earth. And from there the Lord dispersed them over the face of all the earth.
 
+## GET ( Pull / Pulk Revolving Doors )
+
+```js
+// Map
+
+
+// Reduce
+const accumulate = (arr) => arr.reduce( (acc, x) => acc+=x, 0);
+
+// Filter
+
+// Some & Every
+
+
+```
+
+```js
+function getTopicCount(topic) {
+    const https = require('https');
+    const wiki = https.get(
+        'https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page='.concat(topic.trim()),
+        (res) => {
+            const response_array = [];
+            res.on('data', (x) => {
+                response_array.push(x.toString());
+            }).on('end', () => {
+                console.log((response_array.join('').match(new RegExp(topic, 'g')) || []).length);
+            }).on('error', (err) => {
+                console.log(`ERR -> wiki -> res\n${err}`);
+            });
+        },
+    ).on('error', (err) => {
+        console.log(`ERR -> wiki \n${err}`);
+    });
+}
+```
+
+```js
+const { createReadStream, createWriteStream } = require('fs');
+const { createInterface } = require('readline');
+const stream = require('stream');
+
+function main() {
+    // read the string filename
+    const filename = readLine();
+    const matchobj = {};
+    const file = createInterface({ input: createReadStream(`${__dirname}/${filename}`) });
+    const outfile = createWriteStream(`${__dirname}/req_${filename}`);
+
+    file
+        .on('line', (l) => {
+            const timestamp = l.match(/\[.*\]/);
+            (timestamp in matchobj) ? matchobj[timestamp] += 1 : matchobj[timestamp] = 1;
+        })
+        .on('close', () => {
+            const keys_matchobj = Object.keys(matchobj);
+            const len_matchobj = keys_matchobj.length;
+            const output = [];
+            for (let y = 0; y < len_matchobj; y++) {
+                if (matchobj[keys_matchobj[y]] > 1) {
+                    output.push(keys_matchobj[y].substring(1, 21));
+                }
+            }
+            output.forEach(x => outfile.write(x.concat('\n')));
+            outfile.end();
+        });
+}
+```
+
+```js
+function mergeStrings(a, b) {
+    const len_a = a.length;
+    const len_b = b.length;
+    const a_greaterthan_b = len_a > len_b;
+    const a_equalto_b = len_a === len_b;
+    const shortest_str = a_greaterthan_b ? len_b : len_a;
+    const ans = [];
+
+    let x = 0;
+    for (x; x < shortest_str; x++) {
+        ans.push(a[x]);
+        ans.push(b[x]);
+    }
+
+    if (!a_equalto_b) {
+        ans.push((a_greaterthan_b ? a : b).substring(x));
+    }
+
+    return ans.join('');
+}
+```
+
 <!--
 ### T
 ```js
