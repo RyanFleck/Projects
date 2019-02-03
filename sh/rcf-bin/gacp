@@ -8,5 +8,5 @@
 #   ( git output shows here, showing changed files. )
 
 git add .
-git commit -m "GACP: $1"
+git commit -m "$1"
 git push
