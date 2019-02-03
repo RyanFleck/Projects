@@ -19,6 +19,8 @@ sp.list((err, ports) => {
         terminal: true 
     });
 
+    arduino.write('node  on\n')
+    
     rl.on('line',(l)=>{
         arduino.write(l+'\n');
     });
