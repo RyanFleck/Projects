@@ -21,7 +21,7 @@ int main(void){
 <br />
 
 ## Why I am Writing Programs in C
-C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML)
+C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML). The Operating Systems course uses C to teach about processes and threading.
 
 Farily certain I just bombed an interview for IBM, so there'll be a lot more added to this page in the coming weeks as I read *Cracking the Coding Interview*.
 
@@ -69,10 +69,18 @@ return 0;
 }
 ```
 
-## Strings and Printing
-
 C uses `char*`, a pointer to a list of characters with the final character being the *null terminator*.
 
 `puts("string");` is sufficient for most string-output.
 
 `printf("string %f", flt);` - printf is required for inserting data into strings. Data can be represented in a variety of ways with `%` notation.
+
+## Unix System Calls
+
+<!--
+## Building Projects with Make 
+
+**GNU Make** is a 
+-->
+
+
