@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     while (EOF != (c = fgetc(stdin))) {
         // printf("%c", c);
         *input_ptr++ = c;
-        if( c == '\n' ){
+        if( c == '\n' ) {
             printf("LINE: %s",input);
             memset(input, 0, 2048);
             input_ptr = input;
