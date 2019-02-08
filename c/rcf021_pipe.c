@@ -59,12 +59,12 @@ int main(int argc, char **argv)
         puts("Second fork, filter program, is fine.");
 
         // Direct stdin of child to pipe.
-        if( dup2(pipefd[0], 0) == -1 ) {
+        if( dup2(pipefd[0], 0) == -1 ) { // Stdin -> 0
             perror("Second fork dup2: ");
             exit(-1);
         }
 
-        close(pipefd[0]);
+        // close(pipefd[0]);
         close(pipefd[1]);
         execlp("filter","filter",NULL);
         exit(-1);
@@ -80,9 +80,10 @@ int main(int argc, char **argv)
         exit(-1);
     } else if ( monpid == 0 ) { // Run if child.
         puts("Third fork, monitor program, is fine.");
-        dup2(pipefd[1], 1);
+        printf("Attempting to monitor PID %s\n",pidStr);
+        dup2(1, pipefd[1]); // Stdout -> 1
         close(pipefd[0]);
-        close(pipefd[1]);
+        // close(pipefd[1]);
         execlp("procmon","procmon", pidStr, NULL);
         exit(-1);
     }
@@ -103,3 +104,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
