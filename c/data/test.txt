@@ -1,0 +1,3 @@
+Contents of test file replaced.
+Contents of test file appended.
+Great!
