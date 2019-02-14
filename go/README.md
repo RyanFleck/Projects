@@ -31,6 +31,18 @@ Go is a fast, compiled language with focus on multicore and networked programs.
 I've done a ton of small, fun projects in NodeJS, and love the ease with which I can express small ideas. Unfortunately, I've grown out of Node, and am looking for something with better security and scalability. I'll be writing personal projects in **go** for the next few months. With Go 2 on the horizon, now seems like a reasonable time to begin learning.
 
 <br />
+## Setup
+
+```sh
+apt install golang
+```
+
+Add to `~/.profile`:
+```sh
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+```
+
 
 ## The Basics
 
