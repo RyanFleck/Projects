@@ -17,11 +17,13 @@ fn main() {
 
 <br />
 
-## Why I am Writing Programs in Rust
+# Why I am Writing Programs in Rust
 
 *Rust* seems to be a good way to build stable, multi-platform CLI apps, something I've had difficulty with using C.
 
 The docs can be found at <https://doc.rust-lang.org/book/>
+
+# Rust Basics
 
 ## Starting a Rust Project
 
@@ -72,3 +74,7 @@ fn main() {
 ```
 
 Took me a hot minute to wrap my head around this, I've never seen anything like `match` before, but it's essentially a fancy switch where you can set responses for enumerable variants. Neat.
+
+# **WASM**: Web Assembly
+
+After reading an article on *developers.google.com* titled '[Replacing a hot path in your app's JavaScript with WebAssembly](https://developers.google.com/web/updates/2019/02/hotpath-with-wasm)', I decided to give [**wasm-pack**](https://rustwasm.github.io/wasm-pack/) a test drive. The aforementioned article gave excellent insight into when and why WASM should be used, so I decided to attempt to port some game logic into WASM... the possibilities!
