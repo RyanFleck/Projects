@@ -23,6 +23,10 @@ public class Solution {
         return sb.toString();
     }
 
+    private static String spacesV2(int numberOfSpaces) {
+        return new String(new char[numberOfSpaces]).replace("\0", " ");
+    }
+
     private static String paddedIntString(int a) {
         String intStr = Integer.toString(a);
         while (intStr.length() < 3) {
