@@ -189,6 +189,34 @@ Do note that IntelliJ IDEA's free version does **not** support Java EE developme
 
 ### Servlets
 
+*What is a servlet?* A small program that responds to web requests - many of them may run simultanously to handle different types of requests within a web server.
+
+### MicroServices
+
+> Java EE is a maintainable industry standard, with most projects having no external dependencies and thin deployment artifacts.[^1]
+
+[^1]: Mario-Leander Remier, *Building Web Services with Java EE 8* [LinkedIn Learning](https://www.linkedin.com/learning/building-web-services-with-java-ee-8).
+
+```xml
+<dependency>
+  <groupId>javax</groupId>
+  <artifactId>javaee-api</artifactId>
+  <version>8.0</version>
+  <scope>provided</scope>
+</dependency>
+```
+
+This Maven dependency contains the Java EE 8 API, and can be packed into a thin WAR and thrown into a Docker container. The following APIs are common in microservices:
+
+JSR 370 | JAX-RS | REST API library
+JSR 367 | JSON-B | Convert JSON to/from Java objects 
+JSR 374 | JSON-P | Java API for JSON Processing
+
+
+
+### Containerizing with Docker
+
+
 ### RESTful Services with Jax-RX 2
 
 *Representational State Transfer* utilizes a stateless communication protocol and web standards to present a standardized interface for applications to retrieve data. [WildFly](#wildfly-application-server) utilizes RESTEasy, an implementation of Jax-RX. The following interfaces should be programmed for data access:
@@ -260,3 +288,5 @@ spring
 Word          | Plain English
 --------------|---------------------------
 POJO          | Plain old Java Object
+
+## References.
