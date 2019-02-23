@@ -2,6 +2,8 @@
 config.xml
 .env
 
+*kdev4*
+
 *target*
 *.war
 *.ear

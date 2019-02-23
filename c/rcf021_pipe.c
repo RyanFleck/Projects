@@ -1,22 +1,33 @@
 /*
  *  pipe.c - Replication of a CSI lab.
  *  Copyright (C) 2019 Ryan Fleck under the GNU GPLv3.
- *
+ *  
+ *  DUP2()
  *  http://man7.org/linux/man-pages/man2/dup.2.html
  *   Usage: dup2( fdSrc, fdDst );
- *     Copies fdSrc to fdDst.
+ *    Replaces fdDst with fdSrc.
  *  
+ *  PIPE()
+ *  https://linux.die.net/man/2/pipe
+ *   Usage: pipe(pipefd) 
+ *    Writes pipe i/o descriptors to pipefd array.
+ *    pipefd[0] -> Read end of pipe.
+ *    pipefd[1] -> Write end of pipe.
+ * 
+ *    Data written to the write end of the pipe is buffered by the
+ *      kernel until it is read from the read end of the pipe.
+ * 
  *  Process files:
  *   0 - STDIN.
  *   1 - STDOUT.
  */
 
 #define _POSIX_SOURCE
-#include<stdio.h>
-#include<stdlib.h>
-#include<unistd.h>
-#include<sys/types.h>
-#include<signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <signal.h>
 
 int main(int argc, char **argv)
 {
@@ -25,7 +36,7 @@ int main(int argc, char **argv)
     char pidStr[32];
     int pipefd[2];
 
-    program = "calcloop";
+    program = "calcloop"; //"randforever";
     printf("Using %s as test program.\n", program);
 
     // Fork and start test process.
@@ -59,14 +70,16 @@ int main(int argc, char **argv)
         puts("Second fork, filter program, is fine.");
 
         // Direct stdin of child to pipe.
+        // (Plug Pipe/Read into STDIN.)
         if( dup2(pipefd[0], 0) == -1 ) { // Stdin -> 0
             perror("Second fork dup2: ");
             exit(-1);
         }
 
-        // close(pipefd[0]);
-        close(pipefd[1]);
+        //close(pipefd[0]);
+        //close(pipefd[1]);
         execlp("filter","filter",NULL);
+        puts("Filter active.");
         exit(-1);
     }
 
@@ -81,26 +94,29 @@ int main(int argc, char **argv)
     } else if ( monpid == 0 ) { // Run if child.
         puts("Third fork, monitor program, is fine.");
         printf("Attempting to monitor PID %s\n",pidStr);
-        dup2(1, pipefd[1]); // Stdout -> 1
-        close(pipefd[0]);
-        // close(pipefd[1]);
+        // Direct stdout of child to pipe.
+        // ( Plug Pipe/Write to STDOUT )
+        dup2(pipefd[1], 1); // Stdout -> 1
+        puts("Stdout should be IN PIPE? Good.");
+        //close(pipefd[0]);
+        //close(pipefd[1]);
         execlp("procmon","procmon", pidStr, NULL);
         exit(-1);
     }
-    
+
     close(pipefd[0]);
     close(pipefd[1]);
-    sleep(5); //20
+    sleep(3); //20
 
     puts("Killing program.");
     kill(prpid, SIGTERM);
-    sleep(3);
+    sleep(1);
     puts("Killing progmon.");
     kill(monpid, SIGTERM);
-    sleep(3);
+    sleep(1);
     puts("Killing filter.");
     kill(fpid, SIGTERM);
-    sleep(3);
+    sleep(1);
 
     return 0;
 }

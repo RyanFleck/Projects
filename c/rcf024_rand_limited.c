@@ -1,5 +1,5 @@
 /*
- *  rand_forever.c - Sends rand tuple to stdout every second.
+ *  rand_limited.c - Sends two batches of 5 random ints to STDOUT.
  *  Copyright (C) 2019 Ryan Fleck under the GNU GPLv3.
  */
 
@@ -15,7 +15,10 @@ int main(int argc, char **argv)
 
     while(c<5) {
         printf("%i %i\n",c++,rand());
-        sleep(1);
+    }
+    sleep(1);
+    while(c<10) {
+        printf("%i %i\n",c++,rand());
     }
 
     return 0;
