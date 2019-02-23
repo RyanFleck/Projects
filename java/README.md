@@ -26,6 +26,8 @@ All the University courses teach in Java. It is a powerful Object-Oriented progr
 ## Tools and Installation
 
 1. Install a text editor or IDE.
+    1. Beginners should use a bare text editor to understand the language.
+    1. For projects of scale, use Eclipse or IntelliJ IDEA.
 2. Install the JDK.
 3. Add the JDK's `bin` to your `PATH` if on Windows.
 
@@ -171,11 +173,98 @@ public class Printer2 extends Printer {
 
 Use javadoc.
 
-## The Best Parts of Java
+## Java EE
+
+**EE** stands for *Enterprise Edition*, whereas the OpenJDK and Java SE implementations are *Standard Edition*. The difference seems to be in the use case. Java SE is composed of the SE API, including all your favourite data structures, networking, security, database tools, and GUI kit. The EE edition *extends* SE by including an API and runtime environment for *"large-scale, multi-tiered, scalabe, reliable and secure network applications"*.[^ee]
+
+EE docs can be found at [javaee.github.io](https://javaee.github.io/glassfish/documentation)
+
+EE API docs at [javaee.github.io/javaee-spec](https://javaee.github.io/javaee-spec/javadocs/)
+
+Installation help at [javaee.github.io/tutorial](https://javaee.github.io/tutorial/usingexamples001.html#GEXBC)
+
+[^ee]: Oracle's [Jave EE documentation.](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html)
+
+Do note that IntelliJ IDEA's free version does **not** support Java EE development.
+
+### Servlets
+
+*What is a servlet?* A small program that responds to web requests - many of them may run simultanously to handle different types of requests within a web server.
+
+### MicroServices
+
+> Java EE is a maintainable industry standard, with most projects having no external dependencies and thin deployment artifacts.[^1]
+
+[^1]: Mario-Leander Remier, *Building Web Services with Java EE 8* [LinkedIn Learning](https://www.linkedin.com/learning/building-web-services-with-java-ee-8).
+
+```xml
+<dependency>
+  <groupId>javax</groupId>
+  <artifactId>javaee-api</artifactId>
+  <version>8.0</version>
+  <scope>provided</scope>
+</dependency>
+```
+
+This Maven dependency contains the Java EE 8 API, and can be packed into a thin WAR and thrown into a Docker container. The following APIs are common in microservices:
+
+JSR 370 | JAX-RS | REST API library
+JSR 367 | JSON-B | Convert JSON to/from Java objects 
+JSR 374 | JSON-P | Java API for JSON Processing
+
+
+
+### Containerizing with Docker
+
+
+### RESTful Services with Jax-RX 2
+
+*Representational State Transfer* utilizes a stateless communication protocol and web standards to present a standardized interface for applications to retrieve data. [WildFly](#wildfly-application-server) utilizes RESTEasy, an implementation of Jax-RX. The following interfaces should be programmed for data access:
+
+- **GET** to retrieve
+- **POST** to create
+- **PUT** to update
+- **DELETE** to remove
+
+**Jax-RX** provides `@` methods for all of the above, and decorators to apply on Java Objects:
+
+Decorator    | Usage
+-------------|--------------------------------
+`@Path`      | Defines a resource.
+`@PathParam` | Parses URI path for parameters.
+`@QueryParam`| Parses URI query for parameters.
+`@Consumes`  | Specifies MIME type of input. `@Produces` for output.
+`@Provider`  | Extends runtime using entity, context, or exception provider classes.
+`@ApplicationPath` | Defines URI to redirect for processing.
+
+### SOAP Services with Jax-WS
+
+*Simple Object Access Protocol*
+
+### WildFly Application Server
+
+**WildFly** is an application runtime. While learning about Java EE, I found some excellent articles on utilizing version 13-Final, so this is what I've used as a base for most of my projects. To install, go to <http://wildfly.org/downloads/> and download the *Full/Web Distribution* package. Unzip this into your program files, and run the add-user script. After a user has been added, you will be able to execute the *standalone* script and see the *HAL* user console at <http://localhost:9990>
+
+![HAL](/assets/JavaEE/WildFlyUI.PNG)
+
+[Here](http://vytas.io/blog/java/Micro-Java-EE-application-with-Wildfly-Swarm/) is a good article on a small & practical microservice written with Wildfly Swarm.
+
+## The Best Parts of Java 8
+
+- [Lambdas](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html) (arrow functions) 
+- [Streams](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html) `java.util.stream`
 
 ```
 ->
 ::
+```
+
+## Maven
+
+[Maven](https://maven.apache.org/what-is-maven.html) is a tool for building and managing Java projects. It plays very well with unit tests and CI systems like *Travis CI*. A good tutorial for beginners is available [here](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+
+```bash
+mvn package
 ```
 
 ## Handling XML
@@ -194,16 +283,10 @@ In production, my current internship uses objects and methods from <https://dom4
 spring
 ```
 
-## Maven
+## Jargon
 
-```bash
-mvn package
-```
+Word          | Plain English
+--------------|---------------------------
+POJO          | Plain old Java Object
 
-## uOttawa Java
-
-Hopefully I'll remark here about the data structures course at some point.
-
-## Eclipse
-
-`CTRL + SHIFT + F` formats the document.
+## References.
