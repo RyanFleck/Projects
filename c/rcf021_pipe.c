@@ -5,7 +5,7 @@
  *  http://man7.org/linux/man-pages/man2/dup.2.html
  *   Usage: dup2( fdSrc, fdDst );
  *     Copies fdSrc to fdDst.
- *  
+ *
  *  Process files:
  *   0 - STDIN.
  *   1 - STDOUT.
@@ -87,7 +87,7 @@ int main(int argc, char **argv)
         execlp("procmon","procmon", pidStr, NULL);
         exit(-1);
     }
-    
+
     close(pipefd[0]);
     close(pipefd[1]);
     sleep(5); //20
