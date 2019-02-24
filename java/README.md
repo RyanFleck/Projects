@@ -23,13 +23,20 @@ public class HelloWorld {
 
 All the University courses teach in Java. It is a powerful Object-Oriented programming language used for many enterprise-grade systems. I am re-learning more advanced java for application in my workplace.
 
-## Tools and Installation
+### Tools and Installation
 
 1. Install a text editor or IDE.
     1. Beginners should use a bare text editor to understand the language.
     1. For projects of scale, use Eclipse or IntelliJ IDEA.
 2. Install the JDK.
 3. Add the JDK's `bin` to your `PATH` if on Windows.
+
+### Resources
+
+1. [Oracle Java Material](https://www.oracle.com/technetwork/java/index-jsp-135888.html) (also [Java EE](https://www.oracle.com/technetwork/java/javaee/documentation/tutorials-137605.html))
+1. Plenty of examples on [Mkyong](http://www.mkyong.com/)
+1. [SpringBoot docs](https://docs.spring.io/spring-boot/docs/2.1.3.RELEASE/reference/htmlsingle/#boot-documentation)
+1. [Project Suggestions](https://blog.udemy.com/java-projects/)
 
 ## Java 8 Essentials
 
@@ -212,10 +219,7 @@ JSR 370 | JAX-RS | REST API library
 JSR 367 | JSON-B | Convert JSON to/from Java objects 
 JSR 374 | JSON-P | Java API for JSON Processing
 
-
-
 ### Containerizing with Docker
-
 
 ### RESTful Services with Jax-RX 2
 
