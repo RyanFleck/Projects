@@ -36,7 +36,9 @@ All the University courses teach in Java. It is a powerful Object-Oriented progr
 1. [Oracle Java Material](https://www.oracle.com/technetwork/java/index-jsp-135888.html) (also [Java EE](https://www.oracle.com/technetwork/java/javaee/documentation/tutorials-137605.html))
 1. Plenty of examples on [Mkyong](http://www.mkyong.com/)
 1. [SpringBoot docs](https://docs.spring.io/spring-boot/docs/2.1.3.RELEASE/reference/htmlsingle/#boot-documentation)
+1. [TechBeamers articles](https://www.techbeamers.com/category/programming-tutorials/java-tutorials/)
 1. [Project Suggestions](https://blog.udemy.com/java-projects/)
+
 
 ## Java 8 Essentials
 
@@ -287,10 +289,14 @@ In production, my current internship uses objects and methods from <https://dom4
 spring
 ```
 
+## GUIs with JavaFX
+
+See [hello_world](https://docs.oracle.com/javafx/2/get_started/hello_world.htm) and [get_started](https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm) guides.
+
 ## Jargon
 
 Word          | Plain English
 --------------|---------------------------
 POJO          | Plain old Java Object
 
-## References.
+## References
