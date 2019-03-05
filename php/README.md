@@ -4,9 +4,9 @@
 
   View formatted manual: [ryanfleck.github.io/php](https://ryanfleck.github.io/php)
   
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
+
 ```php
-echo "Hello, World!";
+echo "Hello, PHP!";
 ```
 
 

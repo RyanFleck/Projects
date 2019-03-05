@@ -5,32 +5,34 @@
   View formatted manual: [ryanfleck.github.io/js](https://ryanfleck.github.io/js)
   
 
-<!--YDKJS:p0-->
-<!--EQJS:p12-->
-
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```js
-console.log("Hello, World!");
+if( prepared == true ){
+    // Hm, this doesn't work in IE?
+    console.log("Hello, JavaScript!");
+}
 ```
 
 <br />
 
-Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unneccessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language.
+
 
 <br />
+
+## Introduction
+
+When I first began writing JavaScript, I mused: *"Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unnecessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language." In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments could be viewed easily online.*
+
+Since that time, I've written a great deal of *things* in JavaScript, ranging from NodeJS servers, to games, to command line applications. It's a very versatile language with an active developer community and, while not especially scalable, is a fantastic way to wade into computer programming.
+
+<br />
+
+A few quotes:
 
 > Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure. ...Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. **Because JavaScript can be used without understanding, the understanding of the language is often never attained.** ([Kyle](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md))
 
 >JavaScript: If it can be done in another language, it should be done in another language. ([Doug](http://fuelyourcoding.com/))
 
-> There are those who will say *terrible* things about the JavaScript language. Many of thse things are true. (Eloquent JS, p.6)
-
-
-<br />
-
-
-
-<br />
+> There are those who will say *terrible* things about the JavaScript language. Many of these things are true. (Eloquent JS, p.6)
 
 ## Resources
 
@@ -39,12 +41,11 @@ Ah, JavaScript; I've had mixed feelings about it for years now. My negative feel
 1. [**You Don't Know JS,** Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
 1. **CodeCademy** [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
 
-## ES6 JavaScript
-*JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. JavaScript was originally included withing *Netscape Navigator* in 1995 to add programs to webpages. In the programs below, `//>` indicates output printed to the console. Comments are inserted with `//` for shortform and `/* xyz */` for multi-line.
+## ES6+ JavaScript
 
+*JavaScript* is the programming language of the web and beyond, with many popular frameworks for building user interfaces and web apps. JavaScript was originally included within *Netscape Navigator* in 1995 to add programs to webpages. I attempt to include a smattering of basics below; `//>` indicates output printed to the console, and in general, comments are inserted with `//` or `/* xyz */` for longer multi-line notes.
 
-## Why I am Writing Programs in JavaScript
-In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments can be viewed online.
+Before we continue, I should clarify: **Node.JS** is a *server-side* implementation of Google's V8 JavaScript engine. What this means for you, as a developer, is that you can write clever programs for the client (the user, plugging along in a browser,) and the server (handling client connections, processing and returning data) in one language. Nearly all of the code mentioned below will work on both the client and server.
 
 <br />
 

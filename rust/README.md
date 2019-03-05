@@ -5,10 +5,9 @@
   View formatted manual: [ryanfleck.github.io/rust](https://ryanfleck.github.io/rust)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```rust
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, Rust!");
 }
 ```
 
@@ -17,15 +16,20 @@ fn main() {
 
 <br />
 
-# Why I am Writing Programs in Rust
+## Why I am Writing Programs in Rust
 
 *Rust* seems to be a good way to build stable, multi-platform CLI apps, something I've had difficulty with using C.
 
 The docs can be found at <https://doc.rust-lang.org/book/>
 
-# Rust Basics
+**Additional Resources**
+1. [Blog post about writing games in Rust](http://iolivia.me/posts/24-hours-of-rust-game-dev/)
+1. [Cloudflare post about building interpreters in Rust](https://blog.cloudflare.com/building-fast-interpreters-in-rust/)
 
-## Starting a Rust Project
+
+## Rust Basics
+
+### Starting a Rust Project
 
 First, generate a project using `cargo`:
 
@@ -43,7 +47,7 @@ Running `cargo build` will install the dependencies.
 
 `cargo run` will build, then run the project.
 
-## First Impressions
+### First Impressions
 
 As I was sitting at my desktop, I started developing using Visual Studio Code with the Rust extension, which is pleasant enough. Installation took a while, as I had to open/update my dusty Visual Studio instance to install some C++ tools. I'm sure this process would be faster with GNU.
 
@@ -75,6 +79,6 @@ fn main() {
 
 Took me a hot minute to wrap my head around this, I've never seen anything like `match` before, but it's essentially a fancy switch where you can set responses for enumerable variants. Neat.
 
-# **WASM**: Web Assembly
+## **WASM**: Web Assembly
 
 After reading an article on *developers.google.com* titled '[Replacing a hot path in your app's JavaScript with WebAssembly](https://developers.google.com/web/updates/2019/02/hotpath-with-wasm)', I decided to give [**wasm-pack**](https://rustwasm.github.io/wasm-pack/) a test drive. The aforementioned article gave excellent insight into when and why WASM should be used, so I decided to attempt to port some game logic into WASM... the possibilities!

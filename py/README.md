@@ -5,9 +5,8 @@
   View formatted manual: [ryanfleck.github.io/py](https://ryanfleck.github.io/py)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```python
-print("Hello, World!")
+print("Hello, Python!")
 ```
 
 <br />

@@ -5,7 +5,6 @@
   View formatted manual: [ryanfleck.github.io/cs](https://ryanfleck.github.io/cs)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```csharp
 using System;
 
@@ -13,7 +12,7 @@ class Hello
 {
   static void Main()
   {
-    Console.WriteLine("Hello, World!");
+    Console.WriteLine("Hello, C#!");
   }
 }
 ```

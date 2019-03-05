@@ -5,14 +5,13 @@
   View formatted manual: [ryanfleck.github.io/go](https://ryanfleck.github.io/go)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```go
 package main
 
 import "fmt"
 
 func main() {
-  fmt.Println("Hello, World!")
+  fmt.Println("Hello, Go!")
 }
 ```
 

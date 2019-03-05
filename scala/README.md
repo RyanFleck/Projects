@@ -5,11 +5,9 @@
   View formatted manual: [ryanfleck.github.io/scala](https://ryanfleck.github.io/scala)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
-
 ```scala
 object Main extends App {
-    println("Hello, World!")
+    println("Hello, Scala!")
 }
 ```
 

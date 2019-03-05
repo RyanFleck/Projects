@@ -4,12 +4,11 @@
 
   View formatted manual: [ryanfleck.github.io/cpp](https://ryanfleck.github.io/cpp)
   
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 
 ```cpp
 #include <iostream>
 int main(){
-  std::cout << "Hello, World!\n";
+  std::cout << "Hello, C++!\n";
 }
 ```
 

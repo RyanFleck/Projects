@@ -5,9 +5,8 @@
   View formatted manual: [ryanfleck.github.io/sh](https://ryanfleck.github.io/sh)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```bash
-echo "Hello, World!"
+echo "Hello, BASH!"
 ```
 
 <br />

@@ -5,6 +5,15 @@
   View formatted manual: [ryanfleck.github.io/xml](https://ryanfleck.github.io/xml)
   
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Oh>
+    <My>
+        <XML what="XML">Hello XML &amp; XSLT!</XML>
+    </My>
+</Oh>
+```
+
 <br />
 
 

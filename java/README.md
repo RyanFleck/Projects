@@ -5,11 +5,10 @@
   View formatted manual: [ryanfleck.github.io/java](https://ryanfleck.github.io/java)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        System.out.println("Hello, Java!");
     }
 }
 ```
@@ -21,7 +20,9 @@ public class HelloWorld {
 
 ## Why I am Writing Programs in Java
 
-All the University courses teach in Java. It is a powerful Object-Oriented programming language used for many enterprise-grade systems. I am re-learning more advanced java for application in my workplace.
+Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At *MNP LLP*, I applied Java to extend client *WCMS* systems built on *Spring*.
+
+I will also be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
 
 ### Tools and Installation
 
@@ -44,17 +45,7 @@ All the University courses teach in Java. It is a powerful Object-Oriented progr
 
 ### Introduction
 
-To support a new project at work, I am brushing up on my Java skills. That primarily involves running through a Java course on Linkedin Learning. Work began on Java in 1991, with the goal of creating a "write once, run anywhere" programming language. Heavy focus on stability and security.
-
-> Interpreted, threaded, dynamic, object-oriented.
-
-Java is compiled to cross-platform bytecode instead of machine language. Unlike C++, it only needs to be compiled once; the JVM and core runtime will handle all low-level operations.
-
-Memory access is managed in Java. C++ has explicit memory management (easy to introduce bugs.)
-
-> Case sensitive, whitespace insensitive,
-
-### Basic Language Overview
+Work began on Java in 1991, with the goal of creating a "write once, run anywhere" programming language. Heavy focus on stability and security. Java is interpreted, threaded, dynamic, and object-oriented. Source code is compiled to cross-platform bytecode instead of machine language. Unlike C++, it only needs to be compiled once; the JVM and core runtime will handle all low-level operations. Memory access is managed in the Java Virtual Machine (JVM). C++ has explicit memory management, which is easier to mishandle.
 
 All code is defined in classes with a `.java` extension. Commands `javac` and `java` compile and run a Java application.
 
@@ -63,7 +54,7 @@ package com.rcf; // Package declaration.
 
 public class Main { // Class declaration.
 
-    // Le classic PSVM:
+    // Classic PSVM:
     public static void main(String[] args) { // Main method.
         System.out.println("Hello, Java!");
     }
@@ -85,24 +76,11 @@ public static final String CONST = "Hello?";
 
 *Every programming language has slightly different critical syntax rules.*
 
-Like in C#, memory for objects is allocated automatically. Small objects are stored in faster stack memory. Larger complex objects are stored in heap memory. You can explicity dereference variables by setting them to `null`. The Garbage collector gets its own thread. To manage memory:
+Like in C#, memory for objects is allocated automatically. Small objects are stored in faster stack memory. Larger complex objects are stored in heap memory. You can explicitly dereference variables by setting them to `null`. The Garbage collector gets its own thread. To manage memory:
 - Minimize the number of objects you create.
 - Use `Runtime.maxMemory()` and `Runtime.totalMemory()` to find out how much RAM is allocated/in use.
 
-### Basic Usage
-
-**STOP.** I've placed awful placeholder programs past this point. This manual needs more work.
-
-#### Hello World
-
-```java
-public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("Hello, Java!");
-    }
-}
-```
+**STOP HERE.** I've placed awful placeholder programs past this point. This manual needs more work.
 
 ### Variables
 ```java
@@ -291,7 +269,7 @@ spring
 
 ## GUIs with JavaFX
 
-See [hello_world](https://docs.oracle.com/javafx/2/get_started/hello_world.htm) and [get_started](https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm) guides.
+See [hello_world](https://docs.oracle.com/javafx/2/get_started/hello_world.htm) and [get_started](https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm) guides. IDEs like *IntelliJ IDEA* and *Eclipse* have built-in systems for assembling JavaFX GUIs.
 
 ## Jargon
 

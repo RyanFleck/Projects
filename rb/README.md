@@ -5,9 +5,8 @@
   View formatted manual: [ryanfleck.github.io/rb](https://ryanfleck.github.io/rb)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```ruby
-puts "Hello, World!"
+puts "Hello, Ruby!"
 ```
 
 
@@ -40,6 +39,7 @@ Adding this user bin to your PATH makes it easy to use tools like [RuboCop](http
 1. Rails: [Rails Guides](https://guides.rubyonrails.org/) and [railstutorial.org](https://www.railstutorial.org/book/beginning) are good.
 1. [Ruby Koans](http://rubykoans.com/)
 1. [The Odin Project](https://www.theodinproject.com/courses)
+1. [Writing CLI progs in Ruby](https://www.honeybadger.io/blog/writing-command-line-apps-in-ruby/)
 
 
 ### Data Types

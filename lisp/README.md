@@ -5,9 +5,8 @@
   View formatted manual: [ryanfleck.github.io/lisp](https://ryanfleck.github.io/lisp)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```lisp
-(print "Hello World")
+(print "Hello, Functional Langs!")
 ```
 
 <https://learnxinyminutes.com/docs/common-lisp/>

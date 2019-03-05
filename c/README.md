@@ -5,12 +5,11 @@
   View formatted manual: [ryanfleck.github.io/c](https://ryanfleck.github.io/c)
   
 
-[Hello World:](http://www.catb.org/jargon/html/H/hello-world.html)
 ```c
 #include<stdio.h>
 
 int main(void){
-  printf("Hello, World.");
+  printf("Hello, C!");
 	return 0;
 }
 ```
