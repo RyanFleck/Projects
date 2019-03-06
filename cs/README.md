@@ -437,10 +437,10 @@ Both of these structures have garbage collection active, freeing memory by deall
 
 Type | Default Value
 -----|--------------
-Reference types | null
-Numeric types | 0
-CHARs | '\0'
-BOOLs | false
+Reference types | `null`
+Numeric types | `0`
+CHARs | `'\0'`
+BOOLs | `false`
 
 To pass by reference, `ref` can be used in a function definition (`static void Foo(ref int x)`) instead of the default which copies. This is essential for some methods that must alter the input data.
 ```cs

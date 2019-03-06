@@ -45,12 +45,12 @@ I will also be using Java at my upcoming Summer internship at IBM. While not my 
 
 ### Introduction
 
-Work began on Java in 1991, with the goal of creating a "write once, run anywhere" programming language. Heavy focus on stability and security. Java is interpreted, threaded, dynamic, and object-oriented. Source code is compiled to cross-platform bytecode instead of machine language. Unlike C++, it only needs to be compiled once; the JVM and core runtime will handle all low-level operations. Memory access is managed in the Java Virtual Machine (JVM). C++ has explicit memory management, which is easier to mishandle.
+Work began on Java in 1991, with the goal of creating a "write once, run anywhere" programming language. Heavy focus on stability and security. Java is interpreted, threaded, dynamic, and object-oriented. Source code is compiled to cross-platform bytecode instead of machine language. Unlike Java's main competitor (at the time,) C++, it only needs to be compiled once; the JVM and core runtime will handle all low-level operations. Memory access is managed in the Java Virtual Machine (JVM). C++ has explicit memory management, which is easier to mishandle.
 
 All code is defined in classes with a `.java` extension. Commands `javac` and `java` compile and run a Java application.
 
 ```java
-package com.rcf; // Package declaration.
+package com.rcf.example; // Package declaration.
 
 public class Main { // Class declaration.
 
@@ -61,7 +61,7 @@ public class Main { // Class declaration.
 }
 ```
 
-**Package** is a global, unique string to ensure global unique identifiers.
+**Package** is a global, unique string to ensure global unique identifiers. Conventionally, package names are based on the domain name for the project, so `docs.oracle.com` becomes `com.oracle.docs`.
 
 **Identifiers** are names used to encapsulate classes, methods, fields, variables and other names. They must start with an alpha character or underscore, cannot be keywords, and are case sensitive.
 
@@ -74,7 +74,7 @@ public class Main { // Class declaration.
 public static final String CONST = "Hello?";
 ```
 
-*Every programming language has slightly different critical syntax rules.*
+*Every programming language has slightly different critical syntax rules.* Read Java's official set of code conventions [here](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
 
 Like in C#, memory for objects is allocated automatically. Small objects are stored in faster stack memory. Larger complex objects are stored in heap memory. You can explicitly dereference variables by setting them to `null`. The Garbage collector gets its own thread. To manage memory:
 - Minimize the number of objects you create.
@@ -83,9 +83,12 @@ Like in C#, memory for objects is allocated automatically. Small objects are sto
 **STOP HERE.** I've placed awful placeholder programs past this point. This manual needs more work.
 
 ### Variables
+
+
 ```java
 private static int = 2;
 ```
+
 ### Objects
 ```java
 PlanetDestroyer DeathStar = new PlanetDestroyer("v1");
@@ -115,7 +118,7 @@ int a[] = new int[2];
 ### Classes
 
 ```java
-package com.rcf;
+package com.rcf.example;
 
 public class Printer {
     public static void log(String x){
@@ -125,7 +128,7 @@ public class Printer {
 ```
 
 ```java
-package com.rcf;
+package com.rcf.example;
 
 public class Main {
 
@@ -144,7 +147,7 @@ public class Main {
 ### Inheritance and Polymorphism
 
 ```java
-package com.rcf;
+package com.rcf.example;
 
 public class Printer2 extends Printer {
     public static void doublelog(String x){
@@ -170,7 +173,7 @@ EE API docs at [javaee.github.io/javaee-spec](https://javaee.github.io/javaee-sp
 
 Installation help at [javaee.github.io/tutorial](https://javaee.github.io/tutorial/usingexamples001.html#GEXBC)
 
-[^ee]: Oracle's [Jave EE documentation.](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html)
+[^ee]: Oracle's [Java EE documentation.](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html)
 
 Do note that IntelliJ IDEA's free version does **not** support Java EE development.
 
@@ -255,7 +258,7 @@ mvn package
 
 ### The Dom4j Library
 
-In production, my current internship uses objects and methods from <https://dom4j.github.io/> to load and process XML doucments. For more information about XML and XPath, please refer to <{{site.url}}/xml>
+In production, my current internship uses objects and methods from <https://dom4j.github.io/> to load and process XML documents. For more information about XML and XPath, please refer to <{{site.url}}/xml>
 
 ### Loading XML From File
 
@@ -276,5 +279,9 @@ See [hello_world](https://docs.oracle.com/javafx/2/get_started/hello_world.htm) 
 Word          | Plain English
 --------------|---------------------------
 POJO          | Plain old Java Object
+Declare       | To initialize without a value, ex. `int a;`
+Define        | Synonymous with Initialize.
+Initialize    | To include data or fill a method body after declaration.
+Instantiate   | To use a defined class to create an object.
 
 ## References

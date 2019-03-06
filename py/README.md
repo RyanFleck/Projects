@@ -6,6 +6,7 @@
   
 
 ```python
+import antigravity
 print("Hello, Python!")
 ```
 
@@ -805,10 +806,14 @@ breakfast
 </table>
 </div>
 
-[This Stack Overflow post](https://stackoverflow.com/questions/5723896/is-there-a-sample-mongodb-database-along-the-lines-of-world-for-mysql) should give you a good idea of how to import the json on Windows and *nix.
+[This Stack Overflow post](https://stackoverflow.com/questions/5723896/is-there-a-sample-mongodb-database-along-the-lines-of-world-for-mysql) should give you a good idea of how to import the json on Windows and *nix.*
 
 ## Deep Learning on Azure
 
 Microsoft now has free learning courses hosted on <https://docs.microsoft.com/en-gb/learn/browse/?roles=developer>
 
 One course is focused on using jupyter notebooks and pytorch with azure containers.  <https://docs.microsoft.com/en-gb/learn/modules/interactive-deep-learning/index>
+
+## Distribute your Python Software
+
+[PyInstaller?](https://medium.com/dreamcatcher-its-blog/making-an-stand-alone-executable-from-a-python-script-using-pyinstaller-d1df9170e263)

@@ -22,50 +22,23 @@ echo "Hello, BASH!"
 
 Bash is a *Unix Shell*, allowing a user to interact with an operating system by entering commands.
 
-**Shell Scripting** is to write *Bash Scripts* to run in the *Bash Shell*.
+**Shell Scripting** is to write *Bash Scripts* to run in the *Bash Shell*. Unfortunately, I need to look up the syntax every time I write it, so included here are primarily the fundamentals from miscallaneous sources.
 
-For instance, to set up a fresh install of *Debian 9*:
+## Shell Scripting Fundamentals
 
-```bash
-#!/bin/bash
+A *Shell Script* is essentially a set of unix programs running sequentially, with control flow. It can be saved to any filename (though preferably one with a `.sh` extension,) and made executable with `chmod +x <filename>`. The first line in any shell script should be `#!/bin/sh`. (Do note that you can also specify zsh, bash, csh, etc.)
 
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root. Exiting."
-  exit 1
-fi
+### Standard Output and Comments
 
-apt update
-apt upgrade
+Single line comments, the only comments, begin with an octothorpe `#`. The `echo` program is called to send standard output.
 
-#Essentials
-apt install -y tmux vim htop curl transmission vlc geary
-#Development
-apt install -y gcc g++ ruby2.3-dev python3 python3-tk python3-pip
-#Electronics
-apt install -y caneda arduino
-#Editors
-apt install -y vim emacs25-lucid eclipse
-#Documentation
-apt install -y pandoc okular texmaker lyx
-#Dev tools
-apt install -y gettext autopoint make build-essential gnome-builder libtool-bin
-apt-get build-dep gnome-builder
-apt-get build-dep eclipse
-
-#Update Ruby and Python
-gem update --system
-gem install bundler
-gem install jekyll
-pip3 check
-pip3 install pandas
-
-#Move config files
-if [ -f vimrc ]; then
-	cp -r vimrc //home/rflec028/.vimrc
-fi
-
-
-#In Transmission:
-#Require Encryption.
-#Blocklist: http://john.bitsurge.net/public/biglist.p2p.gz
+```sh
+# Here, I'll print a simple string:
+echo "a simple string. No semicolon needed."
 ```
+
+...Aaaand, I'll get to the rest of this page eventually. I'll just leave one of my favourite quotes here:
+
+> ...and my Dad always used to say, if you think the World should be a certain way, you have to be a part of the change you want to see in the World, or you should shut the fuck up and stop bitching about it.
+
+> \- [Louis Rossman](https://youtu.be/pBR3Sw9X93s?t=321)
