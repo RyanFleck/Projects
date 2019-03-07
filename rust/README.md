@@ -23,9 +23,9 @@ fn main() {
 The docs can be found at <https://doc.rust-lang.org/book/>
 
 **Additional Resources**
-1. [Blog post about writing games in Rust](http://iolivia.me/posts/24-hours-of-rust-game-dev/)
-1. [Cloudflare post about building interpreters in Rust](https://blog.cloudflare.com/building-fast-interpreters-in-rust/)
-
+1. [Blog post about writing games](http://iolivia.me/posts/24-hours-of-rust-game-dev/)
+1. [Cloudflare post about building interpreters](https://blog.cloudflare.com/building-fast-interpreters-in-rust/)
+1. [Blog post about writing CLI apps](https://mattgathu.github.io/writing-cli-app-rust/)
 
 ## Rust Basics
 

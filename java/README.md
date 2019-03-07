@@ -6,6 +6,8 @@
   
 
 ```java
+package com.rcf.greeting;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, Java!");
@@ -20,9 +22,23 @@ public class HelloWorld {
 
 ## Why I am Writing Programs in Java
 
-Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At *MNP LLP*, I applied Java to extend client *WCMS* systems built on *Spring*.
+Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At *MNP LLP*, I applied Java to extend client *WCMS* systems built on *Spring*. Going forward, I will be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
 
-I will also be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
+### Recommended Learning Path
+
+Java is as good a language as any for learning how to program. Typically I recommend [JavaScript]({{ "/js" | relative_url }}) as you can create more visual, interactive projects right off the bat, and the developer community is more beginner-friendly and geared towards 'fun' projects. With Java, you will be able to write Android Applications, web servers and APIs, desktop applications and even games. Unfortunately, most frameworks for Java are quite complex, and will take more effort to learn and apply when compared to frameworks with simpler goals written in Python, Ruby or JavaScript.
+
+*So why learn Java at all?*
+
+Java, [C#]({{ "/cs" | relative_url }}), and other *enterprise* languages scale well. Large collaborative engineering teams require build systems, unit testing, reliable deployments, frameworks that allow an application to be split into microservices, etc. Learning Java is valuable because companies will hire you to write their trusted language, *Java*.
+
+*How should I get started?*
+
+For starters, I'd take CodeCademy's [*Learn Java*](https://www.codecademy.com/learn/learn-java) course, ignoring the Pro materials. As a complete beginner, the short course provides reasonable introductions to Control Flow, Object-Oriented Programming and Data Structures in an interactive format far better than *YouTube*. After completing the *Learn Java* course, you *could* read one of the eighty billion Java tomes, or you could jump in to some projects and Google your way to a few nice-looking Github repositories. I do recommend spending some time to learn these supplemental skills:
+
+- *Git*, version control. (*GitHub* is not *Git*. They are separate.)
+- How to use *Eclipse* or *IntelliJ*, how to set debugging breakpoints.
+- Using *Maven* or *Gradle* to set up and manage your Java projects.
 
 ### Tools and Installation
 
@@ -80,10 +96,11 @@ Like in C#, memory for objects is allocated automatically. Small objects are sto
 - Minimize the number of objects you create.
 - Use `Runtime.maxMemory()` and `Runtime.totalMemory()` to find out how much RAM is allocated/in use.
 
-**STOP HERE.** I've placed awful placeholder programs past this point. This manual needs more work.
+**STOP HERE.** I've placed *awful, dreadful* placeholder programs past this point. This manual needs more work.
 
 ### Variables
 
+*ToDo*
 
 ```java
 private static int = 2;
@@ -159,9 +176,11 @@ public class Printer2 extends Printer {
 
 ### Common Java Libraries
 
+*ToDo*
+
 ### Preparing for Deployment
 
-Use javadoc.
+Use javadoc. *ToDo*
 
 ## Java EE
 
@@ -179,9 +198,11 @@ Do note that IntelliJ IDEA's free version does **not** support Java EE developme
 
 ### Servlets
 
-*What is a servlet?* A small program that responds to web requests - many of them may run simultanously to handle different types of requests within a web server.
+*What is a servlet?* A small program that responds to web requests - many of them may run simultaneously to handle different types of requests within a web server. A good rundown is provided at [*JavaTPoint*](https://www.javatpoint.com/servlet-tutorial).
 
 ### MicroServices
+
+A Microservice is simply a function that your request must perform before providing a response, broken out into an independent application. As [this](https://gravitational.com/blog/microservices-containers-kubernetes/) article on the Gravitational Blog muses, it's no different from a typical Rails/Node/Spring application.
 
 > Java EE is a maintainable industry standard, with most projects having no external dependencies and thin deployment artifacts.[^1]
 
@@ -246,7 +267,9 @@ Decorator    | Usage
 ::
 ```
 
-## Maven
+## Build Systems
+
+### Maven
 
 [Maven](https://maven.apache.org/what-is-maven.html) is a tool for building and managing Java projects. It plays very well with unit tests and CI systems like *Travis CI*. A good tutorial for beginners is available [here](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 
@@ -254,7 +277,13 @@ Decorator    | Usage
 mvn package
 ```
 
+### Gradle
+
+*ToDo*
+
 ## Handling XML
+
+*ToDo*
 
 ### The Dom4j Library
 
@@ -262,7 +291,11 @@ In production, my current internship uses objects and methods from <https://dom4
 
 ### Loading XML From File
 
+*ToDo*
+
 ### Loading XML From URL
+
+*ToDo*
 
 ## SpringBoot
 
