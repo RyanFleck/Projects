@@ -34,7 +34,7 @@ Java, [C#]({{ "/cs" | relative_url }}), and other *enterprise* languages scale w
 
 *How should I get started?*
 
-For starters, I'd take CodeCademy's [*Learn Java*](https://www.codecademy.com/learn/learn-java) course, ignoring the Pro materials. As a complete beginner, the short course provides reasonable introductions to Control Flow, Object-Oriented Programming and Data Structures in an interactive format far better than *YouTube*. After completing the *Learn Java* course, you *could* read one of the eighty billion Java tomes, or you could jump in to some projects and Google your way to a few nice-looking Github repositories. I do recommend spending some time to learn these supplemental skills:
+For starters, I'd take CodeCademy's [*Learn Java*](https://www.codecademy.com/learn/learn-java) course, ignoring the Pro materials. As a complete beginner, the short course provides reasonable introductions to Control Flow, Object-Oriented Programming and Data Structures in an interactive format far better than *YouTube*. After completing the *Learn Java* course, you *could* read one of the eighty billion Java tomes, or you could begin some projects and Google your way to a few nice-looking Github repositories, using [*Jenkov's Tutorials*](http://tutorials.jenkov.com/java/index.html) and [*Java for Beginners*](https://www.java-made-easy.com/java-for-beginners.html) as references. I recommend spending some time to learn these supplemental skills:
 
 - *Git*, version control. (*GitHub* is not *Git*. They are separate.)
 - How to use *Eclipse* or *IntelliJ*, how to set debugging breakpoints.
@@ -46,11 +46,12 @@ For starters, I'd take CodeCademy's [*Learn Java*](https://www.codecademy.com/le
     1. Beginners should use a bare text editor to understand the language.
     1. For projects of scale, use Eclipse or IntelliJ IDEA.
 2. Install the JDK.
-3. Add the JDK's `bin` to your `PATH` if on Windows.
+3. Add the JDK's `bin` to your `PATH` if on Windows. 
 
 ### Resources
 
 1. [Oracle Java Material](https://www.oracle.com/technetwork/java/index-jsp-135888.html) (also [Java EE](https://www.oracle.com/technetwork/java/javaee/documentation/tutorials-137605.html))
+1. [Java-T-Point](https://www.javatpoint.com/java-tutorial) has a broad set of material on Java and Spring.
 1. Plenty of examples on [Mkyong](http://www.mkyong.com/)
 1. [SpringBoot docs](https://docs.spring.io/spring-boot/docs/2.1.3.RELEASE/reference/htmlsingle/#boot-documentation)
 1. [TechBeamers articles](https://www.techbeamers.com/category/programming-tutorials/java-tutorials/)
