@@ -9,8 +9,8 @@
 #include<stdio.h>
 
 int main(void){
-  printf("Hello, C!");
-	return 0;
+    printf("Hello, C!");
+    return 0;
 }
 ```
 
@@ -24,14 +24,13 @@ C is the backbone of Unix systems. That's cool. Currently the only project I rea
 
 Farily certain I just bombed an interview for IBM, so there'll be a lot more added to this page in the coming weeks as I read *Cracking the Coding Interview*.
 
-##### Resources
+#### Resources
 1. [The C Book](http://publications.gbdirect.co.uk/c_book/)
 1. [C Elements of Style](http://www.oualline.com/books.free/style/index.html)
 1. [GNU C Programming Tutorial](http://www.crasseux.com/books/ctut.pdf) and [Reference Manual](https://www.gnu.org/software/gnu-c-manual/)
 1. [Build your Own Lisp](http://buildyourownlisp.com/)
 1. [Writing Bug-Free C Code](https://www.duckware.com/bugfreec/index.html)
 1. **K&R** C (Not a libre publication.)
-
 
 
 <br />
