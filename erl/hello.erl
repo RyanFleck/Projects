@@ -1,4 +1,15 @@
 -module(hello).
--export([hello_world/0]).
+-export([world/0]).
+-export([start/0]).
 
-hello_world() -> io:fwrite("Hello, Erlang!\n").
+% Hello-World function in Erlang
+world() -> io:fwrite("Hello, Erlang!\n").
+
+start() ->
+    hello:world().
+
+% compile with:
+%  erlc hello.erl
+% run with:
+%  erl -noshell -s hello start -s init stop
+
