@@ -1,3 +1,6 @@
+# Erlang
+*.beam
+
 #DOTENV and CONFIG files.
 config.xml
 .env
