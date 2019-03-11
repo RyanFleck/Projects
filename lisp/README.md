@@ -5,11 +5,14 @@
   View formatted manual: [ryanfleck.github.io/lisp](https://ryanfleck.github.io/lisp)
   
 
-```lisp
-(print "Hello, Functional Langs!")
+```cl
+(defparameter *langs*
+    '( clisp racket scheme ))
+
+(princ "Hello, ")
+(princ *langs*)
 ```
 
-<https://learnxinyminutes.com/docs/common-lisp/>
 
 
 <br />
@@ -44,6 +47,10 @@ Whichever LISP you use, I recommend using the `rlwrap` program to enhance your w
 
 MIT's *Structure and Interpretation of Computer Programs* is a classic in the truest sense; the material in the tome has been used in MIT's programs since 1980, and many of the core concepts have diffused out into reality, becoming the core of our global infrastructure. The book is available for free online in many forms.
 
+## Other Resources
+
+1. [Learn X in Y mins: Common Lisp](https://learnxinyminutes.com/docs/common-lisp/)
+
 <br />
 
 ## CLISP Basics
@@ -65,7 +72,7 @@ MIT's *Structure and Interpretation of Computer Programs* is a classic in the tr
 
 A simple number-guessing game, using arithmetic shifts (binary search,) can be written like so with a few global functions:
 
-```lisp
+```cl
 (defparameter *big* 100)
 (defparameter *small* 1)
 
@@ -92,7 +99,7 @@ In higher-order functions, `#'x` stands in for (function x).
 
 Here is another example program showing parameters being defined, functions being defined, string insertions, comments, and more:
 
-```lisp
+```cl
 ;;;; Prog5: "Wizard Adventure Game"
 ;;;; RCF 2018 - Land of Lisp p.70
 
