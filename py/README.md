@@ -1,4 +1,4 @@
-# Programming in Python 3
+# Programming in Python
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -15,9 +15,9 @@ print("Hello, Python!")
 
 <br />
 
-## Python 3
+## Python
 
-*Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell.
+*Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell. I focus primarily on **Python 3.X** in my writing, though I originally learned Python 2.
 
 ## Why I am Writing Programs in Python
 

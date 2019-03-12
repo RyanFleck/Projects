@@ -20,13 +20,11 @@ if( prepared == true ){
 
 ## Introduction
 
-When I first began writing JavaScript, I mused: *"Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unnecessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a *very popular* language." In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments could be viewed easily online.*
+When I first began writing JavaScript, I mused: *"Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unnecessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a very popular language.*" In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments could be viewed easily online.
 
-Since that time, I've written a great deal of *things* in JavaScript, ranging from NodeJS servers, to games, to command line applications. It's a very versatile language with an active developer community and, while not especially scalable, is a fantastic way to wade into computer programming.
+Since that time, I've written a great deal of *things* in JavaScript, ranging from NodeJS servers, to games, to command line applications. It's a very versatile language with an active developer community and, while not especially scalable, is a fantastic way to wade into computer programming. After becoming familiar with vanilla ES5 and ES6+ (aka pre and post-2015 JS, browser support is still standardized at ES5,) it is possible to wade into all sorts of alternative modes of working and thinking; you can attain better scalability and safety with TypeScript, build functional web applications with Elm, or spend time learning the immensely popular React to build Progressive Web Apps. More than anything else, remember that it is very easy to become overwhelmed; as developers, JavaScript has us spoiled for choice. There are a nearly infinite number of frameworks and working modes to learn, so if you are beginning, focus on the basics first: writing your own vanilla JavaScript, interacting with the *Document Object Model*, and using the built-in functions. *Enjoy!*
 
 <br />
-
-A few quotes:
 
 > Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure. ...Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. **Because JavaScript can be used without understanding, the understanding of the language is often never attained.** ([Kyle](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md))
 
@@ -34,12 +32,14 @@ A few quotes:
 
 > There are those who will say *terrible* things about the JavaScript language. Many of these things are true. (Eloquent JS, p.6)
 
+<br />
+
 ## Resources
 
-1. [**Eloquent JavaScript**](https://eloquentjavascript.net/) by Marijn Haverbeke.
-1. [**Mastering Modular JavaScript (ES6)**](https://github.com/mjavascript/mastering-modular-javascript/tree/master/chapters)
-1. [**You Don't Know JS,** Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
-1. **CodeCademy** [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
+1. [Eloquent JavaScript](https://eloquentjavascript.net/) by Marijn Haverbeke.
+1. [Mastering Modular JavaScript (ES6)](https://github.com/mjavascript/mastering-modular-javascript/tree/master/chapters)
+1. [You Don't Know JS, Kyle Simpson ](https://github.com/getify/You-Dont-Know-JS)
+1. CodeCademy [Learn Javascript.](https://www.codecademy.com/courses/learn-javascript-functions)
 
 ## ES6+ JavaScript
 
@@ -296,7 +296,7 @@ I enjoy using the *Standard* linter because of its popularity. Running `standard
 
 ## Web Apps using Express and Socket.IO
 
-Research completed when building <https://github.com/RyanFleck/SocketIOTriviaApp>.
+Research completed when building [Socket-IO-Trivia-App](https://github.com/RyanFleck/SocketIOTriviaApp).
 
 **Express** is a web application framework.
 
@@ -306,14 +306,13 @@ Combined, these two Node libraries enable the expedited construction of fantasti
 
 ### Express
 
-With NPM installed, Express installation is as simple as `npm i express`.
+With NPM installed, Express installation is as simple as `npm i express`. It can be used to assemble game backends, APIs, serve full *progressive web applications*, and more. 
 
-What I *didn't know* when first using express is:
-- Using the `express-generator` is fantastic. It enables the quick creation of a project with the CSS compiler and templating engine of your choice. Read more here: <https://expressjs.com/en/starter/generator.html>. My default is `express --pug --css sass`.
+Using the `express-generator` package is fantastic. It enables the quick creation of a project with the CSS compiler and templating engine of your choice. Read more here: [express-generator](https://expressjs.com/en/starter/generator.html). My default is `express --pug --css sass`.
 
 ### Socket.IO
 
-First, take a quick walk through the simple and effective tutorial on the Socket.IO homepage.
+First, take a quick walk through the simple and effective [tutorial](https://socket.io/get-started/chat/) on the Socket.IO homepage.
 
 ## ReactJS Library
 
@@ -327,7 +326,7 @@ Allows users to build compile-to-native mobile apps in javascript.
 ### OWL Carousel
 
 ## NodeJS and MongoDB
-After installing MongoDB and loading <http://media.mongodb.org/zips.json> into the database, (or another from <https://github.com/ozlerhakan/mongodb-json-files>,)
+After installing MongoDB and loading [Mongo sample ZIP](http://media.mongodb.org/zips.json) into the database, (or another from [this repo](https://github.com/ozlerhakan/mongodb-json-files),)
 
 ## WebPack
 Nothing yet.
@@ -339,6 +338,26 @@ For context, I feel I should include the ESV bible verse after which the project
 
 **Genesis 11:1-9 English Standard Version (ESV)**
 >Now the whole earth had one language and the same words. And as people migrated from the east, they found a plain in the land of Shinar and settled there. And they said to one another, “Come, let us make bricks, and burn them thoroughly.” And they had brick for stone, and bitumen for mortar. Then they said, “Come, let us build ourselves a city and a tower with its top in the heavens, and let us make a name for ourselves, lest we be dispersed over the face of the whole earth.” And the Lord came down to see the city and the tower, which the children of man had built. And the Lord said, “Behold, they are one people, and they have all one language, and this is only the beginning of what they will do. And nothing that they propose to do will now be impossible for them. Come, let us go down and there confuse their language, so that they may not understand one another's speech.” So the Lord dispersed them from there over the face of all the earth, and they left off building the city. Therefore its name was called Babel, because there the Lord confused the language of all the earth. And from there the Lord dispersed them over the face of all the earth.
+
+## Alternative Modes
+
+Various languages enable developers to work in a higher-productivity environment and output vanilla javascript for their web applictions. *TypeScript* provides many of the comforts of [C#](/cs) for JavaScript developers, and *Elm* is a functional language for creating sites and web apps.
+
+### Elm
+
+*ToDo.* 
+
+See the [Elm docs.](https://guide.elm-lang.org/)
+
+### TypeScript
+
+*ToDo.*
+
+See [TypeScript in 5 minutes.](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+
+### ScalaJS
+
+See [Scala Manual](/scala). 
 
 ## GET ( Pull / Pulk Revolving Doors )
 
