@@ -1,6 +1,10 @@
 # Erlang
 *.beam
 
+# Elm
+elm-stuff
+repl-temp-*
+
 #DOTENV and CONFIG files.
 config.xml
 .env
