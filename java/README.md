@@ -67,12 +67,16 @@ Work began on Java in 1991, with the goal of creating a "write once, run anywher
 All code is defined in classes with a `.java` extension. Commands `javac` and `java` compile and run a Java application.
 
 ```java
-package com.rcf.example; // Package declaration.
+// Package declaration.
+package com.rcf.example;
 
-public class Main { // Class declaration.
-
-    // Classic PSVM:
-    public static void main(String[] args) { // Main method.
+// Class declaration.
+public class Main
+{ 
+    // Classic PSVM ( public static main void )
+    public static void main(String[] args)
+    {
+        // Print a simple message to standard output.
         System.out.println("Hello, Java!");
     }
 }

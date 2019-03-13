@@ -316,6 +316,8 @@ First, take a quick walk through the simple and effective [tutorial](https://soc
 
 ## ReactJS Library
 
+Before jumping into react, read [this](https://dev.to/winduptoy/a-javascript-free-frontend-2d3e) and consider using a lightweight webapp framework like [Mithril](https://mithril.js.org/).
+
 ReactJS is a Javascript library for building web user interfaces. To learn the basics, I read the tutorial on [reactjs.org](https://reactjs.org/tutorial/tutorial.html).
 
 ## React Native
