@@ -33,7 +33,7 @@ Farily certain I just bombed an interview for IBM, so there'll be a lot more add
 1. **K&R** C (Not a libre publication.)
 
 
-<br />
+
 
 ## Installation
 
@@ -47,7 +47,7 @@ Compiler | gcc | MinGW cc | xcode cc
 A *debugger* like **GDB** is also recommended.
 
 
-<br />
+
 
 ## Hello, World
 
@@ -89,7 +89,7 @@ C uses `char*`, a pointer to a list of characters with the final character being
 `printf("string %f", flt);` - printf is required for inserting data into strings. Data can be represented in a variety of ways with `%` notation.
 
 
-<br />
+
 
 ## Pointers
 
@@ -108,7 +108,7 @@ yptr -> A3BC3AF8
 ```
 
 
-<br />
+
 
 ## Unix System Calls
 
@@ -130,8 +130,7 @@ kill -9 {pid}
 ```
 
 <!--
-## Building Projects with Make 
+## Building Projects with Make
 
-**GNU Make** is a 
+**GNU Make** is a
 -->
-

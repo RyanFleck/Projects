@@ -13,15 +13,10 @@
 (princ *langs*)
 ```
 
-
-
 <br />
 
 
-
-
 <br />
-
 
 Bwah, *LISP?* From the *50s?* Yes- Lisp is more common than you might think; often the "secret sauce" of successful companies like [Grammarly](https://tech.grammarly.com/blog/running-lisp-in-production) and [Amazon](https://groups.google.com/forum/#!topic/comp.lang.lisp/SD-8ULlEfy0%5B1-25%5D) is a finely crafted lispy back-end. Lisps are beautifully simple and functional tools; the following article contains my impressions as I begin to learn the CLISP dialect. While many speak poorly of its age, there have been a few occasions in the first 30 pages where I've been caught off guard by the effortlessness of construction and computation that lisp provides. I almost cried the first time I saw LISP handle rational numbers.
 
@@ -51,7 +46,7 @@ MIT's *Structure and Interpretation of Computer Programs* is a classic in the tr
 
 1. [Learn X in Y mins: Common Lisp](https://learnxinyminutes.com/docs/common-lisp/)
 
-<br />
+
 
 ## CLISP Basics
 1. Define a **global variable** with *defparameter*: `(defparameter *xyz* 18)`
@@ -158,7 +153,7 @@ MIT/GNU Scheme running under GNU/Linux
 Type `^C' (control-C) followed by `H' to obtain information about interrupts.
 
 Copyright (C) 2011 Massachusetts Institute of Technology
-This is free software; see the source for copying conditions. There is NO 
+This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Image saved on Saturday December 3, 2016 at 9:44:07 AM
@@ -193,4 +188,3 @@ scheme@(guile-user)> (exit)
 Welcome to Racket v6.7.
 > (exit)
 ```
-

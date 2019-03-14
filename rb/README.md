@@ -24,15 +24,13 @@ In descriptors: high-level, object-oriented and interpreted. Ruby occupies a sim
 
 I'm not, really; it seems like a fun language with lots of respected devs. I don't have time to learn or tinker with this very flexible scripting lang at the moment. At one point in early 2019, I spent a short, intense period binge-learning C++, then Ruby, in order to meet requirements and complete technical interviews at C++/Ruby shops.
 
-<br />
-
 ## The Basics
 
 Running `ruby -v` will print your ruby version. If you have a 'good' OS, you should have a version built in. Upgrade if the version is less than 2. `ruby` runs ruby programs. `irb` starts an interactive ruby prompt.
 
 On Debian, it is best to add `/.gem/ruby/2.3.0/bin` to your PATH in `~/.profile`, and `gem: --user-install` to your `~/.gemrc`. Be careful not to run gem, bundle, etc as root.
 
-Adding this user bin to your PATH makes it easy to use tools like [RuboCop](https://rubocop.readthedocs.io/en/latest/) (`gem install rubocop`) to `rubocop --fix-layout *.rb` your ruby files. 
+Adding this user bin to your PATH makes it easy to use tools like [RuboCop](https://rubocop.readthedocs.io/en/latest/) (`gem install rubocop`) to `rubocop --fix-layout *.rb` your ruby files.
 
 **Resources:**
 1. Ruby: [Why's Poignant Guide](https://poignant.guide/book/)

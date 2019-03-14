@@ -28,7 +28,7 @@ Quality Assurance frequently requires one of the following:
 
 All of these use cases can see fantastic acceleration with just a little bit of automation. I leverage Pandas, Selenium, Docx and Xlrd, and other modules to move data between Excel Spreadsheets, Word Documents, and Selenium Actions.
 
-<br />
+
 
 ## Environment Setup
 
@@ -248,7 +248,7 @@ print("\n\tGENERATION COMPLETE - SAVED AS 'redacted_GeneratedReleaseX.docx'")
 print("\n\tTODO:\n\t\t-Generate table of contents.\n\t\t-Add full list of user stories.\n\t\t-Rename document.")
 ```
 
-<br />
+
 
 ## UnitTest
 
@@ -420,7 +420,7 @@ if __name__ == '__main__':
 ```
 
 
-<br />
+
 
 ## GUIs.
 
@@ -448,7 +448,7 @@ top.resizable(width=False, height=False)
 top.geometry('{}x{}'.format(300, 60))
 top.mainloop()
 ```
-<br />
+
 
 ## MongoDB
 

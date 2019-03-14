@@ -19,20 +19,14 @@ class Hello
 
 <br />
 
-I am beginning to work with Sitecore at work, a web content management system built with Microsoft's .NET system. Working with a large, technical system is excellent experience. 
 
 <br />
-
-
-
-<br />
-
 
 ## Why C#?
 
-Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform.
+Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform, a web content management system built with Microsoft's .NET system. Working with a large, technical system should provide excellent experience.
 
-<br />
+
 
 ## Setup
 
@@ -70,7 +64,7 @@ Both of these scripts take one argument, a .cs program, then proceed to compile 
 - An *application* with a `.exe` extension, contains the *Main* method.
 - A *library* with a `.dll` extension, like an *.exe* without an entry point.
 
-<br />
+
 
 ## dotNET Core on GNU/Linux
 
@@ -90,7 +84,7 @@ dotnet run --project rcfxxx_folder
 
 [Get started with .NET Core.](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial#keep-learning)
 
-<br />
+
 
 
 ## C# Basics
@@ -664,7 +658,7 @@ See this [MS doc on Access Modifiers](https://docs.microsoft.com/en-us/dotnet/cs
 
 <!-- End of C# core language manual. -->
 
-<br />
+
 
 
 
@@ -680,10 +674,10 @@ Error in `monodevelop': free(): invalid pointer: 0x00007f629c001a80
 ```
 Running `apt-get build-dep monodevelop` fixed all of my stability problems.
 
-<br />
 
 
-<br />
+
+
 
 ## References
 Many are from "C# 5.0 in a Nutshell" 5e. J. and B. Albahari, O'Reilly 2012.
@@ -691,4 +685,3 @@ Many are from "C# 5.0 in a Nutshell" 5e. J. and B. Albahari, O'Reilly 2012.
 [^1]: "C# 5.0 in a Nutshell" 5e. **Page 17.** Type Basics.
 [^2]: "C# 5.0 in a Nutshell" 5e. **Page 106.** Generics.
 [^3]: "C# 5.0 in a Nutshell" 5e. **Page 177.** Unsafe Code and Pointers.
-

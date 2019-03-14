@@ -27,7 +27,7 @@ To keep up with my friends in advanced programming courses at *uOttawa* at the t
 
 Also, seeing as I'm no C++ *aficionado*, I saw that the hackerrank challenge for Kinaxis could only be written in C++, so I'm taking some notes and binge studying today.
 
-<br />
+
 
 ## Core C++
 
@@ -437,5 +437,3 @@ Hello, World!
 Bubble sort array.
   (0, 1, 2, 2, 3, 6, 7, 12, 56)
 ```
-
-<br />

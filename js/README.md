@@ -24,15 +24,12 @@ When I first began writing JavaScript, I mused: *"Ah, JavaScript; I've had mixed
 
 Since that time, I've written a great deal of *things* in JavaScript, ranging from NodeJS servers, to games, to command line applications. It's a very versatile language with an active developer community and, while not especially scalable, is a fantastic way to wade into computer programming. After becoming familiar with vanilla ES5 and ES6+ (aka pre and post-2015 JS, browser support is still standardized at ES5,) it is possible to wade into all sorts of alternative modes of working and thinking; you can attain better scalability and safety with TypeScript, build functional web applications with Elm, or spend time learning the immensely popular React to build Progressive Web Apps. More than anything else, remember that it is very easy to become overwhelmed; as developers, JavaScript has us spoiled for choice. There are a nearly infinite number of frameworks and working modes to learn, so if you are beginning, focus on the basics first: writing your own vanilla JavaScript, interacting with the *Document Object Model*, and using the built-in functions. *Enjoy!*
 
-<br />
-
 > Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure. ...Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. **Because JavaScript can be used without understanding, the understanding of the language is often never attained.** ([Kyle](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md))
 
 >JavaScript: If it can be done in another language, it should be done in another language. ([Doug](http://fuelyourcoding.com/))
 
 > There are those who will say *terrible* things about the JavaScript language. Many of these things are true. (Eloquent JS, p.6)
 
-<br />
 
 ## Resources
 
@@ -47,7 +44,7 @@ Since that time, I've written a great deal of *things* in JavaScript, ranging fr
 
 Before we continue, I should clarify: **Node.JS** is a *server-side* implementation of Google's V8 JavaScript engine. What this means for you, as a developer, is that you can write clever programs for the client (the user, plugging along in a browser,) and the server (handling client connections, processing and returning data) in one language. Nearly all of the code mentioned below will work on both the client and server.
 
-<br />
+
 
 ### Console Output
 Useful for debugging and developer interaction, spitting data and text onto the command line is a great way to know if your script is actually functioning, or failed silently.
@@ -306,7 +303,7 @@ Combined, these two Node libraries enable the expedited construction of fantasti
 
 ### Express
 
-With NPM installed, Express installation is as simple as `npm i express`. It can be used to assemble game backends, APIs, serve full *progressive web applications*, and more. 
+With NPM installed, Express installation is as simple as `npm i express`. It can be used to assemble game backends, APIs, serve full *progressive web applications*, and more.
 
 Using the `express-generator` package is fantastic. It enables the quick creation of a project with the CSS compiler and templating engine of your choice. Read more here: [express-generator](https://expressjs.com/en/starter/generator.html). My default is `express --pug --css sass`.
 
@@ -347,7 +344,7 @@ Various languages enable developers to work in a higher-productivity environment
 
 ### Elm
 
-*ToDo.* 
+*ToDo.*
 
 See the [Elm docs.](https://guide.elm-lang.org/)
 
@@ -359,7 +356,7 @@ See [TypeScript in 5 minutes.](https://www.typescriptlang.org/docs/handbook/type
 
 ### ScalaJS
 
-See [Scala Manual](/scala). 
+See [Scala Manual](/scala).
 
 ## GET ( Pull / Pulk Revolving Doors )
 
