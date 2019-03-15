@@ -15,7 +15,7 @@ echo "Hello, BASH!"
 
 <br />
 
-## Why I am Writing Shell Scripts
+## Why write Shell Scripts?
 'Cause having your computer do something you do daily *on your behalf* is fantastic.
 
 ## What is Bash Shell Scripting?

@@ -19,7 +19,7 @@ int main(void){
 
 <br />
 
-## Why I am Writing Programs in C
+## Why use C?
 C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML). The Operating Systems course uses C to teach about processes and threading.
 
 Farily certain I just bombed an interview for IBM, so there'll be a lot more added to this page in the coming weeks as I read *Cracking the Coding Interview*.

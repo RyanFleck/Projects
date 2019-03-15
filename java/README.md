@@ -20,7 +20,7 @@ public class HelloWorld {
 
 <br />
 
-## Why I am Writing Programs in Java
+## Why use Java?
 
 Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At MNP LLP, I applied Java to extend client *WCMS* systems built on *Spring*. Going forward, I will be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
 

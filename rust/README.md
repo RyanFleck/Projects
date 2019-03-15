@@ -16,7 +16,7 @@ fn main() {
 
 <br />
 
-## Why I am Writing Programs in Rust
+## Why use Rust?
 
 *Rust* seems to be a good way to build stable, multi-platform CLI apps, something I've had difficulty with using C.
 

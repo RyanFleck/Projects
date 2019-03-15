@@ -19,10 +19,7 @@ int main(){
 
 <br />
 
-## What is C++?
-C with a billion things stuck on. A whole different beast.
-
-## Why I am Writing Programs in C++
+## Why use C++?
 To keep up with my friends in advanced programming courses at *uOttawa* at the time of writing.
 
 Also, seeing as I'm no C++ *aficionado*, I saw that the hackerrank challenge for Kinaxis could only be written in C++, so I'm taking some notes and binge studying today.

@@ -15,11 +15,11 @@ print("Hello, Python!")
 
 <br />
 
-## Python
+## Why use Python?
 
-*Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell. I focus primarily on **Python 3.X** in my writing, though I originally learned Python 2.
+Easy for humans to read, easy to write c extensions, simple for beginners, complex enough to enable machine learning.
 
-## Why I am Writing Programs in Python
+*Stop here, this manual is incomplete!* New sections will be filled out soon, when I trace back my steps and re-learn the language properly. For now, it is an empty shell. I focus primarily on **Python 3.X** in my writing, though I originally learned Python 2.
 
 Quality Assurance frequently requires one of the following:
 1. Excel spreadsheet manipulation.

@@ -18,7 +18,7 @@ if( prepared == true ){
 
 <br />
 
-## Introduction
+## Why use JavaScript?
 
 When I first began writing JavaScript, I mused: *"Ah, JavaScript; I've had mixed feelings about it for years now. My negative feelings, for the most part, were resentment for what the modern web has become and the unnecessary strain on modern devices that is heavy website javascript. I generally feel that javascript should only be used for a small subset of things, and always trivial; using javascript for anything mission-critical or important is dangerous. I imagine that this is not entirely fair, so I've set out to learn the basics, then some, in order to become competent in what is currently a very popular language.*" In a coin flip between *Ruby* and *JavaScript*, I chose to go with JavaScript knowing that the barrier to others viewing my neat experiments is much lower if the experiments could be viewed easily online.
 

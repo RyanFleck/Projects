@@ -14,7 +14,7 @@ object Main extends App {
 <br />
 
 
-## Introduction
+## Why use Scala?
 
 What? Object-oriented *and* functional? Neato. *Xalgorithms* work is currently done on a base of scalable technologies: Kafka, Akka, Spark, Kubernetes, etc. To contribute to the core rule interpreter, I've learned a little Scala and written a few functions and unit tests.
 

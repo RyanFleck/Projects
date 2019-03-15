@@ -25,7 +25,7 @@ It is important to note that there are many implementations of lisp, each with d
 This manual contains snippets of all kinds of lisps. If I gravitate towards one in particular, say, Racket or Clojure, I'll breakout the lang-specific jargon into a separate manual.
 
 
-## Why I am Writing Programs in Lisps
+## Why use Functional Languages?
 
 To expand my programming horizons, I chose to read a book on *CLisp*, which was fantastic. After this I began applying functional techniques everywhere else; these languages change the way you approach problems. I'm now reading through *SICP* and *Land of Lisp*, and enjoying both immensely.
 

@@ -22,7 +22,7 @@ class Hello
 
 <br />
 
-## Why C#?
+## Why use C#?
 
 Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform, a web content management system built with Microsoft's .NET system. Working with a large, technical system should provide excellent experience.
 
