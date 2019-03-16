@@ -1,4 +1,5 @@
 # Programming in Java
+subtitle: "Tireless, the enterprise-grade monolith marcheth ever forward."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -15,14 +16,11 @@ public class HelloWorld {
 }
 ```
 
-<br />
 
 
-<br />
+## Why use Java?
 
-## Why I am Writing Programs in Java
-
-Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At *MNP LLP*, I applied Java to extend client *WCMS* systems built on *Spring*. Going forward, I will be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
+Java is a powerful Object-Oriented programming language used to create complex, scalable, reliable enterprise applications. The University of Ottawa uses Java and C to teach Operating Systems, Data Structures and Software Engineering. At MNP LLP, I applied Java to extend client *WCMS* systems built on *Spring*. Going forward, I will be using Java at my upcoming Summer internship at IBM. While not my most active manual, I expect this page to see tremendous growth in the next few months.
 
 ### Recommended Learning Path
 
@@ -46,7 +44,7 @@ For starters, I'd take CodeCademy's [*Learn Java*](https://www.codecademy.com/le
     1. Beginners should use a bare text editor to understand the language.
     1. For projects of scale, use Eclipse or IntelliJ IDEA.
 2. Install the JDK.
-3. Add the JDK's `bin` to your `PATH` if on Windows. 
+3. Add the JDK's `bin` to your `PATH` if on Windows.
 
 ### Resources
 
@@ -67,12 +65,14 @@ Work began on Java in 1991, with the goal of creating a "write once, run anywher
 All code is defined in classes with a `.java` extension. Commands `javac` and `java` compile and run a Java application.
 
 ```java
-package com.rcf.example; // Package declaration.
+// Package declaration.
+package com.rcf.example;
 
-public class Main { // Class declaration.
-
-    // Classic PSVM:
-    public static void main(String[] args) { // Main method.
+// Class declaration.
+public class Main {
+    // Classic PSVM ( public static main void )
+    public static void main(String[] args) {
+        // Print a simple message to standard output.
         System.out.println("Hello, Java!");
     }
 }
@@ -97,20 +97,52 @@ Like in C#, memory for objects is allocated automatically. Small objects are sto
 - Minimize the number of objects you create.
 - Use `Runtime.maxMemory()` and `Runtime.totalMemory()` to find out how much RAM is allocated/in use.
 
-**STOP HERE.** I've placed *awful, dreadful* placeholder programs past this point. This manual needs more work.
-
 ### Variables
 
-*ToDo*
+Small bits of data are stored in *variables*. When creating a variable, the type of data you are storing can be specified, along with the scope and mutability. *Scope* determines where the variable can be accessed, and *mutability* determines when. In most cases, the set of braces you are operating within `{}` defines the current scope.
 
 ```java
-private static int = 2;
+// Initialize a string as variable s
+String s = "Fantastic";
+
+// Initialize an int as private
+private int x = 2;
+
+// Initialize a bool as static and final
+static final boolean a = true;
 ```
+
+After writing these, both variables will be available for use in the current scope. `String` and `int` are types, with different associated methods and operations. The integer uses the access modifier `private`, ensuring the variable cannot be manipulated from outside the class. A `static` variable or method belongs to the class rather than an instance of an object, and can be invoked without instantiating an instance of an object. It is shared with all instances of a class. `final` ensures the variable is only initialized once, and is useful for declaring variables that should never be modified. Here are some more modifiers:
+
+Modifier      | The variable is...
+--------------|---------------------------
+none          | visible to the package, associated with an instance of the class.
+`public`      | visible to the program.
+`private`     | only accessible within the class.
+`protected`   | visible to current package and subclasses.
+`static`      | associated with the class, rather than an instance of the class.
+`final`       | immutable and cannot be modified.
 
 ### Objects
+
+Objects are collections of variables and methods. Java has a massive collection of built-in objects available for use, and in addition to these, you can create your own object blueprints, called *classes*, to group your data and operations together. Objects are the soul of *object oriented programming*, a paradigm wherein data and procedures are organized into objects, which can interact with each other and be manipulated.
+
 ```java
-PlanetDestroyer DeathStar = new PlanetDestroyer("v1");
+PlanetDestroyer deathStar = new PlanetDestroyer("v1");
+deathStar.zap("Alderaan");
 ```
+Here, we *instantiate* a `PlanetDestroyer` object named `deathStar`, and use the method `zap` to destroy a planet. `zap` is a method that would be written within the `PlanetDestroyer` class, allowing it to be called here.
+
+### Control Flow
+
+
+
+```java
+if( something ){
+    somethingElse();
+}
+```
+
 
 ### Exceptions
 ```java
@@ -118,13 +150,6 @@ try{
     // Something risky
 }catch(OhNoACommonMistake e){
     // Clean up mess
-}
-```
-
-### Control Flow
-```java
-if( something ){
-    somethingElse();
 }
 ```
 
@@ -162,6 +187,9 @@ public class Main {
 }
 ```
 
+#### Methods
+#### Interfaces
+
 ### Inheritance and Polymorphism
 
 ```java
@@ -179,9 +207,213 @@ public class Printer2 extends Printer {
 
 *ToDo*
 
-### Preparing for Deployment
+### Threads
 
-Use javadoc. *ToDo*
+*Multiprocessing* enables computers to execute multiple programs across multiple cores simultaneously. In Java, a thread can be implemented by extending the `Thread` class.
+
+```java
+public class ProcessRow extends Thread{
+    public void run() {
+        // Thread operations.
+    }
+}
+```
+
+Instantiating an object `x` that extends `Thread` and calling `x.start()` will, unsurprisingly, start the thread. Do not call `.run()`. See the [Jenkov](http://tutorials.jenkov.com/java-concurrency/creating-and-starting-threads.html) page on threads for alternative implementations using the *Runnable* interface and anonymous classes.
+
+### Semaphores
+
+A Semaphore is a data structure used to address synchronization problems. It can be used in a variety of patterns. Essentially, a semaphore is a number that can be incremented or decremented, but not read, and the value of the semaphore dictates if a thread can continue operating, or must wait. The rules are well defined in the *Little Book of Semaphores*[^lbos] (This numbered list of rules is copied from the text.):
+
+1. When you create the semaphore, you can initialize its value to any integer, but after that the only operations you are allowed to perform are increment
+(increase by one) and decrement (decrease by one). You cannot read the
+current value of the semaphore.
+2. When a thread decrements the semaphore, if the result is negative, the
+thread blocks itself and cannot continue until another thread increments
+the semaphore.
+3. When a thread increments the semaphore, if there are other threads waiting, one of the waiting threads gets unblocked.
+
+[^lbos]: *Little Book of Semaphores* more info needed.
+
+A basic implementation of a semaphore in Java appears as follows, utilizing the built-in `Thread` library for `wait()` and `notify()` to stop and start the threads.
+
+```java
+class Semaphore{
+    
+    private int count;
+
+    public Semaphore( int count ){
+        this.count = count;
+    }
+    
+    synchronized public void wait() 
+    throws InterruptedException{
+        count--;
+        if( count < 0 ) wait();
+    }
+    
+    synchronized public void signal() 
+    throws InterruptedException{
+        count++;
+        notify();
+    }
+}
+```
+
+Wait and signal are used in a number of different ways. At this point, it is best to discuss some common patterns to show how semaphores work, and when to apply them. In the subsections below, threads are labeled `A, B, C... N`, and Semaphores are `sx, sy, sz... n` or `sa, sb, sc` when created to deal with a specific thread.
+
+#### Signaling
+
+When thread `A` requires thread `B` to complete an action before it can continue, it must wait until thread `B` sends a signal. This ensures that A will never `dostuff()` before `B` does.
+
+```java
+Semaphore sx = new Semaphore(1);
+
+/*  Thread A  */
+    sx.wait();
+    doStuff();
+
+/*  Thread B  */
+    doStuff();
+    sx.signal();
+```
+
+#### Rendezvous
+
+When thread `A` and `B` need to wait for each other, and cannot continue to execute until both finish certain commands. Neither thread can proceed until they reach a given point. To implement this, ensure each thread signals as it arrives, and is placed into the thread queue as count is below zero. The second thread to `signal()` will call `wait()` on the first thread, which will call `wait()` on the second thread, and both can continue to `dostuff2()`, though the order is not guaranteed.
+
+```java
+// Tracks if A is ready.
+Semaphore saReady = new Semaphore(0);
+
+// Tracks if B is ready.
+Semaphore sbReady = new Semaphore(0);
+
+/*  Thread A  */
+    doStuff();
+    saReady.signal();
+    sbReady.wait();
+    doStuff2();
+
+/*  Thread B  */
+    doStuff();
+    sbReady.signal();
+    saReady.wait();
+    doStuff2();
+```
+
+#### Mutex 
+
+Short for *Mutual Exclusion*, ensures only one thread can execute the code in a crital section concurrently. A very large number of threads can operate concurrently using this model, and it is guaranteed that only one will ever `doCriticalStuff()` at any given moment.
+
+```java
+Semaphore sx = new Semaphore(1);
+
+/*  Thread N  */
+    sx.wait();
+    doCriticalStuff();
+    sx.signal();
+```
+
+#### Multiplex
+
+The *Multiplex* pattern allows a set number of threads to enter a critical path concurrently. This pattern is identical to the *Mutex* pattern, but the Semaphore is instatiated with value `n` as count, where `n` is the thread limit.
+
+```java
+Semaphore sx = new Semaphore(n);
+
+/*  Thread N  */
+    sx.wait();
+    doCriticalStuff();
+    sx.signal();
+```
+
+#### Barrier
+
+An n-threaded generalization of the *Rendezvous* pattern. All threads will be blocked until the *nth* thread arrives, and then all can continue simultaneously. The solution incorporates a *turnstile* where the semaphore is rapidly decremented, then incremented, allowing each thread to pass through after the *nth* thread arrives. Unfortunately, this barrier pattern can only be used once as the turnstile does not reset itself.
+
+```java
+// Mutex used to update the thread count.
+Semaphore mutex = new Semaphore(1);
+int count = 0;
+
+// Barrier used to count incoming threads.
+Semaphore barrier = new Semaphore(0); // Init as locked.
+
+/*  Thread N  */
+    mutex.wait();
+    count++;
+    mutex.signal();
+
+    // Makes the barrier one to enable turnstile.
+    if( count == n ) barrier.signal();
+
+    // Turnstile occurs.
+    barrier.wait();
+    barrier.signal();
+
+    doStuff();
+```
+
+#### Two-Phase Barrier
+
+Threads wait before and after executing the critical section, in order to ensure no threads *lap* the others. Only one barrier is open at a time. When count reaches *n*, `barrierB` is locked and `barrierA` is opened, and *vice versa*. Locking/unlocking the barriers involves incrementing the semaphore once so it can *turnstile* when all the threads arrive.
+
+```java
+// Mutex used to update the thread count.
+Semaphore mutex = new Semaphore(1);
+int count = 0;
+
+// Barrier used to count incoming threads.
+Semaphore barrierA = new Semaphore(0); // Init as locked.
+Semaphore barrierB = new Semaphore(1); // Init as open.
+
+/*  Thread N  */
+    mutex.wait();
+        count++;
+        if( count == n ){
+            barrierB.wait();
+            barrierA.signal();
+        }
+    mutex.signal();
+
+    barrierA.wait();
+    barrierA.signal();
+
+    doStuff(); // Critical point.
+    
+    mutex.wait();
+        count--;
+        if( count == 0 ){
+            barrierA.wait();
+            barrierB.signal();
+        }
+    mutex.signal();
+    
+    barrierB.wait();
+    barrierB.signal();
+```
+
+#### Queue
+
+A queue ensures threads of different types proceeed in pairs.
+
+```java
+Semaphore typeX = new Semaphore(0);
+Semaphore typeY = new Semaphore(0);
+
+/*  Thread A of type X  */
+    typeY.signal();
+    typeX.wait();
+    doStuff();
+
+/*  Thread B of type Y  */
+    typeX.signal();
+    typeY.wait();
+    doStuff();
+```
+
+
 
 ## Java EE
 
@@ -221,7 +453,7 @@ A Microservice is simply a function that your request must perform before provid
 This Maven dependency contains the Java EE 8 API, and can be packed into a thin WAR and thrown into a Docker container. The following APIs are common in microservices:
 
 JSR 370 | JAX-RS | REST API library
-JSR 367 | JSON-B | Convert JSON to/from Java objects 
+JSR 367 | JSON-B | Convert JSON to/from Java objects
 JSR 374 | JSON-P | Java API for JSON Processing
 
 ### Containerizing with Docker
@@ -258,9 +490,13 @@ Decorator    | Usage
 
 [Here](http://vytas.io/blog/java/Micro-Java-EE-application-with-Wildfly-Swarm/) is a good article on a small & practical microservice written with Wildfly Swarm.
 
+### Spring
+
+Spring is a framework for simplifying the construction of enterprise-scale web applications.
+
 ## The Best Parts of Java 8
 
-- [Lambdas](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html) (arrow functions) 
+- [Lambdas](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html) (arrow functions)
 - [Streams](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html) `java.util.stream`
 
 ```
@@ -297,12 +533,6 @@ In production, my current internship uses objects and methods from <https://dom4
 ### Loading XML From URL
 
 *ToDo*
-
-## SpringBoot
-
-```
-spring
-```
 
 ## GUIs with JavaFX
 

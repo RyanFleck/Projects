@@ -1,4 +1,5 @@
-# Programming in Shell Scripting
+# Programming in Bash 
+subtitle: "Glue for sticking together useful programs to do stuff."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -9,13 +10,9 @@
 echo "Hello, BASH!"
 ```
 
-<br />
 
 
-
-<br />
-
-## Why I am Writing Shell Scripts
+## Why write Shell Scripts?
 'Cause having your computer do something you do daily *on your behalf* is fantastic.
 
 ## What is Bash Shell Scripting?

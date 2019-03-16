@@ -1,4 +1,5 @@
 # Programming in C
+subtitle: "For the GNU/Linux and OS Hackers."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -14,12 +15,8 @@ int main(void){
 }
 ```
 
-<br />
 
-
-<br />
-
-## Why I am Writing Programs in C
+## Why use C?
 C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML). The Operating Systems course uses C to teach about processes and threading.
 
 Farily certain I just bombed an interview for IBM, so there'll be a lot more added to this page in the coming weeks as I read *Cracking the Coding Interview*.
@@ -33,7 +30,7 @@ Farily certain I just bombed an interview for IBM, so there'll be a lot more add
 1. **K&R** C (Not a libre publication.)
 
 
-<br />
+
 
 ## Installation
 
@@ -47,7 +44,7 @@ Compiler | gcc | MinGW cc | xcode cc
 A *debugger* like **GDB** is also recommended.
 
 
-<br />
+
 
 ## Hello, World
 
@@ -89,7 +86,7 @@ C uses `char*`, a pointer to a list of characters with the final character being
 `printf("string %f", flt);` - printf is required for inserting data into strings. Data can be represented in a variety of ways with `%` notation.
 
 
-<br />
+
 
 ## Pointers
 
@@ -108,7 +105,7 @@ yptr -> A3BC3AF8
 ```
 
 
-<br />
+
 
 ## Unix System Calls
 
@@ -130,8 +127,7 @@ kill -9 {pid}
 ```
 
 <!--
-## Building Projects with Make 
+## Building Projects with Make
 
-**GNU Make** is a 
+**GNU Make** is a
 -->
-

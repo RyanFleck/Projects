@@ -1,4 +1,5 @@
-# Programming in Go 
+# Programming in Go
+subtitle: "Readable as Python, low-level as C."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -15,25 +16,16 @@ func main() {
 }
 ```
 
-<br />
 
 
+## Why use Go?
 
-<br />
+Go is a fast, compiled language with focus on multicore and networked programs. I've done a ton of small, fun projects in NodeJS, and love the ease with which I can express small ideas. Unfortunately, I've grown out of Node, and am looking for something with better security and scalability. I'll be writing personal projects in **go** for the next few months. With Go 2 on the horizon, now seems like a reasonable time to begin learning.
 
-## What is Go?
-
-Go is a fast, compiled language with focus on multicore and networked programs.
-
-**Resources**
+#### Resources
 1. [Practical GO](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
 
-## Why I am Writing Programs in Go 
-
-I've done a ton of small, fun projects in NodeJS, and love the ease with which I can express small ideas. Unfortunately, I've grown out of Node, and am looking for something with better security and scalability. I'll be writing personal projects in **go** for the next few months. With Go 2 on the horizon, now seems like a reasonable time to begin learning.
-
-<br />
-## Setup
+#### Setup
 
 ```sh
 apt install golang

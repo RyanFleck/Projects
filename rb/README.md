@@ -1,4 +1,5 @@
 # Programming in Ruby
+subtitle: "A beautifully expressive hacker language. Mostly used for rails."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -10,21 +11,14 @@ puts "Hello, Ruby!"
 ```
 
 
-<br />
-
-
-
-<br />
 
 ## What is Ruby?
 
 In descriptors: high-level, object-oriented and interpreted. Ruby occupies a similar market space to *Python*, with both striving to create a more human-readable language. I'll update this as I learn more, with my primary resources being [Ruby Koans](http://rubykoans.com/) and [Codecademy](https://www.codecademy.com/courses/learn-ruby). In code blocks below, `#>` indicates text that is printed to the console.
 
-## Why I am Writing Programs in Ruby
+## Why use Ruby?
 
 I'm not, really; it seems like a fun language with lots of respected devs. I don't have time to learn or tinker with this very flexible scripting lang at the moment. At one point in early 2019, I spent a short, intense period binge-learning C++, then Ruby, in order to meet requirements and complete technical interviews at C++/Ruby shops.
-
-<br />
 
 ## The Basics
 
@@ -32,7 +26,7 @@ Running `ruby -v` will print your ruby version. If you have a 'good' OS, you sho
 
 On Debian, it is best to add `/.gem/ruby/2.3.0/bin` to your PATH in `~/.profile`, and `gem: --user-install` to your `~/.gemrc`. Be careful not to run gem, bundle, etc as root.
 
-Adding this user bin to your PATH makes it easy to use tools like [RuboCop](https://rubocop.readthedocs.io/en/latest/) (`gem install rubocop`) to `rubocop --fix-layout *.rb` your ruby files. 
+Adding this user bin to your PATH makes it easy to use tools like [RuboCop](https://rubocop.readthedocs.io/en/latest/) (`gem install rubocop`) to `rubocop --fix-layout *.rb` your ruby files.
 
 **Resources:**
 1. Ruby: [Why's Poignant Guide](https://poignant.guide/book/)

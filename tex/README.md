@@ -1,4 +1,5 @@
 # Programming in LaTeX
+subtitle: "Want your writing to look like it was typeset? Use TeX."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -15,13 +16,9 @@
 \end{document}
 ```
 
-<br />
 
 
-<br />
-
-
-## Why I am Writing Documents in LaTeX
+## Why use LaTeX?
 
 *LaTeX* is a typesetting language designed for producing beautiful documents. I haven't done any work on this manual yet, but it should be updated sometime during **December 2018**.
 

@@ -1,4 +1,5 @@
 # Programming in Rust
+subtitle: "Like Go, but with a steeper learning curve and three times the power."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -11,12 +12,9 @@ fn main() {
 }
 ```
 
-<br />
 
 
-<br />
-
-## Why I am Writing Programs in Rust
+## Why use Rust?
 
 *Rust* seems to be a good way to build stable, multi-platform CLI apps, something I've had difficulty with using C.
 

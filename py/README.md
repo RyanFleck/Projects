@@ -1,4 +1,5 @@
 # Programming in Python
+subtitle: "Children and children disguised as grad students love Python!"
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -10,16 +11,13 @@ import antigravity
 print("Hello, Python!")
 ```
 
-<br />
 
 
-<br />
+## Why use Python?
 
-## Python
+Easy for humans to read, easy to write c extensions, simple for beginners, complex enough to enable machine learning.
 
-*Empty for now!* This manual will be filled out in due time, when I trace back my steps and re-learn the language properly. For now, it is an empty shell. I focus primarily on **Python 3.X** in my writing, though I originally learned Python 2.
-
-## Why I am Writing Programs in Python
+*Stop here, this manual is incomplete!* New sections will be filled out soon, when I trace back my steps and re-learn the language properly. For now, it is an empty shell. I focus primarily on **Python 3.X** in my writing, though I originally learned Python 2.
 
 Quality Assurance frequently requires one of the following:
 1. Excel spreadsheet manipulation.
@@ -28,7 +26,7 @@ Quality Assurance frequently requires one of the following:
 
 All of these use cases can see fantastic acceleration with just a little bit of automation. I leverage Pandas, Selenium, Docx and Xlrd, and other modules to move data between Excel Spreadsheets, Word Documents, and Selenium Actions.
 
-<br />
+
 
 ## Environment Setup
 
@@ -248,7 +246,7 @@ print("\n\tGENERATION COMPLETE - SAVED AS 'redacted_GeneratedReleaseX.docx'")
 print("\n\tTODO:\n\t\t-Generate table of contents.\n\t\t-Add full list of user stories.\n\t\t-Rename document.")
 ```
 
-<br />
+
 
 ## UnitTest
 
@@ -420,7 +418,7 @@ if __name__ == '__main__':
 ```
 
 
-<br />
+
 
 ## GUIs.
 
@@ -448,7 +446,7 @@ top.resizable(width=False, height=False)
 top.geometry('{}x{}'.format(300, 60))
 top.mainloop()
 ```
-<br />
+
 
 ## MongoDB
 

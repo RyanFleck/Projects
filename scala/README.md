@@ -1,4 +1,5 @@
 # Programming in Scala
+subtitle: "Magic that your boss *will* let you use."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -11,16 +12,15 @@ object Main extends App {
 }
 ```
 
-<br />
 
+## Why use Scala?
 
 What? Object-oriented *and* functional? Neato. *Xalgorithms* work is currently done on a base of scalable technologies: Kafka, Akka, Spark, Kubernetes, etc. To contribute to the core rule interpreter, I've learned a little Scala and written a few functions and unit tests.
 
 > Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages.
 
-<br />
 
-# Setup
+## Setup
 
 My first few tests were compiled and run with `scalac`, but I've been dabbling more with IDEs as of late. I am certainly a JetBrains fan, so **IntelliJ Idea** was my first pick... And a bit of a mess to set up.
 
@@ -38,9 +38,9 @@ After installing the Scala and IdeaVIM modules, you should be up and running wit
 
 <br />
 
-# Scala Basics
+## Scala Basics
 
-## Syntax
+### Syntax
 
 Case sensitive **Class Names** are written in CamelCase `LikeThis`, **Method Names** are written in lesser-camelcase `likeThis`, programs end with `.scala`, and require an entry point expressed as `def main(args: Array[ String ]){}`. Identifiers must start with a letter or underscore and are case-sensitive.
 
@@ -59,7 +59,7 @@ import scala.collection.mutable.HashMap //A single class/object
 import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 ```
 
-## Apply Dynamic
+### Apply Dynamic
 
 *Oh, this is new...* Apply, select, update - dynamic if type checking fails?
 
@@ -71,6 +71,6 @@ import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 <br />
 
 
-# ScalaJS
+## ScalaJS
 
 <https://www.scala-js.org/>
