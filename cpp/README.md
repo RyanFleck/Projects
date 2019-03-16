@@ -1,4 +1,5 @@
 # Programming in C++
+subtitle: "C wil a billion extra powerful extensions."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -13,18 +14,10 @@ int main(){
 ```
 
 
-<br />
-
-
-
-<br />
-
 ## Why use C++?
 To keep up with my friends in advanced programming courses at *uOttawa* at the time of writing.
 
 Also, seeing as I'm no C++ *aficionado*, I saw that the hackerrank challenge for Kinaxis could only be written in C++, so I'm taking some notes and binge studying today.
-
-
 
 ## Core C++
 

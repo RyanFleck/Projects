@@ -1,4 +1,5 @@
 # Programming in Scala
+subtitle: "Magic that your boss *will* let you use."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -11,8 +12,6 @@ object Main extends App {
 }
 ```
 
-<br />
-
 
 ## Why use Scala?
 
@@ -20,7 +19,6 @@ What? Object-oriented *and* functional? Neato. *Xalgorithms* work is currently d
 
 > Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages.
 
-<br />
 
 ## Setup
 

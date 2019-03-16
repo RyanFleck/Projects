@@ -1,4 +1,5 @@
 # Programming in C#
+subtitle: "Microsoft thought C+++ would sound silly."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -17,16 +18,10 @@ class Hello
 }
 ```
 
-<br />
-
-
-<br />
 
 ## Why use C#?
 
 Pronounced "C Sharp" and also known as *Microsoft's Java,* C# is a general-purpose language primarily used for developing Windows applications. C# is also used by the Unity game engine, the ASP.NET framework (which is used by many of the highest-traffic websites,) and should remain relevant for years to come. I am personally learning C# for development on the *Sitecore®* platform, a web content management system built with Microsoft's .NET system. Working with a large, technical system should provide excellent experience.
-
-
 
 ## Setup
 

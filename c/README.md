@@ -1,4 +1,5 @@
 # Programming in C
+subtitle: "For the GNU/Linux and OS Hackers."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -14,10 +15,6 @@ int main(void){
 }
 ```
 
-<br />
-
-
-<br />
 
 ## Why use C?
 C is the backbone of Unix systems. That's cool. Currently the only project I really have going in C is [RML](https://github.com/RyanFleck/RML). The Operating Systems course uses C to teach about processes and threading.

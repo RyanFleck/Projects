@@ -1,4 +1,5 @@
 # Programming in JavaScript
+subtitle: "Can do everything, but shouldn't do everything."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -12,11 +13,7 @@ if( prepared == true ){
 }
 ```
 
-<br />
 
-
-
-<br />
 
 ## Why use JavaScript?
 
