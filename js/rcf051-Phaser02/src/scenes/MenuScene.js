@@ -15,7 +15,42 @@ export default class MenuScene extends Phaser.Scene {
     }
 
     create() {
+        this.sound.play('title_music', {
+            loop: true,
+        });
 
-        this.add.image(200, 150, 'title');
+        const lava = this.add.particles('lava').setDepth(1);
+        const emitter = lava.createEmitter({
+            // speed: 90,
+            scale: { start: 0.7, end: 0 },
+            x: 200,
+            y: 255,
+            speedX: { min: -20, max: 20 },
+            speedY: { min: -10, max: -50 },
+            lifespan: 800,
+            gravityY: -300,
+            blendMode: 'ADD',
+        });
+
+
+        emitter.start();
+
+        this.add.image(200, 140, 'title').setDepth(1);
+        this.add.image(200, 150, 'bg').setDepth(0);
+        const playBtn = this.add.image(200, 260, 'play').setDepth(2);
+
+        playBtn.setInteractive();
+
+        playBtn.on('pointerover', () => {
+            console.log('hovering.');
+        });
+
+        playBtn.on('pointerout', () => {
+            console.log('no longer hovering.');
+        });
+
+        playBtn.on('pointerup', () => {
+            console.log('Play!');
+        });
     }
 }

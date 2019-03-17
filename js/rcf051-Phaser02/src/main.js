@@ -15,6 +15,9 @@ const game = new Phaser.Game({
         LoadScene,
         MenuScene,
     ],
+    render: {
+        pixelArt: true,
+    },
 });
 
 

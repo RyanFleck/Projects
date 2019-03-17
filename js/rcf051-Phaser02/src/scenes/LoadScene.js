@@ -11,8 +11,12 @@ export default class LoadScene extends Phaser.Scene {
     }
 
     preload() {
+        this.load.audio('title_music', './audio/JDB Artist - Inspirational Vol.2 - 01 New Day New Dawn (Adventure).mp3');
+
+        this.load.image('lava', './sprites/lava.png');
         this.load.image('logo', './sprites/logo.png');
         this.load.image('title', './sprites/title.png');
+        this.load.image('bg', './sprites/IntroBackground.png');
         this.load.image('play', './sprites/play.png');
         this.load.spritesheet('tiles', './sprites/DungeonTileset.png', {
             frameHeight: 16,
