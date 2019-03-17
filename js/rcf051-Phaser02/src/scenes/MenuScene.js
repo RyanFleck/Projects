@@ -25,10 +25,10 @@ export default class MenuScene extends Phaser.Scene {
             scale: { start: 0.7, end: 0 },
             x: 200,
             y: 255,
-            speedX: { min: -20, max: 20 },
-            speedY: { min: -10, max: -50 },
+            speedX: { min: -30, max: 30 },
+            speedY: { min: -20, max: -30 },
             lifespan: 800,
-            gravityY: -300,
+            gravityY: -200,
             blendMode: 'ADD',
         });
 
@@ -43,6 +43,7 @@ export default class MenuScene extends Phaser.Scene {
 
         playBtn.on('pointerover', () => {
             console.log('hovering.');
+            emitter.set
         });
 
         playBtn.on('pointerout', () => {
