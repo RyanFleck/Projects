@@ -15,7 +15,6 @@ export default class DemoLevel extends Phaser.Scene {
     }
 
     create() {
-
         const lava = this.add.particles('lava').setDepth(1);
         const emitter = lava.createEmitter({
             // speed: 90,
@@ -24,8 +23,8 @@ export default class DemoLevel extends Phaser.Scene {
             y: 255,
             speedX: { min: -50, max: 50 },
             speedY: { min: -20, max: -70 },
-            lifespan: 800,
-            gravityY: -300,
+            lifespan: 1000,
+            gravityY: -200,
             blendMode: 'ADD',
         });
 

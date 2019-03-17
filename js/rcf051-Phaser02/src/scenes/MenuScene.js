@@ -14,7 +14,8 @@ export default class MenuScene extends Phaser.Scene {
         console.log(data);
     }
 
-    create() {
+    create () {
+        this.sound.pauseOnBlur = false;
         this.sound.play('title_music', {
             loop: true,
         });

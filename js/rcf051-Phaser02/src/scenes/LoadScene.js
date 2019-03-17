@@ -11,6 +11,7 @@ export default class LoadScene extends Phaser.Scene {
     }
 
     preload() {
+
         this.load.audio('title_music', './audio/JDB Artist - Inspirational Vol.2 - 01 New Day New Dawn (Adventure).mp3');
 
         this.load.image('lava', './sprites/lava.png');

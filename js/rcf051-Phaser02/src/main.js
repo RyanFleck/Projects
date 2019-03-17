@@ -20,6 +20,13 @@ const game = new Phaser.Game({
     render: {
         pixelArt: true,
     },
+    scale: {
+        parent: 'phaser',
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 400,
+        height: 300,
+    },
 });
 
 
