@@ -78,7 +78,7 @@ function create() {
         frameRate: 20,
     });
 
-    this.cameras.main.setZoom(2);
+    this.cameras.main.setZoom(1);
 }
 
 function update() {
