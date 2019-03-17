@@ -327,6 +327,15 @@ After installing MongoDB and loading [Mongo sample ZIP](http://media.mongodb.org
 ## WebPack
 Nothing yet.
 
+## Web Storage
+
+When writing client-side javascript, you'll usually have the option to store data in the `sessionStorage` or `localStorage` objects. With both, you can call `setItem` and `getItem` methods. Session storage is cleared after a tab is closed.
+
+```js
+localStorage.setItem("rcf-nightmode","active");
+localStorage.getItem("rcf-nightmode");
+```
+
 ## Babel
 Babel, an ES6 to ES5 compiler (termed *transpiler* by some,) is a tool for ensuring modern JavaScript code does not confuse older browsers by converting modern (Post-2015) JavaScript to a backwards-compatible version.
 

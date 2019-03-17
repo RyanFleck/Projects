@@ -1,5 +1,5 @@
 # Programming in Rust
-subtitle: "Like Go, but with a steeper learning curve and three times the power."
+subtitle: "A steeper learning curve than go, but double the power. Wasm."
 
   [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 

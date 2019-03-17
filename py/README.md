@@ -30,12 +30,20 @@ All of these use cases can see fantastic acceleration with just a little bit of 
 
 ## Environment Setup
 
+If running windows, you'll need the latest [python installer](https://www.python.org/downloads/). If on a GNU/Linux distribution, you'll be able to install `python3-dev` with your package manager; all tools will be installed automatically. Ensure that you have the pip package manager installed by running `pip3 -v`.
+
 Most of my python is written either in *VIM* or *VS Code* with the [AutoPEP8](https://marketplace.visualstudio.com/items?itemName=himanoa.Python-autopep8) linter. You'll need *pylint* installed to use the VS Code extension.
 
 ```bash
-python -m pip install -U pylint --user
+# Install whatever you want.
+pip3 install --upgrade pip
+pip3 install jupyter pylint pandas --user
+# Ensure .local/bin is in your PATH.
 ```
 
+## Recommended Learning Path
+
+If programming for the very first time, I'd recommend taking CodeCademy's [*Learn Python 3*](https://www.codecademy.com/learn/learn-python-3) course, ignoring the Pro materials.
 
 ## Pandas Data Analysis
 
