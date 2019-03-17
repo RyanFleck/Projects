@@ -3,6 +3,7 @@ import * as Phaser from 'phaser';
 // Scenes
 import LoadScene from './scenes/LoadScene';
 import MenuScene from './scenes/MenuScene';
+import DemoLevel from './scenes/DemoLevel';
 
 const game = new Phaser.Game({
     /*
@@ -14,6 +15,7 @@ const game = new Phaser.Game({
     scene: [
         LoadScene,
         MenuScene,
+        DemoLevel,
     ],
     render: {
         pixelArt: true,

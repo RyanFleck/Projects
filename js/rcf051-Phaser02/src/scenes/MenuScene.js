@@ -40,18 +40,22 @@ export default class MenuScene extends Phaser.Scene {
         const playBtn = this.add.image(200, 260, 'play').setDepth(2);
 
         playBtn.setInteractive();
+        playBtn.input.useHandCursor = true;
 
         playBtn.on('pointerover', () => {
             console.log('hovering.');
-            emitter.set
+            this.game.canvas.style.cursor = 'pointer';
         });
 
         playBtn.on('pointerout', () => {
             console.log('no longer hovering.');
+            this.game.canvas.style.cursor = 'default';
         });
 
         playBtn.on('pointerup', () => {
             console.log('Play!');
+            this.game.canvas.style.cursor = 'default';
+            this.scene.start(CST.SCENES.DEMO, 'Loaded assets.');
         });
     }
 }
