@@ -12,13 +12,17 @@ export default class LoadScene extends Phaser.Scene {
 
     preload() {
 
+        // Audio
         this.load.audio('title_music', './audio/JDB Artist - Inspirational Vol.2 - 01 New Day New Dawn (Adventure).mp3');
 
+        // Images
         this.load.image('lava', './sprites/lava.png');
         this.load.image('logo', './sprites/logo.png');
         this.load.image('title', './sprites/title.png');
         this.load.image('bg', './sprites/IntroBackground.png');
         this.load.image('play', './sprites/play.png');
+
+        // SpriteSheet
         this.load.spritesheet('tiles', './sprites/DungeonTileset.png', {
             frameHeight: 16,
             frameWidth: 16,
@@ -28,11 +32,15 @@ export default class LoadScene extends Phaser.Scene {
             frameWidth: 16,
         });
 
+        
+
         const loadingBar = this.add.graphics({
             fillStyle: {
                 color: 0xffffff,
             },
         });
+
+        this.cameras.main.setZoom(1);
 
         this.load.on('progress', (percent) => {
             loadingBar.fillRect(0,

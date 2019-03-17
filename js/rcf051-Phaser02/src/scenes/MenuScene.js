@@ -14,8 +14,7 @@ export default class MenuScene extends Phaser.Scene {
         console.log(data);
     }
 
-    create () {
-        this.sound.pauseOnBlur = false;
+    create() {
         this.sound.play('title_music', {
             loop: true,
         });
@@ -33,6 +32,20 @@ export default class MenuScene extends Phaser.Scene {
             blendMode: 'ADD',
         });
 
+        // Animations
+        this.anims.create({
+            key: 'knight-running',
+            frames: this.anims.generateFrameNumbers(
+                'tiles-tall',
+                { frames: [73, 75] },
+            ),
+            frameRate: 3,
+            repeat: -1,
+        });
+
+        const knight = this.add.sprite(95, 220, 'tiles-tall', 75).setDepth(2);
+        knight.setScale(2);
+        knight.anims.play('knight-running');
 
         emitter.start();
 
