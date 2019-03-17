@@ -28,7 +28,7 @@ export default class MenuScene extends Phaser.Scene {
             speedX: { min: -30, max: 30 },
             speedY: { min: -20, max: -30 },
             lifespan: 800,
-            gravityY: -200,
+            gravityY: -300,
             blendMode: 'ADD',
         });
 

@@ -32,8 +32,6 @@ export default class LoadScene extends Phaser.Scene {
             frameWidth: 16,
         });
 
-        
-
         const loadingBar = this.add.graphics({
             fillStyle: {
                 color: 0xffffff,

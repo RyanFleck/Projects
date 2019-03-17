@@ -21,10 +21,10 @@ export default class DemoLevel extends Phaser.Scene {
             scale: { start: 1, end: 0 },
             x: 200,
             y: 255,
-            speedX: { min: -50, max: 50 },
+            speedX: { min: -30, max: 30 },
             speedY: { min: -20, max: -70 },
             lifespan: 1000,
-            gravityY: -200,
+            gravityY: -400,
             blendMode: 'ADD',
         });
 
