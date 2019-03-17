@@ -12,10 +12,10 @@ export default class MenuScene extends Phaser.Scene {
 
     init(data) {
         console.log(data);
-        console.log('I got it.');
     }
 
     create() {
-        // x
+
+        this.add.image(200, 150, 'title');
     }
 }

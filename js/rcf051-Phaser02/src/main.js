@@ -5,6 +5,10 @@ import LoadScene from './scenes/LoadScene';
 import MenuScene from './scenes/MenuScene';
 
 const game = new Phaser.Game({
+    /*
+    width: window.innerWidth * window.devicePixelRatio,
+    height: window.innerHeight * window.devicePixelRatio,
+    */
     width: 400,
     height: 300,
     scene: [
@@ -12,6 +16,7 @@ const game = new Phaser.Game({
         MenuScene,
     ],
 });
+
 
 /* NOTES FOR NEXT TIME:
 
