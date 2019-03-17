@@ -1,0 +1,11 @@
+extends: airbnb-base
+env:
+  browser: true
+  node: true
+rules:
+  no-console: 0
+  no-use-before-define: 0
+  linebreak-style: off
+  indent: ["error", 4]
+  no-plusplus: 0
+  prefer-destructuring: 0
