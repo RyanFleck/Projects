@@ -42,7 +42,8 @@ fi
 ```
 
 **Windows compile+run script cs.bat:**
-```bat
+
+```
 @ECHO OFF
 ECHO **************************************************
 ECHO **        FOR WIN10x64: C# Compile N' Run       **
