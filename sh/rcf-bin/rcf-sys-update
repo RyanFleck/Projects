@@ -35,5 +35,8 @@ if [ "$FEDORA" = 1 ] ; then
     sudo dnf update -y
 fi
 
+sp -l
+sp
+
 echo "Done."
 
