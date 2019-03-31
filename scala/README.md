@@ -19,6 +19,12 @@ What? Object-oriented *and* functional? Neato. *Xalgorithms* work is currently d
 
 > Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages.
 
+Personally I've seen and heard of Scala being used for better and for worse in the industry. As Scala is flexible, it opens the door for situations like the one described here:
+
+> Soon we had three kinds of Scala written at Twitter: Scala written by people who wished it was Ruby, Scala written by people who wished it was Java, and Scala written by people who wished it was Haskell. Let a thousand flowers bloom.[^evrl]
+
+[^evrl]: Quote from [Peter Seibel](http://www.gigamonkeys.com/flowers/), Cees de Groot, [Scala Part II](http://evrl.com/programming/scala/2017/04/04/scala-part-ii.html), <http://evrl.com>
+
 
 ## Setup
 
