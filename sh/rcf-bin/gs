@@ -7,8 +7,7 @@
 #   $ gacp "Upload new materials."
 #   ( git output shows here, showing changed files. )
 
-echo ">> Git Add-Commit-Push"
-echo "   Commit message: '$1'"
-git add .
-git commit -m "$1"
-git push
+echo "DIFF:"
+git diff
+echo "STATUS:"
+git status
