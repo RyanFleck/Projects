@@ -1,13 +1,9 @@
 #!/bin/bash
-# GACP stands for 'git add, commit, push', great for when you're
-#   working on a solo project and have everything to commit up in
-#   your working state. Not recommended for use in collaborative
-#   situations, or when large changes have been made.
-# Usage:
-#   $ gacp "Upload new materials."
-#   ( git output shows here, showing changed files. )
-
-echo "DIFF:"
+echo ""
+echo "REPOSITORY DIFF:"
+echo "================"
 git diff
-echo "STATUS:"
+echo ""
+echo "REPOSITORY STATUS:"
+echo "=================="
 git status
