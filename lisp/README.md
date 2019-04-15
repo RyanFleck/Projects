@@ -20,7 +20,7 @@ Bwah, *LISP?* From the *50s?* Yes- Lisp is more common than you might think; oft
 
 It is important to note that there are many implementations of lisp, each with distinct advantages and disadvantages. For my learning, I'm going to be initially focusing on MIT lisps (adhering to the IEEE 1990 Scheme standard,) and SBCL, as these are what are used in my learning materials. Whether I settle with MIT-Scheme, Racket, Chicken or Guile depends on my mileage with each as I complete practice problems.
 
-This manual contains snippets of all kinds of lisps. If I gravitate towards one in particular, say, Racket or Clojure, I'll breakout the lang-specific jargon into a separate manual.
+This manual contains snippets of all kinds of lisps. If I gravitate towards one in particular, say, Racket or Clojure, I'll breakout the lang-specific jargon into a separate manual. Currently, I am doing most of my learning in **Scheme**.
 
 
 ## Why use Functional Languages?
@@ -155,7 +155,7 @@ This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Image saved on Saturday December 3, 2016 at 9:44:07 AM
-Release 9.1.1 || Microcode 15.3 || Runtime 15.7 || SF 4.41 || LIAR/x86-64 4.118
+Release 9.1.1 || Microcode 15.3 || Runtime 15.7 || LIAR/x86-64 4.118
 Edwin 3.116
 
 1 ]=> (exit)
@@ -165,6 +165,39 @@ Moriturus te saluto.
 ```
 
 MIT Scheme is recommended for learning and applying the contents of *SICP*.
+
+```scheme
+; To run, execute: scheme < prog6.scm
+; SICP Newton's Method for calculating square roots
+
+(define (square x) (* x x))
+
+(define (sqrt x)
+
+    (define (good-enough? guess)
+        (< (abs (- (square guess) x)) 0.001))
+
+    (define (improve guess)
+        (/ (+ (/ x guess) guess) 2))
+
+    (define (iterate guess)
+        (if (good-enough? guess)
+        guess
+        (iterate (improve guess))))
+
+    (iterate 1.0))
+
+(sqrt 104)
+;Value: 10.198039027421274
+
+(square (sqrt 104))
+;Value: 104.00000000480743
+
+; Note that all definitions required to run sqrt are included inside the
+; definition, meaning they are block scoped and can access lexically scoped
+; variable x.
+
+```
 
 ## GUILE
 
