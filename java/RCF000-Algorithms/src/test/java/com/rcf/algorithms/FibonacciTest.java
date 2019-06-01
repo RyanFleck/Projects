@@ -1,10 +1,10 @@
 package com.rcf.algorithms;
 
 import static org.junit.Assert.*;
+import com.rcf.algorithms.utils.ArrayUtil;
+import com.rcf.algorithms.utils.solutions.Euler;
 
 import org.junit.Test;
-
-import com.rcf.algorithms.utils.Array;
 
 public class FibonacciTest {
 
@@ -22,7 +22,7 @@ public class FibonacciTest {
 
     @Test
     public void testEuler002() {
-        assertEquals( 4613732, Array.sum( Fibonacci.generateToEven( 4000000 ) ) );
+        assertEquals( Euler.p002, ArrayUtil.sum( Fibonacci.generateToEven( 4000000 ) ) );
     }
 
 }

@@ -1,6 +1,7 @@
 package com.rcf.algorithms;
 
 import static org.junit.Assert.*;
+import com.rcf.algorithms.utils.solutions.Euler;
 
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ public class MultiplesTest {
 
     @Test
     public void testEuler001() {
-        assertEquals( 233168, Multiples.sumTwoMultiplesBelow( 3, 5, 1000 ) );
+        assertEquals( Euler.p001, Multiples.sumTwoMultiplesBelow( 3, 5, 1000 ) );
     }
 
 }
