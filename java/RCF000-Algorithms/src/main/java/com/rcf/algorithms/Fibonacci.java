@@ -16,6 +16,25 @@ import java.util.ArrayList;
 public class Fibonacci {
 
     public static int[] generateTo( int ceil ) {
+        return toIntArray( generateFibAL( ceil ) );
+    }
+
+    public static int[] generateToEven( int ceil ) {
+        ArrayList<Integer> fib = generateFibAL( ceil );
+        int fib_len = fib.size();
+        for ( int x = 0; x < fib_len; ) {
+            if ( fib.get( x ) % 2 != 0 ) {
+                fib.remove( x );
+                --fib_len;
+            } else {
+                ++x;
+            }
+        }
+
+        return toIntArray( fib );
+    }
+
+    private static ArrayList<Integer> generateFibAL( int ceil ) {
         ArrayList<Integer> fseq = new ArrayList<Integer>();
         fseq.add( 0 );
         int next = 1;
@@ -23,7 +42,7 @@ public class Fibonacci {
             fseq.add( next );
             next = fseq.get( fseq.size() - 1 ) + fseq.get( fseq.size() - 2 );
         }
-        return toIntArray( fseq );
+        return fseq;
     }
 
     private static int[] toIntArray( ArrayList<Integer> a ) {

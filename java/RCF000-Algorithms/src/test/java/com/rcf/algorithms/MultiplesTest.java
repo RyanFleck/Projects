@@ -6,10 +6,14 @@ import org.junit.Test;
 
 public class MultiplesTest {
 
-	@Test
-	public void testFindMultiples() {
-		assertEquals(23, Multiples.sumTwoMultiplesBelow(3,5,10));
-		assertEquals(233168, Multiples.sumTwoMultiplesBelow(3,5,1000));
-	}
+    @Test
+    public void testFindMultiples() {
+        assertEquals( 23, Multiples.sumTwoMultiplesBelow( 3, 5, 10 ) );
+    }
+
+    @Test
+    public void testEuler001() {
+        assertEquals( 233168, Multiples.sumTwoMultiplesBelow( 3, 5, 1000 ) );
+    }
 
 }
