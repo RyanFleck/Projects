@@ -2,8 +2,6 @@ package com.rcf.algorithms;
 
 import static com.rcf.algorithms.utils.PrimeUtil.*;
 
-import java.util.ArrayList;
-
 /*
  * The prime factors of 13195 are 5, 7, 13 and 29.
  * 
