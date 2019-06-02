@@ -1,8 +1,11 @@
 # Algorithms
 
 I'll try to complete a few Java programming puzzles a week.
+Puzzles sourced from popular sites like leetcode, hackerrank, euler.
 Each puzzle has an accompanying set of JUnit tests to ensure simple and complex test cases pass.
 Common operations, like functions dealing with prime numbers, are stored in the utils package.
+
+**Goal 1**: Complete 100 problems before the end of the semester, roughly one problem per day.
 
 ### Revision History
 
@@ -23,19 +26,21 @@ test output appears as in the console example below. *JUnit is great.*
  T E S T S
 -------------------------------------------------------
 Running com.rcf.algorithms.PrimeFactorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec
 Running com.rcf.algorithms.utils.PrimeUtilTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.rcf.algorithms.utils.ArrayUtilTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.rcf.algorithms.MultiplesTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running com.rcf.algorithms.FibonacciTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.rcf.algorithms.PalindromeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
 
 Results :
 
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
 ```
 
 To run the algorithms in another project, simply include the compiled 

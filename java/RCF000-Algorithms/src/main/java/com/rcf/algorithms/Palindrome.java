@@ -21,6 +21,7 @@ public class Palindrome {
         long lowerlimit = (long) ( Math.pow( 10, len - 1 ) - 1 );
 
         // Safest strategy is to multiply every number by all numbers equal to or above.
+        // Probably a place far above the lower limit where the search can be stopped.
 
         for ( long x = upperlimit; x > lowerlimit; x-- ) {
             for ( long y = upperlimit; y >= x; y-- ) {
