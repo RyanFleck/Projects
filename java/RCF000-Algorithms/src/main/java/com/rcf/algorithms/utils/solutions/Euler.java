@@ -10,5 +10,6 @@ package com.rcf.algorithms.utils.solutions;
 public class Euler {
     public static final int p001 = 233168;
     public static final int p002 = 4613732;
-    public static final long p003 = 6857;
+    public static final long p003 = 6857l;
+    public static final long p004 = 906609l;
 }

@@ -7,6 +7,10 @@ package com.rcf.algorithms.utils;
 import java.util.ArrayList;
 
 /**
+ * Read about the fundamental theorem of arithmetic here, perhaps all of these
+ * methods need to be rewritten to take advantage of this theorem:
+ * https://www.mathsisfun.com/numbers/fundamental-theorem-arithmetic.html
+ * 
  * @author Ryan Fleck
  */
 public class PrimeUtil {
