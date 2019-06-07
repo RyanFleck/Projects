@@ -18,11 +18,13 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "generator-phaser-ts": "^0.2.17",
+    "braces": "^3.0.2",
+    "deep-extend": "^0.6.0",
     "gm": "^1.23.1",
     "phaser": "^3.16.2",
     "phaser3_types": "0.0.1",
     "phasor": "0.0.1",
-    "stats.js": "^0.17.0"
+    "stats.js": "^0.17.0",
+    "tunnel-agent": "^0.6.0"
   }
 }
