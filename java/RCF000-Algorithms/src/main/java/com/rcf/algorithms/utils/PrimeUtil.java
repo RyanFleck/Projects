@@ -1,6 +1,9 @@
 /**
  * Utility library for handling prime numbers. Functions mostly ported from
- * https://github.com/RyanFleck/Projects/blob/master/js/rcf022_PrimeLib.js
+ * https://github.com/RyanFleck/Projects/blob/master/js/rcf022_PrimeLib.js It
+ * should be noted that the -p notation used in some of the functions denotes a
+ * question. This notation is taken from
+ * http://www.catb.org/jargon/html/p-convention.html
  */
 package com.rcf.algorithms.utils;
 

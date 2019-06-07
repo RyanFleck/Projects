@@ -6,6 +6,11 @@
 	<artifactId>algorithms</artifactId>
 	<version>0.0.3</version>
 	<name>Ryan's Algorithms</name>
+	<packaging>jar</packaging>
+
+	<build>
+		<finalName>algos</finalName>
+	</build>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

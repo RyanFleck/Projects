@@ -12,4 +12,5 @@ public class Euler {
     public static final int p002 = 4613732;
     public static final long p003 = 6857l;
     public static final long p004 = 906609l;
+    public static final long p005 = 232792560l;
 }
