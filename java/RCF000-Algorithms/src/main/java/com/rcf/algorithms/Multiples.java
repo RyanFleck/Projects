@@ -89,4 +89,48 @@ public class Multiples {
         }
         return step;
     }
+
+    /**
+     * @param target Numbers from 1 to (target) will be multiplied.
+     * @return The product of all numbers between 1 and (target).
+     */
+    public static long productOfNaturalRange( long target ) {
+        return LongStream.range( 1, target ).reduce( ( x, y ) -> x * y ).getAsLong();
+    }
+
+    /**
+     * Finds the difference between the sum of the squares of the first (range of
+     * digits) and the square of the sum.
+     * 
+     * @param target
+     * @return
+     */
+    public static long naturalRangeDifference( long target ) {
+        return squareOfSums( target ) - sumOfSquares( target );
+    }
+
+    /**
+     * Provides the sum of numbers 1 through target when numbers are squared.
+     * 
+     * @param target
+     * @return
+     */
+    public static long sumOfSquares( long target ) {
+        return LongStream.range( 1, ( target + 1 ) ).reduce( ( x, y ) -> x + ( y * y ) ).getAsLong();
+    }
+
+    /**
+     * Provides the square of the product of numbers 1 through target.
+     * 
+     * @param target
+     * @return
+     */
+    public static long squareOfSums( long target ) {
+        return square( LongStream.range( 1, ( target + 1 ) ).reduce( ( x, y ) -> x + y ).getAsLong() );
+    }
+
+    private static long square( long x ) {
+        return x * x;
+    }
+
 }
