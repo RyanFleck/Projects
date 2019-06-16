@@ -15,6 +15,10 @@ import com.rcf.algorithms.utils.ArrayUtil;
  * 
  */
 
+/**
+ * @author Ryan Fleck
+ * @since 0.0.3
+ */
 public class Fibonacci {
 
     public static int[] generateTo( int ceil ) {

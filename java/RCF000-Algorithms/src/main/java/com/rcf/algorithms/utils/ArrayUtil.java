@@ -2,6 +2,10 @@ package com.rcf.algorithms.utils;
 
 import java.util.ArrayList;
 
+/**
+ * @author Ryan Fleck
+ * @since 0.0.3
+ */
 public class ArrayUtil {
 
     /*
@@ -48,7 +52,7 @@ public class ArrayUtil {
         }
         return returnedArray;
     }
-    
+
     /**
      * Converts an Long ArrayList to an Array of type int
      * 

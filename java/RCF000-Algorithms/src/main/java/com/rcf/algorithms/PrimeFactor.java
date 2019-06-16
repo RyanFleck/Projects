@@ -8,6 +8,10 @@ import static com.rcf.algorithms.utils.PrimeUtil.*;
  * What is the largest prime factor of the number 600851475143 ?
  */
 
+/**
+ * @author Ryan Fleck
+ * @since 0.0.3
+ */
 public class PrimeFactor {
 
     /**

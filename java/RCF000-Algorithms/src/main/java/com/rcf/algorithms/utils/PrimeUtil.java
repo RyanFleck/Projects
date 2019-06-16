@@ -12,9 +12,12 @@ import java.util.ArrayList;
 /**
  * Read about the fundamental theorem of arithmetic here, perhaps all of these
  * methods need to be rewritten to take advantage of this theorem:
- * https://www.mathsisfun.com/numbers/fundamental-theorem-arithmetic.html
+ * (https://www.mathsisfun.com/numbers/fundamental-theorem-arithmetic.html).
+ * Additionally, a sieve could be most efficient in many cases (thanks Akshay)
+ * (https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
  * 
  * @author Ryan Fleck
+ * @since 0.0.3
  */
 public class PrimeUtil {
 

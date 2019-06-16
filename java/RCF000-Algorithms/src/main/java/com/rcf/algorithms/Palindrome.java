@@ -13,6 +13,10 @@ import java.util.Collections;
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
+/**
+ * @author Ryan Fleck
+ * @since 0.0.3
+ */
 public class Palindrome {
 
     public static long largestPalindromeProduct( int len ) {

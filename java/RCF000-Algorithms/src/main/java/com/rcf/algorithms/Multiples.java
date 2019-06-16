@@ -10,6 +10,10 @@ import static com.rcf.algorithms.utils.PrimeUtil.primep;
 
 import java.util.stream.LongStream;
 
+/**
+ * @author Ryan Fleck
+ * @since 0.0.3
+ */
 public class Multiples {
 
     /**
