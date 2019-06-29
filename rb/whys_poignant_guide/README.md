@@ -1,4 +1,4 @@
-# Why's Poignant Guide
+# Why's Poignant Guide (wGtR)
 
 *Oh, neat!* You've stumbled upon my notes on *Why the Lucky Stiff's (Poignant) Guide to Ruby.* It's free to read online [here](https://poignant.guide).
 

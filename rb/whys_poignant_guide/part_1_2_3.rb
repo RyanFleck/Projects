@@ -40,9 +40,19 @@ print "\n0 to 4: "
 puts ''
 
 # Arrays & Hashes
-some_array = ['one', 'more', 'time']
+some_array = %w[one more time]
 some_array.each { |x| puts x }
 some_hash = { 'o' => 'one', 'm' => 'more', 't' => 'time' }
-some_hash.each { |k, v| puts "Key #{k}, value #{v}" }
+some_hash.each do |k, v|
+  puts "Key #{k}, value #{v}"
+end
 
+# Libraries
+require 'net/http'
+puts "\nRuby License:\n"
+Net::HTTP.start('www.ruby-lang.org', 80) do |http|
+  puts(http.get('/en/about/license.txt').body)
+end
+
+# Fin.
 exit
