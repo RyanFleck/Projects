@@ -5,6 +5,7 @@
 # So, I continue in my wGtR journey with the fourth chapter,
 # 'Floating Little Leaves of Code' where Why covers stuff.
 # Ruby looks nice in VSCode with the 'Monokai Dimmed' theme.
+# https://poignant.guide/book/chapter-4.html
 
 neato = true
 falso = false

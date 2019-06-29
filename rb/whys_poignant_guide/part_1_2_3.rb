@@ -7,6 +7,8 @@
 # happiness in mind. Worth a shot. Good to have another tool
 # on my toolbelt.
 
+# https://poignant.guide/book/chapter-1.html
+
 # Canonical first test.
 puts 'Hello, world!'
 # Numbers have methods? What is this? (Anything in {} is a block.)
