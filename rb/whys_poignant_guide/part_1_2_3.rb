@@ -37,6 +37,7 @@ print "\nA to Z: "
 print "\n0 to 5: "
 (0..5).each { |number| print number }
 
+# (x..y) is inclusive, (x..y) goes to y - 1
 print "\n0 to 4: "
 (0...5).each { |number| print number }
 puts ''
@@ -55,6 +56,3 @@ puts "\nRuby License:\n"
 Net::HTTP.start('www.ruby-lang.org', 80) do |http|
   puts(http.get('/en/about/license.txt').body)
 end
-
-# Fin.
-exit

@@ -7,6 +7,8 @@
 # Ruby looks nice in VSCode with the 'Monokai Dimmed' theme.
 # https://poignant.guide/book/chapter-4.html
 
+puts 'Part 4!'
+
 neato = true
 falso = false
 
@@ -42,7 +44,7 @@ CODE_WORDS = {
 }.freeze
 
 puts CODE_WORDS['catapult'].upcase
-puts CODE_WORDS.[]('Nigeria')
+puts CODE_WORDS.[]('Nigeria') # lots of things ( like == and [] ) are functions.
 
 puts 'Enter your evil plan: (Or hit enter and we\'ll read your mind)'
 
@@ -112,6 +114,3 @@ desk_objects.each do |item|
 
   puts item
 end
-
-# Fin
-exit

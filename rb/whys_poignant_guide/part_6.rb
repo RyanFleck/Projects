@@ -4,3 +4,5 @@
 
 # So, I continue in my wGtR journey with the sixth chapter,
 # https://poignant.guide/book/chapter-6.html
+
+puts 'Part 6!'
