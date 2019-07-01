@@ -392,4 +392,10 @@ def pythonRegex():
     print('Greedy algo:\t'+greedy.search(gstring).group())
     print('Timid algo:\t'+timid.search(gstring).group())
 
+    # CENSORSHIP
+    # Let's re-use the compiled email and phone number regexes from earlier...
+    message_censored = re_phonenumber_1.sub('CENSORED', message_to_dev)
+    message_censored = re_emailaddr.sub('CENSORED', message_censored)
+    print(message_censored)
+
 pythonRegex()
