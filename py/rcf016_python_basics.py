@@ -324,7 +324,7 @@ def pythonRegex():
     message_to_dev = '''
     =========================
     from: agent@talent.com
-    to: awesomeprogrammer@ryanfleck.ca
+    to: super-awesome.programm_er.lol@ryanfleck.ca
     subject: Django Foos Site
     =========================
 
@@ -341,10 +341,11 @@ def pythonRegex():
     I'm sending this from my agent's email, you can get back to me directly
     by calling (613) 501-6192 or, alternatively, 789-293-3942, my wife's phone.
 
-    Or 412 492 3912, my dog's phone.
+    Or +3 412 492 3912, my dog's phone. or is it +2(413) 492-3912? Hm... Well,
+    in any case, his email is dog@foos.co.uk. 
 
     OR you can email me or my agent back, but he usually takes a while to get
-    back so right to me is better: dave@foofighters.com, agent@talent.com
+    back so right to me is better: dave@foofighters.com, agent.j@talent.com !
 
     Thanks man!
 
@@ -355,16 +356,31 @@ def pythonRegex():
     print('Awesome, Dave Grohl sent me an email:\n' + message_to_dev)
     print('Let\'s get all the useful phone numbers and emails outta this.')
 
-    re_phonenumber_1 = re.compile(r'((\(| )*\d\d\d(\)|-| )*\d\d\d(-| )*\d\d\d\d)')
+    # Compile the regex pattern for phone numbers.
+    re_phonenumber_1 = re.compile(
+        r'((\+\d)?(\(| )*\d\d\d(\)|-| )*\d\d\d(-| )*\d\d\d\d)')
+
+    # Get the first match.
     matches = re_phonenumber_1.search(message_to_dev)
-    print(matches.group())
+
+    # Get ALL the matches!
     all_matches = re_phonenumber_1.findall(message_to_dev)
-    print('We could extract these phone numbers:')
-    for match in all_matches:
-        print(match[0])
+    print('\nWe successfully extracted ' +
+          str(len(all_matches)) + ' phone numbers:')
+    for match in range(len(all_matches)):
+        # Match is stored in a tuple with all the groups from the regex.
+        print(str(match + 1) + ': ' + all_matches[match][0].strip())
 
+    # Compile the regex pattern for email addresses.
+    # This only accounts for non-disassembled addresses with (at) (dot)
+    re_emailaddr = re.compile(r'((\w|\.|-)+@(\w|\.|-)+)')
+    email_matches = re_emailaddr.findall(message_to_dev)
+   
+    print('\nEmail addresses:')
+    for match in range(len(email_matches)):
+        # Match is stored in a tuple with all the groups from the regex.
+        print(str(match + 1) + ': ' + email_matches[match][0].strip())
 
-    
 
 
 pythonRegex()
