@@ -313,4 +313,44 @@ def stringManipulation():
     # Remove whitespace with strip() (heh), rstrip(), lstrip().
 
 
-stringManipulation()
+# stringManipulation()
+
+def pythonRegex():
+    '''Regular expressions and stuff.'''
+    print('Python is pretty good with regular expressions')
+
+    foo = "Hey, don't let it go to waste; I love it for the aftertaste."
+    message_to_developer = '''
+    =========================
+    from: agent@talent.com
+    to: awesomeprogrammer@ryanfleck.ca
+    subject: Django Foos Site
+    =========================
+
+    Uh, hey, this is Dave.
+
+    You came up to me at my concert and said you could build me a site?
+
+    Anyways, it'd be great if you could do that. I've heard of this thing
+    called Django that sounds cool; I like the Tarantino movie, and I'm sure
+    a website thing named after an awesome movie has to be good.
+
+    Oh, and you need to be able to log people in and buy merch! and stuff!
+
+    I'm sending this from my agent's email, you can get back to me directly
+    by calling (613) 501-6192 or 789-293-3942. That's my wife's phone.
+
+    OR you can email me or my agent back, but he usually takes a while to get
+    back so right to me is better: dave@foofighters.com, agent@talent.com
+
+    Thanks man!
+
+    - Dave
+
+    '''
+
+    print('Awesome, Dave Grohl sent me an email:\n' + message_to_developer)
+    print('Let\'s get all the useful phone numbers and emails outta here.')
+
+
+pythonRegex()
