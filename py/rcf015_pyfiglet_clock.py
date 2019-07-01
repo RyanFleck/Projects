@@ -5,16 +5,15 @@
 import pyfiglet
 import time
 import os
-import sys 
+import sys
 
 clear_cmd = 'clear'
 f = pyfiglet.Figlet(font='5lineoblique')
-if( 'win' in sys.platform ):
+if('win' in sys.platform):
     clear_cmd = 'cls'
 
-while 1:
+while True:
     os.system(clear_cmd)
     now = time.strftime("%H %M %S", time.localtime())
     print(f.renderText(now))
     time.sleep(1)
-
