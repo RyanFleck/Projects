@@ -8,6 +8,7 @@
 import sys
 import random
 import copy
+import pprint
 
 
 def helloWorld():
@@ -232,17 +233,84 @@ def pythonsFamousLists():
 def pythonsFamousDictionaries():
     '''Tinker with dictionaries. Like a list, but it's a hash with keys and values.'''
 
-    knight = {'name': 'Lancelot', 'armor': 'Shiny', 'sword': 'Sharp'}
-    print('SIR KNIGHT!: '+str(knight))
+    knight = {'name': 'Lancelot', 'armor': 'shiny', 'sword': 'sharp'}
+    print('SIR KNIGHT!: ' + str(knight))
 
     # Methods: keys, values, items
-    print('Keys:\t'+str(knight.keys()))
-    print('Values:\t'+str(knight.values()))
-    print('Items:\t'+str(knight.items()))
+    print('Keys:\t' + str(knight.keys()))
+    print('Values:\t' + str(knight.values()))
+    print('Items:\t' + str(knight.items()))
 
     # Does SIR KNIGHT have a sword?
-    print('Got Sword? => '+str( 'sword' in knight.keys()))
-    print('Got Shield? => '+str( 'shield' in knight.keys()))
+    print('Got Sword? => ' + str('sword' in knight.keys()))
+    print('Got Shield? => ' + str('shield' in knight.keys()))
+
+    # Method get(thing to look for, fallback value)
+    print('Sword property: ' + str(knight.get('sword', 'nope')))
+    print('Shield property: ' + str(knight.get('shield', 'nope')))
+
+    # SetDefault sets a value if it doesn't already exist.
+    knight.setdefault('sword', 'bloody')
+    knight.setdefault('shield', 'rugged')
+    knight.setdefault('face', 'clean shaven')
+    knight.setdefault('intents', 'noble')
+    knight.setdefault('aim', 'true')
+    print(knight)
+
+    # Give the knight some stuff
+    knight.setdefault(
+        'inventory', {
+            'arrows': 12, 'gold coins': 2, 'copper coins': 38})
+
+    # PPRINT -> Pretty print
+    # Pretty print dictionaries and stuff.
+    pprint.pprint(knight)
 
 
-pythonsFamousDictionaries()
+# pythonsFamousDictionaries()
+
+def stringManipulation():
+    '''Mess around with strings, slicing, wheat kings, etc.'''
+
+    lyric = "In the zippo lighter, he sees the killer's face."
+    lyric_two = "Maybe it's someone standing in the killer's place."
+    print(lyric + '\n' + lyric_two)
+
+    # Ramsey's F*CKING RAW (raw) strings ignore all specials and escape chars:
+    raw_string = r'Any\thing can\t go in here and it\'ll still be processed'
+    print(raw_string)
+
+    # Multiline strings got three ticks:
+    wanderer = '''
+    I went out walking
+    under an atomic sky
+    where the pain it churned
+    and the rain, it burned
+    my own ghost walking by my side
+    '''
+    print(wanderer)
+
+    # Strings can be SLICED, diced and indexed.
+    # Empty entry just defaults to that end of the list.
+    print(lyric[:13])
+    print(lyric[13:])
+
+    # We can do things like remove the last letter, and add EMPHASIS!!!
+    print(lyric.upper()[:-1] + '!!!')
+    print('Is it normally all uppercase? => ' + str(lyric.isupper()))
+
+    # Also see isalpha() isalnum() isdecimal() isspace() istitle()
+
+    # Split and join
+    print('! '.join(['three', 'minutes', 'to', 'midnight']) + '!')
+    print('I like apples, bananas, and frunklefruit.'.split(','))
+
+    # Dumb formatting
+    print('Left '.ljust(80, '='))
+    print(' Right'.rjust(80, '='))
+    print(' Central, Baybee '.center(80, '='))
+
+    # Remove whitespace with strip() (heh), rstrip(), lstrip().
+
+
+stringManipulation()
