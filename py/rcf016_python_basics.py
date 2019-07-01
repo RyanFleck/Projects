@@ -9,6 +9,7 @@ import sys
 import random
 import copy
 import pprint
+import re
 
 
 def helloWorld():
@@ -320,7 +321,7 @@ def pythonRegex():
     print('Python is pretty good with regular expressions')
 
     foo = "Hey, don't let it go to waste; I love it for the aftertaste."
-    message_to_developer = '''
+    message_to_dev = '''
     =========================
     from: agent@talent.com
     to: awesomeprogrammer@ryanfleck.ca
@@ -338,7 +339,9 @@ def pythonRegex():
     Oh, and you need to be able to log people in and buy merch! and stuff!
 
     I'm sending this from my agent's email, you can get back to me directly
-    by calling (613) 501-6192 or 789-293-3942. That's my wife's phone.
+    by calling (613) 501-6192 or, alternatively, 789-293-3942, my wife's phone.
+
+    Or 412 492 3912, my dog's phone.
 
     OR you can email me or my agent back, but he usually takes a while to get
     back so right to me is better: dave@foofighters.com, agent@talent.com
@@ -349,8 +352,19 @@ def pythonRegex():
 
     '''
 
-    print('Awesome, Dave Grohl sent me an email:\n' + message_to_developer)
-    print('Let\'s get all the useful phone numbers and emails outta here.')
+    print('Awesome, Dave Grohl sent me an email:\n' + message_to_dev)
+    print('Let\'s get all the useful phone numbers and emails outta this.')
+
+    re_phonenumber_1 = re.compile(r'((\(| )*\d\d\d(\)|-| )*\d\d\d(-| )*\d\d\d\d)')
+    matches = re_phonenumber_1.search(message_to_dev)
+    print(matches.group())
+    all_matches = re_phonenumber_1.findall(message_to_dev)
+    print('We could extract these phone numbers:')
+    for match in all_matches:
+        print(match[0])
+
+
+    
 
 
 pythonRegex()
