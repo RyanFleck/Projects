@@ -7,9 +7,14 @@
 
 import sys
 import random
+import copy
 
-# The canonical beginner's program.
-print('Hello, Python!')
+
+def helloWorld():
+    '''The canonical beginner's program.'''
+    print('Hello, Python!')
+
+# helloWorld()
 
 
 def teenyREPL():
@@ -35,12 +40,13 @@ def teenyREPL():
 # testing interface, rather than having to upload to Heroku first.
 
 
-# Ranges
-range_arr = []
-for x in range(10):
-    range_arr = range_arr + [x]
+def ranges():
+    '''Shove a range into an array (probably an easier way to do this.)'''
+    range_arr = []
+    for x in range(10):
+        range_arr = range_arr + [x]
 
-print(range_arr)
+    print(range_arr)
 
 
 # Example: Global Variables
@@ -49,29 +55,32 @@ print(range_arr)
 spam = 0
 
 
-def addToSpam():
-    global spam
-    spam = spam + 1
+def globalVars():
+    def addToSpam():
+        global spam
+        spam = spam + 1
+
+    addToSpam()
+    addToSpam()
+    print(spam)
+
+# globalVars()
 
 
-addToSpam()
-addToSpam()
-print(spam)
+def exceptionHandling():
+    '''Play with simple exception handling.'''
+    def divide42by(num):
+        '''Attempts to divide 42 by the argument num'''
+        try:
+            return 42 / num
+        except ZeroDivisionError:
+            print('I\'m afraid I can\'t do that, Dave.')
+            return 0
 
-# Example: Exception Handling
+    print(divide42by(3))
+    print(divide42by(0))
 
-
-def divide42by(num):
-    '''Attempts to divide 42 by the argument num'''
-    try:
-        return 42 / num
-    except ZeroDivisionError:
-        print('I\'m afraid I can\'t do that, Dave.')
-        return 0
-
-
-print(divide42by(3))
-print(divide42by(0))
+# exceptionHandling()
 
 
 def numberGame():
@@ -95,6 +104,7 @@ def numberGame():
     # print('(answer is '+str(number)+')')
 
     def guess(gum):
+        '''Checks the user guess (gum) against the stored answer (number)'''
         if(gum > number):
             print('Too high.')
             return False
@@ -118,4 +128,121 @@ def numberGame():
             break
 
 
-numberGame()
+# numberGame()
+
+def pythonsFamousLists():
+    '''Tinker with lists.'''
+    strings = ['lead pipe', 'revolver', 'candlestick', 'rope']
+    lucky_numbers = [13, 7, 4, 53 + 35, 27 - 8, 21, 392 + 274]
+
+    # Slicing
+    print(strings)
+    print(lucky_numbers)
+    print('Second index (1) of strings array is: \'' + strings[1] + '\'')
+    # Negative slices are from-the-end.
+    print('The sliced second half of the strings array is: ' +
+          str(strings[-2:]))
+
+    # Deletion
+    print('The strings array contains ' + str(len(strings)) + ' items.')
+    print(strings)
+    print('...but not once I nuke strings[3]! Hahahaha.')
+    del strings[3]
+    print('The strings array contains ' + str(len(strings)) + ' items.')
+    print(strings)
+
+    # Iteration
+    print('Hm, how do indices work again?')
+    for i in range(len(strings)):
+        print('Indice ' + str(i) + ' in strings contains: ' + strings[i])
+
+    # The in/ not in operators.
+    for thing in ['revolver', 'lipstick', 'knife']:
+        print('Is there a ' + thing + ' in the list? => ' + str(thing in strings))
+
+    for thing in ['revolver', 'lipstick', 'knife']:
+        print('Is there a ' +
+              thing +
+              ' *not* in the list? => ' +
+              str(thing not in strings))
+
+    # Multiple Assignment (Didn't know this.)
+    properties = ['red', 'loud', 'shiny']
+    paint, engine, hubcaps = properties
+    print(
+        'The car has ' +
+        paint +
+        ' paint, a ' +
+        engine +
+        ' engine, and ' +
+        hubcaps +
+        ' hubcaps.')
+
+    # List Methods
+    for thing in ['lead pipe', 'chair', 'candlestick']:
+        try:
+            print('Murder weapon ' + thing +
+                  ' is at index ' + str(strings.index(thing)))
+        except ValueError:
+            print('No ' + thing + ' in strings list!')
+
+    # ...add to the end of the list:
+    strings.append('rope')
+    strings.append('knife')
+
+    # ...insert at a given index:
+    strings.insert(1, 'rubber chicken')
+
+    # Use DEL for an index and REMOVE for a value.
+    strings.remove('revolver')
+
+    # Sort using ASCIIbetical order (you can use reverse=True inside, and
+    # stuff.)
+    strings.sort()
+
+    print('After some modifications, the string array looks like this:')
+    print(strings)
+
+    # Tuples are ...immutable lists. That's all. Tuple with single value, add
+    # comma.
+    tiny_tuple = ('me',)
+    regu_tuple = ('me me', 3, 'foo')
+    print(tiny_tuple)
+    print(regu_tuple)
+
+    # Variables only store references to lists:
+    wines = ['cab sav', 'merlot']
+    cheese = wines
+    cheese.append('bergamot')
+    print('Wines:')
+    print(wines)
+
+    # To copy a list, take a copy or deepcopy (for inner lists)
+    bread = copy.copy(cheese)
+    bread.append('rye')
+    print('Bread:')
+    print(bread)
+    print('Wines:')
+    print(wines)
+
+
+# pythonsFamousLists()
+
+
+def pythonsFamousDictionaries():
+    '''Tinker with dictionaries. Like a list, but it's a hash with keys and values.'''
+
+    knight = {'name': 'Lancelot', 'armor': 'Shiny', 'sword': 'Sharp'}
+    print('SIR KNIGHT!: '+str(knight))
+
+    # Methods: keys, values, items
+    print('Keys:\t'+str(knight.keys()))
+    print('Values:\t'+str(knight.values()))
+    print('Items:\t'+str(knight.items()))
+
+    # Does SIR KNIGHT have a sword?
+    print('Got Sword? => '+str( 'sword' in knight.keys()))
+    print('Got Shield? => '+str( 'shield' in knight.keys()))
+
+
+pythonsFamousDictionaries()
