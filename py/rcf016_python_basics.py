@@ -381,6 +381,15 @@ def pythonRegex():
         # Match is stored in a tuple with all the groups from the regex.
         print(str(match + 1) + ': ' + email_matches[match][0].strip())
 
+    # GREED
 
+    gstring = '<this is a test> for greediness> you wall street banker, you>'
+
+    greedy = re.compile(r'<.*>') 
+    timid = re.compile(r'<.*?>') 
+
+    print('\nA note on GREED. For the string:\n\t'+gstring+'\n')
+    print('Greedy algo:\t'+greedy.search(gstring).group())
+    print('Timid algo:\t'+timid.search(gstring).group())
 
 pythonRegex()
