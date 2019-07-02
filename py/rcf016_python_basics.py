@@ -10,6 +10,7 @@ import random
 import copy
 import pprint
 import re
+import os
 
 
 def helloWorld():
@@ -342,7 +343,7 @@ def pythonRegex():
     by calling (613) 501-6192 or, alternatively, 789-293-3942, my wife's phone.
 
     Or +3 412 492 3912, my dog's phone. or is it +2(413) 492-3912? Hm... Well,
-    in any case, his email is dog@foos.co.uk. 
+    in any case, his email is dog@foos.co.uk.
 
     OR you can email me or my agent back, but he usually takes a while to get
     back so right to me is better: dave@foofighters.com, agent.j@talent.com !
@@ -375,7 +376,7 @@ def pythonRegex():
     # This only accounts for non-disassembled addresses with (at) (dot)
     re_emailaddr = re.compile(r'((\w|\.|-)+@(\w|\.|-)+)')
     email_matches = re_emailaddr.findall(message_to_dev)
-   
+
     print('\nEmail addresses:')
     for match in range(len(email_matches)):
         # Match is stored in a tuple with all the groups from the regex.
@@ -385,17 +386,84 @@ def pythonRegex():
 
     gstring = '<this is a test> for greediness> you wall street banker, you>'
 
-    greedy = re.compile(r'<.*>') 
-    timid = re.compile(r'<.*?>') 
+    greedy = re.compile(r'<.*>')
+    timid = re.compile(r'<.*?>')
 
-    print('\nA note on GREED. For the string:\n\t'+gstring+'\n')
-    print('Greedy algo:\t'+greedy.search(gstring).group())
-    print('Timid algo:\t'+timid.search(gstring).group())
+    print('\nA note on GREED. For the string:\n\t' + gstring + '\n')
+    print('Greedy algo:\t' + greedy.search(gstring).group())
+    print('Timid algo:\t' + timid.search(gstring).group())
 
     # CENSORSHIP
     # Let's re-use the compiled email and phone number regexes from earlier...
-    message_censored = re_phonenumber_1.sub('CENSORED', message_to_dev)
-    message_censored = re_emailaddr.sub('CENSORED', message_censored)
+    cnsr = '[CENSORED]'
+    message_censored = re_phonenumber_1.sub(cnsr, message_to_dev)
+    message_censored = re_emailaddr.sub(cnsr, message_censored)
     print(message_censored)
 
-pythonRegex()
+    # COMPLEXITY
+    # Regex can be spread over multiple lines to simplify and annotate.
+    re_phonenumber_2 = re.compile(r'''(
+    (\+\d)?     # Country code.
+    (\(| )*     # First gap.
+    \d\d\d      # First three digits, area code.
+    (\)|-| )*   # Dash between area code and unique 1-3/7 digits
+    \d\d\d      # 1-3/7 digits.
+    (-| )*      # Second dash.
+    \d\d\d\d    # Last 4-7/7 digits.
+    )''', re.VERBOSE)
+
+    # Get ALL the matches!
+    all_matches_complex = re_phonenumber_1.findall(message_to_dev)
+    print('\nWe successfully extracted ' +
+          str(len(all_matches_complex)) +
+          ' phone numbers with a complex algo:')
+    for match in range(len(all_matches_complex)):
+        # Match is stored in a tuple with all the groups from the regex.
+        print(str(match + 1) + ': ' + all_matches_complex[match][0].strip())
+
+    # re.I or re.IGNORECASE, re.D or re.DOTALL, re.V or re.VERBOSE can all be
+    # passed to modify the results of a regex compilation.
+    # example = re.compile(r'theregex', re.IGNORECASE | re.DOTALL | re.VERBOSE)
+    # re.VERBOSE - Ignore whitespace and comments.
+    # re.IGNORECASE - Obvs.
+    # re.DOTALL - Dot character matches specials like newline and tab.
+
+
+# pythonRegex()
+
+def pythonFileIO():
+    '''In which the user learns about reading and writing files to disk.'''
+    print('Running IO tests.')
+    print('Path to python gold mine: ' +
+          os.path.join('/', 'home', 'rflec028', 'Repos', 'Projects', 'py'))
+    print('Working directory: ' + os.getcwd())
+
+    # NEW DIRECTORIES: os.makedirs()
+    # Ex. os.makedirs(os.path.join(os.getcwd(), 'testdir'))
+
+    # Absolute and relative paths.
+    # Check with os.path.isabs(path)
+    # Return with os.path.relpath(path, start) (failing to priovide start uses
+    # cwd.)
+    print("\nPython rcf* files in the current directory:")
+    pyfiles = []
+    for f in os.listdir(os.getcwd()):
+        if(f.endswith('.py') and f.startswith('rcf')):
+            pyfiles.append(f)
+
+    pprint.pprint(pyfiles)
+
+    # DOUBLE CHECKING
+    # os.path.exists() -> obvs.
+    # os.path.is dir|file () -> check if dir or file. Ex:
+    print('\nDirectories:')
+    dirs = []
+    for f in os.listdir(os.getcwd()):
+        if(os.path.isdir(f)):
+            dirs.append(f)
+
+    pprint.pprint(dirs)
+
+
+pythonFileIO()
+
