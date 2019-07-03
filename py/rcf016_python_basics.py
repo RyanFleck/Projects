@@ -11,6 +11,8 @@ import copy
 import pprint
 import shutil
 import logging
+import webbrowser
+import requests
 import re
 import os
 
@@ -575,6 +577,9 @@ pythonsDebuggingSecretsToMakeYourLifeBetter()
 def webScraping():
     '''Using webbrowser, then requests, beautifulsoup, and selenium.'''
     print('Sssssssssssscrape!')
+
+    # Easy to open a webpage with webbrowser.open()
+    # webbrowser.open('http://ryanfleck.github.io/')
 
 
 webScraping()

@@ -13,7 +13,10 @@ if('win' in sys.platform):
     clear_cmd = 'cls'
 
 while True:
-    os.system(clear_cmd)
-    now = time.strftime("%H %M %S", time.localtime())
-    print(f.renderText(now))
-    time.sleep(1)
+    try:
+        os.system(clear_cmd)
+        now = time.strftime("%H %M %S", time.localtime())
+        print(f.renderText(now))
+        time.sleep(1)
+    except KeyboardInterrupt:
+        sys.exit()
