@@ -9,6 +9,8 @@ import sys
 import random
 import copy
 import pprint
+import shutil
+import logging
 import re
 import os
 
@@ -427,6 +429,7 @@ def pythonRegex():
     # re.VERBOSE - Ignore whitespace and comments.
     # re.IGNORECASE - Obvs.
     # re.DOTALL - Dot character matches specials like newline and tab.
+    # re.MULTILINE - Obvs.
 
 
 # pythonRegex()
@@ -464,6 +467,114 @@ def pythonFileIO():
 
     pprint.pprint(dirs)
 
+    # We're going to work on a copy of a novel, A Tale of Two Cities by
+    # Charles Dickens. It's in the tests folder.
 
-pythonFileIO()
+    dickensLoc = os.path.join(os.getcwd(), 'tests', 'a_tale_of_two_cities.txt')
+    print("\nLet's read a bit:\n" + dickensLoc)
 
+    dickens = open(dickensLoc)
+    dickens_lines = dickens.readlines()
+    dickens.close()
+
+    dickens = open(dickensLoc)
+    dickens_text = dickens.read()
+    dickens.close()
+
+    print('File has ' + str(len(dickens_lines)) + ' lines.')
+
+    # Do a bit more regex to find all the parts.
+    parts = re.compile(r'(^Book.*)', re.M)
+    part_matches = parts.findall(dickens_text)
+    print('\nBooks: ' + str(len(part_matches)))
+    for match in range(len(part_matches)):
+        print(str(match + 1) + ': ' + str(part_matches[match]))
+
+    # Eh, I know I didn't get much into writing files, but it's easy to call
+    # x.write() after opening something. Oh, and random.shuffle(list) shuffles!
+
+    # Call open with 'w' to write a new file.
+    newfile = open(os.path.join(os.getcwd(), 'tests', 'fruits.txt'), 'w')
+    fruits = ['apple', 'banana', 'pear', 'bogstie']
+    fruits_archive = pprint.pformat(fruits)
+    print('\nSome fruits:\n' + fruits_archive)
+    newfile.write(fruits_archive)
+    newfile.close()
+
+
+# pythonFileIO()
+
+
+def pythonFileManagement():
+    '''Moving, copying, renaming, and archiving files using shutil.'''
+    for dirname, subdirs, filenames in os.walk(os.getcwd()):
+        print(
+            '\nDIRNAME: ' +
+            str(dirname) +
+            '\nSUBDIRS: ' +
+            str(subdirs) +
+            '\nFILES: ' +
+            str(filenames))
+
+    print('Er, just kidding, I\'ll touch back on this. os.walk() is great, though.')
+
+
+# pythonFileManagement()
+
+
+# "Writing code accounts for 90 percent of time spent programming...
+#  ...debugging accounts for the other 90 percent!" - Unknown Programmer
+
+# "I'm just sitting in a pub having a f***ing blast programming and drinking,
+#  you can take breaks to sit and watch the f***ing sports and socialize, and
+#  the whole time you're getting saucy; there's no better way to spend your
+#  hard-earned money and well-deserved downtime!" - Ryan C. Fleck
+
+
+def pythonsDebuggingSecretsToMakeYourLifeBetter():
+    '''Techniques to identify when, where, and why your code is sh*tting the bed.'''
+
+    # You can always raise an exception with the raise keyword. Returns the
+    # traceback (line no, call stack, etc.)
+    try:
+        raise Exception('The programmer didn\'t finish this bit')
+    except BaseException:
+        print(
+            'Ha! He came back and finished the job, implementing some sweet error handling.')
+
+    awesome = True
+
+    # Let's make sure the error really is set to true, like a sanity check.
+    assert awesome, 'Er, this should be awesome.'
+
+    # With any luck, the computer hasn't become corrupted, and python is still
+    # awesome. All assertions can be disabled with the -O flag when running a
+    # program to improve speed. (Once you're done debugging, of course.)
+
+    # Logging can be used to print a different set of messages based on the
+    # library options set at the 'start of the program' below.
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format='%(asctime)s - %(levelname)s: %(message)s')
+
+    # Never again should you debug with print()!
+    logging.debug('This is a debugging message.')
+
+    logging.info('Hm, this is some potentially important information!')
+    logging.warning('Oh, you should know about this... warning!')
+    logging.error('Oh, you should really know about this... error!')
+    logging.critical(
+        'Oh, you should really, really know about this fatal error... critical!')
+
+    # Er, learn how to use the IDLE or PYCHARM or VSCODE debugger.
+
+
+pythonsDebuggingSecretsToMakeYourLifeBetter()
+
+
+def webScraping():
+    '''Using webbrowser, then requests, beautifulsoup, and selenium.'''
+    print('Sssssssssssscrape!')
+
+
+webScraping()
