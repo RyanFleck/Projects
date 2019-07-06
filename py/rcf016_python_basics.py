@@ -13,6 +13,7 @@ import shutil
 import logging
 import webbrowser
 import requests
+import csv
 import re
 import os
 
@@ -509,6 +510,8 @@ def pythonFileIO():
 
 def pythonFileManagement():
     '''Moving, copying, renaming, and archiving files using shutil.'''
+    print(' File Management '.center(80,'-'))
+    
     for dirname, subdirs, filenames in os.walk(os.getcwd()):
         print(
             '\nDIRNAME: ' +
@@ -535,6 +538,7 @@ def pythonFileManagement():
 
 def pythonsDebuggingSecretsToMakeYourLifeBetter():
     '''Techniques to identify when, where, and why your code is sh*tting the bed.'''
+    print(' Debugging '.center(80,'-'))
 
     # You can always raise an exception with the raise keyword. Returns the
     # traceback (line no, call stack, etc.)
@@ -571,15 +575,38 @@ def pythonsDebuggingSecretsToMakeYourLifeBetter():
     # Er, learn how to use the IDLE or PYCHARM or VSCODE debugger.
 
 
-pythonsDebuggingSecretsToMakeYourLifeBetter()
+# pythonsDebuggingSecretsToMakeYourLifeBetter()
 
 
 def webScraping():
     '''Using webbrowser, then requests, beautifulsoup, and selenium.'''
-    print('Sssssssssssscrape!')
+    print(' Web Scraping '.center(80,'-'))
 
     # Easy to open a webpage with webbrowser.open()
     # webbrowser.open('http://ryanfleck.github.io/')
 
 
-webScraping()
+# webScraping()
+
+def handlingCSV():
+    '''How to load, manipulate and save .csv files.'''
+    print(' CSV '.center(80,'-'))
+    inventory_csv = csv.reader(open('tests/inventory.csv'))
+    inventory = list(inventory_csv)
+    print('\nStore Inventory:')
+    pprint.pprint(inventory)
+
+    # Do some pretty-printing, list with dots ..... between entries.
+    print('\nStore Inventory:')
+    inventoryItemLength = 0
+    for item in list(inventory):
+        if inventoryItemLength < len(item[0]):
+            inventoryItemLength = len(item[0])
+
+    for item in list(inventory):
+        print("- " + (item[0]+' ').ljust(inventoryItemLength+1, '.') + str(item[1]))
+
+    # Another way to read:
+    
+
+handlingCSV()
