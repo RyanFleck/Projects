@@ -1,3 +1,7 @@
+"   Ryan Fleck's VIMRC.
+"   Designed for editing Python, C, Markdown. 
+
+"   Basic Visual Properties
 syntax on
 colorscheme ron
 set tabstop=4
@@ -7,14 +11,21 @@ set expandtab
 set smarttab
 set autoindent
 
+"   Line Numbering
 set lbr
 set number
 highlight LineNr ctermfg=grey
 
-autocmd FileType c nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
+"   Markdown Tweaks
 autocmd FileType markdown setlocal spell spelllang=en_us
 
+"   C Tweaks 
+autocmd FileType c nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
 
+"   Python Tweaks
+autocmd FileType python setlocal formatprg=autopep8\ -
+
+"   Disable Trackpad
 set mouse=a
 
 nmap <ScrollWheelUp> <nop>
