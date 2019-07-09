@@ -9,9 +9,11 @@ set autoindent
 
 set lbr
 set number
+set spell spelllang=en_us
 highlight LineNr ctermfg=grey
 
 nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
+
 
 set mouse=a
 
