@@ -11,19 +11,26 @@ set expandtab
 set smarttab
 set autoindent
 
+"   File Management
+set autoread
+
 "   Line Numbering
 set lbr
 set number
 highlight LineNr ctermfg=grey
 
-"   Markdown Tweaks
+"   Markdown/Text Tweaks
 autocmd FileType markdown setlocal spell spelllang=en_us
+autocmd FileType asciidoc setlocal spell spelllang=en_us
+autocmd FileType text setlocal spell spelllang=en_us
 
 "   C Tweaks 
-autocmd FileType c nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
+autocmd FileType c nnoremap <F8> :! clear && gcc % && clear && ./a.out<cr>
 
 "   Python Tweaks
 autocmd FileType python setlocal formatprg=autopep8\ -
+autocmd FileType python  nnoremap <F7> :! clear && autopep8 -i -a -a -a %<cr>
+autocmd FileType python  nnoremap <F8> :! clear && python3 %<cr>
 
 "   Disable Trackpad
 set mouse=a
