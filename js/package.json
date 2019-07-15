@@ -23,7 +23,7 @@
     "express-handlebars": "^3.0.0",
     "helmet": "^3.14.0",
     "http": "0.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "merge": ">=1.2.1",
     "mustache": "^3.0.0",
     "mustache-express": "^1.2.8",
