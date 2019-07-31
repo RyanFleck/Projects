@@ -32,6 +32,12 @@ autocmd FileType python setlocal formatprg=autopep8\ -
 autocmd FileType python  nnoremap <F7> :! clear && autopep8 -i -a -a -a %<cr>
 autocmd FileType python  nnoremap <F8> :! clear && python3 %<cr>
 
+"   Common Lisp Tweaks
+autocmd FileType lisp nnoremap <F8> :! clear && clisp %<cr>
+
+"   Scheme Tweaks
+autocmd FileType scheme nnoremap <F8> :! clear && scheme < %<cr>
+
 "   Disable Trackpad
 set mouse=a
 
