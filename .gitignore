@@ -275,6 +275,7 @@ rb/whys_poignant_guide/*.txt
 /test/tmp/
 /test/version_tmp/
 /tmp/
+doc/
 
 # Used by dotenv library to load environment variables.
 # .env
