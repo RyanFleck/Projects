@@ -23,11 +23,10 @@ highlight LineNr ctermfg=grey
 autocmd FileType markdown call SetTextEditingOptions()
 autocmd FileType asciidoc call SetTextEditingOptions()
 autocmd FileType text call SetTextEditingOptions()
-
 function SetTextEditingOptions()
     setlocal spell spelllang=en_us
     setlocal tw=80
-    nnoremap <F7> gqG<cr>
+    nnoremap <F7> gq<cr>
 endfunction
 
 "   C Tweaks 
