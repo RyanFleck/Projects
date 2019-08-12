@@ -12,3 +12,7 @@
       (setf *description* 'not-in-database) '(unknown))
   )
 )
+
+(d-scribe 'henry)
+
+(print *description*)

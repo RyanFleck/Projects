@@ -44,27 +44,27 @@
   ( else (- x))
  ))
 
-    (absolutely? 3)
+(absolutely? 3)
 (absolutely? -90)
 
-    ; Alternative to cond, if.
-    ;   (if <predicate> <consequent> <alternative>)
+; Alternative to cond, if.
+;   (if <predicate> <consequent> <alternative>)
 (define (ifabs x) (if (> x 0) x (- x)) )
 
-    (ifabs 30)
+(ifabs 30)
 (ifabs -32)
 
-    ; Boolean ops and, or and not can be used in the predicates of if, cond.
-    ;   (and <e1> <e2>)   (or <e1> <e2>)   (not <e>)
+; Boolean ops and, or and not can be used in the predicates of if, cond.
+;   (and <e1> <e2>)   (or <e1> <e2>)   (not <e>)
 
-    (define (>= a b) (not (< a b))) ; Example from SICP page 26
+(define (>= a b) (not (< a b))) ; Example from SICP page 26
 
-    (>= 2 5)
+(>= 2 5)
 (>= 8 5)
 
-    ; Square Roots problem. Apply Newton's Method.
+; Square Roots problem. Apply Newton's Method.
 
-    (define (avg x y) (/ (+ x y) 2))
+(define (avg x y) (/ (+ x y) 2))
 (avg 3.0 4.0)
 
 (define (iter target guess) (avg (/ target guess ) guess))
@@ -76,7 +76,7 @@
 
 ; Accuracy check for function f
 (define (accurate? f guess actual) 
-    (< (abs (- (f guess) actual) 0.001) )
+(< (abs (- (f guess) actual) 0.001) )
 
 ; Automatic iteration:
 ; ( Continue on Page 32 )

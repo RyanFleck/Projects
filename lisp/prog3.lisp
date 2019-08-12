@@ -17,3 +17,7 @@
       '(Who are you ?))
   )
 )
+
+(pudding-eater 'henry)
+(pudding-eater 'mark)
+(pudding-eater 'nobody)

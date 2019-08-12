@@ -20,9 +20,15 @@ set number
 highlight LineNr ctermfg=grey
 
 "   Markdown/Text Tweaks
-autocmd FileType markdown setlocal spell spelllang=en_us
-autocmd FileType asciidoc setlocal spell spelllang=en_us
-autocmd FileType text setlocal spell spelllang=en_us
+autocmd FileType markdown call SetTextEditingOptions()
+autocmd FileType asciidoc call SetTextEditingOptions()
+autocmd FileType text call SetTextEditingOptions()
+
+function SetTextEditingOptions()
+    setlocal spell spelllang=en_us
+    setlocal tw=80
+    nnoremap <F7> gqG<cr>
+endfunction
 
 "   C Tweaks 
 autocmd FileType c nnoremap <F8> :! clear && gcc % && clear && ./a.out<cr>
@@ -33,10 +39,13 @@ autocmd FileType python  nnoremap <F7> :! clear && autopep8 -i -a -a -a %<cr>
 autocmd FileType python  nnoremap <F8> :! clear && python3 %<cr>
 
 "   Common Lisp Tweaks
-autocmd FileType lisp nnoremap <F8> :! clear && clisp %<cr>
+autocmd FileType lisp nnoremap <F8> :! clear && sbcl < %<cr>
 
 "   Scheme Tweaks
 autocmd FileType scheme nnoremap <F8> :! clear && scheme < %<cr>
+
+"   Racket Tweaks
+autocmd BufReadPost *.rkt,*.rktl nnoremap <F8> :! clear && racket %<cr>
 
 "   Disable Trackpad
 set mouse=a
