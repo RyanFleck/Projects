@@ -26,25 +26,34 @@ autocmd FileType text call SetTextEditingOptions()
 function SetTextEditingOptions()
     setlocal spell spelllang=en_us
     setlocal tw=80
-    nnoremap <F7> gq<cr>
 endfunction
 
 "   C Tweaks 
-autocmd FileType c nnoremap <F8> :! clear && gcc % && clear && ./a.out<cr>
+autocmd FileType c call SetCOptions()
+function SetCOptions()
+    nnoremap <F8> :w<cr> :! clear && gcc % && clear && ./a.out<cr>
+    nnoremap <F7> :w<cr> :! clear && clang-format -i % && echo "Formatted."<cr>
+    set tabstop=2
+    set shiftwidth=2
+    set softtabstop=2
+endfunction
 
 "   Python Tweaks
-autocmd FileType python setlocal formatprg=autopep8\ -
-autocmd FileType python  nnoremap <F7> :! clear && autopep8 -i -a -a -a %<cr>
-autocmd FileType python  nnoremap <F8> :! clear && python3 %<cr>
+autocmd FileType python call SetPyOptions() 
+function SetPyOptions()
+    setlocal formatprg=autopep8\ -
+    nnoremap <F7> :w<cr> :! clear && autopep8 -i -a -a -a %<cr>
+    nnoremap <F8> :w<cr> :! clear && python3 %<cr>
+endfunction
 
 "   Common Lisp Tweaks
-autocmd FileType lisp nnoremap <F8> :! clear && sbcl < %<cr>
+autocmd FileType lisp nnoremap <F8> :w<cr> :! clear && sbcl < %<cr>
 
 "   Scheme Tweaks
-autocmd FileType scheme nnoremap <F8> :! clear && scheme < %<cr>
+autocmd FileType scheme nnoremap <F8> :w<cr> :! clear && scheme < %<cr>
 
 "   Racket Tweaks
-autocmd BufReadPost *.rkt,*.rktl nnoremap <F8> :! clear && racket %<cr>
+autocmd BufReadPost *.rkt,*.rktl nnoremap <F8> :w<cr> :! clear && racket %<cr>
 
 "   Disable Trackpad
 set mouse=a
