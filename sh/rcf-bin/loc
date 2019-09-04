@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 "$HOME/Projects/py/rcf021_loc_v1.py" "$1"
