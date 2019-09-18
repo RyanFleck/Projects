@@ -5,7 +5,7 @@
 
 
 
-\usepackage[letterpaper, total={5in, 8in}]{geometry}
+\usepackage[letterpaper, total={5.5in, 10in}]{geometry}
 
 
 
@@ -31,4 +31,14 @@
 	\centerline{\Huge{#1}}
 	\centerline{\small{#2}}
 	\centerline{\small{#3}}
+}
+
+\newcommand{\workitems}[3]{
+	\begin{itemize}
+		\renewcommand\labelitemi{--}
+		\setlength\itemsep{-0.4em}
+		\item #1
+		\item #2
+		\item #3
+	\end{itemize}
 }
