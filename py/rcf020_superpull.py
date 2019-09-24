@@ -2,6 +2,7 @@
 
 import os
 
+
 def crawlAndPullRepos():
     issue_dirs = []
     for dirname, subdirs, filenames in os.walk(os.getcwd()):
@@ -18,5 +19,6 @@ def crawlAndPullRepos():
         for repo in issue_dirs:
             x = x + 1
             print('\t' + str(x) + ': ' + repo)
+
 
 crawlAndPullRepos()
