@@ -2,6 +2,9 @@ package com.ryanfleck.jsftest;
 
 import javax.faces.bean.ManagedBean;
 
+// https://www.tutorialspoint.com/jsf/jsf_managed_beans.htm
+
+// Eager -> Bean created before it is requested.
 @ManagedBean(name = "helloWorld", eager = true)
 public class HelloWorld {
 
