@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF8'?>
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Ryan's Calculator</title>
+    </h:head>
+    <h:body style="background-color:lightgray">
+        <f:view>
+            <h:outputText style="font-size:large; font-family:serif; font-weight:bold; "
+                          value="Simple Calculator - Ryan Fleck 8276723"></h:outputText>
+            <hr></hr>
+            <h:form>
+                <h:panelGrid columns="4" >
+
+                    <h:outputText value="A: First Number: "></h:outputText>
+                    <h:inputText id="a" value="#{calculatorBean.valueA}"></h:inputText>
+
+                    <h:outputText value="B: Second Number: "></h:outputText>
+                    <h:inputText id="b" value="#{calculatorBean.valueB}"></h:inputText>
+
+
+                </h:panelGrid>
+                <hr></hr>
+                <h:panelGrid columns="4">
+                    <h:commandButton value="A + B"
+                                     action="#{calculatorBean.add}"></h:commandButton>
+
+                    <h:commandButton value="A - B"
+                                     action="#{calculatorBean.subtract}"></h:commandButton>
+
+                    <h:commandButton value="A * B"
+                                     action="#{calculatorBean.multiply}"></h:commandButton>
+
+                    <h:commandButton value="A / B"
+                                     action="#{calculatorBean.divide}"></h:commandButton>
+                </h:panelGrid>
+                <hr></hr>
+                <h:panelGrid columns = "1">
+                    <h:outputText value="Return void on the calculator functions to stay on this page and display the result."></h:outputText>
+                    <h:outputText value="Result: #{calculatorBean.result}"></h:outputText>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
