@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+             
+                <f:view>
+                    <h:button style="width:50px; position: absolute; right: 10px; " image="resources/images/Shopping-Cart.png" outcome="orderPage" />
+                    <h1 align="center">#{catalogBean.catalogTitle}</h1>
+                    <h:form>
+                        <h:dataTable  cellpadding="10pt"  value="#{catalogBean.items}" var="book">
+                            <h:column>
+                               <h:outputText value="#{book.shortDescription}"/>
+                            </h:column>
+                            <h:column>
+                                <h:outputText value="#{book.cost}">
+                                    <f:convertNumber type="currency" currencySymbol="$" />
+                                </h:outputText>
+                            </h:column>
+                            <h:column>
+                                <h:outputText value="#{book.longDescription}"/>
+                            </h:column>
+                            <h:column>
+                                <h:commandButton action="#{catalogBean.orderItem()}" value="#{msg['addCart']}">
+                                    <f:setPropertyActionListener target="#{catalogBean.orderItemId}" value="#{book.itemID}"/>
+                                </h:commandButton>
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </f:view>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

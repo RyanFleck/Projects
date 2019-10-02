@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+                <f:view>
+                    <h:form prependId="false">
+                        <h1>Enter Lookup Criteria</h1>
+                        <h:panelGrid columns="6">
+                            <h:outputLabel value="User Id"></h:outputLabel>
+                            <h:inputText id="id" value="#{userData.id}"></h:inputText>
+                            <h:outputText value="Name"></h:outputText>
+                            <h:inputText id="name" value="#{userData.name}"></h:inputText>
+                            <h:outputText value="Birth Date"></h:outputText>
+                            <h:inputText id="birthdate" value="#{userData.birthdate}"></h:inputText>
+                        </h:panelGrid>
+                        <h:commandButton value="Lookup" type="command" actionListener="#{lookupControl.lookup}">
+                            <f:ajax execute="id name birthdate" render="results"/>
+                        </h:commandButton>
+                        <h:commandButton value="Cancel" type="reset" />
+
+                        <div>
+                            <hr/>
+                            <hr/>
+                            <h:panelGroup id="results">
+                                <h:dataTable  rendered="#{userData.showResults}" border="2" bgcolor="yellow" id="resultTable" value="#{userData.lookupResults}" var="user">
+                                    <h:column>
+                                        <f:facet name="header">User Id</f:facet>
+                                            #{user.USER_ID}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Name</f:facet>
+                                            #{user.NAME}
+                                    </h:column>
+                                    <h:column>
+                                        <f:facet name="header">Birth Date</f:facet>
+                                            #{user.BIRTHDATE}
+                                    </h:column>
+                                </h:dataTable>
+                                <h:outputText rendered="#{userData.showMessage}" style="color:red" id="resultMessage" value="No User Found"/>
+                            </h:panelGroup>
+                        </div>
+                    </h:form>
+                </f:view>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

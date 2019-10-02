@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+                <h:panelGroup style="font-family: cursive; font-size:  large">
+                    <h:outputText value="#{msg['welcome1']}" escape="false"/><br></br><br></br>
+                    <h:outputText value="#{msg['welcome2']}" escape="false"/><br></br>
+                    <h:outputText value="#{msg['welcome3']}" escape="false"/><br></br><br></br>
+                    <h:outputText value="#{msg['welcome4']}" escape="false"/><br></br>
+                    <h:outputText value="#{msg['welcome5']}" escape="false"/>
+                </h:panelGroup>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
+

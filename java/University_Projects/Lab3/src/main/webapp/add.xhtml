@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+                <h1>User Information</h1>
+                <f:view>
+                    <h:form prependId="false">
+                        <h:panelGrid columns="3">
+                            <h:outputText value="User Id"></h:outputText>
+                            <h:inputText id="id" value="#{userData.id}" required="true" requiredMessage="Please enter User Id">
+                            </h:inputText>
+                            <h:message id="idMsg" for="id" errorStyle="color:red; display:block"/>
+                            <h:outputText value="Name"></h:outputText>
+                            <h:inputText id="name" value="#{userData.name}" required="true" requiredMessage="Please enter User Name">
+                            </h:inputText>
+                            <h:message id="nameMsg" for="name" errorStyle="color:red; display:block" styleClass="errorMessage"/>
+                            <h:outputText value="Birth Date"></h:outputText>
+                            <h:inputText id="birthdate" value="#{userData.birthdate}" 
+                                         required="true" 
+                                         requiredMessage="Please enter Birth Date">
+                                <f:validator validatorId="dateValidator"/>
+                            </h:inputText>
+                            <h:message id="birthdateMsg" for="birthdate" errorStyle="color:red; display:block" styleClass="errorMessage"/>
+                        </h:panelGrid>
+                        <h:commandButton value="Add" type="command"  actionListener="#{lookupControl.add}">
+                            <f:ajax execute="id name birthdate" render="status idMsg nameMsg birthdateMsg"/>
+                        </h:commandButton>
+                        <h:commandButton value="Cancel" type="reset" />
+
+                        <div>
+                            <hr/>
+                            <hr/>
+                            <h:outputText  style="color:royalblue; font-size: large; font-weight: bold" id="status" value="#{userData.addstatus}"/>
+                        </div>
+                    </h:form>
+                </f:view>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

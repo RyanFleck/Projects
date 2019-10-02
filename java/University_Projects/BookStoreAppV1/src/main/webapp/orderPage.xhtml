@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+                <f:view>
+                    <h:form>
+                        <h:dataTable  cellpadding="10pt" value="#{catalogBean.shoppingCart}" var="order">
+                            <h:column>
+                                <f:facet name="header">
+                                     <h:outputText value="#{msg['bookId']}" />
+                                </f:facet>
+                                <h:outputText value="#{order.itemID}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">
+                                     <h:outputText value="#{msg['descr']}" />
+                                </f:facet>
+                                <h:outputText value="#{order.shortDescription}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">
+                                     <h:outputText value="#{msg['unitcost']}" />
+                                </f:facet>
+                                <h:outputText value="#{order.unitCost}">
+                                    <f:convertNumber currencySymbol="$" type="currency"/>
+                                </h:outputText>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">
+                                     <h:outputText value="#{msg['number']}" />
+                                </f:facet>
+                                <h:inputText  
+                                    value="#{order.numItems}" 
+                                    style="width: 25px;" 
+                                    immediate="true"
+                                    converterMessage="#{msg['errqty']}">
+                                </h:inputText>
+                               
+                                <h:commandButton action="#{catalogBean.updateOrder()}" value="#{msg['update']}">
+                                    <f:setPropertyActionListener target="#{catalogBean.orderItemId}" value="#{order.itemID}"/>
+                                    <f:setPropertyActionListener target="#{catalogBean.updateOrderNumber}" value="#{order.numItems}"/>
+                                </h:commandButton>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">
+                                     <h:outputText value="#{msg['total']}" />
+                                </f:facet>
+                                <h:outputText value="#{order.totalCost}">
+                                    <f:convertNumber currencySymbol="$" type="currency"/>
+                                </h:outputText>
+                            </h:column>
+                        </h:dataTable>
+                        <h:commandButton action="#{catalogBean.checkout()}" value="#{msg['checkout']}"></h:commandButton>
+                    </h:form>
+                </f:view>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

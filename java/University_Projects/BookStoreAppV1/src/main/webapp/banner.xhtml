@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<ui:composition>
+    <f:view locale="#{localeSwitch.locale}">
+        <h:panelGrid  style="margin: auto" cellpadding="2" cellspacing="2" columns="3">
+            <h:graphicImage id="bimg1" value="resources/images/gobooks.jpg" width="147px" height="128px"/>
+            <h:outputText style="background-color: rgb(255, 204, 153); font-style: italic; font-weight: bold; font-size:xx-large; "
+                            value="#{msg['store']}" />
+            <h:graphicImage id="bimg2" value="resources/images/gobooks.jpg" width="147px" height="128px"/>
+        </h:panelGrid>
+    </f:view> 
+</ui:composition>
+
+</html>
