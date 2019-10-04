@@ -2,4 +2,5 @@
     <string name="app_name">Counter</string>
     <string name="lower_button" translatable="false">Decrement</string>
     <string name="upper_button">Increment</string>
+    <string name="reset_button">Reset</string>
 </resources>
