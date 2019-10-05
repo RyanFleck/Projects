@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements Runnable {
     private String heartrate;
     private HomeFragment hf;
 
+    private final boolean debug = true;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,17 +54,17 @@ public class MainActivity extends AppCompatActivity implements Runnable {
         List<Fragment> x = getSupportFragmentManager().getFragments();
 
         for (Fragment y : x) {
-            System.out.println("\nFragment found: " + x.toString());
+            debug("\nFragment found: " + x.toString());
         }
 
-        System.out.println("Total fragments: " + x.size());
+        debug("Total fragments: " + x.size());
 
         /*
         hf = (HomeFragment)getSupportFragmentManager().findFragmentByTag("fragment_home");
         hf.setHeartRate("40");
         */
 
-         // Currently I cannot update the text in the home fragment from the main activity. Blergh.git
+        // Currently I cannot update the text in the home fragment from the main activity. Blergh.git
 
         // hf.setHeartRate("Test");
 
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements Runnable {
     private void attemptBluetoothConnection() {
         try {
             ba = BluetoothAdapter.getDefaultAdapter();
+            Toast.makeText(this, "Adapter UP!", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Toast.makeText(this, "Exception! Could not connect to adapter.", Toast.LENGTH_LONG).show();
         }
@@ -89,9 +92,11 @@ public class MainActivity extends AppCompatActivity implements Runnable {
         }
 
         try {
+            debug("Connect button pressed, searching for bluetooth devices.");
             Set<BluetoothDevice> devices = ba.getBondedDevices();
 
             for (BluetoothDevice device : devices) {
+                debug("Bluetooth device: " + device.getName() + " -> " + device.getAddress());
                 if (device.getName().startsWith("NXM")) {
 
                     // connect to the NXM Heartbeat monitor.
@@ -101,6 +106,9 @@ public class MainActivity extends AppCompatActivity implements Runnable {
 
                     // Heartbeat monitor processing will start in a new thread.
                     thread = new Thread(this);
+
+                } else if (device.getName().contains("G5")) {
+                    System.out.println("Oh, hey, it's your phone!");
                 }
             }
         } catch (Exception e) {
@@ -130,6 +138,12 @@ public class MainActivity extends AppCompatActivity implements Runnable {
                 }
             } catch (Exception e) {
             }
+        }
+    }
+
+    private void debug(String x) {
+        if (debug) {
+            System.out.println("DEBUG: " + x);
         }
     }
 }
