@@ -12,3 +12,6 @@ Ideas:
   - OC Transpo app but you can pin a selection of buses to your location.
   - When at a given bus stop, the app will show the last requested bus times at that location.
   - Removes need to enter current location and tediously search for a route.
+- Noise Temple
+  - Fuzzy white/pink/cafe noise generator with nice sliders for sine waves, mixing.
+  - Presets.
