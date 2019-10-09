@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<ui:composition>
+    <f:view locale="#{localeSwitch.locale}">
+        <h:form>
+        <h:panelGrid columns="1">
+            <h:button outcome="admin" value="#{msg.admin}"/>
+            <h:commandButton action="#{catalogBean.getKidsBooks()}" value="#{msg.kids}" />
+            <h:commandButton action="#{catalogBean.getTechBooks()}" value="#{msg.tech}" />
+        </h:panelGrid>
+            </h:form>
+           <h:form>
+      <h:panelGrid columns="2"> 
+         #{msg.lang}: 
+         <h:selectOneMenu value="#{localeSwitch.language}" onchange="submit()"
+            valueChangeListener="#{localeSwitch.localeChanged}">
+             <f:selectItems value="#{localeSwitch.countries}" /> 
+         </h:selectOneMenu> 
+      </h:panelGrid> 
+   </h:form>
+    </f:view>
+</ui:composition>
+</html>
+
+

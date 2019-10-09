@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="content">
+                <h:panelGrid columns="2">
+                    <h:graphicImage value="resources/images/1books2-med.jpg" height="125pt"/>
+                <h:panelGroup style="background-color: #FDF5E6;">
+                    <p>
+                <h:outputText value="#{msg['checkout1']}" escape="false"/>
+                    </p>
+                    <p>
+                <h:outputText value="#{msg['checkout2']}" escape="false"/>
+                    &nbsp;<b> 
+                <h:outputText value="#{catalogBean.grandTotal}" escape="false">
+                    <f:convertNumber currencySymbol="$" type="currency"/>
+                </h:outputText>
+                         </b> &nbsp;
+                    </p>
+                    <p>
+                <h:outputText value="#{msg['checkout3']}"  escape="false"/>
+                    </p>
+                    <p>
+                <h:outputText value="#{msg['checkout4']}" escape="false"/>
+                    &nbsp;<b> 
+                <h:outputText value="#{catalogBean.orderTaxes}" escape="false">
+                    <f:convertNumber currencySymbol="$" type="currency"/>
+                </h:outputText>
+                    </b> &nbsp;
+                <h:outputText value="#{msg['checkout5']}" escape="false"/>
+                    &nbsp;<b>
+                <h:outputText value="#{catalogBean.orderShipping}" escape="false">
+                    <f:convertNumber currencySymbol="$" type="currency"/>
+                </h:outputText> 
+                    </b> &nbsp; 
+                <h:outputText value="#{msg['checkout6']}" escape="false"/>
+                    </p>
+                </h:panelGroup>
+                </h:panelGrid>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
