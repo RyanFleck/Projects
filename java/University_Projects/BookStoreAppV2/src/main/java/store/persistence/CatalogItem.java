@@ -42,7 +42,7 @@ public class CatalogItem implements Serializable {
     return(itemID);
   }
 
-  protected void setItemID(String itemID) {
+  public void setItemID(String itemID) {
     this.itemID = itemID;
   }
 
@@ -74,7 +74,7 @@ public class CatalogItem implements Serializable {
     return(category);
   }
 
-  protected void setCategory(String category) {
+  public void setCategory(String category) {
     this.category = category;
   }
   
@@ -83,7 +83,7 @@ public class CatalogItem implements Serializable {
     return(shortDescription);
   }
 
-  protected void setShortDescription(String shortDescription) {
+  public void setShortDescription(String shortDescription) {
     this.shortDescription = shortDescription;
   }
 
@@ -91,7 +91,7 @@ public class CatalogItem implements Serializable {
     return(longDescription);
   }
 
-  protected void setLongDescription(String longDescription) {
+  public void setLongDescription(String longDescription) {
     this.longDescription = longDescription;
   }
 
@@ -99,7 +99,7 @@ public class CatalogItem implements Serializable {
     return(cost);
   }
 
-  protected void setCost(double cost) {
+  public void setCost(double cost) {
     this.cost = cost;
   }
 

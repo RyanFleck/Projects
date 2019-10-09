@@ -44,8 +44,8 @@ public class Catalog {
      */
     public CatalogItem findItem(EntityManager em, String itemId) {
         System.out.println("DEBUG: findItem() function called.");
-        
-        return null;
+        CatalogItem ci = em.find(CatalogItem.class, itemId);
+        return ci;
     }
 
     /**
@@ -57,8 +57,13 @@ public class Catalog {
      */
     public List<CatalogItem> findByCategory(EntityManager em, String Category) {
         System.out.println("DEBUG: findByCategory() function called.");
-        
-        return null;
+
+        Query q = em.createQuery("SELECT c FROM CatalogItem c WHERE c.category = :Category");
+        q.setParameter("Category", Category);
+        List<CatalogItem> res = q.getResultList();
+        debugPrintList(res);
+        return res.isEmpty() ? null : res;
+
     }
 
     /**
@@ -76,7 +81,28 @@ public class Catalog {
     public boolean addItem(EntityManager em, UserTransaction utx, String id, String shortDescription, String longDescription, double cost, String category) {
         System.out.println("DEBUG: addItem() function called.");
 
-        return false;
+        try {
+            utx.begin();
+            CatalogItem ni = new CatalogItem();
+            ni.setCategory(category);
+            ni.setItemID(id);
+            ni.setShortDescription(shortDescription);
+            ni.setLongDescription(longDescription);
+            ni.setCost(cost);
+            em.persist(ni);
+            utx.commit();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private void debugPrintList(List<CatalogItem> x) {
+        System.out.println("Items:");
+        for (CatalogItem y : x) {
+            System.out.println(y.getLongDescription());
+        }
     }
 
 }
