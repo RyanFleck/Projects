@@ -39,6 +39,17 @@ function SetCOptions()
     set softtabstop=2
 endfunction
 
+"   C++ Tweaks 
+autocmd FileType cpp call SetCPPOptions()
+function SetCPPOptions()
+    " F8 -> Format and run.
+    nnoremap <F8> :w<cr> :! clear && clang-format -i %<cr> :! clear && g++ % && ./a.out<cr>
+    nnoremap <F7> :w<cr> :! clear && clang-format -i % && echo "Formatted."<cr>
+    set tabstop=2
+    set shiftwidth=2
+    set softtabstop=2
+endfunction
+
 "   Python Tweaks
 autocmd FileType python call SetPyOptions() 
 function SetPyOptions()
