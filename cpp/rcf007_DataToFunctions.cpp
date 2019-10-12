@@ -68,7 +68,7 @@ void display_by_reference(Complex &rc) {
   std::cout << "\nReference:\n";
   std::cout << rc.r << " " << rc.i << "\n";
   std::cout << "Set to 36 and 37:\n";
-  rc.r = 34;
-  rc.i = 35;
+  rc.r = 36;
+  rc.i = 37;
   std::cout << rc.r << " " << rc.i << "\n";
 }
