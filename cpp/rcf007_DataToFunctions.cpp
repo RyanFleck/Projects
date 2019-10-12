@@ -1,6 +1,6 @@
 #include <iostream>
 
-/*
+/**
  * rcf007-DataToFunctions.cpp
  *
  * Simple example showing how to pass by value, pointer and reference
@@ -8,7 +8,7 @@
  *
  * Copyright 2019 Ryan Fleck - Ryan.Fleck@protonmail.com
  *
- */
+**/
 
 struct Complex {
   double r, i;
@@ -37,12 +37,14 @@ int main(void) {
   display_by_pointer(ptr);
   display_by_reference(thing);
   display_by_value(thing);
+  display_by_pointer(&thing);
 
   return 0;
 }
 
 int random2(void) {
-  std::cout << "func!\n";
+  for (int i = 0; i < 10; i++)
+    std::cout << "func!\n";
   return 0;
 }
 
