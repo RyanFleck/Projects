@@ -1,5 +1,5 @@
 # Giga-gitignore
-
+*.orig
 # Erlang
 *.beam
 

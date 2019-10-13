@@ -50,6 +50,14 @@ function SetCPPOptions()
     set softtabstop=2
 endfunction
 
+"   Java Tweaks 
+autocmd FileType java call SetJavaOptions()
+function SetJavaOptions()
+    " F8 -> Format and run.
+    nnoremap <F8> :w<cr> :! clear && javac % && java %:r<cr>
+    nnoremap <F7> :w<cr> :! clear && astyle % && echo "Formatted."<cr>
+endfunction
+
 "   Python Tweaks
 autocmd FileType python call SetPyOptions() 
 function SetPyOptions()
