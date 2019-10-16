@@ -28,6 +28,9 @@ function SetTextEditingOptions()
     setlocal tw=80
 endfunction
 
+"   Test function.
+nnoremap <F6> :w<cr> :! clear && echo "Working on %"<cr>
+
 "   C Tweaks 
 autocmd FileType c call SetCOptions()
 function SetCOptions()
