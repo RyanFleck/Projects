@@ -3,6 +3,9 @@
 # Erlang
 *.beam
 
+#Python
+parsetab.py
+
 # Elm
 elm-stuff
 repl-temp-*
