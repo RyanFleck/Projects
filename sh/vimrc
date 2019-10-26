@@ -18,6 +18,7 @@ set autoread
 set lbr
 set number
 highlight LineNr ctermfg=grey
+set spellfile=~/Private-Journal/personal.dictionary.utf-8.add
 
 "   Markdown/Text Tweaks
 autocmd FileType markdown call SetTextEditingOptions()
@@ -27,9 +28,6 @@ function SetTextEditingOptions()
     setlocal spell spelllang=en_us
     setlocal tw=80
 endfunction
-
-"   Test function.
-nnoremap <F6> :w<cr> :! clear && echo "Working on %"<cr>
 
 "   C Tweaks 
 autocmd FileType c call SetCOptions()

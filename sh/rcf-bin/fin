@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+
+from pyfiglet import Figlet
+from sys import argv
+from shutil import get_terminal_size
+import datetime
+
+f = Figlet(font="big")
+vertext = ""
+argtext = ""
+subtext = ""
+if(len(argv) > 3):
+    vertext = str(argv[1])
+    argtext = str(argv[2])
+    subtext = str(argv[3]).replace('\n', ' ').strip()
+elif(len(argv) > 1):
+    argtext = str(argv[1])
+    subtext = argtext.replace('\n', ' ').strip()
+else:
+    argtext = "Fin"
+    subtext = "Passing C++ Structs by Reference, Pointer, and Value"
+
+text = f.renderText(argtext)
+
+size = get_terminal_size((80, 25))
+height = size[1]
+width = size[0]
+
+text_height = len(text.splitlines())
+padding = int((height - text_height) / 2)
+
+now = datetime.datetime.now()
+date = str(now.strftime("%Y-%m-%d"))
+
+detail = ""
+
+the_full_title = str("\n" * (padding * 2)) + text + str("\n" * (padding - 1))
+
+
+# Get longest line and print it
+longest = 0
+for line in the_full_title.splitlines():
+    if len(line) > longest:
+        longest = len(line)
+
+padding_left = int((width - longest) / 2)
+
+padded_full_title = ""
+
+for line in the_full_title.splitlines():
+    print(str(padding_left * " ") + line)
+#    padded_full_title = padded_full_title + "\n" + \
+#        str(padding_left * "") + line.strip()
+
+# print(padded_full_title)
