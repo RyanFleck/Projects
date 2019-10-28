@@ -28,21 +28,29 @@ try:
     import numpy as np
     from scipy.spatial.distance import squareform, pdist, cdist
     from numpy.linalg import norm
-except:
-    print("[ "+'\033[91m'+"log"+'\033[0m' +
-          " ] Please install prerequisite modules:\n- Numpy\n- Argparse\n- MatPlotLib\n- SciPy\n- rcf_logs.py")
+except BaseException:
+    print(
+        "[ " +
+        '\033[91m' +
+        "log" +
+        '\033[0m' +
+        " ] Please install prerequisite modules:\n- Numpy\n- Argparse\n- MatPlotLib\n- SciPy\n- rcf_logs.py")
     sys.exit()
 
 try:
     import rcf_logs as rcf
     dbg = rcf.dbg
     print("\nBoid - Derivative work, Ryan Fleck 2018\n")
-except:
-    print("[ "+'\033[91m'+"log"+'\033[0m' +
-          " ] Please download rcf_logs.py to this directory for enhanced logging.")
+except BaseException:
+    print(
+        "[ " +
+        '\033[91m' +
+        "log" +
+        '\033[0m' +
+        " ] Please download rcf_logs.py to this directory for enhanced logging.")
 
     def dbg(x, y, message):
-        print("["+'\033[92m'+y.center(8)+'\033[0m'+"] "+message)
+        print("[" + '\033[92m' + y.center(8) + '\033[0m' + "] " + message)
 
 dbg("good", "init", "Prerequisites loaded.")
 
@@ -52,8 +60,8 @@ N = 100
 
 # Compute boid start info
 dbg("good", "init", "Computing positions and velocities.")
-pos = [width/2.0, height/2.0] + 10*np.random.rand(2*N).reshape(N, 2)
-angles = 2*math.pi*np.random.rand(N)
+pos = [width / 2.0, height / 2.0] + 10 * np.random.rand(2 * N).reshape(N, 2)
+angles = 2 * math.pi * np.random.rand(N)
 vel = np.array(list(zip(np.sin(angles), np.cos(angles))))
 
 # Boundaries for boids:
