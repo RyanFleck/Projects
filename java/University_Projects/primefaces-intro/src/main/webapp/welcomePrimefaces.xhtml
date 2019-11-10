@@ -5,11 +5,11 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 
-    <f:view contentType="text/html">
+    <f:view>
         <h:head>
             <f:facet name="first">
                 <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-                <title>PrimeFaces</title>
+                <title>PF Experiment</title>
             </f:facet>
         </h:head>
 
@@ -26,7 +26,7 @@
                     Footer
                 </p:layoutUnit>
 
-                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
+                <p:layoutUnit position="west" header="Left" collapsible="true">
                     <p:menu>
                         <p:submenu label="Resources">
                             <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
@@ -39,13 +39,13 @@
                     </p:menu>
                 </p:layoutUnit>
 
-                <p:layoutUnit position="center">
+                <p:layoutUnit position="center" header="Primefaces Test">
 
+                    <!-- Chapter two. -->
                     <h:outputText value="Theme Switcher " />
                     <h:form>
                         <p:themeSwitcher value="#{currentUser.currentTheme}">
                             <p:ajax/>
-                            <f:selectItem itemLabel="Please select a theme " itemValue=""/>
                             <f:selectItems
                                 value="#{themeDao.themes}"
                                 var="theme"
@@ -54,6 +54,67 @@
                                 />
                         </p:themeSwitcher>
                     </h:form>
+
+                    <h:outputText value="Regular Dialog"/>
+                    <p:commandButton value="Dialog" onclick="PF('welcomeDialog').show();"/>
+
+                    <h:outputText value="Backing Bean Dialog"/>
+                    <p:commandButton value="Dialog Button" action="#{pageBean.openPopup}"/>
+
+                    <h:outputText value="Backing Bean Minipage Dialog"/>
+                    <p:commandButton value="Open Mini Page" action="#{pageBean.openPageDialog}"/>
+
+
+                    <!-- Chapter three. -->
+                    <h:outputText value="Name"/>
+                    <p:inputText value="Name"/>
+                    <h:outputText value ="Password"/>
+                    <p:password value="value"/>
+                    <h:outputText value ="A button"/>
+                    <p:commandButton value="Submit"/>
+                    <h:outputText value="A DataTable"/>
+                    <h:form>
+                        <p:dataTable value="#{productDao.products}" var="product" paginator="true" draggableRows="true" draggableColumns="true">
+                            <p:column>
+                                <f:facet name="header">
+                                    Product ID
+                                </f:facet>
+                                <h:outputText value="#{product.productId}"/>
+                            </p:column>
+                            <p:column sortBy="#{product.productTitle}" filterBy="#{product.productTitle}">
+                                <f:facet name="header">
+                                    Product Title
+                                </f:facet>
+                                <h:outputText value="#{product.productTitle}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    Product Description
+                                </f:facet>
+                                <h:outputText value="#{product.productDesc}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    Unit Price
+                                </f:facet>
+                                <h:outputText value="#{product.pricePer}"/>
+                            </p:column>
+                        </p:dataTable>
+                    </h:form>
+
+                    <h:outputText value="Single Product"/>
+                    <p:outputPanel deferred="true">
+                        <p:panelGrid columns="2">
+                            <h:outputText value="Title"/>
+                            <h:outputText value="#{productDao.products.get(0).productTitle}"/>
+                            <h:outputText value="Description"/>
+                            <h:outputText value="#{productDao.products.get(0).productDesc}"/>
+                        </p:panelGrid>
+                    </p:outputPanel>
+
+
+
+                    <!-- End of center layout unit. -->
                 </p:layoutUnit>
 
             </p:layout>
@@ -61,5 +122,11 @@
         </h:body>
 
     </f:view>
+
+    <!-- Dialogs -->
+    <p:dialog widgetVar="welcomeDialog" closable="true">
+        <h:outputText value="Welcome to this PrimeFaces experiment!"></h:outputText>
+    </p:dialog>
+
 </html>
 

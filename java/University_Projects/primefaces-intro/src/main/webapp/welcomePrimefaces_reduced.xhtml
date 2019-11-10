@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view>
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PF Experiment</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+
+            <!-- Chapter two. -->
+            <h:outputText value="Theme Switcher " />
+            <h:form>
+                <p:themeSwitcher value="#{currentUser.currentTheme}">
+                    <p:ajax/>
+                    <f:selectItems
+                        value="#{themeDao.themes}"
+                        var="theme"
+                        itemLabel="#{theme}"
+                        itemValue="#{theme}"
+                        />
+                </p:themeSwitcher>
+            </h:form>
+
+            <h:outputText value="Regular Dialog"/>
+            <p:commandButton value="Dialog" onclick="PF('welcomeDialog').show();"/>
+
+            <h:outputText value="Backing Bean Dialog"/>
+            <p:commandButton value="Dialog Button" action="#{pageBean.openPopup()}"/>
+
+
+            <!-- Chapter three. -->
+            <h:outputText value="Name"/>
+            <p:inputText value="Name"/>
+            <h:outputText value ="Password"/>
+            <p:password value="value"/>
+            <h:outputText value ="A button"/>
+            <p:commandButton value="Submit"/>
+            <h:outputText value="A DataTable"/>
+            <h:form>
+                <p:dataTable value="#{productDao.products}" var="product" paginator="true" draggableRows="true" draggableColumns="true">
+                    <p:column>
+                        <f:facet name="header">
+                            Product ID
+                        </f:facet>
+                        <h:outputText value="#{product.productId}"/>
+                    </p:column>
+                    <p:column sortBy="#{product.productTitle}" filterBy="#{product.productTitle}">
+                        <f:facet name="header">
+                            Product Title
+                        </f:facet>
+                        <h:outputText value="#{product.productTitle}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            Product Description
+                        </f:facet>
+                        <h:outputText value="#{product.productDesc}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            Unit Price
+                        </f:facet>
+                        <h:outputText value="#{product.pricePer}"/>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+
+            <h:outputText value="Single Product"/>
+            <p:outputPanel deferred="true">
+                <p:panelGrid columns="2">
+                    <h:outputText value="Title"/>
+                    <h:outputText value="#{productDao.products.get(0).productTitle}"/>
+                    <h:outputText value="Description"/>
+                    <h:outputText value="#{productDao.products.get(0).productDesc}"/>
+                </p:panelGrid>
+            </p:outputPanel>
+
+
+
+        </h:body>
+
+    </f:view>
+
+    <!-- Dialogs -->
+    <p:dialog widgetVar="welcomeDialog" closable="true">
+        <h:outputText value="Welcome to this PrimeFaces experiment!"></h:outputText>
+    </p:dialog>
+
+</html>
+

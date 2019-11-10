@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bean;
+package com.rcf.primefaces.bean;
 
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
@@ -11,7 +11,7 @@ import javax.inject.Named;
 
 /**
  *
- * @author rcfle
+ * @author rflec028
  */
 @SessionScoped
 @Named("currentUser")
