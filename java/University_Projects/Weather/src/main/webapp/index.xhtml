@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Weather</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:outputText value="Weather"></h:outputText>
+            <hr></hr>
+            <h:form>
+                <h:panelGrid columns="4">
+
+                    <h:outputText value="Latitude: "></h:outputText>
+                    <h:inputText id="lat" value="#{weatherBean.lat}"></h:inputText>
+
+                    <h:outputText value="Longditude"></h:outputText>
+                    <h:inputText id="lon" value="#{weatherBean.lon}"></h:inputText>
+
+                </h:panelGrid>
+
+                <h:panelGrid columns="4">
+                    <h:commandButton value="Calculate"
+                                     action="#{weatherBean.checkWeather}"></h:commandButton>
+
+
+                </h:panelGrid>
+                <h:panelGrid columns = "1">
+                    <h:outputText value="Weather at coordinates:"></h:outputText>
+                    <h:outputText value="Result: #{weatherBean.result}"></h:outputText>
+                </h:panelGrid>
+
+
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+
