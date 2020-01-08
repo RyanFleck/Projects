@@ -6,6 +6,7 @@
 
 
 \usepackage[letterpaper, total={5.5in, 10in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
 
 
 
@@ -14,7 +15,7 @@
 \titleformat{\section}
 	{\LARGE\scshape\raggedright}
 	{}{0em}
-	{}
+	{\textcolor{Blue}}
 	
 \titleformat{\subsection}
 	{\large\scshape\raggedright}
@@ -22,7 +23,7 @@
 	{}
 	
 \newcommand{\datedsubsection}[3]{
-	\subsection[#1]{\large#1 
+	\subsection[#1]{\large#1
 		\small -- #2 
 		\hfill #3}
 }
