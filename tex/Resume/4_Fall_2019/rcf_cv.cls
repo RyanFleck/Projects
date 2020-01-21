@@ -5,8 +5,17 @@
 
 
 
-\usepackage[letterpaper, total={5.5in, 10in}]{geometry}
+\usepackage[letterpaper, total={5.5in, 10.2in}]{geometry}
 \usepackage[dvipsnames]{xcolor}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+%    linkcolor=Blue,
+%    filecolor=Blue,      
+%    urlcolor=Blue,
+}
 
 
 
