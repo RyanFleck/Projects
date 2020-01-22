@@ -13,6 +13,8 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=false,
+    linkbordercolor=white,
+    urlbordercolor=white,
 %    linkcolor=Blue,
 %    filecolor=Blue,      
 %    urlcolor=Blue,
