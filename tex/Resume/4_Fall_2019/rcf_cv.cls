@@ -3,11 +3,12 @@
 \LoadClass{article}
 \RequirePackage{titlesec} % From texlive-latex-extra.
 
-
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \usepackage[letterpaper, total={5.5in, 10.2in}]{geometry}
 \usepackage[dvipsnames]{xcolor}
-
+\usepackage{graphicx}
 
 \usepackage{hyperref}
 \hypersetup{
