@@ -13,6 +13,7 @@ set autoindent
 
 "   File Management
 set autoread
+let g:filetype_pl="prolog"
 
 "   Line Numbering
 set lbr
@@ -66,6 +67,23 @@ function SetPyOptions()
     " F8 -> Format and run.
     nnoremap <F8> :w<cr> :! clear && autopep8 -i -a -a -a % && python3 % <cr>
     nnoremap <F7> :w<cr> :! clear && autopep8 -i -a -a -a % <cr>
+endfunction
+
+"   GoLang Tweaks
+autocmd FileType go call SetGoOptions() 
+function SetGoOptions()
+    nnoremap <F8> :w<cr> :! clear && go fmt % && go run % <cr>
+    nnoremap <F7> :w<cr> :! clear && go fmt % <cr>
+endfunction
+
+"   SWI-Prolog Tweaks
+autocmd FileType prolog call SetPrologOptions() 
+function SetPrologOptions()
+    nnoremap <F8> :w<cr> :! clear && cowsay "RUN!" && cat % <cr>
+    nnoremap <F7> :w<cr> :! clear && cowsay "FORMAT!" && cat % <cr>
+    set tabstop=2
+    set shiftwidth=2
+    set softtabstop=2
 endfunction
 
 "   Common Lisp Tweaks
