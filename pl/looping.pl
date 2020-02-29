@@ -25,3 +25,5 @@ ft_loop(X) :- X \= quit, read(Word), write('Input was >> '), writeln(Word), ft_l
 
 % Disjunctive floppotron.
 floppotron_dj :- read(Word), write('Input was >> '), writeln(Word), ( Word = end ; floppotron_dj ).
+
+
