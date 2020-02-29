@@ -12,4 +12,3 @@ addSecond(Count, [_|Body], Total) :-
   addSecond(NewCount, Body, Total).
 
 addSecond(_, [], Total) :- Total is 0.
-
