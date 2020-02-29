@@ -3,6 +3,7 @@
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
+:- use_module(library(http/html_write)).
 
 :- http_handler(root(hello_world), say_hi, []).
 :- http_handler(/, home, []).
@@ -15,13 +16,18 @@ stop :- http_stop_server(8000, []).
 
 
 say_hi(_Request) :- 
-  format('Content-type: text/plain~n~n'),
-  format('Hello World!~n').
+  reply_html_page(
+    title('Home'),[
+      h1('Prolog WebApp'),
+      p(['Hello',' goodbye.'])
+    ] 
+  ).
 
 home(_Request) :-
-  format('Content-type: text/plain~n~n'),
-  format('Homepage!~n').
+  reply_html_page(
+    title('Home'),[
+      h1('Prolog WebApp'),
+      p(['Hello',' goodbye.'])
+    ] 
+  ).
 
-alt(_Request) :-
-  format('Content-type: text/plain~n~n'),
-  format('ALt!~n').
