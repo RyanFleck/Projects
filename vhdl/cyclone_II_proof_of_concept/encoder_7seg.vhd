@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity encoder_7seg is
-  port(
-    word_in : in std_logic_vector(3 downto 0);
-    hex_out : out std_logic_vector(6 downto 0)
-  );
+	port(
+		word_in : in std_logic_vector(3 downto 0);
+		hex_out : out std_logic_vector(6 downto 0)
+	);
 end encoder_7seg;
 
 architecture structural of encoder_7seg is

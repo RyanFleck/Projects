@@ -36,6 +36,13 @@ architecture structural of poc_top is
 begin
 
 	LEDR <= SW;
+
+	DECODER0 : decoder_2x4b port map(
+		a => SW(1),
+		b => SW(0),
+		en => '1',
+		d => LEDG(3 downto 0)
+	);
 	
 	HEXd3 : encoder_7seg port map(
 		word_in => SW(9 downto 6),
@@ -48,12 +55,12 @@ begin
 	);
 	
 	HEXd1 : encoder_7seg port map(
-		word_in => "00" & SW(1 downto 0),
+		word_in => x"0",
 		hex_out => HEX1
 	);
 	
 	HEXd0 : encoder_7seg port map(
-		word_in => KEY,
+		word_in => not KEY,
 		hex_out => HEX0
 	);
 	

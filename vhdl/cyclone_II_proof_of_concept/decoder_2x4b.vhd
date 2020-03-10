@@ -15,4 +15,5 @@ begin
        "0010" when (a='0' and b='1') else
        "0100" when (a='1' and b='0') else
        "1000" when (a='1' and b='1');
+
 end structural;
