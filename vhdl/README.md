@@ -1,5 +1,6 @@
 # VHDL
 
+For notes, see <https://ryanfleck.ca/2019/notes-on-vhdl/>
 
 ## Installation
 
