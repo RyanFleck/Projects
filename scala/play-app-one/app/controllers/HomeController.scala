@@ -26,10 +26,10 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents)
   }
 
   // Return text data.
-  def ping() = Action { implicit request => Ok("Pingy string. Very Web 1.0") }
+  def ping() = Action { _ => Ok("Pingy string. Very Web 1.0") }
 
   // Return JSON.
-  def jing() = Action { implicit request =>
+  def jing() = Action { _ =>
     Ok(
       Json.obj(
         "hello" -> "world",
@@ -37,5 +37,14 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents)
         "working" -> true
       )
     )
+  }
+
+  // Return API request data.
+  def echo(anything: String) = Action { _ =>
+    Ok(Json.obj(
+      "echo" -> anything,
+      "working" -> true
+    )
+      )
   }
 }
