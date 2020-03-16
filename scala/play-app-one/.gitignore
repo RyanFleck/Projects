@@ -19,6 +19,10 @@ project/plugins/project/
 .cache
 .lib/
 
+.bloop/
+.idea/
+.metals/
+
 ### Scala ###
 *.class
 *.log

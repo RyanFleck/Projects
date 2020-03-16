@@ -12,3 +12,5 @@ GET /echo/:anything controllers.HomeController.echo(anything:String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+POST /p controllers.HomeController.postBox

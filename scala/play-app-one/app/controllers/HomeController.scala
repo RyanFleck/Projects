@@ -5,6 +5,7 @@ import play.api._
 import play.api.mvc._
 
 import play.api.libs.json._
+import play.api.libs.functional.syntax._
 
 /**
   * This controller creates an `Action` to handle HTTP requests to the
@@ -41,10 +42,33 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents)
 
   // Return API request data.
   def echo(anything: String) = Action { _ =>
-    Ok(Json.obj(
-      "echo" -> anything,
-      "working" -> true
-    )
+    Ok(
+      Json.obj(
+        "echo" -> anything,
+        "working" -> true
       )
+    )
   }
+
+  // Handle post request.
+
+  def postBox = Action { implicit request =>
+    println("Got it")
+    val body : AnyContent = request.body
+    val jsonBody : Option[JsValue] = body.asJson
+
+    jsonBody.foreach(x => println(x))
+   
+    //val incomingKeys = jsonBody.map[String](println(_))
+
+    jsonBody.foreach(println)
+
+    Ok(
+      Json.obj(
+        "got" -> jsonBody,
+        "working" -> true
+      )
+    )
+  }
+
 }
