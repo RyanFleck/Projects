@@ -83,7 +83,7 @@ public class HDB3 {
 		}
 		App.dbg("Input string:  " + s);
 		App.dbg("Output string: " + sb.toString());
-		return sb.toString();
+		return sb.toString().strip();
 	}
 
 	public static String rawHDB3decode(String s) {

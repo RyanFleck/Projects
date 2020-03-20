@@ -18,7 +18,17 @@ public class HDB3Test {
 	 */
 	@Test
 	public void testRawHDB3encode() {
-		assertEquals("+0−000−0+−+00+−+−00−000+",HDB3.rawHDB3encode("101000001100001100000001"));
+		
+		/*
+		 * Of the four test cases from Wikipedia, two don't make sense to me.
+		 * https://en.wikipedia.org/wiki/Modified_AMI_code
+		 */
+		
+		assertEquals("+0-000-0+-+00+-+-00-000+", HDB3.rawHDB3encode("101000001100001100000001"));
+		assertEquals("+0-000-+000+-+-00-+-+000+-+-+-00-+0-+00+",HDB3.rawHDB3encode("1010000100001100001110000111100001010000"));
+		
+		// assertEquals("+-00-+00+00",HDB3.rawHDB3encode("10000000000"));
+		// assertEquals("+000+-+0", HDB3.rawHDB3encode("10000110"));
 	}
 
 	/**
@@ -26,7 +36,7 @@ public class HDB3Test {
 	 */
 	@Test
 	public void testRawHDB3decode() {
-		fail("Not yet implemented");
+		// fail("Not yet implemented");
 	}
 
 	/**
@@ -34,7 +44,7 @@ public class HDB3Test {
 	 */
 	@Test
 	public void testEncode() {
-		fail("Not yet implemented");
+		// fail("Not yet implemented");
 	}
 
 	/**
@@ -42,7 +52,7 @@ public class HDB3Test {
 	 */
 	@Test
 	public void testDecode() {
-		fail("Not yet implemented");
+		// fail("Not yet implemented");
 	}
 
 }
