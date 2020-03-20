@@ -75,7 +75,7 @@ public class Client {
 				String response = sendTransmission(s);
 				System.out.println("\nReceived HDB-3 :  " + response);
 				response = HDB3.decode(response);
-				if(response.startsWith("GR8")) {
+				if (response.startsWith("GR8")) {
 					System.out.println("Server confirms receipt of submission.");
 				}
 
@@ -90,7 +90,8 @@ public class Client {
 		return (String) in.readLine();
 	}
 
-	private static void printUsage() {
-		System.out.println("\nHDB-3 REPL USAGE:\n" + "- Send any ascii.\n" + "- Info 2.\n");
+	public static void printUsage() {
+		System.out.println("\nHDB-3 REPL USAGE:\n" + " - Type '1' or '0' into the REPL to send a binary transmission\n"
+				+ " - Type ASCII into the REPL to send UTF-8 binary-encoded ASCII.\n - Type 'quit', 'exit', or 'halt' to close the REPL.\n");
 	}
 }

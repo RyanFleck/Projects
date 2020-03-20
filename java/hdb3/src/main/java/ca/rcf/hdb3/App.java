@@ -80,6 +80,7 @@ public class App {
 	}
 
 	public static void repl() {
+		Client.printUsage();
 		while (true) {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String s = "";
