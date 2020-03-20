@@ -87,7 +87,65 @@ public class HDB3 {
 	}
 
 	public static String rawHDB3decode(String s) {
-		return "";
+		StringBuilder sb = new StringBuilder();
+
+		char[] bc = s.toCharArray();
+
+		boolean next_expected_positive = false;
+
+		int pos = 0;
+
+		while (bc[pos] == '0') {
+			sb.append("0");
+			pos++;
+		}
+
+		// Sets this value to the opposite to prime the while loop.
+		App.dbg("First one is " + bc[pos]);
+		if (bc[pos] == '+') {
+			next_expected_positive = true;
+		} else {
+			next_expected_positive = false;
+		}
+
+		while (true) {
+
+			App.dbg("" + bc[pos]);
+
+			// Check for violation
+
+			if ((bc[pos] == '+' && !next_expected_positive) || (bc[pos] == '-' && next_expected_positive)) {
+				// Violation has occured.
+				if (pos > 2) {
+					sb.delete(sb.length() - 3, sb.length());
+					sb.append("0000");
+					next_expected_positive = (bc[pos] == '-');
+					App.dbg("Violation, rewriting...");
+
+				} else {
+					System.out.println("EARLY VIOLATION");
+					break;
+				}
+			} else if (bc[pos] == '+' || bc[pos] == '-') {
+				sb.append('1');
+				App.dbg("Append 1.");
+				next_expected_positive = (bc[pos] == '-');
+			} else {
+				sb.append('0');
+				App.dbg("Append 0.");
+			}
+
+			pos++;
+			App.dbg("Input string:  " + s);
+			App.dbg("Output string: " + sb.toString());
+
+			// Exit loop.
+			if (pos >= bc.length)
+				break;
+		}
+		App.dbg("Final Input string:  " + s);
+		App.dbg("Final Output string: " + sb.toString());
+		return sb.toString().strip();
 	}
 
 	public static String encode(String s) {

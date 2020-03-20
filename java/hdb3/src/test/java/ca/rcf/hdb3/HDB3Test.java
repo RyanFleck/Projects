@@ -16,7 +16,7 @@ public class HDB3Test {
 	/**
 	 * Test method for {@link ca.rcf.hdb3.HDB3#rawHDB3encode(java.lang.String)}.
 	 */
-	@Test
+	//@Test
 	public void testRawHDB3encode() {
 		
 		/*
@@ -37,6 +37,9 @@ public class HDB3Test {
 	@Test
 	public void testRawHDB3decode() {
 		// fail("Not yet implemented");
+		assertEquals("00101000001100001100000001", HDB3.rawHDB3decode("00+0-000-0+-+00+-+-00-000+"));
+		assertEquals("001010000100001100001110000111100001010000",HDB3.rawHDB3decode("00+0-000-+000+-+-00-+-+000+-+-+-00-+0-+00+"));
+		
 	}
 
 	/**
