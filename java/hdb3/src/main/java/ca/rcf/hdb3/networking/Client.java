@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 import ca.rcf.hdb3.App;
 import ca.rcf.hdb3.conversion.HDB3;
@@ -22,6 +21,7 @@ public class Client {
 	private static PrintWriter out;
 	private static BufferedReader in;
 	private static Socket clientSocket;
+	private static String confirmation;
 
 	public static void run() {
 		App.dbg("Starting client...");
@@ -30,29 +30,25 @@ public class Client {
 			clientSocket = new Socket("localhost", 7000);
 			out = new PrintWriter(clientSocket.getOutputStream(), true);
 			in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-		} catch (UnknownHostException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+
+			/*
+			 * Exchange greeting with server on connect to ensure the server can
+			 * successfully decode and encode sent messages.
+			 */
+			System.out.println("\nSETUP\n");
+			out.println(HDB3.encode("request-to-send"));
+			confirmation = in.readLine();
+			if (!HDB3.decode(confirmation).contains("clear-to-send")) {
+				System.out.println("Confirmation was incorrect.");
+				System.exit(1);
+			} else {
+				System.out.println("Confirmation was good!");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
-		out.println(HDB3.encode("CONFIRM-ME"));
-		String confirmation = "";
-		try {
-			confirmation = in.readLine();
-			System.out.println("Got: " + confirmation);
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		if (!HDB3.decode(confirmation).contains("GOOD2GO")) {
-			System.out.println("Confirmation was incorrect.");
-			System.exit(1);
-		} else {
-			System.out.println("Confirmation was good!");
-		}
+		printUsage();
 
 		while (true) {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -68,22 +64,19 @@ public class Client {
 					out.close();
 					clientSocket.close();
 					System.exit(0);
-
 				}
 
-				String message = s;
-				if (App.isBinary(message)) {
-					message = HDB3.rawHDB3encode(message);
+				if (App.isBinary(s)) {
+					s = HDB3.rawHDB3encode(s);
 				} else {
-					message = HDB3.encode(message);
+					s = HDB3.encode(s);
 				}
-				String response = sendTransmission(message);
 
-				System.out.println("\nRecieved:\n"+response);
+				String response = sendTransmission(s);
+				System.out.println("\nReceived HDB-3 :  " + response);
 				System.out.println(HDB3.decode(response));
 
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -92,5 +85,9 @@ public class Client {
 	private static String sendTransmission(String s) throws IOException {
 		out.println(s);
 		return (String) in.readLine();
+	}
+
+	private static void printUsage() {
+		System.out.println("\nHDB-3 REPL USAGE:\n" + "- Send any ascii.\n" + "- Info 2.\n");
 	}
 }

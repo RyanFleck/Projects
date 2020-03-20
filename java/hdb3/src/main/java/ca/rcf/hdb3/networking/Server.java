@@ -62,32 +62,36 @@ public class Server {
 				out = new PrintWriter(clientSocket.getOutputStream(), true);
 				in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-				System.out.println("User connected. Waiting for greeting.");
+				/*
+				 * Exchange a greeting with the user on connect, to ensure the user can
+				 * successfully translate and send HDB3 messages.
+				 */
+				System.out.println("\nSETUP\nUser connected. Waiting for greeting.");
 				String greeting = in.readLine();
 				System.out.println("Got: " + greeting);
-				if (HDB3.decode(greeting).contains("CONFIRM-ME")) {
+				if (HDB3.decode(greeting).contains("request-to-send")) {
 					System.out.println("Great, sending back confirmation...");
-					out.println(HDB3.encode("GOOD2GO"));
-				}else {
+					out.println(HDB3.encode("clear-to-send"));
+				} else {
 					System.out.println("Greeting incorrect.");
 				}
-				
+
+				/*
+				 * Begin monitoring the input stream for messages, and convert each back from
+				 * HDB3 on receipt.
+				 */
 				String clientInput;
 				while ((clientInput = in.readLine()) != null) {
-					if (clientInput.startsWith("quit") || clientInput.startsWith("exit")) {
-						out.println("\nParting is such sweet sorrow!\n");
-						break;
-					}
+					System.out.println("\n\nINCOMING TRANSMISSION");
 
-					String message = clientInput;
-					if (App.isBinary(clientInput)) {
-						message = HDB3.rawHDB3decode(message);
-					} else {
-						message = HDB3.decode(message);
-					}
+					// Requirement 6 : Send receipt back to user.
+					System.out.println("Send client receipt :");
+					out.println(HDB3.encode("Got it."));
 
-					// Send to client
-					out.println(HDB3.encode(message));
+					// Requirement 7: Decode HDB3 stream to original format.
+					System.out.println("\nIncoming HDB-3 :  " + clientInput);
+					clientInput = HDB3.decode(clientInput);
+					System.out.println("Got:\n\t" + clientInput);
 				}
 
 				in.close();
