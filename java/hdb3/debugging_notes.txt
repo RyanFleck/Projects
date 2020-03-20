@@ -6,13 +6,16 @@
 
 101 0000 011 0000 11 00000001 -> INPUT
 +0− 000− 0+− +00+ −+ −00− 000+ -> CORRECT OUTPUT
-+0- 000- 0+- +00+ -+ -00- 000+
-
 +0- +00+ 0+- +00+ +- +00+000+ - MY OUTPUT
 
+V3
+
+org.junit.ComparisonFailure: expected:
+<+0[−000−0+−+00+−+−00−]000+> but was:
+<+0[-000-0+-+00+-+-00-]000+>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at ca.rcf.hdb3.HDB3Test.testRawHDB3encode(HDB3Test.java:21)
+	at ca.rcf.hdb3.HDB3Test.testRawHDB3encode(HDB3Test.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -37,14 +40,7 @@
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
 
-
-org.junit.ComparisonFailure: expected:<+0[−000−0+−+00+−+−00−]000+> but was:<+0[+-00-null0++-00-null++-00-null]000+>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at ca.rcf.hdb3.HDB3Test.testRawHDB3encode(HDB3Test.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
