@@ -65,9 +65,11 @@ public class Server {
 				System.out.println("User connected. Waiting for greeting.");
 				String greeting = in.readLine();
 				System.out.println("Got: " + greeting);
-				if (HDB3.decode(greeting) == "CONFIRM-ME") {
+				if (HDB3.decode(greeting).contains("CONFIRM-ME")) {
 					System.out.println("Great, sending back confirmation...");
 					out.println(HDB3.encode("GOOD2GO"));
+				}else {
+					System.out.println("Greeting incorrect.");
 				}
 				
 				String clientInput;
@@ -85,7 +87,7 @@ public class Server {
 					}
 
 					// Send to client
-					out.println(HDB3.encode("Got " + message));
+					out.println(HDB3.encode(message));
 				}
 
 				in.close();

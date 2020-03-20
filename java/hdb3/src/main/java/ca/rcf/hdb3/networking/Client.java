@@ -47,7 +47,7 @@ public class Client {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		if (HDB3.decode(confirmation) != "GOOD2GO") {
+		if (!HDB3.decode(confirmation).contains("GOOD2GO")) {
 			System.out.println("Confirmation was incorrect.");
 			System.exit(1);
 		} else {
@@ -58,7 +58,7 @@ public class Client {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String s = "";
 			try {
-				System.out.print("\nSEND > ");
+				System.out.print("\n\nTRANSMIT > ");
 				s = br.readLine();
 
 				if (s.startsWith("quit") || s.startsWith("exit") || s.startsWith("halt")) {
@@ -79,7 +79,7 @@ public class Client {
 				}
 				String response = sendTransmission(message);
 
-				System.out.println(response);
+				System.out.println("\nRecieved:\n"+response);
 				System.out.println(HDB3.decode(response));
 
 			} catch (IOException e) {
