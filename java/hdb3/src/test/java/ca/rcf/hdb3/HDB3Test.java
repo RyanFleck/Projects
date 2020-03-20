@@ -18,7 +18,7 @@ public class HDB3Test {
 	 */
 	@Test
 	public void testRawHDB3encode() {
-		fail("Not yet implemented");
+		assertEquals("+0−000−0+−+00+−+−00−000+",HDB3.rawHDB3encode("101000001100001100000001"));
 	}
 
 	/**
