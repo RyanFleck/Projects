@@ -86,7 +86,7 @@ public class Server {
 
 					// Requirement 6 : Send receipt back to user.
 					System.out.println("Send client receipt :");
-					out.println(HDB3.encode("Got it."));
+					out.println(HDB3.encode("GR8"));
 
 					// Requirement 7: Decode HDB3 stream to original format.
 					System.out.println("\nIncoming HDB-3 :  " + clientInput);

@@ -11,7 +11,7 @@ import ca.rcf.hdb3.App;
  */
 public class HDB3 {
 
-	public static String rawHDB3encode(String s) {
+	public static String binaryHDB3encode(String s) {
 		StringBuilder sb = new StringBuilder();
 
 		char[] bc = s.toCharArray();
@@ -27,7 +27,6 @@ public class HDB3 {
 
 			String a = null;
 
-			// Check if next three bits are also 0.
 			if (bc[pos] == '1') {
 				App.dbg("Bit is 1.");
 				if (!last_bit_plus) {
@@ -83,85 +82,83 @@ public class HDB3 {
 			if (pos >= bc.length)
 				break;
 		}
-		
+
 		String res = sb.toString();
-		System.out.println("Binary -> HDB3 :  "+res);
+		System.out.println("Binary -> HDB3 :  " + res);
 		return res;
 	}
 
-	public static String rawHDB3decode(String s) {
+	public static String binaryHDB3decode(String s) {
 		StringBuilder sb = new StringBuilder();
 
 		char[] bc = s.toCharArray();
 
-		boolean next_expected_positive = false;
+		boolean next_expected_positive = true;
 
 		int pos = 0;
 
 		while (bc[pos] == '0') {
 			sb.append("0");
 			pos++;
-		}
-
-		// Sets this value to the opposite to prime the while loop.
-		App.dbg("First one is " + bc[pos]);
-		if (bc[pos] == '+') {
-			next_expected_positive = true;
-		} else {
-			next_expected_positive = false;
-		}
-
-		while (true) {
-
-			App.dbg("" + bc[pos]);
-
-			// Check for violation
-
-			if ((bc[pos] == '+' && !next_expected_positive) || (bc[pos] == '-' && next_expected_positive)) {
-				// Violation has occured.
-				if (pos > 2) {
-					sb.delete(sb.length() - 3, sb.length());
-					sb.append("0000");
-					next_expected_positive = (bc[pos] == '-');
-					App.dbg("Violation, rewriting...");
-
-				} else {
-					System.out.println("EARLY VIOLATION");
-					break;
-				}
-			} else if (bc[pos] == '+' || bc[pos] == '-') {
-				sb.append('1');
-				App.dbg("Append 1.");
-				next_expected_positive = (bc[pos] == '-');
-			} else {
-				sb.append('0');
-				App.dbg("Append 0.");
-			}
-
-			pos++;
-			App.dbg("Input string:  " + s);
-			App.dbg("Output string: " + sb.toString());
-
-			// Exit loop.
 			if (pos >= bc.length)
 				break;
 		}
+
+		if (pos < bc.length) {
+			// Sets this value to the opposite to prime the while loop.
+			App.dbg("First one is " + bc[pos]);
+
+			while (true) {
+
+				App.dbg("" + bc[pos]);
+				
+				// Check if a violation has occured:
+				if ((bc[pos] == '+' && !next_expected_positive) || (bc[pos] == '-' && next_expected_positive)) {
+					if (pos > 2) {
+						sb.delete(sb.length() - 3, sb.length());
+						sb.append("0000");
+						next_expected_positive = (bc[pos] == '-');
+						App.dbg("Violation, rewriting...");
+
+					} else {
+						System.out.println("EARLY VIOLATION");
+						sb.append('?');
+					}
+				} else if (bc[pos] == '+' || bc[pos] == '-') {
+					sb.append('1');
+					App.dbg("Append 1.");
+					next_expected_positive = (bc[pos] == '-');
+				} else {
+					sb.append('0');
+					App.dbg("Append 0.");
+				}
+
+				pos++;
+				App.dbg("Input string:  " + s);
+				App.dbg("Output string: " + sb.toString());
+
+				// Exit loop.
+				if (pos >= bc.length)
+					break;
+			}
+		}
+
 		App.dbg("Final Input string:  " + s);
 		App.dbg("Final Output string: " + sb.toString());
-		
+
 		String res = sb.toString();
-		System.out.println("HDB3 -> Binary :  "+res);
+		System.out.println("HDB3 -> Binary :  " + res);
 		return res;
 	}
 
 	public static String encode(String s) {
 		App.dbg("\n\n[dbg] Converting string to HDB3.");
 		App.dbg("First converting to binary string...");
-		return rawHDB3encode(Binary.encode(s));
+		return binaryHDB3encode(Binary.encode(s));
 	}
 
 	public static String decode(String s) {
 		App.dbg("\n\n[dbg] Decoding HDB3 string.");
-		return Binary.decode(rawHDB3decode(s));
+		return Binary.decode(binaryHDB3decode(s));
 	}
 }

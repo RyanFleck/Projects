@@ -67,14 +67,17 @@ public class Client {
 				}
 
 				if (App.isBinary(s)) {
-					s = HDB3.rawHDB3encode(s);
+					s = HDB3.binaryHDB3encode(s);
 				} else {
 					s = HDB3.encode(s);
 				}
 
 				String response = sendTransmission(s);
 				System.out.println("\nReceived HDB-3 :  " + response);
-				System.out.println(HDB3.decode(response));
+				response = HDB3.decode(response);
+				if(response.startsWith("GR8")) {
+					System.out.println("Server confirms receipt of submission.");
+				}
 
 			} catch (IOException e) {
 				e.printStackTrace();

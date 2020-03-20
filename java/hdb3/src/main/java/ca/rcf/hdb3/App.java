@@ -94,8 +94,13 @@ public class App {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println("BINARY  " + Binary.encode(s));
-			System.out.println("HDB-3   " + HDB3.encode(s));
+
+			if (isBinary(s)) {
+				System.out.println("HDB-3   " + HDB3.binaryHDB3encode(s));
+			} else {
+				System.out.println("BINARY  " + Binary.encode(s));
+				System.out.println("HDB-3   " + HDB3.encode(s));
+			}
 		}
 	}
 
@@ -103,9 +108,14 @@ public class App {
 		if (debug)
 			System.out.println(s);
 	}
-	
+
 	public static boolean isBinary(String s) {
-		return false;
+		char[] ca = s.toCharArray();
+		for (char c : ca) {
+			if (c != '1' && c != '0')
+				return false;
+		}
+		return true;
 	}
 
 }
