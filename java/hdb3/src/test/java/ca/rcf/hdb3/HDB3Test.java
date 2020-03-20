@@ -16,7 +16,7 @@ public class HDB3Test {
 	/**
 	 * Test method for {@link ca.rcf.hdb3.HDB3#rawHDB3encode(java.lang.String)}.
 	 */
-	//@Test
+	@Test
 	public void testRawHDB3encode() {
 		
 		/*
