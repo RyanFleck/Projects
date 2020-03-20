@@ -7,6 +7,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import ca.rcf.hdb3.conversion.HDB3;
+
 /**
  * @author rflec028
  *
@@ -14,7 +16,7 @@ import org.junit.Test;
 public class HDB3Test {
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.HDB3#rawHDB3encode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.HDB3#rawHDB3encode(java.lang.String)}.
 	 */
 	@Test
 	public void testRawHDB3encode() {
@@ -32,7 +34,7 @@ public class HDB3Test {
 	}
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.HDB3#rawHDB3decode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.HDB3#rawHDB3decode(java.lang.String)}.
 	 */
 	@Test
 	public void testRawHDB3decode() {
@@ -43,7 +45,7 @@ public class HDB3Test {
 	}
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.HDB3#encode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.HDB3#encode(java.lang.String)}.
 	 */
 	@Test
 	public void testEncode() {
@@ -51,7 +53,7 @@ public class HDB3Test {
 	}
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.HDB3#decode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.HDB3#decode(java.lang.String)}.
 	 */
 	@Test
 	public void testDecode() {

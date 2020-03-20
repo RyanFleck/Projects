@@ -1,7 +1,9 @@
 /**
  * 
  */
-package ca.rcf.hdb3;
+package ca.rcf.hdb3.conversion;
+
+import ca.rcf.hdb3.App;
 
 /**
  * @author Ryan Fleck
@@ -81,9 +83,10 @@ public class HDB3 {
 			if (pos >= bc.length)
 				break;
 		}
-		App.dbg("Input string:  " + s);
-		App.dbg("Output string: " + sb.toString());
-		return sb.toString();
+		
+		String res = sb.toString();
+		System.out.println("Binary -> HDB3 :  "+res);
+		return res;
 	}
 
 	public static String rawHDB3decode(String s) {
@@ -145,7 +148,10 @@ public class HDB3 {
 		}
 		App.dbg("Final Input string:  " + s);
 		App.dbg("Final Output string: " + sb.toString());
-		return sb.toString().strip();
+		
+		String res = sb.toString();
+		System.out.println("HDB3 -> Binary :  "+res);
+		return res;
 	}
 
 	public static String encode(String s) {

@@ -7,6 +7,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import ca.rcf.hdb3.conversion.Binary;
+
 /**
  * @author rflec028
  *
@@ -14,7 +16,7 @@ import org.junit.Test;
 public class BinaryTest {
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.Binary#encode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.Binary#encode(java.lang.String)}.
 	 */
 	@Test
 	public void testEncode() {
@@ -25,7 +27,7 @@ public class BinaryTest {
 	}
 
 	/**
-	 * Test method for {@link ca.rcf.hdb3.Binary#decode(java.lang.String)}.
+	 * Test method for {@link ca.rcf.hdb3.conversion.Binary#decode(java.lang.String)}.
 	 */
 	@Test
 	public void testDecode() {

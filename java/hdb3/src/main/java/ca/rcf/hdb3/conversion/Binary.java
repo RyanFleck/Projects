@@ -1,7 +1,9 @@
 /**
  * 
  */
-package ca.rcf.hdb3;
+package ca.rcf.hdb3.conversion;
+
+import ca.rcf.hdb3.App;
 
 /**
  * @author Ryan Fleck
@@ -21,8 +23,9 @@ public class Binary {
 			sb.append(a);
 		}
 
-		App.dbg(sb.toString());
-		return sb.toString();
+		String res = sb.toString();
+		System.out.println("Text -> Binary :  "+res);
+		return res;
 	}
 
 	public static String decode(String s) {
@@ -62,6 +65,8 @@ public class Binary {
 			}
 		}
 
-		return sb.toString();
+		String res = sb.toString();
+		System.out.println("Binary -> Text :  "+res);
+		return res;
 	}
 }

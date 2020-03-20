@@ -10,6 +10,11 @@ import java.io.InputStreamReader;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 
+import ca.rcf.hdb3.conversion.Binary;
+import ca.rcf.hdb3.conversion.HDB3;
+import ca.rcf.hdb3.networking.Client;
+import ca.rcf.hdb3.networking.Server;
+
 /**
  * @author Ryan Fleck
  * 
@@ -61,6 +66,13 @@ public class App {
 
 		if (STARTCLIENT || STARTSERVER) {
 			System.out.println("Starting remote system.");
+
+			if (STARTCLIENT) {
+				Client.run();
+			} else {
+				Server.run();
+			}
+
 		} else if (STARTCLI) {
 			System.out.println("Starting REPL.");
 			repl();
@@ -72,7 +84,7 @@ public class App {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String s = "";
 			try {
-				System.out.print("\nCONVERT >> ");
+				System.out.print("\nCONVERT > ");
 				s = br.readLine();
 				if (s.startsWith("quit") || s.startsWith("exit") || s.startsWith("halt")) {
 					System.out.println("\nParting is such sweet sorrow!\n");
@@ -82,14 +94,18 @@ public class App {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println("BINARY: " + Binary.encode(s));
-			System.out.println("HDB-3:  " + HDB3.encode(s));
+			System.out.println("BINARY  " + Binary.encode(s));
+			System.out.println("HDB-3   " + HDB3.encode(s));
 		}
 	}
 
 	public static void dbg(String s) {
 		if (debug)
 			System.out.println(s);
+	}
+	
+	public static boolean isBinary(String s) {
+		return false;
 	}
 
 }
