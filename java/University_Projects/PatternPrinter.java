@@ -114,6 +114,7 @@ class PatternPrinter {
             if(i==1 || i==9) {
                 String line;
                 line = repeatString(Integer.toString(i), 18);
+                pattern.add(line);
                 //System.out.println(line);
             } else {
                 StringBuilder s = new StringBuilder();
