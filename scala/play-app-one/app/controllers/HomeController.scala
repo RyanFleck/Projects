@@ -54,14 +54,10 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents)
 
   def postBox = Action { implicit request =>
     println("Got it")
-    val body : AnyContent = request.body
-    val jsonBody : Option[JsValue] = body.asJson
 
-    jsonBody.foreach(x => println(x))
-   
-    //val incomingKeys = jsonBody.map[String](println(_))
+    val jsonBody : Option[JsValue] = request.body.asJson
 
-    jsonBody.foreach(println)
+   jsonBody.foreach(x => println(x))
 
     Ok(
       Json.obj(
