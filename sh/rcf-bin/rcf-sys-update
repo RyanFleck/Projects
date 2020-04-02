@@ -28,6 +28,8 @@ if [ "$DEBIAN" = 1 ] ; then
     echo "Updating Debian with the apt package manager."
     sudo apt update 
     sudo apt upgrade -y
+    sudo apt autoremove
+    echo "Done apt-update."
 fi
 
 if [ "$FEDORA" = 1 ] ; then
