@@ -42,22 +42,8 @@
              (cons (list Element Occurences) (subfunc (car Tail) (cdr Tail) 1)))))
         )))
 
-(define (frequency_c L)
-  (if (null? L)
-      '()
-      (let ((LS (sort L <)))
-        (let f ((RL (cdr LS))
-                (E (car LS))
-                (C 1))
-				
-          (cond
-            ((null? RL) (list (list E C)))
-            ((eq? E (car RL)) (f (cdr RL) E (+ C 1)))
-            (else
-             (cons (list E C) (f (cdr RL) (car RL) 1)))
-            )))
-))
 
+;;; Change algorithm to unit test:
 (define frequency_algo frequency_b)
 
 (displayln "\nTest Case 1:")
