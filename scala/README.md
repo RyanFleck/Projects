@@ -1,17 +1,10 @@
 # Programming in Scala
-subtitle: "Magic that your boss *will* let you use."
-
-  [![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-  View formatted manual: [ryanfleck.github.io/scala](https://ryanfleck.github.io/scala)
-  
 
 ```scala
 object Main extends App {
     println("Hello, Scala!")
 }
 ```
-
 
 ## Why use Scala?
 
@@ -72,9 +65,46 @@ import scala.collection.mutable.{HashMap, TreeMap, TreeSet}
 > A marker trait that enables dynamic invocations.
 
 
+## The Akka Actor Model
 
+The *Actor Model* attempts to solve some of the problems with concurrency,
+multi-threaded programs, and shared state. The first implementation of the actor
+model was implemented in Erlang by Ericsson in 1986.
 
-<br />
+The inherently asynchronous actor can:
+
+1. React to messages it receives.
+1. Send messages to other actors.
+1. Spawn additional actors.
+
+Every actor has a **mailbox**, a queue of messages to process in order. The
+very loose coupling enables elastic scaling and simple reasoning about what
+actors do.
+
+**Akka** is the *de facto* implementation of the actor model for the Scala
+ecosystem. In Akka, actors operate in *Actor Systems*. Multiple Actor Systems
+can exist within a JVM.
+
+```scala
+import akka.actor.Actor
+import akka.actor.ActorSystem
+import akka.actor.Props
+
+// Define:
+class SampleActor extends Actor {
+  def receive = {
+    case _ => //...
+  }
+
+// Instantiate:
+object MyApp extends App {
+  val system = ActorSystem("my-sample-system")
+  val actor = system.actorOf(Props[SampleActor], "actor-one")
+}
+```
+
+## The Spray Framework
+
 
 
 ## ScalaJS

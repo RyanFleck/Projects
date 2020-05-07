@@ -3,6 +3,8 @@
 # Erlang
 *.beam
 
+**/.metals/
+
 #Python
 parsetab.py
 
