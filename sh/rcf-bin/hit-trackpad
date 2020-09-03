@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# T440s disable/enable touchpad.
+echo "*hits trackpad*"
+xinput disable "SynPS/2 Synaptics TouchPad"
+xinput disable "TPPS/2 IBM TrackPoint"
+xinput enable "SynPS/2 Synaptics TouchPad"
+xinput enable "TPPS/2 IBM TrackPoint"
+echo "Back up and running..."
+
