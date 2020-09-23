@@ -1,6 +1,9 @@
 # Personal Projects
 
-[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange.svg)](https://creativecommons.org/licenses/by/4.0/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) **&** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **\***
+[![Build Status](https://travis-ci.org/RyanFleck/Projects.svg?branch=master)](https://travis-ci.org/RyanFleck/Projects)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/915f3a1ec5d941fa81d4147bc40944ac)](https://www.codacy.com/manual/RyanFleck/Projects/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RyanFleck/Projects&amp;utm_campaign=Badge_Grade)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) **&** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **\***
 
 Folders are named according to the common file extension of each language for automated CI and personal website integrations.
 
