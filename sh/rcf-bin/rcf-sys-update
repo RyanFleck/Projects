@@ -30,6 +30,13 @@ if [ "$DEBIAN" = 1 ] ; then
     sudo apt upgrade -y
     sudo apt autoremove
     echo "Done apt-update."
+    echo "Updating flatpak apps."
+    flatpak update -y
+    echo "Done updating flatpak apps."
+    echo "Updating snaps."
+    sudo snap refresh
+    echo "Done updating snaps."
+
 fi
 
 if [ "$FEDORA" = 1 ] ; then
