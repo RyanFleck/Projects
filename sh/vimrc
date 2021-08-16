@@ -19,7 +19,7 @@ let g:filetype_pl="prolog"
 set lbr
 set number
 highlight LineNr ctermfg=grey
-set spellfile=~/Private-Journal/personal.dictionary.utf-8.add
+set spellfile=~/.dictionary.utf-8.add
 
 "   Markdown/Text Tweaks
 autocmd FileType markdown call SetTextEditingOptions()
