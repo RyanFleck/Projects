@@ -1,0 +1,232 @@
+\documentclass[]{rcf_cv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Wow! You've found the source code for my resume.
+% That's pretty neat. To actually compile this,
+% You'll need latex and the texlive-latex-extra
+% packages installed on your machine. I'm not
+% quite sure how to use LaTeX package managers 
+% myself, but if you're reading this, you might
+% not either. Cheers!
+%
+%                                  - Ryan Fleck
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Requires texlive-formats-extra
+
+\begin{document}
+	
+	\heading{Ryan Fleck}{
+		Email: \href{mailto:employ@ryanfleck.ca}
+			{employ@ryanfleck.ca} --
+		GitHub: \href{https://github.com/RyanFleck}{RyanFleck}
+		}{
+			Phone: 613 501 4043 --
+			Website: \href{https://ryanfleck.ca}{ryanfleck.ca}
+		}
+	
+
+	\section{Education}
+	
+	\datedsubsection{University of Ottawa}{BASc Computer Engineering}{}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+			\item Graduated April 2021 with multiple job offers, accepted a role with IBM Consulting
+			\item Member of several organizations and technical clubs (see Volunteering section)
+					
+			
+			
+		\end{itemize}
+	
+	\section{Experience}
+	
+	\datedsubsection{\href{https://www.ibm.com/}{IBM}}{Associate Technical Consultant -- Maximo}{July 2021 -- Present}
+	\begin{itemize}
+		\setlength\itemsep{-0.4em}
+		\renewcommand\labelitemi{--}
+		
+		\item Customize IBM Maximo EAM solutions for industrial/private and public sector clients
+		\item Apply development expertise to architect and implement solutions to client problems
+		\item Create internal tools to streamline the delivery of status updates and documentation
+		\item Responsible for Jira boards for multiple developers, and deliver clear status updates to project manager and clients
+		
+	\end{itemize}
+	
+		
+	\datedsubsection{\href{https://gogetwise.com/}{Wise Assistant}}{Backend Engineer}{June 2020 -- June 2021 (1y)}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+		
+			\item Implemented features for the Wise Assistant backend (Django) and frontend (React)
+			\item Used Django Rest Framework to write secure model serializers for frontend usage
+			\item Adapted multiple third-party authentication libraries to a custom user model
+			\item Implemented pipelines for profile image upload, processing, and storage in AWS S3
+			\item Called the SendGrid API to send account verification and password reset emails
+			\item Built beautiful, complex components and features for the React web app
+			\item Implemented a websocket microservice in Node.js for realtime client synchronization
+			\item Implemented a hugo static site for company marketing with backend integrations
+			\item Leveraged docker to manage the team's development environment, adding additional services and databases to the docker-compose file
+
+		\end{itemize}
+	
+	\datedsubsection{\href{https://www.ibm.com/}{IBM}}{Extreme Blue Technical Intern}{Summer 2019 (4mo)}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+			\item Prototyped a tool to replace deprecated libraries within compiled Java EE binaries
+			\item Used Javassist to manipulate bytecode, wrote algorithms to update class functions
+			\item Architected a transformation-rule organization system using the reflections library
+			\item Created team development workflow with docker, shell \& python scripts, Travis CI
+
+		\end{itemize}
+	
+	\datedsubsection{\href{https://www.mnp.ca/en}{MNP LLP}}{Co-Op Developer}{January 2018 -- December 2018 (1y)}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+			\item Spoke directly with MNP clients to investigate and address reported bugs
+			\item Wrote (in team of three) a replacement Drupal backend for an internal SiteCore CMS
+			\item Developed features, fixed bugs in a client's Teamsite (Java EE/Spring) CMS
+			\item Wrote technical and user documentation for a client's CMS created with SiteCore 
+			\item Wrote AEM HTL/JSP components, configured workflow \& security for bid prototype
+
+			
+		\end{itemize}
+	
+	\newpage
+	
+
+		
+	\section{Volunteering}
+	
+	
+	\datedsubsection{\href{http://ieeeuottawa.ca/}{IEEE uOttawa}}{Webmaster}{September 2019 -- Present}
+	\begin{itemize}
+		\setlength\itemsep{-0.4em}
+		\renewcommand\labelitemi{--}
+		
+		\item Responsible for maintaining ieeeuottawa.ca and associated stores/web services
+		\item Implemented a "VR Campus" page where remote students could browse a series of 360$^{\circ}$ photos of the Engineering faculty buildings
+		\item Created and managed an \href{https://github.com/ieee-uottawa/SITE-Bot}{open-source Discord Bot} for the Engineering Discord server.
+		\item Implemented a brand new voting web applications designed for IEEE uOttawa and ESS elections -- read more here: \href{https://www.ryanfleck.ca/2021/uottawa-student-elections-2021/}{ryanfleck.ca/2021/uottawa-student-elections-2021}
+		
+	\end{itemize}
+	
+		\datedsubsection{\href{http://uosupermileage.ca/}{UO Supermileage}}{Motor Controller Developer}{September 2019 -- Present}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+			\item Responsible for re-writing the embedded brushless DC motor controller code using C
+			\item In a team of two, updated code from polling to interrupt-based sensor reading
+			\item Manage the website redesign team, migrate to the Hugo static site generator
+			\item Used deep knowledge of the CPU to dramatically increase the processor clock speed and improve system response time -- see \href{https://www.ryanfleck.ca/2020/msp430-timer/}{ryanfleck.ca/2020/msp430-timer}
+			
+		\end{itemize}
+	
+	\datedsubsection{\href{https://xalgorithms.org/}{Xalgorithms Foundation}}{Developer/Contributor}{April 2018 -- Present}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+		\item Implemented a prototype React application to test a potential method of rule writing
+	\item Wrote unit tests in Scala for a core system component, the open source rule interpreter
+	\item Tested the rule parser against sample rules, proposed improvements, reported bugs
+	\item Implemented an Electron/React desktop file editor for .xa rule files
+			
+			
+		\end{itemize}
+			
+			
+	\datedsubsection{\href{https://xalgorithms.org/}{KJC Code Club}}{Instructor}{November 2021 -- Present}
+\begin{itemize}
+	\setlength\itemsep{-0.4em}
+	\renewcommand\labelitemi{--}
+	
+
+	
+	
+			\item Taught groups of 10 children over WebEx aged 10-16 programming fundamentals
+	\item Assisted other instructors in some sessions, answering questions and running the chat
+	\item Showcased the students' results internally while working at IBM
+	
+		\end{itemize}
+
+	
+
+
+	
+	\section{Projects}
+		\begin{itemize}
+			\setlength\itemsep{-0.4em}
+			\renewcommand\labelitemi{--}
+			
+			\item \href{https://github.com/Small-Minds}{Democracy} -- Web app to run elections for uOttawa Engineering orgs. Django/React
+			
+			\item \href{https://github.com/RyanFleck/Influx}{Influx TMS} -- Team Management System written for SEG3102 course with Django
+			
+			\item Socket.IO Trivia -- Developed a UX trivia webapp in Express with scoreboard \& chat
+			
+			\item \href{https://github.com/RyanFleck/Telegram-Dungeon}{Telegram Chat-Bots} -- Using Python and NodeJS, wrote bots to respond to key words from friends, query Wolfram Alpha, and provide tools for running D\&D games in-chat
+			
+			\item Games -- Numerous 1-4 player experimental demos in Godot, Unity, Unreal, Phaser
+			
+			\item \href{https://github.com/morch028/BusBot}{Slack BusBot} -- In a team of two, wrote a Slack chat-bot using the OC-Transpo API
+			
+
+			
+		\end{itemize}
+
+	% \newpage
+
+	\section{Technology}
+	
+		I am familiar with the following technology, and can utilize test-driven design with industry standard design patterns and tools to create and deploy secure business applications.
+		
+	\textcolor[rgb]{0.99,0.99,0.99}{
+	\scalebox{.001}{ % Everything in here is nearly invisible.
+	Address: 1205 - 180 Lees Ave Ottawa, Ontario K1S 5J6, 
+	City: Ottawa, Province: Ontario ON,
+	Name: Ryan Fleck,
+	Email: Ryan.Fleck@protonmail.com,
+	GitHub: RyanFleck, https://github.com/RyanFleck/
+	Stack Overflow: https://stackoverflow.com/users/9899022/ryan-fleck
+	Version Control: Git, Github, Microsoft TFS.
+	Automated testing with python and selenium.			
+	Innovative, Daring, Computer Science, Computer Engineering
+	Experience programmer. Computer programmer, 
+	Full-stack, 
+	Mobile Phone: +1 (613) 501 4043
+	Phone: 6135014043
+	University: University of Ottawa, 
+	Degree Type: Bachelor's Degree, 
+	Major: Computer Engineering,	 
+	Start: September 2015
+	End: April 2021
+	Concurrent Java programming.
+	Asynchronous JavaScript programming.
+	SCRUM, AGILE, technical innovator.			
+	} % Make sure there are no line returns before this brace.
+	}\\
+	\begin{tabular}{l l l l l l l l l}
+		Python & Java & Java EE & C\# & .NET & Razor & HTML & CSS & JavaScript\\
+		
+		Redis & React & TypeScript & Netlify & APIs & Swagger & Traefik & Nginx & Cloudflare\\
+		
+		C & C++ & Arduino & Ruby & XML & JSON & REST & SOAP & PostgreSQL\\
+		
+		JUnit & Jest & Android & WS & PHP & Spring & Mongo & Scala &  HC12 ASM\\
+		
+		Docker & Hugo & Jekyll & Go & XSL & Heroku & SEO & SQL & \LaTeX
+		
+	\end{tabular} \\
+		
+	
+\end{document}
