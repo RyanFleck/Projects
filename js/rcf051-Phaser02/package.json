@@ -14,14 +14,14 @@
   },
   "homepage": "https://github.com/RyanFleck/Brutal-Ice#readme",
   "devDependencies": {
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "braces": "^3.0.2",
     "deep-extend": "^0.6.0",
     "gm": "^1.23.1",
-    "phaser": "^3.22.0",
+    "phaser": "^3.55.2",
     "phaser3_types": "0.0.1",
     "phasor": "0.0.1",
     "stats.js": "^0.17.0",
